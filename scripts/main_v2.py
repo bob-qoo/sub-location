@@ -65,11 +65,9 @@ SOURCE_URLS = [
   "https://raw.githubusercontent.com/Alirewa/V2ray-Configs/main/sub1.txt",
   "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/all_sub.txt",
   "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/all_extracted_configs.txt",
-  "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/raw/main/output/v2ray-base64.txt",
   "https://raw.githubusercontent.com/hello-world-1989/cn-news/main/end-gfw-together",
   "https://raw.githubusercontent.com/vless-reality/vless-reality.github.io/refs/heads/main/.github/links/v2.txt",
   "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt",
-  "https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray",
   "https://raw.githubusercontent.com/pawdroid/Free-servers/main/sub",
   "https://raw.githubusercontent.com/ts-sf/fly/main/v2",
   "https://www.xrayvip.com/free.txt",
@@ -88,15 +86,16 @@ SOURCE_URLS = [
   "https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/hysteria2",
   "https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/clash/clash.provider.yaml",
   "https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml",
-  "https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2",
-  "https://raw.githubusercontent.com/Rokate/Proxy-Sub/main/clash/clash_v2ray.yml",
-  "https://raw.githubusercontent.com/Rokate/Proxy-Sub/main/clash/clash_trojan.yml",
   "https://raw.githubusercontent.com/Mr8AHAL/v2ray/main/SERVER.txt",
   "https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub",
   "https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash",
   "https://raw.githubusercontent.com/Huibq/TrojanLinks/master/links/vmess#ignore=vmess",
   "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml#ignore=vmess,ss,ssr",
-  "https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/all.yaml"
+  "https://raw.githubusercontent.com/shaoyouvip/free/refs/heads/main/all.yaml",
+  "https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/v.txt",
+  "https://raw.githubusercontent.com/alexantSWE/V2ray-Config/main/All_Configs_Sub.txt",
+  "https://raw.githubusercontent.com/mfuu/FreeProxies/master/sub",
+  "https://raw.githubusercontent.com/barry-far/V2ray-config/main/Sub1.txt"
 ]
 
 OUTPUT_DIR = "output"
