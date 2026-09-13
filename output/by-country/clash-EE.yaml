@@ -4,7 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - BobQoo
+  server: 162.159.0.169
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - BobQoo
+  server: 172.67.67.178
+  port: 443
+  udp: true
+  type: vless
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  tls: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - BobQoo
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -13,28 +39,43 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  server: cabinet.wwwinternetvideo.click
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - BobQoo
+  server: 94.183.170.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - BobQoo
+  server: 217.60.182.79
   port: 443
   udp: true
   type: hysteria2
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   sni: cabinet.wwwinternetvideo.click
-  skip-cert-verify: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - BobQoo
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - BobQoo
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - BobQoo
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - BobQoo
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - BobQoo
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - BobQoo
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - BobQoo
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - BobQoo
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - BobQoo
 rules:
 - MATCH,PROXIES

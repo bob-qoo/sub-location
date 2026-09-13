@@ -4,52 +4,155 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-      "server": "149.88.23.202",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 01 - BobQoo",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "fc60147e-76b8-4bc5-b691-90b2da79e3d2",
+      "transport": {
+        "type": "ws",
+        "path": "/138.2.74.219-28616",
+        "headers": {
+          "Host": "nautica-cff.kloningstrife002.workers.dev"
+        }
+      }
     },
     {
-      "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
-      "server": "149.88.23.207",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 02 - BobQoo",
+      "server": "104.17.3.81",
+      "server_port": 443,
+      "uuid": "fc60147e-76b8-4bc5-b691-90b2da79e3d2",
+      "tls": {
+        "enabled": true,
+        "server_name": "nautica-cff.kloningstrife002.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/138.2.74.219-28616",
+        "headers": {
+          "Host": "nautica-cff.kloningstrife002.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 - BobQoo",
+      "server": "188.114.97.3",
+      "server_port": 443,
+      "uuid": "daf485ba-60fc-4166-a72c-8d2a5407cbc5",
+      "tls": {
+        "enabled": true,
+        "server_name": "KIeVH9yXcGg14-GY4wXqCAV0pegKd.D-0EZpK5xP5wk8ltDgb6EVLPGC-jin.WORkeRS.Dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/zM8ELyqEIYeZ3ijacV9kuK?ed",
+        "headers": {
+          "Host": "kievh9yxcgg14-gy4wxqcav0pegkd.d-0ezpk5xp5wk8ltdgb6evlpgc-jin.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 04 - BobQoo",
+      "server": "129.153.71.28",
+      "server_port": 28863,
+      "uuid": "4f1f5604-a256-4432-a477-52c3dce7dded",
+      "tls": {
+        "enabled": true,
+        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
+        }
+      }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
+      "tag": "🇸🇬 新加坡 (Singapore) 05 - BobQoo",
       "server": "176.97.64.144",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "TFElG2FVqyqG"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
-      "server": "167.150.100.115",
-      "server_port": 27755,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0="
+      "type": "vmess",
+      "tag": "🇸🇬 新加坡 (Singapore) 06 - BobQoo",
+      "server": "149.88.23.207",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
-      "server": "54.151.142.26",
-      "server_port": 443,
-      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+      "type": "vmess",
+      "tag": "🇸🇬 新加坡 (Singapore) 07 - BobQoo",
+      "server": "149.88.23.202",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 08 - BobQoo",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "2388e166-3890-33ae-f77e-efac00000002",
+      "transport": {
+        "type": "ws",
+        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
+        "headers": {
+          "Host": "netlivpn4813.ddhshhshs.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 09 - BobQoo",
+      "server": "210.152.85.154",
+      "server_port": 19364,
+      "uuid": "ee68e72a-c819-4504-ad5e-acca317c82ae",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
+        "server_name": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
+        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 06 - xiaohe",
+      "tag": "🇸🇬 新加坡 (Singapore) 10 - BobQoo",
       "server": "138.2.73.238",
       "server_port": 50160,
       "password": "f87376e17da040ed04c9665ce8972930",
@@ -61,7 +164,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 07 - xiaohe",
+      "tag": "🇸🇬 新加坡 (Singapore) 11 - BobQoo",
       "server": "206.206.78.36",
       "server_port": 443,
       "uuid": "e3f0c894-0f76-4683-a751-6a93da8fd14d",
@@ -81,20 +184,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 08 - xiaohe",
-      "server": "47.129.241.226",
-      "server_port": 443,
-      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-sg-001.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 09 - xiaohe",
+      "tag": "🇸🇬 新加坡 (Singapore) 12 - BobQoo",
       "server": "91.192.81.214",
       "server_port": 443,
       "uuid": "607801ac-dbdd-4938-a167-129015d9978e",
@@ -114,8 +205,16 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 13 - BobQoo",
+      "server": "167.150.100.115",
+      "server_port": 27755,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0="
+    },
+    {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 10 - xiaohe",
+      "tag": "🇸🇬 新加坡 (Singapore) 14 - BobQoo",
       "server": "sg2-8sb.6121999.dpdns.org",
       "server_port": 19825,
       "uuid": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
@@ -125,7 +224,7 @@
         "server_name": "sg2-8sb.6121999.dpdns.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -135,8 +234,32 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 15 - BobQoo",
+      "server": "47.129.189.148",
+      "server_port": 443,
+      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-sg-001.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 16 - BobQoo",
+      "server": "13.212.32.171",
+      "server_port": 443,
+      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-sg-001.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 11 - xiaohe",
+      "tag": "🇸🇬 新加坡 (Singapore) 17 - BobQoo",
       "server": "217.217.254.126",
       "server_port": 2053,
       "uuid": "cb15cce9-73ed-4928-b38c-462f0732cbe9",
@@ -155,16 +278,212 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 12 - xiaohe",
-      "server": "139.180.220.175",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "qpSevKaUXYQKvSjp"
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 18 - BobQoo",
+      "server": "54.151.142.26",
+      "server_port": 443,
+      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+      "tls": {
+        "enabled": true,
+        "server_name": "css.rbxcdn.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 19 - BobQoo",
+      "server": "47.129.241.226",
+      "server_port": 443,
+      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-sg-001.fastervpn.world",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 13 - xiaohe",
+      "tag": "🇸🇬 新加坡 (Singapore) 20 - BobQoo",
+      "server": "80.240.18.227",
+      "server_port": 10051,
+      "uuid": "d161dcf1-fde2-44cc-b08d-d8944895e842",
+      "tls": {
+        "enabled": true,
+        "server_name": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 21 - BobQoo",
+      "server": "vpn-sg-001.fastervpn.world",
+      "server_port": 443,
+      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-sg-001.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 22 - BobQoo",
+      "server": "116.204.164.27",
+      "server_port": 7443,
+      "uuid": "4e243073-f25c-4aab-b3ff-63b6e8ef7f4b",
+      "tls": {
+        "enabled": true,
+        "server_name": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 23 - BobQoo",
+      "server": "116.204.164.60",
+      "server_port": 7443,
+      "uuid": "fc85cf23-75e6-4b91-b468-8adc9407047b",
+      "tls": {
+        "enabled": true,
+        "server_name": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 24 - BobQoo",
+      "server": "129.151.64.169",
+      "server_port": 31867,
+      "uuid": "73f96511-d245-4334-a34f-9d7a8551e656",
+      "tls": {
+        "enabled": true,
+        "server_name": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 25 - BobQoo",
+      "server": "3.0.209.69",
+      "server_port": 8686,
+      "uuid": "1a17b19d-4896-4531-af79-6e91d8ef8228",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw",
+          "short_id": "628b3c90c98ead4f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 26 - BobQoo",
+      "server": "46.137.202.178",
+      "server_port": 12512,
+      "uuid": "2a6c617d-98e4-49c3-95ab-76f02fcf0150",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.intel.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA",
+          "short_id": "e692a8250d2e2fd0"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 27 - BobQoo",
+      "server": "msjp.mangshe.xyz",
+      "server_port": 20562,
+      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 28 - BobQoo",
+      "server": "45.77.241.190",
+      "server_port": 8441,
+      "uuid": "c6e09f95-bf02-4854-bcba-7a977a0f8ecd",
+      "tls": {
+        "enabled": true,
+        "server_name": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 29 - BobQoo",
       "server": "3.0.111.82",
       "server_port": 10574,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -185,34 +504,13 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 14 - xiaohe",
-      "server": "3.0.111.82",
-      "server_port": 12972,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇸🇬 新加坡 (Singapore) 30 - BobQoo",
+      "server": "45.131.66.247",
+      "server_port": 20002,
+      "uuid": "fdb6da51-cd71-4f8d-9375-409b45884fd5",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 15 - xiaohe",
-      "server": "91.193.58.61",
-      "server_port": 2096,
-      "uuid": "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2",
-      "tls": {
-        "enabled": true,
-        "server_name": "free-server.techsonic.dev",
+        "server_name": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -221,62 +519,52 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/free-server.techsonic.dev",
+        "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "free-server.techsonic.dev"
+          "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 16 - xiaohe",
-      "server": "46.137.202.178",
-      "server_port": 12512,
-      "uuid": "2a6c617d-98e4-49c3-95ab-76f02fcf0150",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.intel.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA",
-          "short_id": "e692a8250d2e2fd0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 17 - xiaohe",
+      "tag": "🇸🇬 新加坡 (Singapore) 31 - BobQoo",
       "server": "support.zoom.us",
       "server_port": 80,
-      "uuid": "a57223c7-3581-4fec-9bc4-ad5c30900efb",
+      "uuid": "6aa028bc-08a9-41d1-a397-d60ce65df081",
       "transport": {
         "type": "ws",
-        "path": "/free-server.techsonic.dev",
+        "path": "/shalana",
         "headers": {
-          "Host": "free-server.techsonic.dev"
+          "Host": "shalana.xyz"
         }
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 18 - xiaohe",
-      "server": "msjp1.mangshe.xyz",
-      "server_port": 20562,
-      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 32 - BobQoo",
+      "server": "141.193.213.21",
+      "server_port": 8443,
+      "uuid": "29c3dd6b-b164-40ca-a0d5-f06aca52a8b2",
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com",
-        "insecure": true
+        "server_name": "u.srilankangrill.online",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "u.srilankangrill.online"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 19 - xiaohe",
+      "tag": "🇸🇬 新加坡 (Singapore) 33 - BobQoo",
       "server": "3.0.111.82",
       "server_port": 17623,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -297,73 +585,244 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 20 - xiaohe",
-      "server": "141.193.213.20",
-      "server_port": 8443,
-      "uuid": "29c3dd6b-b164-40ca-a0d5-f06aca52a8b2",
+      "tag": "🇸🇬 新加坡 (Singapore) 34 - BobQoo",
+      "server": "91.186.218.227",
+      "server_port": 4443,
+      "uuid": "e7c87fcf-112e-4dba-a021-6338d1c72bf0",
       "tls": {
         "enabled": true,
-        "server_name": "u.srilankangrill.online",
-        "insecure": false
+        "server_name": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 35 - BobQoo",
+      "server": "116.251.217.65",
+      "server_port": 443,
+      "uuid": "2388e166-3890-33ae-f77e-efac00000002",
+      "tls": {
+        "enabled": true,
+        "server_name": "netlivpn4813.ddhshhshs.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
+        "headers": {
+          "Host": "netlivpn4813.ddhshhshs.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 36 - BobQoo",
+      "server": "104.17.70.206",
+      "server_port": 2096,
+      "uuid": "395d040e-a04a-43d7-a1e9-8635f545879a",
+      "tls": {
+        "enabled": true,
+        "server_name": "shalana.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/shalana",
+        "headers": {
+          "Host": "shalana.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 37 - BobQoo",
+      "server": "91.186.218.227",
+      "server_port": 4443,
+      "uuid": "9649ca0c-aad3-4d31-bfeb-837ae9d6c255",
+      "tls": {
+        "enabled": true,
+        "server_name": "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 38 - BobQoo",
+      "server": "support.zoom.us",
+      "server_port": 80,
+      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
         "headers": {
           "Host": "u.srilankangrill.online"
         }
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 39 - BobQoo",
+      "server": "3.0.111.82",
+      "server_port": 12972,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 40 - BobQoo",
+      "server": "47.241.108.227",
+      "server_port": 50160,
+      "password": "436114b5f36b2e704bdfa0927d57b6cd",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 41 - BobQoo",
+      "server": "139.180.220.175",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "qpSevKaUXYQKvSjp"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 06 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 07 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 08 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 09 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 10 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 11 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 12 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 13 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 14 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 15 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 16 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 17 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 18 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 19 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 20 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 01 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 02 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 03 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 04 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 05 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 06 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 07 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 08 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 09 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 10 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 11 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 12 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 13 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 14 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 15 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 16 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 17 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 18 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 19 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 20 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 21 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 22 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 23 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 24 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 25 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 26 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 27 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 28 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 29 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 30 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 31 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 32 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 33 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 34 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 35 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 36 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 37 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 38 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 39 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 40 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 41 - BobQoo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 06 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 07 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 08 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 09 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 10 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 11 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 12 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 13 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 14 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 15 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 16 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 17 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 18 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 19 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 20 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 01 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 02 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 03 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 04 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 05 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 06 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 07 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 08 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 09 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 10 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 11 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 12 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 13 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 14 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 15 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 16 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 17 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 18 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 19 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 20 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 21 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 22 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 23 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 24 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 25 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 26 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 27 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 28 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 29 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 30 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 31 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 32 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 33 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 34 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 35 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 36 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 37 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 38 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 39 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 40 - BobQoo",
+        "🇸🇬 新加坡 (Singapore) 41 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
