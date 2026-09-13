@@ -18,49 +18,30 @@ proxies:
   servername: sync-bridge.org
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02 - BobQoo
-  server: 170.168.97.8
-  port: 8443
+  server: 13.143.137.164
+  port: 9443
   udp: true
   type: vless
-  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
-  servername: download.nvidia.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
+    public-key: dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ
+    short-id: e336c9a786fae301
+  servername: plaincanvas.videoclothing.xyz
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 03 - BobQoo
-  server: 144.225.65.166
-  port: 45462
-  udp: true
-  type: vless
-  uuid: b567eb70-be4d-4fbc-bc6a-bf20e2a7da97
-  network: ws
-  ws-opts:
-    path: /fhiioigx
-    headers:
-      Host: play.google.com
-- name: 🇹🇷 土耳其 (Turkey) 04 - BobQoo
-  server: tr.iramssmoth.ir
-  port: 8443
+  server: 158.94.216.50
+  port: 32306
   udp: true
   type: vless
   uuid: f1505323-ecb6-4152-9a5b-d37b3ae1cacf
   tls: true
   reality-opts:
-    public-key: 72SJFDXHCtB2fWWRrjMj23J8iJ8T_2jvj-iNThmLREs
-    short-id: 8dc4f3de3846efa9
+    public-key: 5iqitmx5fd71pubTxlrX0sd-ei7palcgVL7vtKToJGA
+    short-id: 61614f026070554f
   servername: play-apps-features.googleusercontent.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05 - BobQoo
-  server: 185.39.204.3
-  port: 8098
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: PluSKSrbtxTvlVv7BOUwn4
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,8 +50,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - BobQoo
   - 🇹🇷 土耳其 (Turkey) 02 - BobQoo
   - 🇹🇷 土耳其 (Turkey) 03 - BobQoo
-  - 🇹🇷 土耳其 (Turkey) 04 - BobQoo
-  - 🇹🇷 土耳其 (Turkey) 05 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,7 +58,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - BobQoo
   - 🇹🇷 土耳其 (Turkey) 02 - BobQoo
   - 🇹🇷 土耳其 (Turkey) 03 - BobQoo
-  - 🇹🇷 土耳其 (Turkey) 04 - BobQoo
-  - 🇹🇷 土耳其 (Turkey) 05 - BobQoo
 rules:
 - MATCH,PROXIES
