@@ -5,18 +5,78 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 01 (家宽) - BobQoo",
-      "server": "194.5.248.88",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - BobQoo",
+      "server": "104.18.46.234",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo",
+      "server": "36.224.152.189",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - BobQoo",
+      "server": "dlbgwqqngrjbwan.jiedddym.com",
+      "server_port": 42868,
+      "uuid": "6dbb8854-17a5-4684-b930-c11f022975ec",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GLtdhq3ZSKYlJv62ye5dFKfjI3UF9mBIGOl5ms75rVA",
+          "short_id": "747a75eb5ecef8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 (家宽) - BobQoo",
+      "server": "roma2.moritech.net",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "roma2.moritech.net",
-        "insecure": false,
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - BobQoo",
+      "server": "wwbqwqqnlyydssc.cfooov.xyz",
+      "server_port": 39817,
+      "uuid": "6dbb8854-17a5-4684-b930-c11f022975ec",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "uzaav8KrDeu1P9qdg6fDfxmq9Z6vV6a-WVPTWX1zIj4",
+          "short_id": "0044d4f490e795b8"
         }
       }
     },
@@ -25,14 +85,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 罗马尼亚 (Romania) 01 (家宽) - BobQoo"
+        "🇺🇸 美国 (United States) 01 (家宽) - BobQoo",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - BobQoo",
+        "🇷🇴 罗马尼亚 (Romania) 04 (家宽) - BobQoo",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - BobQoo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 罗马尼亚 (Romania) 01 (家宽) - BobQoo"
+        "🇺🇸 美国 (United States) 01 (家宽) - BobQoo",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - BobQoo",
+        "🇷🇴 罗马尼亚 (Romania) 04 (家宽) - BobQoo",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

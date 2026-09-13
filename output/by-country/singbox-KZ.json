@@ -6,40 +6,6 @@
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - BobQoo",
-      "server": "162.159.39.218",
-      "server_port": 8080,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - BobQoo",
-      "server": "178.236.16.98",
-      "server_port": 35728,
-      "uuid": "a00d89f6-ab7e-4e30-a5e5-54c701d62c93",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng",
-          "short_id": "69a2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - BobQoo",
       "server": "83.222.23.81",
       "server_port": 38065,
       "uuid": "4b9063e0-3288-44e9-9aac-80fbfce323a0",
@@ -59,7 +25,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - BobQoo",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - BobQoo",
       "server": "109.248.170.119",
       "server_port": 13447,
       "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
@@ -78,6 +44,66 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - BobQoo",
+      "server": "62.233.39.9",
+      "server_port": 8443,
+      "uuid": "4350213a-b4e7-262a-0bd7-bd16957cf71a",
+      "tls": {
+        "enabled": true,
+        "server_name": "dl.dell.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oHaUPZiESTQQ89DMd4uIcPWgsyeFFy58iZYX_8mbvWk",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - BobQoo",
+      "server": "38.107.234.57",
+      "server_port": 80,
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - BobQoo",
+      "server": "91.224.87.22",
+      "server_port": 9882,
+      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+      "tls": {
+        "enabled": true,
+        "server_name": "dl.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
+          "short_id": "aa"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-tunnel"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -85,7 +111,8 @@
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - BobQoo",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - BobQoo",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - BobQoo",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - BobQoo"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - BobQoo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - BobQoo"
       ]
     },
     {
@@ -95,7 +122,8 @@
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - BobQoo",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - BobQoo",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - BobQoo",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - BobQoo"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - BobQoo",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

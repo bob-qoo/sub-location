@@ -15,14 +15,14 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - BobQoo",
-      "server": "109.206.241.10",
-      "server_port": 449,
-      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
+      "server": "217.60.182.79",
+      "server_port": 443,
+      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
       "tls": {
         "enabled": true,
-        "server_name": "russiapower.accesscam.org",
+        "server_name": "cabinet.wwwinternetvideo.click",
         "insecure": true
       }
     },
@@ -35,23 +35,23 @@
       "tls": {
         "enabled": true,
         "server_name": "estproxy4.lockdwn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "insecure": false
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - BobQoo",
-      "server": "217.60.182.79",
+      "server": "ee1.sferavpn.pro",
       "server_port": 443,
-      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
+      "password": "cd74c0a406664a5bc0bac098220a2468",
       "tls": {
         "enabled": true,
-        "server_name": "cabinet.wwwinternetvideo.click",
+        "server_name": "ee1.sferavpn.pro",
         "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "44f1c1e2f8b99e792ceed574627a1eb0"
       }
     },
     {

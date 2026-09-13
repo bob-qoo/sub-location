@@ -4,8 +4,39 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇴 罗马尼亚 (Romania) 01 (家宽) - BobQoo
-  server: 194.5.248.88
+- name: 🇺🇸 美国 (United States) 01 (家宽) - BobQoo
+  server: 104.18.46.234
+  port: 80
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo
+  server: 36.224.152.189
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - BobQoo
+  server: dlbgwqqngrjbwan.jiedddym.com
+  port: 42868
+  udp: true
+  type: vless
+  uuid: 6dbb8854-17a5-4684-b930-c11f022975ec
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GLtdhq3ZSKYlJv62ye5dFKfjI3UF9mBIGOl5ms75rVA
+    short-id: 747a75eb5ecef8
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 04 (家宽) - BobQoo
+  server: roma2.moritech.net
   port: 443
   udp: true
   type: vless
@@ -14,18 +45,38 @@ proxies:
   tls: true
   servername: roma2.moritech.net
   skip-cert-verify: false
-  client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - BobQoo
+  server: wwbqwqqnlyydssc.cfooov.xyz
+  port: 39817
+  udp: true
+  type: vless
+  uuid: 6dbb8854-17a5-4684-b930-c11f022975ec
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: uzaav8KrDeu1P9qdg6fDfxmq9Z6vV6a-WVPTWX1zIj4
+    short-id: 0044d4f490e795b8
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇴 罗马尼亚 (Romania) 01 (家宽) - BobQoo
+  - 🇺🇸 美国 (United States) 01 (家宽) - BobQoo
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - BobQoo
+  - 🇷🇴 罗马尼亚 (Romania) 04 (家宽) - BobQoo
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇴 罗马尼亚 (Romania) 01 (家宽) - BobQoo
+  - 🇺🇸 美国 (United States) 01 (家宽) - BobQoo
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - BobQoo
+  - 🇷🇴 罗马尼亚 (Romania) 04 (家宽) - BobQoo
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - BobQoo
 rules:
 - MATCH,PROXIES

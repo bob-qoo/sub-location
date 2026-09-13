@@ -6,7 +6,7 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - BobQoo",
-      "server": "205.237.109.165",
+      "server": "205.237.109.163",
       "server_port": 8443,
       "password": "Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s",
       "tls": {
@@ -18,18 +18,35 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 02 - BobQoo",
-      "server": "162.249.126.7",
+      "server": "162.249.126.6",
       "server_port": 8443,
       "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
       "tls": {
         "enabled": true,
         "server_name": "hopp-germany-new.ddnsguru.com",
-        "insecure": true
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - BobQoo",
+      "server": "194.5.248.93",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "roma1.moritech.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - BobQoo",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - BobQoo",
       "server": "85.204.107.178",
       "server_port": 8443,
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
@@ -41,7 +58,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - BobQoo",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - BobQoo",
       "server": "185.156.44.99",
       "server_port": 443,
       "password": "gf1:gfhysteria2024",
@@ -53,7 +70,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - BobQoo",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - BobQoo",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -73,68 +90,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - BobQoo",
-      "server": "roma1.moritech.net",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "roma1.moritech.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 07 - BobQoo",
-      "server": "hy2-new.aspidnet.xyz",
-      "server_port": 443,
-      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-new.aspidnet.xyz",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c1b4086fea89914496c7e10967a419216566"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 08 - BobQoo",
-      "server": "roma3.moritech.net",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "roma3.moritech.net",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 09 - BobQoo",
-      "server": "162.249.125.133",
-      "server_port": 443,
-      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-new.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c1b4086fea89914496c7e10967a419216566"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -144,10 +99,7 @@
         "🇷🇴 罗马尼亚 (Romania) 03 - BobQoo",
         "🇷🇴 罗马尼亚 (Romania) 04 - BobQoo",
         "🇷🇴 罗马尼亚 (Romania) 05 - BobQoo",
-        "🇷🇴 罗马尼亚 (Romania) 06 - BobQoo",
-        "🇷🇴 罗马尼亚 (Romania) 07 - BobQoo",
-        "🇷🇴 罗马尼亚 (Romania) 08 - BobQoo",
-        "🇷🇴 罗马尼亚 (Romania) 09 - BobQoo"
+        "🇷🇴 罗马尼亚 (Romania) 06 - BobQoo"
       ]
     },
     {
@@ -159,10 +111,7 @@
         "🇷🇴 罗马尼亚 (Romania) 03 - BobQoo",
         "🇷🇴 罗马尼亚 (Romania) 04 - BobQoo",
         "🇷🇴 罗马尼亚 (Romania) 05 - BobQoo",
-        "🇷🇴 罗马尼亚 (Romania) 06 - BobQoo",
-        "🇷🇴 罗马尼亚 (Romania) 07 - BobQoo",
-        "🇷🇴 罗马尼亚 (Romania) 08 - BobQoo",
-        "🇷🇴 罗马尼亚 (Romania) 09 - BobQoo"
+        "🇷🇴 罗马尼亚 (Romania) 06 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

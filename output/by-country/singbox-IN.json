@@ -4,25 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇮🇳 印度 (India) 01 - BobQoo",
-      "server": "148.113.5.44",
-      "server_port": 443,
-      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
-          "short_id": "221873918e0bb74d"
-        }
-      }
+      "server": "139.84.166.47",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "GEdoeeqLZtkJRgSa"
     },
     {
       "type": "vless",
@@ -45,15 +32,24 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇮🇳 印度 (India) 03 - BobQoo",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
+      "server": "148.113.5.44",
+      "server_port": 443,
+      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
+          "short_id": "221873918e0bb74d"
+        }
       }
     },
     {
@@ -69,37 +65,6 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 05 - BobQoo",
-      "server": "hyfuuf6.wsone.icu",
-      "server_port": 443,
-      "password": "M7v%w11Se*",
-      "tls": {
-        "enabled": true,
-        "server_name": "hyfuuf6.wsone.icu",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 06 - BobQoo",
-      "server": "planb.mojcn.com.linuxlh.xin",
-      "server_port": 16626,
-      "uuid": "302cf141-f8e2-448d-aca5-3ad9e9f1b4c1",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "d2c315853d201942b93c6d6de56fec5d.mobgslb.tbcache.com"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -107,9 +72,7 @@
         "🇮🇳 印度 (India) 01 - BobQoo",
         "🇮🇳 印度 (India) 02 - BobQoo",
         "🇮🇳 印度 (India) 03 - BobQoo",
-        "🇮🇳 印度 (India) 04 - BobQoo",
-        "🇮🇳 印度 (India) 05 - BobQoo",
-        "🇮🇳 印度 (India) 06 - BobQoo"
+        "🇮🇳 印度 (India) 04 - BobQoo"
       ]
     },
     {
@@ -119,9 +82,7 @@
         "🇮🇳 印度 (India) 01 - BobQoo",
         "🇮🇳 印度 (India) 02 - BobQoo",
         "🇮🇳 印度 (India) 03 - BobQoo",
-        "🇮🇳 印度 (India) 04 - BobQoo",
-        "🇮🇳 印度 (India) 05 - BobQoo",
-        "🇮🇳 印度 (India) 06 - BobQoo"
+        "🇮🇳 印度 (India) 04 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

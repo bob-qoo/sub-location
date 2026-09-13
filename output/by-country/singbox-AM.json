@@ -5,18 +5,25 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇱🇺 卢森堡 (Luxembourg) 01 - BobQoo",
-      "server": "mfyousheng.nl.eu.org",
-      "server_port": 443,
-      "password": "Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - BobQoo",
+      "server": "de2.x8lab.org",
+      "server_port": 9433,
+      "password": "TAJhE0BC0_S1JDm9EmQxyLS64uC8ekbr",
       "tls": {
         "enabled": true,
-        "server_name": "mfyousheng.nl.eu.org",
-        "insecure": false
+        "server_name": "de2.x8lab.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/tjwsLhx0SFASG4l9FERJ1g"
+        "path": "/chatbot",
+        "headers": {
+          "Host": "de2.x8lab.org"
+        }
       }
     },
     {
@@ -24,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇺 卢森堡 (Luxembourg) 01 - BobQoo"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - BobQoo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇺 卢森堡 (Luxembourg) 01 - BobQoo"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
