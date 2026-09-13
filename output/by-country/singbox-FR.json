@@ -6,247 +6,108 @@
     {
       "type": "vless",
       "tag": "🇫🇷 法国 (France) 01 - BobQoo",
-      "server": "162.159.0.169",
-      "server_port": 8880,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 02 - BobQoo",
-      "server": "104.21.70.21",
-      "server_port": 8080,
-      "uuid": "5934b979-e128-4c90-a600-744b97bffc8c",
-      "transport": {
-        "type": "ws",
-        "path": "/vl/Fi3kP8cNjBoo8UPv?ed=2560",
-        "headers": {
-          "Host": "5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 03 - BobQoo",
-      "server": "162.159.43.187",
-      "server_port": 2052,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 04 - BobQoo",
-      "server": "104.18.46.46",
-      "server_port": 2052,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 05 - BobQoo",
-      "server": "5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev",
-      "server_port": 443,
-      "uuid": "5934b979-e128-4c90-a600-744b97bffc8c",
-      "tls": {
-        "enabled": true,
-        "server_name": "5DKTCUajb2a1jxIX7csNrmEUCg.MAhRADeMAmi.wORkeRs.dEV",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/Fi3kP8cNjBoo8UPv",
-        "headers": {
-          "Host": "5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 06 - BobQoo",
-      "server": "166.62.113.123",
-      "server_port": 443,
-      "uuid": "1d16c6e0-1bbe-435b-b661-90043fee999c",
-      "tls": {
-        "enabled": true,
-        "server_name": "notls.lukongtou.eu.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/Telegram-WangCai2🇨🇳",
-        "headers": {
-          "Host": "notls.lukongtou.eu.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 07 - BobQoo",
-      "server": "172.67.219.50",
-      "server_port": 443,
-      "uuid": "a5b1d1ec-327c-f1c5-5856-b34600000000",
-      "tls": {
-        "enabled": true,
-        "server_name": "ez-541f9d.ezaccess1d3db24.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "ez-541f9d.ezaccess1d3db24.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 08 - BobQoo",
-      "server": "172.64.32.103",
-      "server_port": 2082,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 09 - BobQoo",
-      "server": "35.181.146.129",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 10 - BobQoo",
-      "server": "35.181.146.129",
+      "server": "15.188.183.186",
       "server_port": 22223,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 11 - BobQoo",
-      "server": "83.171.225.55",
-      "server_port": 1443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ZjAxZ"
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 02 - BobQoo",
+      "server": "15.188.183.186",
+      "server_port": 22224,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 03 - BobQoo",
+      "server": "15.188.183.186",
+      "server_port": 22222,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 12 - BobQoo",
+      "tag": "🇫🇷 法国 (France) 04 - BobQoo",
       "server": "51.83.192.80",
       "server_port": 8388,
       "method": "aes-256-gcm",
       "password": "itzvpn@321"
     },
     {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 13 - BobQoo",
-      "server": "172.64.155.209",
-      "server_port": 8443,
-      "uuid": "4ff70740-8c80-48ae-985f-2afe4924e908",
-      "tls": {
-        "enabled": true,
-        "server_name": "pubb.clnahanpnln.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "pubb.clnahanpnln.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 14 - BobQoo",
-      "server": "45.144.28.39",
-      "server_port": 2096,
-      "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "usejh2.neobo-tooth.ru"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 15 - BobQoo",
-      "server": "35.181.166.40",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tag": "🇫🇷 法国 (France) 05 - BobQoo",
+      "server": "62.210.147.2",
+      "server_port": 43115,
+      "password": "github.com/Alvin9999-newpac/fanqiang",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-fr-002.fastervpn.world",
+        "server_name": "www.microsoft.com",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 16 - BobQoo",
-      "server": "51.77.217.70",
-      "server_port": 2053,
-      "uuid": "bf16ee0c-8b3c-41e4-ab3a-8b48033c404e",
+      "tag": "🇫🇷 法国 (France) 06 - BobQoo",
+      "server": "162.19.10.99",
+      "server_port": 443,
+      "uuid": "nasnet",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "nasnet-162191099-direct.mbghalibaf.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w",
-          "short_id": "bfe58beb41f1d09f"
+          "fingerprint": "chrome"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 17 - BobQoo",
+      "tag": "🇫🇷 法国 (France) 07 - BobQoo",
+      "server": "62.210.91.2",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 08 - BobQoo",
+      "server": "151.247.197.253",
+      "server_port": 36723,
+      "password": "Krab9Hyst2_Rk7pQ2xL",
+      "tls": {
+        "enabled": true,
+        "server_name": "151.247.197.253",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 09 - BobQoo",
+      "server": "152.228.162.19",
+      "server_port": 80,
+      "uuid": "25f86cb1-2140-4085-abcb-c3a0ea7a4be0",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 10 - BobQoo",
       "server": "62.210.91.10",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -267,46 +128,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 18 - BobQoo",
-      "server": "162.19.10.99",
-      "server_port": 443,
-      "uuid": "nasnet",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nasnet-162191099-direct.mbghalibaf.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 19 - BobQoo",
-      "server": "145.223.68.58",
-      "server_port": 443,
-      "uuid": "edb50d20-2d3e-4c1e-8a75-a17168a89aa5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qc2DcqT9zPPZr6ePZ7ukxACWrYhRNIBjDIjCK7veyQg",
-          "short_id": "a44ff7d2e80213c2"
+      "tag": "🇫🇷 法国 (France) 11 - BobQoo",
+      "server": "ov-france1.09vpn.com",
+      "server_port": 80,
+      "uuid": "25f86cb1-2140-4085-abcb-c3a0ea7a4be0",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/",
+        "headers": {
+          "Host": "ov-france1.09vpn.com"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 20 - BobQoo",
-      "server": "45.130.125.190",
+      "tag": "🇫🇷 法国 (France) 12 - BobQoo",
+      "server": "104.19.229.21",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -316,71 +153,35 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "//assignment",
         "headers": {
           "Host": "www.calmlunch.com"
         }
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 21 - BobQoo",
-      "server": "151.247.197.253",
-      "server_port": 36723,
-      "password": "Krab9Hyst2_Rk7pQ2xL",
-      "tls": {
-        "enabled": true,
-        "server_name": "151.247.197.253",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 22 - BobQoo",
-      "server": "62.210.91.2",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇫🇷 法国 (France) 13 - BobQoo",
+      "server": "51.38.82.1",
+      "server_port": 443,
+      "uuid": "9343f183-7a16-4bdd-9c65-b0c21feca40b",
       "tls": {
         "enabled": true,
-        "server_name": "fuck.rkn",
+        "server_name": "play.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
+          "public_key": "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M",
+          "short_id": "98fa0b00d09419f7"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 23 - BobQoo",
-      "server": "152.228.162.19",
-      "server_port": 80,
-      "uuid": "25f86cb1-2140-4085-abcb-c3a0ea7a4be0",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 24 - BobQoo",
-      "server": "62.210.147.2",
-      "server_port": 43115,
-      "password": "github.com/Alvin9999-newpac/fanqiang",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 25 - BobQoo",
+      "tag": "🇫🇷 法国 (France) 14 - BobQoo",
       "server": "45.144.28.39",
       "server_port": 2053,
       "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb",
@@ -401,36 +202,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 26 - BobQoo",
-      "server": "217.179.6.154",
-      "server_port": 443,
-      "uuid": "97ecaad4-452c-45ec-b591-d68d3308aad4",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "kama4.api3-max.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 27 - BobQoo",
-      "server": "vpn-fr-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 28 - BobQoo",
+      "tag": "🇫🇷 法国 (France) 15 - BobQoo",
       "server": "54.37.136.194",
       "server_port": 2053,
       "uuid": "e8a432c8-5d84-49a5-b822-67ed761a58f9",
@@ -450,45 +222,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 29 - BobQoo",
-      "server": "51.38.82.1",
-      "server_port": 443,
-      "uuid": "9343f183-7a16-4bdd-9c65-b0c21feca40b",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M",
-          "short_id": "98fa0b00d09419f7"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 30 - BobQoo",
-      "server": "152.89.253.169",
-      "server_port": 443,
-      "uuid": "97ecaad4-452c-45ec-b591-d68d3308aad4",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "kama1.api3-max.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 31 - BobQoo",
-      "server": "usejh2.neobo-tooth.ru",
+      "tag": "🇫🇷 法国 (France) 16 - BobQoo",
+      "server": "45.144.28.39",
       "server_port": 2083,
       "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb",
       "tls": {
@@ -507,7 +242,108 @@
     },
     {
       "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 32 - BobQoo",
+      "tag": "🇫🇷 法国 (France) 17 - BobQoo",
+      "server": "185.114.72.31",
+      "server_port": 2053,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 18 - BobQoo",
+      "server": "vpn-fr-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "127.0.0.1",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 19 - BobQoo",
+      "server": "173.212.201.85",
+      "server_port": 443,
+      "password": "gf1:gfhysteria2024",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.docker.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 20 - BobQoo",
+      "server": "flarora.ferreo.sbs",
+      "server_port": 443,
+      "uuid": "3db8407b-1f96-4b82-bfeb-55258c1e57b4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "flarora.ferreo.sbs",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HKKWGVu7xJfscDTH_28WhqSfSnp8fA5jpj7X1eMO-mU",
+          "short_id": "1067b23f928e7618"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 21 - BobQoo",
+      "server": "185.255.179.166",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 22 - BobQoo",
+      "server": "usejh2.neobo-tooth.ru",
+      "server_port": 2096,
+      "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "usejh2.neobo-tooth.ru"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 23 - BobQoo",
       "server": "5.78.92.27",
       "server_port": 8443,
       "password": "humanity",
@@ -525,148 +361,84 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 33 - BobQoo",
-      "server": "89.150.34.41",
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 24 - BobQoo",
+      "server": "51.77.217.70",
       "server_port": 2053,
-      "password": "humanity",
+      "uuid": "bf16ee0c-8b3c-41e4-ab3a-8b48033c404e",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 34 - BobQoo",
-      "server": "185.114.72.31",
-      "server_port": 2053,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 35 - BobQoo",
-      "server": "88.99.189.60",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 36 - BobQoo",
-      "server": "185.220.100.168",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false,
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 37 - BobQoo",
-      "server": "80.77.25.142",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w",
+          "short_id": "bfe58beb41f1d09f"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 38 - BobQoo",
-      "server": "104.21.78.9",
+      "tag": "🇫🇷 法国 (France) 25 - BobQoo",
+      "server": "217.179.6.154",
       "server_port": 443,
-      "uuid": "a8890c1b-3622-3106-c4be-d8671be32d2b",
+      "uuid": "97ecaad4-452c-45ec-b591-d68d3308aad4",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "summer-meadow-af5b.woowoorrrkk.workers.dev",
+        "server_name": "kama4.api3-max.ru",
         "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "summer-meadow-af5b.woowoorrrkk.workers.dev"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 39 - BobQoo",
-      "server": "173.212.201.85",
-      "server_port": 443,
-      "password": "gf1:gfhysteria2024",
+      "tag": "🇫🇷 法国 (France) 26 - BobQoo",
+      "server": "62.210.7.139",
+      "server_port": 60111,
+      "password": "github.com/Alvin9999-newpac/fanqiang",
       "tls": {
         "enabled": true,
-        "server_name": "www.docker.com",
+        "server_name": "bing.com",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 40 - BobQoo",
-      "server": "172.67.193.182",
+      "tag": "🇫🇷 法国 (France) 27 - BobQoo",
+      "server": "145.223.68.58",
       "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-ef859652a80e",
+      "uuid": "edb50d20-2d3e-4c1e-8a75-a17168a89aa5",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "trex-panel-nubj0s.samifakor.workers.dev",
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qc2DcqT9zPPZr6ePZ7ukxACWrYhRNIBjDIjCK7veyQg",
+          "short_id": "a44ff7d2e80213c2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 28 - BobQoo",
+      "server": "149.202.58.99",
+      "server_port": 443,
+      "uuid": "b585dc5e-55bf-4a8b-913a-27c9ccac05c3",
+      "tls": {
+        "enabled": true,
+        "server_name": "bab-6.site",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -675,29 +447,12 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/stream/TrexBridge/ef859652a80e",
-        "headers": {
-          "Host": "trex-panel-nubj0s.samifakor.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 41 - BobQoo",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "50414e45-4c5f-5a45-5553-ef859652a80e",
-      "transport": {
-        "type": "ws",
-        "path": "/stream/TrexBridge/ef859652a80e",
-        "headers": {
-          "Host": "trex-panel-nubj0s.samifakor.workers.dev"
-        }
+        "path": "/vws/"
       }
     },
     {
       "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 42 - BobQoo",
+      "tag": "🇫🇷 法国 (France) 29 - BobQoo",
       "server": "5.181.187.58",
       "server_port": 443,
       "password": "humanity",
@@ -715,25 +470,21 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 43 - BobQoo",
-      "server": "35.157.240.237",
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 30 - BobQoo",
+      "server": "88.99.189.60",
       "server_port": 443,
-      "uuid": "b585dc5e-55bf-4a8b-913a-27c9ccac05c3",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "bab-6.site",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "www.calmlunch.com",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/vws/",
+        "path": "/assignment",
         "headers": {
-          "Host": "bab-6.site"
+          "Host": "www.calmlunch.com"
         }
       }
     },
@@ -771,20 +522,7 @@
         "🇫🇷 法国 (France) 27 - BobQoo",
         "🇫🇷 法国 (France) 28 - BobQoo",
         "🇫🇷 法国 (France) 29 - BobQoo",
-        "🇫🇷 法国 (France) 30 - BobQoo",
-        "🇫🇷 法国 (France) 31 - BobQoo",
-        "🇫🇷 法国 (France) 32 - BobQoo",
-        "🇫🇷 法国 (France) 33 - BobQoo",
-        "🇫🇷 法国 (France) 34 - BobQoo",
-        "🇫🇷 法国 (France) 35 - BobQoo",
-        "🇫🇷 法国 (France) 36 - BobQoo",
-        "🇫🇷 法国 (France) 37 - BobQoo",
-        "🇫🇷 法国 (France) 38 - BobQoo",
-        "🇫🇷 法国 (France) 39 - BobQoo",
-        "🇫🇷 法国 (France) 40 - BobQoo",
-        "🇫🇷 法国 (France) 41 - BobQoo",
-        "🇫🇷 法国 (France) 42 - BobQoo",
-        "🇫🇷 法国 (France) 43 - BobQoo"
+        "🇫🇷 法国 (France) 30 - BobQoo"
       ]
     },
     {
@@ -820,20 +558,7 @@
         "🇫🇷 法国 (France) 27 - BobQoo",
         "🇫🇷 法国 (France) 28 - BobQoo",
         "🇫🇷 法国 (France) 29 - BobQoo",
-        "🇫🇷 法国 (France) 30 - BobQoo",
-        "🇫🇷 法国 (France) 31 - BobQoo",
-        "🇫🇷 法国 (France) 32 - BobQoo",
-        "🇫🇷 法国 (France) 33 - BobQoo",
-        "🇫🇷 法国 (France) 34 - BobQoo",
-        "🇫🇷 法国 (France) 35 - BobQoo",
-        "🇫🇷 法国 (France) 36 - BobQoo",
-        "🇫🇷 法国 (France) 37 - BobQoo",
-        "🇫🇷 法国 (France) 38 - BobQoo",
-        "🇫🇷 法国 (France) 39 - BobQoo",
-        "🇫🇷 法国 (France) 40 - BobQoo",
-        "🇫🇷 法国 (France) 41 - BobQoo",
-        "🇫🇷 法国 (France) 42 - BobQoo",
-        "🇫🇷 法国 (France) 43 - BobQoo"
+        "🇫🇷 法国 (France) 30 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

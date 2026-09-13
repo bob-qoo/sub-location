@@ -14,29 +14,6 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 02 - BobQoo",
-      "server": "104.18.155.229",
-      "server_port": 443,
-      "uuid": "42026ed0-7d74-4585-8e46-0fe6aa4d665a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.genflix.co.id.r3xxe.eu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/au-do",
-        "headers": {
-          "Host": "www.genflix.co.id.r3xxe.eu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - BobQoo",
       "server": "51.161.204.242",
       "server_port": 443,
       "uuid": "a14b736b-a92a-48d6-a596-5d31f7378ded",
@@ -56,26 +33,12 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - BobQoo",
-      "server": "vpn-au-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "whatsapp.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01 - BobQoo",
-        "🇦🇺 澳大利亚 (Australia) 02 - BobQoo",
-        "🇦🇺 澳大利亚 (Australia) 03 - BobQoo",
-        "🇦🇺 澳大利亚 (Australia) 04 - BobQoo"
+        "🇦🇺 澳大利亚 (Australia) 02 - BobQoo"
       ]
     },
     {
@@ -83,9 +46,7 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01 - BobQoo",
-        "🇦🇺 澳大利亚 (Australia) 02 - BobQoo",
-        "🇦🇺 澳大利亚 (Australia) 03 - BobQoo",
-        "🇦🇺 澳大利亚 (Australia) 04 - BobQoo"
+        "🇦🇺 澳大利亚 (Australia) 02 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

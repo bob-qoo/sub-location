@@ -13,19 +13,33 @@ proxies:
   password: Yg4MbdXFQ9HFFVY6
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - BobQoo
   server: 185.135.86.175
-  port: 9082
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 45xgMgm386pjWjTx
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - BobQoo
-  server: 185.135.86.175
   port: 9036
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: hbtvgUz5uNYyB3Rf
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - BobQoo
+  server: 185.135.86.175
+  port: 9082
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 45xgMgm386pjWjTx
 - name: 🇱🇻 拉脱维亚 (Latvia) 04 - BobQoo
+  server: 185.135.86.175
+  port: 9033
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: UTJA57ypk2XKQpnm
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - BobQoo
+  server: 185.135.86.175
+  port: 9007
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: kSPmvwdFzGMMW5pY
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - BobQoo
   server: 138.124.180.137
   port: 443
   udp: true
@@ -37,15 +51,15 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: ''
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - BobQoo
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 07 - BobQoo
   server: 185.135.86.175
   port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - BobQoo
+- name: 🇱🇻 拉脱维亚 (Latvia) 08 - BobQoo
   server: 195.123.213.28
   port: 443
   udp: true
@@ -69,6 +83,8 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 04 - BobQoo
   - 🇱🇻 拉脱维亚 (Latvia) 05 - BobQoo
   - 🇱🇻 拉脱维亚 (Latvia) 06 - BobQoo
+  - 🇱🇻 拉脱维亚 (Latvia) 07 - BobQoo
+  - 🇱🇻 拉脱维亚 (Latvia) 08 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,5 +96,7 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 04 - BobQoo
   - 🇱🇻 拉脱维亚 (Latvia) 05 - BobQoo
   - 🇱🇻 拉脱维亚 (Latvia) 06 - BobQoo
+  - 🇱🇻 拉脱维亚 (Latvia) 07 - BobQoo
+  - 🇱🇻 拉脱维亚 (Latvia) 08 - BobQoo
 rules:
 - MATCH,PROXIES

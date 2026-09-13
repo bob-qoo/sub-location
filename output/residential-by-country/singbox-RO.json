@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 (家宽) - BobQoo",
-      "server": "roma2.moritech.net",
+      "server": "194.5.248.88",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
@@ -16,7 +16,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         }
       }
     },
