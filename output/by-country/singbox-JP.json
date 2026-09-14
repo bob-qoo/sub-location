@@ -4,85 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 01 - BobQoo",
-      "server": "146.190.124.36",
-      "server_port": 74,
-      "uuid": "d4d0d523-0c2a-4b9d-b630-0637f0b77904",
-      "tls": {
-        "enabled": true,
-        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 02 - BobQoo",
-      "server": "128.241.25.3",
-      "server_port": 30021,
-      "uuid": "afec813e-a5c7-432d-be48-2803c30eea4e",
-      "tls": {
-        "enabled": true,
-        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 03 - BobQoo",
-      "server": "128.241.25.11",
-      "server_port": 30021,
-      "uuid": "40ca0d8c-0641-4e2d-a701-9fd8330daf6d",
-      "tls": {
-        "enabled": true,
-        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 04 - BobQoo",
-      "server": "149.22.87.204",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 05 - BobQoo",
       "server": "149.22.87.241",
       "server_port": 443,
       "method": "aes-128-gcm",
@@ -90,7 +13,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 06 - BobQoo",
+      "tag": "🇯🇵 日本 (Japan) 02 - BobQoo",
+      "server": "149.22.87.204",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 03 - BobQoo",
       "server": "149.22.87.240",
       "server_port": 443,
       "method": "aes-128-gcm",
@@ -98,19 +29,95 @@
     },
     {
       "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 07 - BobQoo",
+      "tag": "🇯🇵 日本 (Japan) 04 - BobQoo",
       "server": "45.32.57.118",
       "server_port": 4433,
       "uuid": "35b89832-0a7c-48dd-8d1c-a2891b522195",
       "security": "auto"
     },
     {
-      "type": "vmess",
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 05 - BobQoo",
+      "server": "103.137.215.189",
+      "server_port": 443,
+      "uuid": "d17a1e53-09c7-4174-aed8-033c01d39038",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zPB0R1XcjjUCEWWXVrt4UAKXPFtFDVsrEQueuBRmKwA",
+          "short_id": "aa76df495eafba20"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 06 - BobQoo",
+      "server": "103.76.85.156",
+      "server_port": 443,
+      "uuid": "4082b282-dc67-40df-b114-f70d71d61f6f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SsqcoKQAh4wOwKVxQcS4QGb_8xiHJ_IgzsEoTsEPDj8",
+          "short_id": "41dd2ebdd7e0a61a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 07 - BobQoo",
+      "server": "154.31.114.248",
+      "server_port": 50159,
+      "uuid": "d56624b2-35bb-468c-9b2a-e0b0df7230c1",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA",
+          "short_id": "091e1c5db8451757"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 08 - BobQoo",
-      "server": "155.248.176.44",
-      "server_port": 55216,
-      "uuid": "154dbc39-0921-cf11-29bd-156c5000d763",
-      "security": "auto"
+      "server": "103.75.118.228",
+      "server_port": 12683,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
     },
     {
       "type": "vless",
@@ -134,120 +141,37 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 10 - BobQoo",
-      "server": "103.137.215.189",
+      "server": "84.247.155.196",
       "server_port": 443,
-      "uuid": "d17a1e53-09c7-4174-aed8-033c01d39038",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zPB0R1XcjjUCEWWXVrt4UAKXPFtFDVsrEQueuBRmKwA",
-          "short_id": "aa76df495eafba20"
-        }
-      }
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
     },
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 11 - BobQoo",
-      "server": "103.76.85.156",
-      "server_port": 443,
-      "uuid": "4082b282-dc67-40df-b114-f70d71d61f6f",
+      "server": "35.78.59.6",
+      "server_port": 47571,
+      "uuid": "88a67610-b7ae-42ba-8af0-29cfa54cef37",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.amd.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "SsqcoKQAh4wOwKVxQcS4QGb_8xiHJ_IgzsEoTsEPDj8",
-          "short_id": "41dd2ebdd7e0a61a"
+          "public_key": "OyfEDzOiDM5eMvTacJ4bVhF1V0QZgvz-vP3K456l3W4",
+          "short_id": "4c8b46e500b0f3ad"
         }
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 12 - BobQoo",
-      "server": "84.247.155.196",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 13 - BobQoo",
-      "server": "84.247.155.196",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 14 - BobQoo",
-      "server": "154.31.114.248",
-      "server_port": 50159,
-      "uuid": "d56624b2-35bb-468c-9b2a-e0b0df7230c1",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA",
-          "short_id": "091e1c5db8451757"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 15 - BobQoo",
-      "server": "138.3.208.26",
-      "server_port": 50160,
-      "password": "184cdec28da5a09450803c8debcd2cc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 16 - BobQoo",
-      "server": "3.114.220.22",
-      "server_port": 10583,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 17 - BobQoo",
       "server": "3.114.220.22",
       "server_port": 19645,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -267,540 +191,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 18 - BobQoo",
-      "server": "54.178.110.17",
-      "server_port": 4443,
-      "uuid": "d5fbd83b-7346-4ad9-94c0-76293724824d",
-      "tls": {
-        "enabled": true,
-        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 13 - BobQoo",
+      "server": "84.247.155.196",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 19 - BobQoo",
-      "server": "92.113.124.204",
-      "server_port": 18443,
-      "uuid": "48a3d3a6-4fbb-4842-9f7b-71a976b3fbb5",
-      "tls": {
-        "enabled": true,
-        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 20 - BobQoo",
-      "server": "203.137.165.164",
-      "server_port": 57554,
-      "uuid": "d52e6720-3eb3-44c3-a476-c780e3137599",
-      "tls": {
-        "enabled": true,
-        "server_name": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 21 - BobQoo",
-      "server": "210.152.85.154",
-      "server_port": 19364,
-      "uuid": "9dc0aa1f-8df6-4d80-b17c-7b92cdfc514d",
-      "tls": {
-        "enabled": true,
-        "server_name": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 22 - BobQoo",
-      "server": "210.152.85.154",
-      "server_port": 19364,
-      "uuid": "7567dad8-bac4-4d79-ad01-560ac5f92693",
-      "tls": {
-        "enabled": true,
-        "server_name": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 23 - BobQoo",
-      "server": "92.113.124.204",
-      "server_port": 18443,
-      "uuid": "89c1a02f-cef2-4d73-af87-21f894aa3cd5",
-      "tls": {
-        "enabled": true,
-        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 24 - BobQoo",
-      "server": "203.137.165.164",
-      "server_port": 57554,
-      "uuid": "9c7501fb-4e23-44d8-9a9e-973807ae4f35",
-      "tls": {
-        "enabled": true,
-        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 25 - BobQoo",
-      "server": "92.113.124.204",
-      "server_port": 18443,
-      "uuid": "138c5813-f569-456e-b24c-2d5792f79ba5",
-      "tls": {
-        "enabled": true,
-        "server_name": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 26 - BobQoo",
-      "server": "13.231.7.104",
-      "server_port": 24620,
-      "uuid": "b969ef8f-7bdb-474f-9481-d8f3c5686fb8",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amd.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "eZthMfn0kQJFNr_srk502fr8yUHMoHQ7Oh3v4_HfTBI",
-          "short_id": "db2cb3b3c2dbb711"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 27 - BobQoo",
-      "server": "203.137.165.164",
-      "server_port": 57554,
-      "uuid": "281be80c-6034-4db1-b456-5a5307c6edee",
-      "tls": {
-        "enabled": true,
-        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 28 - BobQoo",
-      "server": "206.251.54.34",
-      "server_port": 55596,
-      "uuid": "9fc6444b-987a-41d5-9bf5-195d147e0a05",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amd.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QQUHUyF5Wb3XeRRrky-WOaRTxBtHokNaMec02HURWSI",
-          "short_id": "6ac09686189038"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 29 - BobQoo",
-      "server": "57.129.130.57",
-      "server_port": 52014,
-      "uuid": "091ea5fd-4e8d-4459-90af-e4d10179efff",
-      "tls": {
-        "enabled": true,
-        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 30 - BobQoo",
-      "server": "57.129.130.10",
-      "server_port": 52014,
-      "uuid": "bca740c6-6704-48ba-99da-7d7a31768d73",
-      "tls": {
-        "enabled": true,
-        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 31 - BobQoo",
-      "server": "45.76.87.125",
-      "server_port": 14750,
-      "uuid": "432289de-8dec-46ef-9a3f-001a3af178a7",
-      "tls": {
-        "enabled": true,
-        "server_name": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 32 - BobQoo",
-      "server": "129.151.64.169",
-      "server_port": 31867,
-      "uuid": "112c9db0-af6f-48b0-a59f-7677bed8e2d7",
-      "tls": {
-        "enabled": true,
-        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 33 - BobQoo",
-      "server": "80.240.18.227",
-      "server_port": 10051,
-      "uuid": "f4d859eb-abc6-4c57-9eee-8fe9e2ef0f94",
-      "tls": {
-        "enabled": true,
-        "server_name": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 34 - BobQoo",
-      "server": "57.129.130.57",
-      "server_port": 52014,
-      "uuid": "201e0019-2e79-4147-8a09-e510d630abeb",
-      "tls": {
-        "enabled": true,
-        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 35 - BobQoo",
-      "server": "45.131.66.61",
-      "server_port": 20001,
-      "uuid": "ee81134a-7e64-4e3c-bc35-2847da71cf8d",
-      "tls": {
-        "enabled": true,
-        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 36 - BobQoo",
-      "server": "109.120.150.185",
-      "server_port": 11261,
-      "uuid": "a2eab2e7-af9e-4ea9-a603-05e83aa7bbea",
-      "tls": {
-        "enabled": true,
-        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 37 - BobQoo",
-      "server": "45.131.66.61",
-      "server_port": 20001,
-      "uuid": "552083b3-b800-434f-972e-9d5600600a39",
-      "tls": {
-        "enabled": true,
-        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 38 - BobQoo",
-      "server": "137.220.221.179",
-      "server_port": 443,
-      "uuid": "a16a3336-c9ab-489f-9b85-c973f5e2cfa4"
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 39 (家宽) - BobQoo",
-      "server": "2.26.91.98",
-      "server_port": 1443,
-      "uuid": "fd30c61d-82bf-449c-aa9e-565d0ab64b75",
-      "tls": {
-        "enabled": true,
-        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 40 - BobQoo",
-      "server": "84.22.150.39",
-      "server_port": 7443,
-      "uuid": "5cc814de-2bbb-4409-ad8c-ee841ca7bad1",
-      "tls": {
-        "enabled": true,
-        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 41 - BobQoo",
-      "server": "91.186.218.227",
-      "server_port": 4443,
-      "uuid": "e6059f19-eb60-4165-9bb7-271750d2629e",
-      "tls": {
-        "enabled": true,
-        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 42 - BobQoo",
+      "tag": "🇯🇵 日本 (Japan) 14 - BobQoo",
       "server": "3.114.220.22",
       "server_port": 18007,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -821,7 +221,56 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 43 - BobQoo",
+      "tag": "🇯🇵 日本 (Japan) 15 - BobQoo",
+      "server": "3.114.220.22",
+      "server_port": 10583,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 16 - BobQoo",
+      "server": "jp.wxgqlfx.top",
+      "server_port": 26518,
+      "uuid": "e01fcb68-3112-49da-b85d-dffb799cfc9b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1fa6iCY7vhoQyKu91FeaK04FN-mr1qeHnrtdyLZ79mk",
+          "short_id": "6caead99"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 17 - BobQoo",
+      "server": "137.220.221.179",
+      "server_port": 443,
+      "uuid": "a16a3336-c9ab-489f-9b85-c973f5e2cfa4"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 18 - BobQoo",
       "server": "31.76.91.72",
       "server_port": 2087,
       "uuid": "524e00ce-ed89-481d-b4a4-6d7017f884e3",
@@ -844,54 +293,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 44 - BobQoo",
-      "server": "104.21.70.21",
-      "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 45 - BobQoo",
-      "server": "91.186.218.227",
-      "server_port": 4443,
-      "uuid": "97423fab-93df-4061-be7a-e6ca8d7eb3d7",
-      "tls": {
-        "enabled": true,
-        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 46 - BobQoo",
+      "tag": "🇯🇵 日本 (Japan) 19 - BobQoo",
       "server": "168.138.43.75",
       "server_port": 80,
       "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
@@ -903,35 +306,6 @@
           "Host": "168.138.43.75"
         }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 47 - BobQoo",
-      "server": "104.105.138.244",
-      "server_port": 443,
-      "uuid": "f5c4664b-67ab-4d92-801d-a60984e104d4",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "rpROz1JNz8wRk2QT5o7jwE9CzJUWMvPNXoeWyS3c1WM",
-          "short_id": "09994e53af766acd"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 48 - BobQoo",
-      "server": "oc.imfun.fun",
-      "server_port": 18112,
-      "uuid": "ad45f8f6-0f0a-4cc4-b907-c4582407dc94",
-      "security": "auto"
     },
     {
       "type": "selector",
@@ -956,36 +330,7 @@
         "🇯🇵 日本 (Japan) 16 - BobQoo",
         "🇯🇵 日本 (Japan) 17 - BobQoo",
         "🇯🇵 日本 (Japan) 18 - BobQoo",
-        "🇯🇵 日本 (Japan) 19 - BobQoo",
-        "🇯🇵 日本 (Japan) 20 - BobQoo",
-        "🇯🇵 日本 (Japan) 21 - BobQoo",
-        "🇯🇵 日本 (Japan) 22 - BobQoo",
-        "🇯🇵 日本 (Japan) 23 - BobQoo",
-        "🇯🇵 日本 (Japan) 24 - BobQoo",
-        "🇯🇵 日本 (Japan) 25 - BobQoo",
-        "🇯🇵 日本 (Japan) 26 - BobQoo",
-        "🇯🇵 日本 (Japan) 27 - BobQoo",
-        "🇯🇵 日本 (Japan) 28 - BobQoo",
-        "🇯🇵 日本 (Japan) 29 - BobQoo",
-        "🇯🇵 日本 (Japan) 30 - BobQoo",
-        "🇯🇵 日本 (Japan) 31 - BobQoo",
-        "🇯🇵 日本 (Japan) 32 - BobQoo",
-        "🇯🇵 日本 (Japan) 33 - BobQoo",
-        "🇯🇵 日本 (Japan) 34 - BobQoo",
-        "🇯🇵 日本 (Japan) 35 - BobQoo",
-        "🇯🇵 日本 (Japan) 36 - BobQoo",
-        "🇯🇵 日本 (Japan) 37 - BobQoo",
-        "🇯🇵 日本 (Japan) 38 - BobQoo",
-        "🇯🇵 日本 (Japan) 39 (家宽) - BobQoo",
-        "🇯🇵 日本 (Japan) 40 - BobQoo",
-        "🇯🇵 日本 (Japan) 41 - BobQoo",
-        "🇯🇵 日本 (Japan) 42 - BobQoo",
-        "🇯🇵 日本 (Japan) 43 - BobQoo",
-        "🇯🇵 日本 (Japan) 44 - BobQoo",
-        "🇯🇵 日本 (Japan) 45 - BobQoo",
-        "🇯🇵 日本 (Japan) 46 - BobQoo",
-        "🇯🇵 日本 (Japan) 47 - BobQoo",
-        "🇯🇵 日本 (Japan) 48 - BobQoo"
+        "🇯🇵 日本 (Japan) 19 - BobQoo"
       ]
     },
     {
@@ -1010,36 +355,7 @@
         "🇯🇵 日本 (Japan) 16 - BobQoo",
         "🇯🇵 日本 (Japan) 17 - BobQoo",
         "🇯🇵 日本 (Japan) 18 - BobQoo",
-        "🇯🇵 日本 (Japan) 19 - BobQoo",
-        "🇯🇵 日本 (Japan) 20 - BobQoo",
-        "🇯🇵 日本 (Japan) 21 - BobQoo",
-        "🇯🇵 日本 (Japan) 22 - BobQoo",
-        "🇯🇵 日本 (Japan) 23 - BobQoo",
-        "🇯🇵 日本 (Japan) 24 - BobQoo",
-        "🇯🇵 日本 (Japan) 25 - BobQoo",
-        "🇯🇵 日本 (Japan) 26 - BobQoo",
-        "🇯🇵 日本 (Japan) 27 - BobQoo",
-        "🇯🇵 日本 (Japan) 28 - BobQoo",
-        "🇯🇵 日本 (Japan) 29 - BobQoo",
-        "🇯🇵 日本 (Japan) 30 - BobQoo",
-        "🇯🇵 日本 (Japan) 31 - BobQoo",
-        "🇯🇵 日本 (Japan) 32 - BobQoo",
-        "🇯🇵 日本 (Japan) 33 - BobQoo",
-        "🇯🇵 日本 (Japan) 34 - BobQoo",
-        "🇯🇵 日本 (Japan) 35 - BobQoo",
-        "🇯🇵 日本 (Japan) 36 - BobQoo",
-        "🇯🇵 日本 (Japan) 37 - BobQoo",
-        "🇯🇵 日本 (Japan) 38 - BobQoo",
-        "🇯🇵 日本 (Japan) 39 (家宽) - BobQoo",
-        "🇯🇵 日本 (Japan) 40 - BobQoo",
-        "🇯🇵 日本 (Japan) 41 - BobQoo",
-        "🇯🇵 日本 (Japan) 42 - BobQoo",
-        "🇯🇵 日本 (Japan) 43 - BobQoo",
-        "🇯🇵 日本 (Japan) 44 - BobQoo",
-        "🇯🇵 日本 (Japan) 45 - BobQoo",
-        "🇯🇵 日本 (Japan) 46 - BobQoo",
-        "🇯🇵 日本 (Japan) 47 - BobQoo",
-        "🇯🇵 日本 (Japan) 48 - BobQoo"
+        "🇯🇵 日本 (Japan) 19 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

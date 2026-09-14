@@ -5,21 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - BobQoo
-  server: 149.88.23.202
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 02 - BobQoo
-  server: 176.97.64.144
-  port: 8388
+  server: 167.150.100.115
+  port: 27755
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: TFElG2FVqyqG
-- name: 🇸🇬 新加坡 (Singapore) 03 - BobQoo
+  cipher: 2022-blake3-aes-256-gcm
+  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
+- name: 🇸🇬 新加坡 (Singapore) 02 - BobQoo
   server: 149.88.23.207
   port: 18000
   udp: true
@@ -27,14 +19,14 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 04 - BobQoo
-  server: 167.150.100.115
-  port: 27755
+- name: 🇸🇬 新加坡 (Singapore) 03 - BobQoo
+  server: 176.97.64.144
+  port: 8388
   udp: true
   type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
-- name: 🇸🇬 新加坡 (Singapore) 05 - BobQoo
+  cipher: chacha20-ietf-poly1305
+  password: TFElG2FVqyqG
+- name: 🇸🇬 新加坡 (Singapore) 04 - BobQoo
   server: 138.2.89.249
   port: 443
   udp: true
@@ -44,7 +36,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 309502c4a8df10b46fb976d4a8c43f42
-- name: 🇸🇬 新加坡 (Singapore) 06 - BobQoo
+- name: 🇸🇬 新加坡 (Singapore) 05 - BobQoo
   server: 146.235.16.130
   port: 19825
   udp: true
@@ -57,7 +49,23 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: sg2-8sb.6121999.dpdns.org
   client-fingerprint: ''
+- name: 🇸🇬 新加坡 (Singapore) 06 - BobQoo
+  server: 13.212.32.171
+  port: 443
+  udp: true
+  type: hysteria2
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 07 - BobQoo
+  server: 47.129.189.148
+  port: 443
+  udp: true
+  type: hysteria2
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 08 - BobQoo
   server: 91.192.81.214
   port: 443
   udp: true
@@ -70,31 +78,7 @@ proxies:
     short-id: d1742269
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 08 - BobQoo
-  server: select-sg.ddnskunlun.com
-  port: 9039
-  udp: true
-  type: vmess
-  uuid: 4fa65799-694e-316b-b2d3-30c793777cbf
-  alterId: 0
-  cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 09 - BobQoo
-  server: 13.212.32.171
-  port: 443
-  udp: true
-  type: hysteria2
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 10 - BobQoo
-  server: 13.212.83.43
-  port: 443
-  udp: true
-  type: hysteria2
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 11 - BobQoo
   server: 163.128.99.36
   port: 443
   udp: true
@@ -107,25 +91,47 @@ proxies:
     short-id: ab1df8505f6e0072
   servername: www.apple.com
   client-fingerprint: safari
-- name: 🇸🇬 新加坡 (Singapore) 12 - BobQoo
-  server: 18.138.236.142
-  port: 8686
+- name: 🇸🇬 新加坡 (Singapore) 10 - BobQoo
+  server: 3.0.111.82
+  port: 12972
   udp: true
   type: vless
-  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw
-    short-id: 628b3c90c98ead4f
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 13 - BobQoo
+- name: 🇸🇬 新加坡 (Singapore) 11 - BobQoo
   server: 54.151.142.26
   port: 443
   udp: true
   type: hysteria2
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-001.fastervpn.world
+  sni: t.me
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 12 - BobQoo
+  server: 3.0.111.82
+  port: 10574
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 13 - BobQoo
+  server: msjp1.mangshe.xyz
+  port: 20562
+  udp: true
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: www.microsoft.com
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 14 - BobQoo
   server: 46.137.202.178
@@ -141,6 +147,14 @@ proxies:
   servername: www.intel.com
   client-fingerprint: firefox
 - name: 🇸🇬 新加坡 (Singapore) 15 - BobQoo
+  server: mszz.mangshe.xyz
+  port: 20562
+  udp: true
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 16 - BobQoo
   server: 217.217.254.126
   port: 2053
   udp: true
@@ -152,31 +166,20 @@ proxies:
     short-id: 87829de0e2bb82cb
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 16 - BobQoo
-  server: 138.2.73.238
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: www.bing.com
-  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 17 - BobQoo
-  server: msjp1.mangshe.xyz
-  port: 20562
+  server: 3.0.111.82
+  port: 17623
   udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: www.microsoft.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 18 - BobQoo
-  server: sg1.xiaoliyu.cyou
-  port: 1933
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: sg1.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 19 - BobQoo
   server: 141.193.213.21
   port: 8443
   udp: true
@@ -191,16 +194,16 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 20 - BobQoo
-  server: 47.129.189.148
-  port: 443
+- name: 🇸🇬 新加坡 (Singapore) 19 - BobQoo
+  server: sg1.xiaoliyu.cyou
+  port: 1933
   udp: true
   type: hysteria2
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-001.fastervpn.world
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: sg1.xiaoliyu.cyou
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 21 - BobQoo
-  server: 104.17.159.229
+- name: 🇸🇬 新加坡 (Singapore) 20 - BobQoo
+  server: 104.17.159.75
   port: 2053
   udp: true
   type: vless
@@ -214,82 +217,14 @@ proxies:
     path: /static/media/video-chunk.f4v
     headers:
       Host: singapore.36109178.xyz
-- name: 🇸🇬 新加坡 (Singapore) 22 - BobQoo
-  server: 3.0.111.82
-  port: 17623
+- name: 🇸🇬 新加坡 (Singapore) 21 - BobQoo
+  server: 138.2.73.238
+  port: 50160
   udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 23 - BobQoo
-  server: support.zoom.us
-  port: 80
-  udp: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 24 - BobQoo
-  server: 141.193.213.20
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  tls: true
-  servername: speed.dulacloud.store
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /dula
-    headers:
-      Host: speed.dulacloud.store
-- name: 🇸🇬 新加坡 (Singapore) 25 - BobQoo
-  server: 170.114.46.6
-  port: 80
-  udp: true
-  type: vless
-  uuid: cac6ec8f-99f0-44c5-814f-2f3f65e4db74
-  network: ws
-  ws-opts:
-    path: /dula
-    headers:
-      Host: speed.dulacloud.store
-- name: 🇸🇬 新加坡 (Singapore) 26 - BobQoo
-  server: 3.0.111.82
-  port: 10574
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 27 - BobQoo
-  server: 3.0.111.82
-  port: 12972
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: f87376e17da040ed04c9665ce8972930
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -316,12 +251,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 19 - BobQoo
   - 🇸🇬 新加坡 (Singapore) 20 - BobQoo
   - 🇸🇬 新加坡 (Singapore) 21 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 22 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 23 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 24 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 25 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 26 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 27 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -348,11 +277,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 19 - BobQoo
   - 🇸🇬 新加坡 (Singapore) 20 - BobQoo
   - 🇸🇬 新加坡 (Singapore) 21 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 22 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 23 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 24 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 25 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 26 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 27 - BobQoo
 rules:
 - MATCH,PROXIES

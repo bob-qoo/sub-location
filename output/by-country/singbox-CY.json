@@ -14,7 +14,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -28,14 +28,14 @@
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - BobQoo",
       "server": "45.9.2.171",
       "server_port": 8443,
-      "uuid": "8fe31772-a4b7-4a70-9fa2-34124c7284ca",
+      "uuid": "167610e4-bcaf-4074-bc2d-0c08dc4ea294",
       "tls": {
         "enabled": true,
         "server_name": "torr.wlrus.cfd",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
@@ -45,21 +45,20 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - BobQoo",
-      "server": "89.105.206.123",
-      "server_port": 443,
-      "uuid": "3a22ca95-bd99-00e9-a799-f8f73930ea05",
-      "flow": "xtls-rprx-vision",
+      "server": "cassiopeia.yokkastars.com",
+      "server_port": 40443,
+      "uuid": "e4371581-c418-4770-b09a-d630f18290a6",
       "tls": {
         "enabled": true,
-        "server_name": "nl.convert-flow.net",
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w",
-          "short_id": "00a61d55a07de885"
+          "public_key": "WFvn-RRJzpt2qV4xwj_R93gDr6dduIjkQKO3De3Y2Hc",
+          "short_id": "5d96"
         }
       }
     },
@@ -106,26 +105,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 06 - BobQoo",
-      "server": "194.59.245.250",
-      "server_port": 40443,
-      "uuid": "e4371581-c418-4770-b09a-d630f18290a6",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "WFvn-RRJzpt2qV4xwj_R93gDr6dduIjkQKO3De3Y2Hc",
-          "short_id": "5d96"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -134,8 +113,7 @@
         "🇨🇾 塞浦路斯 (Cyprus) 02 - BobQoo",
         "🇨🇾 塞浦路斯 (Cyprus) 03 - BobQoo",
         "🇨🇾 塞浦路斯 (Cyprus) 04 - BobQoo",
-        "🇨🇾 塞浦路斯 (Cyprus) 05 - BobQoo",
-        "🇨🇾 塞浦路斯 (Cyprus) 06 - BobQoo"
+        "🇨🇾 塞浦路斯 (Cyprus) 05 - BobQoo"
       ]
     },
     {
@@ -146,8 +124,7 @@
         "🇨🇾 塞浦路斯 (Cyprus) 02 - BobQoo",
         "🇨🇾 塞浦路斯 (Cyprus) 03 - BobQoo",
         "🇨🇾 塞浦路斯 (Cyprus) 04 - BobQoo",
-        "🇨🇾 塞浦路斯 (Cyprus) 05 - BobQoo",
-        "🇨🇾 塞浦路斯 (Cyprus) 06 - BobQoo"
+        "🇨🇾 塞浦路斯 (Cyprus) 05 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

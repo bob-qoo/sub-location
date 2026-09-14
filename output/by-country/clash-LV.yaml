@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - BobQoo
   server: 185.135.86.175
-  port: 9036
+  port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
+  password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - BobQoo
   server: 185.135.86.175
   port: 9082
@@ -20,46 +20,32 @@ proxies:
   password: 45xgMgm386pjWjTx
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - BobQoo
   server: 185.135.86.175
+  port: 9036
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: hbtvgUz5uNYyB3Rf
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - BobQoo
+  server: 185.135.86.175
   port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - BobQoo
-  server: 185.135.86.175
-  port: 9094
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: rpgbNnU9rDDU4aWZ
 - name: 🇱🇻 拉脱维亚 (Latvia) 05 - BobQoo
-  server: 185.135.86.175
-  port: 9007
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: kSPmvwdFzGMMW5pY
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - BobQoo
-  server: 185.135.86.175
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇻 拉脱维亚 (Latvia) 07 - BobQoo
-  server: 89.105.206.123
+  server: 195.123.213.28
   port: 443
   udp: true
   type: vless
-  uuid: 3a22ca95-bd99-01ac-a799-f8f73930ea05
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
-    short-id: 00a61d55a07de885
-  servername: nl.convert-flow.net
-  client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 (Latvia) 08 - BobQoo
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - BobQoo
   server: 138.124.180.137
   port: 443
   udp: true
@@ -72,19 +58,6 @@ proxies:
     short-id: 33acba1b
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 09 - BobQoo
-  server: 45.39.108.109
-  port: 443
-  udp: true
-  type: vless
-  uuid: d806a58b-33aa-42e0-b170-395e49c16b37
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Y0noOXC8qHmbM0GmDpj-9BBwKSOtHs-uMbNfKU050GQ
-    short-id: b558b9305a0b
-  servername: www.microsoft.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -96,9 +69,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 04 - BobQoo
   - 🇱🇻 拉脱维亚 (Latvia) 05 - BobQoo
   - 🇱🇻 拉脱维亚 (Latvia) 06 - BobQoo
-  - 🇱🇻 拉脱维亚 (Latvia) 07 - BobQoo
-  - 🇱🇻 拉脱维亚 (Latvia) 08 - BobQoo
-  - 🇱🇻 拉脱维亚 (Latvia) 09 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,8 +80,5 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 04 - BobQoo
   - 🇱🇻 拉脱维亚 (Latvia) 05 - BobQoo
   - 🇱🇻 拉脱维亚 (Latvia) 06 - BobQoo
-  - 🇱🇻 拉脱维亚 (Latvia) 07 - BobQoo
-  - 🇱🇻 拉脱维亚 (Latvia) 08 - BobQoo
-  - 🇱🇻 拉脱维亚 (Latvia) 09 - BobQoo
 rules:
 - MATCH,PROXIES

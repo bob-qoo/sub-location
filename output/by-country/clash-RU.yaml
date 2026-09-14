@@ -5,26 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - BobQoo
-  server: 185.39.204.3
-  port: 8098
+  server: 91.240.86.70
+  port: 22443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: PluSKSrbtxTvlVv7BOUwn4
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: hy.quattro-tech.ru
+  skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 (Russia) 02 - BobQoo
-  server: 89.105.206.123
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3a22ca95-bd99-0028-a799-f8f73930ea05
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
-    short-id: 00a61d55a07de885
-  servername: nl.convert-flow.net
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 03 - BobQoo
   server: msk.frkn.org
   port: 443
   udp: true
@@ -32,13 +20,6 @@ proxies:
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 04 - BobQoo
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,8 +27,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - BobQoo
   - 🇷🇺 俄罗斯 (Russia) 02 - BobQoo
-  - 🇷🇺 俄罗斯 (Russia) 03 - BobQoo
-  - 🇷🇺 俄罗斯 (Russia) 04 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,7 +34,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - BobQoo
   - 🇷🇺 俄罗斯 (Russia) 02 - BobQoo
-  - 🇷🇺 俄罗斯 (Russia) 03 - BobQoo
-  - 🇷🇺 俄罗斯 (Russia) 04 - BobQoo
 rules:
 - MATCH,PROXIES
