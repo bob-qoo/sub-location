@@ -4,68 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01 - BobQoo",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "527451fe-ee1f-4e6f-94ca-808f055f7c9b",
-      "transport": {
-        "type": "ws",
-        "path": "/vl/ERYN0G44hia16zhR",
-        "headers": {
-          "Host": "05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - BobQoo",
-      "server": "fpoixf69hqt3e6d4urtb.mamadneizeh.workers.dev",
-      "server_port": 443,
-      "uuid": "0b41f339-5809-46ef-8351-b03fdc441539",
-      "tls": {
-        "enabled": true,
-        "server_name": "FpoiXF69hQT3E6d4URTB.MamADNEIZeH.WorKers.DEV",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/lYNtP7z8pJUmfp01tz5wEnuDujJtZ?ed=2560"
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - BobQoo",
+      "tag": "🇷🇺 俄罗斯 (Russia) 01 - BobQoo",
       "server": "185.39.204.3",
       "server_port": 8098,
       "method": "chacha20-ietf-poly1305",
       "password": "PluSKSrbtxTvlVv7BOUwn4"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - BobQoo",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs="
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - BobQoo",
-      "server": "131.123.25.3",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - BobQoo",
+      "server": "89.105.206.123",
       "server_port": 443,
       "uuid": "3a22ca95-bd99-0028-a799-f8f73930ea05",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "fr.convert-flow.net",
+        "server_name": "nl.convert-flow.net",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -79,54 +34,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - BobQoo",
-      "server": "els1.mangshe.xyz",
-      "server_port": 2056,
-      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07 - BobQoo",
-      "server": "170.168.99.8",
-      "server_port": 8443,
-      "uuid": "dca76b88-b038-e82b-45e1-1d76b476d7ca",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.epson.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-GbQJg3bnEGEVFjVaRRu01cgF1f0K_maI4d5MWtMb28",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 08 - BobQoo",
-      "server": "212.67.9.113",
-      "server_port": 2200,
-      "uuid": "2aa7f4b1-e859-46d0-b8ac-8587811ab7b1",
-      "transport": {
-        "type": "ws",
-        "path": "/v1"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 09 - BobQoo",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - BobQoo",
       "server": "msk.frkn.org",
       "server_port": 443,
       "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
@@ -137,48 +45,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 10 - BobQoo",
-      "server": "45.12.75.242",
-      "server_port": 26424,
-      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
-      "tls": {
-        "enabled": true,
-        "server_name": "ya.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
-          "short_id": "23103e1e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 11 - BobQoo",
-      "server": "188.68.218.205",
-      "server_port": 443,
-      "uuid": "6aaa7d1d-8b35-4fd2-ae60-0129ad624935",
-      "tls": {
-        "enabled": true,
-        "server_name": "static-basket-01.wbbasket.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8dPBbufX7ST4NrD8Etatp_FR_mbd38vXa2ZXCVLxjQ4",
-          "short_id": "0fc62d3cd3089adb"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - BobQoo",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs="
     },
     {
       "type": "selector",
@@ -188,14 +60,7 @@
         "🇷🇺 俄罗斯 (Russia) 01 - BobQoo",
         "🇷🇺 俄罗斯 (Russia) 02 - BobQoo",
         "🇷🇺 俄罗斯 (Russia) 03 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 04 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 05 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 06 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 07 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 08 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 09 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 10 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 11 - BobQoo"
+        "🇷🇺 俄罗斯 (Russia) 04 - BobQoo"
       ]
     },
     {
@@ -205,14 +70,7 @@
         "🇷🇺 俄罗斯 (Russia) 01 - BobQoo",
         "🇷🇺 俄罗斯 (Russia) 02 - BobQoo",
         "🇷🇺 俄罗斯 (Russia) 03 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 04 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 05 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 06 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 07 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 08 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 09 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 10 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 11 - BobQoo"
+        "🇷🇺 俄罗斯 (Russia) 04 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

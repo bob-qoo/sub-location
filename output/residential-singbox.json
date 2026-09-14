@@ -4,45 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - BobQoo",
-      "server": "172.64.145.202",
-      "server_port": 2083,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "newwk1.f1w.de5.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "newwk1.f1w.de5.net"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo",
-      "server": "r3mrcg001287h3p.cybervena.com",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - BobQoo",
+      "server": "36.224.152.189",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 03 (家宽) - BobQoo",
-      "server": "45.131.66.61",
-      "server_port": 20001,
-      "uuid": "2a903b8e-e072-45cc-9492-d357cfe1e1d3",
+      "tag": "🇯🇵 日本 (Japan) 02 (家宽) - BobQoo",
+      "server": "203.137.165.164",
+      "server_port": 57554,
+      "uuid": "980df025-74b9-4853-93e8-fb813006d7e5",
       "tls": {
         "enabled": true,
-        "server_name": "3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev",
+        "server_name": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -53,14 +30,14 @@
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev"
+          "Host": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - BobQoo",
-      "server": "hinet1.2yly.com",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo",
+      "server": "118.167.209.5",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -82,20 +59,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - BobQoo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo",
-        "🇯🇵 日本 (Japan) 03 (家宽) - BobQoo",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - BobQoo"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - BobQoo",
+        "🇯🇵 日本 (Japan) 02 (家宽) - BobQoo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - BobQoo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo",
-        "🇯🇵 日本 (Japan) 03 (家宽) - BobQoo",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - BobQoo"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - BobQoo",
+        "🇯🇵 日本 (Japan) 02 (家宽) - BobQoo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
