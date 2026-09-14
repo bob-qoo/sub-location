@@ -14,7 +14,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -28,14 +28,14 @@
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - BobQoo",
       "server": "45.9.2.171",
       "server_port": 8443,
-      "uuid": "167610e4-bcaf-4074-bc2d-0c08dc4ea294",
+      "uuid": "8fe31772-a4b7-4a70-9fa2-34124c7284ca",
       "tls": {
         "enabled": true,
         "server_name": "torr.wlrus.cfd",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
@@ -53,7 +53,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,

@@ -18,13 +18,18 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇨🇭 瑞士 (Switzerland) 02 - BobQoo
-  server: 104.165.205.40
-  port: 8443
+  server: 89.105.206.124
+  port: 443
   udp: true
-  type: hysteria2
-  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
-  sni: speedtestmark.com
-  skip-cert-verify: false
+  type: vless
+  uuid: 4360f941-b541-02f0-8507-2de3763e0cfd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
+    short-id: 00a61d55a07de885
+  servername: nl.convert-flow.net
+  client-fingerprint: qq
 - name: 🇨🇭 瑞士 (Switzerland) 03 - BobQoo
   server: 104.165.205.42
   port: 8443
@@ -47,6 +52,22 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf9.rumedia-cdn.com
+- name: 🇨🇭 瑞士 (Switzerland) 05 - BobQoo
+  server: 104.165.205.40
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
+  sni: speedtestmark.com
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 06 - BobQoo
+  server: 140.238.213.114
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,6 +77,8 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - BobQoo
   - 🇨🇭 瑞士 (Switzerland) 03 - BobQoo
   - 🇨🇭 瑞士 (Switzerland) 04 - BobQoo
+  - 🇨🇭 瑞士 (Switzerland) 05 - BobQoo
+  - 🇨🇭 瑞士 (Switzerland) 06 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -65,5 +88,7 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - BobQoo
   - 🇨🇭 瑞士 (Switzerland) 03 - BobQoo
   - 🇨🇭 瑞士 (Switzerland) 04 - BobQoo
+  - 🇨🇭 瑞士 (Switzerland) 05 - BobQoo
+  - 🇨🇭 瑞士 (Switzerland) 06 - BobQoo
 rules:
 - MATCH,PROXIES

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - BobQoo
-  server: 192.145.31.5
+  server: neth9.lunariai.ru
   port: 443
   udp: true
   type: vless
@@ -13,6 +13,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: neth9.lunariai.ru
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - BobQoo
   server: 192.145.31.5
   port: 8443
@@ -25,12 +27,19 @@ proxies:
   client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - BobQoo
   server: 213.183.63.60
-  port: 9064
+  port: 9061
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
+  password: 4R3hUfZ2FHhDmNcP
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - BobQoo
+  server: 213.183.63.60
+  port: 9054
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - BobQoo
   server: 193.148.59.178
   port: 443
   udp: true
@@ -43,20 +52,13 @@ proxies:
     short-id: e3daad69
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - BobQoo
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - BobQoo
   server: 213.183.63.60
   port: 9098
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: aLpQtfEZe445QyHk
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - BobQoo
-  server: 213.183.63.60
-  port: 9066
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 2KUaE2a8NWTvuCZ3
 - name: 🇧🇬 保加利亚 (Bulgaria) 07 - BobQoo
   server: prep.wwwinternetvideo.click
   port: 443
@@ -69,7 +71,7 @@ proxies:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
