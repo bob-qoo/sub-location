@@ -4,8 +4,36 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇳🇴 挪威 (Norway) 01 - BobQoo",
+      "server": "185.213.23.63",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇴 挪威 (Norway) 02 - BobQoo",
+      "server": "46.29.238.88",
+      "server_port": 40443,
+      "uuid": "db320947-adfb-400d-b60b-383b8324bffe",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc",
+          "short_id": "f7b2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇴 挪威 (Norway) 03 - BobQoo",
       "server": "151.242.168.125",
       "server_port": 390,
       "uuid": "7b363f9c-3df9-4b60-a789-9cd36be0bdfe",
@@ -26,10 +54,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 02 - BobQoo",
+      "tag": "🇳🇴 挪威 (Norway) 04 - BobQoo",
       "server": "151.242.169.119",
       "server_port": 443,
-      "uuid": "5acf0180-1ff9-4cfc-9970-66d0aa7ab04e",
+      "uuid": "12350807-4c2a-49fa-aff0-664be66cccb7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -47,27 +75,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 03 - BobQoo",
-      "server": "46.29.238.88",
-      "server_port": 40443,
-      "uuid": "db320947-adfb-400d-b60b-383b8324bffe",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc",
-          "short_id": "f7b2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 04 - BobQoo",
+      "tag": "🇳🇴 挪威 (Norway) 05 - BobQoo",
       "server": "89.185.81.65",
       "server_port": 40443,
       "uuid": "ed91e79c-f6bf-4fba-8cc0-6d45acaec22b",
@@ -93,7 +101,8 @@
         "🇳🇴 挪威 (Norway) 01 - BobQoo",
         "🇳🇴 挪威 (Norway) 02 - BobQoo",
         "🇳🇴 挪威 (Norway) 03 - BobQoo",
-        "🇳🇴 挪威 (Norway) 04 - BobQoo"
+        "🇳🇴 挪威 (Norway) 04 - BobQoo",
+        "🇳🇴 挪威 (Norway) 05 - BobQoo"
       ]
     },
     {
@@ -103,7 +112,8 @@
         "🇳🇴 挪威 (Norway) 01 - BobQoo",
         "🇳🇴 挪威 (Norway) 02 - BobQoo",
         "🇳🇴 挪威 (Norway) 03 - BobQoo",
-        "🇳🇴 挪威 (Norway) 04 - BobQoo"
+        "🇳🇴 挪威 (Norway) 04 - BobQoo",
+        "🇳🇴 挪威 (Norway) 05 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

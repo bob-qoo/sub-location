@@ -5,26 +5,25 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇵🇰 巴基斯坦 (Pakistan) 01 - BobQoo",
-      "server": "64.49.38.9",
-      "server_port": 8443,
-      "uuid": "4350213a-b4e7-262a-0bd7-bd16957cf71a",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - BobQoo",
+      "server": "45.131.66.61",
+      "server_port": 20001,
+      "uuid": "2a903b8e-e072-45cc-9492-d357cfe1e1d3",
       "tls": {
         "enabled": true,
-        "server_name": "download.nvidia.com",
+        "server_name": "3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "JeVpfwIwteGa8xfysPJUzrbHgmOPyLGomRqyH8Pi7W0",
-          "short_id": ""
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev"
+        }
       }
     },
     {
@@ -32,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇰 巴基斯坦 (Pakistan) 01 - BobQoo"
+        "🇯🇵 日本 (Japan) 01 (家宽) - BobQoo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇰 巴基斯坦 (Pakistan) 01 - BobQoo"
+        "🇯🇵 日本 (Japan) 01 (家宽) - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

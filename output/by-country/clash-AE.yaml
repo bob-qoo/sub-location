@@ -5,15 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - BobQoo
-  server: 104.143.223.65
-  port: 2085
+  server: 188.114.98.16
+  port: 2082
   udp: true
   type: vless
-  uuid: a1d1b142-17c5-4472-99de-df220df4d4fb
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  network: ws
+  ws-opts:
+    path: /rry8le3tt8f3g5j7kr
+    headers:
+      Host: index.harmonica02.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 02 - BobQoo
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 03 - BobQoo
   server: 31.56.189.27
   port: 2087
   udp: true
@@ -26,50 +38,37 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: freegrpc
-- name: 🇦🇪 阿联酋 (UAE) 03 - BobQoo
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - BobQoo
-  server: 89.47.55.8
-  port: 8443
+  server: 203.137.165.164
+  port: 57554
   udp: true
   type: vless
-  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
+  uuid: af42cdf8-701e-4a51-b196-a80281dcbe24
   tls: true
-  reality-opts:
-    public-key: WtLZK1KyhSpI3K-R4M3sLAHWPOgGPMgkL6RneL0OfCY
-  servername: download.nvidia.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇦🇪 阿联酋 (UAE) 05 - BobQoo
-  server: 85.204.107.181
-  port: 8080
-  udp: true
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
   skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 06 - BobQoo
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /@Marisa_kristi
     headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - BobQoo
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 05 - BobQoo
+  server: 210.152.85.154
+  port: 19364
+  udp: true
+  type: vless
+  uuid: 10fd5cba-3daa-432b-aa47-8143820656a3
+  tls: true
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 06 - BobQoo
   server: 89.47.55.8
   port: 8443
   udp: true
@@ -83,6 +82,84 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
+- name: 🇦🇪 阿联酋 (UAE) 07 - BobQoo
+  server: 85.204.107.174
+  port: 8080
+  udp: true
+  type: hysteria2
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 08 - BobQoo
+  server: 89.47.55.8
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
+  tls: true
+  reality-opts:
+    public-key: WtLZK1KyhSpI3K-R4M3sLAHWPOgGPMgkL6RneL0OfCY
+  servername: download.nvidia.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇦🇪 阿联酋 (UAE) 09 - BobQoo
+  server: 84.235.244.108
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 10 - BobQoo
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: e22915a4-b593-4fa4-90c1-543a11a72cd3
+  tls: true
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 11 - BobQoo
+  server: 213.21.229.126
+  port: 12345
+  udp: true
+  type: vless
+  uuid: 48312288-a6eb-4cf7-9d75-73ddad1c9d1a
+  tls: true
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 12 - BobQoo
+  server: 91.186.218.227
+  port: 4443
+  udp: true
+  type: vless
+  uuid: b1f373d2-e67a-4d72-824a-d4dc726b2c28
+  tls: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,6 +172,11 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - BobQoo
   - 🇦🇪 阿联酋 (UAE) 06 - BobQoo
   - 🇦🇪 阿联酋 (UAE) 07 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 08 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 09 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 10 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 11 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 12 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -107,5 +189,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - BobQoo
   - 🇦🇪 阿联酋 (UAE) 06 - BobQoo
   - 🇦🇪 阿联酋 (UAE) 07 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 08 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 09 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 10 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 11 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 12 - BobQoo
 rules:
 - MATCH,PROXIES

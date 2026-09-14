@@ -25,43 +25,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 02 - BobQoo",
-      "server": "lp.mtcmicserver.ir",
-      "server_port": 8080,
-      "uuid": "fa87edcc-4751-4d28-b53b-3abf7bee7ece",
-      "tls": {
-        "enabled": true,
-        "server_name": "play-apps-features.googleusercontent.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wegUSBXt8tLaCp7Ze22cuKJa-MQ0KRSe7BX1dDgLRQg",
-          "short_id": "b397faa58de7c5f3"
-        }
-      },
-      "transport": {
-        "type": "grpc"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 (Israel) 01 - BobQoo",
-        "🇮🇱 以色列 (Israel) 02 - BobQoo"
+        "🇮🇱 以色列 (Israel) 01 - BobQoo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 (Israel) 01 - BobQoo",
-        "🇮🇱 以色列 (Israel) 02 - BobQoo"
+        "🇮🇱 以色列 (Israel) 01 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
