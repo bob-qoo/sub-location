@@ -5,6 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - BobQoo
+  server: 144.225.65.173
+  port: 29199
+  udp: true
+  type: vmess
+  uuid: de2afab2-344b-413f-93a9-5e62c8e219d5
+  alterId: 0
+  cipher: auto
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇹🇷 土耳其 (Turkey) 02 - BobQoo
+  server: 144.225.65.173
+  port: 443
+  udp: true
+  type: vless
+  uuid: 35f8b8f4-b64d-4807-85f2-cc9a88d2ab8d
+- name: 🇹🇷 土耳其 (Turkey) 03 - BobQoo
   server: 107.161.174.26
   port: 443
   udp: true
@@ -15,8 +32,8 @@ proxies:
   reality-opts:
     public-key: N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc
   servername: books.blackbigdog.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 02 - BobQoo
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 04 - BobQoo
   server: 156.67.63.231
   port: 443
   udp: true
@@ -29,22 +46,7 @@ proxies:
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - BobQoo
-  server: 199.232.78.159
-  port: 443
-  udp: true
-  type: vless
-  uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78
-  tls: true
-  servername: global.fastly.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: BechBad.global.ssl.fastly.net
-- name: 🇹🇷 土耳其 (Turkey) 04 - BobQoo
+- name: 🇹🇷 土耳其 (Turkey) 05 - BobQoo
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -56,19 +58,16 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 05 - BobQoo
-  server: 13.143.137.164
-  port: 9443
+- name: 🇹🇷 土耳其 (Turkey) 06 - BobQoo
+  server: me17.msjia8844.site
+  port: 7443
   udp: true
-  type: vless
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ
-    short-id: e336c9a786fae301
-  servername: plaincanvas.videoclothing.xyz
-  client-fingerprint: firefox
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,6 +78,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - BobQoo
   - 🇹🇷 土耳其 (Turkey) 04 - BobQoo
   - 🇹🇷 土耳其 (Turkey) 05 - BobQoo
+  - 🇹🇷 土耳其 (Turkey) 06 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,5 +89,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - BobQoo
   - 🇹🇷 土耳其 (Turkey) 04 - BobQoo
   - 🇹🇷 土耳其 (Turkey) 05 - BobQoo
+  - 🇹🇷 土耳其 (Turkey) 06 - BobQoo
 rules:
 - MATCH,PROXIES

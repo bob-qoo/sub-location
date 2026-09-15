@@ -5,28 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - BobQoo
-  server: 46.17.40.234
-  port: 7018
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - BobQoo
-  server: 46.17.42.166
-  port: 50111
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - BobQoo
-  server: 119.246.1.143
-  port: 443
-  udp: true
-  type: trojan
-  password: BxceQaOe
-  sni: t.me/ripaojiedian
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - BobQoo
   server: 162.128.157.164
   port: 443
   udp: true
@@ -39,25 +17,50 @@ proxies:
     short-id: 14156e3ac23212cc
   servername: www.bing.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - BobQoo
-  server: 47.238.210.5
-  port: 13779
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - BobQoo
+  server: 46.17.42.166
+  port: 50111
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 6b39ae3234dfd68b
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - BobQoo
+  server: 46.17.40.234
+  port: 7018
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - BobQoo
+  server: 207.56.137.51
+  port: 443
   udp: true
   type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
+    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
+    short-id: f713561d
+  servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - BobQoo
+  server: nas.aizhzo.com
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: 127.0.0.1
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - BobQoo
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
+  sni: 202.146.222.174
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - BobQoo
   server: 202.146.222.89
@@ -68,57 +71,69 @@ proxies:
   sni: 202.146.222.89
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - BobQoo
-  server: hk-1.gsafevpnapi.com
-  port: 20270
+  server: 8.217.229.155
+  port: 443
   udp: true
-  type: vless
-  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
-  flow: xtls-rprx-vision
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
-    short-id: d5b538acf8a93540
-  servername: www.yahoo.com
-  client-fingerprint: chrome
+  servername: qTKDR8jXE3wEFxJM.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - BobQoo
-  server: 47.239.6.251
-  port: 13779
+  server: ejomsxptp19apygl.v.3dns.vip
+  port: 443
   udp: true
-  type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  flow: xtls-rprx-vision
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
-  client-fingerprint: chrome
+  servername: ejOMsxPtP19APyGL.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ejOMsxPtP19APyGL.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 10 - BobQoo
-  server: www.wto.org
+  server: 119.246.1.143
+  port: 443
+  udp: true
+  type: trojan
+  password: BxceQaOe
+  sni: 119.246.1.143
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - BobQoo
+  server: 8.218.56.189
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 0c7fa158eb9f72a1c4b80927e48373dc
+  sni: 8.218.56.189
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 5c8f1a3e7b2d9046c1f8a5e3b7d04f2a
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - BobQoo
+  server: 47.83.173.110
   port: 443
   udp: true
   type: vless
-  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
+  uuid: bca6f15f-89db-40e2-a955-19d084229234
+  flow: xtls-rprx-vision
   tls: true
-  servername: hk.152568.xyz
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: hk.152568.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - BobQoo
-  server: nas.aizhzo.com
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - BobQoo
+  reality-opts:
+    public-key: BqFbrSSosM7RAVvUGTRmCrZlHY6aGwq9HEJs0fMdK0s
+    short-id: 8144589880395fa1
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - BobQoo
   server: 212.192.13.233
   port: 443
   udp: true
@@ -131,6 +146,83 @@ proxies:
     short-id: 1bc2c1ef1c
   servername: www.cathaypacific.com
   client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - BobQoo
+  server: 47.239.6.251
+  port: 13779
+  udp: true
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - BobQoo
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: nycqg19zkwacpm1b.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: nycqg19zkwacpm1b.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 16 - BobQoo
+  server: 47.76.137.85
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: I2PSm3Knof5qjjix.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: I2PSm3Knof5qjjix.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 17 - BobQoo
+  server: wwafj5lhl6bi8au9.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: wwafj5lhl6bi8au9.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: wwafj5lhl6bi8au9.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 18 - BobQoo
+  server: vah4urdzl3jdx5r2.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: vah4urdzl3jdx5r2.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -148,6 +240,12 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10 - BobQoo
   - 🇭🇰 中国香港 (Hong Kong) 11 - BobQoo
   - 🇭🇰 中国香港 (Hong Kong) 12 - BobQoo
+  - 🇭🇰 中国香港 (Hong Kong) 13 - BobQoo
+  - 🇭🇰 中国香港 (Hong Kong) 14 - BobQoo
+  - 🇭🇰 中国香港 (Hong Kong) 15 - BobQoo
+  - 🇭🇰 中国香港 (Hong Kong) 16 - BobQoo
+  - 🇭🇰 中国香港 (Hong Kong) 17 - BobQoo
+  - 🇭🇰 中国香港 (Hong Kong) 18 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -165,5 +263,11 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10 - BobQoo
   - 🇭🇰 中国香港 (Hong Kong) 11 - BobQoo
   - 🇭🇰 中国香港 (Hong Kong) 12 - BobQoo
+  - 🇭🇰 中国香港 (Hong Kong) 13 - BobQoo
+  - 🇭🇰 中国香港 (Hong Kong) 14 - BobQoo
+  - 🇭🇰 中国香港 (Hong Kong) 15 - BobQoo
+  - 🇭🇰 中国香港 (Hong Kong) 16 - BobQoo
+  - 🇭🇰 中国香港 (Hong Kong) 17 - BobQoo
+  - 🇭🇰 中国香港 (Hong Kong) 18 - BobQoo
 rules:
 - MATCH,PROXIES
