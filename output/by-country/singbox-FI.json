@@ -4,8 +4,18 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - BobQoo",
+      "server": "65.109.205.148",
+      "server_port": 9097,
+      "uuid": "Channel:telegram:TurboConfigs",
+      "transport": {
+        "type": "http"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - BobQoo",
       "server": "65.109.215.118",
       "server_port": 1080,
       "method": "chacha20-ietf-poly1305",
@@ -13,27 +23,84 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - BobQoo",
-      "server": "185.79.138.71",
-      "server_port": 448,
-      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
-          "short_id": "cd21e552537c7c0b"
+      "tag": "🇫🇮 芬兰 (Finland) 03 - BobQoo",
+      "server": "104.16.72.101",
+      "server_port": 80,
+      "uuid": "d5598622-46b8-b017-3af3-232500000001",
+      "transport": {
+        "type": "ws",
+        "path": "/sync",
+        "headers": {
+          "Host": "nahan-core.netizo09.workers.dev"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - BobQoo",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - BobQoo",
+      "server": "5.61.91.206",
+      "server_port": 443,
+      "uuid": "bd99da97-265e-0021-82cc-4ec009fe9ce2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4",
+          "short_id": "0a4b7c3d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - BobQoo",
+      "server": "185.218.194.69",
+      "server_port": 443,
+      "uuid": "f5a3bf49-07ca-0021-a96b-9606781e3600",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4",
+          "short_id": "6e3f0a5b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - BobQoo",
+      "server": "fl.musicperec.ru",
+      "server_port": 443,
+      "uuid": "f5a3bf49-07ca-0021-a96b-9606781e3600",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4",
+          "short_id": "6e3f0a5b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - BobQoo",
       "server": "31.77.199.147",
       "server_port": 4443,
       "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
@@ -54,7 +121,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - BobQoo",
+      "tag": "🇫🇮 芬兰 (Finland) 08 - BobQoo",
+      "server": "185.79.138.71",
+      "server_port": 448,
+      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
+          "short_id": "cd21e552537c7c0b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 09 - BobQoo",
       "server": "31.77.199.182",
       "server_port": 443,
       "uuid": "c09cfd91-b234-4998-9bed-a0211b7f5c3c",
@@ -75,7 +162,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - BobQoo",
+      "tag": "🇫🇮 芬兰 (Finland) 10 - BobQoo",
       "server": "fl.windconnect.pro",
       "server_port": 443,
       "uuid": "af00e0c4-decf-48f2-9013-56abe9c9efcd",
@@ -95,8 +182,41 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 11 - BobQoo",
+      "server": "fr.vpn.legendaah.xyz",
+      "server_port": 36723,
+      "password": "Krab9Hyst2_Rk7pQ2xL",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - BobQoo",
+      "tag": "🇫🇮 芬兰 (Finland) 12 - BobQoo",
+      "server": "5.61.91.207",
+      "server_port": 443,
+      "uuid": "9ec52cb8-8daa-0021-ac36-d38295a25e5b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4",
+          "short_id": "a7b2c9d4"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 13 - BobQoo",
       "server": "37.143.129.244",
       "server_port": 443,
       "uuid": "0e6de971-69e8-4536-b06d-8b6eae57021b",
@@ -117,33 +237,42 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 07 - BobQoo",
-      "server": "216.24.57.1",
-      "server_port": 443,
-      "uuid": "efc8337e-27ce-4ab4-9ef9-c7f9e5eef575",
+      "tag": "🇫🇮 芬兰 (Finland) 14 - BobQoo",
+      "server": "212.193.18.183",
+      "server_port": 8446,
+      "uuid": "246b101b-4e4a-451f-8e9c-5e8d3b64b4ef",
       "tls": {
         "enabled": true,
-        "server_name": "f.tmkkarss.online",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "maps.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "f6xhmL1XqUJ4zdkaDsh9GuEyXc0JXM2Dp5KwU8VHb0c",
+          "short_id": "7f8e9d0c1b2a"
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "f.tmkkarss.online"
-        }
+        "type": "grpc",
+        "service_name": "snob-grpc"
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 08 - BobQoo",
+      "tag": "🇫🇮 芬兰 (Finland) 15 - BobQoo",
+      "server": "fi.snobvpn.online",
+      "server_port": 80,
+      "uuid": "246b101b-4e4a-451f-8e9c-5e8d3b64b4ef",
+      "transport": {
+        "type": "ws",
+        "path": "/snob-ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 16 - BobQoo",
       "server": "212.193.18.183",
       "server_port": 8443,
       "uuid": "246b101b-4e4a-451f-8e9c-5e8d3b64b4ef",
@@ -162,40 +291,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 09 - BobQoo",
-      "server": "app.console-club.com",
-      "server_port": 443,
-      "uuid": "97ad0365-9197-4d44-b21b-3e2f1a23e578",
-      "tls": {
-        "enabled": true,
-        "server_name": "app.console-club.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/consws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 10 - BobQoo",
-      "server": "fi.snobvpn.online",
-      "server_port": 80,
-      "uuid": "246b101b-4e4a-451f-8e9c-5e8d3b64b4ef",
-      "transport": {
-        "type": "ws",
-        "path": "/snob-ws"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -209,7 +304,13 @@
         "🇫🇮 芬兰 (Finland) 07 - BobQoo",
         "🇫🇮 芬兰 (Finland) 08 - BobQoo",
         "🇫🇮 芬兰 (Finland) 09 - BobQoo",
-        "🇫🇮 芬兰 (Finland) 10 - BobQoo"
+        "🇫🇮 芬兰 (Finland) 10 - BobQoo",
+        "🇫🇮 芬兰 (Finland) 11 - BobQoo",
+        "🇫🇮 芬兰 (Finland) 12 - BobQoo",
+        "🇫🇮 芬兰 (Finland) 13 - BobQoo",
+        "🇫🇮 芬兰 (Finland) 14 - BobQoo",
+        "🇫🇮 芬兰 (Finland) 15 - BobQoo",
+        "🇫🇮 芬兰 (Finland) 16 - BobQoo"
       ]
     },
     {
@@ -225,7 +326,13 @@
         "🇫🇮 芬兰 (Finland) 07 - BobQoo",
         "🇫🇮 芬兰 (Finland) 08 - BobQoo",
         "🇫🇮 芬兰 (Finland) 09 - BobQoo",
-        "🇫🇮 芬兰 (Finland) 10 - BobQoo"
+        "🇫🇮 芬兰 (Finland) 10 - BobQoo",
+        "🇫🇮 芬兰 (Finland) 11 - BobQoo",
+        "🇫🇮 芬兰 (Finland) 12 - BobQoo",
+        "🇫🇮 芬兰 (Finland) 13 - BobQoo",
+        "🇫🇮 芬兰 (Finland) 14 - BobQoo",
+        "🇫🇮 芬兰 (Finland) 15 - BobQoo",
+        "🇫🇮 芬兰 (Finland) 16 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -12,8 +12,41 @@
       "password": "/QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA="
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - BobQoo",
+      "server": "89.105.206.124",
+      "server_port": 443,
+      "uuid": "4360f941-b541-0028-8507-2de3763e0cfd",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl.convert-flow.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w",
+          "short_id": "00a61d55a07de885"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - BobQoo",
+      "server": "91.196.32.163",
+      "server_port": 443,
+      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
+      "tls": {
+        "enabled": true,
+        "server_name": "germany3.h2corp.local",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - BobQoo",
       "server": "msk.frkn.org",
       "server_port": 443,
       "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
@@ -25,7 +58,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - BobQoo",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - BobQoo",
       "server": "46.8.200.91",
       "server_port": 443,
       "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
@@ -47,13 +80,36 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - BobQoo",
+      "server": "45.12.75.242",
+      "server_port": 26424,
+      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ya.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "short_id": "23103e1e"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - BobQoo",
         "🇷🇺 俄罗斯 (Russia) 02 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 03 - BobQoo"
+        "🇷🇺 俄罗斯 (Russia) 03 - BobQoo",
+        "🇷🇺 俄罗斯 (Russia) 04 - BobQoo",
+        "🇷🇺 俄罗斯 (Russia) 05 - BobQoo",
+        "🇷🇺 俄罗斯 (Russia) 06 - BobQoo"
       ]
     },
     {
@@ -62,7 +118,10 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - BobQoo",
         "🇷🇺 俄罗斯 (Russia) 02 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 03 - BobQoo"
+        "🇷🇺 俄罗斯 (Russia) 03 - BobQoo",
+        "🇷🇺 俄罗斯 (Russia) 04 - BobQoo",
+        "🇷🇺 俄罗斯 (Russia) 05 - BobQoo",
+        "🇷🇺 俄罗斯 (Russia) 06 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
