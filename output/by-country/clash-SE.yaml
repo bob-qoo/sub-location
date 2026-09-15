@@ -5,32 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - BobQoo
-  server: 193.42.39.10
-  port: 33743
+  server: 70.34.212.124
+  port: 8388
   udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
+  type: ss
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
 - name: 🇸🇪 瑞典 (Sweden) 02 - BobQoo
-  server: 88.216.130.139
-  port: 8443
-  udp: true
-  type: vless
-  uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: iRym2aMWC0ZoLJL7MtJm9p0xqFMutfe6_5B5tZyobxU
-  servername: apple.com
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 03 - BobQoo
   server: 143.246.193.215
   port: 443
   udp: true
@@ -41,23 +22,8 @@ proxies:
   reality-opts:
     public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
   servername: www.blocket.se
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 04 - BobQoo
-  server: 31.77.111.11
-  port: 43439
-  udp: true
-  type: vless
-  uuid: 428e923f-e608-412b-9e51-3b09ffab551f
-  tls: true
-  reality-opts:
-    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
-    short-id: 39ad36226f3abec8
-  servername: cdn.higames.ru
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: streaming
-- name: 🇸🇪 瑞典 (Sweden) 05 - BobQoo
+  client-fingerprint: ''
+- name: 🇸🇪 瑞典 (Sweden) 03 - BobQoo
   server: se-node.rumedia-cdn.com
   port: 25443
   udp: true
@@ -65,18 +31,7 @@ proxies:
   password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
   sni: cf2.rumedia-cdn.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 06 - BobQoo
-  server: 91.186.216.100
-  port: 7005
-  udp: true
-  type: vless
-  uuid: ac64aec6-85ee-4fc7-b34b-60a7bcf236ec
-  tls: true
-  reality-opts:
-    public-key: 7aICTN0hv6bhd8bYOjNZniDYSXgD20LunZ3BW6_Zyk4
-  servername: play.googleapis.com
-  client-fingerprint: ios
-- name: 🇸🇪 瑞典 (Sweden) 07 - BobQoo
+- name: 🇸🇪 瑞典 (Sweden) 04 - BobQoo
   server: se.belka.network
   port: 443
   udp: true
@@ -89,6 +44,18 @@ proxies:
     short-id: 7f2e9c4b1a8d6e53
   servername: yahoo.com
   client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 05 - BobQoo
+  server: 88.216.130.139
+  port: 8443
+  udp: true
+  type: vless
+  uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: iRym2aMWC0ZoLJL7MtJm9p0xqFMutfe6_5B5tZyobxU
+  servername: apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -99,8 +66,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - BobQoo
   - 🇸🇪 瑞典 (Sweden) 04 - BobQoo
   - 🇸🇪 瑞典 (Sweden) 05 - BobQoo
-  - 🇸🇪 瑞典 (Sweden) 06 - BobQoo
-  - 🇸🇪 瑞典 (Sweden) 07 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -111,7 +76,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - BobQoo
   - 🇸🇪 瑞典 (Sweden) 04 - BobQoo
   - 🇸🇪 瑞典 (Sweden) 05 - BobQoo
-  - 🇸🇪 瑞典 (Sweden) 06 - BobQoo
-  - 🇸🇪 瑞典 (Sweden) 07 - BobQoo
 rules:
 - MATCH,PROXIES

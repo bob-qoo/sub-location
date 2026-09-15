@@ -6,105 +6,48 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - BobQoo",
-      "server": "172.67.192.84",
-      "server_port": 2095,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
-      "transport": {
-        "type": "ws",
-        "path": "/juvsrnmgdu8i0179k5",
-        "headers": {
-          "Host": "index.harmonica02.workers.dev"
+      "server": "107.161.174.26",
+      "server_port": 443,
+      "uuid": "069ba4cf-e8af-4561-b11e-18bd07b0dbd3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "books.blackbigdog.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc",
+          "short_id": ""
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - BobQoo",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
-      "transport": {
-        "type": "ws",
-        "path": "/axch1mttbxz2k55y01",
-        "headers": {
-          "Host": "index.harmonica01.workers.dev"
+      "server": "156.67.63.231",
+      "server_port": 443,
+      "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sync-bridge.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI",
+          "short_id": "5606d4a25c99e7af"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - BobQoo",
-      "server": "188.114.98.16",
-      "server_port": 2082,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
-      "transport": {
-        "type": "ws",
-        "path": "/rry8le3tt8f3g5j7kr",
-        "headers": {
-          "Host": "index.harmonica02.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - BobQoo",
-      "server": "104.17.169.13",
-      "server_port": 2053,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
-      "tls": {
-        "enabled": true,
-        "server_name": "inDeX.HaRMONiCA01.WORkers.DeV",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/axch1mttbxz2k55y01",
-        "headers": {
-          "Host": "inDeX.HaRMONiCA01.WORkers.DeV"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - BobQoo",
-      "server": "104.17.147.22",
-      "server_port": 443,
-      "uuid": "5ef04ae8-8d7c-0a66-13f4-6e3f00000003",
-      "tls": {
-        "enabled": true,
-        "server_name": "relay.lunetcloud.ir",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lunetnetwork",
-        "headers": {
-          "Host": "relay.lunetcloud.ir"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - BobQoo",
-      "server": "188.132.174.236",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "rSeYcig_XBy8q3k33NpK3A"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 07 - BobQoo",
       "server": "199.232.78.159",
       "server_port": 443,
       "uuid": "d7282b41-1f2a-47bb-8593-f464fd6b6d78",
@@ -127,49 +70,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 08 - BobQoo",
-      "server": "107.161.174.26",
-      "server_port": 443,
-      "uuid": "069ba4cf-e8af-4561-b11e-18bd07b0dbd3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "books.blackbigdog.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 09 - BobQoo",
-      "server": "156.67.63.231",
-      "server_port": 443,
-      "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "sync-bridge.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI",
-          "short_id": "5606d4a25c99e7af"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 10 - BobQoo",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - BobQoo",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -189,7 +90,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 11 - BobQoo",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - BobQoo",
       "server": "13.143.137.164",
       "server_port": 9443,
       "uuid": "953358cb-82ba-4296-960d-6d2ec3468f4c",
@@ -209,25 +110,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 12 - BobQoo",
-      "server": "172.67.134.170",
-      "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-635698a6bb9c",
-      "tls": {
-        "enabled": true,
-        "server_name": "jdzit4e4urks.xwzohsebujps.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/stream/PANEL_ZEUS/635698a6bb9c/loc-0",
-        "headers": {
-          "Host": "jdzit4e4urks.xwzohsebujps.workers.dev"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -236,14 +118,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - BobQoo",
         "🇹🇷 土耳其 (Turkey) 03 - BobQoo",
         "🇹🇷 土耳其 (Turkey) 04 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 05 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 06 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 07 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 08 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 09 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 10 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 11 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 12 - BobQoo"
+        "🇹🇷 土耳其 (Turkey) 05 - BobQoo"
       ]
     },
     {
@@ -254,14 +129,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - BobQoo",
         "🇹🇷 土耳其 (Turkey) 03 - BobQoo",
         "🇹🇷 土耳其 (Turkey) 04 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 05 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 06 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 07 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 08 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 09 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 10 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 11 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 12 - BobQoo"
+        "🇹🇷 土耳其 (Turkey) 05 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

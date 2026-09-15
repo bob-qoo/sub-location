@@ -6,57 +6,43 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - BobQoo",
-      "server": "104.20.6.153",
-      "server_port": 8880,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
-      "transport": {
-        "type": "ws",
-        "path": "/j100sy9wn073cxbvir",
-        "headers": {
-          "Host": "index.harmonica02.workers.dev"
+      "server": "31.58.181.88",
+      "server_port": 8443,
+      "uuid": "21d11336-4659-448a-a903-e5b7e597ea8a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc",
+          "short_id": ""
         }
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - BobQoo",
-      "server": "45.130.125.201",
-      "server_port": 80,
-      "uuid": "dc8a9493-c54a-459e-d060-81a700000001",
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "nahan-core.netizo09.workers.dev"
-        }
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
       }
     },
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 03 - BobQoo",
-      "server": "128.241.25.11",
-      "server_port": 30021,
-      "uuid": "a4f907a1-b0fe-4306-a0fa-f05bea688879",
-      "tls": {
-        "enabled": true,
-        "server_name": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - BobQoo",
       "server": "31.56.189.27",
       "server_port": 2087,
       "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
@@ -75,69 +61,9 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - BobQoo",
-      "server": "31.58.181.88",
-      "server_port": 8443,
-      "uuid": "febfeec2-9a21-4afc-9edb-0833466672cd",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "tradingview.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - BobQoo",
-      "server": "104.17.147.22",
-      "server_port": 443,
-      "uuid": "5ef04ae8-8d7c-0a66-13f4-6e3f00000005",
-      "tls": {
-        "enabled": true,
-        "server_name": "relay.lunetcloud.ir",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lunetnetwork",
-        "headers": {
-          "Host": "relay.lunetcloud.ir"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 07 - BobQoo",
-      "server": "130.49.161.70",
-      "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 08 - BobQoo",
-      "server": "85.204.107.171",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - BobQoo",
+      "server": "85.204.107.183",
       "server_port": 8080,
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {
@@ -148,31 +74,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 09 - BobQoo",
-      "server": "210.152.85.154",
-      "server_port": 19364,
-      "uuid": "d6c21f6f-2e7e-479d-a4d9-4069995867ed",
-      "tls": {
-        "enabled": true,
-        "server_name": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 10 - BobQoo",
-      "server": "84.235.244.108",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - BobQoo",
+      "server": "uae.unixzone.us",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
@@ -184,58 +87,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 11 - BobQoo",
-      "server": "92.113.124.204",
-      "server_port": 18443,
-      "uuid": "1ffbf1ee-e5a1-47c9-b614-be27e7b228c8",
-      "tls": {
-        "enabled": true,
-        "server_name": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 12 - BobQoo",
-      "server": "uae.irchatgpt.sbs",
-      "server_port": 31729,
-      "uuid": "5245cd34-f70c-4770-8bb8-7e143d6a6144",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "digikala.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Va_L4Xfe5283dn2vQkLL8gLhXqO203nueKZVgfFMFh4",
-          "short_id": "31861a46"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇦🇪 阿联酋 (UAE) 13 - BobQoo",
-      "server": "zfd-boardv2.kunlun01dns.com",
-      "server_port": 16284,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -244,15 +95,7 @@
         "🇦🇪 阿联酋 (UAE) 02 - BobQoo",
         "🇦🇪 阿联酋 (UAE) 03 - BobQoo",
         "🇦🇪 阿联酋 (UAE) 04 - BobQoo",
-        "🇦🇪 阿联酋 (UAE) 05 - BobQoo",
-        "🇦🇪 阿联酋 (UAE) 06 - BobQoo",
-        "🇦🇪 阿联酋 (UAE) 07 - BobQoo",
-        "🇦🇪 阿联酋 (UAE) 08 - BobQoo",
-        "🇦🇪 阿联酋 (UAE) 09 - BobQoo",
-        "🇦🇪 阿联酋 (UAE) 10 - BobQoo",
-        "🇦🇪 阿联酋 (UAE) 11 - BobQoo",
-        "🇦🇪 阿联酋 (UAE) 12 - BobQoo",
-        "🇦🇪 阿联酋 (UAE) 13 - BobQoo"
+        "🇦🇪 阿联酋 (UAE) 05 - BobQoo"
       ]
     },
     {
@@ -263,15 +106,7 @@
         "🇦🇪 阿联酋 (UAE) 02 - BobQoo",
         "🇦🇪 阿联酋 (UAE) 03 - BobQoo",
         "🇦🇪 阿联酋 (UAE) 04 - BobQoo",
-        "🇦🇪 阿联酋 (UAE) 05 - BobQoo",
-        "🇦🇪 阿联酋 (UAE) 06 - BobQoo",
-        "🇦🇪 阿联酋 (UAE) 07 - BobQoo",
-        "🇦🇪 阿联酋 (UAE) 08 - BobQoo",
-        "🇦🇪 阿联酋 (UAE) 09 - BobQoo",
-        "🇦🇪 阿联酋 (UAE) 10 - BobQoo",
-        "🇦🇪 阿联酋 (UAE) 11 - BobQoo",
-        "🇦🇪 阿联酋 (UAE) 12 - BobQoo",
-        "🇦🇪 阿联酋 (UAE) 13 - BobQoo"
+        "🇦🇪 阿联酋 (UAE) 05 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
