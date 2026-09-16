@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - BobQoo
+  server: 50.7.249.196
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: poland-new-decic-1.failspace.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 02 - BobQoo
   server: 185.223.57.10
   port: 33743
   udp: true
@@ -18,39 +29,18 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇵🇱 波兰 (Poland) 02 - BobQoo
-  server: 144.31.5.64
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl6.moritech.net
-  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 03 - BobQoo
-  server: 144.31.5.3
+  server: 50.7.248.237
   port: 443
   udp: true
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   flow: xtls-rprx-vision
   tls: true
-  servername: pl4.moritech.net
+  servername: pl-new-dedic.failspace.top
   skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 04 - BobQoo
-  server: 144.31.2.33
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl3.moritech.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 05 - BobQoo
   server: 50.7.249.187
   port: 443
   udp: true
@@ -61,7 +51,7 @@ proxies:
   servername: poland-new-dedic-2.failspace.top
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 06 - BobQoo
+- name: 🇵🇱 波兰 (Poland) 05 - BobQoo
   server: 82.118.22.161
   port: 443
   udp: true
@@ -73,19 +63,8 @@ proxies:
     public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
     short-id: fa3ea655619a3e78
   servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 07 - BobQoo
-  server: 50.7.249.196
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: poland-new-decic-1.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 08 - BobQoo
+  client-fingerprint: ''
+- name: 🇵🇱 波兰 (Poland) 06 - BobQoo
   server: atomic-prase23893.my-vm.work
   port: 8088
   udp: true
@@ -96,39 +75,31 @@ proxies:
     path: /api
     headers:
       Host: queuev4.vk.com
-- name: 🇵🇱 波兰 (Poland) 09 - BobQoo
+- name: 🇵🇱 波兰 (Poland) 07 - BobQoo
   server: 144.31.49.47
   port: 443
   udp: true
   type: hysteria2
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 08 - BobQoo
+  server: 178.95.176.16
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
+- name: 🇵🇱 波兰 (Poland) 09 - BobQoo
+  server: 144.31.2.33
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl3.moritech.net
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 10 - BobQoo
-  server: av513u.sysopnova.art
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3710fc0f-5f0c-4b9c-a5d4-40cb419e943a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WKN5yaRN05O2WdCURXRmS-yBVYaabaFWOvGudX6ohWc
-    short-id: b97e7d4582b6fa6e
-  servername: yandex.ru
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 11 - BobQoo
-  server: 150.251.113.34
-  port: 443
-  udp: true
-  type: vless
-  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
-    short-id: 150a627d15154cf2
-  servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -144,8 +115,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - BobQoo
   - 🇵🇱 波兰 (Poland) 08 - BobQoo
   - 🇵🇱 波兰 (Poland) 09 - BobQoo
-  - 🇵🇱 波兰 (Poland) 10 - BobQoo
-  - 🇵🇱 波兰 (Poland) 11 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -160,7 +129,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - BobQoo
   - 🇵🇱 波兰 (Poland) 08 - BobQoo
   - 🇵🇱 波兰 (Poland) 09 - BobQoo
-  - 🇵🇱 波兰 (Poland) 10 - BobQoo
-  - 🇵🇱 波兰 (Poland) 11 - BobQoo
 rules:
 - MATCH,PROXIES

@@ -4,24 +4,62 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇺🇸 美国 (United States) 01 (家宽) - BobQoo",
-      "server": "23.252.104.131",
-      "server_port": 54321,
-      "method": "aes-256-gcm",
-      "password": "Proxy2024"
+      "server": "155.117.19.17",
+      "server_port": 443,
+      "password": "5fa748137b6d822308eea4611f474ad5",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 02 (家宽) - BobQoo",
+      "server": "162.159.24.131",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo",
-      "server": "r3mrcg00129437x.cybervena.com",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo",
+      "server": "r3mrcg001286ek2.cybervena.com",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
-      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
     },
     {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - BobQoo",
+      "server": "7dba81fc3a0b.oylfmxz.cn",
+      "server_port": 443,
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "7dba81fc3a0b.oylfmxz.cn",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - BobQoo",
       "server": "82259754d625.oylfmxz.cn",
       "server_port": 443,
       "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
@@ -45,8 +83,10 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (家宽) - BobQoo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo"
+        "🇺🇸 美国 (United States) 02 (家宽) - BobQoo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - BobQoo",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - BobQoo"
       ]
     },
     {
@@ -54,8 +94,10 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (家宽) - BobQoo",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo"
+        "🇺🇸 美国 (United States) 02 (家宽) - BobQoo",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - BobQoo",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

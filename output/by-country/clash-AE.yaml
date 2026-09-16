@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: c0c5a312-f9d3-4eb4-ad6a-0aa2738ac7ab
+  uuid: 0a9d31cb-3306-4e89-af90-ea2bc8e26ce5
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -17,7 +17,7 @@ proxies:
   servername: tradingview.com
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 02 - BobQoo
-  server: 31.56.189.27
+  server: srv-21bac9.vless.monster
   port: 2087
   udp: true
   type: vless
@@ -40,7 +40,7 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - BobQoo
-  server: 85.204.107.181
+  server: 85.204.107.178
   port: 8080
   udp: true
   type: hysteria2

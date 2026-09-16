@@ -14,22 +14,30 @@
     {
       "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 02 - BobQoo",
-      "server": "141.164.45.187",
-      "server_port": 5001,
-      "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
+      "server": "211.178.105.134",
+      "server_port": 6123,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
     },
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 03 - BobQoo",
-      "server": "146.56.112.110",
-      "server_port": 8888,
-      "uuid": "e7c302f3-90d6-42dd-9d7d-94a3683a3707",
-      "security": "auto"
+      "server": "221.139.79.57",
+      "server_port": 13979,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 04 - BobQoo",
+      "server": "141.164.45.187",
+      "server_port": 2376,
+      "method": "aes-256-gcm",
+      "password": "faBAoD54k87UJG7"
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 04 - BobQoo",
+      "tag": "🇰🇷 韩国 (South Korea) 05 - BobQoo",
       "server": "3.39.4.109",
       "server_port": 13672,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -50,7 +58,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 05 - BobQoo",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - BobQoo",
       "server": "3.39.4.109",
       "server_port": 18967,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -70,28 +78,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 06 - BobQoo",
-      "server": "52.79.236.130",
-      "server_port": 8686,
-      "uuid": "1a17b19d-4896-4531-af79-6e91d8ef8228",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw",
-          "short_id": "628b3c90c98ead4f"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 07 - BobQoo",
+      "server": "141.164.45.187",
+      "server_port": 5498,
+      "method": "aes-256-gcm",
+      "password": "lGqs95QkFHo2NV"
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 07 - BobQoo",
+      "tag": "🇰🇷 韩国 (South Korea) 08 - BobQoo",
       "server": "151.245.106.49",
       "server_port": 2053,
       "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
@@ -111,35 +107,67 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 08 - BobQoo",
-      "server": "211.178.105.134",
-      "server_port": 6123,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 09 - BobQoo",
       "server": "141.164.45.187",
-      "server_port": 2376,
+      "server_port": 6679,
       "method": "aes-256-gcm",
-      "password": "faBAoD54k87UJG7"
+      "password": "TEzjfAYq2IjtuoS"
     },
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇰🇷 韩国 (South Korea) 10 - BobQoo",
-      "server": "141.164.45.187",
-      "server_port": 9090,
-      "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
+      "server": "146.56.112.110",
+      "server_port": 8888,
+      "uuid": "e7c302f3-90d6-42dd-9d7d-94a3683a3707",
+      "security": "auto"
     },
     {
       "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 11 - BobQoo",
       "server": "141.164.45.187",
-      "server_port": 8091,
+      "server_port": 8008,
       "method": "aes-256-gcm",
-      "password": "PCnnH6SQSnfoS27"
+      "password": "XKFKl2rULjIp74"
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 12 - BobQoo",
+      "server": "119.28.161.143",
+      "server_port": 443,
+      "uuid": "1ebb0858-218a-4dee-8746-36a67bc64462",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pR7MPTAA4cZsW9AO-twMzuogiWGMKPiheTg70fcWWWs",
+          "short_id": "0a427bc3"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 13 - BobQoo",
+      "server": "152-69-231-175.liao.kdns.fr",
+      "server_port": 50160,
+      "password": "1beb216e3f60aea9555dae60d219a5ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "152-69-231-175.liao.kdns.fr",
+        "insecure": false
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 14 - BobQoo",
+      "server": "141.164.45.187",
+      "server_port": 7001,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "selector",
@@ -156,7 +184,10 @@
         "🇰🇷 韩国 (South Korea) 08 - BobQoo",
         "🇰🇷 韩国 (South Korea) 09 - BobQoo",
         "🇰🇷 韩国 (South Korea) 10 - BobQoo",
-        "🇰🇷 韩国 (South Korea) 11 - BobQoo"
+        "🇰🇷 韩国 (South Korea) 11 - BobQoo",
+        "🇰🇷 韩国 (South Korea) 12 - BobQoo",
+        "🇰🇷 韩国 (South Korea) 13 - BobQoo",
+        "🇰🇷 韩国 (South Korea) 14 - BobQoo"
       ]
     },
     {
@@ -173,7 +204,10 @@
         "🇰🇷 韩国 (South Korea) 08 - BobQoo",
         "🇰🇷 韩国 (South Korea) 09 - BobQoo",
         "🇰🇷 韩国 (South Korea) 10 - BobQoo",
-        "🇰🇷 韩国 (South Korea) 11 - BobQoo"
+        "🇰🇷 韩国 (South Korea) 11 - BobQoo",
+        "🇰🇷 韩国 (South Korea) 12 - BobQoo",
+        "🇰🇷 韩国 (South Korea) 13 - BobQoo",
+        "🇰🇷 韩国 (South Korea) 14 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

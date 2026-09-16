@@ -20,24 +20,43 @@
       "password": "shadowsocks"
     },
     {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 03 - BobQoo",
-      "server": "45.32.57.118",
-      "server_port": 4433,
-      "uuid": "35b89832-0a7c-48dd-8d1c-a2891b522195",
-      "security": "auto"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 04 - BobQoo",
+      "tag": "🇯🇵 日本 (Japan) 03 - BobQoo",
       "server": "149.22.87.241",
       "server_port": 443,
       "method": "aes-128-gcm",
       "password": "shadowsocks"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 04 - BobQoo",
+      "server": "jp-2.gsafevpnapi.com",
+      "server_port": 31870,
+      "method": "aes-256-gcm",
+      "password": "2bf192f1-7d86-43a3-88b3-8f72b7eb5ad9"
+    },
+    {
+      "type": "vmess",
       "tag": "🇯🇵 日本 (Japan) 05 - BobQoo",
+      "server": "45.32.57.118",
+      "server_port": 4433,
+      "uuid": "35b89832-0a7c-48dd-8d1c-a2891b522195",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 06 - BobQoo",
+      "server": "172.111.146.64",
+      "server_port": 80,
+      "uuid": "904f8ffa-4652-4076-8f2f-e586807840ec",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 07 - BobQoo",
       "server": "154.31.114.248",
       "server_port": 50159,
       "uuid": "d56624b2-35bb-468c-9b2a-e0b0df7230c1",
@@ -58,7 +77,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 06 - BobQoo",
+      "tag": "🇯🇵 日本 (Japan) 08 - BobQoo",
       "server": "103.75.118.228",
       "server_port": 11452,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -78,19 +97,60 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 07 - BobQoo",
-      "server": "172.111.146.64",
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 09 - BobQoo",
+      "server": "84.247.155.196",
       "server_port": 80,
-      "uuid": "904f8ffa-4652-4076-8f2f-e586807840ec",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/"
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 10 - BobQoo",
+      "server": "103.75.118.228",
+      "server_port": 12683,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 08 - BobQoo",
+      "tag": "🇯🇵 日本 (Japan) 11 - BobQoo",
+      "server": "104.238.148.149",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/about?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 12 - BobQoo",
       "server": "3.114.220.22",
       "server_port": 19645,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -110,8 +170,60 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 13 - BobQoo",
+      "server": "84.247.155.196",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
+    },
+    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 09 - BobQoo",
+      "tag": "🇯🇵 日本 (Japan) 14 - BobQoo",
+      "server": "85.121.50.16",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/friends/go.php?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 15 - BobQoo",
+      "server": "18.183.215.124",
+      "server_port": 28573,
+      "uuid": "871bfce7-8440-4394-8d82-56b51f20fdad",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.sony.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg",
+          "short_id": "03653bc03be10c97"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 16 - BobQoo",
       "server": "3.114.220.22",
       "server_port": 10583,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -131,16 +243,35 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 10 - BobQoo",
-      "server": "84.247.155.196",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 17 - BobQoo",
+      "server": "jp-1.gsafevpnapi.com",
+      "server_port": 20270,
+      "uuid": "c80d9d87-0aa6-4b45-9673-7a9d1e5e4d6b",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE",
+          "short_id": "28500ae15838f905"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 11 - BobQoo",
+      "tag": "🇯🇵 日本 (Japan) 18 - BobQoo",
+      "server": "137.220.221.179",
+      "server_port": 443,
+      "uuid": "a16a3336-c9ab-489f-9b85-c973f5e2cfa4"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 19 - BobQoo",
       "server": "3.114.220.22",
       "server_port": 18007,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -160,51 +291,27 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 12 - BobQoo",
-      "server": "137.220.221.179",
-      "server_port": 443,
-      "uuid": "a16a3336-c9ab-489f-9b85-c973f5e2cfa4"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 13 - BobQoo",
-      "server": "84.247.155.196",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 14 - BobQoo",
-      "server": "31.76.91.72",
-      "server_port": 2087,
-      "uuid": "524e00ce-ed89-481d-b4a4-6d7017f884e3",
-      "tls": {
-        "enabled": true,
-        "server_name": "ads.x5.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-ZTJcZ_UcqAB7LHgkUqhnlJsQs_oBafRgjsFtWZElmM",
-          "short_id": "c226283c4de5b1ad"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 15 - BobQoo",
+      "tag": "🇯🇵 日本 (Japan) 20 - BobQoo",
       "server": "oc.imfun.fun",
       "server_port": 18112,
       "uuid": "ad45f8f6-0f0a-4cc4-b907-c4582407dc94",
       "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 21 - BobQoo",
+      "server": "168.138.43.75",
+      "server_port": 80,
+      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8",
+        "headers": {
+          "Host": "None"
+        }
+      }
     },
     {
       "type": "selector",
@@ -225,7 +332,13 @@
         "🇯🇵 日本 (Japan) 12 - BobQoo",
         "🇯🇵 日本 (Japan) 13 - BobQoo",
         "🇯🇵 日本 (Japan) 14 - BobQoo",
-        "🇯🇵 日本 (Japan) 15 - BobQoo"
+        "🇯🇵 日本 (Japan) 15 - BobQoo",
+        "🇯🇵 日本 (Japan) 16 - BobQoo",
+        "🇯🇵 日本 (Japan) 17 - BobQoo",
+        "🇯🇵 日本 (Japan) 18 - BobQoo",
+        "🇯🇵 日本 (Japan) 19 - BobQoo",
+        "🇯🇵 日本 (Japan) 20 - BobQoo",
+        "🇯🇵 日本 (Japan) 21 - BobQoo"
       ]
     },
     {
@@ -246,7 +359,13 @@
         "🇯🇵 日本 (Japan) 12 - BobQoo",
         "🇯🇵 日本 (Japan) 13 - BobQoo",
         "🇯🇵 日本 (Japan) 14 - BobQoo",
-        "🇯🇵 日本 (Japan) 15 - BobQoo"
+        "🇯🇵 日本 (Japan) 15 - BobQoo",
+        "🇯🇵 日本 (Japan) 16 - BobQoo",
+        "🇯🇵 日本 (Japan) 17 - BobQoo",
+        "🇯🇵 日本 (Japan) 18 - BobQoo",
+        "🇯🇵 日本 (Japan) 19 - BobQoo",
+        "🇯🇵 日本 (Japan) 20 - BobQoo",
+        "🇯🇵 日本 (Japan) 21 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

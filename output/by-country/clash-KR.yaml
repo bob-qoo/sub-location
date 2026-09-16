@@ -13,21 +13,27 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 - BobQoo
+  server: 211.178.105.134
+  port: 6123
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 韩国 (South Korea) 03 - BobQoo
+  server: 221.139.79.57
+  port: 13979
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 韩国 (South Korea) 04 - BobQoo
   server: 141.164.45.187
-  port: 5001
+  port: 2376
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇰🇷 韩国 (South Korea) 03 - BobQoo
-  server: 146.56.112.110
-  port: 8888
-  udp: true
-  type: vmess
-  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-  alterId: 0
-  cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 04 - BobQoo
+  password: faBAoD54k87UJG7
+- name: 🇰🇷 韩国 (South Korea) 05 - BobQoo
   server: 3.39.4.109
   port: 13672
   udp: true
@@ -40,7 +46,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 05 - BobQoo
+- name: 🇰🇷 韩国 (South Korea) 06 - BobQoo
   server: 3.39.4.109
   port: 18967
   udp: true
@@ -53,19 +59,14 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 06 - BobQoo
-  server: 52.79.236.130
-  port: 8686
-  udp: true
-  type: vless
-  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  tls: true
-  reality-opts:
-    public-key: A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw
-    short-id: 628b3c90c98ead4f
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 07 - BobQoo
+  server: 141.164.45.187
+  port: 5498
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+- name: 🇰🇷 韩国 (South Korea) 08 - BobQoo
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -77,34 +78,55 @@ proxies:
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 08 - BobQoo
-  server: 211.178.105.134
-  port: 6123
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
 - name: 🇰🇷 韩国 (South Korea) 09 - BobQoo
   server: 141.164.45.187
-  port: 2376
+  port: 6679
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
+  password: TEzjfAYq2IjtuoS
 - name: 🇰🇷 韩国 (South Korea) 10 - BobQoo
-  server: 141.164.45.187
-  port: 9090
+  server: 146.56.112.110
+  port: 8888
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  type: vmess
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  alterId: 0
+  cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 11 - BobQoo
   server: 141.164.45.187
-  port: 8091
+  port: 8008
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
+  password: XKFKl2rULjIp74
+- name: 🇰🇷 韩国 (South Korea) 12 - BobQoo
+  server: 119.28.161.143
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1ebb0858-218a-4dee-8746-36a67bc64462
+  tls: true
+  reality-opts:
+    public-key: pR7MPTAA4cZsW9AO-twMzuogiWGMKPiheTg70fcWWWs
+    short-id: 0a427bc3
+  servername: apple.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 13 - BobQoo
+  server: 152-69-231-175.liao.kdns.fr
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  sni: 152-69-231-175.liao.kdns.fr
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 14 - BobQoo
+  server: 141.164.45.187
+  port: 7001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
 proxy-groups:
 - name: PROXIES
   type: select
@@ -121,6 +143,9 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 09 - BobQoo
   - 🇰🇷 韩国 (South Korea) 10 - BobQoo
   - 🇰🇷 韩国 (South Korea) 11 - BobQoo
+  - 🇰🇷 韩国 (South Korea) 12 - BobQoo
+  - 🇰🇷 韩国 (South Korea) 13 - BobQoo
+  - 🇰🇷 韩国 (South Korea) 14 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -137,5 +162,8 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 09 - BobQoo
   - 🇰🇷 韩国 (South Korea) 10 - BobQoo
   - 🇰🇷 韩国 (South Korea) 11 - BobQoo
+  - 🇰🇷 韩国 (South Korea) 12 - BobQoo
+  - 🇰🇷 韩国 (South Korea) 13 - BobQoo
+  - 🇰🇷 韩国 (South Korea) 14 - BobQoo
 rules:
 - MATCH,PROXIES
