@@ -4,28 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - BobQoo
-  server: 188.114.97.6
-  port: 2082
+- name: 🇴🇲 OM 01 - BobQoo
+  server: 146.70.37.253
+  port: 443
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  tls: true
+  servername: kkkk-xcd.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2048
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+      Host: kkkk-xcd.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - BobQoo
+  - 🇴🇲 OM 01 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - BobQoo
+  - 🇴🇲 OM 01 - BobQoo
 rules:
 - MATCH,PROXIES

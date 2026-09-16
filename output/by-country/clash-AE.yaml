@@ -5,19 +5,59 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - BobQoo
+  server: 172.67.221.230
+  port: 443
+  udp: true
+  type: vless
+  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
+  tls: true
+  servername: novantunnel.tech
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /Novan-AE9
+    headers:
+      Host: novantunnel.tech
+- name: 🇦🇪 阿联酋 (UAE) 02 - BobQoo
+  server: 129.153.71.28
+  port: 28863
+  udp: true
+  type: vless
+  uuid: 775409d5-1183-463c-8f12-e5778cbec078
+  tls: true
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 03 - BobQoo
   server: 31.58.181.88
   port: 8443
   udp: true
   type: vless
-  uuid: 4b2fbd30-1a64-4b27-aea9-713d62c9e69b
+  uuid: 1e3b5752-e720-4347-b8e9-384697d0ce38
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 02 - BobQoo
-  server: srv-21bac9.vless.monster
+- name: 🇦🇪 阿联酋 (UAE) 04 - BobQoo
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 05 - BobQoo
+  server: 31.56.189.27
   port: 2087
   udp: true
   type: vless
@@ -29,25 +69,86 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: freegrpc
-- name: 🇦🇪 阿联酋 (UAE) 03 - BobQoo
-  server: 130.49.161.70
+- name: 🇦🇪 阿联酋 (UAE) 06 - BobQoo
+  server: 104.17.147.22
   port: 443
   udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 04 - BobQoo
-  server: 85.204.107.181
+  type: vless
+  uuid: 5ef04ae8-8d7c-0a66-13f4-6e3f00000005
+  tls: true
+  servername: relay.lunetcloud.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /lunetnetwork
+    headers:
+      Host: relay.lunetcloud.ir
+- name: 🇦🇪 阿联酋 (UAE) 07 - BobQoo
+  server: 45.130.125.201
+  port: 80
+  udp: true
+  type: vless
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 08 - BobQoo
+  server: 129.151.64.169
+  port: 31867
+  udp: true
+  type: vless
+  uuid: 9b71c9bd-6418-462b-82b4-4a30690e0d47
+  tls: true
+  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 09 - BobQoo
+  server: 151.242.160.148
+  port: 8090
+  udp: true
+  type: vless
+  uuid: 818eaf39-544f-4d1d-977e-87be7e33eecf
+  tls: true
+  servername: askuhgfdsg.space.coupons
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: askuhgfdsg.space.coupons
+- name: 🇦🇪 阿联酋 (UAE) 10 - BobQoo
+  server: 85.204.107.178
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 05 - BobQoo
+- name: 🇦🇪 阿联酋 (UAE) 11 - BobQoo
+  server: 92.113.124.204
+  port: 18443
+  udp: true
+  type: vless
+  uuid: a387ea59-4d6e-400a-8e75-a4c7a2b79b37
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 12 - BobQoo
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -68,6 +169,13 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - BobQoo
   - 🇦🇪 阿联酋 (UAE) 04 - BobQoo
   - 🇦🇪 阿联酋 (UAE) 05 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 06 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 07 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 08 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 09 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 10 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 11 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 12 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,5 +186,12 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - BobQoo
   - 🇦🇪 阿联酋 (UAE) 04 - BobQoo
   - 🇦🇪 阿联酋 (UAE) 05 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 06 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 07 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 08 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 09 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 10 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 11 - BobQoo
+  - 🇦🇪 阿联酋 (UAE) 12 - BobQoo
 rules:
 - MATCH,PROXIES

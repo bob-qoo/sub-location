@@ -5,85 +5,37 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - BobQoo
+  server: 104.16.72.101
+  port: 80
+  udp: true
+  type: vless
+  uuid: d5598622-46b8-b017-3af3-232500000001
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+- name: 🇫🇮 芬兰 (Finland) 02 - BobQoo
   server: 65.109.215.118
   port: 1080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: rSeYcig_XBy8q3k33NpK3A
-- name: 🇫🇮 芬兰 (Finland) 02 - BobQoo
-  server: 2.26.91.57
+- name: 🇫🇮 芬兰 (Finland) 03 - BobQoo
+  server: 5.61.91.206
   port: 443
   udp: true
   type: vless
-  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
+  uuid: bd99da97-265e-0021-82cc-4ec009fe9ce2
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 40Tmrw44FhOyoqCQiOfR2kCgxEPXrBLLv6oYFvjbGUI
-    short-id: 3c6ec7b2d73a28b6
-  servername: fl.windconnect.pro
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 03 - BobQoo
-  server: 95.216.27.15
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: 0a4b7c3d
+  servername: www.amd.com
   client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 04 - BobQoo
-  server: 31.77.199.182
-  port: 443
-  udp: true
-  type: vless
-  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
-    short-id: abcd1234
-  servername: fi2.yservice.help
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 05 - BobQoo
-  server: 31.77.199.147
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - BobQoo
-  server: 212.193.18.183
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
-  tls: true
-  reality-opts:
-    public-key: XnPQT554eJohCPNsM8gw9oCS-3NTZmqxNoU36Td-tlM
-    short-id: a1b2c3d4e5f6
-  servername: maps.apple.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 07 - BobQoo
-  server: fi.snobvpn.online
-  port: 80
-  udp: true
-  type: vless
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
-  network: ws
-  ws-opts:
-    path: /snob-ws
-- name: 🇫🇮 芬兰 (Finland) 08 - BobQoo
   server: 37.143.129.244
   port: 443
   udp: true
@@ -96,7 +48,19 @@ proxies:
     short-id: 48fd192dc4e46bc0
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 09 - BobQoo
+- name: 🇫🇮 芬兰 (Finland) 05 - BobQoo
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 06 - BobQoo
   server: 185.79.138.71
   port: 448
   udp: true
@@ -108,7 +72,85 @@ proxies:
     short-id: cd21e552537c7c0b
   servername: www.samsung.com
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 07 - BobQoo
+  server: 31.77.199.147
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 08 - BobQoo
+  server: 151.101.56.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78
+  tls: true
+  servername: global.fastly.com
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kayko.global.ssl.fastly.net
+- name: 🇫🇮 芬兰 (Finland) 09 - BobQoo
+  server: 31.77.199.182
+  port: 443
+  udp: true
+  type: vless
+  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
+    short-id: abcd1234
+  servername: fi2.yservice.help
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 10 - BobQoo
+  server: 2.26.91.57
+  port: 443
+  udp: true
+  type: vless
+  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 40Tmrw44FhOyoqCQiOfR2kCgxEPXrBLLv6oYFvjbGUI
+    short-id: 3c6ec7b2d73a28b6
+  servername: fl.windconnect.pro
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 11 - BobQoo
+  server: fi.snobvpn.online
+  port: 80
+  udp: true
+  type: vless
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  network: ws
+  ws-opts:
+    path: /snob-ws
+- name: 🇫🇮 芬兰 (Finland) 12 - BobQoo
+  server: 212.193.18.183
+  port: 8446
+  udp: true
+  type: vless
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  tls: true
+  reality-opts:
+    public-key: f6xhmL1XqUJ4zdkaDsh9GuEyXc0JXM2Dp5KwU8VHb0c
+    short-id: 7f8e9d0c1b2a
+  servername: maps.apple.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: snob-grpc
+- name: 🇫🇮 芬兰 (Finland) 13 - BobQoo
   server: fr.vpn.legendaah.xyz
   port: 36723
   udp: true
@@ -131,6 +173,9 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 08 - BobQoo
   - 🇫🇮 芬兰 (Finland) 09 - BobQoo
   - 🇫🇮 芬兰 (Finland) 10 - BobQoo
+  - 🇫🇮 芬兰 (Finland) 11 - BobQoo
+  - 🇫🇮 芬兰 (Finland) 12 - BobQoo
+  - 🇫🇮 芬兰 (Finland) 13 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -146,5 +191,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 08 - BobQoo
   - 🇫🇮 芬兰 (Finland) 09 - BobQoo
   - 🇫🇮 芬兰 (Finland) 10 - BobQoo
+  - 🇫🇮 芬兰 (Finland) 11 - BobQoo
+  - 🇫🇮 芬兰 (Finland) 12 - BobQoo
+  - 🇫🇮 芬兰 (Finland) 13 - BobQoo
 rules:
 - MATCH,PROXIES
