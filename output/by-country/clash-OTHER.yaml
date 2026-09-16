@@ -4,32 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇴🇲 OM 01 - BobQoo
-  server: 146.70.37.253
-  port: 443
+- name: 🌐 其他地区 (Other) 01 - BobQoo
+  server: www.nextkyc.com
+  port: 8443
   udp: true
-  type: vless
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  type: vmess
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: kkkk-xcd.pages.dev
+  servername: v2ray1.dozapp.xyz
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /?ed=2048
+    path: /lMnsZUN4/
     headers:
-      Host: kkkk-xcd.pages.dev
+      Host: v2ray1.dozapp.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇴🇲 OM 01 - BobQoo
+  - 🌐 其他地区 (Other) 01 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇴🇲 OM 01 - BobQoo
+  - 🌐 其他地区 (Other) 01 - BobQoo
 rules:
 - MATCH,PROXIES
