@@ -14,7 +14,7 @@
     {
       "type": "vless",
       "tag": "🇫🇷 法国 (France) 02 - BobQoo",
-      "server": "31.77.61.62",
+      "server": "185.24.151.176",
       "server_port": 50051,
       "uuid": "4141d4ab-dba8-4da5-a4e6-dc89c34ded3e",
       "tls": {
@@ -46,6 +46,27 @@
         "server_name": "fuck.rkn",
         "utls": {
           "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 04 - BobQoo",
+      "server": "62.210.91.2",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
           "fingerprint": ""
         },
         "reality": {
@@ -56,32 +77,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 04 - BobQoo",
-      "server": "62.210.147.2",
-      "server_port": 43115,
-      "password": "github.com/Alvin9999-newpac/fanqiang",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 05 - BobQoo",
-      "server": "62.210.7.139",
-      "server_port": 60111,
-      "password": "github.com/Alvin9999-newpac/fanqiang",
-      "tls": {
-        "enabled": true,
-        "server_name": "bing.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 06 - BobQoo",
+      "tag": "🇫🇷 法国 (France) 05 - BobQoo",
       "server": "51.77.217.70",
       "server_port": 2053,
       "uuid": "bf16ee0c-8b3c-41e4-ab3a-8b48033c404e",
@@ -100,29 +97,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 07 - BobQoo",
-      "server": "62.210.91.2",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 08 - BobQoo",
+      "tag": "🇫🇷 法国 (France) 06 - BobQoo",
       "server": "35.181.166.40",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -133,31 +109,15 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 09 - BobQoo",
-      "server": "151.247.197.253",
-      "server_port": 36723,
-      "password": "Krab9Hyst2_Rk7pQ2xL",
-      "tls": {
-        "enabled": true,
-        "server_name": "151.247.197.253",
-        "insecure": true
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 10 - BobQoo",
-      "server": "165.215.250.14",
+      "tag": "🇫🇷 法国 (France) 07 - BobQoo",
+      "server": "212.183.88.136",
       "server_port": 443,
       "password": "humanity",
       "tls": {
         "enabled": true,
         "server_name": "www.calmlunch.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
@@ -169,7 +129,48 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 11 - BobQoo",
+      "tag": "🇫🇷 法国 (France) 08 - BobQoo",
+      "server": "fr-gra-ovh-03.stre4m.net",
+      "server_port": 443,
+      "uuid": "98d0fa1b-d778-477e-b897-4e2569c53178",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "mother-earth.fyi",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 09 - BobQoo",
+      "server": "162.19.10.99",
+      "server_port": 443,
+      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nasnet-162191099-direct.mbghalibaf.com",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 10 - BobQoo",
       "server": "145.223.68.58",
       "server_port": 443,
       "uuid": "edb50d20-2d3e-4c1e-8a75-a17168a89aa5",
@@ -190,20 +191,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 12 - BobQoo",
-      "server": "162.19.10.99",
-      "server_port": 443,
-      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nasnet-162191099-direct.mbghalibaf.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 13 - BobQoo",
+      "tag": "🇫🇷 法国 (France) 11 - BobQoo",
       "server": "54.37.136.194",
       "server_port": 2053,
       "uuid": "e8a432c8-5d84-49a5-b822-67ed761a58f9",
@@ -222,61 +210,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 14 - BobQoo",
-      "server": "173.212.201.85",
-      "server_port": 443,
-      "password": "gf1:gfhysteria2024",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.docker.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 15 - BobQoo",
-      "server": "5.78.92.27",
-      "server_port": 8443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 16 - BobQoo",
-      "server": "130.49.77.5",
-      "server_port": 8443,
-      "uuid": "1e4668ca-6526-84ac-2a53-28bbc209da13",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.philips.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Sq7mtLmaanwsTVNBR9gU7ECU87ftrb_wFGRLLNRBlmQ",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -291,12 +224,7 @@
         "🇫🇷 法国 (France) 08 - BobQoo",
         "🇫🇷 法国 (France) 09 - BobQoo",
         "🇫🇷 法国 (France) 10 - BobQoo",
-        "🇫🇷 法国 (France) 11 - BobQoo",
-        "🇫🇷 法国 (France) 12 - BobQoo",
-        "🇫🇷 法国 (France) 13 - BobQoo",
-        "🇫🇷 法国 (France) 14 - BobQoo",
-        "🇫🇷 法国 (France) 15 - BobQoo",
-        "🇫🇷 法国 (France) 16 - BobQoo"
+        "🇫🇷 法国 (France) 11 - BobQoo"
       ]
     },
     {
@@ -313,12 +241,7 @@
         "🇫🇷 法国 (France) 08 - BobQoo",
         "🇫🇷 法国 (France) 09 - BobQoo",
         "🇫🇷 法国 (France) 10 - BobQoo",
-        "🇫🇷 法国 (France) 11 - BobQoo",
-        "🇫🇷 法国 (France) 12 - BobQoo",
-        "🇫🇷 法国 (France) 13 - BobQoo",
-        "🇫🇷 法国 (France) 14 - BobQoo",
-        "🇫🇷 法国 (France) 15 - BobQoo",
-        "🇫🇷 法国 (France) 16 - BobQoo"
+        "🇫🇷 法国 (France) 11 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

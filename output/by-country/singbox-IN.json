@@ -4,36 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇮🇳 印度 (India) 01 - BobQoo",
-      "server": "vpn-in-001.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-in-001.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 02 - BobQoo",
-      "server": "hyfuuf6.wsone.icu",
-      "server_port": 443,
-      "password": "M7v%w11Se*",
-      "tls": {
-        "enabled": true,
-        "server_name": "hyfuuf6.wsone.icu",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
+      "server": "139.84.166.47",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "GEdoeeqLZtkJRgSa"
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - BobQoo",
+      "tag": "🇮🇳 印度 (India) 02 - BobQoo",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -53,7 +33,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 04 - BobQoo",
+      "tag": "🇮🇳 印度 (India) 03 - BobQoo",
       "server": "152.67.8.205",
       "server_port": 80,
       "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
@@ -64,16 +44,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 05 - BobQoo",
-      "server": "139.84.166.47",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "GEdoeeqLZtkJRgSa"
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 06 - BobQoo",
+      "tag": "🇮🇳 印度 (India) 04 - BobQoo",
       "server": "148.113.5.44",
       "server_port": 443,
       "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
@@ -100,9 +72,7 @@
         "🇮🇳 印度 (India) 01 - BobQoo",
         "🇮🇳 印度 (India) 02 - BobQoo",
         "🇮🇳 印度 (India) 03 - BobQoo",
-        "🇮🇳 印度 (India) 04 - BobQoo",
-        "🇮🇳 印度 (India) 05 - BobQoo",
-        "🇮🇳 印度 (India) 06 - BobQoo"
+        "🇮🇳 印度 (India) 04 - BobQoo"
       ]
     },
     {
@@ -112,9 +82,7 @@
         "🇮🇳 印度 (India) 01 - BobQoo",
         "🇮🇳 印度 (India) 02 - BobQoo",
         "🇮🇳 印度 (India) 03 - BobQoo",
-        "🇮🇳 印度 (India) 04 - BobQoo",
-        "🇮🇳 印度 (India) 05 - BobQoo",
-        "🇮🇳 印度 (India) 06 - BobQoo"
+        "🇮🇳 印度 (India) 04 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
