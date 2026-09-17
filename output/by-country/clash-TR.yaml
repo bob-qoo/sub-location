@@ -5,18 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - BobQoo
-  server: 156.67.63.231
-  port: 443
+  server: 91.228.227.211
+  port: 23957
   udp: true
-  type: vless
-  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
-    short-id: 5606d4a25c99e7af
-  servername: sync-bridge.org
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 92987ab8-0a53-4a16-8d6c-295d5df86404
+  alterId: 0
+  cipher: auto
 - name: 🇹🇷 土耳其 (Turkey) 02 - BobQoo
   server: 151.241.226.201
   port: 2053
@@ -30,28 +25,29 @@ proxies:
   servername: www.apple.com
   client-fingerprint: ''
 - name: 🇹🇷 土耳其 (Turkey) 03 - BobQoo
-  server: 139.28.240.68
-  port: 2086
+  server: max.karmatel.ir
+  port: 55519
   udp: true
-  type: vmess
-  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: a2b9a1b7-f12f-4503-a9f6-c78ec565a6bf
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: play-apps-features.googleusercontent.com
 - name: 🇹🇷 土耳其 (Turkey) 04 - BobQoo
-  server: 139.28.240.68
-  port: 2086
+  server: 156.67.63.231
+  port: 443
   udp: true
-  type: vmess
-  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
-  alterId: 0
-  cipher: auto
-- name: 🇹🇷 土耳其 (Turkey) 05 - BobQoo
-  server: 139.28.240.68
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
+  type: vless
+  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
+    short-id: 5606d4a25c99e7af
+  servername: sync-bridge.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,7 +57,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - BobQoo
   - 🇹🇷 土耳其 (Turkey) 03 - BobQoo
   - 🇹🇷 土耳其 (Turkey) 04 - BobQoo
-  - 🇹🇷 土耳其 (Turkey) 05 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,6 +66,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - BobQoo
   - 🇹🇷 土耳其 (Turkey) 03 - BobQoo
   - 🇹🇷 土耳其 (Turkey) 04 - BobQoo
-  - 🇹🇷 土耳其 (Turkey) 05 - BobQoo
 rules:
 - MATCH,PROXIES

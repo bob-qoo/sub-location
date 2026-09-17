@@ -6,6 +6,15 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - BobQoo
   server: 192.145.31.5
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  tls: true
+  servername: neth9.lunariai.ru
+  skip-cert-verify: true
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - BobQoo
+  server: 192.145.31.5
   port: 443
   udp: true
   type: vless
@@ -13,16 +22,21 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - BobQoo
-  server: neth9.lunariai.ru
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  tls: true
-  servername: neth9.lunariai.ru
-  skip-cert-verify: false
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - BobQoo
+  server: 213.183.63.60
+  port: 9085
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9ej82EKe2gq7gLAM
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - BobQoo
+  server: 213.183.63.60
+  port: 9064
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: cp8pRSUAyLhTfVWH
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - BobQoo
   server: 193.148.59.178
   port: 443
   udp: true
@@ -35,8 +49,8 @@ proxies:
     short-id: e3daad69
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - BobQoo
-  server: prep.wwwinternetvideo.click
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - BobQoo
+  server: 144.31.50.236
   port: 443
   udp: true
   type: vless
@@ -47,7 +61,7 @@ proxies:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
-  client-fingerprint: ''
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,6 +71,8 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 02 - BobQoo
   - 🇧🇬 保加利亚 (Bulgaria) 03 - BobQoo
   - 🇧🇬 保加利亚 (Bulgaria) 04 - BobQoo
+  - 🇧🇬 保加利亚 (Bulgaria) 05 - BobQoo
+  - 🇧🇬 保加利亚 (Bulgaria) 06 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,5 +82,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 02 - BobQoo
   - 🇧🇬 保加利亚 (Bulgaria) 03 - BobQoo
   - 🇧🇬 保加利亚 (Bulgaria) 04 - BobQoo
+  - 🇧🇬 保加利亚 (Bulgaria) 05 - BobQoo
+  - 🇧🇬 保加利亚 (Bulgaria) 06 - BobQoo
 rules:
 - MATCH,PROXIES

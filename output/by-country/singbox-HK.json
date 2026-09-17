@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - BobQoo",
+      "server": "zfd-hkv1.kunlun01dns.com",
+      "server_port": 16113,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - BobQoo",
       "server": "162.128.157.164",
       "server_port": 443,
       "uuid": "5e8e81ac-a1c4-4543-b81e-651bf9872b54",
@@ -25,50 +33,81 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - BobQoo",
+      "server": "zfd-hkv2.kunlun01dns.com",
+      "server_port": 16115,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - BobQoo",
-      "server": "207.56.137.51",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - BobQoo",
+      "server": "47.83.173.110",
       "server_port": 443,
-      "uuid": "01ada9fb-fa2f-45da-a0d0-bce80cdf433b",
+      "uuid": "bca6f15f-89db-40e2-a955-19d084229234",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0",
-          "short_id": "f713561d"
+          "public_key": "BqFbrSSosM7RAVvUGTRmCrZlHY6aGwq9HEJs0fMdK0s",
+          "short_id": "8144589880395fa1"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - BobQoo",
-      "server": "hk-1.gsafevpnapi.com",
-      "server_port": 20270,
-      "uuid": "2bf192f1-7d86-43a3-88b3-8f72b7eb5ad9",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - BobQoo",
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "www.yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8",
-          "short_id": "d5b538acf8a93540"
-        }
+        "server_name": "202.146.222.89",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - BobQoo",
+      "server": "202.146.222.174",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/wangcai2🇨🇳",
+        "insecure": true
       }
     },
     {
       "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - BobQoo",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - BobQoo",
+      "server": "zfd-hkv2.kunlun01dns.com",
+      "server_port": 16112,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - BobQoo",
+      "server": "47.244.120.197",
+      "server_port": 23026,
+      "uuid": "b9de1bc9-baa7-41ac-86f7-ccd59695cb21",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/arki"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - BobQoo",
       "server": "www.shopify.com",
       "server_port": 443,
       "uuid": "3aa71202-a099-49c1-99fc-6662f3335369",
@@ -88,7 +127,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - BobQoo",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - BobQoo",
       "server": "47.239.6.251",
       "server_port": 13779,
       "uuid": "928e6cce-8ced-4243-9a48-a6642edd09b0",
@@ -116,7 +155,12 @@
         "🇭🇰 中国香港 (Hong Kong) 02 - BobQoo",
         "🇭🇰 中国香港 (Hong Kong) 03 - BobQoo",
         "🇭🇰 中国香港 (Hong Kong) 04 - BobQoo",
-        "🇭🇰 中国香港 (Hong Kong) 05 - BobQoo"
+        "🇭🇰 中国香港 (Hong Kong) 05 - BobQoo",
+        "🇭🇰 中国香港 (Hong Kong) 06 - BobQoo",
+        "🇭🇰 中国香港 (Hong Kong) 07 - BobQoo",
+        "🇭🇰 中国香港 (Hong Kong) 08 - BobQoo",
+        "🇭🇰 中国香港 (Hong Kong) 09 - BobQoo",
+        "🇭🇰 中国香港 (Hong Kong) 10 - BobQoo"
       ]
     },
     {
@@ -127,7 +171,12 @@
         "🇭🇰 中国香港 (Hong Kong) 02 - BobQoo",
         "🇭🇰 中国香港 (Hong Kong) 03 - BobQoo",
         "🇭🇰 中国香港 (Hong Kong) 04 - BobQoo",
-        "🇭🇰 中国香港 (Hong Kong) 05 - BobQoo"
+        "🇭🇰 中国香港 (Hong Kong) 05 - BobQoo",
+        "🇭🇰 中国香港 (Hong Kong) 06 - BobQoo",
+        "🇭🇰 中国香港 (Hong Kong) 07 - BobQoo",
+        "🇭🇰 中国香港 (Hong Kong) 08 - BobQoo",
+        "🇭🇰 中国香港 (Hong Kong) 09 - BobQoo",
+        "🇭🇰 中国香港 (Hong Kong) 10 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

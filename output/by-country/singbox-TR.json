@@ -4,25 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - BobQoo",
-      "server": "156.67.63.231",
-      "server_port": 443,
-      "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "sync-bridge.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI",
-          "short_id": "5606d4a25c99e7af"
-        }
-      }
+      "server": "91.228.227.211",
+      "server_port": 23957,
+      "uuid": "92987ab8-0a53-4a16-8d6c-295d5df86404",
+      "security": "auto"
     },
     {
       "type": "vless",
@@ -45,28 +32,39 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - BobQoo",
-      "server": "139.28.240.68",
-      "server_port": 2086,
-      "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b",
-      "security": "auto"
+      "server": "max.karmatel.ir",
+      "server_port": 55519,
+      "uuid": "a2b9a1b7-f12f-4503-a9f6-c78ec565a6bf",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "play-apps-features.googleusercontent.com"
+        }
+      }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 04 - BobQoo",
-      "server": "139.28.240.68",
-      "server_port": 2086,
-      "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b",
-      "security": "auto"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - BobQoo",
-      "server": "139.28.240.68",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "rSeYcig_XBy8q3k33NpK3A"
+      "server": "156.67.63.231",
+      "server_port": 443,
+      "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sync-bridge.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI",
+          "short_id": "5606d4a25c99e7af"
+        }
+      }
     },
     {
       "type": "selector",
@@ -76,8 +74,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - BobQoo",
         "🇹🇷 土耳其 (Turkey) 02 - BobQoo",
         "🇹🇷 土耳其 (Turkey) 03 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 04 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 05 - BobQoo"
+        "🇹🇷 土耳其 (Turkey) 04 - BobQoo"
       ]
     },
     {
@@ -87,8 +84,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - BobQoo",
         "🇹🇷 土耳其 (Turkey) 02 - BobQoo",
         "🇹🇷 土耳其 (Turkey) 03 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 04 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 05 - BobQoo"
+        "🇹🇷 土耳其 (Turkey) 04 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

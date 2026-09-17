@@ -4,44 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - BobQoo
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - BobQoo
+  server: 36.224.185.173
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo
+  server: 36.224.185.143
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - BobQoo
   server: 49.254.204.134
   port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo
-  server: r3mrcg001286ek2.cybervena.com
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo
-  server: r3mrcg00129437x.cybervena.com
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 - name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - BobQoo
-  server: 82259754d625.oylfmxz.cn
-  port: 443
-  udp: true
-  type: vmess
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 82259754d625.oylfmxz.cn
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 82259754d625.oylfmxz.cn
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - BobQoo
   server: 7dba81fc3a0b.oylfmxz.cn
   port: 443
   udp: true
@@ -60,20 +44,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - BobQoo
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - BobQoo
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - BobQoo
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - BobQoo
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - BobQoo
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - BobQoo
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - BobQoo
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - BobQoo
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - BobQoo
 rules:
 - MATCH,PROXIES

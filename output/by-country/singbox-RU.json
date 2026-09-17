@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01 - BobQoo",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "/QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA="
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - BobQoo",
+      "tag": "🇷🇺 俄罗斯 (Russia) 01 - BobQoo",
       "server": "msk.frkn.org",
       "server_port": 443,
       "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
@@ -21,6 +13,18 @@
         "enabled": true,
         "server_name": "msk.frkn.org",
         "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - BobQoo",
+      "server": "91.240.86.70",
+      "server_port": 22443,
+      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
+      "tls": {
+        "enabled": true,
+        "server_name": "91.240.86.70",
+        "insecure": true
       }
     },
     {
@@ -36,33 +40,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - BobQoo",
-      "server": "46.8.200.91",
-      "server_port": 443,
-      "uuid": "b8201bab-fa6c-4f6e-b289-b5da660c6f69",
-      "tls": {
-        "enabled": true,
-        "server_name": "cf3.rumedia-cdn.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live",
-        "headers": {
-          "Host": "cf3.rumedia-cdn.com"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - BobQoo",
         "🇷🇺 俄罗斯 (Russia) 02 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 03 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 04 - BobQoo"
+        "🇷🇺 俄罗斯 (Russia) 03 - BobQoo"
       ]
     },
     {
@@ -71,8 +55,7 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - BobQoo",
         "🇷🇺 俄罗斯 (Russia) 02 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 03 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 04 - BobQoo"
+        "🇷🇺 俄罗斯 (Russia) 03 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
