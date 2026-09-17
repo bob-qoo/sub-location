@@ -5,50 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - BobQoo
-  server: 103.31.4.10
-  port: 443
+  server: 188.114.97.6
+  port: 2086
   udp: true
   type: vless
-  uuid: 77dc177b-79d9-49ac-92e1-2f1011faa5e3
-  tls: true
-  servername: f871a986.69lover.site
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /api/v2/b8ee4ba356df307c/stream
+    path: /
     headers:
-      Host: f871a986.69lover.site
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 - name: 🌐 其他地区 (Other) 02 - BobQoo
-  server: 104.25.30.10
-  port: 443
+  server: 188.114.97.6
+  port: 2086
   udp: true
   type: vless
-  uuid: 807cd1e0-f4ce-4785-b7a3-cde0c1614b8d
-  tls: true
-  servername: de14.69lover.my
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 7a629a11-b75a-4889-957d-dc0987a73a19
   network: ws
   ws-opts:
-    path: /api/v2/6c316c769ad6853c/stream
+    path: /eyJqdW5rIjoieVMzbmVFWlBsd3prIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed
     headers:
-      Host: de14.69lover.my
-- name: 🌐 其他地区 (Other) 03 - BobQoo
-  server: 104.25.30.10
-  port: 443
-  udp: true
-  type: vless
-  uuid: 807cd1e0-f4ce-4785-b7a3-cde0c1614b8d
-  tls: true
-  servername: de14.69lover.my
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /api/v2/6c316c769ad6853c/stream
-    headers:
-      Host: de14.69lover.my
+      Host: jimifree.jimshofree1.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,7 +33,6 @@ proxy-groups:
   - AUTO
   - 🌐 其他地区 (Other) 01 - BobQoo
   - 🌐 其他地区 (Other) 02 - BobQoo
-  - 🌐 其他地区 (Other) 03 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,6 +40,5 @@ proxy-groups:
   proxies:
   - 🌐 其他地区 (Other) 01 - BobQoo
   - 🌐 其他地区 (Other) 02 - BobQoo
-  - 🌐 其他地区 (Other) 03 - BobQoo
 rules:
 - MATCH,PROXIES

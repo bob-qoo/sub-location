@@ -6,78 +6,30 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - BobQoo",
-      "server": "103.31.4.10",
-      "server_port": 443,
-      "uuid": "77dc177b-79d9-49ac-92e1-2f1011faa5e3",
-      "tls": {
-        "enabled": true,
-        "server_name": "f871a986.69lover.site",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "188.114.97.6",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/api/v2/b8ee4ba356df307c/stream",
+        "path": "/",
         "headers": {
-          "Host": "f871a986.69lover.site"
-        }
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
       }
     },
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 02 - BobQoo",
-      "server": "104.25.30.10",
-      "server_port": 443,
-      "uuid": "807cd1e0-f4ce-4785-b7a3-cde0c1614b8d",
-      "tls": {
-        "enabled": true,
-        "server_name": "de14.69lover.my",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "188.114.97.6",
+      "server_port": 2086,
+      "uuid": "7a629a11-b75a-4889-957d-dc0987a73a19",
       "transport": {
         "type": "ws",
-        "path": "/api/v2/6c316c769ad6853c/stream",
+        "path": "/eyJqdW5rIjoieVMzbmVFWlBsd3prIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed",
         "headers": {
-          "Host": "de14.69lover.my"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 03 - BobQoo",
-      "server": "104.25.30.10",
-      "server_port": 443,
-      "uuid": "807cd1e0-f4ce-4785-b7a3-cde0c1614b8d",
-      "tls": {
-        "enabled": true,
-        "server_name": "de14.69lover.my",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/v2/6c316c769ad6853c/stream",
-        "headers": {
-          "Host": "de14.69lover.my"
+          "Host": "jimifree.jimshofree1.workers.dev"
         }
       }
     },
@@ -87,8 +39,7 @@
       "outbounds": [
         "auto",
         "🌐 其他地区 (Other) 01 - BobQoo",
-        "🌐 其他地区 (Other) 02 - BobQoo",
-        "🌐 其他地区 (Other) 03 - BobQoo"
+        "🌐 其他地区 (Other) 02 - BobQoo"
       ]
     },
     {
@@ -96,8 +47,7 @@
       "tag": "auto",
       "outbounds": [
         "🌐 其他地区 (Other) 01 - BobQoo",
-        "🌐 其他地区 (Other) 02 - BobQoo",
-        "🌐 其他地区 (Other) 03 - BobQoo"
+        "🌐 其他地区 (Other) 02 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
