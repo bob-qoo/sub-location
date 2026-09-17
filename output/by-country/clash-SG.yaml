@@ -5,50 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - BobQoo
-  server: 188.114.97.8
-  port: 443
+  server: 162.159.43.187
+  port: 80
   udp: true
   type: vless
-  uuid: eb24c3b4-7936-45e2-a253-e54fd1955a7f
-  tls: true
-  servername: C0yR9j09Y2l9G0tD8wa5.2wHBRirhjGslM43zJCqEi.worKeRs.DEV
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /vl/6NGHNFKsvK41KeQo?ed=2560
+    path: /?ed=2560security=tls
     headers:
-      Host: c0yr9j09y2l9g0td8wa5.2whbrirhjgslm43zjcqei.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇬 新加坡 (Singapore) 02 - BobQoo
-  server: www.speedtest.net
-  port: 443
+  server: 172.64.229.2
+  port: 2086
   udp: true
   type: vless
-  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
-  tls: true
-  servername: d2127A49-flAT-wooD-C4B5.mILia-AkbARpOor.WorkERs.dEV
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /8eaZJhRwB5zzDy81
+    path: /?ed=2560security=tls
     headers:
-      Host: d2127A49-flAT-wooD-C4B5.mILia-AkbARpOor.WorkERs.dEV
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇬 新加坡 (Singapore) 03 - BobQoo
-  server: 167.150.100.115
-  port: 27755
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 2388e166-3890-33ae-f77e-efac00000002
+  network: ws
+  ws-opts:
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    headers:
+      Host: netlivpn4813.ddhshhshs.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 04 - BobQoo
+  server: 194.233.74.160
+  port: 2342
   udp: true
   type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
-- name: 🇸🇬 新加坡 (Singapore) 04 - BobQoo
-  server: 149.88.23.202
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  cipher: chacha20-ietf-poly1305
+  password: XV4bvaJIWoxl3IYEC1e6W7
 - name: 🇸🇬 新加坡 (Singapore) 05 - BobQoo
   server: 149.88.23.207
   port: 18000
@@ -58,50 +53,21 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 06 - BobQoo
-  server: 194.233.74.160
-  port: 2342
+  server: 149.88.23.202
+  port: 18000
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: XV4bvaJIWoxl3IYEC1e6W7
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 07 - BobQoo
-  server: 103.36.91.32
-  port: 8388
+  server: 167.150.100.115
+  port: 27755
   udp: true
   type: ss
-  cipher: chacha20-ietf
-  password: asd123456
+  cipher: 2022-blake3-aes-256-gcm
+  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
 - name: 🇸🇬 新加坡 (Singapore) 08 - BobQoo
-  server: 210.152.85.154
-  port: 19364
-  udp: true
-  type: vless
-  uuid: 0c4f2fbc-df76-4320-bc6d-52e1df96ae25
-  tls: true
-  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 09 - BobQoo
-  server: 92.113.124.204
-  port: 18443
-  udp: true
-  type: vless
-  uuid: fdb0be25-73da-4bd9-af51-a150d02be32e
-  tls: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 10 - BobQoo
   server: 217.217.254.126
   port: 2053
   udp: true
@@ -113,6 +79,27 @@ proxies:
     short-id: 87829de0e2bb82cb
   servername: www.cloudflare.com
   client-fingerprint: ''
+- name: 🇸🇬 新加坡 (Singapore) 09 - BobQoo
+  server: 146.235.16.130
+  port: 19825
+  udp: true
+  type: vless
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  servername: sg2-8sb.6121999.dpdns.org
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 10 - BobQoo
+  server: 86.38.247.109
+  port: 2087
+  udp: true
+  type: trojan
+  password: sshs8_6481354771
+  sni: ul-singapore1.09vpn.com
+  skip-cert-verify: false
 - name: 🇸🇬 新加坡 (Singapore) 11 - BobQoo
   server: sg-1.gsafevpnapi.com
   port: 20270
@@ -127,17 +114,16 @@ proxies:
   servername: www.yahoo.com
   client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 12 - BobQoo
-  server: 46.137.202.178
-  port: 12512
+  server: 18.140.246.36
+  port: 8686
   udp: true
   type: vless
-  uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
-  flow: xtls-rprx-vision
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   tls: true
   reality-opts:
-    public-key: sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA
-    short-id: e692a8250d2e2fd0
-  servername: www.intel.com
+    public-key: A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw
+    short-id: 628b3c90c98ead4f
+  servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 13 - BobQoo
   server: 45.202.247.152
@@ -154,74 +140,46 @@ proxies:
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇸🇬 新加坡 (Singapore) 14 - BobQoo
-  server: 185.125.103.62
-  port: 8082
+  server: 3.0.111.82
+  port: 10574
   udp: true
   type: vless
-  uuid: 2f146d09-a953-4bc2-bbef-503a1c0e6b70
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
   tls: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
 - name: 🇸🇬 新加坡 (Singapore) 15 - BobQoo
-  server: 185.125.103.62
-  port: 8082
-  udp: true
-  type: vless
-  uuid: 7909e164-d482-4620-a370-07e6fda6676b
-  tls: true
-  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 16 - BobQoo
-  server: 43.175.131.30
-  port: 443
+  server: 45.77.241.190
+  port: 8441
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
   servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /article?ed=2560
+    path: /act/company/intro
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 17 - BobQoo
-  server: 13.214.138.61
-  port: 8686
+- name: 🇸🇬 新加坡 (Singapore) 16 - BobQoo
+  server: 3.0.111.82
+  port: 12972
   udp: true
   type: vless
-  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw
-    short-id: 628b3c90c98ead4f
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 18 - BobQoo
-  server: 188.114.97.6
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 2388e166-3890-33ae-f77e-efac00000002
-  network: ws
-  ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-    headers:
-      Host: netlivpn4813.ddhshhshs.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 19 - BobQoo
+- name: 🇸🇬 新加坡 (Singapore) 17 - BobQoo
   server: 140.245.38.33
   port: 2096
   udp: true
@@ -235,83 +193,21 @@ proxies:
     path: /class/season
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 20 - BobQoo
-  server: 170.114.45.6
-  port: 80
-  udp: true
-  type: vless
-  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
-  network: ws
-  ws-opts:
-    path: /shalana
-    headers:
-      Host: shalana.xyz
-- name: 🇸🇬 新加坡 (Singapore) 21 - BobQoo
-  server: 54.255.121.205
-  port: 43840
-  udp: true
-  type: vless
-  uuid: f053b140-9673-4ac5-bc8b-587bfd2c8fd8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: tDzxVcXg6zzA1r0I_1j2y4vE0zkgmIVX3_Jf0UG1AnA
-    short-id: ac4b9f02123aa50b
-  servername: www.sony.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 22 - BobQoo
-  server: 170.114.45.6
-  port: 80
-  udp: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 23 - BobQoo
-  server: 141.193.213.20
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  tls: true
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 24 - BobQoo
-  server: 3.0.111.82
-  port: 12972
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 25 - BobQoo
-  server: 43.159.4.80
+- name: 🇸🇬 新加坡 (Singapore) 18 - BobQoo
+  server: 43.175.131.30
   port: 443
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
   servername: cdn8848.776676.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /episode/files?ed=2560fp=chrome
+    path: /
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 26 - BobQoo
+- name: 🇸🇬 新加坡 (Singapore) 19 - BobQoo
   server: 104.17.70.206
   port: 2096
   udp: true
@@ -326,21 +222,7 @@ proxies:
     path: /shalana
     headers:
       Host: shalana.xyz
-- name: 🇸🇬 新加坡 (Singapore) 27 - BobQoo
-  server: 45.77.241.190
-  port: 8441
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /act/company/intro
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 28 - BobQoo
+- name: 🇸🇬 新加坡 (Singapore) 20 - BobQoo
   server: 3.0.111.82
   port: 17623
   udp: true
@@ -353,85 +235,32 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 29 - BobQoo
-  server: 3.0.111.82
-  port: 10574
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 30 - BobQoo
-  server: 84.22.150.239
-  port: 444
-  udp: true
-  type: vless
-  uuid: dc83276f-268a-4b18-9f63-63c73e11ffd8
-  tls: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 31 - BobQoo
-  server: 84.22.150.239
-  port: 444
-  udp: true
-  type: vless
-  uuid: 4054ad5f-e7db-4cad-bb5c-91108323c169
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 32 - BobQoo
-  server: cloud.lakshan.us
-  port: 119
-  udp: true
-  type: trojan
-  password: skynet
-  sni: cloud.lakshan.us
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 33 - BobQoo
-  server: 116.251.217.65
+- name: 🇸🇬 新加坡 (Singapore) 21 - BobQoo
+  server: 43.160.220.86
   port: 443
   udp: true
   type: vless
-  uuid: 2388e166-3890-33ae-f77e-efac00000002
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: netlivpn4813.ddhshhshs.workers.dev
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    path: /buy/uploads?ed=2560
     headers:
-      Host: netlivpn4813.ddhshhshs.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 34 - BobQoo
-  server: 146.235.16.130
-  port: 19825
+      Host: cdn8848.776676.xyz
+- name: 🇸🇬 新加坡 (Singapore) 22 - BobQoo
+  server: support.zoom.us
+  port: 80
   udp: true
   type: vless
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  servername: sg2-8sb.6121999.dpdns.org
-  client-fingerprint: ''
+  uuid: 6aa028bc-08a9-41d1-a397-d60ce65df081
+  network: ws
+  ws-opts:
+    path: /shalana
+    headers:
+      Host: shalana.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -459,18 +288,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 20 - BobQoo
   - 🇸🇬 新加坡 (Singapore) 21 - BobQoo
   - 🇸🇬 新加坡 (Singapore) 22 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 23 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 24 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 25 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 26 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 27 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 28 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 29 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 30 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 31 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 32 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 33 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 34 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -498,17 +315,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 20 - BobQoo
   - 🇸🇬 新加坡 (Singapore) 21 - BobQoo
   - 🇸🇬 新加坡 (Singapore) 22 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 23 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 24 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 25 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 26 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 27 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 28 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 29 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 30 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 31 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 32 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 33 - BobQoo
-  - 🇸🇬 新加坡 (Singapore) 34 - BobQoo
 rules:
 - MATCH,PROXIES
