@@ -4,54 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🌐 其他地区 (Other) 01 - BobQoo",
-      "server": "104.16.60.10",
+      "server": "172.64.150.28",
       "server_port": 443,
-      "uuid": "cdf5205e-897f-46a7-8d7f-21a61a80b466",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "hk1.69lover.my",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "www.calmlunch.com",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/api/v2/e2fe4e52a165854d/stream",
+        "path": "/assignment",
         "headers": {
-          "Host": "hk1.69lover.my"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 02 - BobQoo",
-      "server": "104.16.60.10",
-      "server_port": 443,
-      "uuid": "cdf5205e-897f-46a7-8d7f-21a61a80b466",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk1.69lover.my",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/v2/e2fe4e52a165854d/stream",
-        "headers": {
-          "Host": "hk1.69lover.my"
+          "Host": "www.calmlunch.com"
         }
       }
     },
@@ -60,16 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - BobQoo",
-        "🌐 其他地区 (Other) 02 - BobQoo"
+        "🌐 其他地区 (Other) 01 - BobQoo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - BobQoo",
-        "🌐 其他地区 (Other) 02 - BobQoo"
+        "🌐 其他地区 (Other) 01 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -12,18 +12,101 @@
       "security": "auto"
     },
     {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 02 - BobQoo",
+      "server": "v2ray.simspeedup.com",
+      "server_port": 80,
+      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "v2ray.simspeedup.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 03 - BobQoo",
+      "server": "43.175.131.30",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 04 - BobQoo",
+      "server": "140.245.38.33",
+      "server_port": 2096,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/class/season?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 05 - BobQoo",
+      "server": "162.159.192.125",
+      "server_port": 443,
+      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray.simspeedup.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "v2ray.simspeedup.com"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 - BobQoo"
+        "🇹🇭 泰国 (Thailand) 01 - BobQoo",
+        "🇹🇭 泰国 (Thailand) 02 - BobQoo",
+        "🇹🇭 泰国 (Thailand) 03 - BobQoo",
+        "🇹🇭 泰国 (Thailand) 04 - BobQoo",
+        "🇹🇭 泰国 (Thailand) 05 - BobQoo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 - BobQoo"
+        "🇹🇭 泰国 (Thailand) 01 - BobQoo",
+        "🇹🇭 泰国 (Thailand) 02 - BobQoo",
+        "🇹🇭 泰国 (Thailand) 03 - BobQoo",
+        "🇹🇭 泰国 (Thailand) 04 - BobQoo",
+        "🇹🇭 泰国 (Thailand) 05 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

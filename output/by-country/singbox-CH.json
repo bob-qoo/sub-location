@@ -39,12 +39,34 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - BobQoo",
+      "server": "captaingold.app",
+      "server_port": 443,
+      "uuid": "c40ed630-4c4f-49d0-9ef3-362e802d47fc",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "captaingold.app",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6V_LHB1yblp9RDyo5GOXL-V_V9MFa-mBRO0epwSQP3U",
+          "short_id": "a1ab5a56bca2b1d3"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - BobQoo",
-        "🇨🇭 瑞士 (Switzerland) 02 - BobQoo"
+        "🇨🇭 瑞士 (Switzerland) 02 - BobQoo",
+        "🇨🇭 瑞士 (Switzerland) 03 - BobQoo"
       ]
     },
     {
@@ -52,7 +74,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - BobQoo",
-        "🇨🇭 瑞士 (Switzerland) 02 - BobQoo"
+        "🇨🇭 瑞士 (Switzerland) 02 - BobQoo",
+        "🇨🇭 瑞士 (Switzerland) 03 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,50 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - BobQoo",
-      "server": "91.228.227.211",
-      "server_port": 23957,
-      "uuid": "92987ab8-0a53-4a16-8d6c-295d5df86404",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - BobQoo",
-      "server": "151.241.226.201",
-      "server_port": 2053,
-      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
-          "short_id": "9e419c0759b54d6f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - BobQoo",
-      "server": "max.karmatel.ir",
-      "server_port": 55519,
-      "uuid": "a2b9a1b7-f12f-4503-a9f6-c78ec565a6bf",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "play-apps-features.googleusercontent.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - BobQoo",
       "server": "156.67.63.231",
       "server_port": 443,
       "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
@@ -67,6 +25,68 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - BobQoo",
+      "server": "helixgaming.ir",
+      "server_port": 80,
+      "uuid": "c0e453eb-33ac-4206-8423-3e1286c2ba7a",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "play.google.com"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - BobQoo",
+      "server": "153.52.92.81",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "IXa3ylzS_jBOAsQy071tIQ"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - BobQoo",
+      "server": "151.241.226.201",
+      "server_port": 2053,
+      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
+          "short_id": "9e419c0759b54d6f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - BobQoo",
+      "server": "content3.movieham.ir",
+      "server_port": 5494,
+      "uuid": "7e0faccc-1d74-4ddf-bbdf-7258e155115d",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SzDv43wbpLLk6ADfHa8P6lsHTEa1d3zf6BSzVtdsHSc",
+          "short_id": "dfa0ae38b2eba4c8"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -74,7 +94,8 @@
         "🇹🇷 土耳其 (Turkey) 01 - BobQoo",
         "🇹🇷 土耳其 (Turkey) 02 - BobQoo",
         "🇹🇷 土耳其 (Turkey) 03 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 04 - BobQoo"
+        "🇹🇷 土耳其 (Turkey) 04 - BobQoo",
+        "🇹🇷 土耳其 (Turkey) 05 - BobQoo"
       ]
     },
     {
@@ -84,7 +105,8 @@
         "🇹🇷 土耳其 (Turkey) 01 - BobQoo",
         "🇹🇷 土耳其 (Turkey) 02 - BobQoo",
         "🇹🇷 土耳其 (Turkey) 03 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 04 - BobQoo"
+        "🇹🇷 土耳其 (Turkey) 04 - BobQoo",
+        "🇹🇷 土耳其 (Turkey) 05 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

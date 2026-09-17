@@ -12,17 +12,79 @@ proxies:
   uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
   alterId: 0
   cipher: auto
+- name: 🇹🇭 泰国 (Thailand) 02 - BobQoo
+  server: v2ray.simspeedup.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 泰国 (Thailand) 03 - BobQoo
+  server: 43.175.131.30
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇹🇭 泰国 (Thailand) 04 - BobQoo
+  server: 140.245.38.33
+  port: 2096
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /class/season?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇹🇭 泰国 (Thailand) 05 - BobQoo
+  server: 162.159.192.125
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  tls: true
+  servername: v2ray.simspeedup.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - BobQoo
+  - 🇹🇭 泰国 (Thailand) 02 - BobQoo
+  - 🇹🇭 泰国 (Thailand) 03 - BobQoo
+  - 🇹🇭 泰国 (Thailand) 04 - BobQoo
+  - 🇹🇭 泰国 (Thailand) 05 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - BobQoo
+  - 🇹🇭 泰国 (Thailand) 02 - BobQoo
+  - 🇹🇭 泰国 (Thailand) 03 - BobQoo
+  - 🇹🇭 泰国 (Thailand) 04 - BobQoo
+  - 🇹🇭 泰国 (Thailand) 05 - BobQoo
 rules:
 - MATCH,PROXIES

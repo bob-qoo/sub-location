@@ -4,31 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - BobQoo",
-      "server": "150.241.71.148",
-      "server_port": 448,
-      "password": "6fY77UmuJ6BEK7n0qv433JrPNjCMeZQV",
-      "tls": {
-        "enabled": true,
-        "server_name": "kiev.gosgenarchive.com",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TrojanGRPC"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - BobQoo",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - BobQoo",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
@@ -47,6 +24,14 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - BobQoo",
+      "server": "82.47.186.18",
+      "server_port": 19290,
+      "method": "aes-128-gcm",
+      "password": "o2rw2hICwu1blrr_gZAl2Q"
+    },
+    {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 03 - BobQoo",
       "server": "31.77.199.147",
@@ -58,7 +43,7 @@
         "server_name": "images.unsplash.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -91,26 +76,6 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 05 - BobQoo",
-      "server": "185.79.138.71",
-      "server_port": 448,
-      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
-          "short_id": "cd21e552537c7c0b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - BobQoo",
       "server": "31.77.199.182",
       "server_port": 443,
       "uuid": "c09cfd91-b234-4998-9bed-a0211b7f5c3c",
@@ -130,6 +95,66 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - BobQoo",
+      "server": "185.79.138.71",
+      "server_port": 448,
+      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
+          "short_id": "cd21e552537c7c0b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - BobQoo",
+      "server": "185.255.179.11",
+      "server_port": 9443,
+      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
+      "tls": {
+        "enabled": true,
+        "server_name": "hub-fi-02.hanvpn.cc",
+        "insecure": false
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "fi02-grpc-8e47a"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 08 - BobQoo",
+      "server": "212.193.18.183",
+      "server_port": 8446,
+      "uuid": "246b101b-4e4a-451f-8e9c-5e8d3b64b4ef",
+      "tls": {
+        "enabled": true,
+        "server_name": "maps.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "f6xhmL1XqUJ4zdkaDsh9GuEyXc0JXM2Dp5KwU8VHb0c",
+          "short_id": "7f8e9d0c1b2a"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "snob-grpc"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -139,7 +164,9 @@
         "🇫🇮 芬兰 (Finland) 03 - BobQoo",
         "🇫🇮 芬兰 (Finland) 04 - BobQoo",
         "🇫🇮 芬兰 (Finland) 05 - BobQoo",
-        "🇫🇮 芬兰 (Finland) 06 - BobQoo"
+        "🇫🇮 芬兰 (Finland) 06 - BobQoo",
+        "🇫🇮 芬兰 (Finland) 07 - BobQoo",
+        "🇫🇮 芬兰 (Finland) 08 - BobQoo"
       ]
     },
     {
@@ -151,7 +178,9 @@
         "🇫🇮 芬兰 (Finland) 03 - BobQoo",
         "🇫🇮 芬兰 (Finland) 04 - BobQoo",
         "🇫🇮 芬兰 (Finland) 05 - BobQoo",
-        "🇫🇮 芬兰 (Finland) 06 - BobQoo"
+        "🇫🇮 芬兰 (Finland) 06 - BobQoo",
+        "🇫🇮 芬兰 (Finland) 07 - BobQoo",
+        "🇫🇮 芬兰 (Finland) 08 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

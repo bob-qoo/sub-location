@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - BobQoo
-  server: 109.206.241.10
-  port: 449
-  udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - BobQoo
   server: 94.183.170.135
   port: 443
   udp: true
@@ -21,18 +13,33 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - BobQoo
-  server: 89.125.13.149
-  port: 443
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - BobQoo
+  server: 94.183.170.147
+  port: 8443
   udp: true
   type: vless
-  uuid: 6e8b8adc-8782-4f42-b260-81b03ab5fbb2
+  uuid: 66ac188b-bd8d-4218-b9ba-0bad0e152cd0
+  tls: true
+  reality-opts:
+    public-key: s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg
+    short-id: 72ccd4a7563c2953
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 9d30d49278
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - BobQoo
+  server: 95.85.224.154
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 52ecaf96-9c28-4cad-a132-13898f2bbb29
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: GtRDWsSY_OKZq0Nu0_KlBeWLM7m46EQCWFl9NVZr8jM
-    short-id: 5145ab05854122b4
-  servername: ee.sharkygames.fun
+    public-key: BX8CqIiZTbjfp--_TsYmp5pPQzzIZZ6rW9ly5HxDM3E
+    short-id: 8c554321
+  servername: fota-cloud-dn.ospserver.net
   client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - BobQoo
   server: 94.183.170.135
@@ -55,28 +62,49 @@ proxies:
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
 - name: 🇪🇪 爱沙尼亚 (Estonia) 06 - BobQoo
-  server: 217.60.182.79
+  server: ee.cheapgo.cc
+  port: 8443
+  udp: true
+  type: trojan
+  password: eZwp12tXna8-s_ysszXnXq25rv1c8w
+  sni: ee.cheapgo.cc
+  skip-cert-verify: false
+- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - BobQoo
+  server: 31.76.71.63
   port: 443
   udp: true
   type: hysteria2
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   sni: cabinet.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - BobQoo
-  server: 94.183.170.147
-  port: 8443
+  skip-cert-verify: false
+- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - BobQoo
+  server: 185.174.135.250
+  port: 443
   udp: true
   type: vless
-  uuid: 66ac188b-bd8d-4218-b9ba-0bad0e152cd0
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
   tls: true
   reality-opts:
-    public-key: s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg
-    short-id: 72ccd4a7563c2953
-  servername: www.cloudflare.com
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
   client-fingerprint: firefox
   network: grpc
   grpc-opts:
-    grpc-service-name: 9d30d49278
+    grpc-service-name: TunService
+- name: 🇪🇪 爱沙尼亚 (Estonia) 09 - BobQoo
+  server: 85.158.108.125
+  port: 9462
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 proxy-groups:
 - name: PROXIES
   type: select
@@ -89,6 +117,8 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - BobQoo
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - BobQoo
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - BobQoo
+  - 🇪🇪 爱沙尼亚 (Estonia) 08 - BobQoo
+  - 🇪🇪 爱沙尼亚 (Estonia) 09 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -101,5 +131,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - BobQoo
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - BobQoo
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - BobQoo
+  - 🇪🇪 爱沙尼亚 (Estonia) 08 - BobQoo
+  - 🇪🇪 爱沙尼亚 (Estonia) 09 - BobQoo
 rules:
 - MATCH,PROXIES

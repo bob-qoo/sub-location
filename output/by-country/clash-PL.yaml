@@ -20,20 +20,20 @@ proxies:
   password: S2zDyyPcmZN2h8EC
 - name: 🇵🇱 波兰 (Poland) 03 - BobQoo
   server: 217.30.10.44
-  port: 9099
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 7heRqkPG3hg4UnRm
-- name: 🇵🇱 波兰 (Poland) 04 - BobQoo
-  server: 217.30.10.44
   port: 9052
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: jt2ekBNc9HuVtm2a
+- name: 🇵🇱 波兰 (Poland) 04 - BobQoo
+  server: 217.30.10.44
+  port: 9099
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 7heRqkPG3hg4UnRm
 - name: 🇵🇱 波兰 (Poland) 05 - BobQoo
-  server: 185.223.57.16
+  server: 185.223.57.10
   port: 33743
   udp: true
   type: vless
@@ -42,60 +42,68 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
 - name: 🇵🇱 波兰 (Poland) 06 - BobQoo
-  server: 45.192.12.93
+  server: 50.7.248.237
   port: 443
   udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl-new-dedic.failspace.top
   skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 07 - BobQoo
+  server: 193.34.213.32
+  port: 443
+  udp: true
+  type: vless
+  uuid: c40ed630-4c4f-49d0-9ef3-362e802d47fc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ws3y8aVY4t99_jYv7J58dDBFCCh56U9b2_oO-r-g_Tg
+    short-id: a1ab5a56bc
+  servername: poland1.cloudload.org
+  client-fingerprint: qq
+- name: 🇵🇱 波兰 (Poland) 08 - BobQoo
+  server: al.cloudload.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: c40ed630-4c4f-49d0-9ef3-362e802d47fc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: eGTUZ3Yldc4A80oyCXEM0V5kULFUwM2NNF9QhDP4DSw
+    short-id: a1ab5a56bcca12
+  servername: al.cloudload.org
+  client-fingerprint: qq
+- name: 🇵🇱 波兰 (Poland) 09 - BobQoo
   server: atomic-prase23893.my-vm.work
   port: 8088
   udp: true
   type: vless
-  uuid: f7c74a35-1da0-5097-9fa7-a20735610ac1
+  uuid: tmp_user
   network: ws
   ws-opts:
     path: /api
     headers:
       Host: queuev4.vk.com
-- name: 🇵🇱 波兰 (Poland) 08 - BobQoo
-  server: 50.7.249.187
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: poland-new-dedic-2.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 09 - BobQoo
-  server: 50.7.249.196
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: poland-new-decic-1.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 10 - BobQoo
-  server: 194.61.121.93
-  port: 7538
+  server: fi.velox-network.org
+  port: 8443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: U9YAoqBgg5VyGBc6vQv1sN
+  type: trojan
+  password: eZwp12tXna8-s_ysszXnXq25rv1c8w
+  sni: fi.velox-network.org
+  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 11 - BobQoo
-  server: av513u.sysopnova.art
+  server: 144.31.93.231
   port: 443
   udp: true
   type: vless
@@ -108,6 +116,25 @@ proxies:
   servername: yandex.ru
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 12 - BobQoo
+  server: go1.wwwinternetvideo.click
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 13 - BobQoo
+  server: pl6.moritech.net
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl6.moritech.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 14 - BobQoo
   server: 82.118.22.161
   port: 443
   udp: true
@@ -120,7 +147,7 @@ proxies:
     short-id: fa3ea655619a3e78
   servername: www.cloudflare.com
   client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 13 - BobQoo
+- name: 🇵🇱 波兰 (Poland) 15 - BobQoo
   server: 150.251.113.34
   port: 443
   udp: true
@@ -151,6 +178,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 11 - BobQoo
   - 🇵🇱 波兰 (Poland) 12 - BobQoo
   - 🇵🇱 波兰 (Poland) 13 - BobQoo
+  - 🇵🇱 波兰 (Poland) 14 - BobQoo
+  - 🇵🇱 波兰 (Poland) 15 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -169,5 +198,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 11 - BobQoo
   - 🇵🇱 波兰 (Poland) 12 - BobQoo
   - 🇵🇱 波兰 (Poland) 13 - BobQoo
+  - 🇵🇱 波兰 (Poland) 14 - BobQoo
+  - 🇵🇱 波兰 (Poland) 15 - BobQoo
 rules:
 - MATCH,PROXIES
