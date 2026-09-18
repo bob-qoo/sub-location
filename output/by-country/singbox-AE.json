@@ -8,7 +8,7 @@
       "tag": "🇦🇪 阿联酋 (UAE) 01 - BobQoo",
       "server": "31.58.181.88",
       "server_port": 8443,
-      "uuid": "e580657d-c9b2-4bff-98c2-e63c5563d4b7",
+      "uuid": "ab3b8e51-9d1b-443a-83e0-6fea6504b44b",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -69,13 +69,13 @@
       "tls": {
         "enabled": true,
         "server_name": "hopp-romania-new.roxa.org",
-        "insecure": false
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 05 - BobQoo",
-      "server": "uae.unixzone.us",
+      "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {

@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: e580657d-c9b2-4bff-98c2-e63c5563d4b7
+  uuid: ab3b8e51-9d1b-443a-83e0-6fea6504b44b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -46,9 +46,9 @@ proxies:
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 05 - BobQoo
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless

@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - BobQoo",
+      "server": "178.18.147.66",
+      "server_port": 29900,
+      "password": "github.com/Alvin9999-newpac/fanqiang",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - BobQoo",
       "server": "94.183.170.135",
       "server_port": 443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
@@ -16,7 +28,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - BobQoo",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - BobQoo",
       "server": "94.183.170.147",
       "server_port": 8443,
       "uuid": "5edbcb44-8d04-4fa7-a587-bc5d60c24ca1",
@@ -25,7 +37,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -36,18 +48,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "9d30d49278"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - BobQoo",
-      "server": "217.60.182.79",
-      "server_port": 443,
-      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
-      "tls": {
-        "enabled": true,
-        "server_name": "cabinet.wwwinternetvideo.click",
-        "insecure": false
       }
     },
     {
@@ -67,27 +67,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - BobQoo",
-      "server": "95.85.224.17",
-      "server_port": 443,
-      "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "est1313.ggisopi.su",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -95,8 +74,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 01 - BobQoo",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - BobQoo",
         "🇪🇪 爱沙尼亚 (Estonia) 03 - BobQoo",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - BobQoo",
-        "🇪🇪 爱沙尼亚 (Estonia) 05 - BobQoo"
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - BobQoo"
       ]
     },
     {
@@ -106,8 +84,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 01 - BobQoo",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - BobQoo",
         "🇪🇪 爱沙尼亚 (Estonia) 03 - BobQoo",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - BobQoo",
-        "🇪🇪 爱沙尼亚 (Estonia) 05 - BobQoo"
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
