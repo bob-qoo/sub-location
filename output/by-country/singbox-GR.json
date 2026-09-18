@@ -27,17 +27,6 @@
     {
       "type": "vless",
       "tag": "🇬🇷 希腊 (Greece) 02 - BobQoo",
-      "server": "185.126.238.87",
-      "server_port": 2083,
-      "uuid": "7668f678-faee-40cc-9b56-9c39dc773388",
-      "transport": {
-        "type": "grpc",
-        "service_name": "security.debian.org"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇷 希腊 (Greece) 03 - BobQoo",
       "server": "85.90.197.220",
       "server_port": 443,
       "uuid": "8f704ed6-9a1a-4d04-94dd-1bff501716de",
@@ -57,12 +46,15 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇬🇷 希腊 (Greece) 04 - BobQoo",
-      "server": "zfd-boardv2.kunlun01dns.com",
-      "server_port": 16310,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
+      "type": "vless",
+      "tag": "🇬🇷 希腊 (Greece) 03 - BobQoo",
+      "server": "185.126.238.87",
+      "server_port": 2083,
+      "uuid": "7668f678-faee-40cc-9b56-9c39dc773388",
+      "transport": {
+        "type": "grpc",
+        "service_name": "security.debian.org"
+      }
     },
     {
       "type": "selector",
@@ -71,8 +63,7 @@
         "auto",
         "🇬🇷 希腊 (Greece) 01 - BobQoo",
         "🇬🇷 希腊 (Greece) 02 - BobQoo",
-        "🇬🇷 希腊 (Greece) 03 - BobQoo",
-        "🇬🇷 希腊 (Greece) 04 - BobQoo"
+        "🇬🇷 希腊 (Greece) 03 - BobQoo"
       ]
     },
     {
@@ -81,8 +72,7 @@
       "outbounds": [
         "🇬🇷 希腊 (Greece) 01 - BobQoo",
         "🇬🇷 希腊 (Greece) 02 - BobQoo",
-        "🇬🇷 希腊 (Greece) 03 - BobQoo",
-        "🇬🇷 希腊 (Greece) 04 - BobQoo"
+        "🇬🇷 希腊 (Greece) 03 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

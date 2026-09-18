@@ -4,12 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - BobQoo",
-      "server": "213.183.63.60",
-      "server_port": 9064,
-      "method": "aes-256-cfb",
-      "password": "cp8pRSUAyLhTfVWH"
+      "server": "192.145.31.5",
+      "server_port": 443,
+      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
+      "transport": {
+        "type": "ws"
+      }
     },
     {
       "type": "vless",
@@ -27,32 +29,13 @@
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - BobQoo",
-      "server": "192.145.31.5",
-      "server_port": 443,
-      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - BobQoo",
-      "server": "213.183.63.60",
-      "server_port": 9085,
-      "method": "aes-256-cfb",
-      "password": "9ej82EKe2gq7gLAM"
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - BobQoo",
       "server": "193.148.59.178",
       "server_port": 443,
       "uuid": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
@@ -73,31 +56,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - BobQoo",
-      "server": "108.165.233.223",
-      "server_port": 443,
-      "uuid": "2388e166-3890-33ae-f77e-efac00000001",
-      "tls": {
-        "enabled": true,
-        "server_name": "netlivpn4813.ddhshhshs.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
-        "headers": {
-          "Host": "netlivpn4813.ddhshhshs.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - BobQoo",
-      "server": "prep.wwwinternetvideo.click",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - BobQoo",
+      "server": "144.31.50.236",
       "server_port": 443,
       "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
       "flow": "xtls-rprx-vision",
@@ -106,7 +66,7 @@
         "server_name": "yandex.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -123,10 +83,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 01 - BobQoo",
         "🇧🇬 保加利亚 (Bulgaria) 02 - BobQoo",
         "🇧🇬 保加利亚 (Bulgaria) 03 - BobQoo",
-        "🇧🇬 保加利亚 (Bulgaria) 04 - BobQoo",
-        "🇧🇬 保加利亚 (Bulgaria) 05 - BobQoo",
-        "🇧🇬 保加利亚 (Bulgaria) 06 - BobQoo",
-        "🇧🇬 保加利亚 (Bulgaria) 07 - BobQoo"
+        "🇧🇬 保加利亚 (Bulgaria) 04 - BobQoo"
       ]
     },
     {
@@ -136,10 +93,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 01 - BobQoo",
         "🇧🇬 保加利亚 (Bulgaria) 02 - BobQoo",
         "🇧🇬 保加利亚 (Bulgaria) 03 - BobQoo",
-        "🇧🇬 保加利亚 (Bulgaria) 04 - BobQoo",
-        "🇧🇬 保加利亚 (Bulgaria) 05 - BobQoo",
-        "🇧🇬 保加利亚 (Bulgaria) 06 - BobQoo",
-        "🇧🇬 保加利亚 (Bulgaria) 07 - BobQoo"
+        "🇧🇬 保加利亚 (Bulgaria) 04 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
