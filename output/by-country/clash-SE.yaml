@@ -5,6 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - BobQoo
+  server: 143.246.194.60
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇸🇪 瑞典 (Sweden) 02 - BobQoo
   server: 193.42.39.10
   port: 33743
   udp: true
@@ -14,21 +23,67 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 03 - BobQoo
+  server: 91.193.17.156
+  port: 9458
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 04 - BobQoo
+  server: 31.77.111.11
+  port: 43439
+  udp: true
+  type: vless
+  uuid: 428e923f-e608-412b-9e51-3b09ffab551f
+  tls: true
+  reality-opts:
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: 39ad36226f3abec8
+  servername: cdn.higames.ru
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: streaming
+- name: 🇸🇪 瑞典 (Sweden) 05 - BobQoo
+  server: 143.246.195.138
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - BobQoo
+  - 🇸🇪 瑞典 (Sweden) 02 - BobQoo
+  - 🇸🇪 瑞典 (Sweden) 03 - BobQoo
+  - 🇸🇪 瑞典 (Sweden) 04 - BobQoo
+  - 🇸🇪 瑞典 (Sweden) 05 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - BobQoo
+  - 🇸🇪 瑞典 (Sweden) 02 - BobQoo
+  - 🇸🇪 瑞典 (Sweden) 03 - BobQoo
+  - 🇸🇪 瑞典 (Sweden) 04 - BobQoo
+  - 🇸🇪 瑞典 (Sweden) 05 - BobQoo
 rules:
 - MATCH,PROXIES

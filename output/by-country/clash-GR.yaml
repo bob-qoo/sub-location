@@ -5,15 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇷 希腊 (Greece) 01 - BobQoo
-  server: 185.126.238.87
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 7668f678-faee-40cc-9b56-9c39dc773388
-  network: grpc
-  grpc-opts:
-    grpc-service-name: security.debian.org
-- name: 🇬🇷 希腊 (Greece) 02 - BobQoo
   server: 94.241.174.157
   port: 40443
   udp: true
@@ -26,6 +17,36 @@ proxies:
     short-id: beb4
   servername: deepl.com
   client-fingerprint: chrome
+- name: 🇬🇷 希腊 (Greece) 02 - BobQoo
+  server: 185.126.238.87
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 7668f678-faee-40cc-9b56-9c39dc773388
+  network: grpc
+  grpc-opts:
+    grpc-service-name: security.debian.org
+- name: 🇬🇷 希腊 (Greece) 03 - BobQoo
+  server: 85.90.197.220
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8f704ed6-9a1a-4d04-94dd-1bff501716de
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
+    short-id: 94acb54627612d43
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇬🇷 希腊 (Greece) 04 - BobQoo
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16310
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +54,8 @@ proxy-groups:
   - AUTO
   - 🇬🇷 希腊 (Greece) 01 - BobQoo
   - 🇬🇷 希腊 (Greece) 02 - BobQoo
+  - 🇬🇷 希腊 (Greece) 03 - BobQoo
+  - 🇬🇷 希腊 (Greece) 04 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -40,5 +63,7 @@ proxy-groups:
   proxies:
   - 🇬🇷 希腊 (Greece) 01 - BobQoo
   - 🇬🇷 希腊 (Greece) 02 - BobQoo
+  - 🇬🇷 希腊 (Greece) 03 - BobQoo
+  - 🇬🇷 希腊 (Greece) 04 - BobQoo
 rules:
 - MATCH,PROXIES

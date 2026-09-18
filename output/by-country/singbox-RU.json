@@ -4,40 +4,36 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - BobQoo",
-      "server": "91.240.86.70",
-      "server_port": 22443,
-      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
-      "tls": {
-        "enabled": true,
-        "server_name": "91.240.86.70",
-        "insecure": true
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "934f2038-17f8-4ec5-9204-8381e19fc6e3",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiVXFEMlhKZVY4dzNoTUtpZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "TIGHT-busH-0Bb4.BSHXYyXhDJdGGb.wOrkERS.DEV"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
       }
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - BobQoo",
-      "server": "msk.frkn.org",
-      "server_port": 443,
-      "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
-      "tls": {
-        "enabled": true,
-        "server_name": "msk.frkn.org",
-        "insecure": false
-      }
+      "server": "94.249.187.46",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "rSeYcig_XBy8q3k33NpK3A"
     },
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - BobQoo",
-      "server": "ru.xiaoliyu.cyou",
-      "server_port": 4433,
-      "password": "19f72087-4591-4d72-930b-2697078ec2be",
-      "tls": {
-        "enabled": true,
-        "server_name": "ru.xiaoliyu.cyou",
-        "insecure": true
-      }
+      "server": "94.249.187.46",
+      "server_port": 2086,
+      "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b",
+      "security": "auto"
     },
     {
       "type": "vless",
@@ -61,6 +57,85 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - BobQoo",
+      "server": "104.21.14.116",
+      "server_port": 443,
+      "uuid": "566c0473-382e-aabb-c62a-f5bb00000000",
+      "tls": {
+        "enabled": true,
+        "server_name": "ez-4b5fd4.appelidmymat.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sync",
+        "headers": {
+          "Host": "ez-4b5fd4.appelidmymat.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - BobQoo",
+      "server": "91.196.32.163",
+      "server_port": 443,
+      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
+      "tls": {
+        "enabled": true,
+        "server_name": "germany3.h2corp.local",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - BobQoo",
+      "server": "ru.xiaoliyu.cyou",
+      "server_port": 4433,
+      "password": "19f72087-4591-4d72-930b-2697078ec2be",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru.xiaoliyu.cyou",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 08 - BobQoo",
+      "server": "msk.frkn.org",
+      "server_port": 443,
+      "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
+      "tls": {
+        "enabled": true,
+        "server_name": "msk.frkn.org",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 09 - BobQoo",
+      "server": "45.12.75.242",
+      "server_port": 26424,
+      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ya.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "short_id": "23103e1e"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -68,7 +143,12 @@
         "🇷🇺 俄罗斯 (Russia) 01 - BobQoo",
         "🇷🇺 俄罗斯 (Russia) 02 - BobQoo",
         "🇷🇺 俄罗斯 (Russia) 03 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 04 - BobQoo"
+        "🇷🇺 俄罗斯 (Russia) 04 - BobQoo",
+        "🇷🇺 俄罗斯 (Russia) 05 - BobQoo",
+        "🇷🇺 俄罗斯 (Russia) 06 - BobQoo",
+        "🇷🇺 俄罗斯 (Russia) 07 - BobQoo",
+        "🇷🇺 俄罗斯 (Russia) 08 - BobQoo",
+        "🇷🇺 俄罗斯 (Russia) 09 - BobQoo"
       ]
     },
     {
@@ -78,7 +158,12 @@
         "🇷🇺 俄罗斯 (Russia) 01 - BobQoo",
         "🇷🇺 俄罗斯 (Russia) 02 - BobQoo",
         "🇷🇺 俄罗斯 (Russia) 03 - BobQoo",
-        "🇷🇺 俄罗斯 (Russia) 04 - BobQoo"
+        "🇷🇺 俄罗斯 (Russia) 04 - BobQoo",
+        "🇷🇺 俄罗斯 (Russia) 05 - BobQoo",
+        "🇷🇺 俄罗斯 (Russia) 06 - BobQoo",
+        "🇷🇺 俄罗斯 (Russia) 07 - BobQoo",
+        "🇷🇺 俄罗斯 (Russia) 08 - BobQoo",
+        "🇷🇺 俄罗斯 (Russia) 09 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
