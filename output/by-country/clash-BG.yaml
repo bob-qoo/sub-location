@@ -14,16 +14,6 @@ proxies:
   ws-opts:
     path: /
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - BobQoo
-  server: 192.145.31.5
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  tls: true
-  servername: neth9.lunariai.ru
-  skip-cert-verify: false
-  client-fingerprint: edge
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - BobQoo
   server: 193.148.59.178
   port: 443
   udp: true
@@ -36,7 +26,31 @@ proxies:
     short-id: e3daad69
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - BobQoo
+  server: 192.145.31.5
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  tls: true
+  servername: neth9.lunariai.ru
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - BobQoo
+  server: 132.243.203.207
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /lives
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - BobQoo
   server: 144.31.50.236
   port: 443
   udp: true
@@ -58,6 +72,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 02 - BobQoo
   - 🇧🇬 保加利亚 (Bulgaria) 03 - BobQoo
   - 🇧🇬 保加利亚 (Bulgaria) 04 - BobQoo
+  - 🇧🇬 保加利亚 (Bulgaria) 05 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,5 +82,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 02 - BobQoo
   - 🇧🇬 保加利亚 (Bulgaria) 03 - BobQoo
   - 🇧🇬 保加利亚 (Bulgaria) 04 - BobQoo
+  - 🇧🇬 保加利亚 (Bulgaria) 05 - BobQoo
 rules:
 - MATCH,PROXIES

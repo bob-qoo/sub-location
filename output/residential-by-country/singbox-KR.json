@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇩🇰 丹麦 (Denmark) 01 - BobQoo",
-      "server": "38.180.214.110",
-      "server_port": 5600,
-      "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - BobQoo",
+      "server": "49.254.204.134",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇰 丹麦 (Denmark) 01 - BobQoo"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - BobQoo"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇰 丹麦 (Denmark) 01 - BobQoo"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

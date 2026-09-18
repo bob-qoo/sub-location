@@ -5,6 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - BobQoo
+  server: 82.47.186.18
+  port: 19290
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: o2rw2hICwu1blrr_gZAl2Q
+- name: 🇫🇮 芬兰 (Finland) 02 - BobQoo
+  server: 95.217.237.195
+  port: 10210
+  udp: true
+  type: vless
+  uuid: d65a82af-a403-405e-8b7b-27a68b830511
+  tls: true
+  reality-opts:
+    public-key: twRm8a1BBdz2Q5jTuNbXxA7ZdtDPAyQNEycDYkW9DFc
+    short-id: 13121b7150ad7fc6
+  servername: play-apps-features.googleusercontent.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇫🇮 芬兰 (Finland) 03 - BobQoo
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -16,20 +38,7 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 02 - BobQoo
-  server: 31.77.199.182
-  port: 443
-  udp: true
-  type: vless
-  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
-    short-id: abcd1234
-  servername: fi2.yservice.help
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 03 - BobQoo
+- name: 🇫🇮 芬兰 (Finland) 04 - BobQoo
   server: 185.79.138.71
   port: 448
   udp: true
@@ -41,7 +50,7 @@ proxies:
     short-id: cd21e552537c7c0b
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - BobQoo
+- name: 🇫🇮 芬兰 (Finland) 05 - BobQoo
   server: 37.143.129.244
   port: 443
   udp: true
@@ -54,14 +63,20 @@ proxies:
     short-id: 48fd192dc4e46bc0
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05 - BobQoo
-  server: 82.47.186.18
-  port: 19290
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: o2rw2hICwu1blrr_gZAl2Q
 - name: 🇫🇮 芬兰 (Finland) 06 - BobQoo
+  server: 31.77.199.182
+  port: 443
+  udp: true
+  type: vless
+  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
+    short-id: abcd1234
+  servername: fi2.yservice.help
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 07 - BobQoo
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -74,7 +89,7 @@ proxies:
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 07 - BobQoo
+- name: 🇫🇮 芬兰 (Finland) 08 - BobQoo
   server: 185.255.179.11
   port: 9443
   udp: true
@@ -98,6 +113,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - BobQoo
   - 🇫🇮 芬兰 (Finland) 06 - BobQoo
   - 🇫🇮 芬兰 (Finland) 07 - BobQoo
+  - 🇫🇮 芬兰 (Finland) 08 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,5 +126,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - BobQoo
   - 🇫🇮 芬兰 (Finland) 06 - BobQoo
   - 🇫🇮 芬兰 (Finland) 07 - BobQoo
+  - 🇫🇮 芬兰 (Finland) 08 - BobQoo
 rules:
 - MATCH,PROXIES

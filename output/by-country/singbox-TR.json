@@ -4,60 +4,37 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - BobQoo",
-      "server": "139.28.240.68",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "IXa3ylzS_jBOAsQy071tIQ"
+      "server": "91.228.227.211",
+      "server_port": 23957,
+      "uuid": "92987ab8-0a53-4a16-8d6c-295d5df86404",
+      "security": "auto"
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - BobQoo",
-      "server": "104.17.147.22",
+      "server": "78.135.73.47",
       "server_port": 443,
-      "uuid": "5ef04ae8-8d7c-0a66-13f4-6e3f00000003",
+      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "relay.lunetcloud.ir",
-        "insecure": false,
+        "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lunetnetwork",
-        "headers": {
-          "Host": "relay.lunetcloud.ir"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
+          "short_id": "f46cd3ea3d1eb72d"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - BobQoo",
-      "server": "156.67.63.231",
-      "server_port": 443,
-      "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "sync-bridge.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI",
-          "short_id": "5606d4a25c99e7af"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - BobQoo",
       "server": "helixgaming.ir",
       "server_port": 80,
       "uuid": "c0e453eb-33ac-4206-8423-3e1286c2ba7a",
@@ -71,7 +48,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - BobQoo",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - BobQoo",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -90,22 +67,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - BobQoo",
-      "server": "153.52.92.81",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "IXa3ylzS_jBOAsQy071tIQ"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇷 土耳其 (Turkey) 07 - BobQoo",
-      "server": "153.52.92.81",
-      "server_port": 2086,
-      "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b",
-      "security": "auto"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -113,10 +74,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - BobQoo",
         "🇹🇷 土耳其 (Turkey) 02 - BobQoo",
         "🇹🇷 土耳其 (Turkey) 03 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 04 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 05 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 06 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 07 - BobQoo"
+        "🇹🇷 土耳其 (Turkey) 04 - BobQoo"
       ]
     },
     {
@@ -126,10 +84,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - BobQoo",
         "🇹🇷 土耳其 (Turkey) 02 - BobQoo",
         "🇹🇷 土耳其 (Turkey) 03 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 04 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 05 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 06 - BobQoo",
-        "🇹🇷 土耳其 (Turkey) 07 - BobQoo"
+        "🇹🇷 土耳其 (Turkey) 04 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
