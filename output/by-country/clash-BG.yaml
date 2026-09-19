@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - BobQoo
-  server: 192.145.31.5
+  server: neth9.lunariai.ru
   port: 443
   udp: true
   type: vless
@@ -38,6 +38,33 @@ proxies:
   client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - BobQoo
   server: 131.123.39.29
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - BobQoo
+  server: 131.123.41.18
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - BobQoo
+  server: 131.123.41.31
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇧🇬 保加利亚 (Bulgaria) 07 - BobQoo
+  server: 131.123.39.29
   port: 443
   udp: true
   type: vless
@@ -49,8 +76,8 @@ proxies:
     short-id: 84be686ea1d16478
   servername: sheetpeek.com
   client-fingerprint: firefox
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - BobQoo
-  server: 131.123.39.29
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - BobQoo
+  server: 131.123.37.199
   port: 8081
   udp: true
   type: vless
@@ -58,7 +85,20 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - BobQoo
+- name: 🇧🇬 保加利亚 (Bulgaria) 09 - BobQoo
+  server: 131.123.41.18
+  port: 443
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo
+    short-id: 84be686ea1d16478
+  servername: sheetpeek.com
+  client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 10 - BobQoo
   server: 144.31.50.236
   port: 443
   udp: true
@@ -70,16 +110,7 @@ proxies:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
-  client-fingerprint: firefox
-- name: 🇧🇬 保加利亚 (Bulgaria) 07 - BobQoo
-  server: 131.123.41.18
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,6 +123,9 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 05 - BobQoo
   - 🇧🇬 保加利亚 (Bulgaria) 06 - BobQoo
   - 🇧🇬 保加利亚 (Bulgaria) 07 - BobQoo
+  - 🇧🇬 保加利亚 (Bulgaria) 08 - BobQoo
+  - 🇧🇬 保加利亚 (Bulgaria) 09 - BobQoo
+  - 🇧🇬 保加利亚 (Bulgaria) 10 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -104,5 +138,8 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 05 - BobQoo
   - 🇧🇬 保加利亚 (Bulgaria) 06 - BobQoo
   - 🇧🇬 保加利亚 (Bulgaria) 07 - BobQoo
+  - 🇧🇬 保加利亚 (Bulgaria) 08 - BobQoo
+  - 🇧🇬 保加利亚 (Bulgaria) 09 - BobQoo
+  - 🇧🇬 保加利亚 (Bulgaria) 10 - BobQoo
 rules:
 - MATCH,PROXIES

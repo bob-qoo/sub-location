@@ -7,17 +7,17 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - BobQoo",
       "server": "185.135.86.175",
-      "server_port": 9086,
+      "server_port": 9082,
       "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
+      "password": "45xgMgm386pjWjTx"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - BobQoo",
       "server": "185.135.86.175",
-      "server_port": 9007,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "kSPmvwdFzGMMW5pY"
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
@@ -31,21 +31,13 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - BobQoo",
       "server": "185.135.86.175",
-      "server_port": 9017,
+      "server_port": 9007,
       "method": "aes-256-cfb",
-      "password": "HAVAdE3nXhqA5nHp"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - BobQoo",
-      "server": "185.135.86.175",
-      "server_port": 9082,
-      "method": "aes-256-cfb",
-      "password": "45xgMgm386pjWjTx"
+      "password": "kSPmvwdFzGMMW5pY"
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - BobQoo",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - BobQoo",
       "server": "138.124.180.137",
       "server_port": 443,
       "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
@@ -55,7 +47,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -65,28 +57,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - BobQoo",
-      "server": "46.243.142.227",
-      "server_port": 10443,
-      "uuid": "a85ddf9f-329b-4c31-a80a-cd0f2e5b2a30",
-      "tls": {
-        "enabled": true,
-        "server_name": "shprcdn.quest",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "KoNQ52irUOW-fybKx-gUKCuHpMnHhgQ_skjd8TmqJ2k",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "google.storage.v2.Storage"
-      }
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - BobQoo",
+      "server": "185.135.86.175",
+      "server_port": 9017,
+      "method": "aes-256-cfb",
+      "password": "HAVAdE3nXhqA5nHp"
     },
     {
       "type": "selector",
@@ -98,8 +74,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 03 - BobQoo",
         "🇱🇻 拉脱维亚 (Latvia) 04 - BobQoo",
         "🇱🇻 拉脱维亚 (Latvia) 05 - BobQoo",
-        "🇱🇻 拉脱维亚 (Latvia) 06 - BobQoo",
-        "🇱🇻 拉脱维亚 (Latvia) 07 - BobQoo"
+        "🇱🇻 拉脱维亚 (Latvia) 06 - BobQoo"
       ]
     },
     {
@@ -111,8 +86,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 03 - BobQoo",
         "🇱🇻 拉脱维亚 (Latvia) 04 - BobQoo",
         "🇱🇻 拉脱维亚 (Latvia) 05 - BobQoo",
-        "🇱🇻 拉脱维亚 (Latvia) 06 - BobQoo",
-        "🇱🇻 拉脱维亚 (Latvia) 07 - BobQoo"
+        "🇱🇻 拉脱维亚 (Latvia) 06 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

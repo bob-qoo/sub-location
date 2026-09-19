@@ -6,6 +6,39 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - BobQoo",
+      "server": "143.246.195.98",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - BobQoo",
+      "server": "143.246.195.138",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - BobQoo",
+      "server": "143.246.194.60",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - BobQoo",
       "server": "193.42.39.10",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
@@ -29,39 +62,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - BobQoo",
-      "server": "5.157.10.147",
-      "server_port": 443,
-      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "svvedko.nxxzxaw.beer",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA",
-          "short_id": "fb442438e2223836"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - BobQoo",
-      "server": "143.246.194.60",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - BobQoo",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - BobQoo",
       "server": "91.193.17.156",
       "server_port": 9458,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
@@ -85,13 +86,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - BobQoo",
-      "server": "143.246.195.138",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - BobQoo",
+      "server": "5.157.10.147",
+      "server_port": 443,
+      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "svvedko.nxxzxaw.beer",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA",
+          "short_id": "fb442438e2223836"
+        }
       }
     },
     {
@@ -103,7 +114,8 @@
         "🇸🇪 瑞典 (Sweden) 02 - BobQoo",
         "🇸🇪 瑞典 (Sweden) 03 - BobQoo",
         "🇸🇪 瑞典 (Sweden) 04 - BobQoo",
-        "🇸🇪 瑞典 (Sweden) 05 - BobQoo"
+        "🇸🇪 瑞典 (Sweden) 05 - BobQoo",
+        "🇸🇪 瑞典 (Sweden) 06 - BobQoo"
       ]
     },
     {
@@ -114,7 +126,8 @@
         "🇸🇪 瑞典 (Sweden) 02 - BobQoo",
         "🇸🇪 瑞典 (Sweden) 03 - BobQoo",
         "🇸🇪 瑞典 (Sweden) 04 - BobQoo",
-        "🇸🇪 瑞典 (Sweden) 05 - BobQoo"
+        "🇸🇪 瑞典 (Sweden) 05 - BobQoo",
+        "🇸🇪 瑞典 (Sweden) 06 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

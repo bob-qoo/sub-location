@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - BobQoo",
-      "server": "192.145.31.5",
+      "server": "neth9.lunariai.ru",
       "server_port": 443,
       "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
       "transport": {
@@ -23,10 +23,6 @@
         "enabled": true,
         "server_name": "neth9.lunariai.ru",
         "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -58,6 +54,39 @@
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - BobQoo",
       "server": "131.123.39.29",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - BobQoo",
+      "server": "131.123.41.18",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - BobQoo",
+      "server": "131.123.41.31",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - BobQoo",
+      "server": "131.123.39.29",
       "server_port": 443,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
       "flow": "xtls-rprx-vision",
@@ -77,8 +106,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - BobQoo",
-      "server": "131.123.39.29",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - BobQoo",
+      "server": "131.123.37.199",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
       "transport": {
@@ -88,7 +117,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - BobQoo",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 09 - BobQoo",
+      "server": "131.123.41.18",
+      "server_port": 443,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sheetpeek.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo",
+          "short_id": "84be686ea1d16478"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 10 - BobQoo",
       "server": "144.31.50.236",
       "server_port": 443,
       "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
@@ -98,24 +148,13 @@
         "server_name": "yandex.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM",
           "short_id": "bbe46bd8f6b96839"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - BobQoo",
-      "server": "131.123.41.18",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
       }
     },
     {
@@ -129,7 +168,10 @@
         "🇧🇬 保加利亚 (Bulgaria) 04 - BobQoo",
         "🇧🇬 保加利亚 (Bulgaria) 05 - BobQoo",
         "🇧🇬 保加利亚 (Bulgaria) 06 - BobQoo",
-        "🇧🇬 保加利亚 (Bulgaria) 07 - BobQoo"
+        "🇧🇬 保加利亚 (Bulgaria) 07 - BobQoo",
+        "🇧🇬 保加利亚 (Bulgaria) 08 - BobQoo",
+        "🇧🇬 保加利亚 (Bulgaria) 09 - BobQoo",
+        "🇧🇬 保加利亚 (Bulgaria) 10 - BobQoo"
       ]
     },
     {
@@ -142,7 +184,10 @@
         "🇧🇬 保加利亚 (Bulgaria) 04 - BobQoo",
         "🇧🇬 保加利亚 (Bulgaria) 05 - BobQoo",
         "🇧🇬 保加利亚 (Bulgaria) 06 - BobQoo",
-        "🇧🇬 保加利亚 (Bulgaria) 07 - BobQoo"
+        "🇧🇬 保加利亚 (Bulgaria) 07 - BobQoo",
+        "🇧🇬 保加利亚 (Bulgaria) 08 - BobQoo",
+        "🇧🇬 保加利亚 (Bulgaria) 09 - BobQoo",
+        "🇧🇬 保加利亚 (Bulgaria) 10 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

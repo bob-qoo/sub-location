@@ -5,6 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - BobQoo
+  server: 143.246.195.98
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇸🇪 瑞典 (Sweden) 02 - BobQoo
+  server: 143.246.195.138
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇸🇪 瑞典 (Sweden) 03 - BobQoo
+  server: 143.246.194.60
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇸🇪 瑞典 (Sweden) 04 - BobQoo
   server: 193.42.39.10
   port: 33743
   udp: true
@@ -18,29 +45,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 02 - BobQoo
-  server: 5.157.10.147
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
-    short-id: fb442438e2223836
-  servername: svvedko.nxxzxaw.beer
-  client-fingerprint: random
-- name: 🇸🇪 瑞典 (Sweden) 03 - BobQoo
-  server: 143.246.194.60
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 04 - BobQoo
+- name: 🇸🇪 瑞典 (Sweden) 05 - BobQoo
   server: 91.193.17.156
   port: 9458
   udp: true
@@ -54,15 +59,19 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 05 - BobQoo
-  server: 143.246.195.138
-  port: 8081
+- name: 🇸🇪 瑞典 (Sweden) 06 - BobQoo
+  server: 5.157.10.147
+  port: 443
   udp: true
   type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+    short-id: fb442438e2223836
+  servername: svvedko.nxxzxaw.beer
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,6 +82,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - BobQoo
   - 🇸🇪 瑞典 (Sweden) 04 - BobQoo
   - 🇸🇪 瑞典 (Sweden) 05 - BobQoo
+  - 🇸🇪 瑞典 (Sweden) 06 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,5 +93,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - BobQoo
   - 🇸🇪 瑞典 (Sweden) 04 - BobQoo
   - 🇸🇪 瑞典 (Sweden) 05 - BobQoo
+  - 🇸🇪 瑞典 (Sweden) 06 - BobQoo
 rules:
 - MATCH,PROXIES
