@@ -5,28 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - BobQoo
-  server: 36.224.185.143
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo
   server: 36.224.185.173
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo
-  server: 6ivh.pnuqcnp.cn
-  port: 443
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo
+  server: 36.224.185.143
+  port: 50099
   udp: true
-  type: anytls
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - BobQoo
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo
   server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
   port: 443
   udp: true
@@ -40,8 +32,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,7 +40,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - BobQoo
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,6 +48,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - BobQoo
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - BobQoo
 rules:
 - MATCH,PROXIES

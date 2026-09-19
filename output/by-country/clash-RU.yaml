@@ -5,16 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - BobQoo
-  server: 108.162.198.178
-  port: 2095
+  server: 104.21.96.1
+  port: 443
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
+  tls: true
+  servername: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 02 - BobQoo
   server: 94.249.187.46
   port: 2086
@@ -24,6 +28,47 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇷🇺 俄罗斯 (Russia) 03 - BobQoo
+  server: 94.249.187.46
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: IXa3ylzS_jBOAsQy071tIQ
+- name: 🇷🇺 俄罗斯 (Russia) 04 - BobQoo
+  server: app-q0zc4t.user-4gfyh5.workers.dev
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
+  tls: true
+  servername: app-q0zc4t.user-4gfyh5.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /cmh
+- name: 🇷🇺 俄罗斯 (Russia) 05 - BobQoo
+  server: 134.0.112.71
+  port: 17517
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 64Kms+G+nD6FlGJjZJfeUNJIGbX/EKrk2o/MH04zApw=
+- name: 🇷🇺 俄罗斯 (Russia) 06 - BobQoo
+  server: 195.133.5.102
+  port: 10900
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
+- name: 🇷🇺 俄罗斯 (Russia) 07 - BobQoo
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU=
+- name: 🇷🇺 俄罗斯 (Russia) 08 - BobQoo
   server: 104.245.240.8
   port: 8443
   udp: true
@@ -37,14 +82,20 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇷🇺 俄罗斯 (Russia) 04 - BobQoo
+- name: 🇷🇺 俄罗斯 (Russia) 09 - BobQoo
   server: 130.49.189.158
-  port: 43558
+  port: 45433
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU=
-- name: 🇷🇺 俄罗斯 (Russia) 05 - BobQoo
+  type: vless
+  uuid: 4ea67585-c211-4358-9173-cbdff7a6aede
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dfJb8gJq6IRsE1KMsfZp5tNLiwBNQMbSl5NF1z5dq3c
+    short-id: 5e101cd5
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 10 - BobQoo
   server: msk.frkn.org
   port: 443
   udp: true
@@ -52,22 +103,7 @@ proxies:
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 06 - BobQoo
-  server: 46.8.200.91
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
-  tls: true
-  servername: cf3.rumedia-cdn.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /casc
-    headers:
-      Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 07 - BobQoo
+- name: 🇷🇺 俄罗斯 (Russia) 11 - BobQoo
   server: 91.240.86.70
   port: 22443
   udp: true
@@ -75,18 +111,6 @@ proxies:
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: hy.quattro-tech.ru
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 08 - BobQoo
-  server: 45.12.75.242
-  port: 26424
-  udp: true
-  type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  tls: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -100,6 +124,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - BobQoo
   - 🇷🇺 俄罗斯 (Russia) 07 - BobQoo
   - 🇷🇺 俄罗斯 (Russia) 08 - BobQoo
+  - 🇷🇺 俄罗斯 (Russia) 09 - BobQoo
+  - 🇷🇺 俄罗斯 (Russia) 10 - BobQoo
+  - 🇷🇺 俄罗斯 (Russia) 11 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -113,5 +140,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - BobQoo
   - 🇷🇺 俄罗斯 (Russia) 07 - BobQoo
   - 🇷🇺 俄罗斯 (Russia) 08 - BobQoo
+  - 🇷🇺 俄罗斯 (Russia) 09 - BobQoo
+  - 🇷🇺 俄罗斯 (Russia) 10 - BobQoo
+  - 🇷🇺 俄罗斯 (Russia) 11 - BobQoo
 rules:
 - MATCH,PROXIES

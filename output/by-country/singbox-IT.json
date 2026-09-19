@@ -4,23 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 01 - BobQoo",
-      "server": "204.216.216.23",
-      "server_port": 10086,
-      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 02 - BobQoo",
-      "server": "57.131.48.45",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "itzvpn@321"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 03 - BobQoo",
       "server": "185.164.175.81",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -28,23 +13,41 @@
     },
     {
       "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 02 - BobQoo",
+      "server": "204.216.216.23",
+      "server_port": 10086,
+      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 03 - BobQoo",
+      "server": "57.131.48.45",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "itzvpn@321"
+    },
+    {
+      "type": "vless",
       "tag": "🇮🇹 意大利 (Italy) 04 - BobQoo",
-      "server": "172.238.232.239",
-      "server_port": 32833,
-      "uuid": "167ed405-7de9-4bff-b1ea-6e3d49c76b0b",
-      "flow": "xtls-rprx-vision",
+      "server": "31.77.154.14",
+      "server_port": 8443,
+      "uuid": "75079a7f-75b5-418b-8a65-f7b2f438cd4a",
       "tls": {
         "enabled": true,
-        "server_name": "www.intel.com",
+        "server_name": "swscan.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20",
-          "short_id": "a0a305ccc8e94aa8"
+          "public_key": "3O__mdy-whzI07V-QEyR6GQnag1FNwtHijDxt2_jkDQ",
+          "short_id": ""
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-tunnel"
       }
     },
     {
@@ -58,7 +61,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -71,9 +74,9 @@
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 06 - BobQoo",
       "server": "91.201.65.122",
-      "server_port": 9002,
+      "server_port": 9092,
       "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
+      "password": "TyNkGmp9hs6eGpDK"
     },
     {
       "type": "vless",
@@ -100,13 +103,34 @@
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 08 - BobQoo",
       "server": "91.201.65.122",
-      "server_port": 9092,
+      "server_port": 9002,
       "method": "aes-256-cfb",
-      "password": "TyNkGmp9hs6eGpDK"
+      "password": "b8KkNDjEd5QqFyRm"
     },
     {
       "type": "vless",
       "tag": "🇮🇹 意大利 (Italy) 09 - BobQoo",
+      "server": "172.238.232.239",
+      "server_port": 32833,
+      "uuid": "167ed405-7de9-4bff-b1ea-6e3d49c76b0b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.intel.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20",
+          "short_id": "a0a305ccc8e94aa8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 10 - BobQoo",
       "server": "204.216.216.23",
       "server_port": 1114,
       "uuid": "6ba2eac6-0ec9-44ca-a42b-a8e23aafb530",
@@ -126,6 +150,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 11 - BobQoo",
+      "server": "82.118.16.189",
+      "server_port": 443,
+      "uuid": "d5e5f5a1-0f23-4c49-af9f-4be445bf9d8e",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY",
+          "short_id": "37fbf155c7a9f3ff"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -138,7 +183,9 @@
         "🇮🇹 意大利 (Italy) 06 - BobQoo",
         "🇮🇹 意大利 (Italy) 07 - BobQoo",
         "🇮🇹 意大利 (Italy) 08 - BobQoo",
-        "🇮🇹 意大利 (Italy) 09 - BobQoo"
+        "🇮🇹 意大利 (Italy) 09 - BobQoo",
+        "🇮🇹 意大利 (Italy) 10 - BobQoo",
+        "🇮🇹 意大利 (Italy) 11 - BobQoo"
       ]
     },
     {
@@ -153,7 +200,9 @@
         "🇮🇹 意大利 (Italy) 06 - BobQoo",
         "🇮🇹 意大利 (Italy) 07 - BobQoo",
         "🇮🇹 意大利 (Italy) 08 - BobQoo",
-        "🇮🇹 意大利 (Italy) 09 - BobQoo"
+        "🇮🇹 意大利 (Italy) 09 - BobQoo",
+        "🇮🇹 意大利 (Italy) 10 - BobQoo",
+        "🇮🇹 意大利 (Italy) 11 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

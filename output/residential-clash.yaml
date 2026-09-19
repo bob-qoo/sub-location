@@ -4,39 +4,42 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - BobQoo
-  server: 104.18.39.218
-  port: 8080
+- name: 🇩🇪 德国 (Germany) 01 (家宽) - BobQoo
+  server: 199.232.78.101
+  port: 443
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: trojan
+  password: mitivpn
+  sni: ssl.fastly.com
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo
-  server: 36.224.185.143
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo
   server: 36.224.185.173
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - BobQoo
-  server: 6ivh.pnuqcnp.cn
-  port: 443
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo
+  server: 36.224.185.143
+  port: 50099
   udp: true
-  type: anytls
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇺🇸 美国 (United States) 04 (家宽) - BobQoo
+  server: 104.21.39.47
+  port: 8080
+  udp: true
+  type: vless
+  uuid: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
+  network: ws
+  ws-opts:
+    path: /taha3
+    headers:
+      Host: aged-silence-8d7d.tahaggs.workers.dev
 - name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - BobQoo
   server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
   port: 443
@@ -51,27 +54,25 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - BobQoo
+  - 🇩🇪 德国 (Germany) 01 (家宽) - BobQoo
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - BobQoo
+  - 🇺🇸 美国 (United States) 04 (家宽) - BobQoo
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - BobQoo
+  - 🇩🇪 德国 (Germany) 01 (家宽) - BobQoo
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - BobQoo
+  - 🇺🇸 美国 (United States) 04 (家宽) - BobQoo
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - BobQoo
 rules:
 - MATCH,PROXIES

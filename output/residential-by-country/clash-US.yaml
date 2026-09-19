@@ -5,16 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - BobQoo
-  server: 104.18.39.218
+  server: 104.21.39.47
   port: 8080
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /taha3
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: aged-silence-8d7d.tahaggs.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

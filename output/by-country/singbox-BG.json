@@ -6,28 +6,16 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - BobQoo",
-      "server": "neth9.lunariai.ru",
+      "server": "192.145.31.5",
       "server_port": 443,
       "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
       "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "neth9.lunariai.ru"
-        }
+        "type": "ws"
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - BobQoo",
-      "server": "213.183.63.60",
-      "server_port": 9066,
-      "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
-    },
-    {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - BobQoo",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - BobQoo",
       "server": "192.145.31.5",
       "server_port": 8443,
       "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
@@ -47,7 +35,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - BobQoo",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - BobQoo",
       "server": "193.148.59.178",
       "server_port": 443,
       "uuid": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
@@ -68,25 +56,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - BobQoo",
-      "server": "31.59.121.156",
-      "server_port": 2053,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - BobQoo",
+      "server": "87.120.196.212",
+      "server_port": 443,
+      "uuid": "5561acfb-0adc-4c76-bfbf-767a76c7cbf0",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true,
+        "server_name": "holo-stream.videocactus.xyz",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
-      },
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - BobQoo",
+      "server": "131.123.39.29",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
       "transport": {
         "type": "ws",
-        "path": "/go/library/channel?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
+        "path": "/vless-test"
       }
     },
     {

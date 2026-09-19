@@ -4,45 +4,59 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - BobQoo",
-      "server": "104.18.39.218",
-      "server_port": 8080,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "type": "trojan",
+      "tag": "🇩🇪 德国 (Germany) 01 (家宽) - BobQoo",
+      "server": "199.232.78.101",
+      "server_port": 443,
+      "password": "mitivpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560security=tls",
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
         "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+          "Host": "mitivpn---ss--s---mitivpn-11e.global.ssl.fastly.net"
         }
       }
     },
     {
       "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo",
-      "server": "36.224.185.143",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo",
       "server": "36.224.185.173",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
       "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
     },
     {
-      "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - BobQoo",
-      "server": "6ivh.pnuqcnp.cn",
-      "server_port": 443,
-      "password": "9sK2mP8xQ7vL3nZ6",
-      "tls": {
-        "enabled": true,
-        "server_name": "images.ctfassets.net",
-        "insecure": true
+      "type": "shadowsocks",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo",
+      "server": "36.224.185.143",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 04 (家宽) - BobQoo",
+      "server": "104.21.39.47",
+      "server_port": 8080,
+      "uuid": "b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748",
+      "transport": {
+        "type": "ws",
+        "path": "/taha3",
+        "headers": {
+          "Host": "aged-silence-8d7d.tahaggs.workers.dev"
+        }
       }
     },
     {
@@ -58,11 +72,7 @@
         "insecure": false
       },
       "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn"
-        }
+        "type": "ws"
       }
     },
     {
@@ -70,10 +80,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - BobQoo",
+        "🇩🇪 德国 (Germany) 01 (家宽) - BobQoo",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - BobQoo",
+        "🇺🇸 美国 (United States) 04 (家宽) - BobQoo",
         "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - BobQoo"
       ]
     },
@@ -81,10 +91,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - BobQoo",
+        "🇩🇪 德国 (Germany) 01 (家宽) - BobQoo",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - BobQoo",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - BobQoo",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - BobQoo",
+        "🇺🇸 美国 (United States) 04 (家宽) - BobQoo",
         "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
