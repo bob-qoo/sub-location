@@ -5,58 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - BobQoo
-  server: 128.241.25.3
-  port: 30021
-  udp: true
-  type: vless
-  uuid: afec813e-a5c7-432d-be48-2803c30eea4e
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 02 - BobQoo
-  server: 128.241.25.11
-  port: 30021
-  udp: true
-  type: vless
-  uuid: 40ca0d8c-0641-4e2d-a701-9fd8330daf6d
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 03 (家宽) - BobQoo
-  server: 129.153.71.28
-  port: 28863
-  udp: true
-  type: vless
-  uuid: 4f1f5604-a256-4432-a477-52c3dce7dded
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 04 - BobQoo
-  server: 149.22.87.240
+  server: 149.22.87.241
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 05 - BobQoo
+- name: 🇯🇵 日本 (Japan) 02 - BobQoo
   server: 45.32.57.118
   port: 4433
   udp: true
@@ -64,22 +19,21 @@ proxies:
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   alterId: 0
   cipher: auto
-- name: 🇯🇵 日本 (Japan) 06 - BobQoo
-  server: oc.imfun.fun
-  port: 18112
-  udp: true
-  type: vmess
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-- name: 🇯🇵 日本 (Japan) 07 - BobQoo
-  server: 149.22.87.241
+- name: 🇯🇵 日本 (Japan) 03 - BobQoo
+  server: 149.22.87.240
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 08 - BobQoo
+- name: 🇯🇵 日本 (Japan) 04 - BobQoo
+  server: 149.22.87.204
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 05 - BobQoo
   server: 154.31.114.248
   port: 50159
   udp: true
@@ -92,40 +46,24 @@ proxies:
     short-id: 091e1c5db8451757
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 09 - BobQoo
-  server: 136.110.116.68
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0c4c6ebb-603f-4429-8682-beef6b65b80d
-  tls: true
-  reality-opts:
-    public-key: Ti7zRkfweHdrQ5QHI9o_zEgHn39xRfMG2C2Gfp_AMHE
-    short-id: 8380ad05cd21a69f
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 10 - BobQoo
-  server: 149.22.87.204
-  port: 443
+- name: 🇯🇵 日本 (Japan) 06 - BobQoo
+  server: 84.247.155.196
+  port: 80
   udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 11 - BobQoo
-  server: 34.84.179.36
-  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 07 - BobQoo
+  server: oc.imfun.fun
+  port: 18112
   udp: true
-  type: vless
-  uuid: 51a43b75-c84b-46eb-885e-c24e7819cd0b
-  tls: true
-  reality-opts:
-    public-key: qMPnrSiXgWvw2ETefb46OfJKnYpfX6HfyGdWpWWxtVI
-    short-id: 780152c21e234b5a
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 12 - BobQoo
-  server: 103.75.118.228
-  port: 11452
+  type: vmess
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+- name: 🇯🇵 日本 (Japan) 08 - BobQoo
+  server: 3.114.220.22
+  port: 19645
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -136,22 +74,42 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 13 - BobQoo
+- name: 🇯🇵 日本 (Japan) 09 - BobQoo
   server: 84.247.155.196
   port: 443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 14 - BobQoo
-  server: 138.3.208.26
-  port: 50160
+- name: 🇯🇵 日本 (Japan) 10 - BobQoo
+  server: 207.148.99.230
+  port: 443
   udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: 138.3.208.26
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 15 - BobQoo
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 11 - BobQoo
+  server: 3.114.220.22
+  port: 18007
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 12 - BobQoo
   server: 167.179.111.237
   port: 443
   udp: true
@@ -165,35 +123,7 @@ proxies:
     path: /act/player/search?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 16 - BobQoo
-  server: 108.160.136.71
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /doc/products/view?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 17 - BobQoo
-  server: 3.114.220.22
-  port: 18007
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 18 - BobQoo
+- name: 🇯🇵 日本 (Japan) 13 - BobQoo
   server: 210.152.85.154
   port: 19364
   udp: true
@@ -208,36 +138,66 @@ proxies:
     path: /collect/user/products?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 19 - BobQoo
-  server: 18.183.215.124
-  port: 28573
+- name: 🇯🇵 日本 (Japan) 14 - BobQoo
+  server: 203.137.165.164
+  port: 57554
   udp: true
   type: vless
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-  flow: xtls-rprx-vision
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  servername: www.sony.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 20 - BobQoo
-  server: 57.129.130.57
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 201e0019-2e79-4147-8a09-e510d630abeb
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 21 - BobQoo
-  server: 162.159.254.3
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 15 - BobQoo
+  server: 64.176.60.226
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /documents?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 16 - BobQoo
+  server: 206.251.53.91
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 17 - BobQoo
+  server: 108.160.136.71
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /doc/products/view?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 18 - BobQoo
+  server: 172.67.156.147
   port: 443
   udp: true
   type: vless
@@ -251,117 +211,21 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 22 - BobQoo
-  server: 207.148.99.230
+- name: 🇯🇵 日本 (Japan) 19 - BobQoo
+  server: 43.159.4.80
   port: 443
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
   servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /test/company/library?ed=2560
+    path: /episode/files?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 23 - BobQoo
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: 9c7501fb-4e23-44d8-9a9e-973807ae4f35
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 24 - BobQoo
-  server: 137.220.221.179
-  port: 443
-  udp: true
-  type: vless
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: 🇯🇵 日本 (Japan) 25 - BobQoo
-  server: 3.114.220.22
-  port: 19645
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 26 - BobQoo
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 27 - BobQoo
-  server: 91.186.218.227
-  port: 4443
-  udp: true
-  type: vless
-  uuid: e6059f19-eb60-4165-9bb7-271750d2629e
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 28 - BobQoo
-  server: 172.111.146.64
-  port: 80
-  udp: true
-  type: vless
-  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇯🇵 日本 (Japan) 29 - BobQoo
-  server: 103.115.18.54
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /episode/files?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 30 - BobQoo
-  server: 64.83.39.176
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /seller?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 31 - BobQoo
+- name: 🇯🇵 日本 (Japan) 20 - BobQoo
   server: 3.114.220.22
   port: 10583
   udp: true
@@ -374,6 +238,19 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 21 - BobQoo
+  server: 168.138.43.75
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -381,7 +258,7 @@ proxy-groups:
   - AUTO
   - 🇯🇵 日本 (Japan) 01 - BobQoo
   - 🇯🇵 日本 (Japan) 02 - BobQoo
-  - 🇯🇵 日本 (Japan) 03 (家宽) - BobQoo
+  - 🇯🇵 日本 (Japan) 03 - BobQoo
   - 🇯🇵 日本 (Japan) 04 - BobQoo
   - 🇯🇵 日本 (Japan) 05 - BobQoo
   - 🇯🇵 日本 (Japan) 06 - BobQoo
@@ -400,16 +277,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 19 - BobQoo
   - 🇯🇵 日本 (Japan) 20 - BobQoo
   - 🇯🇵 日本 (Japan) 21 - BobQoo
-  - 🇯🇵 日本 (Japan) 22 - BobQoo
-  - 🇯🇵 日本 (Japan) 23 - BobQoo
-  - 🇯🇵 日本 (Japan) 24 - BobQoo
-  - 🇯🇵 日本 (Japan) 25 - BobQoo
-  - 🇯🇵 日本 (Japan) 26 - BobQoo
-  - 🇯🇵 日本 (Japan) 27 - BobQoo
-  - 🇯🇵 日本 (Japan) 28 - BobQoo
-  - 🇯🇵 日本 (Japan) 29 - BobQoo
-  - 🇯🇵 日本 (Japan) 30 - BobQoo
-  - 🇯🇵 日本 (Japan) 31 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -417,7 +284,7 @@ proxy-groups:
   proxies:
   - 🇯🇵 日本 (Japan) 01 - BobQoo
   - 🇯🇵 日本 (Japan) 02 - BobQoo
-  - 🇯🇵 日本 (Japan) 03 (家宽) - BobQoo
+  - 🇯🇵 日本 (Japan) 03 - BobQoo
   - 🇯🇵 日本 (Japan) 04 - BobQoo
   - 🇯🇵 日本 (Japan) 05 - BobQoo
   - 🇯🇵 日本 (Japan) 06 - BobQoo
@@ -436,15 +303,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 19 - BobQoo
   - 🇯🇵 日本 (Japan) 20 - BobQoo
   - 🇯🇵 日本 (Japan) 21 - BobQoo
-  - 🇯🇵 日本 (Japan) 22 - BobQoo
-  - 🇯🇵 日本 (Japan) 23 - BobQoo
-  - 🇯🇵 日本 (Japan) 24 - BobQoo
-  - 🇯🇵 日本 (Japan) 25 - BobQoo
-  - 🇯🇵 日本 (Japan) 26 - BobQoo
-  - 🇯🇵 日本 (Japan) 27 - BobQoo
-  - 🇯🇵 日本 (Japan) 28 - BobQoo
-  - 🇯🇵 日本 (Japan) 29 - BobQoo
-  - 🇯🇵 日本 (Japan) 30 - BobQoo
-  - 🇯🇵 日本 (Japan) 31 - BobQoo
 rules:
 - MATCH,PROXIES

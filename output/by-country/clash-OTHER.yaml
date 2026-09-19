@@ -5,35 +5,49 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - BobQoo
-  server: 104.18.26.90
-  port: 443
+  server: 188.114.97.6
+  port: 2086
   udp: true
   type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  tls: true
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: u.srilankangrill.online
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 - name: 🌐 其他地区 (Other) 02 - BobQoo
-  server: 104.25.30.10
-  port: 443
+  server: 188.114.97.6
+  port: 2086
   udp: true
   type: vless
-  uuid: 807cd1e0-f4ce-4785-b7a3-cde0c1614b8d
-  tls: true
-  servername: de14.69lover.my
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 98b6cb05-b5ab-4c82-8683-07de28f796a9
   network: ws
   ws-opts:
-    path: /api/v2/6c316c769ad6853c/stream
+    path: /eyJqdW5rIjoiRHF6VWU4SmYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0
     headers:
-      Host: de14.69lover.my
+      Host: holy-glitter-39f9.wwewee2dasdds.workers.dev
+- name: 🌐 其他地区 (Other) 03 - BobQoo
+  server: 188.114.97.6
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 7a629a11-b75a-4889-957d-dc0987a73a19
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoieVMzbmVFWlBsd3prIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed
+    headers:
+      Host: jimifree.jimshofree1.workers.dev
+- name: 🌐 其他地区 (Other) 04 - BobQoo
+  server: 188.114.97.6
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +55,8 @@ proxy-groups:
   - AUTO
   - 🌐 其他地区 (Other) 01 - BobQoo
   - 🌐 其他地区 (Other) 02 - BobQoo
+  - 🌐 其他地区 (Other) 03 - BobQoo
+  - 🌐 其他地区 (Other) 04 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,5 +64,7 @@ proxy-groups:
   proxies:
   - 🌐 其他地区 (Other) 01 - BobQoo
   - 🌐 其他地区 (Other) 02 - BobQoo
+  - 🌐 其他地区 (Other) 03 - BobQoo
+  - 🌐 其他地区 (Other) 04 - BobQoo
 rules:
 - MATCH,PROXIES
