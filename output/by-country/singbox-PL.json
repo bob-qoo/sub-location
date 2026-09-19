@@ -4,45 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - BobQoo",
-      "server": "104.25.22.24",
-      "server_port": 443,
-      "uuid": "e6cc4788-3c45-4df1-94f3-8303504a65bf",
-      "tls": {
-        "enabled": true,
-        "server_name": "khoda.ak-khoda.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "khoda.ak-khoda.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 02 - BobQoo",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "e6cc4788-3c45-4df1-94f3-8303504a65bf",
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "khoda.ak-khoda.workers.dev"
-        }
-      }
+      "server": "217.30.10.44",
+      "server_port": 9062,
+      "method": "aes-256-cfb",
+      "password": "tkhHVxxfM2QErBWe"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 03 - BobQoo",
+      "tag": "🇵🇱 波兰 (Poland) 02 - BobQoo",
       "server": "217.30.10.44",
       "server_port": 9006,
       "method": "aes-256-cfb",
@@ -50,24 +21,16 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 04 - BobQoo",
+      "tag": "🇵🇱 波兰 (Poland) 03 - BobQoo",
       "server": "217.30.10.44",
       "server_port": 9041,
       "method": "aes-256-cfb",
       "password": "U6qnYRhfyDmn8sgn"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 05 - BobQoo",
-      "server": "217.30.10.44",
-      "server_port": 9062,
-      "method": "aes-256-cfb",
-      "password": "tkhHVxxfM2QErBWe"
-    },
-    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 06 - BobQoo",
-      "server": "185.223.57.10",
+      "tag": "🇵🇱 波兰 (Poland) 04 - BobQoo",
+      "server": "185.223.57.16",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
@@ -90,44 +53,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 07 - BobQoo",
-      "server": "31.59.125.106",
-      "server_port": 443,
-      "uuid": "129799e0-a9b1-4ae8-80bd-fa92db813f85",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "poll2.shhflow.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "L2HgzHA1Loh3nvpEINn5cUwQmhDWBsNnFrDQY6rR-CQ",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 08 - BobQoo",
-      "server": "144.31.5.64",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl6.moritech.net",
-        "insecure": true,
-        "alpn": [
-          "h2"
-        ]
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 09 - BobQoo",
+      "tag": "🇵🇱 波兰 (Poland) 05 - BobQoo",
       "server": "144.31.131.38",
       "server_port": 443,
       "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
@@ -137,7 +63,7 @@
         "server_name": "prod.pl-node-01.security-sbrf.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -148,80 +74,19 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 10 - BobQoo",
-      "server": "45.192.12.93",
+      "tag": "🇵🇱 波兰 (Poland) 06 - BobQoo",
+      "server": "admin.wwwinternetvideo.click",
       "server_port": 443,
       "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
       "tls": {
         "enabled": true,
         "server_name": "admin.wwwinternetvideo.click",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 11 - BobQoo",
-      "server": "82.118.22.161",
-      "server_port": 443,
-      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
-          "short_id": "fa3ea655619a3e78"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 12 - BobQoo",
-      "server": "144.31.5.3",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl4.moritech.net",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 13 - BobQoo",
-      "server": "217.60.33.215",
-      "server_port": 443,
-      "password": "865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01",
-      "tls": {
-        "enabled": true,
-        "server_name": "streambox.wwwinternetvideo.click",
         "insecure": true
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 14 - BobQoo",
-      "server": "194.61.121.93",
-      "server_port": 7538,
-      "method": "chacha20-ietf-poly1305",
-      "password": "U9YAoqBgg5VyGBc6vQv1sN"
-    },
-    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 15 - BobQoo",
+      "tag": "🇵🇱 波兰 (Poland) 07 - BobQoo",
       "server": "83.168.111.58",
       "server_port": 443,
       "uuid": "dabb9a19-03ab-4cdf-8963-d3c45eb0f80d",
@@ -242,21 +107,44 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 16 - BobQoo",
-      "server": "atomic-prase23893.my-vm.work",
-      "server_port": 8088,
-      "uuid": "tmp_user",
-      "transport": {
-        "type": "ws",
-        "path": "/api",
-        "headers": {
-          "Host": "queuev4.vk.com"
+      "tag": "🇵🇱 波兰 (Poland) 08 - BobQoo",
+      "server": "34.118.43.133",
+      "server_port": 443,
+      "uuid": "16e310b7-659e-45ee-a4b0-10e0289b8621",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-bjPqNKxxGTKCmH6dwsdGRTUzuatAowBWxyOPW4BiVQ",
+          "short_id": "7e7623474d41f032"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 09 - BobQoo",
+      "server": "pl6.moritech.net",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl6.moritech.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },
     {
       "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 17 - BobQoo",
+      "tag": "🇵🇱 波兰 (Poland) 10 - BobQoo",
       "server": "188.114.96.19",
       "server_port": 80,
       "uuid": "aed88e79-5762-4d2f-86fa-f438f32a7654",
@@ -271,24 +159,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 18 - BobQoo",
-      "server": "50.7.248.237",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl-new-dedic.failspace.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 19 - BobQoo",
+      "tag": "🇵🇱 波兰 (Poland) 11 - BobQoo",
       "server": "pl-waw.dontblockmepls.com",
       "server_port": 2063,
       "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
@@ -309,21 +180,36 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 20 - BobQoo",
-      "server": "144.31.2.33",
+      "tag": "🇵🇱 波兰 (Poland) 12 - BobQoo",
+      "server": "atomic-prase23893.my-vm.work",
+      "server_port": 8088,
+      "uuid": "tmp_user",
+      "transport": {
+        "type": "ws",
+        "path": "/api",
+        "headers": {
+          "Host": "queuev4.vk.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 13 - BobQoo",
+      "server": "82.118.22.161",
       "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl3.moritech.net",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
+          "short_id": "fa3ea655619a3e78"
         }
       }
     },
@@ -344,14 +230,7 @@
         "🇵🇱 波兰 (Poland) 10 - BobQoo",
         "🇵🇱 波兰 (Poland) 11 - BobQoo",
         "🇵🇱 波兰 (Poland) 12 - BobQoo",
-        "🇵🇱 波兰 (Poland) 13 - BobQoo",
-        "🇵🇱 波兰 (Poland) 14 - BobQoo",
-        "🇵🇱 波兰 (Poland) 15 - BobQoo",
-        "🇵🇱 波兰 (Poland) 16 - BobQoo",
-        "🇵🇱 波兰 (Poland) 17 - BobQoo",
-        "🇵🇱 波兰 (Poland) 18 - BobQoo",
-        "🇵🇱 波兰 (Poland) 19 - BobQoo",
-        "🇵🇱 波兰 (Poland) 20 - BobQoo"
+        "🇵🇱 波兰 (Poland) 13 - BobQoo"
       ]
     },
     {
@@ -370,14 +249,7 @@
         "🇵🇱 波兰 (Poland) 10 - BobQoo",
         "🇵🇱 波兰 (Poland) 11 - BobQoo",
         "🇵🇱 波兰 (Poland) 12 - BobQoo",
-        "🇵🇱 波兰 (Poland) 13 - BobQoo",
-        "🇵🇱 波兰 (Poland) 14 - BobQoo",
-        "🇵🇱 波兰 (Poland) 15 - BobQoo",
-        "🇵🇱 波兰 (Poland) 16 - BobQoo",
-        "🇵🇱 波兰 (Poland) 17 - BobQoo",
-        "🇵🇱 波兰 (Poland) 18 - BobQoo",
-        "🇵🇱 波兰 (Poland) 19 - BobQoo",
-        "🇵🇱 波兰 (Poland) 20 - BobQoo"
+        "🇵🇱 波兰 (Poland) 13 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,28 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - BobQoo",
-      "server": "193.42.39.10",
-      "server_port": 33743,
-      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
     },
     {
       "type": "vless",
@@ -41,6 +25,26 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - BobQoo",
+      "server": "34.51.231.250",
+      "server_port": 443,
+      "uuid": "e4be912f-68e8-4d51-80a4-1342b646f8e0",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg",
+          "short_id": "79ff7d51e3c56323"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - BobQoo",
       "server": "34.51.172.152",
       "server_port": 443,
       "uuid": "788950f8-dbd9-4234-a42c-a7204665ce9f",
@@ -60,7 +64,18 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - BobQoo",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - BobQoo",
+      "server": "143.246.195.138",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - BobQoo",
       "server": "91.193.17.156",
       "server_port": 9458,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
@@ -84,57 +99,47 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - BobQoo",
-      "server": "31.77.111.11",
-      "server_port": 43439,
-      "uuid": "428e923f-e608-412b-9e51-3b09ffab551f",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - BobQoo",
+      "server": "svvedko.nxxzxaw.beer",
+      "server_port": 443,
+      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.higames.ru",
+        "server_name": "svvedko.nxxzxaw.beer",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4",
-          "short_id": "39ad36226f3abec8"
+          "public_key": "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA",
+          "short_id": "fb442438e2223836"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "streaming"
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - BobQoo",
-      "server": "143.246.195.138",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - BobQoo",
-      "server": "34.51.231.250",
-      "server_port": 443,
-      "uuid": "e4be912f-68e8-4d51-80a4-1342b646f8e0",
+      "tag": "🇸🇪 瑞典 (Sweden) 08 - BobQoo",
+      "server": "193.42.39.10",
+      "server_port": 33743,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "www.google.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg",
-          "short_id": "79ff7d51e3c56323"
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
       }
     },
     {
@@ -148,7 +153,8 @@
         "🇸🇪 瑞典 (Sweden) 04 - BobQoo",
         "🇸🇪 瑞典 (Sweden) 05 - BobQoo",
         "🇸🇪 瑞典 (Sweden) 06 - BobQoo",
-        "🇸🇪 瑞典 (Sweden) 07 - BobQoo"
+        "🇸🇪 瑞典 (Sweden) 07 - BobQoo",
+        "🇸🇪 瑞典 (Sweden) 08 - BobQoo"
       ]
     },
     {
@@ -161,7 +167,8 @@
         "🇸🇪 瑞典 (Sweden) 04 - BobQoo",
         "🇸🇪 瑞典 (Sweden) 05 - BobQoo",
         "🇸🇪 瑞典 (Sweden) 06 - BobQoo",
-        "🇸🇪 瑞典 (Sweden) 07 - BobQoo"
+        "🇸🇪 瑞典 (Sweden) 07 - BobQoo",
+        "🇸🇪 瑞典 (Sweden) 08 - BobQoo"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

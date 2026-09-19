@@ -16,6 +16,18 @@ proxies:
     headers:
       Host: aIs.SpEeDtEsT.nEt
 - name: 🇹🇭 泰国 (Thailand) 02 - BobQoo
+  server: 34.15.144.211
+  port: 443
+  udp: true
+  type: vless
+  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
+  tls: true
+  reality-opts:
+    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
+    short-id: 856c0a3cd1426a5c
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇹🇭 泰国 (Thailand) 03 - BobQoo
   server: 34.15.162.1
   port: 443
   udp: true
@@ -27,31 +39,6 @@ proxies:
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇭 泰国 (Thailand) 03 - BobQoo
-  server: 162.159.192.125
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  tls: true
-  servername: v2ray.simspeedup.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 (Thailand) 04 - BobQoo
-  server: 118.193.57.167
-  port: 49667
-  udp: true
-  type: vmess
-  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /d46bf492
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,7 +47,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - BobQoo
   - 🇹🇭 泰国 (Thailand) 02 - BobQoo
   - 🇹🇭 泰国 (Thailand) 03 - BobQoo
-  - 🇹🇭 泰国 (Thailand) 04 - BobQoo
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,6 +55,5 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - BobQoo
   - 🇹🇭 泰国 (Thailand) 02 - BobQoo
   - 🇹🇭 泰国 (Thailand) 03 - BobQoo
-  - 🇹🇭 泰国 (Thailand) 04 - BobQoo
 rules:
 - MATCH,PROXIES
