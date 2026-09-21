@@ -118,8 +118,9 @@ SOURCE_URLS = [
   "https://raw.githubusercontent.com/PrinceVSFX/Hysteria2-Configs/main/Configs_list.txt",
   "https://raw.githubusercontent.com/ishalumi/proxy-node-collector/main/output/nodes_base64.txt",
   "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/base64.txt",
-  "https://raw.githubusercontent.com/PuddinCat/BestClash/main/proxies.yaml"
-#  "https://raw.githubusercontent.com/twj0/subseek/refs/heads/master/data/sub_github.txt"
+  "https://raw.githubusercontent.com/PuddinCat/BestClash/main/proxies.yaml",
+  "https://github.com/peasoft/NoMoreWalls/blob/master/list_raw.txt",
+  "https://raw.githubusercontent.com/twj0/subseek/refs/heads/master/data/sub_github.txt"
 ]
 
 OUTPUT_DIR = "output"
@@ -2509,16 +2510,34 @@ def main():
     # 2. 解析
     candidates = []
     parse_fail = 0
+    # ★ GitHub Actions 自动过滤: 删除 ss/trojan/ssh/http 类型节点
+    #   检测环境变量 GITHUB_ACTIONS=true (Actions 运行时自动设置)
+    #   过滤的内部协议类型: shadowsocks(ss), trojan, ssh
+    #   http: 无独立协议解析器, 此处按 URI scheme 前缀 "http://" 匹配
+    is_actions = os.environ.get("GITHUB_ACTIONS", "").lower() == "true"
+    FILTERED_PROTOCOLS = {"shadowsocks", "trojan", "ssh"}  # 内部 outbound type 名
+    FILTERED_URI_PREFIXES = ("http://",)                    # URI 前缀匹配 (非 https)
+    filtered_proto_count = 0
     for uri in raw_nodes:
+        # Actions 环境: 按 URI 前缀预过滤 http:// 类节点 (无独立解析器, 提前拦截)
+        if is_actions and uri.strip().lower().startswith(FILTERED_URI_PREFIXES):
+            filtered_proto_count += 1
+            continue
         parsed = parse_node_uri(uri)
         if not parsed:
             parse_fail += 1
             continue
         outbound, server, port, proto = parsed
+        # Actions 环境: 过滤 ss/trojan/ssh 协议节点
+        if is_actions and proto in FILTERED_PROTOCOLS:
+            filtered_proto_count += 1
+            continue
         # 屏蔽占位/广告节点
         if BLACKLIST_NAME_HINTS.search(urllib.parse.unquote(uri.split("#", 1)[-1] if "#" in uri else "")):
             continue
         candidates.append((uri, outbound, server, port, proto))
+    if is_actions and filtered_proto_count > 0:
+        print(f"[*] Actions 协议过滤: 已删除 {filtered_proto_count} 个 ss/trojan/ssh/http 类型节点")
 
     # 2.5 ★ 测前强去重 (凭据指纹去重: 同 凭据+目标+协议 只测一次, 结果回填全部重复节点)
     #     key = (server, port, proto, 凭据指纹): 凭据不同 → 服务端校验结果可能不同, 不可合并
