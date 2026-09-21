@@ -5,22 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: 129.151.64.169
-  port: 31867
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /files?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  server: 130.17.27.204
+  server: 45.148.30.11
   port: 443
   udp: true
   type: vless
@@ -31,38 +16,10 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /player/shop?ed=2560
+    path: /season/classify?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
-  server: 185.125.103.62
-  port: 8082
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tags/photos/info?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
-  server: 132.243.203.218
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /v?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
+- name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
   server: 156.226.168.221
   port: 35193
   udp: true
@@ -82,9 +39,6 @@ proxy-groups:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,8 +46,5 @@ proxy-groups:
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
 rules:
 - MATCH,PROXIES
