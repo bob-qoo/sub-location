@@ -5,45 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 172.67.148.26
-  port: 443
+  server: 188.114.97.6
+  port: 2052
   udp: true
   type: vless
-  uuid: 95de071f-747c-dc07-36ac-5c0854a9e50e
-  tls: true
-  servername: restless-boat-ebf2.moha102030.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /sync
+    path: /
     headers:
-      Host: restless-boat-ebf2.moha102030.workers.dev
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 - name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 172.67.148.26
-  port: 443
+  server: 188.114.97.6
+  port: 2052
   udp: true
   type: vless
-  uuid: 95de071f-747c-dc07-36ac-5c0854a9e50e
-  tls: true
-  servername: restless-boat-ebf2.moha102030.workers.dev
-  skip-cert-verify: false
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /syncfp=chrome
+    path: /
     headers:
-      Host: restless-boat-ebf2.moha102030.workers.dev
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 - name: 🌐 其他地区 (Other) 03 - xiaohe
-  server: 172.67.148.26
-  port: 80
+  server: 188.114.97.6
+  port: 2052
   udp: true
   type: vless
-  uuid: 95de071f-747c-dc07-36ac-5c0854a9e50e
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /sync
+    path: /
     headers:
-      Host: restless-boat-ebf2.moha102030.workers.dev
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
