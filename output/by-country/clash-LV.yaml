@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+  server: 188.253.21.106
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1f243480-4bfb-453b-9257-0a3856f48934
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XC-M7M7S_JZ1V_hIueJJeqll-sCll8Av5UDzZXTFw2E
+    short-id: 69a58b9ff1a59f
+  servername: mirror.veesp.com
+  client-fingerprint: firefox
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
   server: 138.124.180.137
   port: 443
   udp: true
@@ -16,18 +29,34 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
+  server: 72.56.52.248
+  port: 443
+  udp: true
+  type: vless
+  uuid: add59713-f5c6-4442-83a3-6bc9281f5c90
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
+  servername: lv.dexlen.cc
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
 rules:
 - MATCH,PROXIES
