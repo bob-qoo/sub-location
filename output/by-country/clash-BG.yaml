@@ -16,7 +16,7 @@ proxies:
     public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
     short-id: e3daad69
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
   server: 131.123.37.199
   port: 8081
@@ -36,7 +36,7 @@ proxies:
   ws-opts:
     path: /vless-test
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
-  server: 131.123.41.31
+  server: 131.123.41.177
   port: 8081
   udp: true
   type: vless
@@ -58,7 +58,29 @@ proxies:
   servername: sheetpeek.com
   client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
-  server: 144.31.50.236
+  server: sof.edgeptr.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: 960e297f-7280-44b3-ac89-33cc6e30eba6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EtKRG8sxUJsdy-KwUOtYUNJnSn5VMx2sfKvvdpzg2X0
+    short-id: f0eb800bd980b00b
+  servername: www.lovelive-anime.jp
+  client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
+  server: 131.123.41.31
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
+  server: prep.wwwinternetvideo.click
   port: 443
   udp: true
   type: vless
@@ -81,6 +103,8 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,5 +116,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe
   - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe
 rules:
 - MATCH,PROXIES
