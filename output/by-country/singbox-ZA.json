@@ -20,44 +20,8 @@
       "password": "aduB9HGxQHjA2SBMRjkHX6"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇿🇦 南非 (South Africa) 03 - Chain-Proxy",
-      "server": "102.133.165.160",
-      "server_port": 16233,
-      "method": "chacha20-ietf-poly1305",
-      "password": "Xsy8Ox4yOV3xLlpxtjzs3X"
-    },
-    {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 04 - Chain-Proxy",
-      "server": "platform103.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform103",
-        "headers": {
-          "Host": "platform103.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 05 - Chain-Proxy",
-      "server": "platform115.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform115",
-        "headers": {
-          "Host": "platform115.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 06 - Chain-Proxy",
       "server": "platform102.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -71,32 +35,46 @@
     },
     {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 07 - Chain-Proxy",
-      "server": "platform109.golnamakcert.top",
+      "tag": "🇿🇦 南非 (South Africa) 04 - Chain-Proxy",
+      "server": "platform115.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform109",
+        "path": "/platform115",
         "headers": {
-          "Host": "platform109.halalkhor.info"
+          "Host": "['platform115.halalkhor.info']"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 08 - Chain-Proxy",
+      "tag": "🇿🇦 南非 (South Africa) 05 - Chain-Proxy",
       "server": "platform113.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform113"
+        "path": "/platform113",
+        "headers": {
+          "Host": "['platform113.halalkhor.info']"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 09 - Chain-Proxy",
+      "tag": "🇿🇦 南非 (South Africa) 06 - Chain-Proxy",
+      "server": "platform103.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform103"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 07 - Chain-Proxy",
       "server": "platform117.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -110,18 +88,35 @@
     },
     {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 10 - Chain-Proxy",
-      "server": "platform108.golnamakcert.top",
+      "tag": "🇿🇦 南非 (South Africa) 08 - Chain-Proxy",
+      "server": "platform109.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform108"
+        "path": "/platform109",
+        "headers": {
+          "Host": "platform109.halalkhor.info"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 11 - Chain-Proxy",
+      "tag": "🇿🇦 南非 (South Africa) 09 - Chain-Proxy",
+      "server": "platform118.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform118",
+        "headers": {
+          "Host": "platform118.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 10 - Chain-Proxy",
       "server": "platform106.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -130,6 +125,20 @@
         "path": "/platform106",
         "headers": {
           "Host": "platform106.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 11 - Chain-Proxy",
+      "server": "platform107.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform107",
+        "headers": {
+          "Host": "platform107.halalkhor.info"
         }
       }
     },
@@ -148,29 +157,12 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇿🇦 南非 (South Africa) 13 - Chain-Proxy",
-      "server": "platform107.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform107",
-        "headers": {
-          "Host": "platform107.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 14 - Chain-Proxy",
-      "server": "platform118.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform118"
-      }
+      "server": "102.133.165.160",
+      "server_port": 16233,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Xsy8Ox4yOV3xLlpxtjzs3X"
     },
     {
       "type": "selector",
@@ -189,8 +181,7 @@
         "🇿🇦 南非 (South Africa) 10 - Chain-Proxy",
         "🇿🇦 南非 (South Africa) 11 - Chain-Proxy",
         "🇿🇦 南非 (South Africa) 12 - Chain-Proxy",
-        "🇿🇦 南非 (South Africa) 13 - Chain-Proxy",
-        "🇿🇦 南非 (South Africa) 14 - Chain-Proxy"
+        "🇿🇦 南非 (South Africa) 13 - Chain-Proxy"
       ]
     },
     {
@@ -209,8 +200,7 @@
         "🇿🇦 南非 (South Africa) 10 - Chain-Proxy",
         "🇿🇦 南非 (South Africa) 11 - Chain-Proxy",
         "🇿🇦 南非 (South Africa) 12 - Chain-Proxy",
-        "🇿🇦 南非 (South Africa) 13 - Chain-Proxy",
-        "🇿🇦 南非 (South Africa) 14 - Chain-Proxy"
+        "🇿🇦 南非 (South Africa) 13 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

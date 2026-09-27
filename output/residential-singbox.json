@@ -6,8 +6,21 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - Chain-Proxy",
-      "server": "162.159.24.131",
+      "server": "162.159.48.32",
       "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 02 (家宽) - Chain-Proxy",
+      "server": "162.159.48.32",
+      "server_port": 8880,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -19,7 +32,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy",
       "server": "r3mrcg001286ek2.cybervena.com",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
@@ -27,21 +40,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy",
-      "server": "118.167.230.191",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tag": "🇰🇷 韩国 (South Korea) 04 (家宽) - Chain-Proxy",
+      "server": "38.180.225.247",
+      "server_port": 2053,
+      "uuid": "97532b08-357e-4140-a6f0-8e07f2ed3327",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
+        "server_name": "yf.962456.xyz",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=kr.william.us.ci",
+        "headers": {
+          "Host": "yf.962456.xyz"
         }
       }
     },
@@ -51,8 +67,9 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (移动家宽) - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy"
+        "🇺🇸 美国 (United States) 02 (家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy",
+        "🇰🇷 韩国 (South Korea) 04 (家宽) - Chain-Proxy"
       ]
     },
     {
@@ -60,8 +77,9 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (移动家宽) - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy"
+        "🇺🇸 美国 (United States) 02 (家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy",
+        "🇰🇷 韩国 (South Korea) 04 (家宽) - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

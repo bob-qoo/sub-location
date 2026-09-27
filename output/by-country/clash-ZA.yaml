@@ -19,35 +19,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
 - name: 🇿🇦 南非 (South Africa) 03 - Chain-Proxy
-  server: 102.133.165.160
-  port: 16233
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-- name: 🇿🇦 南非 (South Africa) 04 - Chain-Proxy
-  server: platform103.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform103
-    headers:
-      Host: platform103.halalkhor.info
-- name: 🇿🇦 南非 (South Africa) 05 - Chain-Proxy
-  server: platform115.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
-- name: 🇿🇦 南非 (South Africa) 06 - Chain-Proxy
   server: platform102.golnamakcert.top
   port: 80
   udp: true
@@ -58,18 +29,18 @@ proxies:
     path: /platform102
     headers:
       Host: platform102.halalkhor.info
-- name: 🇿🇦 南非 (South Africa) 07 - Chain-Proxy
-  server: platform109.golnamakcert.top
+- name: 🇿🇦 南非 (South Africa) 04 - Chain-Proxy
+  server: platform115.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform109
+    path: /platform115
     headers:
-      Host: platform109.halalkhor.info
-- name: 🇿🇦 南非 (South Africa) 08 - Chain-Proxy
+      Host: '[''platform115.halalkhor.info'']'
+- name: 🇿🇦 南非 (South Africa) 05 - Chain-Proxy
   server: platform113.golnamakcert.top
   port: 80
   udp: true
@@ -78,7 +49,18 @@ proxies:
   network: ws
   ws-opts:
     path: /platform113
-- name: 🇿🇦 南非 (South Africa) 09 - Chain-Proxy
+    headers:
+      Host: '[''platform113.halalkhor.info'']'
+- name: 🇿🇦 南非 (South Africa) 06 - Chain-Proxy
+  server: platform103.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform103
+- name: 🇿🇦 南非 (South Africa) 07 - Chain-Proxy
   server: platform117.golnamakcert.top
   port: 80
   udp: true
@@ -89,16 +71,29 @@ proxies:
     path: /platform117
     headers:
       Host: platform117.halalkhor.info
-- name: 🇿🇦 南非 (South Africa) 10 - Chain-Proxy
-  server: platform108.golnamakcert.top
+- name: 🇿🇦 南非 (South Africa) 08 - Chain-Proxy
+  server: platform109.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform108
-- name: 🇿🇦 南非 (South Africa) 11 - Chain-Proxy
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
+- name: 🇿🇦 南非 (South Africa) 09 - Chain-Proxy
+  server: platform118.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
+- name: 🇿🇦 南非 (South Africa) 10 - Chain-Proxy
   server: platform106.golnamakcert.top
   port: 80
   udp: true
@@ -109,6 +104,17 @@ proxies:
     path: /platform106
     headers:
       Host: platform106.halalkhor.info
+- name: 🇿🇦 南非 (South Africa) 11 - Chain-Proxy
+  server: platform107.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.halalkhor.info
 - name: 🇿🇦 南非 (South Africa) 12 - Chain-Proxy
   server: platform101.golnamakcert.top
   port: 80
@@ -121,25 +127,12 @@ proxies:
     headers:
       Host: platform101.halalkhor.info
 - name: 🇿🇦 南非 (South Africa) 13 - Chain-Proxy
-  server: platform107.golnamakcert.top
-  port: 80
+  server: 102.133.165.160
+  port: 16233
   udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform107
-    headers:
-      Host: platform107.halalkhor.info
-- name: 🇿🇦 南非 (South Africa) 14 - Chain-Proxy
-  server: platform118.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform118
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
 proxy-groups:
 - name: PROXIES
   type: select
@@ -158,7 +151,6 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 11 - Chain-Proxy
   - 🇿🇦 南非 (South Africa) 12 - Chain-Proxy
   - 🇿🇦 南非 (South Africa) 13 - Chain-Proxy
-  - 🇿🇦 南非 (South Africa) 14 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -177,6 +169,5 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 11 - Chain-Proxy
   - 🇿🇦 南非 (South Africa) 12 - Chain-Proxy
   - 🇿🇦 南非 (South Africa) 13 - Chain-Proxy
-  - 🇿🇦 南非 (South Africa) 14 - Chain-Proxy
 rules:
 - MATCH,PROXIES
