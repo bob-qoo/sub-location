@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - xiaohe
+- name: 🇮🇷 IR 01 - Chain-Proxy
   server: 62.60.152.1
   port: 56328
   udp: true
@@ -16,18 +16,18 @@ proxies:
     public-key: iI1pc8k9-mIPHL2Dga-4n4h3KoBT68lN434nglpgm2M
     short-id: f3a9c21e8b6d4571
   servername: table.vkroom-it-service.xyz
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇮🇷 IR 01 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇮🇷 IR 01 - Chain-Proxy
 rules:
 - MATCH,PROXIES

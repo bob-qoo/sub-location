@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - Chain-Proxy
   server: free.sahanwickramasinghe.me
   port: 80
   udp: true
@@ -18,12 +18,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - Chain-Proxy
 rules:
 - MATCH,PROXIES

@@ -5,13 +5,12 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - Chain-Proxy",
       "server": "free.sahanwickramasinghe.me",
       "server_port": 80,
       "uuid": "684f9a2e-4f96-497f-bfd9-ff1e34637952",
       "transport": {
-        "type": "ws",
-        "path": "/"
+        "type": "ws"
       }
     },
     {
@@ -19,14 +18,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
