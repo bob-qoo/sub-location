@@ -4,67 +4,64 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (移动家宽) - Chain-Proxy
-  server: 162.159.48.32
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 02 (家宽) - Chain-Proxy
-  server: 162.159.48.32
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Chain-Proxy
   server: r3mrcg001286ek2.cybervena.com
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - Chain-Proxy
-  server: 38.180.225.247
-  port: 2053
+- name: 🇯🇵 日本 (Japan) 02 (家宽) - Chain-Proxy
+  server: 210.152.85.154
+  port: 19364
   udp: true
   type: vless
-  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
+  uuid: 9dbc54c6-aad1-4b30-8c4d-8abe0c0ea826
   tls: true
-  servername: yf.962456.xyz
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
   skip-cert-verify: false
-  client-fingerprint: random
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /proxyip=kr.william.us.ci
+    path: /@Marisa_kristi
     headers:
-      Host: yf.962456.xyz
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy
+  server: acf1b599-tmeqo0-u4zl7f-1jk6u.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 45bc25b2-1a10-11ed-91c0-f23c91cfbbc9
+  sni: acf1b599-tmeqo0-u4zl7f-1jk6u.nw4.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy
+  server: 118.167.230.191
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - Chain-Proxy
-  - 🇺🇸 美国 (United States) 02 (家宽) - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Chain-Proxy
+  - 🇯🇵 日本 (Japan) 02 (家宽) - Chain-Proxy
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - Chain-Proxy
-  - 🇺🇸 美国 (United States) 02 (家宽) - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Chain-Proxy
+  - 🇯🇵 日本 (Japan) 02 (家宽) - Chain-Proxy
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy
 rules:
 - MATCH,PROXIES
