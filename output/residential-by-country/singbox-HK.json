@@ -5,9 +5,9 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇮🇩 印尼 (Indonesia) 01 - Chain-Proxy",
-      "server": "zfd-boardv2.kunlun01dns.com",
-      "server_port": 16298,
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - Chain-Proxy",
+      "server": "zfd-hkv2.kunlun01dns.com",
+      "server_port": 16116,
       "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
       "security": "auto"
     },
@@ -16,14 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 (Indonesia) 01 - Chain-Proxy"
+        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 (Indonesia) 01 - Chain-Proxy"
+        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

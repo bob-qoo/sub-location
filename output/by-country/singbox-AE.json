@@ -6,21 +6,21 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - Chain-Proxy",
-      "server": "78.40.195.140",
+      "server": "94.183.224.45",
       "server_port": 443,
-      "uuid": "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27",
+      "uuid": "d72f05b0-b182-4783-a6f2-21cecc7d841a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.booking.com",
+        "server_name": "dzen.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo",
-          "short_id": "98096455d963bdbb"
+          "public_key": "SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js",
+          "short_id": "a1b2c3d4e5f67890"
         }
       }
     },
@@ -43,28 +43,28 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy",
-      "server": "94.183.224.45",
+      "server": "78.40.195.140",
       "server_port": 443,
-      "uuid": "d72f05b0-b182-4783-a6f2-21cecc7d841a",
+      "uuid": "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "dzen.ru",
+        "server_name": "www.booking.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js",
-          "short_id": "a1b2c3d4e5f67890"
+          "public_key": "Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo",
+          "short_id": "98096455d963bdbb"
         }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy",
-      "server": "85.204.107.177",
+      "server": "85.204.107.173",
       "server_port": 8080,
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {
@@ -109,18 +109,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy",
-      "server": "xjp1.mangshe.xyz",
-      "server_port": 2060,
-      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
-      "tls": {
-        "enabled": true,
-        "server_name": "xjp1.mangshe.xyz",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -130,8 +118,7 @@
         "🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy",
         "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy",
         "🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy"
+        "🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy"
       ]
     },
     {
@@ -143,8 +130,7 @@
         "🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy",
         "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy",
         "🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy"
+        "🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
