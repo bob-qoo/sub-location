@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇽 墨西哥 (Mexico) 01 - Chain-Proxy
+- name: 🇬🇹 GT 01 - Chain-Proxy
   server: 185.47.254.251
   port: 443
   udp: true
@@ -14,28 +14,19 @@ proxies:
   tls: true
   reality-opts:
     public-key: 6-_ZidygR8PRt4gtHlGCAW-PPmjEIm7Wn7MZqJU1z1Q
-    short-id: 6c059ecfddf9b179
   servername: gateway.icloud.com
-  client-fingerprint: firefox
-- name: 🇲🇽 墨西哥 (Mexico) 02 - Chain-Proxy
-  server: 45.164.20.85
-  port: 10226
-  udp: true
-  type: vless
-  uuid: 9aab8f39-ccb3-44ea-acdc-a8aefe211287
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇽 墨西哥 (Mexico) 01 - Chain-Proxy
-  - 🇲🇽 墨西哥 (Mexico) 02 - Chain-Proxy
+  - 🇬🇹 GT 01 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇽 墨西哥 (Mexico) 01 - Chain-Proxy
-  - 🇲🇽 墨西哥 (Mexico) 02 - Chain-Proxy
+  - 🇬🇹 GT 01 - Chain-Proxy
 rules:
 - MATCH,PROXIES
