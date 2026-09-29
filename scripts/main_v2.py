@@ -65,8 +65,13 @@ SOURCE_URLS = [
     "https://www.ermao.net/sub/v2ray/ermao.net",
     "https://raw.githubusercontent.com/ishalumi/proxy-node-collector/main/output/nodes_base64.txt",
     "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/base64.txt",
-    "https://raw.githubusercontent.com/PuddinCat/BestClash/main/proxies.yaml",
-    "https://raw.githubusercontent.com/twj0/subseek/refs/heads/master/data/sub_github.txt",
+        "https://raw.githubusercontent.com/twj0/subseek/refs/heads/master/data/sub_github.txt",
+    "https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/subscriptions/mix-base64.txt",
+    "https://raw.githubusercontent.com/morpheusadam/v2ray-config/main/subs/bundles/all.txt",
+    "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/subs/sub39.txt",
+    "https://raw.githubusercontent.com/mohammadaz2/v2rayConfigsForYou/main/configs.txt",
+    "https://raw.githubusercontent.com/ninjastrikers/Nexus-nodes/main/configs/all.txt",
+    "https://raw.githubusercontent.com/coldwater-10/V2rayCollectorLire/main/mixed_iran.txt",
 ]
 
 OUTPUT_DIR = "output"
