@@ -2185,6 +2185,116 @@ def make_node_name(item, idx, force_residential=False):
     return f"{flag} {cname} {idx:02d}{tag}{risk_tag} - Chain-Proxy"
 
 
+# ═══════════════════════════════════════════N═══════════════════════
+# 住宅链式订阅 (家宽节点经 香港-自动 中转组双跳)
+#   路径: 客户端 → 香港-自动 (url-test 中转组) → 家宽节点 → 目标
+#   sing-box: 节点 outbound 设 detour=香港-自动
+#   Clash/Mihomo: 节点 proxy 设 dialer-proxy=香港-自动 (组名允许, 不得成环)
+# ═══════════════════════════════════════════N═══════════════════════
+CHAIN_RELAY_GROUP = "香港-自动"
+CHAIN_RELAY_COUNT = 10
+
+
+def export_residential_chain(residential, non_residential):
+    """生成 output/residential-chain-{clash.yaml,singbox.json}; 返回 (家宽节点数, 中转数)"""
+    # 中转池: 香港非家宽节点按延迟取前 N; 不足 3 个时用最快非家宽补齐
+    hk = [n for n in non_residential if n.get("country") == "HK" and n.get("outbound")]
+    hk.sort(key=lambda x: x["latency_ms"])
+    relays = hk[:CHAIN_RELAY_COUNT]
+    if len(relays) < 3:
+        others = [n for n in non_residential if n not in relays and n.get("outbound")]
+        others.sort(key=lambda x: x["latency_ms"])
+        relays = (relays + others)[:CHAIN_RELAY_COUNT]
+
+    chain_files = [os.path.join(OUTPUT_DIR, "residential-chain-clash.yaml"),
+                   os.path.join(OUTPUT_DIR, "residential-chain-singbox.json")]
+    if not residential or not relays:
+        for p in chain_files:
+            if os.path.exists(p):
+                os.remove(p)
+        print("[*] 链式订阅: 家宽节点或中转不足, 跳过生成")
+        return 0, 0
+
+    # 中转出站 (自身不挂链, 防循环)
+    relay_sb, relay_clash, relay_tags, relay_names = [], [], [], []
+    for idx, item in enumerate(relays, start=1):
+        name = f"🇭🇰 香港中转 {idx:02d}"
+        ob = dict(item["outbound"])
+        ob.pop("detour", None)
+        sb = outbound_to_singbox(ob, name)
+        relay_tags.append(sb["tag"])
+        relay_sb.append(sb)
+        cp = outbound_to_clash(ob, name)
+        if cp:
+            relay_names.append(cp["name"])
+            relay_clash.append(cp)
+
+    # 家宽节点挂链
+    res_sb, res_clash, res_tags, res_names = [], [], [], []
+    for idx, item in enumerate(residential, start=1):
+        name = make_node_name(item, idx, True)
+        ob = dict(item["outbound"])
+        ob.pop("detour", None)
+        sb = outbound_to_singbox(ob, name)
+        sb["detour"] = CHAIN_RELAY_GROUP
+        res_tags.append(sb["tag"])
+        res_sb.append(sb)
+        cp = outbound_to_clash(ob, name)
+        if cp:
+            cp["dialer-proxy"] = CHAIN_RELAY_GROUP
+            res_names.append(cp["name"])
+            res_clash.append(cp)
+    if not res_sb or not res_clash:
+        for p in chain_files:
+            if os.path.exists(p):
+                os.remove(p)
+        print("[*] 链式订阅: 转换失败, 跳过生成")
+        return 0, 0
+
+    # sing-box
+    sb_outbounds = (
+        relay_sb
+        + [{"type": "urltest", "tag": CHAIN_RELAY_GROUP, "outbounds": relay_tags,
+            "url": "https://www.gstatic.com/generate_204"}]
+        + res_sb
+        + [{"type": "selector", "tag": "select", "outbounds": ["auto"] + res_tags},
+           {"type": "urltest", "tag": "auto", "outbounds": res_tags,
+            "url": "https://www.gstatic.com/generate_204"},
+           {"type": "direct", "tag": "direct"},
+           {"type": "block", "tag": "block"}]
+    )
+    with open(chain_files[1], "w", encoding="utf-8") as f:
+        json.dump({"log": {"level": "warn"}, "outbounds": sb_outbounds},
+                  f, indent=2, ensure_ascii=False)
+
+    # clash
+    clash_cfg = {
+        "port": 7890,
+        "socks-port": 7891,
+        "allow-lan": True,
+        "mode": "rule",
+        "log-level": "info",
+        "proxies": relay_clash + res_clash,
+        "proxy-groups": [
+            {"name": "PROXIES", "type": "select",
+             "proxies": ["AUTO", CHAIN_RELAY_GROUP] + res_names},
+            {"name": "AUTO", "type": "url-test",
+             "url": "https://www.gstatic.com/generate_204", "interval": 300,
+             "proxies": res_names},
+            {"name": CHAIN_RELAY_GROUP, "type": "url-test",
+             "url": "https://www.gstatic.com/generate_204", "interval": 300,
+             "proxies": relay_names},
+        ],
+        "rules": ["MATCH,PROXIES"],
+    }
+    with open(chain_files[0], "w", encoding="utf-8") as f:
+        yaml.dump(clash_cfg, f, allow_unicode=True, sort_keys=False,
+                  default_flow_style=False)
+    print(f"[+] 链式订阅: 家宽 {len(res_sb)} 节点经 {CHAIN_RELAY_GROUP} "
+          f"({len(relay_sb)} 中转) 双跳")
+    return len(res_sb), len(relay_sb)
+
+
 def export_all(unique_nodes, residential, non_residential):
     ensure_directories()
 
@@ -2248,8 +2358,12 @@ def export_all(unique_nodes, residential, non_residential):
         export_clash_yaml(p, os.path.join(RESIDENTIAL_COUNTRY_DIR, f"clash-{cc}.yaml"))
         export_singbox_json(s, os.path.join(RESIDENTIAL_COUNTRY_DIR, f"singbox-{cc}.json"))
 
-    print(f"[*] 导出完毕: 全量 {len(all_links)} | 家宽 {len(res_links)}")
-    return len(all_links), len(res_links)
+    # 2.5) 家宽链式订阅 (香港中转双跳)
+    chain_res_n, chain_relay_n = export_residential_chain(residential, non_residential)
+
+    print(f"[*] 导出完毕: 全量 {len(all_links)} | 家宽 {len(res_links)} | "
+          f"链式家宽 {chain_res_n} (中转 {chain_relay_n})")
+    return len(all_links), len(res_links), chain_res_n, chain_relay_n
 
 
 def export_clash_yaml(clash_proxies, filepath):
@@ -2291,7 +2405,7 @@ def export_singbox_json(sb_nodes, filepath):
 # README 生成
 # ═══════════════════════════════════════════N═══════════════════════
 
-def update_readme(total_count, res_count):
+def update_readme(total_count, res_count, chain_count=0, relay_count=0):
     repo_name = os.environ.get("GITHUB_REPOSITORY", "hezhanleiok/freesub").strip()
     cache_bust = ""
     # 私有化部署 Worker 脚本里的仓库参数 (默认值兜底)
@@ -2362,6 +2476,17 @@ def update_readme(total_count, res_count):
 | 家宽地区 | 节点数 | V2RayN 专属订阅 | Clash 专属订阅 | sing-box 专属订阅 |
 | :--- | :---: | :---: | :---: | :---: |
 {res_table}
+
+---
+
+## 🔗 住宅链式订阅 (香港中转双跳)
+
+> 家宽专区全部节点经 **香港-自动** 中转组双跳：客户端 → 香港中转 → 住宅节点 → 目标。sing-box 用 `detour`、Clash (Mihomo 内核) 用 `dialer-proxy` 实现，中转组自动测速选最优。
+
+| 客户端 / 格式类型 | 家宽节点数 | 香港中转数 | 免翻 CDN 订阅直链 (国内直连) | 官方原生 Raw 直链 (开启代理) |
+| :--- | :---: | :---: | :--- | :--- |
+| 🚀 **Clash (YAML 格式)** | `{chain_count}` | `{relay_count}` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/residential-chain-clash.yaml) | [官方 Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/residential-chain-clash.yaml) |
+| 📦 **sing-box (JSON 格式)** | `{chain_count}` | `{relay_count}` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/residential-chain-singbox.json) | [官方 Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/residential-chain-singbox.json) |
 
 ---
 
@@ -2566,8 +2691,8 @@ def main():
     if not unique_nodes:
         print("[!] 分类后无存活节点 — 保留上次 output")
         return
-    total, res = export_all(unique_nodes, residential, non_residential)
-    update_readme(total, res)
+    total, res, chain_n, relay_n = export_all(unique_nodes, residential, non_residential)
+    update_readme(total, res, chain_n, relay_n)
 
 
     # 统计报告
