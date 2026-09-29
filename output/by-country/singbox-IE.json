@@ -6,6 +6,46 @@
     {
       "type": "vless",
       "tag": "🇮🇪 爱尔兰 (Ireland) 01 - Chain-Proxy",
+      "server": "172.67.145.5",
+      "server_port": 443,
+      "uuid": "20836693-ea23-4f40-a1e7-48a6da897917",
+      "tls": {
+        "enabled": true,
+        "server_name": "netra-85a0ca.shoameni19.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/bluTTbb7MO8rvX1COEYH4WW4qzbr2aui",
+        "headers": {
+          "Host": "netra-85a0ca.shoameni19.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 02 - Chain-Proxy",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "98b6cb05-b5ab-4c82-8683-07de28f796a9",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiRHF6VWU4SmYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0",
+        "headers": {
+          "Host": "holy-glitter-39f9.wwewee2dasdds.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 03 - Chain-Proxy",
       "server": "3.9.135.156",
       "server_port": 51847,
       "uuid": "391a01e9-b664-407b-9158-610fab3f5920",
@@ -15,7 +55,7 @@
         "server_name": "www.tesla.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -25,18 +65,83 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 04 - Chain-Proxy",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "uuid": "50414e45-4c5f-5a45-5553-48493148ec15",
+      "tls": {
+        "enabled": true,
+        "server_name": "cgzdynepurqs.mercury061.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/48493148ec15",
+        "headers": {
+          "Host": "cgzdynepurqs.mercury061.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 05 - Chain-Proxy",
+      "server": "188.114.97.6",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 06 - Chain-Proxy",
+      "server": "104.21.96.1",
+      "server_port": 443,
+      "uuid": "0836463b-214f-4af6-aa85-85a56a62388e",
+      "tls": {
+        "enabled": true,
+        "server_name": "d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 - Chain-Proxy"
+        "🇮🇪 爱尔兰 (Ireland) 01 - Chain-Proxy",
+        "🇮🇪 爱尔兰 (Ireland) 02 - Chain-Proxy",
+        "🇮🇪 爱尔兰 (Ireland) 03 - Chain-Proxy",
+        "🇮🇪 爱尔兰 (Ireland) 04 - Chain-Proxy",
+        "🇮🇪 爱尔兰 (Ireland) 05 - Chain-Proxy",
+        "🇮🇪 爱尔兰 (Ireland) 06 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 - Chain-Proxy"
+        "🇮🇪 爱尔兰 (Ireland) 01 - Chain-Proxy",
+        "🇮🇪 爱尔兰 (Ireland) 02 - Chain-Proxy",
+        "🇮🇪 爱尔兰 (Ireland) 03 - Chain-Proxy",
+        "🇮🇪 爱尔兰 (Ireland) 04 - Chain-Proxy",
+        "🇮🇪 爱尔兰 (Ireland) 05 - Chain-Proxy",
+        "🇮🇪 爱尔兰 (Ireland) 06 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

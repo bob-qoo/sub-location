@@ -5,6 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - Chain-Proxy
+  server: 172.67.145.5
+  port: 443
+  udp: true
+  type: vless
+  uuid: 20836693-ea23-4f40-a1e7-48a6da897917
+  tls: true
+  servername: netra-85a0ca.shoameni19.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/bluTTbb7MO8rvX1COEYH4WW4qzbr2aui
+    headers:
+      Host: netra-85a0ca.shoameni19.workers.dev
+- name: 🇮🇪 爱尔兰 (Ireland) 02 - Chain-Proxy
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 98b6cb05-b5ab-4c82-8683-07de28f796a9
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiRHF6VWU4SmYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0
+    headers:
+      Host: holy-glitter-39f9.wwewee2dasdds.workers.dev
+- name: 🇮🇪 爱尔兰 (Ireland) 03 - Chain-Proxy
   server: 3.9.135.156
   port: 51847
   udp: true
@@ -16,18 +42,68 @@ proxies:
     public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
     short-id: 0eec442e7b34d2f2
   servername: www.tesla.com
+  client-fingerprint: random
+- name: 🇮🇪 爱尔兰 (Ireland) 04 - Chain-Proxy
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-48493148ec15
+  tls: true
+  servername: cgzdynepurqs.mercury061.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/48493148ec15
+    headers:
+      Host: cgzdynepurqs.mercury061.workers.dev
+- name: 🇮🇪 爱尔兰 (Ireland) 05 - Chain-Proxy
+  server: 188.114.97.6
+  port: 2082
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇮🇪 爱尔兰 (Ireland) 06 - Chain-Proxy
+  server: 104.21.96.1
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
+  tls: true
+  servername: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇪 爱尔兰 (Ireland) 01 - Chain-Proxy
+  - 🇮🇪 爱尔兰 (Ireland) 02 - Chain-Proxy
+  - 🇮🇪 爱尔兰 (Ireland) 03 - Chain-Proxy
+  - 🇮🇪 爱尔兰 (Ireland) 04 - Chain-Proxy
+  - 🇮🇪 爱尔兰 (Ireland) 05 - Chain-Proxy
+  - 🇮🇪 爱尔兰 (Ireland) 06 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 爱尔兰 (Ireland) 01 - Chain-Proxy
+  - 🇮🇪 爱尔兰 (Ireland) 02 - Chain-Proxy
+  - 🇮🇪 爱尔兰 (Ireland) 03 - Chain-Proxy
+  - 🇮🇪 爱尔兰 (Ireland) 04 - Chain-Proxy
+  - 🇮🇪 爱尔兰 (Ireland) 05 - Chain-Proxy
+  - 🇮🇪 爱尔兰 (Ireland) 06 - Chain-Proxy
 rules:
 - MATCH,PROXIES

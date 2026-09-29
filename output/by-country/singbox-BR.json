@@ -5,24 +5,31 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Chain-Proxy",
-      "server": "145.239.30.17",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+      "tag": "🇧🇷 巴西 (Brazil) 01 - Chain-Proxy",
+      "server": "173.245.49.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime36.workers.dev"
+        }
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Chain-Proxy"
+        "🇧🇷 巴西 (Brazil) 01 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Chain-Proxy"
+        "🇧🇷 巴西 (Brazil) 01 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
