@@ -5,29 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Chain-Proxy
-  server: test.keoplentuio.xyz
+  server: 169.40.32.73
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   dialer-proxy: 香港-自动
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy
-  server: b9bccf5a-tmeqo0-0-1jcwu.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: f93486ce-cc84-11ed-9e98-f23c913c8d2b
-  sni: b9bccf5a-tmeqo0-0-1jcwu.hk3.hyhuawei.com
-  skip-cert-verify: true
-  dialer-proxy: 香港-自动
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy
   server: hk01.kfc-520.com
   port: 60001
   udp: true
   type: hysteria2
-  password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
+  password: 5ec96249-b753-317a-b065-b67ad66b8185
   sni: hk01.kfc-520.com
   skip-cert-verify: true
+  dialer-proxy: 香港-自动
+- name: 🇺🇸 美国 (United States) 03 (家宽) - Chain-Proxy
+  server: 155.117.19.17
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
   dialer-proxy: 香港-自动
 proxy-groups:
 - name: PROXIES
@@ -37,7 +39,7 @@ proxy-groups:
   - 香港-自动
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy
+  - 🇺🇸 美国 (United States) 03 (家宽) - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -45,7 +47,7 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy
+  - 🇺🇸 美国 (United States) 03 (家宽) - Chain-Proxy
 - name: 香港-自动
   type: url-test
   url: https://www.gstatic.com/generate_204

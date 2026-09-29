@@ -29,7 +29,7 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy
   server: 151.241.226.201
   port: 2053
@@ -54,6 +54,12 @@ proxies:
     short-id: 37d86205006fe1fb
   servername: storage-p2.googleapis.com
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy
+  server: 206.1.99.60
+  port: 19101
+  udp: true
+  type: vless
+  uuid: 2b8527d1-b4ab-4d3b-9863-409058552fec
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,6 +69,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy
+  - 🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,5 +79,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy
+  - 🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy
 rules:
 - MATCH,PROXIES

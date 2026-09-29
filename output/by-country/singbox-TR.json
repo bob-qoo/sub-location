@@ -36,7 +36,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -86,6 +86,13 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy",
+      "server": "206.1.99.60",
+      "server_port": 19101,
+      "uuid": "2b8527d1-b4ab-4d3b-9863-409058552fec"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -93,7 +100,8 @@
         "🇹🇷 土耳其 (Turkey) 01 - Chain-Proxy",
         "🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy",
         "🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy",
-        "🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy"
+        "🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy",
+        "🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy"
       ]
     },
     {
@@ -103,7 +111,8 @@
         "🇹🇷 土耳其 (Turkey) 01 - Chain-Proxy",
         "🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy",
         "🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy",
-        "🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy"
+        "🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy",
+        "🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
