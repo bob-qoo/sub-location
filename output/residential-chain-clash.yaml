@@ -1,0 +1,82 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇺🇸 美国 (United States) 01 (家宽) - Chain-Proxy
+  server: 172.64.229.2
+  port: 80
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  dialer-proxy: 香港-自动
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  dialer-proxy: 香港-自动
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy
+  server: hinet1.2yly.com
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+  dialer-proxy: 香港-自动
+- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - Chain-Proxy
+  server: 145.239.30.17
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  dialer-proxy: 香港-自动
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (移动家宽) - Chain-Proxy
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16116
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+  dialer-proxy: 香港-自动
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 香港-自动
+  - 🇺🇸 美国 (United States) 01 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - Chain-Proxy
+  - 🇭🇰 中国香港 (Hong Kong) 05 (移动家宽) - Chain-Proxy
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 (United States) 01 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - Chain-Proxy
+  - 🇭🇰 中国香港 (Hong Kong) 05 (移动家宽) - Chain-Proxy
+- name: 香港-自动
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies: []
+rules:
+- MATCH,PROXIES
