@@ -13,18 +13,18 @@ proxies:
   password: M3t2ZEQcMGRWBjRa
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - Chain-Proxy
   server: 195.238.126.20
+  port: 9002
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: b8KkNDjEd5QqFyRm
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - Chain-Proxy
+  server: 195.238.126.20
   port: 9012
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - Chain-Proxy
-  server: 195.238.126.20
-  port: 9078
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: JCJpbRbQZNw9XFZG
 - name: 🇱🇹 立陶宛 (Lithuania) 04 - Chain-Proxy
   server: 195.238.126.20
   port: 9008
@@ -34,45 +34,45 @@ proxies:
   password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 (Lithuania) 05 - Chain-Proxy
   server: 195.238.126.20
-  port: 9001
+  port: 9078
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: UkXRsXvR6buDMG2Y
+  password: JCJpbRbQZNw9XFZG
 - name: 🇱🇹 立陶宛 (Lithuania) 06 - Chain-Proxy
-  server: 195.238.126.20
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇹 立陶宛 (Lithuania) 07 - Chain-Proxy
   server: 195.238.126.20
   port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 (Lithuania) 08 - Chain-Proxy
+- name: 🇱🇹 立陶宛 (Lithuania) 07 - Chain-Proxy
   server: 195.238.126.20
-  port: 9002
+  port: 9001
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
+  password: UkXRsXvR6buDMG2Y
+- name: 🇱🇹 立陶宛 (Lithuania) 08 - Chain-Proxy
+  server: 195.238.126.20
+  port: 9068
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇹 立陶宛 (Lithuania) 09 - Chain-Proxy
-  server: 94.176.234.161
+  server: lithuania-2.kochvpn.pw
   port: 443
   udp: true
   type: vless
-  uuid: d448490d-4ee6-442f-80e1-5e1c186c4ce1
-  flow: xtls-rprx-vision
+  uuid: 2923fef2-3b52-a9c2-cde4-c2343eb74a2c
   tls: true
-  reality-opts:
-    public-key: UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8
-    short-id: dbb2ef1c7c
-  servername: www.intel.com
-  client-fingerprint: chrome
+  servername: lithuania-2.kochvpn.pw
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /stream/ws
 proxy-groups:
 - name: PROXIES
   type: select
