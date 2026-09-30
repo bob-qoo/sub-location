@@ -5,6 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - Chain-Proxy
+  server: 93.190.9.125
+  port: 3090
+  udp: true
+  type: vless
+  uuid: be0df112-9edc-4580-8e7f-626688cd048d
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy
   server: 85.192.48.142
   port: 443
   udp: true
@@ -17,7 +26,7 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
   client-fingerprint: ''
-- name: 🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy
+- name: 🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy
   server: 78.135.73.47
   port: 443
   udp: true
@@ -29,8 +38,8 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -42,7 +51,7 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy
+- name: 🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy
   server: 19990ed1bb252449.IROnlY4l.Ir
   port: 443
   udp: true
@@ -54,12 +63,16 @@ proxies:
     short-id: 37d86205006fe1fb
   servername: storage-p2.googleapis.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy
-  server: 206.1.99.60
-  port: 19101
+- name: 🇹🇷 土耳其 (Turkey) 06 - Chain-Proxy
+  server: 19990ed1bb252449.ironly4l.ir
+  port: 443
   udp: true
   type: vless
-  uuid: 2b8527d1-b4ab-4d3b-9863-409058552fec
+  uuid: bc4c0c9f-ab46-4f2c-8305-ab8b3d019fd7
+  tls: true
+  servername: storage-p2.googleapis.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,6 +83,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy
+  - 🇹🇷 土耳其 (Turkey) 06 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,5 +94,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy
+  - 🇹🇷 土耳其 (Turkey) 06 - Chain-Proxy
 rules:
 - MATCH,PROXIES

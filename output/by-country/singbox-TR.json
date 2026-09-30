@@ -6,6 +6,17 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - Chain-Proxy",
+      "server": "93.190.9.125",
+      "server_port": 3090,
+      "uuid": "be0df112-9edc-4580-8e7f-626688cd048d",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy",
       "server": "85.192.48.142",
       "server_port": 443,
       "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
@@ -26,7 +37,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -36,7 +47,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -47,7 +58,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -67,7 +78,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy",
       "server": "19990ed1bb252449.IROnlY4l.Ir",
       "server_port": 443,
       "uuid": "bc4c0c9f-ab46-4f2c-8305-ab8b3d019fd7",
@@ -87,10 +98,19 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy",
-      "server": "206.1.99.60",
-      "server_port": 19101,
-      "uuid": "2b8527d1-b4ab-4d3b-9863-409058552fec"
+      "tag": "🇹🇷 土耳其 (Turkey) 06 - Chain-Proxy",
+      "server": "19990ed1bb252449.ironly4l.ir",
+      "server_port": 443,
+      "uuid": "bc4c0c9f-ab46-4f2c-8305-ab8b3d019fd7",
+      "tls": {
+        "enabled": true,
+        "server_name": "storage-p2.googleapis.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     },
     {
       "type": "selector",
@@ -101,7 +121,8 @@
         "🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy",
         "🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy",
         "🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy",
-        "🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy"
+        "🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy",
+        "🇹🇷 土耳其 (Turkey) 06 - Chain-Proxy"
       ]
     },
     {
@@ -112,7 +133,8 @@
         "🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy",
         "🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy",
         "🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy",
-        "🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy"
+        "🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy",
+        "🇹🇷 土耳其 (Turkey) 06 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
