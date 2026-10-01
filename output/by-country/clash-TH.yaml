@@ -13,7 +13,7 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 02 - Chain-Proxy
-  server: 103.86.49.57
+  server: v2ray.simspeedup.com
   port: 80
   udp: true
   type: vless
@@ -22,16 +22,8 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: aIs.SpEeDtEsT.nEt
+      Host: v2ray.simspeedup.com
 - name: 🇹🇭 泰国 (Thailand) 03 - Chain-Proxy
-  server: th1.zestapp778.com
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: th1.zestapp778.com
-  skip-cert-verify: false
-- name: 🇹🇭 泰国 (Thailand) 04 - Chain-Proxy
   server: 104.18.26.90
   port: 443
   udp: true
@@ -40,7 +32,6 @@ proxies:
   tls: true
   servername: v2ray.simspeedup.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
@@ -54,7 +45,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - Chain-Proxy
   - 🇹🇭 泰国 (Thailand) 02 - Chain-Proxy
   - 🇹🇭 泰国 (Thailand) 03 - Chain-Proxy
-  - 🇹🇭 泰国 (Thailand) 04 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,6 +53,5 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - Chain-Proxy
   - 🇹🇭 泰国 (Thailand) 02 - Chain-Proxy
   - 🇹🇭 泰国 (Thailand) 03 - Chain-Proxy
-  - 🇹🇭 泰国 (Thailand) 04 - Chain-Proxy
 rules:
 - MATCH,PROXIES

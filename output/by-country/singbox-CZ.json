@@ -6,115 +6,42 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - Chain-Proxy",
-      "server": "www.speedtest.net",
+      "server": "85.117.235.50",
       "server_port": 443,
-      "uuid": "709b1cf4-a386-4cbf-bcf4-46f03c4788a8",
+      "uuid": "f4d71fd6-1c25-4748-836b-1dbda9268039",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "cz1.animeteka.info",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/trUydYgvH0rYux5ihp4zgZjo4RYK412?ed=2560",
-        "headers": {
-          "Host": "q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev"
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PmdZ2ETkHc0zjYcs22xT_wyZk5fEpX7mg7RP396HBBc",
+          "short_id": "232b1b09e45325a4"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - Chain-Proxy",
-      "server": "194.87.59.29",
-      "server_port": 2085,
-      "uuid": "ea723504-e8df-4f23-b35f-c93961d5128a",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - Chain-Proxy",
-      "server": "153.76.185.162",
-      "server_port": 3090,
-      "uuid": "ea723504-e8df-4f23-b35f-c93961d5128a",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 04 - Chain-Proxy",
-      "server": "153.76.185.159",
-      "server_port": 3090,
-      "uuid": "ea723504-e8df-4f23-b35f-c93961d5128a",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 05 - Chain-Proxy",
-      "server": "153.76.185.163",
-      "server_port": 3090,
-      "uuid": "ea723504-e8df-4f23-b35f-c93961d5128a",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 06 - Chain-Proxy",
-      "server": "195.133.66.229",
-      "server_port": 443,
-      "uuid": "4abdfe42-aec7-4b66-974d-3f891e2e8184",
-      "tls": {
-        "enabled": true,
-        "server_name": "nlll.gaz-service.shop",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Zl6Fe6WYQuaFe_QNUB4qU7nRkGujy7LqjoQ96GO3jUc",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 07 - Chain-Proxy",
-      "server": "195.133.66.229",
-      "server_port": 8443,
-      "uuid": "4abdfe42-aec7-4b66-974d-3f891e2e8184",
+      "server": "45.151.180.165",
+      "server_port": 43000,
+      "uuid": "a80212c8-a909-4837-beb2-7960b59ee5ca",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nlll.gaz-service.shop",
+        "server_name": "45.151.180.165",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng",
-          "short_id": "b415b8d7a6106ace"
+          "public_key": "lGf40xP_E5TZz9KkrQoeUKCfRq8WBatc7OYnRgBEuXI",
+          "short_id": "e4a3b0e4"
         }
       }
     },
@@ -124,12 +51,7 @@
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - Chain-Proxy",
-        "🇨🇿 捷克 (Czech) 02 - Chain-Proxy",
-        "🇨🇿 捷克 (Czech) 03 - Chain-Proxy",
-        "🇨🇿 捷克 (Czech) 04 - Chain-Proxy",
-        "🇨🇿 捷克 (Czech) 05 - Chain-Proxy",
-        "🇨🇿 捷克 (Czech) 06 - Chain-Proxy",
-        "🇨🇿 捷克 (Czech) 07 - Chain-Proxy"
+        "🇨🇿 捷克 (Czech) 02 - Chain-Proxy"
       ]
     },
     {
@@ -137,12 +59,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - Chain-Proxy",
-        "🇨🇿 捷克 (Czech) 02 - Chain-Proxy",
-        "🇨🇿 捷克 (Czech) 03 - Chain-Proxy",
-        "🇨🇿 捷克 (Czech) 04 - Chain-Proxy",
-        "🇨🇿 捷克 (Czech) 05 - Chain-Proxy",
-        "🇨🇿 捷克 (Czech) 06 - Chain-Proxy",
-        "🇨🇿 捷克 (Czech) 07 - Chain-Proxy"
+        "🇨🇿 捷克 (Czech) 02 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
