@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - Chain-Proxy",
-      "server": "211.174.113.172",
-      "server_port": 49642,
+      "tag": "🇵🇭 菲律宾 (Philippines) 01 - Chain-Proxy",
+      "server": "149.104.109.252",
+      "server_port": 8882,
       "method": "aes-256-gcm",
-      "password": "ac9c0a7b"
+      "password": "kDWvXYZoTBcGkC4"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - Chain-Proxy"
+        "🇵🇭 菲律宾 (Philippines) 01 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - Chain-Proxy"
+        "🇵🇭 菲律宾 (Philippines) 01 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

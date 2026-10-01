@@ -11,47 +11,45 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - Chain-Proxy",
-      "server": "162.159.45.19",
-      "server_port": 2095,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Chain-Proxy",
+      "server": "hinet1.2yly.com",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
         }
       },
       "detour": "香港-自动"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - Chain-Proxy",
-      "server": "211.174.113.172",
-      "server_port": 49642,
-      "method": "aes-256-gcm",
-      "password": "ac9c0a7b",
-      "detour": "香港-自动"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy",
-      "server": "hk01.kfc-520.com",
-      "server_port": 60001,
-      "password": "5ec96249-b753-317a-b065-b67ad66b8185",
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy",
+      "server": "x-tw01.xueshan168.cc",
+      "server_port": 16000,
+      "uuid": "cf20ac54-9c77-4fec-b2b6-bcf8223aa4d5",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "hk01.kfc-520.com",
-        "insecure": true
+        "server_name": "s0.awsstatic.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CuqzBeQR_1VIdOGOgn5v8-t-X-YzURF9b3wtKVVyKQ8",
+          "short_id": ""
+        }
       },
-      "detour": "香港-自动"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 (移动家宽) - Chain-Proxy",
-      "server": "178.83.46.216",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f",
       "detour": "香港-自动"
     },
     {
@@ -59,20 +57,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (移动家宽) - Chain-Proxy",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy",
-        "🇹🇷 土耳其 (Turkey) 04 (移动家宽) - Chain-Proxy"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (移动家宽) - Chain-Proxy",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy",
-        "🇹🇷 土耳其 (Turkey) 04 (移动家宽) - Chain-Proxy"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

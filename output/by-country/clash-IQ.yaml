@@ -5,34 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - Chain-Proxy
-  server: 172.67.162.201
-  port: 2053
+  server: 188.114.97.8
+  port: 8443
   udp: true
   type: vless
-  uuid: dc1e9f00-c064-4870-9bfc-463db50257d7
+  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
   tls: true
-  servername: RESTlESs-MoON-dD68RidaM-tOo-In-MAmLEkat.hGtghFF67tdFHUt3.WORkerS.DEV
+  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoicVkwaG9XUUQyUDhzRkZ5UiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
+      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
 - name: 🇮🇶 IQ 02 - Chain-Proxy
-  server: www.speedtest.net
+  server: 104.21.58.246
   port: 443
   udp: true
   type: vless
-  uuid: 513beae3-56e7-4954-a17e-930e06237b27
+  uuid: 709b1cf4-a386-4cbf-bcf4-46f03c4788a8
   tls: true
-  servername: cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev
+  servername: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vl/3wSAeuGJbrGHwJ45DA6ircvHC6fp=chrome
+    path: /vl/cu5J5pJDG1sslsK4LQcTeN07h0IaUB?ed=2560
     headers:
-      Host: cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev
+      Host: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
