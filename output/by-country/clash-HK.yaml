@@ -5,72 +5,66 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - Chain-Proxy
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16113
+  server: 162.159.43.187
+  port: 8880
   udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - Chain-Proxy
-  server: telegramx.khp25.com
-  port: 1080
+  server: 104.18.39.218
+  port: 2095
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: m5nsedvdczx6x06e
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - Chain-Proxy
-  server: telegram.khp25.com
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: pno0e2keji2gsfea
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy
   server: 46.17.40.25
   port: 20998
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 6b39ae3234dfd68b
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy
-  server: nas.aizhzo.com
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: 127.0.0.1
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
-  server: champion.xn--kivt58h.lol
-  port: 80
-  udp: true
-  type: vless
-  uuid: ed2864f9-37b3-4222-8c54-014aedc400a2
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ak.mcdonaldshamburgergoodgoodgood.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: https://t.me/clashv8
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy
-  server: 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy
+  server: telegram.khp25.com
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: pno0e2keji2gsfea
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
+  server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
-  password: 3bd247a8-993e-11ec-a8bf-f23c91cfbbc9
-  sni: 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2üá®üá≥
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy
   server: 195.58.144.56
   port: 11907
   udp: true
@@ -79,24 +73,7 @@ proxies:
   tls: true
   servername: 195.58.144.56
   skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - Chain-Proxy
-  server: meowkong.nethcloud.top
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 4cbefb4d-328c-411d-bf76-780df1082df8
-  sni: meowkong.nethcloud.top
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - Chain-Proxy
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: speedtest.tinkoff.ru
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - Chain-Proxy
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy
   server: mz.hkychina.com
   port: 8443
   udp: true
@@ -104,90 +81,55 @@ proxies:
   password: HysTeria2026!Proxy
   sni: mz.hkychina.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - Chain-Proxy
-  server: hk2.xiaoliyu.cyou
-  port: 4433
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: hk2.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - Chain-Proxy
-  server: dog-hk.kunlun01dns.com
-  port: 21019
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - Chain-Proxy
+  server: 194.99.79.26
+  port: 443
   udp: true
   type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - Chain-Proxy
-  server: goldcnmltyljgfwgov.vip52.wogcnmnnagfwgov.com
-  port: 11252
+  tls: true
+  servername: aksai.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aksai.org
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - Chain-Proxy
+  server: silversbgfgov.vip26.wogbcnmnagfwgov.com
+  port: 11226
   udp: true
   type: vmess
   uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
   alterId: 2
   cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 16 - Chain-Proxy
-  server: yg1.ygkkk.dpdns.org
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - Chain-Proxy
+  server: meowkong.nethcloud.top
   port: 443
   udp: true
-  type: vmess
-  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: jmp1.907737.xyz
+  type: hysteria2
+  password: 4cbefb4d-328c-411d-bf76-780df1082df8
+  sni: meowkong.nethcloud.top
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
-    headers:
-      Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 17 - Chain-Proxy
-  server: 2.27.109.179
-  port: 45464
-  udp: true
-  type: trojan
-  password: XuMweB2PWs
-  sni: 2.27.109.179.sslip.io
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 18 - Chain-Proxy
-  server: az-1.linkaa.xyz
-  port: 53617
-  udp: true
-  type: vmess
-  uuid: 6E571484-4166-4699-8F58-B34A1823691F
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /game/resources
-    headers:
-      Host: az-1.linkaa.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 19 - Chain-Proxy
-  server: xg1.mangshe.xyz
-  port: 2060
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - Chain-Proxy
+  server: nas.aizhzo.com
+  port: 5010
   udp: true
   type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: xg1.mangshe.xyz
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 20 - Chain-Proxy
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - Chain-Proxy
   server: 47.240.80.220
   port: 2052
   udp: true
   type: trojan
   password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
   sni: vpn.12169.top
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 21 - Chain-Proxy
-  server: ru1.xiaoliyu.cyou
-  port: 18333
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: ru1.xiaoliyu.cyou
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -208,13 +150,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 12 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 13 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 14 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 15 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 16 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 17 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 18 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 19 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 20 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 21 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -234,12 +169,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 12 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 13 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 14 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 15 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 16 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 17 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 18 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 19 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 20 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 21 - Chain-Proxy
 rules:
 - MATCH,PROXIES
