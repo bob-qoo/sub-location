@@ -6,7 +6,27 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - Chain-Proxy",
-      "server": "185.166.154.111",
+      "server": "194.76.154.31",
+      "server_port": 40443,
+      "uuid": "9f0baff8-bdee-4de9-9515-bcc4932b41fa",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ",
+          "short_id": "a8ae"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - Chain-Proxy",
+      "server": "cdn.bulkavpn.top",
       "server_port": 443,
       "uuid": "91d734be-a3d0-4d50-83ab-74cf7b6966fa",
       "flow": "xtls-rprx-vision",
@@ -26,24 +46,35 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - Chain-Proxy",
-      "server": "india.letsconnectpoint.com",
-      "server_port": 443,
-      "uuid": "914f3806-07a1-4158-9624-e183de065a38",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - Chain-Proxy",
+      "server": "hydra.yokkastars.com",
+      "server_port": 2443,
+      "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
       "tls": {
         "enabled": true,
-        "server_name": "india.letsconnectpoint.com",
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "erUEmyU1QK8y2corQh9bOjk0oHl2Mo6Z9WgoyKg_rC0",
-          "short_id": "c1e3d5d4"
+          "public_key": "h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg",
+          "short_id": "92c32de179e5d908"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "rex-eb0bf76b710ce763"
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 04 - Chain-Proxy",
+      "server": "45.149.114.171",
+      "server_port": 777,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242"
     },
     {
       "type": "selector",
@@ -51,7 +82,9 @@
       "outbounds": [
         "auto",
         "🇨🇾 塞浦路斯 (Cyprus) 01 - Chain-Proxy",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - Chain-Proxy"
+        "🇨🇾 塞浦路斯 (Cyprus) 02 - Chain-Proxy",
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - Chain-Proxy",
+        "🇨🇾 塞浦路斯 (Cyprus) 04 - Chain-Proxy"
       ]
     },
     {
@@ -59,7 +92,9 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇾 塞浦路斯 (Cyprus) 01 - Chain-Proxy",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - Chain-Proxy"
+        "🇨🇾 塞浦路斯 (Cyprus) 02 - Chain-Proxy",
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - Chain-Proxy",
+        "🇨🇾 塞浦路斯 (Cyprus) 04 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

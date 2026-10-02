@@ -13,14 +13,25 @@ proxies:
   sni: tttyder.wsone.icu
   skip-cert-verify: false
 - name: 🇮🇳 印度 (India) 02 - Chain-Proxy
-  server: hyfuuf6.wsone.icu
-  port: 443
+  server: 172.105.39.124
+  port: 7002
   udp: true
-  type: trojan
-  password: M7v%w11Se*
-  sni: hyfuuf6.wsone.icu
-  skip-cert-verify: false
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
 - name: 🇮🇳 印度 (India) 03 - Chain-Proxy
+  server: 194.61.31.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  tls: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 04 - Chain-Proxy
   server: 152.67.8.205
   port: 80
   udp: true
@@ -39,6 +50,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - Chain-Proxy
   - 🇮🇳 印度 (India) 02 - Chain-Proxy
   - 🇮🇳 印度 (India) 03 - Chain-Proxy
+  - 🇮🇳 印度 (India) 04 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -47,5 +59,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - Chain-Proxy
   - 🇮🇳 印度 (India) 02 - Chain-Proxy
   - 🇮🇳 印度 (India) 03 - Chain-Proxy
+  - 🇮🇳 印度 (India) 04 - Chain-Proxy
 rules:
 - MATCH,PROXIES
