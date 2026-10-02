@@ -5,24 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Chain-Proxy
-  server: 5af305e9-tmm5c0-ttyjoe-ieln.hk3.hyhuawei.com
+  server: ebd94864-tmm5c0-tvk1qn-19les.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b
-  sni: 5af305e9-tmm5c0-ttyjoe-ieln.hk3.hyhuawei.com
+  password: d095ecc6-7b69-11eb-b77b-f23c913c8d2b
+  sni: ebd94864-tmm5c0-tvk1qn-19les.hk3.hyhuawei.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy
-  server: a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com
+  server: 85715c75-tmm5c0-tncdxq-m0b9.nw4.hyhuawei.com
   port: 443
   udp: true
-  type: vless
-  uuid: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
-  tls: true
-  reality-opts:
-    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
-  servername: download.windowsupdate.com
-  client-fingerprint: random
+  type: hysteria2
+  password: bb85e074-b0c2-11ea-ad28-f23c913c8d2b
+  sni: 85715c75-tmm5c0-tncdxq-m0b9.nw4.hyhuawei.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
