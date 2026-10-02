@@ -6,7 +6,7 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - Chain-Proxy",
-      "server": "77.74.123.99",
+      "server": "77.74.123.101",
       "server_port": 8443,
       "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
       "tls": {
@@ -28,16 +28,12 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy",
-      "server": "185.156.44.99",
+      "server": "bogging-eyeteeth-fly.freesocks.work",
       "server_port": 443,
-      "password": "gf1:gfhysteria2024",
-      "tls": {
-        "enabled": true,
-        "server_name": "google.com",
-        "insecure": true
-      }
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
     },
     {
       "type": "hysteria2",
@@ -56,8 +52,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy",
+      "server": "185.156.44.99",
+      "server_port": 443,
+      "password": "gf1:gfhysteria2024",
+      "tls": {
+        "enabled": true,
+        "server_name": "speedtest.tinkoff.ru",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -77,22 +85,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy",
-      "server": "162.249.125.133",
-      "server_port": 443,
-      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-new.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c1b4086fea89914496c7e10967a419216566"
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇷🇴 罗马尼亚 (Romania) 07 - Chain-Proxy",
       "server": "146.70.124.85",
@@ -104,33 +96,12 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
           "public_key": "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE",
           "short_id": "fe24f8a0a560056e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 08 - Chain-Proxy",
-      "server": "193.163.203.253",
-      "server_port": 443,
-      "uuid": "441afe11-a180-4516-bb80-80a8a6b38705",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk",
-          "short_id": "5ee019e02e6ed99a"
         }
       }
     },
@@ -145,8 +116,7 @@
         "🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy",
         "🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy",
         "🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy",
-        "🇷🇴 罗马尼亚 (Romania) 07 - Chain-Proxy",
-        "🇷🇴 罗马尼亚 (Romania) 08 - Chain-Proxy"
+        "🇷🇴 罗马尼亚 (Romania) 07 - Chain-Proxy"
       ]
     },
     {
@@ -159,8 +129,7 @@
         "🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy",
         "🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy",
         "🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy",
-        "🇷🇴 罗马尼亚 (Romania) 07 - Chain-Proxy",
-        "🇷🇴 罗马尼亚 (Romania) 08 - Chain-Proxy"
+        "🇷🇴 罗马尼亚 (Romania) 07 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,10 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Chain-Proxy",
+      "server": "bff4b219-tmkao0-tnnrly-g43g.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "6ddb6a68-d5f5-ca30-3943-cf0c9876d50c",
+      "tls": {
+        "enabled": true,
+        "server_name": "bff4b219-tmkao0-tnnrly-g43g.hk3.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy",
       "server": "az-1.linkaa.xyz",
-      "server_port": 53617,
+      "server_port": 53110,
       "uuid": "6E571484-4166-4699-8F58-B34A1823691F",
       "security": "auto",
       "transport": {
@@ -23,14 +35,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Chain-Proxy"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Chain-Proxy",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Chain-Proxy"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Chain-Proxy",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
