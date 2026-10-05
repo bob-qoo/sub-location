@@ -4,33 +4,22 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - Chain-Proxy
-  server: 162.159.0.169
-  port: 2086
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Chain-Proxy
+  server: 4dfe79ca-tmm5c0-tpftcp-13x18.hk3.hyhuawei.com
+  port: 443
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  type: hysteria2
+  password: e4499a62-0cfe-11eb-ad8c-f23c9164ca5d
+  sni: 127.0.0.1
+  skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - Chain-Proxy
-  server: 145.239.30.17
+  server: 212.74.39.235
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy
-  server: ebd94864-tmm5c0-tvk1qn-19les.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: d095ecc6-7b69-11eb-b77b-f23c913c8d2b
-  sni: ebd94864-tmm5c0-tvk1qn-19les.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy
-  server: 118.167.235.241
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy
+  server: hinet1.2yly.com
   port: 24215
   udp: true
   type: vless
@@ -39,15 +28,36 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - Chain-Proxy
-  server: 85715c75-tmm5c0-tncdxq-m0b9.nw4.hyhuawei.com
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy
+  server: 104.20.36.205
   port: 443
   udp: true
-  type: hysteria2
-  password: bb85e074-b0c2-11ea-ad28-f23c913c8d2b
-  sni: 85715c75-tmm5c0-tncdxq-m0b9.nw4.hyhuawei.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
+  tls: true
+  servername: argo6.5671234.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /e8e2cecb6188f7fb
+    headers:
+      Host: argo6.5671234.xyz
+- name: 🇯🇵 日本 (Japan) 05 (家宽) - Chain-Proxy
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: fe5a49b8-1cb1-4633-920a-61c8ec1f522a
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
 - name: 🇸🇬 新加坡 (Singapore) 06 (家宽) - Chain-Proxy
   server: s3.huhiuh.space
   port: 18642
@@ -64,41 +74,44 @@ proxies:
   uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
   alterId: 2
   cipher: auto
-- name: 🇺🇸 美国 (United States) 08 (家宽) - Chain-Proxy
-  server: 155.117.19.17
-  port: 443
+- name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - Chain-Proxy
+  server: tw1.dexlos.com
+  port: 8080
   udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
+  type: tuic
+  uuid: D7286728-678E-443B-B76B-B699654C66DD
+  password: D7286728-678E-443B-B76B-B699654C66DD
+  sni: tw1.dexlos.com
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - Chain-Proxy
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - Chain-Proxy
+  - 🇯🇵 日本 (Japan) 05 (家宽) - Chain-Proxy
   - 🇸🇬 新加坡 (Singapore) 06 (家宽) - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Chain-Proxy
-  - 🇺🇸 美国 (United States) 08 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - Chain-Proxy
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - Chain-Proxy
+  - 🇯🇵 日本 (Japan) 05 (家宽) - Chain-Proxy
   - 🇸🇬 新加坡 (Singapore) 06 (家宽) - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Chain-Proxy
-  - 🇺🇸 美国 (United States) 08 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - Chain-Proxy
 rules:
 - MATCH,PROXIES

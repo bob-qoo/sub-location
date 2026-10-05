@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - Chain-Proxy
+  server: 206.1.103.221
+  port: 14074
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: gc24/luU7zbPhMS6GH6mUzT1qZBjCXhKbAvgUjM4Yno=:NOerjaqxVAGVMkJfw/LwtWwz27auvlL0MNKBrjlTeV0=
+- name: 🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy
+  server: 206.1.100.83
+  port: 25178
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: ADzlhA3ndouUCY3JbLddR/jwgYY7IDGc1T+5DuCix9Y=:KyFe2akGo5hcrswbMkD2+BM52si+D7lzyccZFTd4xaU=
+- name: 🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy
   server: 85.192.48.142
   port: 443
   udp: true
@@ -16,15 +30,8 @@ proxies:
     public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy
-  server: 206.1.103.221
-  port: 17721
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: YdXo5FtbFp8lnDRbIvewaOaXbDtf5eR1Bk/O594+x40=:iZdLC0QQ5kSj7Y1QqwR/t23h1gp/jHyiWkf2MJFjq5s=
-- name: 🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy
   server: 78.135.73.47
   port: 443
   udp: true
@@ -36,46 +43,18 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy
-  server: 206.1.99.160
-  port: 41310
-  udp: true
-  type: vmess
-  uuid: Nitro_Skybot
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇹🇷 土耳其 (Turkey) 06 - Chain-Proxy
-  server: bale.xv98.ir
-  port: 5051
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 68mL2QkZEBlxWa3hcslGDw
-- name: 🇹🇷 土耳其 (Turkey) 07 - Chain-Proxy
-  server: 176.96.131.251
-  port: 1280
+  server: cookie.wookshop.ir
+  port: 43233
   udp: true
   type: vless
-  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
+  uuid: 568bcbbc-7a90-4164-8b5d-1c0bbeccfa38
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: cookie.wookshop.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,8 +65,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy
-  - 🇹🇷 土耳其 (Turkey) 06 - Chain-Proxy
-  - 🇹🇷 土耳其 (Turkey) 07 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -98,7 +75,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy
-  - 🇹🇷 土耳其 (Turkey) 06 - Chain-Proxy
-  - 🇹🇷 土耳其 (Turkey) 07 - Chain-Proxy
 rules:
 - MATCH,PROXIES

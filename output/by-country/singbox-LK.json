@@ -6,33 +6,12 @@
     {
       "type": "vless",
       "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - Chain-Proxy",
-      "server": "free.sahanwickramasinghe.me",
+      "server": "51.75.67.209",
       "server_port": 80,
       "uuid": "684f9a2e-4f96-497f-bfd9-ff1e34637952",
       "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 02 - Chain-Proxy",
-      "server": "trackydev.site",
-      "server_port": 443,
-      "uuid": "92d67828-4c56-4795-af5a-f387651380dc",
-      "tls": {
-        "enabled": true,
-        "server_name": "trackydev.site",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
         "type": "ws",
-        "headers": {
-          "Host": "trackydev.site"
-        }
+        "path": "/"
       }
     },
     {
@@ -40,16 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - Chain-Proxy",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 02 - Chain-Proxy"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - Chain-Proxy",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 02 - Chain-Proxy"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
