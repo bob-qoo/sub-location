@@ -9,7 +9,7 @@ proxies:
   port: 443
   udp: true
   type: trojan
-  password: 66974838-ee71-481c-b9dd-172edbccece7
+  password: 53210e66-b1a6-484d-85e9-4e0e8432c47c
   sni: node5.luoye.ee
   skip-cert-verify: false
 - name: 🇸🇨 塞舌尔 (Seychelles) 02 - Chain-Proxy
@@ -21,13 +21,6 @@ proxies:
   sni: 45.205.27.78
   skip-cert-verify: true
 - name: 🇸🇨 塞舌尔 (Seychelles) 03 - Chain-Proxy
-  server: 45.207.207.25
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
-- name: 🇸🇨 塞舌尔 (Seychelles) 04 - Chain-Proxy
   server: 45.95.96.176
   port: 443
   udp: true
@@ -40,6 +33,26 @@ proxies:
     short-id: a7268acdcfef5862
   servername: chat.rtnode.site
   client-fingerprint: firefox
+- name: 🇸🇨 塞舌尔 (Seychelles) 04 - Chain-Proxy
+  server: 144.31.50.236
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: 🇸🇨 塞舌尔 (Seychelles) 05 - Chain-Proxy
+  server: 45.207.207.25
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,6 +62,7 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 02 - Chain-Proxy
   - 🇸🇨 塞舌尔 (Seychelles) 03 - Chain-Proxy
   - 🇸🇨 塞舌尔 (Seychelles) 04 - Chain-Proxy
+  - 🇸🇨 塞舌尔 (Seychelles) 05 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,5 +72,6 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 02 - Chain-Proxy
   - 🇸🇨 塞舌尔 (Seychelles) 03 - Chain-Proxy
   - 🇸🇨 塞舌尔 (Seychelles) 04 - Chain-Proxy
+  - 🇸🇨 塞舌尔 (Seychelles) 05 - Chain-Proxy
 rules:
 - MATCH,PROXIES

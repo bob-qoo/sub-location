@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Chain-Proxy
-  server: 188.114.97.6
+  server: novantunnel.tech
   port: 443
   udp: true
   type: vless
@@ -13,23 +13,13 @@ proxies:
   tls: true
   servername: novantunnel.tech
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /Novan-AE9
     headers:
       Host: novantunnel.tech
 - name: 🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy
-  server: 162.159.48.32
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
   server: 130.49.161.70
   port: 443
   udp: true
@@ -39,7 +29,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
+- name: 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
   server: 157.228.128.59
   port: 443
   udp: true
@@ -52,22 +42,8 @@ proxies:
     short-id: 06e00e7c
   servername: addons.mozilla.org
   client-fingerprint: randomized
-- name: 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
-  server: 122.8.45.4
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2d24e797-ec6c-0808-dd31-9cd22b5dfdc7
-  tls: true
-  reality-opts:
-    public-key: WtLZK1KyhSpI3K-R4M3sLAHWPOgGPMgkL6RneL0OfCY
-  servername: download.nvidia.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
-  server: 84.235.244.108
+- name: 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -77,7 +53,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy
+- name: 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
   server: 146.70.102.82
   port: 443
   udp: true
@@ -100,8 +76,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
-  - 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
-  - 🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -112,7 +86,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
-  - 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
-  - 🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy
 rules:
 - MATCH,PROXIES

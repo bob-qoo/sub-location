@@ -9,15 +9,15 @@ proxies:
   port: 8441
   udp: true
   type: vless
-  uuid: fe5a49b8-1cb1-4633-920a-61c8ec1f522a
+  uuid: 45deab47-28e0-4048-b7a2-1ab672f684f8
   tls: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
   skip-cert-verify: false
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

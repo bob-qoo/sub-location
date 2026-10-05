@@ -8,17 +8,17 @@
       "tag": "🇯🇵 日本 (Japan) 01 (家宽) - Chain-Proxy",
       "server": "45.77.241.190",
       "server_port": 8441,
-      "uuid": "fe5a49b8-1cb1-4633-920a-61c8ec1f522a",
+      "uuid": "45deab47-28e0-4048-b7a2-1ab672f684f8",
       "tls": {
         "enabled": true,
-        "server_name": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev",
+        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
         "insecure": false
       },
       "transport": {
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
+          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
         }
       }
     },

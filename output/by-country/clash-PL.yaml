@@ -12,6 +12,20 @@ proxies:
   cipher: aes-256-cfb
   password: aQqJbtwFGcCCaeL3
 - name: 🇵🇱 波兰 (Poland) 02 - Chain-Proxy
+  server: 138.124.104.2
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3464a5bd-6a17-4ac3-8ca9-86a54c1aac7b
+  tls: true
+  reality-opts:
+    public-key: tKAYeVSM4yLXiOdKLMFP751fhII6YyqfbMXy_MSuejI
+  servername: samsung.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc
+- name: 🇵🇱 波兰 (Poland) 03 - Chain-Proxy
   server: 70.34.255.101
   port: 80
   udp: true
@@ -20,24 +34,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇵🇱 波兰 (Poland) 03 - Chain-Proxy
-  server: 70.34.252.154
-  port: 80
-  udp: true
-  type: vless
-  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
-  network: ws
-  ws-opts:
-    path: /
 - name: 🇵🇱 波兰 (Poland) 04 - Chain-Proxy
-  server: 217.60.33.215
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
-  sni: streambox.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 05 - Chain-Proxy
   server: 95.85.254.221
   port: 443
   udp: true
@@ -51,19 +48,24 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless-grpc
-- name: 🇵🇱 波兰 (Poland) 06 - Chain-Proxy
-  server: 149.50.116.171
+- name: 🇵🇱 波兰 (Poland) 05 - Chain-Proxy
+  server: 217.60.33.215
   port: 443
   udp: true
-  type: vless
-  uuid: 65616081-1772-49d7-a793-42bc13d22f69
-  tls: true
-  reality-opts:
-    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
-  servername: pl-1-1.imnotgay.party
-  client-fingerprint: firefox
+  type: hysteria2
+  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
+  sni: streambox.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 06 - Chain-Proxy
+  server: 45.192.12.93
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 07 - Chain-Proxy
-  server: 2.59.253.251
+  server: 144.31.131.38
   port: 443
   udp: true
   type: vless
@@ -73,21 +75,17 @@ proxies:
   reality-opts:
     public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
     short-id: db04ce8bdb8900f1
-  servername: nvidia.com
-  client-fingerprint: firefox
+  servername: prod.pl-node-01.security-sbrf.ru
+  client-fingerprint: random
 - name: 🇵🇱 波兰 (Poland) 08 - Chain-Proxy
-  server: 83.168.95.145
-  port: 443
+  server: 70.34.252.154
+  port: 80
   udp: true
   type: vless
-  uuid: f28e0ce1-ed75-4e90-b069-5215a80dfb4a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
-    short-id: d345ad4657adeef9
-  servername: google.com
-  client-fingerprint: random
+  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇵🇱 波兰 (Poland) 09 - Chain-Proxy
   server: 81.90.20.200
   port: 443
@@ -106,40 +104,21 @@ proxies:
   type: hysteria2
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 11 - Chain-Proxy
-  server: 83.168.107.220
+  server: 83.168.95.145
   port: 443
   udp: true
   type: vless
-  uuid: b1813cbd-831f-4cb3-baf8-5bc0cc8298bc
+  uuid: f28e0ce1-ed75-4e90-b069-5215a80dfb4a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: s0lbZ5BO3ctZjE8DzsXkNL0NvLl6FgLG6532NQzXigo
-    short-id: c56d4f1c
+    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
+    short-id: d345ad4657adeef9
   servername: google.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 12 - Chain-Proxy
-  server: cheerful-swan.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 13 - Chain-Proxy
-  server: 50.7.249.138
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: polkadotnewone.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 14 - Chain-Proxy
   server: 50.7.249.155
   port: 443
   udp: true
@@ -150,111 +129,15 @@ proxies:
   servername: poland-good.failspace.top
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 15 - Chain-Proxy
-  server: 150.251.113.34
+- name: 🇵🇱 波兰 (Poland) 13 - Chain-Proxy
+  server: cheerful-swan.rooster465.autos
   port: 443
   udp: true
-  type: vless
-  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
-    short-id: 150a627d15154cf2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 16 - Chain-Proxy
-  server: 82.118.22.161
-  port: 443
-  udp: true
-  type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 17 - Chain-Proxy
-  server: 31.77.13.19
-  port: 2063
-  udp: true
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 18 - Chain-Proxy
-  server: 50.7.249.98
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pol-pol-poland.failspace.top
+  type: trojan
+  password: UX82473651
+  sni: cheerful-swan.rooster465.autos
   skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 19 - Chain-Proxy
-  server: 2.26.225.89
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  tls: true
-  servername: pl.flen-vpn.xyz
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 20 - Chain-Proxy
-  server: node64.tomalgopas.fun
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3464a5bd-6a17-4ac3-8ca9-86a54c1aac7b
-  tls: true
-  reality-opts:
-    public-key: tKAYeVSM4yLXiOdKLMFP751fhII6YyqfbMXy_MSuejI
-  servername: samsung.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless-grpc
-- name: 🇵🇱 波兰 (Poland) 21 - Chain-Proxy
-  server: pl999.failspace.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl999.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 22 - Chain-Proxy
-  server: go.wwwinternetvideo.click
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 23 - Chain-Proxy
-  server: iiproxy8.iiproxy.com
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 806fa224-44f7-4c1b-b7a3-05bfdfdfbf87
-  tls: true
-  servername: iiproxy8.iiproxy.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇵🇱 波兰 (Poland) 24 - Chain-Proxy
+- name: 🇵🇱 波兰 (Poland) 14 - Chain-Proxy
   server: 188.114.96.19
   port: 80
   udp: true
@@ -267,7 +150,94 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 25 - Chain-Proxy
+- name: 🇵🇱 波兰 (Poland) 15 - Chain-Proxy
+  server: 50.7.249.138
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: polkadotnewone.failspace.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 16 - Chain-Proxy
+  server: streambox.wwwinternetvideo.click
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
+  sni: streambox.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 17 - Chain-Proxy
+  server: 50.7.249.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pol-pol-poland.failspace.top
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 18 - Chain-Proxy
+  server: 31.77.13.19
+  port: 2063
+  udp: true
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: ios
+- name: 🇵🇱 波兰 (Poland) 19 - Chain-Proxy
+  server: 150.251.113.34
+  port: 443
+  udp: true
+  type: vless
+  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
+    short-id: 150a627d15154cf2
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 20 - Chain-Proxy
+  server: pl999.failspace.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl999.failspace.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 21 - Chain-Proxy
+  server: iiproxy8.iiproxy.com
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 806fa224-44f7-4c1b-b7a3-05bfdfdfbf87
+  tls: true
+  servername: iiproxy8.iiproxy.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇵🇱 波兰 (Poland) 22 - Chain-Proxy
+  server: pl.flen-vpn.xyz
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  tls: true
+  servername: pl.flen-vpn.xyz
+  skip-cert-verify: false
+  client-fingerprint: android
+- name: 🇵🇱 波兰 (Poland) 23 - Chain-Proxy
   server: 62.152.58.90
   port: 443
   udp: true
@@ -278,10 +248,23 @@ proxies:
     public-key: JBKJlzuJH1YzDHAoz28wEKbzWTGpDpKjgtSq0oT0a0k
     short-id: 27e53bbcab7593d7
   servername: 360.yandex.ru
-  client-fingerprint: chrome
+  client-fingerprint: random
   network: grpc
   grpc-opts:
     grpc-service-name: ''
+- name: 🇵🇱 波兰 (Poland) 24 - Chain-Proxy
+  server: 82.118.22.161
+  port: 443
+  udp: true
+  type: vless
+  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
+    short-id: fa3ea655619a3e78
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -311,7 +294,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 22 - Chain-Proxy
   - 🇵🇱 波兰 (Poland) 23 - Chain-Proxy
   - 🇵🇱 波兰 (Poland) 24 - Chain-Proxy
-  - 🇵🇱 波兰 (Poland) 25 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -341,6 +323,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 22 - Chain-Proxy
   - 🇵🇱 波兰 (Poland) 23 - Chain-Proxy
   - 🇵🇱 波兰 (Poland) 24 - Chain-Proxy
-  - 🇵🇱 波兰 (Poland) 25 - Chain-Proxy
 rules:
 - MATCH,PROXIES

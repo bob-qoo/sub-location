@@ -4,20 +4,22 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Chain-Proxy
-  server: 4dfe79ca-tmm5c0-tpftcp-13x18.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: e4499a62-0cfe-11eb-ad8c-f23c9164ca5d
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - Chain-Proxy
+- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Chain-Proxy
   server: 212.74.39.235
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇺🇸 美国 (United States) 02 (家宽) - Chain-Proxy
+  server: 155.117.19.17
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy
   server: hinet1.2yly.com
   port: 24215
@@ -30,7 +32,7 @@ proxies:
   servername: addons.mozilla.org
   client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy
-  server: 104.20.36.205
+  server: 45.192.201.140
   port: 443
   udp: true
   type: vless
@@ -38,27 +40,13 @@ proxies:
   tls: true
   servername: argo6.5671234.xyz
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
-- name: 🇯🇵 日本 (Japan) 05 (家宽) - Chain-Proxy
-  server: 45.77.241.190
-  port: 8441
-  udp: true
-  type: vless
-  uuid: fe5a49b8-1cb1-4633-920a-61c8ec1f522a
-  tls: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 06 (家宽) - Chain-Proxy
+- name: 🇸🇬 新加坡 (Singapore) 05 (家宽) - Chain-Proxy
   server: s3.huhiuh.space
   port: 18642
   udp: true
@@ -66,9 +54,23 @@ proxies:
   password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
   sni: www.bing.com
   skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 06 (家宽) - Chain-Proxy
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: 45deab47-28e0-4048-b7a2-1ab672f684f8
+  tls: true
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
 - name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Chain-Proxy
-  server: sbgfgov.vip24.wogacnmnagfwgov.com
-  port: 11224
+  server: sbgfgov.vip23.wogacnmnagfwgov.com
+  port: 11223
   udp: true
   type: vmess
   uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
@@ -92,12 +94,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Chain-Proxy
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - Chain-Proxy
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Chain-Proxy
+  - 🇺🇸 美国 (United States) 02 (家宽) - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 05 (家宽) - Chain-Proxy
-  - 🇸🇬 新加坡 (Singapore) 06 (家宽) - Chain-Proxy
+  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - Chain-Proxy
+  - 🇯🇵 日本 (Japan) 06 (家宽) - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - Chain-Proxy
 - name: AUTO
@@ -105,12 +107,12 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Chain-Proxy
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - Chain-Proxy
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Chain-Proxy
+  - 🇺🇸 美国 (United States) 02 (家宽) - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 05 (家宽) - Chain-Proxy
-  - 🇸🇬 新加坡 (Singapore) 06 (家宽) - Chain-Proxy
+  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - Chain-Proxy
+  - 🇯🇵 日本 (Japan) 06 (家宽) - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - Chain-Proxy
 rules:

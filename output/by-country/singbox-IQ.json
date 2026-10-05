@@ -6,16 +6,13 @@
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 01 - Chain-Proxy",
-      "server": "www.speedtest.net",
+      "server": "8.47.69.9",
       "server_port": 443,
-      "uuid": "3423809a-08e5-4b93-bd76-c6cdcbfd9b52",
+      "uuid": "11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf",
       "tls": {
         "enabled": true,
-        "server_name": "bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev",
+        "server_name": "ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -23,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vl/qAuPpP8UsUmtA5NiXmiGs ",
+        "path": "/eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
         "headers": {
-          "Host": "bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev"
+          "Host": "ancient-heart-60c5.dpccgizieb.workers.dev"
         }
       }
     },

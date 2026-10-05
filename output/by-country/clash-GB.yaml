@@ -5,33 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - Chain-Proxy
-  server: 188.114.97.6
-  port: 8080
-  udp: true
-  type: vless
-  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
-- name: 🇬🇧 英国 (United Kingdom) 02 - Chain-Proxy
-  server: 172.67.166.127
-  port: 443
-  udp: true
-  type: vless
-  uuid: 709b1cf4-a386-4cbf-bcf4-46f03c4788a8
-  tls: true
-  servername: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/R8rJikWcqERiCZEXnKF8AOOhkGkJ?ed=2560
-    headers:
-      Host: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 03 - Chain-Proxy
-  server: 104.27.110.232
+  server: 104.25.0.1
   port: 2053
   udp: true
   type: vless
@@ -45,7 +19,7 @@ proxies:
     path: /eyJqdW5rIjoiSDNSSGYxT05LU2VEbyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjYyLjYwLjIxNy4yMzAiXX0=
     headers:
       Host: still-scene-fda3.devtahair.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 04 - Chain-Proxy
+- name: 🇬🇧 英国 (United Kingdom) 02 - Chain-Proxy
   server: 172.67.131.125
   port: 443
   udp: true
@@ -54,35 +28,57 @@ proxies:
   tls: true
   servername: sqqfq0vy-l4v0qa0zlxnjd79-ykvkw.mrmamali.workers.dev
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /vl/zInkY7qcXuM6P1AZTQ?ed=2560
     headers:
       Host: sqqfq0vy-l4v0qa0zlxnjd79-ykvkw.mrmamali.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 05 - Chain-Proxy
-  server: 45.130.125.207
-  port: 8443
+- name: 🇬🇧 英国 (United Kingdom) 03 - Chain-Proxy
+  server: 172.67.130.187
+  port: 2083
   udp: true
   type: vless
-  uuid: 31aa0950-eb19-45ff-94a2-af416deb3b90
+  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
   tls: true
-  servername: SquarE-saLaD-EbDe.ZDFGVcCfgUUYgGG.wOrKeRS.DEV
+  servername: fans.liverpool.qzz.io
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiZm5INktPV0lGcHI1NjNSOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: square-salad-ebde.zdfgvccfguuyggg.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 06 - Chain-Proxy
-  server: 141.98.101.181
+      Host: fans.liverpool.qzz.io
+- name: 🇬🇧 英国 (United Kingdom) 04 - Chain-Proxy
+  server: 172.67.162.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: dc1e9f00-c064-4870-9bfc-463db50257d7
+  tls: true
+  servername: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoicVkwaG9XUUQyUDhzRkZ5UiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
+- name: 🇬🇧 英国 (United Kingdom) 05 - Chain-Proxy
+  server: 104.17.147.22
   port: 443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 07 - Chain-Proxy
+  type: vless
+  uuid: af0db32b-2cb0-48c7-b04e-96003f8c2369
+  tls: true
+  servername: dl2uf-ivdezilz3e86rk18.hhvt37tjm2xbosql5hxogn-y.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/lIp8WbnljVYVSeQwjoRQPUGWwnVL?ed=2560
+    headers:
+      Host: dl2uf-ivdezilz3e86rk18.hhvt37tjm2xbosql5hxogn-y.workers.dev
+- name: 🇬🇧 英国 (United Kingdom) 06 - Chain-Proxy
   server: 186.190.211.147
   port: 22324
   udp: true
@@ -90,8 +86,8 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇬🇧 英国 (United Kingdom) 08 - Chain-Proxy
-  server: 66.90.104.43
+- name: 🇬🇧 英国 (United Kingdom) 07 - Chain-Proxy
+  server: 66.90.104.42
   port: 2083
   udp: true
   type: vless
@@ -99,14 +95,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
-- name: 🇬🇧 英国 (United Kingdom) 09 - Chain-Proxy
-  server: 149.102.149.207
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-- name: 🇬🇧 英国 (United Kingdom) 10 - Chain-Proxy
+- name: 🇬🇧 英国 (United Kingdom) 08 - Chain-Proxy
   server: 66.90.105.211
   port: 2083
   udp: true
@@ -115,42 +104,159 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
-- name: 🇬🇧 英国 (United Kingdom) 11 - Chain-Proxy
-  server: 51.38.71.51
-  port: 2083
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
-- name: 🇬🇧 英国 (United Kingdom) 12 - Chain-Proxy
-  server: 149.102.132.184
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-- name: 🇬🇧 英国 (United Kingdom) 13 - Chain-Proxy
+- name: 🇬🇧 英国 (United Kingdom) 09 - Chain-Proxy
   server: 158.173.24.73
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 14 - Chain-Proxy
+- name: 🇬🇧 英国 (United Kingdom) 10 - Chain-Proxy
+  server: 51.38.71.51
+  port: 2083
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
+- name: 🇬🇧 英国 (United Kingdom) 11 - Chain-Proxy
+  server: 141.98.101.181
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧 英国 (United Kingdom) 12 - Chain-Proxy
   server: 149.102.149.207
   port: 443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: LXchLsIwtCeUAUgu
-- name: 🇬🇧 英国 (United Kingdom) 15 - Chain-Proxy
+- name: 🇬🇧 英国 (United Kingdom) 13 - Chain-Proxy
+  server: 149.102.149.207
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+- name: 🇬🇧 英国 (United Kingdom) 14 - Chain-Proxy
   server: 51.77.225.200
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: zRZNBszYyWo5
+- name: 🇬🇧 英国 (United Kingdom) 15 - Chain-Proxy
+  server: 149.102.132.184
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
 - name: 🇬🇧 英国 (United Kingdom) 16 - Chain-Proxy
+  server: 146.70.61.18
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 17 - Chain-Proxy
+  server: 23.81.34.204
+  port: 443
+  udp: true
+  type: vless
+  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
+    short-id: b19b017d6f453873
+  servername: speed.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 18 - Chain-Proxy
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vless
+  uuid: dbb78c94-9f87-4d7d-b945-2000b60352fd
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇬🇧 英国 (United Kingdom) 19 - Chain-Proxy
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vless
+  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 20 - Chain-Proxy
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vless
+  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 21 - Chain-Proxy
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vless
+  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇬🇧 英国 (United Kingdom) 22 - Chain-Proxy
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vless
+  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 23 - Chain-Proxy
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vless
+  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 24 - Chain-Proxy
+  server: 146.70.61.37
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 25 - Chain-Proxy
+  server: 149.102.132.184
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+- name: 🇬🇧 英国 (United Kingdom) 26 - Chain-Proxy
+  server: 146.70.23.32
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 27 - Chain-Proxy
   server: 51.89.194.151
   port: 2053
   udp: true
@@ -161,218 +267,26 @@ proxies:
     public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
     short-id: d051f678212f9d54
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 17 - Chain-Proxy
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vless
-  uuid: dbb78c94-9f87-4d7d-b945-2000b60352fd
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇬🇧 英国 (United Kingdom) 18 - Chain-Proxy
-  server: 146.70.61.18
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 19 - Chain-Proxy
-  server: 146.70.61.37
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 20 - Chain-Proxy
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 21 - Chain-Proxy
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 22 - Chain-Proxy
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 23 - Chain-Proxy
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 24 - Chain-Proxy
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 25 - Chain-Proxy
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: viber.com
-- name: 🇬🇧 英国 (United Kingdom) 26 - Chain-Proxy
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: viber.com
-- name: 🇬🇧 英国 (United Kingdom) 27 - Chain-Proxy
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
+  client-fingerprint: random
 - name: 🇬🇧 英国 (United Kingdom) 28 - Chain-Proxy
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-- name: 🇬🇧 英国 (United Kingdom) 29 - Chain-Proxy
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: viber.com
-- name: 🇬🇧 英国 (United Kingdom) 30 - Chain-Proxy
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 31 - Chain-Proxy
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-- name: 🇬🇧 英国 (United Kingdom) 32 - Chain-Proxy
-  server: 199.232.78.159
+  server: 186.190.211.188
   port: 443
   udp: true
   type: vless
-  uuid: 8453BDB7-Dd58-419d-b002-9456dd2e73d7
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   tls: true
-  servername: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pan2e.global.ssl.fastly.net
-- name: 🇬🇧 英国 (United Kingdom) 33 - Chain-Proxy
-  server: 46.250.250.149
-  port: 2053
-  udp: true
-  type: vless
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-  tls: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 34 - Chain-Proxy
-  server: labs.frkn.org
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 3b8c82ed-fe66-472d-915e-034ccb57103f
-  sni: labs.frkn.org
+  servername: 186.190.211.188
   skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 35 - Chain-Proxy
-  server: aksai.org
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 29 - Chain-Proxy
+  server: 94.156.250.148
+  port: 7001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇬🇧 英国 (United Kingdom) 30 - Chain-Proxy
+  server: 66.163.117.58
   port: 443
   udp: true
   type: vmess
@@ -387,7 +301,7 @@ proxies:
     path: /linkvws
     headers:
       Host: aksai.org
-- name: 🇬🇧 英国 (United Kingdom) 36 - Chain-Proxy
+- name: 🇬🇧 英国 (United Kingdom) 31 - Chain-Proxy
   server: 95.85.224.51
   port: 443
   udp: true
@@ -400,7 +314,7 @@ proxies:
     short-id: a696de84963656de
   servername: max.ru
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 37 - Chain-Proxy
+- name: 🇬🇧 英国 (United Kingdom) 32 - Chain-Proxy
   server: pahobac.org
   port: 443
   udp: true
@@ -414,21 +328,53 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-- name: 🇬🇧 英国 (United Kingdom) 38 - Chain-Proxy
-  server: 146.70.23.32
-  port: 8080
+- name: 🇬🇧 英国 (United Kingdom) 33 - Chain-Proxy
+  server: labs.frkn.org
+  port: 443
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 39 - Chain-Proxy
-  server: 94.156.250.148
-  port: 7001
+  type: hysteria2
+  password: 3b8c82ed-fe66-472d-915e-034ccb57103f
+  sni: labs.frkn.org
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 34 - Chain-Proxy
+  server: 57.129.130.57
+  port: 52014
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇬🇧 英国 (United Kingdom) 40 - Chain-Proxy
+  type: vless
+  uuid: 609b0d70-e2d0-4a48-95b1-02754e9b249a
+  tls: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+- name: 🇬🇧 英国 (United Kingdom) 35 - Chain-Proxy
+  server: 46.250.250.149
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  tls: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: 9922313fffed1c63
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 36 - Chain-Proxy
+  server: 87.192.47.10
+  port: 52006
+  udp: true
+  type: vless
+  uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
+  flow: xtls-rprx-vision
+  tls: true
+  servername: grok.setlisting.ru
+  skip-cert-verify: false
+  client-fingerprint: safari
+- name: 🇬🇧 英国 (United Kingdom) 37 - Chain-Proxy
   server: 46.250.240.80
   port: 2053
   udp: true
@@ -440,52 +386,34 @@ proxies:
     short-id: 4cc9dc65f7770115
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 41 - Chain-Proxy
-  server: node-uk.connectsuite.org
-  port: 8443
+- name: 🇬🇧 英国 (United Kingdom) 38 - Chain-Proxy
+  server: 107.181.151.39
+  port: 443
   udp: true
   type: vless
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
-  tls: true
-  servername: node-uk.connectsuite.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 42 - Chain-Proxy
-  server: 129.151.64.169
-  port: 31867
-  udp: true
-  type: vless
-  uuid: f7ff2e67-b687-4098-a28a-d102c27ba19c
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 43 - Chain-Proxy
-  server: 87.192.47.10
-  port: 52006
-  udp: true
-  type: vless
-  uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
+  uuid: 4d017db2-7655-4276-9557-e2ec25b04ee7
   flow: xtls-rprx-vision
   tls: true
-  servername: grok.setlisting.ru
-  skip-cert-verify: false
-  client-fingerprint: qq
-- name: 🇬🇧 英国 (United Kingdom) 44 - Chain-Proxy
-  server: silversbgfgov.vip45.wogbcnmnagfwgov.com
-  port: 11245
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: ee1716767f9b
+  servername: www.tradingview.com
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 39 - Chain-Proxy
+  server: 107.181.151.241
+  port: 443
   udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇬🇧 英国 (United Kingdom) 45 - Chain-Proxy
-  server: 87.239.249.137
+  type: vless
+  uuid: 2f6e2b17-4d5e-4a12-8979-f53fdd347580
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
+    short-id: 5c8a8e6c615b
+  servername: www.mozilla.org
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 40 - Chain-Proxy
+  server: lists.soloramtin.cyou
   port: 443
   udp: true
   type: vless
@@ -497,32 +425,28 @@ proxies:
     short-id: 91af08b1ce1f
   servername: www.foxsports.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 46 - Chain-Proxy
-  server: 107.181.151.241
+- name: 🇬🇧 英国 (United Kingdom) 41 - Chain-Proxy
+  server: silversbgfgov.vip45.wogbcnmnagfwgov.com
+  port: 11245
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
+- name: 🇬🇧 英国 (United Kingdom) 42 - Chain-Proxy
+  server: 199.232.78.159
   port: 443
   udp: true
   type: vless
-  uuid: aded66f1-de12-4c3c-af9e-a21d6e7d9c96
-  flow: xtls-rprx-vision
+  uuid: 8453Bdb7-dd58-419d-b002-9456dd2e73d7
   tls: true
-  reality-opts:
-    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-    short-id: 2a80364e93d9
-  servername: www.foxsports.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 47 - Chain-Proxy
-  server: 107.181.151.39
-  port: 443
-  udp: true
-  type: vless
-  uuid: 13aef2e0-b3fb-4322-a0e9-c10b908ce6b5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 87f895f23064
-  servername: www.techradar.com
-  client-fingerprint: firefox
+  servername: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pan2e.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -570,11 +494,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 40 - Chain-Proxy
   - 🇬🇧 英国 (United Kingdom) 41 - Chain-Proxy
   - 🇬🇧 英国 (United Kingdom) 42 - Chain-Proxy
-  - 🇬🇧 英国 (United Kingdom) 43 - Chain-Proxy
-  - 🇬🇧 英国 (United Kingdom) 44 - Chain-Proxy
-  - 🇬🇧 英国 (United Kingdom) 45 - Chain-Proxy
-  - 🇬🇧 英国 (United Kingdom) 46 - Chain-Proxy
-  - 🇬🇧 英国 (United Kingdom) 47 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -622,10 +541,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 40 - Chain-Proxy
   - 🇬🇧 英国 (United Kingdom) 41 - Chain-Proxy
   - 🇬🇧 英国 (United Kingdom) 42 - Chain-Proxy
-  - 🇬🇧 英国 (United Kingdom) 43 - Chain-Proxy
-  - 🇬🇧 英国 (United Kingdom) 44 - Chain-Proxy
-  - 🇬🇧 英国 (United Kingdom) 45 - Chain-Proxy
-  - 🇬🇧 英国 (United Kingdom) 46 - Chain-Proxy
-  - 🇬🇧 英国 (United Kingdom) 47 - Chain-Proxy
 rules:
 - MATCH,PROXIES
