@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - Chain-Proxy
-  server: 85.117.235.50
+  server: 95.85.241.203
   port: 443
   udp: true
   type: vless
-  uuid: f4d71fd6-1c25-4748-836b-1dbda9268039
+  uuid: 0d6e70a5-abfd-4766-8ad4-e502173ba82b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: PmdZ2ETkHc0zjYcs22xT_wyZk5fEpX7mg7RP396HBBc
-    short-id: 232b1b09e45325a4
-  servername: cz1.animeteka.info
-  client-fingerprint: chrome
+    public-key: CsHuHGKul9Soue4U9mFoJB6tWItZpHIin2_kPV77xVM
+    short-id: b5ceb348df65795d
+  servername: se2.virtez.pro
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

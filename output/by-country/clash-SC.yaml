@@ -5,54 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - Chain-Proxy
-  server: 45.205.26.194
-  port: 443
-  udp: true
-  type: trojan
-  password: 53210e66-b1a6-484d-85e9-4e0e8432c47c
-  sni: node5.luoye.ee
-  skip-cert-verify: false
-- name: 🇸🇨 塞舌尔 (Seychelles) 02 - Chain-Proxy
-  server: 45.205.27.78
-  port: 10443
-  udp: true
-  type: trojan
-  password: 7bf59211-61ab-4775-863a-c8355f3027c7
-  sni: 45.205.27.78
-  skip-cert-verify: true
-- name: 🇸🇨 塞舌尔 (Seychelles) 03 - Chain-Proxy
-  server: 45.95.96.176
-  port: 443
-  udp: true
-  type: vless
-  uuid: 635ac0f9-5e30-4f1d-a74b-604cbbfcf05c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fpYQ3Ml1YhTM0tbf4Ixxx03gxMtOno3iGaq3uoxIszs
-    short-id: a7268acdcfef5862
-  servername: chat.rtnode.site
-  client-fingerprint: firefox
-- name: 🇸🇨 塞舌尔 (Seychelles) 04 - Chain-Proxy
-  server: 144.31.50.236
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
-    short-id: bbe46bd8f6b96839
-  servername: yandex.ru
-  client-fingerprint: chrome
-- name: 🇸🇨 塞舌尔 (Seychelles) 05 - Chain-Proxy
   server: 45.207.207.25
   port: 443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
+- name: 🇸🇨 塞舌尔 (Seychelles) 02 - Chain-Proxy
+  server: e7q.internet-booster.online
+  port: 2443
+  udp: true
+  type: vless
+  uuid: 0ab2bb4f-c8ad-4c52-a94f-7a69c71d76f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AuLWE8R3WD4DwnDxVHgqEcNjyge1btt5PdaUUArdCVk
+    short-id: 2b03d7853fc8faa6
+  servername: ads.x5.ru
+  client-fingerprint: ios
+- name: 🇸🇨 塞舌尔 (Seychelles) 03 - Chain-Proxy
+  server: 45.95.96.170
+  port: 443
+  udp: true
+  type: vless
+  uuid: a47f8110-de83-4c37-b6a7-16010535aef4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cucAz_3afM4ykkSl8IqlW9LPzQNH2fnQx9tAZTyr0yA
+    short-id: f6d23c76d0362796
+  servername: ai.rtnode.site
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,8 +45,6 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - Chain-Proxy
   - 🇸🇨 塞舌尔 (Seychelles) 02 - Chain-Proxy
   - 🇸🇨 塞舌尔 (Seychelles) 03 - Chain-Proxy
-  - 🇸🇨 塞舌尔 (Seychelles) 04 - Chain-Proxy
-  - 🇸🇨 塞舌尔 (Seychelles) 05 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,7 +53,5 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - Chain-Proxy
   - 🇸🇨 塞舌尔 (Seychelles) 02 - Chain-Proxy
   - 🇸🇨 塞舌尔 (Seychelles) 03 - Chain-Proxy
-  - 🇸🇨 塞舌尔 (Seychelles) 04 - Chain-Proxy
-  - 🇸🇨 塞舌尔 (Seychelles) 05 - Chain-Proxy
 rules:
 - MATCH,PROXIES

@@ -6,21 +6,21 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - Chain-Proxy",
-      "server": "85.117.235.50",
+      "server": "95.85.241.203",
       "server_port": 443,
-      "uuid": "f4d71fd6-1c25-4748-836b-1dbda9268039",
+      "uuid": "0d6e70a5-abfd-4766-8ad4-e502173ba82b",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cz1.animeteka.info",
+        "server_name": "se2.virtez.pro",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "PmdZ2ETkHc0zjYcs22xT_wyZk5fEpX7mg7RP396HBBc",
-          "short_id": "232b1b09e45325a4"
+          "public_key": "CsHuHGKul9Soue4U9mFoJB6tWItZpHIin2_kPV77xVM",
+          "short_id": "b5ceb348df65795d"
         }
       }
     },

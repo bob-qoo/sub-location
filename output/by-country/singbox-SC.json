@@ -4,78 +4,54 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - Chain-Proxy",
-      "server": "45.205.26.194",
+      "server": "45.207.207.25",
       "server_port": 443,
-      "password": "53210e66-b1a6-484d-85e9-4e0e8432c47c",
-      "tls": {
-        "enabled": true,
-        "server_name": "node5.luoye.ee",
-        "insecure": false
-      }
+      "method": "aes-256-gcm",
+      "password": "gj1+XKulKV0nmw6IThckOkkJh5DSM7+C"
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - Chain-Proxy",
-      "server": "45.205.27.78",
-      "server_port": 10443,
-      "password": "7bf59211-61ab-4775-863a-c8355f3027c7",
+      "server": "e7q.internet-booster.online",
+      "server_port": 2443,
+      "uuid": "0ab2bb4f-c8ad-4c52-a94f-7a69c71d76f5",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "45.205.27.78",
-        "insecure": true
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AuLWE8R3WD4DwnDxVHgqEcNjyge1btt5PdaUUArdCVk",
+          "short_id": "2b03d7853fc8faa6"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - Chain-Proxy",
-      "server": "45.95.96.176",
+      "server": "45.95.96.170",
       "server_port": 443,
-      "uuid": "635ac0f9-5e30-4f1d-a74b-604cbbfcf05c",
+      "uuid": "a47f8110-de83-4c37-b6a7-16010535aef4",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "chat.rtnode.site",
+        "server_name": "ai.rtnode.site",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "fpYQ3Ml1YhTM0tbf4Ixxx03gxMtOno3iGaq3uoxIszs",
-          "short_id": "a7268acdcfef5862"
+          "public_key": "cucAz_3afM4ykkSl8IqlW9LPzQNH2fnQx9tAZTyr0yA",
+          "short_id": "f6d23c76d0362796"
         }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 04 - Chain-Proxy",
-      "server": "144.31.50.236",
-      "server_port": 443,
-      "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM",
-          "short_id": "bbe46bd8f6b96839"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 05 - Chain-Proxy",
-      "server": "45.207.207.25",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "gj1+XKulKV0nmw6IThckOkkJh5DSM7+C"
     },
     {
       "type": "selector",
@@ -84,9 +60,7 @@
         "auto",
         "🇸🇨 塞舌尔 (Seychelles) 01 - Chain-Proxy",
         "🇸🇨 塞舌尔 (Seychelles) 02 - Chain-Proxy",
-        "🇸🇨 塞舌尔 (Seychelles) 03 - Chain-Proxy",
-        "🇸🇨 塞舌尔 (Seychelles) 04 - Chain-Proxy",
-        "🇸🇨 塞舌尔 (Seychelles) 05 - Chain-Proxy"
+        "🇸🇨 塞舌尔 (Seychelles) 03 - Chain-Proxy"
       ]
     },
     {
@@ -95,9 +69,7 @@
       "outbounds": [
         "🇸🇨 塞舌尔 (Seychelles) 01 - Chain-Proxy",
         "🇸🇨 塞舌尔 (Seychelles) 02 - Chain-Proxy",
-        "🇸🇨 塞舌尔 (Seychelles) 03 - Chain-Proxy",
-        "🇸🇨 塞舌尔 (Seychelles) 04 - Chain-Proxy",
-        "🇸🇨 塞舌尔 (Seychelles) 05 - Chain-Proxy"
+        "🇸🇨 塞舌尔 (Seychelles) 03 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
