@@ -4,24 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - Chain-Proxy",
-      "server": "130.211.240.128",
-      "server_port": 443,
-      "uuid": "31a40f42-4ad6-4a32-a760-71102b459584",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg",
-          "short_id": "d74a6321deec9f31"
-        }
-      }
+      "server": "165.154.195.38",
+      "server_port": 35034,
+      "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
+      "security": "auto"
     },
     {
       "type": "hysteria2",
@@ -31,7 +19,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
+        "server_name": "160.187.100.109",
         "insecure": true
       }
     },
@@ -48,30 +36,21 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy",
-      "server": "165.154.195.38",
-      "server_port": 35034,
-      "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - Chain-Proxy",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy",
+      "server": "60.248.219.78",
+      "server_port": 443,
+      "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
+        "server_name": "ty986gfazs.cainiaohub.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
+        "headers": {
+          "Host": "ty986gfazs.cainiaohub.xyz"
         }
       }
     },
@@ -83,8 +62,7 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - Chain-Proxy",
         "🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy",
         "🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 05 - Chain-Proxy"
+        "🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy"
       ]
     },
     {
@@ -94,8 +72,7 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - Chain-Proxy",
         "🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy",
         "🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 05 - Chain-Proxy"
+        "🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
