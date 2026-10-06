@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - Chain-Proxy",
+      "server": "206.1.100.83",
+      "server_port": 25178,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "ADzlhA3ndouUCY3JbLddR/jwgYY7IDGc1T+5DuCix9Y=:KyFe2akGo5hcrswbMkD2+BM52si+D7lzyccZFTd4xaU="
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy",
       "server": "85.192.48.142",
       "server_port": 443,
       "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
@@ -15,7 +23,7 @@
         "server_name": "nvidia.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -26,28 +34,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy",
-      "server": "trn32.mobileemdad.top",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy",
+      "server": "87.120.106.155",
       "server_port": 443,
-      "uuid": "11a1238e-348b-47c7-ac36-47ed50dd911c",
-      "flow": "xtls-rprx-vision",
+      "uuid": "43244398-a7f4-49c9-8c6e-5cff05c53260",
       "tls": {
         "enabled": true,
-        "server_name": "delivery.mp.microsoft.com",
+        "server_name": "stvcdnb7f202.dop69.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ",
-          "short_id": "9ed2fa"
+          "fingerprint": "firefox"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -56,12 +59,32 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
           "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
           "short_id": "9e419c0759b54d6f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy",
+      "server": "ststictr.hamiramkemax.ir",
+      "server_port": 1081,
+      "uuid": "250865f0-4a0f-4e2e-8d14-4c39a25d0bef",
+      "tls": {
+        "enabled": true,
+        "server_name": "www12.gameservice-iramn3.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_UlBf1BRa52KM89xxvfbSHuLZWrvWuGuhvbsL3gx01A",
+          "short_id": "daa22fbb023ab4a2"
         }
       }
     },
@@ -72,7 +95,9 @@
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - Chain-Proxy",
         "🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy",
-        "🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy"
+        "🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy",
+        "🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy",
+        "🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy"
       ]
     },
     {
@@ -81,7 +106,9 @@
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - Chain-Proxy",
         "🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy",
-        "🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy"
+        "🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy",
+        "🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy",
+        "🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

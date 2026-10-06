@@ -5,25 +5,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇦 沙特 (Saudi Arabia) 01 - Chain-Proxy",
-      "server": "81.208.170.142",
-      "server_port": 1500,
-      "uuid": "sGLzG6kUwBpZd73sW0nq",
+      "tag": "🇨🇿 捷克 (Czech) 01 - Chain-Proxy",
+      "server": "31.76.6.221",
+      "server_port": 17001,
+      "uuid": "953358cb-82ba-4296-960d-6d2ec3468f4c",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.ebay.com",
+        "server_name": "media2.h2corp.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE",
-          "short_id": "775eb6408888248e"
+          "public_key": "Sui5lSCrqQCG3IlB2YstVMAJdmPkOk4Dim5GpNNLWxU",
+          "short_id": "5d38f235a6e0916c"
         }
-      },
-      "transport": {
-        "type": "grpc"
       }
     },
     {
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇦 沙特 (Saudi Arabia) 01 - Chain-Proxy"
+        "🇨🇿 捷克 (Czech) 01 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇦 沙特 (Saudi Arabia) 01 - Chain-Proxy"
+        "🇨🇿 捷克 (Czech) 01 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,22 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇮🇷 IR 01 - Chain-Proxy",
-      "server": "85.90.196.11",
+      "type": "trojan",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - Chain-Proxy",
+      "server": "47.250.84.25",
       "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "password": "5931134d1cde66bf83a54acdfebe7ab2",
       "tls": {
         "enabled": true,
-        "server_name": "fzo5i.ir46.90k.hh.ov0.kdns.fr",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/glasspanel/guest000_0_5de14443985f/",
-        "headers": {
-          "Host": "fzo5i.ir46.90k.hh.ov0.kdns.fr"
-        }
+        "server_name": "47.250.84.25",
+        "insecure": true
       }
     },
     {
@@ -27,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR 01 - Chain-Proxy"
+        "🇲🇾 马来西亚 (Malaysia) 01 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR 01 - Chain-Proxy"
+        "🇲🇾 马来西亚 (Malaysia) 01 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -8,7 +8,7 @@
       "tag": "🌐 其他地区 (Other) 01 - Chain-Proxy",
       "server": "freesocks.work",
       "server_port": 2053,
-      "uuid": "e3fb01b6-69b4-41d7-babf-696d992de194",
+      "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
       "tls": {
         "enabled": true,
         "server_name": "uwu.blueknightnet.qzz.io",
@@ -27,11 +27,15 @@
       "tag": "🌐 其他地区 (Other) 02 - Chain-Proxy",
       "server": "freesocks.work",
       "server_port": 2053,
-      "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
+      "uuid": "e3fb01b6-69b4-41d7-babf-696d992de194",
       "tls": {
         "enabled": true,
         "server_name": "uwu.blueknightnet.qzz.io",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",

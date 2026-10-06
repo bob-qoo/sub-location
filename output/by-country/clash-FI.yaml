@@ -12,6 +12,41 @@ proxies:
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 02 - Chain-Proxy
+  server: 45.149.114.171
+  port: 777
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+- name: 🇫🇮 芬兰 (Finland) 03 - Chain-Proxy
+  server: 185.103.110.66
+  port: 18280
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+- name: 🇫🇮 芬兰 (Finland) 04 - Chain-Proxy
+  server: 144.31.212.253
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 05 - Chain-Proxy
+  server: 87.251.17.12
+  port: 2053
+  udp: true
+  type: vless
+  uuid: f24c25fe-937d-414b-8180-d54c96220e71
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: f3Ooz7Yxw4QqQNxddxYG0zOewK8zullgKVTBZxR1a0Y
+    short-id: cc981b746a300649
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 06 - Chain-Proxy
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -23,40 +58,7 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 03 - Chain-Proxy
-  server: 144.31.212.253
-  port: 443
-  udp: true
-  type: hysteria2
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  sni: vps155-edge.kermemehori.ru
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 04 - Chain-Proxy
-  server: 144.31.27.215
-  port: 43000
-  udp: true
-  type: vless
-  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
-    short-id: 568d87a47271344e
-  servername: 144.31.27.215
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05 - Chain-Proxy
-  server: 151.241.137.132
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5786d86f-7731-4174-b1a3-84297e54b015
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: finland.ali-bard.online
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 06 - Chain-Proxy
+- name: 🇫🇮 芬兰 (Finland) 07 - Chain-Proxy
   server: 65.108.3.59
   port: 443
   udp: true
@@ -69,6 +71,101 @@ proxies:
     short-id: 90ec9bba2019
   servername: web.eitaa.com
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 08 - Chain-Proxy
+  server: 199.232.239.239
+  port: 443
+  udp: true
+  type: vless
+  uuid: 31608e93-a701-4604-b8de-c55baa393937
+  tls: true
+  servername: ssl.fastly.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uol258ehdmsohzh.global.ssl.fastly.net
+- name: 🇫🇮 芬兰 (Finland) 09 - Chain-Proxy
+  server: 153.76.194.154
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: axP-VNWeg-V-Bd_ZaSJGxWbWEE-t35Y2
+  sni: northernleaf.gazette.help
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 10 - Chain-Proxy
+  server: 78.17.209.108
+  port: 8444
+  udp: true
+  type: hysteria2
+  password: d402d4c0b8354a90b70bb2566dce9a08
+  sni: i.wareznet.ru
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 11 - Chain-Proxy
+  server: 144.31.27.215
+  port: 43000
+  udp: true
+  type: vless
+  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
+    short-id: 568d87a47271344e
+  servername: 144.31.27.215
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 12 - Chain-Proxy
+  server: 13.143.129.45
+  port: 443
+  udp: true
+  type: vless
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: CsoM3VUYii1XxgxnrT4VEe-EALgn60k6BaKMJVP9qAM
+    short-id: 7dd08043
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 13 - Chain-Proxy
+  server: 151.241.137.132
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5786d86f-7731-4174-b1a3-84297e54b015
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: finland.ali-bard.online
+  client-fingerprint: edge
+- name: 🇫🇮 芬兰 (Finland) 14 - Chain-Proxy
+  server: 13.143.174.201
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 689b65e0-57a8-41ba-804d-10c079c2b393
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dBvFkg2zny545Ws6H_LXKEohOYV2MW_zACRrRQE1IUg
+    short-id: 992e5a9a
+  servername: files.meridian-labs.net
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 15 - Chain-Proxy
+  server: 157.228.128.59
+  port: 443
+  udp: true
+  type: vless
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
+    short-id: 06e00e7c
+  servername: addons.mozilla.org
+  client-fingerprint: randomized
 proxy-groups:
 - name: PROXIES
   type: select
@@ -80,6 +177,15 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 05 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 06 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 07 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 08 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 09 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 10 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 11 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 12 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 13 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 14 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 15 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -91,5 +197,14 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 05 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 06 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 07 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 08 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 09 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 10 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 11 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 12 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 13 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 14 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 15 - Chain-Proxy
 rules:
 - MATCH,PROXIES
