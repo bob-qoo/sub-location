@@ -5,29 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - Chain-Proxy
-  server: 5.188.181.201
-  port: 9054
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
-- name: 🇪🇸 西班牙 (Spain) 02 - Chain-Proxy
-  server: 85.90.217.42
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇪🇸 西班牙 (Spain) 03 - Chain-Proxy
-  server: 185.174.137.172
-  port: 8446
-  udp: true
-  type: hysteria2
-  password: e9dc02d400b67c727aca1620
-  sni: 185.174.137.172
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 04 - Chain-Proxy
   server: 83.147.18.3
   port: 443
   udp: true
@@ -40,22 +17,14 @@ proxies:
     short-id: fd8cf7e1173f0edb
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 05 - Chain-Proxy
-  server: xby.mangshe.xyz
-  port: 2060
-  udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: xby.mangshe.xyz
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 06 - Chain-Proxy
-  server: 108.181.121.226
+- name: 🇪🇸 西班牙 (Spain) 02 - Chain-Proxy
+  server: 140.174.184.5
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-- name: 🇪🇸 西班牙 (Spain) 07 - Chain-Proxy
+  password: qItG8SueYQcP
+- name: 🇪🇸 西班牙 (Spain) 03 - Chain-Proxy
   server: 212.227.235.66
   port: 2053
   udp: true
@@ -66,108 +35,24 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 08 - Chain-Proxy
-  server: 188.114.97.6
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
-  network: ws
-  ws-opts:
-    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY?ed=2560
-    headers:
-      Host: elenaaaaaaaaaa.cloudns.pro
-- name: 🇪🇸 西班牙 (Spain) 09 - Chain-Proxy
-  server: 104.25.118.238
-  port: 80
-  udp: true
-  type: vless
-  uuid: 6cd78ec7-b715-471c-92b4-0c3842caea4b
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiOFRwTjlPWHgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
-    headers:
-      Host: billowing-cloud-d339.sospanel.workers.dev
-- name: 🇪🇸 西班牙 (Spain) 10 - Chain-Proxy
-  server: es4.h1cloud.net
-  port: 25047
-  udp: true
-  type: vless
-  uuid: 55a2940a-ae07-40b4-ab32-4d3e0617731f
-  tls: true
-  reality-opts:
-    public-key: opG0oNW-PMHi8V4E0101eEqOqPlZVKCuRkF6dcWeqBU
-    short-id: 8b7227d48365dda9
-  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 11 - Chain-Proxy
-  server: 140.174.184.5
+- name: 🇪🇸 西班牙 (Spain) 04 - Chain-Proxy
+  server: 185.174.137.172
+  port: 8446
+  udp: true
+  type: hysteria2
+  password: e9dc02d400b67c727aca1620
+  sni: 185.174.137.172
+  skip-cert-verify: true
+- name: 🇪🇸 西班牙 (Spain) 05 - Chain-Proxy
+  server: 108.181.121.226
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-- name: 🇪🇸 西班牙 (Spain) 12 - Chain-Proxy
-  server: 104.21.8.63
-  port: 443
-  udp: true
-  type: vless
-  uuid: b19419fa-8009-455b-b059-765e2856883a
-  tls: true
-  servername: akbarian34.j9z65ce2uyks.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/Q5xRgb8wfW3RTYFIfDA16PzboJrjLuZ9
-    headers:
-      Host: akbarian34.j9z65ce2uyks.workers.dev
-- name: 🇪🇸 西班牙 (Spain) 13 - Chain-Proxy
-  server: server20.peekconfig5.workers.dev
-  port: 443
-  udp: true
-  type: vless
-  uuid: 36d9003c-7240-40bc-af62-07c39f7a0b94
-  tls: true
-  servername: server20.peekconfig5.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: '/eyJqdW5rIjoiYmNCdUhCVkFEIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSIsIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iXX0= '
-    headers:
-      Host: server20.peekconfig5.workers.dev
-- name: 🇪🇸 西班牙 (Spain) 14 - Chain-Proxy
-  server: 104.25.0.1
-  port: 2053
-  udp: true
-  type: vless
-  uuid: dce8ca0a-ed26-45c9-9962-38888c19a0ad
-  tls: true
-  servername: still-scene-fda3.devtahair.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiSDNSSGYxT05LU2VEbyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjYyLjYwLjIxNy4yMzAiXX0=
-    headers:
-      Host: still-scene-fda3.devtahair.workers.dev
-- name: 🇪🇸 西班牙 (Spain) 15 - Chain-Proxy
-  server: 46.28.71.247
-  port: 443
-  udp: true
-  type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇪🇸 西班牙 (Spain) 16 - Chain-Proxy
-  server: assets-es.pleiades.codes
+  password: WSyL4XTwNsdv
+- name: 🇪🇸 西班牙 (Spain) 06 - Chain-Proxy
+  server: 193.238.154.5
   port: 443
   udp: true
   type: vless
@@ -179,6 +64,31 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
+- name: 🇪🇸 西班牙 (Spain) 07 - Chain-Proxy
+  server: es4.h1cloud.net
+  port: 25047
+  udp: true
+  type: vless
+  uuid: 55a2940a-ae07-40b4-ab32-4d3e0617731f
+  tls: true
+  reality-opts:
+    public-key: opG0oNW-PMHi8V4E0101eEqOqPlZVKCuRkF6dcWeqBU
+    short-id: 8b7227d48365dda9
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 08 - Chain-Proxy
+  server: 46.28.71.247
+  port: 443
+  udp: true
+  type: vless
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -192,14 +102,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 06 - Chain-Proxy
   - 🇪🇸 西班牙 (Spain) 07 - Chain-Proxy
   - 🇪🇸 西班牙 (Spain) 08 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 09 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 10 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 11 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 12 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 13 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 14 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 15 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 16 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -213,13 +115,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 06 - Chain-Proxy
   - 🇪🇸 西班牙 (Spain) 07 - Chain-Proxy
   - 🇪🇸 西班牙 (Spain) 08 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 09 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 10 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 11 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 12 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 13 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 14 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 15 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 16 - Chain-Proxy
 rules:
 - MATCH,PROXIES

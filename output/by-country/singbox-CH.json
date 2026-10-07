@@ -6,6 +6,18 @@
     {
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - Chain-Proxy",
+      "server": "140.238.213.114",
+      "server_port": 50160,
+      "password": "84a506ca5aca505696a454d828420b3f",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 - Chain-Proxy",
       "server": "152.67.75.161",
       "server_port": 443,
       "password": "3a702d4d1de4949005d8431220e040fb",
@@ -21,7 +33,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 - Chain-Proxy",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - Chain-Proxy",
       "server": "208.69.78.217",
       "server_port": 2053,
       "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
@@ -41,25 +53,6 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - Chain-Proxy",
-      "server": "208.69.78.217",
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      },
-      "server_ports": [
-        "21000:21199",
-        "33000:33199"
-      ]
-    },
-    {
-      "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 04 - Chain-Proxy",
       "server": "208.69.78.217",
       "server_port": 8444,
@@ -75,40 +68,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05 - Chain-Proxy",
-      "server": "82.38.64.229",
-      "server_port": 8443,
-      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
-      "tls": {
-        "enabled": true,
-        "server_name": "hopp-swizland-new.mysynology.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 06 - Chain-Proxy",
-      "server": "140.238.213.114",
-      "server_port": 50160,
-      "password": "84a506ca5aca505696a454d828420b3f",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 07 - Chain-Proxy",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 08 - Chain-Proxy",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 - Chain-Proxy",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -118,7 +79,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -129,7 +90,19 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 09 - Chain-Proxy",
+      "tag": "🇨🇭 瑞士 (Switzerland) 06 - Chain-Proxy",
+      "server": "82.38.64.237",
+      "server_port": 8443,
+      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
+      "tls": {
+        "enabled": true,
+        "server_name": "hopp-swizland-new.mysynology.net",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 07 - Chain-Proxy",
       "server": "104.165.205.42",
       "server_port": 8443,
       "password": "52e3dd44-ed23-4030-b0cc-5b5a953f2d4d",
@@ -138,6 +111,14 @@
         "server_name": "speedtestmark.com",
         "insecure": false
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇭 瑞士 (Switzerland) 08 - Chain-Proxy",
+      "server": "132.243.175.144",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     },
     {
       "type": "selector",
@@ -151,8 +132,7 @@
         "🇨🇭 瑞士 (Switzerland) 05 - Chain-Proxy",
         "🇨🇭 瑞士 (Switzerland) 06 - Chain-Proxy",
         "🇨🇭 瑞士 (Switzerland) 07 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 08 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 09 - Chain-Proxy"
+        "🇨🇭 瑞士 (Switzerland) 08 - Chain-Proxy"
       ]
     },
     {
@@ -166,8 +146,7 @@
         "🇨🇭 瑞士 (Switzerland) 05 - Chain-Proxy",
         "🇨🇭 瑞士 (Switzerland) 06 - Chain-Proxy",
         "🇨🇭 瑞士 (Switzerland) 07 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 08 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 09 - Chain-Proxy"
+        "🇨🇭 瑞士 (Switzerland) 08 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

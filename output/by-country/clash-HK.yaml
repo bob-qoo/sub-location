@@ -5,101 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - Chain-Proxy
-  server: 46.17.45.31
-  port: 10550
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - Chain-Proxy
-  server: 46.17.42.141
-  port: 10550
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - Chain-Proxy
-  server: 103.149.182.79
+  server: 103.141.221.101
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf
   password: asd123456
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy
-  server: nas.aizhzo.com
-  port: 5010
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - Chain-Proxy
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16112
   udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: 127.0.0.1
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - Chain-Proxy
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2рҹүҹү
+  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
+  sni: https://t.me/clashv8🇨🇳
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy
-  server: strong-haddock.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: strong-haddock.rooster465.autos
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy
-  server: 43.161.230.103
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - Chain-Proxy
-  server: 194.99.79.26
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: aksai.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aksai.org
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - Chain-Proxy
-  server: hk2.xiaoliyu.cyou
-  port: 4433
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: hk2.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - Chain-Proxy
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
   server: jumpernode.site
   port: 443
   udp: true
@@ -112,7 +56,35 @@ proxies:
     short-id: 6d962e8d8a0dce
   servername: p-nt-www-amazon-com-kalias.amazon.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - Chain-Proxy
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
+  server: 43.161.230.103
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy
+  server: hk2.xiaoliyu.cyou
+  port: 4433
+  udp: true
+  type: hysteria2
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: hk2.xiaoliyu.cyou
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy
+  server: hk.sepporated.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 218ae360-0e5f-4856-91f3-1823adfc9037
+  tls: true
+  servername: hk.sepporated.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - Chain-Proxy
   server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
@@ -128,41 +100,24 @@ proxies:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - Chain-Proxy
-  server: 2.27.109.179
-  port: 45464
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - Chain-Proxy
+  server: nas.aizhzo.com
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: 127.0.0.1
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - Chain-Proxy
+  server: strong-haddock.rooster465.autos
+  port: 443
   udp: true
   type: trojan
-  password: XuMweB2PWs
-  sni: 2.27.109.179.sslip.io
+  password: UX82473651
+  sni: strong-haddock.rooster465.autos
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - Chain-Proxy
-  server: 43.99.93.77
-  port: 443
-  udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: o8SsyMfDn8-WIfsseuvnnyq5dVpZqql_ubVTuj-S6FU
-    short-id: c69c8691
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 16 - Chain-Proxy
-  server: i2psm3knof5qjjix.v.3dns.vip
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: i2psm3knof5qjjix.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
 proxy-groups:
 - name: PROXIES
   type: select
@@ -180,10 +135,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 11 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 12 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 13 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 14 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 15 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 16 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -201,9 +152,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 11 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 12 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 13 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 14 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 15 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 16 - Chain-Proxy
 rules:
 - MATCH,PROXIES
