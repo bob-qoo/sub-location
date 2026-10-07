@@ -11,24 +11,8 @@
       "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 02 (家宽) - Chain-Proxy",
-      "server": "155.117.19.17",
-      "server_port": 443,
-      "password": "5fa748137b6d822308eea4611f474ad5",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy",
       "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -37,7 +21,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -48,7 +32,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 04 (家宽) - Chain-Proxy",
+      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - Chain-Proxy",
       "server": "p141.panda001.net",
       "server_port": 4652,
       "method": "aes-256-cfb",
@@ -60,9 +44,8 @@
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 (移动家宽) R50 - Chain-Proxy",
-        "🇺🇸 美国 (United States) 02 (家宽) - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy",
-        "🇰🇷 韩国 (South Korea) 04 (家宽) - Chain-Proxy"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - Chain-Proxy"
       ]
     },
     {
@@ -70,9 +53,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 (移动家宽) R50 - Chain-Proxy",
-        "🇺🇸 美国 (United States) 02 (家宽) - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy",
-        "🇰🇷 韩国 (South Korea) 04 (家宽) - Chain-Proxy"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

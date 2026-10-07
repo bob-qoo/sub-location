@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - Chain-Proxy
-  server: 94.242.58.90
-  port: 443
-  udp: true
-  type: vless
-  uuid: 04baafc3-0fea-4a8a-bfa8-22d759ed82ca
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: s-B3oTvLAgogG5hqGZ0tYZjxWSSZQFIA1e7i6DrWngA
-    short-id: 2b336c5c
-  servername: www.tradingview.com
-  client-fingerprint: safari
-- name: 🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -28,68 +15,21 @@ proxies:
     public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
     short-id: d0ea1847066af5a6
   servername: www.samsung.com
-  client-fingerprint: firefox
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
-- name: 🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy
-  server: 132.243.231.12
-  port: 443
-  udp: true
-  type: vless
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM
-    short-id: 5efa80b939612291
-  servername: d3-se1.cloud-cdn.xyz
-  client-fingerprint: ios
-- name: 🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy
-  server: 132.243.231.4
-  port: 443
-  udp: true
-  type: vless
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM
-    short-id: 5efa80b939612291
-  servername: d3-se1.cloud-cdn.xyz
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy
-  server: 193.163.203.170
-  port: 443
-  udp: true
-  type: vless
-  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
-    short-id: b28db60d77c50b4f
-  servername: yandex.ru
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - Chain-Proxy
-  - 🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy
-  - 🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy
-  - 🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy
-  - 🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - Chain-Proxy
-  - 🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy
-  - 🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy
-  - 🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy
-  - 🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy
 rules:
 - MATCH,PROXIES
