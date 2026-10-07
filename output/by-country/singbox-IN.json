@@ -4,8 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇮🇳 印度 (India) 01 - Chain-Proxy",
+      "server": "45.149.114.171",
+      "server_port": 777,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇳 印度 (India) 02 - Chain-Proxy",
+      "server": "172.105.39.124",
+      "server_port": 7002,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 03 - Chain-Proxy",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -14,7 +30,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -25,7 +41,40 @@
     },
     {
       "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 02 - Chain-Proxy",
+      "tag": "🇮🇳 印度 (India) 04 - Chain-Proxy",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 05 - Chain-Proxy",
+      "server": "148.113.5.44",
+      "server_port": 443,
+      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
+          "short_id": "221873918e0bb74d"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇮🇳 印度 (India) 06 - Chain-Proxy",
       "server": "185.67.125.90",
       "server_port": 443,
       "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
@@ -44,34 +93,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - Chain-Proxy",
-      "server": "148.113.5.44",
-      "server_port": 443,
-      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
-          "short_id": "221873918e0bb74d"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇳 印度 (India) 01 - Chain-Proxy",
         "🇮🇳 印度 (India) 02 - Chain-Proxy",
-        "🇮🇳 印度 (India) 03 - Chain-Proxy"
+        "🇮🇳 印度 (India) 03 - Chain-Proxy",
+        "🇮🇳 印度 (India) 04 - Chain-Proxy",
+        "🇮🇳 印度 (India) 05 - Chain-Proxy",
+        "🇮🇳 印度 (India) 06 - Chain-Proxy"
       ]
     },
     {
@@ -80,7 +111,10 @@
       "outbounds": [
         "🇮🇳 印度 (India) 01 - Chain-Proxy",
         "🇮🇳 印度 (India) 02 - Chain-Proxy",
-        "🇮🇳 印度 (India) 03 - Chain-Proxy"
+        "🇮🇳 印度 (India) 03 - Chain-Proxy",
+        "🇮🇳 印度 (India) 04 - Chain-Proxy",
+        "🇮🇳 印度 (India) 05 - Chain-Proxy",
+        "🇮🇳 印度 (India) 06 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
