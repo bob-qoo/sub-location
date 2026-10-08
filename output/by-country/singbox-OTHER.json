@@ -1,0 +1,47 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 01 - Chain-Proxy",
+      "server": "novantunnel.tech",
+      "server_port": 443,
+      "uuid": "ee556a4f-d9f6-44de-af02-42c51659416a",
+      "tls": {
+        "enabled": true,
+        "server_name": "novantunnel.tech",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Novan-AE9"
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🌐 其他地区 (Other) 01 - Chain-Proxy"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🌐 其他地区 (Other) 01 - Chain-Proxy"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
