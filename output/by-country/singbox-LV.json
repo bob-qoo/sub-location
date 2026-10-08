@@ -7,29 +7,13 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - Chain-Proxy",
       "server": "185.135.86.175",
-      "server_port": 9017,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "HAVAdE3nXhqA5nHp"
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - Chain-Proxy",
-      "server": "185.135.86.175",
-      "server_port": 9034,
-      "method": "aes-256-cfb",
-      "password": "Yg4MbdXFQ9HFFVY6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - Chain-Proxy",
-      "server": "185.135.86.175",
-      "server_port": 9094,
-      "method": "aes-256-cfb",
-      "password": "rpgbNnU9rDDU4aWZ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - Chain-Proxy",
       "server": "185.135.86.175",
       "server_port": 9036,
       "method": "aes-256-cfb",
@@ -37,7 +21,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - Chain-Proxy",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - Chain-Proxy",
+      "server": "185.135.86.175",
+      "server_port": 9034,
+      "method": "aes-256-cfb",
+      "password": "Yg4MbdXFQ9HFFVY6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - Chain-Proxy",
       "server": "185.135.86.175",
       "server_port": 9007,
       "method": "aes-256-cfb",
@@ -45,11 +37,19 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - Chain-Proxy",
+      "server": "185.135.86.175",
+      "server_port": 9017,
+      "method": "aes-256-cfb",
+      "password": "HAVAdE3nXhqA5nHp"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - Chain-Proxy",
       "server": "185.135.86.175",
-      "server_port": 9033,
+      "server_port": 9094,
       "method": "aes-256-cfb",
-      "password": "UTJA57ypk2XKQpnm"
+      "password": "rpgbNnU9rDDU4aWZ"
     },
     {
       "type": "shadowsocks",
@@ -63,37 +63,28 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - Chain-Proxy",
       "server": "185.135.86.175",
-      "server_port": 9082,
+      "server_port": 9033,
       "method": "aes-256-cfb",
-      "password": "45xgMgm386pjWjTx"
+      "password": "UTJA57ypk2XKQpnm"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 09 - Chain-Proxy",
       "server": "185.135.86.175",
-      "server_port": 9086,
+      "server_port": 9082,
       "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
+      "password": "45xgMgm386pjWjTx"
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 10 - Chain-Proxy",
-      "server": "195.123.213.28",
-      "server_port": 443,
-      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
-      "flow": "xtls-rprx-vision",
+      "server": "104.165.205.142",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
-          "short_id": "5c256336e3b673fa"
-        }
+        "server_name": "onecloudstream.com",
+        "insecure": true
       }
     },
     {
@@ -120,7 +111,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -130,33 +121,30 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 13 - Chain-Proxy",
-      "server": "104.165.205.142",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "server": "195.123.213.28",
+      "server_port": 443,
+      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": true
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
+          "short_id": "5c256336e3b673fa"
+        }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 14 - Chain-Proxy",
-      "server": "104.165.205.250",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 15 - Chain-Proxy",
-      "server": "104.165.205.44",
+      "server": "104.165.205.46",
       "server_port": 9443,
       "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
       "tls": {
@@ -167,7 +155,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 16 - Chain-Proxy",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 15 - Chain-Proxy",
       "server": "104.165.205.219",
       "server_port": 9443,
       "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
@@ -179,8 +167,20 @@
     },
     {
       "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 16 - Chain-Proxy",
+      "server": "104.165.205.44",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 17 - Chain-Proxy",
-      "server": "104.165.205.46",
+      "server": "104.165.205.250",
       "server_port": 9443,
       "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
       "tls": {
@@ -192,7 +192,7 @@
     {
       "type": "hysteria2",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 18 - Chain-Proxy",
-      "server": "104.165.205.43",
+      "server": "lv02.gotosvo.com",
       "server_port": 9443,
       "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
       "tls": {
@@ -202,27 +202,24 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 19 - Chain-Proxy",
-      "server": "104.165.205.23",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "server": "31.57.106.241",
+      "server_port": 443,
+      "uuid": "a4801105-c0c7-4cab-87c6-f257ff2afc09",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 20 - Chain-Proxy",
-      "server": "104.165.205.81",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
+        "server_name": "www.lmt.lv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4SJB--DChFNhmOUz0-BZK2dS3GhZ1yZwMVIhmpobB0o",
+          "short_id": "44f7c5615039ae1b"
+        }
       }
     },
     {
@@ -248,8 +245,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 16 - Chain-Proxy",
         "🇱🇻 拉脱维亚 (Latvia) 17 - Chain-Proxy",
         "🇱🇻 拉脱维亚 (Latvia) 18 - Chain-Proxy",
-        "🇱🇻 拉脱维亚 (Latvia) 19 - Chain-Proxy",
-        "🇱🇻 拉脱维亚 (Latvia) 20 - Chain-Proxy"
+        "🇱🇻 拉脱维亚 (Latvia) 19 - Chain-Proxy"
       ]
     },
     {
@@ -274,8 +270,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 16 - Chain-Proxy",
         "🇱🇻 拉脱维亚 (Latvia) 17 - Chain-Proxy",
         "🇱🇻 拉脱维亚 (Latvia) 18 - Chain-Proxy",
-        "🇱🇻 拉脱维亚 (Latvia) 19 - Chain-Proxy",
-        "🇱🇻 拉脱维亚 (Latvia) 20 - Chain-Proxy"
+        "🇱🇻 拉脱维亚 (Latvia) 19 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,38 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - Chain-Proxy
-  server: 8.6.112.30
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime08.workers.dev
-- name: 🇨🇿 捷克 (Czech) 02 - Chain-Proxy
-  server: 172.67.152.243
+  server: ade.axiomed.ir
   port: 443
   udp: true
-  type: trojan
-  password: Telegram_healer_config
-  sni: 3W2hk6ZJ92orjcjEdmI77hzC.Ny49nUZ6G33RYkoWAZquNl-b9GuN5T.WoRKERs.dEv
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/e2X4F8y1t8YGOWfIV2ImzqxmdmGEpf?ed=2560
-- name: 🇨🇿 捷克 (Czech) 03 - Chain-Proxy
-  server: 104.21.70.21
-  port: 8080
-  udp: true
   type: vless
-  uuid: 6cc29a05-4828-4e48-a34a-20b7ada60e85
+  uuid: 77702cd2-6a11-40f4-a817-1efeae6f6889
+  tls: true
+  servername: t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /vl/Nmf5YfPITFhUjeHE8KfDU5T8H?ed=2560
     headers:
-      Host: testmikonim.hydrymhmdamyn7.workers.dev
+      Host: t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev
+- name: 🇨🇿 捷克 (Czech) 02 - Chain-Proxy
+  server: 95.85.238.173
+  port: 443
+  udp: true
+  type: hysteria2
+  password: c-E0lamG8OnEj9M_uh3oJPmIXqYIVGctO-NHELF1TmNYs7Jl
+  sni: cz.h2.cleanersaz.help
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,7 +34,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - Chain-Proxy
   - 🇨🇿 捷克 (Czech) 02 - Chain-Proxy
-  - 🇨🇿 捷克 (Czech) 03 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,6 +41,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - Chain-Proxy
   - 🇨🇿 捷克 (Czech) 02 - Chain-Proxy
-  - 🇨🇿 捷克 (Czech) 03 - Chain-Proxy
 rules:
 - MATCH,PROXIES

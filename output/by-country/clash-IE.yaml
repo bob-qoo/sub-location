@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - Chain-Proxy
-  server: 34.242.77.118
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: sacred-anemone.rooster465.autos
-  skip-cert-verify: true
-- name: 🇮🇪 爱尔兰 (Ireland) 02 - Chain-Proxy
   server: 3.253.106.233
   port: 443
   udp: true
@@ -20,6 +12,14 @@ proxies:
   password: UX82473651
   sni: loved-shark.rooster465.autos
   skip-cert-verify: false
+- name: 🇮🇪 爱尔兰 (Ireland) 02 - Chain-Proxy
+  server: 3.255.76.207
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: 3.255.76.207
+  skip-cert-verify: true
 - name: 🇮🇪 爱尔兰 (Ireland) 03 - Chain-Proxy
   server: 198.55.102.59
   port: 4443
@@ -34,12 +34,12 @@ proxies:
   servername: vk.com
   client-fingerprint: chrome
 - name: 🇮🇪 爱尔兰 (Ireland) 04 - Chain-Proxy
-  server: ie.tronsg.com
+  server: 34.242.77.118
   port: 443
   udp: true
   type: trojan
-  password: Trojan@82164024
-  sni: ie.tronsg.com
+  password: UX82473651
+  sni: sacred-anemone.rooster465.autos
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES

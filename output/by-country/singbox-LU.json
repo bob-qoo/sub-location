@@ -4,21 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - Chain-Proxy",
-      "server": "128.241.25.215",
-      "server_port": 30036,
-      "uuid": "196b7228-58df-4bcf-af2a-2e96608d5add",
+      "type": "trojan",
+      "tag": "🇱🇺 卢森堡 (Luxembourg) 01 - Chain-Proxy",
+      "server": "chatgpt.com",
+      "server_port": 443,
+      "password": "Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q",
       "tls": {
         "enabled": true,
-        "server_name": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev",
+        "server_name": "mfyousheng.nl.eu.org",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/@Marisa_kristi ",
+        "path": "/tjwsLhx0SFASG4l9FERJ1g",
         "headers": {
-          "Host": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev"
+          "Host": "mfyousheng.nl.eu.org"
         }
       }
     },
@@ -27,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) - Chain-Proxy"
+        "🇱🇺 卢森堡 (Luxembourg) 01 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) - Chain-Proxy"
+        "🇱🇺 卢森堡 (Luxembourg) 01 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
