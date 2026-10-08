@@ -4,96 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - Chain-Proxy",
-      "server": "188.114.97.6",
+      "server": "cu.877774.xyz",
       "server_port": 443,
-      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
+      "uuid": "f3244e28-157b-49e9-9730-89832f89ebcc",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "ccs2g.pai50288.uk",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/pai50288",
-        "headers": {
-          "Host": "ccs2g.pai50288.uk"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 02 - Chain-Proxy",
-      "server": "172.64.152.23",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
+        "server_name": "balanced-minds-carrier-demanding.trycloudflare.com",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/vmess-argo",
         "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 03 - Chain-Proxy",
-      "server": "172.64.152.23",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 04 - Chain-Proxy",
-      "server": "172.64.152.23",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 05 - Chain-Proxy",
-      "server": "172.64.152.23",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "balanced-minds-carrier-demanding.trycloudflare.com"
         }
       }
     },
@@ -102,22 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - Chain-Proxy",
-        "🌐 其他地区 (Other) 02 - Chain-Proxy",
-        "🌐 其他地区 (Other) 03 - Chain-Proxy",
-        "🌐 其他地区 (Other) 04 - Chain-Proxy",
-        "🌐 其他地区 (Other) 05 - Chain-Proxy"
+        "🌐 其他地区 (Other) 01 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - Chain-Proxy",
-        "🌐 其他地区 (Other) 02 - Chain-Proxy",
-        "🌐 其他地区 (Other) 03 - Chain-Proxy",
-        "🌐 其他地区 (Other) 04 - Chain-Proxy",
-        "🌐 其他地区 (Other) 05 - Chain-Proxy"
+        "🌐 其他地区 (Other) 01 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

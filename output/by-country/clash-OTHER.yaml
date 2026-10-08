@@ -5,83 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - Chain-Proxy
-  server: 188.114.97.6
+  server: cu.877774.xyz
   port: 443
   udp: true
-  type: vless
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  type: vmess
+  uuid: f3244e28-157b-49e9-9730-89832f89ebcc
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: ccs2g.pai50288.uk
+  servername: balanced-minds-carrier-demanding.trycloudflare.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /pai50288
+    path: /vmess-argo
     headers:
-      Host: ccs2g.pai50288.uk
-- name: 🌐 其他地区 (Other) 02 - Chain-Proxy
-  server: 172.64.152.23
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🌐 其他地区 (Other) 03 - Chain-Proxy
-  server: 172.64.152.23
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌐 其他地区 (Other) 04 - Chain-Proxy
-  server: 172.64.152.23
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌐 其他地区 (Other) 05 - Chain-Proxy
-  server: 172.64.152.23
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
+      Host: balanced-minds-carrier-demanding.trycloudflare.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - Chain-Proxy
-  - 🌐 其他地区 (Other) 02 - Chain-Proxy
-  - 🌐 其他地区 (Other) 03 - Chain-Proxy
-  - 🌐 其他地区 (Other) 04 - Chain-Proxy
-  - 🌐 其他地区 (Other) 05 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - Chain-Proxy
-  - 🌐 其他地区 (Other) 02 - Chain-Proxy
-  - 🌐 其他地区 (Other) 03 - Chain-Proxy
-  - 🌐 其他地区 (Other) 04 - Chain-Proxy
-  - 🌐 其他地区 (Other) 05 - Chain-Proxy
 rules:
 - MATCH,PROXIES

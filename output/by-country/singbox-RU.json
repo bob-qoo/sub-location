@@ -6,55 +6,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - Chain-Proxy",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - Chain-Proxy",
       "server": "194.38.11.86",
       "server_port": 65443,
       "method": "aes-256-cfb",
       "password": "7eadc6dbe2ae"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - Chain-Proxy",
-      "server": "srv-17e124.21freedom.net",
-      "server_port": 11592,
-      "password": "41edb44c8e",
-      "tls": {
-        "enabled": true,
-        "server_name": "srv-17e124.21freedom.net",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - Chain-Proxy",
-      "server": "31.130.155.114",
-      "server_port": 443,
-      "uuid": "3c23a041-b686-4d93-af6b-2d793f5c45dc",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.max.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aySWi4vGm4__zU_RFNtym1AyjtfY0AX9WoigfVG7hWA",
-          "short_id": "6c183039c8fe2676"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - Chain-Proxy",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - Chain-Proxy",
       "server": "81.177.215.175",
       "server_port": 443,
       "uuid": "1c5ed2e1-56da-41ab-9a78-159d9892ec17",
@@ -64,7 +23,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -74,9 +33,21 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - Chain-Proxy",
+      "server": "103.88.243.142",
+      "server_port": 11592,
+      "password": "41edb44c8e",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-17e124.21freedom.net",
+        "insecure": false
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - Chain-Proxy",
-      "server": "5.42.99.64",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - Chain-Proxy",
+      "server": "du-rov.secureservice.top",
       "server_port": 8443,
       "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c",
       "flow": "xtls-rprx-vision",
@@ -85,7 +56,7 @@
         "server_name": "du-rov.secureservice.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -96,22 +67,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07 - Chain-Proxy",
-      "server": "5.42.99.64",
-      "server_port": 8443,
-      "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - Chain-Proxy",
+      "server": "45.12.75.242",
+      "server_port": 26424,
+      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
       "tls": {
         "enabled": true,
-        "server_name": "du-rov.secureservice.top",
+        "server_name": "ya.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI",
-          "short_id": "3cbc3d737fb9c4af"
+          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "short_id": "23103e1e"
         }
       }
     },
@@ -124,9 +94,7 @@
         "🇷🇺 俄罗斯 (Russia) 02 - Chain-Proxy",
         "🇷🇺 俄罗斯 (Russia) 03 - Chain-Proxy",
         "🇷🇺 俄罗斯 (Russia) 04 - Chain-Proxy",
-        "🇷🇺 俄罗斯 (Russia) 05 - Chain-Proxy",
-        "🇷🇺 俄罗斯 (Russia) 06 - Chain-Proxy",
-        "🇷🇺 俄罗斯 (Russia) 07 - Chain-Proxy"
+        "🇷🇺 俄罗斯 (Russia) 05 - Chain-Proxy"
       ]
     },
     {
@@ -137,9 +105,7 @@
         "🇷🇺 俄罗斯 (Russia) 02 - Chain-Proxy",
         "🇷🇺 俄罗斯 (Russia) 03 - Chain-Proxy",
         "🇷🇺 俄罗斯 (Russia) 04 - Chain-Proxy",
-        "🇷🇺 俄罗斯 (Russia) 05 - Chain-Proxy",
-        "🇷🇺 俄罗斯 (Russia) 06 - Chain-Proxy",
-        "🇷🇺 俄罗斯 (Russia) 07 - Chain-Proxy"
+        "🇷🇺 俄罗斯 (Russia) 05 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

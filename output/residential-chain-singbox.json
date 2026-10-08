@@ -10,43 +10,47 @@
       "url": "https://www.gstatic.com/generate_204"
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - Chain-Proxy",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21022,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto",
-      "detour": "香港-自动"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - Chain-Proxy",
-      "server": "zfd-hkv1.kunlun01dns.com",
-      "server_port": 16114,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto",
-      "detour": "香港-自动"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - Chain-Proxy",
-      "server": "p141.panda001.net",
-      "server_port": 4652,
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - Chain-Proxy",
+      "server": "49.254.204.133",
+      "server_port": 1774,
       "method": "aes-256-cfb",
-      "password": "qwerREWQ@@",
+      "password": "1234!@#$",
       "detour": "香港-自动"
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 (移动家宽) R50 - Chain-Proxy",
-      "server": "test.keoplentuio.xyz",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - Chain-Proxy",
+      "server": "178.83.46.91",
       "server_port": 2053,
       "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f",
       "detour": "香港-自动"
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - Chain-Proxy",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy",
+      "server": "t4.qifei.app",
+      "server_port": 443,
+      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "s3.ap-east-1.amazonaws.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
+          "short_id": ""
+        }
+      },
+      "detour": "香港-自动"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy",
       "server": "61.230.162.88",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -66,26 +70,47 @@
       "detour": "香港-自动"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 05 (家宽) - Chain-Proxy",
+      "server": "p141.panda001.net",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@",
+      "detour": "香港-自动"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Chain-Proxy",
+      "server": "sbgfgov.vip23.wogacnmnagfwgov.com",
+      "server_port": 11223,
+      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
+      "security": "auto",
+      "alter_id": 2,
+      "detour": "香港-自动"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - Chain-Proxy",
-        "🇰🇷 韩国 (South Korea) 03 (家宽) - Chain-Proxy",
-        "🇹🇷 土耳其 (Turkey) 04 (移动家宽) R50 - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - Chain-Proxy"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - Chain-Proxy",
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - Chain-Proxy",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy",
+        "🇰🇷 韩国 (South Korea) 05 (家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - Chain-Proxy",
-        "🇰🇷 韩国 (South Korea) 03 (家宽) - Chain-Proxy",
-        "🇹🇷 土耳其 (Turkey) 04 (移动家宽) R50 - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - Chain-Proxy"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - Chain-Proxy",
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - Chain-Proxy",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy",
+        "🇰🇷 韩国 (South Korea) 05 (家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
