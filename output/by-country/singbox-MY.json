@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇲🇾 马来西亚 (Malaysia) 01 - Chain-Proxy",
-      "server": "45.194.27.124",
+      "server": "platform101.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
@@ -20,12 +20,15 @@
     {
       "type": "vless",
       "tag": "🇲🇾 马来西亚 (Malaysia) 02 - Chain-Proxy",
-      "server": "166.88.35.199",
+      "server": "platform102.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform102"
+        "path": "/platform102",
+        "headers": {
+          "Host": "platform102.halalkhor.info"
+        }
       }
     },
     {

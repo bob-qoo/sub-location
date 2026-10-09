@@ -20,8 +20,27 @@
       "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 03 - Chain-Proxy",
+      "server": "144.31.212.253",
+      "server_port": 443,
+      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
+      "tls": {
+        "enabled": true,
+        "server_name": "144.31.212.253",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - Chain-Proxy",
+      "server": "vpn.cyrionflare.xyz",
+      "server_port": 2087,
+      "uuid": "15f434b8-aaec-4306-98c9-dd8f5ef608d4"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - Chain-Proxy",
       "server": "151.241.137.132",
       "server_port": 443,
       "uuid": "5786d86f-7731-4174-b1a3-84297e54b015",
@@ -41,30 +60,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - Chain-Proxy",
-      "server": "144.31.212.253",
-      "server_port": 443,
-      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
-      "tls": {
-        "enabled": true,
-        "server_name": "vps155-edge.kermemehori.ru",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - Chain-Proxy",
-      "server": "87.251.17.11",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 06 - Chain-Proxy",
       "server": "95.216.27.15",
@@ -75,7 +70,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -96,7 +91,7 @@
         "server_name": "144.31.27.215",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -106,82 +101,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 08 - Chain-Proxy",
-      "server": "217.19.122.214",
-      "server_port": 7449,
-      "uuid": "985fbc4e-f2fd-4a7f-b09f-f9b7728dd0a4",
-      "flow": "xtls-rprx-vision",
+      "server": "87.251.17.11",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
       "tls": {
         "enabled": true,
-        "server_name": "passport.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "OGMQnJGgrCYDojFm4u7YrvOoOmtjK6iZ4_q-Kmanozs",
-          "short_id": "03cf706025caa46e"
-        }
+        "server_name": "onecloudstream.com",
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 09 - Chain-Proxy",
-      "server": "65.108.3.59",
-      "server_port": 443,
-      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "web.eitaa.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
-          "short_id": "90ec9bba2019"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 10 - Chain-Proxy",
-      "server": "45.149.114.171",
-      "server_port": 777,
-      "method": "chacha20-ietf-poly1305",
-      "password": "Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 11 - Chain-Proxy",
-      "server": "45.133.151.188",
-      "server_port": 443,
-      "uuid": "9a0e84f8-4b58-477f-99da-5fac5a2e58e8",
-      "tls": {
-        "enabled": true,
-        "server_name": "36a466g.fi1.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg",
-          "short_id": "b3c9d0c6bdd114a6"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "0adb9638509b"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 12 - Chain-Proxy",
       "server": "van2.ragnarok-it.xyz",
       "server_port": 8446,
       "uuid": "a61496c3-f256-4a36-8a52-8638b9cc900a",
@@ -202,7 +135,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 13 - Chain-Proxy",
+      "tag": "🇫🇮 芬兰 (Finland) 10 - Chain-Proxy",
       "server": "87.242.94.90",
       "server_port": 8443,
       "uuid": "f23bc4f1-cc71-4003-ae6c-d6abe21d8191",
@@ -222,6 +155,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 11 - Chain-Proxy",
+      "server": "65.108.3.59",
+      "server_port": 443,
+      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.eitaa.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
+          "short_id": "90ec9bba2019"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -236,9 +190,7 @@
         "🇫🇮 芬兰 (Finland) 08 - Chain-Proxy",
         "🇫🇮 芬兰 (Finland) 09 - Chain-Proxy",
         "🇫🇮 芬兰 (Finland) 10 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 11 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 12 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 13 - Chain-Proxy"
+        "🇫🇮 芬兰 (Finland) 11 - Chain-Proxy"
       ]
     },
     {
@@ -255,9 +207,7 @@
         "🇫🇮 芬兰 (Finland) 08 - Chain-Proxy",
         "🇫🇮 芬兰 (Finland) 09 - Chain-Proxy",
         "🇫🇮 芬兰 (Finland) 10 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 11 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 12 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 13 - Chain-Proxy"
+        "🇫🇮 芬兰 (Finland) 11 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
