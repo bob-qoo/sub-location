@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - Chain-Proxy
-  server: 144.31.62.162
-  port: 443
-  udp: true
-  type: vless
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: de2.srv.vbuste.ru
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -32,7 +19,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
-- name: 🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy
+- name: 🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy
   server: swidenlanzerotte.live
   port: 443
   udp: true
@@ -51,7 +38,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - Chain-Proxy
   - 🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy
-  - 🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,6 +45,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - Chain-Proxy
   - 🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy
-  - 🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy
 rules:
 - MATCH,PROXIES

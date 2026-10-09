@@ -20,8 +20,32 @@
       "password": "Y6R9pAtvxxzmGC"
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇨🇦 加拿大 (Canada) 03 - Chain-Proxy",
+      "server": "134.195.196.211",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇨🇦 加拿大 (Canada) 04 - Chain-Proxy",
+      "server": "23.162.200.198",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 05 - Chain-Proxy",
+      "server": "137.184.174.93",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 06 - Chain-Proxy",
       "server": "66.70.179.198",
       "server_port": 2053,
       "uuid": "dc620cd6-a9d8-4a0f-8f18-006b895db77e",
@@ -30,7 +54,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -40,8 +64,16 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 07 - Chain-Proxy",
+      "server": "138.197.141.58",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 04 - Chain-Proxy",
+      "tag": "🇨🇦 加拿大 (Canada) 08 - Chain-Proxy",
       "server": "209.200.246.148",
       "server_port": 443,
       "uuid": "ca52e2b6-fb9f-4dac-b6dc-49da9923f251",
@@ -62,62 +94,22 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 05 - Chain-Proxy",
-      "server": "138.197.141.58",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 06 - Chain-Proxy",
-      "server": "137.184.174.93",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 07 - Chain-Proxy",
-      "server": "134.195.196.211",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 08 - Chain-Proxy",
-      "server": "23.162.200.198",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
+      "tag": "🇨🇦 加拿大 (Canada) 09 - Chain-Proxy",
+      "server": "51.222.136.236",
+      "server_port": 8882,
+      "method": "aes-256-gcm",
+      "password": "kDWvXYZoTBcGkC4"
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 09 - Chain-Proxy",
-      "server": "178.83.46.91",
+      "tag": "🇨🇦 加拿大 (Canada) 10 - Chain-Proxy",
+      "server": "212.74.39.188",
       "server_port": 8080,
       "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 10 - Chain-Proxy",
-      "server": "51.222.141.125",
-      "server_port": 445,
-      "method": "aes-256-gcm",
-      "password": "zDNVedRFPQexG9v"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 11 - Chain-Proxy",
-      "server": "51.222.12.127",
-      "server_port": 445,
-      "method": "aes-256-gcm",
-      "password": "zDNVedRFPQexG9v"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 12 - Chain-Proxy",
       "server": "51.222.107.43",
       "server_port": 2083,
       "method": "2022-blake3-aes-256-gcm",
@@ -125,26 +117,19 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 13 - Chain-Proxy",
-      "server": "51.222.136.236",
-      "server_port": 8882,
+      "tag": "🇨🇦 加拿大 (Canada) 12 - Chain-Proxy",
+      "server": "51.222.12.127",
+      "server_port": 445,
       "method": "aes-256-gcm",
-      "password": "kDWvXYZoTBcGkC4"
+      "password": "zDNVedRFPQexG9v"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 14 - Chain-Proxy",
-      "server": "51.79.64.198",
-      "server_port": 8119,
+      "tag": "🇨🇦 加拿大 (Canada) 13 - Chain-Proxy",
+      "server": "51.222.155.32",
+      "server_port": 5003,
       "method": "aes-256-gcm",
-      "password": "cdBIDV42DCwnfIN"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 15 - Chain-Proxy",
-      "server": "194.77.220.104",
-      "server_port": 8080,
-      "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
+      "password": "g5MeD6Ft3CWlJId"
     },
     {
       "type": "selector",
@@ -163,9 +148,7 @@
         "🇨🇦 加拿大 (Canada) 10 - Chain-Proxy",
         "🇨🇦 加拿大 (Canada) 11 - Chain-Proxy",
         "🇨🇦 加拿大 (Canada) 12 - Chain-Proxy",
-        "🇨🇦 加拿大 (Canada) 13 - Chain-Proxy",
-        "🇨🇦 加拿大 (Canada) 14 - Chain-Proxy",
-        "🇨🇦 加拿大 (Canada) 15 - Chain-Proxy"
+        "🇨🇦 加拿大 (Canada) 13 - Chain-Proxy"
       ]
     },
     {
@@ -184,9 +167,7 @@
         "🇨🇦 加拿大 (Canada) 10 - Chain-Proxy",
         "🇨🇦 加拿大 (Canada) 11 - Chain-Proxy",
         "🇨🇦 加拿大 (Canada) 12 - Chain-Proxy",
-        "🇨🇦 加拿大 (Canada) 13 - Chain-Proxy",
-        "🇨🇦 加拿大 (Canada) 14 - Chain-Proxy",
-        "🇨🇦 加拿大 (Canada) 15 - Chain-Proxy"
+        "🇨🇦 加拿大 (Canada) 13 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
