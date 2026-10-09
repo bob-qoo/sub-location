@@ -15,33 +15,33 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 02 - Chain-Proxy",
       "server": "195.238.126.20",
+      "server_port": 9045,
+      "method": "aes-256-cfb",
+      "password": "Lp27rqyJq72bZsqX"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - Chain-Proxy",
+      "server": "195.238.126.20",
       "server_port": 9078,
       "method": "aes-256-cfb",
       "password": "JCJpbRbQZNw9XFZG"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - Chain-Proxy",
-      "server": "195.238.126.20",
-      "server_port": 9086,
-      "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 04 - Chain-Proxy",
       "server": "195.238.126.20",
-      "server_port": 9012,
+      "server_port": 9001,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
+      "password": "UkXRsXvR6buDMG2Y"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 05 - Chain-Proxy",
       "server": "195.238.126.20",
-      "server_port": 9045,
+      "server_port": 9012,
       "method": "aes-256-cfb",
-      "password": "Lp27rqyJq72bZsqX"
+      "password": "xaupMUvhptwxdDUg"
     },
     {
       "type": "shadowsocks",
@@ -55,9 +55,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 07 - Chain-Proxy",
       "server": "195.238.126.20",
-      "server_port": 9001,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "UkXRsXvR6buDMG2Y"
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "vless",
@@ -71,7 +71,7 @@
         "server_name": "online.1c.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
