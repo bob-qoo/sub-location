@@ -14,6 +14,70 @@
     {
       "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy",
+      "server": "42.200.173.5",
+      "server_port": 443,
+      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "s3.ap-east-1.amazonaws.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
+          "short_id": "1a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 03 (家宽) - Chain-Proxy",
+      "server": "209.38.238.229",
+      "server_port": 20202,
+      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
+      "tls": {
+        "enabled": true,
+        "server_name": "wzs.echo.net.eu.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=",
+        "headers": {
+          "Host": "wzs.echo.net.eu.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy",
+      "server": "hinet1.2yly.com",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - Chain-Proxy",
       "server": "61.18.134.10",
       "server_port": 443,
       "uuid": "e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384",
@@ -32,72 +96,19 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - Chain-Proxy",
-      "server": "212.74.39.188",
+      "tag": "🇹🇷 土耳其 (Turkey) 06 (移动家宽) - Chain-Proxy",
+      "server": "test.keoplentuio.xyz",
       "server_port": 2053,
       "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Chain-Proxy",
-      "server": "t4.qifei.app",
-      "server_port": 443,
-      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "s3.ap-east-1.amazonaws.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
-          "short_id": "1a"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - Chain-Proxy",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Chain-Proxy",
       "server": "sbgfgov.vip24.wogacnmnagfwgov.com",
       "server_port": 11224,
       "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
       "security": "auto",
       "alter_id": 2
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 06 (家宽) - Chain-Proxy",
-      "server": "s3.huhiuh.space",
-      "server_port": 18642,
-      "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
-      "tls": {
-        "enabled": true,
-        "server_name": "s3.huhiuh.space",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Chain-Proxy",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
-      }
     },
     {
       "type": "selector",
@@ -106,10 +117,10 @@
         "auto",
         "🇰🇷 韩国 (South Korea) 01 (家宽) - Chain-Proxy",
         "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - Chain-Proxy",
-        "🇸🇬 新加坡 (Singapore) 06 (家宽) - Chain-Proxy",
+        "🇩🇪 德国 (Germany) 03 (家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy",
+        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - Chain-Proxy",
+        "🇹🇷 土耳其 (Turkey) 06 (移动家宽) - Chain-Proxy",
         "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Chain-Proxy"
       ]
     },
@@ -119,10 +130,10 @@
       "outbounds": [
         "🇰🇷 韩国 (South Korea) 01 (家宽) - Chain-Proxy",
         "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - Chain-Proxy",
-        "🇸🇬 新加坡 (Singapore) 06 (家宽) - Chain-Proxy",
+        "🇩🇪 德国 (Germany) 03 (家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy",
+        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - Chain-Proxy",
+        "🇹🇷 土耳其 (Turkey) 06 (移动家宽) - Chain-Proxy",
         "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
