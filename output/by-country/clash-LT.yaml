@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - Chain-Proxy
   server: 195.238.126.20
-  port: 9078
+  port: 9012
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: JCJpbRbQZNw9XFZG
+  password: xaupMUvhptwxdDUg
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - Chain-Proxy
   server: 195.238.126.20
-  port: 9045
+  port: 9002
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
+  password: b8KkNDjEd5QqFyRm
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - Chain-Proxy
   server: 195.238.126.20
   port: 9008
@@ -26,19 +26,19 @@ proxies:
   cipher: aes-256-cfb
   password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 (Lithuania) 04 - Chain-Proxy
-  server: 195.238.126.20
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - Chain-Proxy
   server: 195.238.126.84
   port: 9039
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qYEN5HX4JKeVCdEC
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - Chain-Proxy
+  server: 195.238.126.20
+  port: 9045
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Lp27rqyJq72bZsqX
 - name: 🇱🇹 立陶宛 (Lithuania) 06 - Chain-Proxy
   server: 195.238.126.20
   port: 9086
@@ -48,11 +48,11 @@ proxies:
   password: 37Z4TFCYhfxcpc9Q
 - name: 🇱🇹 立陶宛 (Lithuania) 07 - Chain-Proxy
   server: 195.238.126.20
-  port: 9012
+  port: 9078
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
+  password: JCJpbRbQZNw9XFZG
 - name: 🇱🇹 立陶宛 (Lithuania) 08 - Chain-Proxy
   server: 195.238.126.20
   port: 9001
@@ -60,6 +60,13 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: UkXRsXvR6buDMG2Y
+- name: 🇱🇹 立陶宛 (Lithuania) 09 - Chain-Proxy
+  server: 195.238.126.20
+  port: 9068
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mwgRg9hRq3b4Qnwb
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,6 +80,7 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 06 - Chain-Proxy
   - 🇱🇹 立陶宛 (Lithuania) 07 - Chain-Proxy
   - 🇱🇹 立陶宛 (Lithuania) 08 - Chain-Proxy
+  - 🇱🇹 立陶宛 (Lithuania) 09 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -86,5 +94,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 06 - Chain-Proxy
   - 🇱🇹 立陶宛 (Lithuania) 07 - Chain-Proxy
   - 🇱🇹 立陶宛 (Lithuania) 08 - Chain-Proxy
+  - 🇱🇹 立陶宛 (Lithuania) 09 - Chain-Proxy
 rules:
 - MATCH,PROXIES

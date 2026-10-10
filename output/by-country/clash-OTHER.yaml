@@ -1,0 +1,96 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🌐 其他地区 (Other) 01 - Chain-Proxy
+  server: 104.19.229.21
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🌐 其他地区 (Other) 02 - Chain-Proxy
+  server: 104.19.229.21
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🌐 其他地区 (Other) 03 - Chain-Proxy
+  server: 104.19.229.21
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🌐 其他地区 (Other) 04 - Chain-Proxy
+  server: 104.19.229.21
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: //assignment
+- name: 🌐 其他地区 (Other) 05 - Chain-Proxy
+  server: 104.19.229.21
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.volumeroot.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🌐 其他地区 (Other) 06 - Chain-Proxy
+  server: 104.19.229.21
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🌐 其他地区 (Other) 01 - Chain-Proxy
+  - 🌐 其他地区 (Other) 02 - Chain-Proxy
+  - 🌐 其他地区 (Other) 03 - Chain-Proxy
+  - 🌐 其他地区 (Other) 04 - Chain-Proxy
+  - 🌐 其他地区 (Other) 05 - Chain-Proxy
+  - 🌐 其他地区 (Other) 06 - Chain-Proxy
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🌐 其他地区 (Other) 01 - Chain-Proxy
+  - 🌐 其他地区 (Other) 02 - Chain-Proxy
+  - 🌐 其他地区 (Other) 03 - Chain-Proxy
+  - 🌐 其他地区 (Other) 04 - Chain-Proxy
+  - 🌐 其他地区 (Other) 05 - Chain-Proxy
+  - 🌐 其他地区 (Other) 06 - Chain-Proxy
+rules:
+- MATCH,PROXIES
