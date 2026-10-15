@@ -69,6 +69,8 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/mohammadaz2/v2rayConfigsForYou/main/configs.txt",
     "https://raw.githubusercontent.com/ninjastrikers/Nexus-nodes/main/configs/all.txt",
     "https://raw.githubusercontent.com/coldwater-10/V2rayCollectorLire/main/mixed_iran.txt",
+    "https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_RAW.txt",
+    "https://shadowmere.akiel.dev/api/b64sub/",
 ]
 
 OUTPUT_DIR = "output"
