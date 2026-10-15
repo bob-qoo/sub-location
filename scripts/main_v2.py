@@ -53,9 +53,6 @@ except ImportError as e:
 # ══════════════════════════════════════════════════════════════════
 
 SOURCE_URLS = [
-    # 2026-10-15: morpheusadam/v2ray-config (6万+节点) 已永久拉黑 —— 2026-09-29 起实测
-    # 单源 6 万节点会把全量测活拖到 2 小时以上、跑满 Action 超时上限, 禁止 daily_maintain.py 重新加回
-    # (NEVER_ADD blocklist)。如需恢复, 先解决测活吞吐再手动加。
     "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-TW.txt",
     "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/all.txt",
     "https://raw.githubusercontent.com/10ium/HiN-VPN/main/subscription/base64/mix",
