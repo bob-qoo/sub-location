@@ -4,12 +4,18 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - Chain-Proxy",
-      "server": "139.84.166.47",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "GEdoeeqLZtkJRgSa"
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "13.140.56.100"
+        }
+      }
     },
     {
       "type": "vless",
@@ -32,15 +38,18 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vmess",
       "tag": "🇮🇳 印度 (India) 03 - Chain-Proxy",
-      "server": "in.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "in.tronsg.com",
-        "insecure": true
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "152.67.8.205"
+        }
       }
     },
     {
@@ -65,337 +74,6 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 05 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 06 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 07 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 08 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 09 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "152.67.8.205"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 10 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 11 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 12 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 13 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 14 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 15 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 16 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "152.67.8.205"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 17 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 18 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 19 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "152.67.8.205"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 20 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 21 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 22 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "152.67.8.205"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 23 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 24 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 25 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "152.67.8.205"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 26 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "152.67.8.205"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 27 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "152.67.8.205"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 28 - Chain-Proxy",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 29 - Chain-Proxy",
-      "server": "13.140.56.100",
-      "server_port": 14430,
-      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "13.140.56.100"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 30 - Chain-Proxy",
-      "server": "172.105.39.124",
-      "server_port": 7002,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -403,33 +81,7 @@
         "🇮🇳 印度 (India) 01 - Chain-Proxy",
         "🇮🇳 印度 (India) 02 - Chain-Proxy",
         "🇮🇳 印度 (India) 03 - Chain-Proxy",
-        "🇮🇳 印度 (India) 04 - Chain-Proxy",
-        "🇮🇳 印度 (India) 05 - Chain-Proxy",
-        "🇮🇳 印度 (India) 06 - Chain-Proxy",
-        "🇮🇳 印度 (India) 07 - Chain-Proxy",
-        "🇮🇳 印度 (India) 08 - Chain-Proxy",
-        "🇮🇳 印度 (India) 09 - Chain-Proxy",
-        "🇮🇳 印度 (India) 10 - Chain-Proxy",
-        "🇮🇳 印度 (India) 11 - Chain-Proxy",
-        "🇮🇳 印度 (India) 12 - Chain-Proxy",
-        "🇮🇳 印度 (India) 13 - Chain-Proxy",
-        "🇮🇳 印度 (India) 14 - Chain-Proxy",
-        "🇮🇳 印度 (India) 15 - Chain-Proxy",
-        "🇮🇳 印度 (India) 16 - Chain-Proxy",
-        "🇮🇳 印度 (India) 17 - Chain-Proxy",
-        "🇮🇳 印度 (India) 18 - Chain-Proxy",
-        "🇮🇳 印度 (India) 19 - Chain-Proxy",
-        "🇮🇳 印度 (India) 20 - Chain-Proxy",
-        "🇮🇳 印度 (India) 21 - Chain-Proxy",
-        "🇮🇳 印度 (India) 22 - Chain-Proxy",
-        "🇮🇳 印度 (India) 23 - Chain-Proxy",
-        "🇮🇳 印度 (India) 24 - Chain-Proxy",
-        "🇮🇳 印度 (India) 25 - Chain-Proxy",
-        "🇮🇳 印度 (India) 26 - Chain-Proxy",
-        "🇮🇳 印度 (India) 27 - Chain-Proxy",
-        "🇮🇳 印度 (India) 28 - Chain-Proxy",
-        "🇮🇳 印度 (India) 29 - Chain-Proxy",
-        "🇮🇳 印度 (India) 30 - Chain-Proxy"
+        "🇮🇳 印度 (India) 04 - Chain-Proxy"
       ]
     },
     {
@@ -439,33 +91,7 @@
         "🇮🇳 印度 (India) 01 - Chain-Proxy",
         "🇮🇳 印度 (India) 02 - Chain-Proxy",
         "🇮🇳 印度 (India) 03 - Chain-Proxy",
-        "🇮🇳 印度 (India) 04 - Chain-Proxy",
-        "🇮🇳 印度 (India) 05 - Chain-Proxy",
-        "🇮🇳 印度 (India) 06 - Chain-Proxy",
-        "🇮🇳 印度 (India) 07 - Chain-Proxy",
-        "🇮🇳 印度 (India) 08 - Chain-Proxy",
-        "🇮🇳 印度 (India) 09 - Chain-Proxy",
-        "🇮🇳 印度 (India) 10 - Chain-Proxy",
-        "🇮🇳 印度 (India) 11 - Chain-Proxy",
-        "🇮🇳 印度 (India) 12 - Chain-Proxy",
-        "🇮🇳 印度 (India) 13 - Chain-Proxy",
-        "🇮🇳 印度 (India) 14 - Chain-Proxy",
-        "🇮🇳 印度 (India) 15 - Chain-Proxy",
-        "🇮🇳 印度 (India) 16 - Chain-Proxy",
-        "🇮🇳 印度 (India) 17 - Chain-Proxy",
-        "🇮🇳 印度 (India) 18 - Chain-Proxy",
-        "🇮🇳 印度 (India) 19 - Chain-Proxy",
-        "🇮🇳 印度 (India) 20 - Chain-Proxy",
-        "🇮🇳 印度 (India) 21 - Chain-Proxy",
-        "🇮🇳 印度 (India) 22 - Chain-Proxy",
-        "🇮🇳 印度 (India) 23 - Chain-Proxy",
-        "🇮🇳 印度 (India) 24 - Chain-Proxy",
-        "🇮🇳 印度 (India) 25 - Chain-Proxy",
-        "🇮🇳 印度 (India) 26 - Chain-Proxy",
-        "🇮🇳 印度 (India) 27 - Chain-Proxy",
-        "🇮🇳 印度 (India) 28 - Chain-Proxy",
-        "🇮🇳 印度 (India) 29 - Chain-Proxy",
-        "🇮🇳 印度 (India) 30 - Chain-Proxy"
+        "🇮🇳 印度 (India) 04 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

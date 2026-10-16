@@ -5,12 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - Chain-Proxy
-  server: 139.84.166.47
-  port: 8388
+  server: 13.140.56.100
+  port: 14430
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: GEdoeeqLZtkJRgSa
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 02 - Chain-Proxy
   server: 194.61.31.126
   port: 2053
@@ -24,13 +28,18 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 03 - Chain-Proxy
-  server: in.tronsg.com
-  port: 443
+  server: 152.67.8.205
+  port: 80
   udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: in.tronsg.com
-  skip-cert-verify: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.67.8.205
 - name: 🇮🇳 印度 (India) 04 - Chain-Proxy
   server: 148.113.5.44
   port: 443
@@ -44,302 +53,6 @@ proxies:
     short-id: 221873918e0bb74d
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 05 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 06 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 07 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 08 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 09 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.67.8.205
-- name: 🇮🇳 印度 (India) 10 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 11 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 12 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 13 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 14 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 15 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 16 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.67.8.205
-- name: 🇮🇳 印度 (India) 17 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 18 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 19 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.67.8.205
-- name: 🇮🇳 印度 (India) 20 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 21 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 22 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.67.8.205
-- name: 🇮🇳 印度 (India) 23 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 24 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 25 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.67.8.205
-- name: 🇮🇳 印度 (India) 26 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.67.8.205
-- name: 🇮🇳 印度 (India) 27 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.67.8.205
-- name: 🇮🇳 印度 (India) 28 - Chain-Proxy
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 29 - Chain-Proxy
-  server: 13.140.56.100
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 30 - Chain-Proxy
-  server: 172.105.39.124
-  port: 7002
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
 proxy-groups:
 - name: PROXIES
   type: select
@@ -349,32 +62,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - Chain-Proxy
   - 🇮🇳 印度 (India) 03 - Chain-Proxy
   - 🇮🇳 印度 (India) 04 - Chain-Proxy
-  - 🇮🇳 印度 (India) 05 - Chain-Proxy
-  - 🇮🇳 印度 (India) 06 - Chain-Proxy
-  - 🇮🇳 印度 (India) 07 - Chain-Proxy
-  - 🇮🇳 印度 (India) 08 - Chain-Proxy
-  - 🇮🇳 印度 (India) 09 - Chain-Proxy
-  - 🇮🇳 印度 (India) 10 - Chain-Proxy
-  - 🇮🇳 印度 (India) 11 - Chain-Proxy
-  - 🇮🇳 印度 (India) 12 - Chain-Proxy
-  - 🇮🇳 印度 (India) 13 - Chain-Proxy
-  - 🇮🇳 印度 (India) 14 - Chain-Proxy
-  - 🇮🇳 印度 (India) 15 - Chain-Proxy
-  - 🇮🇳 印度 (India) 16 - Chain-Proxy
-  - 🇮🇳 印度 (India) 17 - Chain-Proxy
-  - 🇮🇳 印度 (India) 18 - Chain-Proxy
-  - 🇮🇳 印度 (India) 19 - Chain-Proxy
-  - 🇮🇳 印度 (India) 20 - Chain-Proxy
-  - 🇮🇳 印度 (India) 21 - Chain-Proxy
-  - 🇮🇳 印度 (India) 22 - Chain-Proxy
-  - 🇮🇳 印度 (India) 23 - Chain-Proxy
-  - 🇮🇳 印度 (India) 24 - Chain-Proxy
-  - 🇮🇳 印度 (India) 25 - Chain-Proxy
-  - 🇮🇳 印度 (India) 26 - Chain-Proxy
-  - 🇮🇳 印度 (India) 27 - Chain-Proxy
-  - 🇮🇳 印度 (India) 28 - Chain-Proxy
-  - 🇮🇳 印度 (India) 29 - Chain-Proxy
-  - 🇮🇳 印度 (India) 30 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -384,31 +71,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - Chain-Proxy
   - 🇮🇳 印度 (India) 03 - Chain-Proxy
   - 🇮🇳 印度 (India) 04 - Chain-Proxy
-  - 🇮🇳 印度 (India) 05 - Chain-Proxy
-  - 🇮🇳 印度 (India) 06 - Chain-Proxy
-  - 🇮🇳 印度 (India) 07 - Chain-Proxy
-  - 🇮🇳 印度 (India) 08 - Chain-Proxy
-  - 🇮🇳 印度 (India) 09 - Chain-Proxy
-  - 🇮🇳 印度 (India) 10 - Chain-Proxy
-  - 🇮🇳 印度 (India) 11 - Chain-Proxy
-  - 🇮🇳 印度 (India) 12 - Chain-Proxy
-  - 🇮🇳 印度 (India) 13 - Chain-Proxy
-  - 🇮🇳 印度 (India) 14 - Chain-Proxy
-  - 🇮🇳 印度 (India) 15 - Chain-Proxy
-  - 🇮🇳 印度 (India) 16 - Chain-Proxy
-  - 🇮🇳 印度 (India) 17 - Chain-Proxy
-  - 🇮🇳 印度 (India) 18 - Chain-Proxy
-  - 🇮🇳 印度 (India) 19 - Chain-Proxy
-  - 🇮🇳 印度 (India) 20 - Chain-Proxy
-  - 🇮🇳 印度 (India) 21 - Chain-Proxy
-  - 🇮🇳 印度 (India) 22 - Chain-Proxy
-  - 🇮🇳 印度 (India) 23 - Chain-Proxy
-  - 🇮🇳 印度 (India) 24 - Chain-Proxy
-  - 🇮🇳 印度 (India) 25 - Chain-Proxy
-  - 🇮🇳 印度 (India) 26 - Chain-Proxy
-  - 🇮🇳 印度 (India) 27 - Chain-Proxy
-  - 🇮🇳 印度 (India) 28 - Chain-Proxy
-  - 🇮🇳 印度 (India) 29 - Chain-Proxy
-  - 🇮🇳 印度 (India) 30 - Chain-Proxy
 rules:
 - MATCH,PROXIES
