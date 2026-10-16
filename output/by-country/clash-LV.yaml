@@ -5,21 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - Chain-Proxy
+  server: 138.124.180.137
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - Chain-Proxy
   server: 185.135.86.175
   port: 9082
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 45xgMgm386pjWjTx
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - Chain-Proxy
-  server: 185.135.86.175
-  port: 9017
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: HAVAdE3nXhqA5nHp
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - Chain-Proxy
-  server: 185.220.223.25
+  server: 185.220.223.24
   port: 443
   udp: true
   type: vless
@@ -30,7 +36,7 @@ proxies:
     public-key: ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg
     short-id: 3c6afdc4124d0560
   servername: lv.aiage.work
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 04 - Chain-Proxy
   server: 195.123.213.28
   port: 443
@@ -45,41 +51,7 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 05 - Chain-Proxy
-  server: 185.135.86.175
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - Chain-Proxy
-  server: 185.135.86.175
-  port: 9007
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: kSPmvwdFzGMMW5pY
-- name: 🇱🇻 拉脱维亚 (Latvia) 07 - Chain-Proxy
-  server: 185.135.86.175
-  port: 9036
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
-- name: 🇱🇻 拉脱维亚 (Latvia) 08 - Chain-Proxy
-  server: 138.124.180.137
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 (Latvia) 09 - Chain-Proxy
-  server: lv.aiage.work
+  server: 185.220.223.25
   port: 443
   udp: true
   type: vless
@@ -91,6 +63,19 @@ proxies:
     short-id: 3c6afdc4124d0560
   servername: lv.aiage.work
   client-fingerprint: firefox
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - Chain-Proxy
+  server: 195.123.208.32
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1ebcb694-875c-4be7-b6a2-d53c8208991b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk
+    short-id: 757b9e1ef18e60f0
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -102,9 +87,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 04 - Chain-Proxy
   - 🇱🇻 拉脱维亚 (Latvia) 05 - Chain-Proxy
   - 🇱🇻 拉脱维亚 (Latvia) 06 - Chain-Proxy
-  - 🇱🇻 拉脱维亚 (Latvia) 07 - Chain-Proxy
-  - 🇱🇻 拉脱维亚 (Latvia) 08 - Chain-Proxy
-  - 🇱🇻 拉脱维亚 (Latvia) 09 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -116,8 +98,5 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 04 - Chain-Proxy
   - 🇱🇻 拉脱维亚 (Latvia) 05 - Chain-Proxy
   - 🇱🇻 拉脱维亚 (Latvia) 06 - Chain-Proxy
-  - 🇱🇻 拉脱维亚 (Latvia) 07 - Chain-Proxy
-  - 🇱🇻 拉脱维亚 (Latvia) 08 - Chain-Proxy
-  - 🇱🇻 拉脱维亚 (Latvia) 09 - Chain-Proxy
 rules:
 - MATCH,PROXIES
