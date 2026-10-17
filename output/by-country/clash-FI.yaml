@@ -28,7 +28,7 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - Chain-Proxy
   server: 45.144.234.157
   port: 14430
@@ -41,17 +41,30 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 04 - Chain-Proxy
-  server: mci.amir12.ir
-  port: 2112
+  server: 31.77.199.147
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - Chain-Proxy
+  server: 77.42.73.93
+  port: 1222
   udp: true
   type: vless
   uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
   tls: true
   reality-opts:
-    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
-    short-id: 125ba3
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
   servername: play.google.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +74,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 03 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 04 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 05 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,5 +84,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 03 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 04 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 05 - Chain-Proxy
 rules:
 - MATCH,PROXIES
