@@ -4,31 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - Chain-Proxy",
-      "server": "155.117.19.17",
-      "server_port": 443,
-      "password": "5fa748137b6d822308eea4611f474ad5",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - Chain-Proxy",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Chain-Proxy",
       "server": "test.keoplentuio.xyz",
       "server_port": 2053,
       "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy",
       "server": "118.167.219.24",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -47,42 +31,20 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 04 (家宽) - Chain-Proxy",
-      "server": "p141.panda001.net",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 (移动家宽) - Chain-Proxy",
-      "server": "zfd-hkv1.kunlun01dns.com",
-      "server_port": 16115,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - Chain-Proxy",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy",
-        "🇰🇷 韩国 (South Korea) 04 (家宽) - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 05 (移动家宽) - Chain-Proxy"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - Chain-Proxy",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy",
-        "🇰🇷 韩国 (South Korea) 04 (家宽) - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 05 (移动家宽) - Chain-Proxy"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
