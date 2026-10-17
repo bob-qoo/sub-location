@@ -7,25 +7,17 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - Chain-Proxy",
       "server": "213.183.63.60",
-      "server_port": 9029,
+      "server_port": 9066,
       "method": "aes-256-cfb",
-      "password": "dU3DSNS8wYPXzEKw"
+      "password": "2KUaE2a8NWTvuCZ3"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy",
       "server": "213.183.63.60",
-      "server_port": 9054,
+      "server_port": 9064,
       "method": "aes-256-cfb",
-      "password": "VcFuyXvND2yQWSFY"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy",
-      "server": "213.183.63.60",
-      "server_port": 9085,
-      "method": "aes-256-cfb",
-      "password": "9ej82EKe2gq7gLAM"
+      "password": "cp8pRSUAyLhTfVWH"
     },
     {
       "type": "selector",
@@ -33,8 +25,7 @@
       "outbounds": [
         "auto",
         "🇧🇬 保加利亚 (Bulgaria) 01 - Chain-Proxy",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy",
-        "🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy"
+        "🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy"
       ]
     },
     {
@@ -42,8 +33,7 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇬 保加利亚 (Bulgaria) 01 - Chain-Proxy",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy",
-        "🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy"
+        "🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
