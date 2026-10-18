@@ -27,6 +27,26 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 02 - Chain-Proxy",
+      "server": "212.81.47.99",
+      "server_port": 51106,
+      "uuid": "f5f0babe-aea2-4f07-a1fc-3c9820253f49",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2k8UhfxEK4WSVLWUr-uRExRiTiAsacWpe6I1xrnyt38",
+          "short_id": "abcd1234"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - Chain-Proxy",
       "server": "51.161.204.244",
       "server_port": 443,
       "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
@@ -46,64 +66,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - Chain-Proxy",
-      "server": "212.81.47.99",
-      "server_port": 51106,
-      "uuid": "f5f0babe-aea2-4f07-a1fc-3c9820253f49",
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "2k8UhfxEK4WSVLWUr-uRExRiTiAsacWpe6I1xrnyt38",
-          "short_id": "abcd1234"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 04 - Chain-Proxy",
-      "server": "137.23.27.143",
-      "server_port": 20000,
-      "password": "a34f3990b69f44bfa0d32385",
-      "tls": {
-        "enabled": true,
-        "server_name": "rmgyvpn.rest",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "a34f3990b69f44bfa0d32385"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05 - Chain-Proxy",
-      "server": "172.67.195.146",
-      "server_port": 443,
-      "uuid": "f5f0babe-aea2-4f07-a1fc-3c9820253f49",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "aus.lovehk.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/Sydney3",
-        "headers": {
-          "Host": "aus.lovehk.xyz"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 06 - Chain-Proxy",
       "server": "137.23.2.56",
       "password": "b42d90fa667942aebc734d60",
       "tls": {
@@ -122,7 +86,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 07 - Chain-Proxy",
+      "tag": "🇦🇺 澳大利亚 (Australia) 05 - Chain-Proxy",
       "server": "137.23.2.56",
       "server_port": 20000,
       "password": "b42d90fa667942aebc734d60",
@@ -134,6 +98,42 @@
       "obfs": {
         "type": "salamander",
         "password": "b42d90fa667942aebc734d60"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇦🇺 澳大利亚 (Australia) 06 - Chain-Proxy",
+      "server": "172.67.197.71",
+      "server_port": 443,
+      "uuid": "f5f0babe-aea2-4f07-a1fc-3c9820253f49",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "aus.lovehk.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Sydney3",
+        "headers": {
+          "Host": "aus.lovehk.xyz"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 07 - Chain-Proxy",
+      "server": "137.23.27.143",
+      "server_port": 20000,
+      "password": "a34f3990b69f44bfa0d32385",
+      "tls": {
+        "enabled": true,
+        "server_name": "rmgyvpn.rest",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "a34f3990b69f44bfa0d32385"
       }
     },
     {
