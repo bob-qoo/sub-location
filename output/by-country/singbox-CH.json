@@ -6,54 +6,34 @@
     {
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - Chain-Proxy",
-      "server": "208.69.78.217",
-      "server_port": 33141,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "server": "140.238.213.114",
+      "server_port": 50160,
+      "password": "84a506ca5aca505696a454d828420b3f",
       "tls": {
         "enabled": true,
-        "server_name": "vpn.local",
+        "server_name": "140.238.213.114",
         "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 02 - Chain-Proxy",
-      "server": "208.69.78.217",
-      "server_port": 21086,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "server": "152.67.75.161",
+      "server_port": 443,
+      "password": "3a702d4d1de4949005d8431220e040fb",
       "tls": {
         "enabled": true,
-        "server_name": "vpn.local",
+        "server_name": "www.bing.com",
         "insecure": true
       },
       "obfs": {
         "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - Chain-Proxy",
-      "server": "208.69.78.217",
-      "server_port": 33092,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
+        "password": "c13f29db6a638ad2b211b9ce2669ef27"
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 - Chain-Proxy",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - Chain-Proxy",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -73,52 +53,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05 - Chain-Proxy",
-      "server": "208.69.78.217",
-      "server_port": 33042,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 06 - Chain-Proxy",
-      "server": "152.67.75.161",
-      "server_port": 443,
-      "password": "3a702d4d1de4949005d8431220e040fb",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c13f29db6a638ad2b211b9ce2669ef27"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 07 - Chain-Proxy",
-      "server": "140.238.213.114",
-      "server_port": 50160,
-      "password": "84a506ca5aca505696a454d828420b3f",
-      "tls": {
-        "enabled": true,
-        "server_name": "140.238.213.114",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 08 - Chain-Proxy",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - Chain-Proxy",
       "server": "138.124.63.224",
       "server_port": 8444,
       "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
@@ -142,39 +78,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 09 - Chain-Proxy",
-      "server": "208.69.78.217",
-      "server_port": 21090,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 10 - Chain-Proxy",
-      "server": "208.69.78.217",
-      "server_port": 21067,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 11 - Chain-Proxy",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 - Chain-Proxy",
       "server": "104.165.205.42",
       "server_port": 8443,
       "password": "990c8eb6-4c4e-4277-8602-79af8402cdd0",
@@ -186,218 +90,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 12 - Chain-Proxy",
-      "server": "208.69.78.217",
-      "server_port": 33117,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 13 - Chain-Proxy",
-      "server": "208.69.78.217",
-      "server_port": 21154,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 14 - Chain-Proxy",
-      "server": "208.69.78.217",
-      "server_port": 8444,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 15 - Chain-Proxy",
-      "server": "208.69.78.217",
-      "server_port": 21080,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 16 - Chain-Proxy",
-      "server": "208.69.78.217",
-      "server_port": 33025,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 17 - Chain-Proxy",
-      "server": "208.69.78.217",
-      "server_port": 33133,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 18 - Chain-Proxy",
-      "server": "208.69.78.217",
-      "server_port": 33171,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 19 - Chain-Proxy",
-      "server": "208.69.78.217",
-      "server_port": 33044,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 20 - Chain-Proxy",
-      "server": "208.69.78.217",
-      "server_port": 21046,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 21 - Chain-Proxy",
-      "server": "208.69.78.217",
-      "server_port": 21047,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 22 - Chain-Proxy",
-      "server": "208.69.78.217",
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      },
-      "server_ports": [
-        "21000:21199",
-        "33000:33199"
-      ]
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 23 - Chain-Proxy",
-      "server": "208.69.78.217",
-      "server_port": 33195,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 24 - Chain-Proxy",
-      "server": "208.69.78.217",
-      "server_port": 33013,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 25 - Chain-Proxy",
+      "tag": "🇨🇭 瑞士 (Switzerland) 06 - Chain-Proxy",
       "server": "208.69.78.217",
       "server_port": 21161,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
@@ -413,9 +106,9 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 26 - Chain-Proxy",
+      "tag": "🇨🇭 瑞士 (Switzerland) 07 - Chain-Proxy",
       "server": "208.69.78.217",
-      "server_port": 21054,
+      "server_port": 21046,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
       "tls": {
         "enabled": true,
@@ -438,26 +131,7 @@
         "🇨🇭 瑞士 (Switzerland) 04 - Chain-Proxy",
         "🇨🇭 瑞士 (Switzerland) 05 - Chain-Proxy",
         "🇨🇭 瑞士 (Switzerland) 06 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 07 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 08 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 09 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 10 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 11 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 12 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 13 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 14 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 15 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 16 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 17 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 18 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 19 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 20 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 21 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 22 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 23 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 24 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 25 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 26 - Chain-Proxy"
+        "🇨🇭 瑞士 (Switzerland) 07 - Chain-Proxy"
       ]
     },
     {
@@ -470,26 +144,7 @@
         "🇨🇭 瑞士 (Switzerland) 04 - Chain-Proxy",
         "🇨🇭 瑞士 (Switzerland) 05 - Chain-Proxy",
         "🇨🇭 瑞士 (Switzerland) 06 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 07 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 08 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 09 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 10 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 11 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 12 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 13 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 14 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 15 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 16 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 17 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 18 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 19 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 20 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 21 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 22 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 23 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 24 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 25 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 26 - Chain-Proxy"
+        "🇨🇭 瑞士 (Switzerland) 07 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

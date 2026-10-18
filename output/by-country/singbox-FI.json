@@ -6,20 +6,6 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - Chain-Proxy",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "45.144.234.157"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - Chain-Proxy",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
@@ -38,41 +24,17 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - Chain-Proxy",
-      "server": "200.181.82.92",
-      "server_port": 21940,
-      "method": "aes-256-gcm",
-      "password": "0dad9116-eb88-47b6-98dd-67c9ed43afa6"
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - Chain-Proxy",
-      "server": "mci1.amir12.ir",
-      "server_port": 1222,
-      "uuid": "36c3dcc2-17b6-4478-b8a7-3978e6d5afe9",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE",
-          "short_id": "a25d0f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - Chain-Proxy",
-      "server": "77.42.73.93",
-      "server_port": 8080,
-      "uuid": "36c3dcc2-17b6-4478-b8a7-3978e6d5afe9",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - Chain-Proxy",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
+        }
       }
     },
     {
@@ -81,10 +43,7 @@
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 02 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 03 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 04 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 05 - Chain-Proxy"
+        "🇫🇮 芬兰 (Finland) 02 - Chain-Proxy"
       ]
     },
     {
@@ -92,10 +51,7 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 02 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 03 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 04 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 05 - Chain-Proxy"
+        "🇫🇮 芬兰 (Finland) 02 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

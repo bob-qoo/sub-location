@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - Chain-Proxy
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 02 - Chain-Proxy
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -27,34 +16,17 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - Chain-Proxy
-  server: 200.181.82.92
-  port: 21940
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
-- name: 🇫🇮 芬兰 (Finland) 04 - Chain-Proxy
-  server: mci1.amir12.ir
-  port: 1222
+- name: 🇫🇮 芬兰 (Finland) 02 - Chain-Proxy
+  server: 45.144.234.157
+  port: 14430
   udp: true
   type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  tls: true
-  reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-    short-id: a25d0f
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05 - Chain-Proxy
-  server: 77.42.73.93
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   network: ws
   ws-opts:
-    path: /
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,9 +34,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 02 - Chain-Proxy
-  - 🇫🇮 芬兰 (Finland) 03 - Chain-Proxy
-  - 🇫🇮 芬兰 (Finland) 04 - Chain-Proxy
-  - 🇫🇮 芬兰 (Finland) 05 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,8 +41,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 02 - Chain-Proxy
-  - 🇫🇮 芬兰 (Finland) 03 - Chain-Proxy
-  - 🇫🇮 芬兰 (Finland) 04 - Chain-Proxy
-  - 🇫🇮 芬兰 (Finland) 05 - Chain-Proxy
 rules:
 - MATCH,PROXIES

@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇻🇳 越南 (Vietnam) 01 - Chain-Proxy
-  server: funagfrdfs.alixxplay.com
-  port: 55688
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: KeV1nArisy7FO5DjqTSmn0hBnlNd38rzhbIMMpe-MBw
-    short-id: a46bb5972cf50671
-  servername: bilibili-vn.biliimg.com
-  client-fingerprint: chrome
-- name: 🇻🇳 越南 (Vietnam) 02 - Chain-Proxy
   server: 172.67.168.158
   port: 2087
   udp: true
@@ -32,6 +19,19 @@ proxies:
     path: /vlessvina
     headers:
       Host: vn11vina.210z.dev
+- name: 🇻🇳 越南 (Vietnam) 02 - Chain-Proxy
+  server: funagfrdfs.alixxplay.com
+  port: 55688
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: KeV1nArisy7FO5DjqTSmn0hBnlNd38rzhbIMMpe-MBw
+    short-id: a46bb5972cf50671
+  servername: bilibili-vn.biliimg.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
