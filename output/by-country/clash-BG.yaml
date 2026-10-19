@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - Chain-Proxy
-  server: 213.183.63.60
-  port: 9028
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9eeJ2fwnZA5Fxgz8
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy
-  server: 213.183.63.60
-  port: 9085
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy
   server: 195.123.226.21
   port: 443
   udp: true
@@ -31,6 +17,14 @@ proxies:
     short-id: 77bb0d07bddbc832
   servername: gateway.icloud.com
   client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy
+  server: 195.26.26.148
+  port: 54588
+  udp: true
+  type: vmess
+  uuid: 6becea77-83b3-4a2b-89c0-e71c7a672d2a
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇧🇬 保加利亚 (Bulgaria) 01 - Chain-Proxy
   - 🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - Chain-Proxy
   - 🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy
 rules:
 - MATCH,PROXIES

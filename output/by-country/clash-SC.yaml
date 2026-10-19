@@ -15,7 +15,7 @@ proxies:
     public-key: OOI0p2vKjr8xdwcVCzxcd3rAxmMr7XRA0wMk14IXaFM
     short-id: 35debf0dc757d053
   servername: max.ru
-  client-fingerprint: safari
+  client-fingerprint: qq
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
@@ -32,6 +32,32 @@ proxies:
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
   client-fingerprint: firefox
+- name: 🇸🇨 塞舌尔 (Seychelles) 03 - Chain-Proxy
+  server: 45.12.63.219
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+  tls: true
+  servername: edge-lab-b.10media.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: swedenfeed
+- name: 🇸🇨 塞舌尔 (Seychelles) 04 - Chain-Proxy
+  server: 45.12.63.219
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+  tls: true
+  servername: edge-lab-b.10media.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: swedenfeed
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +65,8 @@ proxy-groups:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - Chain-Proxy
   - 🇸🇨 塞舌尔 (Seychelles) 02 - Chain-Proxy
+  - 🇸🇨 塞舌尔 (Seychelles) 03 - Chain-Proxy
+  - 🇸🇨 塞舌尔 (Seychelles) 04 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,5 +74,7 @@ proxy-groups:
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - Chain-Proxy
   - 🇸🇨 塞舌尔 (Seychelles) 02 - Chain-Proxy
+  - 🇸🇨 塞舌尔 (Seychelles) 03 - Chain-Proxy
+  - 🇸🇨 塞舌尔 (Seychelles) 04 - Chain-Proxy
 rules:
 - MATCH,PROXIES
