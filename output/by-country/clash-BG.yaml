@@ -5,26 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - Chain-Proxy
-  server: 195.123.226.21
-  port: 443
+  server: 213.183.63.60
+  port: 9066
   udp: true
-  type: vless
-  uuid: 6589c320-db68-43cd-a273-b46299bab355
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: rabtI-ymNXBUvYYRwAw8DiR-1pdP7U0WPIaCBHEkgzo
-    short-id: 77bb0d07bddbc832
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: 2KUaE2a8NWTvuCZ3
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy
-  server: 195.26.26.148
-  port: 54588
+  server: 213.183.63.60
+  port: 9061
   udp: true
-  type: vmess
-  uuid: 6becea77-83b3-4a2b-89c0-e71c7a672d2a
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: aes-256-cfb
+  password: 4R3hUfZ2FHhDmNcP
 proxy-groups:
 - name: PROXIES
   type: select
