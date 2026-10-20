@@ -19,6 +19,12 @@ proxies:
   cipher: aes-256-gcm
   password: itzvpn@321
 - name: 🇮🇹 意大利 (Italy) 03 - Chain-Proxy
+  server: 204.216.216.23
+  port: 10086
+  udp: true
+  type: vless
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+- name: 🇮🇹 意大利 (Italy) 04 - Chain-Proxy
   server: 31.59.180.155
   port: 443
   udp: true
@@ -31,7 +37,26 @@ proxies:
     short-id: 5aab0b0401044801
   servername: italynew.nztvpn.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 04 - Chain-Proxy
+- name: 🇮🇹 意大利 (Italy) 05 - Chain-Proxy
+  server: 91.201.65.122
+  port: 9065
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: PeHSHm5SqEjBuEXE
+- name: 🇮🇹 意大利 (Italy) 06 - Chain-Proxy
+  server: 195.231.37.150
+  port: 443
+  udp: true
+  type: vless
+  uuid: 244d9eab-3311-40c7-b47f-4968dc3088a6
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  servername: tcpit3.figurapn.ru
+  client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 07 - Chain-Proxy
   server: 57.131.38.163
   port: 2053
   udp: true
@@ -42,8 +67,8 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
     short-id: 5b8a942318178e7b
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇮🇹 意大利 (Italy) 05 - Chain-Proxy
+  client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 08 - Chain-Proxy
   server: 82.118.16.189
   port: 443
   udp: true
@@ -55,8 +80,15 @@ proxies:
     public-key: SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY
     short-id: 37fbf155c7a9f3ff
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 06 - Chain-Proxy
+  client-fingerprint: random
+- name: 🇮🇹 意大利 (Italy) 09 - Chain-Proxy
+  server: 91.201.65.122
+  port: 9039
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qYEN5HX4JKeVCdEC
+- name: 🇮🇹 意大利 (Italy) 10 - Chain-Proxy
   server: 82.118.16.187
   port: 443
   udp: true
@@ -69,7 +101,7 @@ proxies:
     short-id: cd6065902eea7a02
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 07 - Chain-Proxy
+- name: 🇮🇹 意大利 (Italy) 11 - Chain-Proxy
   server: 204.216.216.23
   port: 1114
   udp: true
@@ -94,6 +126,10 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 05 - Chain-Proxy
   - 🇮🇹 意大利 (Italy) 06 - Chain-Proxy
   - 🇮🇹 意大利 (Italy) 07 - Chain-Proxy
+  - 🇮🇹 意大利 (Italy) 08 - Chain-Proxy
+  - 🇮🇹 意大利 (Italy) 09 - Chain-Proxy
+  - 🇮🇹 意大利 (Italy) 10 - Chain-Proxy
+  - 🇮🇹 意大利 (Italy) 11 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -106,5 +142,9 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 05 - Chain-Proxy
   - 🇮🇹 意大利 (Italy) 06 - Chain-Proxy
   - 🇮🇹 意大利 (Italy) 07 - Chain-Proxy
+  - 🇮🇹 意大利 (Italy) 08 - Chain-Proxy
+  - 🇮🇹 意大利 (Italy) 09 - Chain-Proxy
+  - 🇮🇹 意大利 (Italy) 10 - Chain-Proxy
+  - 🇮🇹 意大利 (Italy) 11 - Chain-Proxy
 rules:
 - MATCH,PROXIES
