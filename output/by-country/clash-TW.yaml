@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
+  sni: 103.115.109.49
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy
   server: 152.32.167.33
@@ -25,14 +25,6 @@ proxies:
     short-id: cff998a4
   servername: www.amazon.com
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy
 rules:
 - MATCH,PROXIES

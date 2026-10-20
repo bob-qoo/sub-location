@@ -12,29 +12,21 @@
       "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "3h-kazakhstan1.09vpn.com"
-        }
+        "path": "/vmess/"
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - Chain-Proxy",
-      "server": "109.248.170.119",
-      "server_port": 13447,
-      "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE",
-          "short_id": "83"
+      "server": "38.107.234.57",
+      "server_port": 80,
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "viber.com"
         }
       }
     },
@@ -47,7 +39,10 @@
       "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/vmess/"
+        "path": "/vmess/",
+        "headers": {
+          "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+        }
       }
     },
     {
@@ -85,7 +80,7 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+          "Host": "viber.com"
         }
       }
     },
@@ -98,27 +93,15 @@
       "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/vmess/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - Chain-Proxy",
-      "server": "38.107.234.57",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+          "Host": "google.com"
         }
       }
     },
     {
       "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - Chain-Proxy",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - Chain-Proxy",
       "server": "38.107.234.57",
       "server_port": 80,
       "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
@@ -133,6 +116,21 @@
     },
     {
       "type": "vmess",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - Chain-Proxy",
+      "server": "38.107.234.57",
+      "server_port": 80,
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "viber.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 10 - Chain-Proxy",
       "server": "38.107.234.57",
       "server_port": 80,
@@ -142,7 +140,7 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+          "Host": "viber.com"
         }
       }
     },
@@ -169,7 +167,7 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "google.com"
+          "Host": "3h-kazakhstan1.09vpn.com"
         }
       }
     },
@@ -182,10 +180,7 @@
       "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "viber.com"
-        }
+        "path": "/vmess/"
       }
     },
     {
@@ -197,7 +192,10 @@
       "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/vmess/"
+        "path": "/vmess/",
+        "headers": {
+          "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+        }
       }
     },
     {
@@ -211,7 +209,7 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "viber.com"
+          "Host": "38.107.234.57"
         }
       }
     },
@@ -226,7 +224,7 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "google.com"
+          "Host": "viber.com"
         }
       }
     },
@@ -239,10 +237,7 @@
       "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "38.107.234.57"
-        }
+        "path": "/vmess/"
       }
     },
     {
@@ -256,7 +251,7 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "3h-kazakhstan1.09vpn.com"
+          "Host": "google.com"
         }
       }
     },
@@ -271,7 +266,7 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+          "Host": "viber.com"
         }
       }
     },
@@ -286,7 +281,7 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "viber.com"
+          "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
         }
       }
     },
@@ -299,7 +294,10 @@
       "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/vmess/"
+        "path": "/vmess/",
+        "headers": {
+          "Host": "3h-kazakhstan1.09vpn.com"
+        }
       }
     },
     {
@@ -313,7 +311,7 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "google.com"
+          "Host": "viber.com"
         }
       }
     },
@@ -328,7 +326,7 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "38.107.234.57"
+          "Host": "viber.com"
         }
       }
     },
@@ -343,7 +341,7 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+          "Host": "google.com"
         }
       }
     },
@@ -358,7 +356,149 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
+          "Host": "viber.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 26 - Chain-Proxy",
+      "server": "38.107.234.57",
+      "server_port": 80,
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 27 - Chain-Proxy",
+      "server": "38.107.234.57",
+      "server_port": 80,
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "38.107.234.57"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 28 - Chain-Proxy",
+      "server": "38.107.234.57",
+      "server_port": 80,
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "38.107.234.57"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 29 - Chain-Proxy",
+      "server": "38.107.234.57",
+      "server_port": 80,
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "viber.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 30 - Chain-Proxy",
+      "server": "38.107.234.57",
+      "server_port": 80,
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 31 - Chain-Proxy",
+      "server": "38.107.234.57",
+      "server_port": 80,
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
           "Host": "3h-kazakhstan1.09vpn.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 32 - Chain-Proxy",
+      "server": "38.107.234.57",
+      "server_port": 80,
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 33 - Chain-Proxy",
+      "server": "83.222.23.81",
+      "server_port": 38065,
+      "uuid": "4b9063e0-3288-44e9-9aac-80fbfce323a0",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo",
+          "short_id": "fa"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 34 - Chain-Proxy",
+      "server": "109.248.170.119",
+      "server_port": 13447,
+      "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE",
+          "short_id": "83"
         }
       }
     },
@@ -391,7 +531,16 @@
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 22 - Chain-Proxy",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 23 - Chain-Proxy",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 24 - Chain-Proxy",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 25 - Chain-Proxy"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 25 - Chain-Proxy",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 26 - Chain-Proxy",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 27 - Chain-Proxy",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 28 - Chain-Proxy",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 29 - Chain-Proxy",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 30 - Chain-Proxy",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 31 - Chain-Proxy",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 32 - Chain-Proxy",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 33 - Chain-Proxy",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 34 - Chain-Proxy"
       ]
     },
     {
@@ -422,7 +571,16 @@
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 22 - Chain-Proxy",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 23 - Chain-Proxy",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 24 - Chain-Proxy",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 25 - Chain-Proxy"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 25 - Chain-Proxy",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 26 - Chain-Proxy",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 27 - Chain-Proxy",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 28 - Chain-Proxy",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 29 - Chain-Proxy",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 30 - Chain-Proxy",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 31 - Chain-Proxy",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 32 - Chain-Proxy",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 33 - Chain-Proxy",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 34 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

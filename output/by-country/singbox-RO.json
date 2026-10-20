@@ -4,20 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - Chain-Proxy",
-      "server": "it1.dedushka.top",
-      "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
-      "tls": {
-        "enabled": true,
-        "server_name": "it1.dedushka.top",
-        "insecure": false
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - Chain-Proxy",
       "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -33,7 +21,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy",
       "server": "146.70.124.85",
       "server_port": 443,
       "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
@@ -54,7 +42,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -64,7 +52,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -75,31 +63,31 @@
     },
     {
       "type": "trojan",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy",
       "server": "de1.dedushka.top",
       "server_port": 443,
       "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
       "tls": {
         "enabled": true,
         "server_name": "de1.dedushka.top",
-        "insecure": false
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy",
       "server": "185.156.44.99",
       "server_port": 443,
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "185.156.44.99",
+        "server_name": "vk.com",
         "insecure": true
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 07 - Chain-Proxy",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy",
       "server": "bogging-eyeteeth-fly.freesocks.work",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -115,8 +103,7 @@
         "🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy",
         "🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy",
         "🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy",
-        "🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy",
-        "🇷🇴 罗马尼亚 (Romania) 07 - Chain-Proxy"
+        "🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy"
       ]
     },
     {
@@ -128,8 +115,7 @@
         "🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy",
         "🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy",
         "🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy",
-        "🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy",
-        "🇷🇴 罗马尼亚 (Romania) 07 - Chain-Proxy"
+        "🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

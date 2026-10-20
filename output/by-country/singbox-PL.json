@@ -4,9 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - Chain-Proxy",
-      "server": "45.194.66.193",
+      "server": "217.30.10.44",
+      "server_port": 9052,
+      "method": "aes-256-cfb",
+      "password": "jt2ekBNc9HuVtm2a"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 02 - Chain-Proxy",
+      "server": "45.194.66.17",
       "server_port": 443,
       "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
       "flow": "xtls-rprx-vision",
@@ -26,26 +34,21 @@
     },
     {
       "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 02 - Chain-Proxy",
+      "tag": "🇵🇱 波兰 (Poland) 03 - Chain-Proxy",
       "server": "31.133.0.186",
       "server_port": 443,
       "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
       "tls": {
         "enabled": true,
         "server_name": "pl2.dedushka.top",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 03 - Chain-Proxy",
-      "server": "pl1.dedushka.top",
-      "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl1.dedushka.top",
-        "insecure": false
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       }
     },
     {
@@ -70,38 +73,91 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇵🇱 波兰 (Poland) 05 - Chain-Proxy",
-      "server": "78.17.171.226",
-      "server_port": 443,
-      "password": "u93yPGuY2zgIsisJZKS2QzJzg",
+      "server": "78.17.128.153",
+      "server_port": 35076,
+      "password": "b4c8ee9caa74b7ba0a61",
       "tls": {
         "enabled": true,
-        "server_name": "FREE-2.HI-L.IM",
-        "insecure": false,
+        "server_name": "scrap.halyvanedorogo.ru",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇵🇱 波兰 (Poland) 06 - Chain-Proxy",
+      "server": "pl1.dedushka.top",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl1.dedushka.top",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 07 - Chain-Proxy",
+      "server": "150.251.113.34",
+      "server_port": 443,
+      "uuid": "d7d724b5-17ce-4f3c-877d-dfbf0f07afa1",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/f2fc2a1f",
-        "headers": {
-          "Host": "free-2.hi-l.im"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8",
+          "short_id": "150a627d15154cf2"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 06 - Chain-Proxy",
+      "tag": "🇵🇱 波兰 (Poland) 08 - Chain-Proxy",
       "server": "site.teslamotor.site",
       "server_port": 20001,
       "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
     },
     {
+      "type": "trojan",
+      "tag": "🇵🇱 波兰 (Poland) 09 - Chain-Proxy",
+      "server": "pl.tronsg.com",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.tronsg.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 10 - Chain-Proxy",
+      "server": "pl.flen-vpn.xyz",
+      "server_port": 8443,
+      "uuid": "51a1fd52-fd88-4905-a976-35e44be28e4b",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.flen-vpn.xyz",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 07 - Chain-Proxy",
+      "tag": "🇵🇱 波兰 (Poland) 11 - Chain-Proxy",
       "server": "54.37.131.126",
       "server_port": 80,
       "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
@@ -116,7 +172,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 08 - Chain-Proxy",
+      "tag": "🇵🇱 波兰 (Poland) 12 - Chain-Proxy",
       "server": "82.118.22.161",
       "server_port": 443,
       "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
@@ -126,33 +182,12 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
           "short_id": "fa3ea655619a3e78"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 09 - Chain-Proxy",
-      "server": "150.251.113.34",
-      "server_port": 443,
-      "uuid": "d7d724b5-17ce-4f3c-877d-dfbf0f07afa1",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8",
-          "short_id": "150a627d15154cf2"
         }
       }
     },
@@ -169,7 +204,10 @@
         "🇵🇱 波兰 (Poland) 06 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 07 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 08 - Chain-Proxy",
-        "🇵🇱 波兰 (Poland) 09 - Chain-Proxy"
+        "🇵🇱 波兰 (Poland) 09 - Chain-Proxy",
+        "🇵🇱 波兰 (Poland) 10 - Chain-Proxy",
+        "🇵🇱 波兰 (Poland) 11 - Chain-Proxy",
+        "🇵🇱 波兰 (Poland) 12 - Chain-Proxy"
       ]
     },
     {
@@ -184,7 +222,10 @@
         "🇵🇱 波兰 (Poland) 06 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 07 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 08 - Chain-Proxy",
-        "🇵🇱 波兰 (Poland) 09 - Chain-Proxy"
+        "🇵🇱 波兰 (Poland) 09 - Chain-Proxy",
+        "🇵🇱 波兰 (Poland) 10 - Chain-Proxy",
+        "🇵🇱 波兰 (Poland) 11 - Chain-Proxy",
+        "🇵🇱 波兰 (Poland) 12 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
