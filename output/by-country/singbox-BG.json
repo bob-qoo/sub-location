@@ -7,29 +7,37 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - Chain-Proxy",
       "server": "213.183.63.60",
-      "server_port": 9049,
-      "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy",
-      "server": "213.183.63.60",
       "server_port": 9085,
       "method": "aes-256-cfb",
       "password": "9ej82EKe2gq7gLAM"
     },
     {
       "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy",
+      "server": "213.183.63.60",
+      "server_port": 9061,
+      "method": "aes-256-cfb",
+      "password": "4R3hUfZ2FHhDmNcP"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy",
       "server": "213.183.63.60",
-      "server_port": 9030,
+      "server_port": 9049,
       "method": "aes-256-cfb",
-      "password": "GeregetR8cvQHzYr"
+      "password": "PRBf4BS2HvJqtWxY"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy",
+      "server": "213.183.63.60",
+      "server_port": 9064,
+      "method": "aes-256-cfb",
+      "password": "cp8pRSUAyLhTfVWH"
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - Chain-Proxy",
       "server": "195.123.226.21",
       "server_port": 443,
       "uuid": "6589c320-db68-43cd-a273-b46299bab355",
@@ -56,7 +64,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 01 - Chain-Proxy",
         "🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy",
         "🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy",
-        "🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy"
+        "🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy",
+        "🇧🇬 保加利亚 (Bulgaria) 05 - Chain-Proxy"
       ]
     },
     {
@@ -66,7 +75,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 01 - Chain-Proxy",
         "🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy",
         "🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy",
-        "🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy"
+        "🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy",
+        "🇧🇬 保加利亚 (Bulgaria) 05 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - Chain-Proxy",
-      "server": "13.60.198.133",
+      "server": "51.21.247.148",
       "server_port": 443,
       "uuid": "7060231d-b9ba-495f-a218-bf427940cf3e",
       "transport": {
@@ -16,7 +16,7 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy",
-      "server": "51.21.247.148",
+      "server": "13.60.198.133",
       "server_port": 443,
       "uuid": "7060231d-b9ba-495f-a218-bf427940cf3e",
       "transport": {
@@ -42,6 +42,33 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy",
+      "server": "sub.merky.top",
+      "server_port": 443,
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "tls": {
+        "enabled": true,
+        "server_name": "sub.merky.top",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/merky-connect/de6/",
+        "headers": {
+          "Host": "sub.merky.top"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy",
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - Chain-Proxy",
       "server": "5.178.109.174",
       "server_port": 14430,
       "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
@@ -61,7 +88,9 @@
         "🇸🇪 瑞典 (Sweden) 01 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy",
-        "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy"
+        "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy",
+        "🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy",
+        "🇸🇪 瑞典 (Sweden) 06 - Chain-Proxy"
       ]
     },
     {
@@ -71,7 +100,9 @@
         "🇸🇪 瑞典 (Sweden) 01 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy",
-        "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy"
+        "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy",
+        "🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy",
+        "🇸🇪 瑞典 (Sweden) 06 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
