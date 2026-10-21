@@ -5,21 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - Chain-Proxy
-  server: lifehacker.com
+  server: 13.60.198.133
   port: 443
   udp: true
   type: vless
-  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
-  tls: true
-  servername: wallweb-4ez.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+  network: h2
+  h2-opts:
+    host: []
     path: /
-    headers:
-      Host: wallweb-4ez.pages.dev
 - name: 🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy
+  server: 51.21.247.148
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+  network: h2
+  h2-opts:
+    host: []
+    path: /
+- name: 🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy
   server: 77.110.96.201
   port: 36264
   udp: true
@@ -29,6 +34,17 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: Telegram@vpnjey
+- name: 🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +52,8 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - Chain-Proxy
   - 🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy
+  - 🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy
+  - 🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +61,7 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - Chain-Proxy
   - 🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy
+  - 🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy
+  - 🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy
 rules:
 - MATCH,PROXIES
