@@ -5,38 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - Chain-Proxy
-  server: 52.214.157.27
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇮🇪 爱尔兰 (Ireland) 02 - Chain-Proxy
   server: 18.134.224.162
-  port: 22224
+  port: 22222
   udp: true
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 03 - Chain-Proxy
-  server: 52.16.44.28
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇮🇪 爱尔兰 (Ireland) 04 - Chain-Proxy
+- name: 🇮🇪 爱尔兰 (Ireland) 02 - Chain-Proxy
   server: 18.134.224.162
   port: 22223
   udp: true
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 05 - Chain-Proxy
-  server: 108.129.216.202
+- name: 🇮🇪 爱尔兰 (Ireland) 03 - Chain-Proxy
+  server: 18.134.224.162
+  port: 22224
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇮🇪 爱尔兰 (Ireland) 04 - Chain-Proxy
+  server: ie1.dedushka.top
   port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: ie1.dedushka.top
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,7 +39,6 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 02 - Chain-Proxy
   - 🇮🇪 爱尔兰 (Ireland) 03 - Chain-Proxy
   - 🇮🇪 爱尔兰 (Ireland) 04 - Chain-Proxy
-  - 🇮🇪 爱尔兰 (Ireland) 05 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,6 +48,5 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 02 - Chain-Proxy
   - 🇮🇪 爱尔兰 (Ireland) 03 - Chain-Proxy
   - 🇮🇪 爱尔兰 (Ireland) 04 - Chain-Proxy
-  - 🇮🇪 爱尔兰 (Ireland) 05 - Chain-Proxy
 rules:
 - MATCH,PROXIES

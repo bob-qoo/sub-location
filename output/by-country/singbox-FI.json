@@ -26,14 +26,21 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - Chain-Proxy",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "45.144.234.157"
+      "server": "65.108.3.59",
+      "server_port": 443,
+      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.eitaa.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
+          "short_id": "90ec9bba2019"
         }
       }
     },
@@ -52,21 +59,14 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 04 - Chain-Proxy",
-      "server": "65.108.3.59",
-      "server_port": 443,
-      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "web.eitaa.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
-          "short_id": "90ec9bba2019"
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
         }
       }
     },
@@ -118,6 +118,30 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - Chain-Proxy",
+      "server": "2.29.101.158",
+      "server_port": 443,
+      "uuid": "9a0e84f8-4b58-477f-99da-5fac5a2e58e8",
+      "tls": {
+        "enabled": true,
+        "server_name": "36a466g.fi1.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg",
+          "short_id": "b3c9d0c6bdd114a6"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "0adb9638509b"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -127,7 +151,8 @@
         "🇫🇮 芬兰 (Finland) 03 - Chain-Proxy",
         "🇫🇮 芬兰 (Finland) 04 - Chain-Proxy",
         "🇫🇮 芬兰 (Finland) 05 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 06 - Chain-Proxy"
+        "🇫🇮 芬兰 (Finland) 06 - Chain-Proxy",
+        "🇫🇮 芬兰 (Finland) 07 - Chain-Proxy"
       ]
     },
     {
@@ -139,7 +164,8 @@
         "🇫🇮 芬兰 (Finland) 03 - Chain-Proxy",
         "🇫🇮 芬兰 (Finland) 04 - Chain-Proxy",
         "🇫🇮 芬兰 (Finland) 05 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 06 - Chain-Proxy"
+        "🇫🇮 芬兰 (Finland) 06 - Chain-Proxy",
+        "🇫🇮 芬兰 (Finland) 07 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

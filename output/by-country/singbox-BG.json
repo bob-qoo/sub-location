@@ -15,17 +15,38 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy",
       "server": "213.183.63.60",
-      "server_port": 9029,
+      "server_port": 9028,
       "method": "aes-256-cfb",
-      "password": "dU3DSNS8wYPXzEKw"
+      "password": "9eeJ2fwnZA5Fxgz8"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy",
       "server": "213.183.63.60",
-      "server_port": 9030,
+      "server_port": 9098,
       "method": "aes-256-cfb",
-      "password": "GeregetR8cvQHzYr"
+      "password": "aLpQtfEZe445QyHk"
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy",
+      "server": "195.123.226.21",
+      "server_port": 443,
+      "uuid": "6589c320-db68-43cd-a273-b46299bab355",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rabtI-ymNXBUvYYRwAw8DiR-1pdP7U0WPIaCBHEkgzo",
+          "short_id": "77bb0d07bddbc832"
+        }
+      }
     },
     {
       "type": "selector",
@@ -34,7 +55,8 @@
         "auto",
         "🇧🇬 保加利亚 (Bulgaria) 01 - Chain-Proxy",
         "🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy",
-        "🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy"
+        "🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy",
+        "🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy"
       ]
     },
     {
@@ -43,7 +65,8 @@
       "outbounds": [
         "🇧🇬 保加利亚 (Bulgaria) 01 - Chain-Proxy",
         "🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy",
-        "🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy"
+        "🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy",
+        "🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
