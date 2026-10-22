@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - Chain-Proxy",
-      "server": "my2.frnhk.xyz",
+      "tag": "🇬🇷 希腊 (Greece) 01 - Chain-Proxy",
+      "server": "85.90.197.220",
       "server_port": 443,
-      "uuid": "1c22bf94-702b-49ac-8f5e-24259beed2d8",
+      "uuid": "8f704ed6-9a1a-4d04-94dd-1bff501716de",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.waseda.jp",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
-          "public_key": "SPtkbd9O6y-rdGoR2CLzW1IFr6WMlqt2lM9wU-VURig",
-          "short_id": "6b7a8c9d"
+          "public_key": "biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4",
+          "short_id": "94acb54627612d43"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - Chain-Proxy"
+        "🇬🇷 希腊 (Greece) 01 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - Chain-Proxy"
+        "🇬🇷 希腊 (Greece) 01 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
