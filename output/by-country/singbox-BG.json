@@ -7,13 +7,21 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - Chain-Proxy",
       "server": "213.183.63.60",
+      "server_port": 9029,
+      "method": "aes-256-cfb",
+      "password": "dU3DSNS8wYPXzEKw"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy",
+      "server": "213.183.63.60",
       "server_port": 9028,
       "method": "aes-256-cfb",
       "password": "9eeJ2fwnZA5Fxgz8"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy",
       "server": "213.183.63.60",
       "server_port": 9054,
       "method": "aes-256-cfb",
@@ -21,32 +29,19 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy",
       "server": "213.183.63.60",
-      "server_port": 9085,
+      "server_port": 9098,
       "method": "aes-256-cfb",
-      "password": "9ej82EKe2gq7gLAM"
+      "password": "aLpQtfEZe445QyHk"
     },
     {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy",
-      "server": "bg1.spacevpn.space",
-      "server_port": 443,
-      "uuid": "2e34af79-e5dc-ae2a-3393-65479f695282",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "bg1.spacevpn.space",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_u-Nv9dyWbkoAkklJAYQaixa60hmhbn6kZcUNhrdqW8",
-          "short_id": "d498984fe96ad0ab"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - Chain-Proxy",
+      "server": "213.183.63.60",
+      "server_port": 9064,
+      "method": "aes-256-cfb",
+      "password": "cp8pRSUAyLhTfVWH"
     },
     {
       "type": "selector",
@@ -56,7 +51,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 01 - Chain-Proxy",
         "🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy",
         "🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy",
-        "🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy"
+        "🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy",
+        "🇧🇬 保加利亚 (Bulgaria) 05 - Chain-Proxy"
       ]
     },
     {
@@ -66,7 +62,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 01 - Chain-Proxy",
         "🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy",
         "🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy",
-        "🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy"
+        "🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy",
+        "🇧🇬 保加利亚 (Bulgaria) 05 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

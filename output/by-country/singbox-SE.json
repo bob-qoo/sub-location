@@ -6,16 +6,48 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - Chain-Proxy",
-      "server": "13.60.198.133",
+      "server": "media.vik.lalibobi.online",
       "server_port": 443,
-      "uuid": "7060231d-b9ba-495f-a218-bf427940cf3e",
+      "uuid": "21ffcccd-8fbe-43fb-9dd1-24452fdfa8ad",
+      "tls": {
+        "enabled": true,
+        "server_name": "media.vik.lalibobi.online",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
       "transport": {
-        "type": "http"
+        "type": "ws",
+        "path": "/live/showroom",
+        "headers": {
+          "Host": "media.vik.lalibobi.online"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy",
+      "server": "77.110.96.201",
+      "server_port": 36264,
+      "password": "Telegram-vpnjey",
+      "tls": {
+        "enabled": true,
+        "server_name": "se.vpnjey2.dpdns.org",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Telegram@vpnjey"
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy",
       "server": "185.58.115.62",
       "server_port": 443,
       "uuid": "9c794bb7-54fe-4acd-844a-a26209af36c3",
@@ -35,44 +67,13 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy",
-      "server": "77.110.96.201",
-      "server_port": 36264,
-      "password": "Telegram-vpnjey",
-      "tls": {
-        "enabled": true,
-        "server_name": "se.vpnjey2.dpdns.org",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "Telegram@vpnjey"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy",
-        "🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy",
-        "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy"
+        "🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy"
       ]
     },
     {
@@ -81,8 +82,7 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy",
-        "🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy",
-        "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy"
+        "🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

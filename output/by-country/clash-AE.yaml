@@ -5,38 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Chain-Proxy
-  server: 185.253.116.33
-  port: 14430
-  udp: true
-  type: vless
-  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy
   server: 130.49.161.70
   port: 443
   udp: true
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
-  server: 151.241.166.159
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7ab86f1f-871e-4de6-9dae-7addf6dc976c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: tPhBRGpTbyaPFF3W0wpqncSrdNsV5I-eyM3S9CZoeCQ
-    short-id: 9a26e586f8cadc07
-  servername: pl-hsts.zloygo.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
+- name: 🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -47,8 +25,28 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
+  server: 45.59.120.217
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
+  tls: true
+  reality-opts:
+    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
+  servername: strm.yandex.net
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
+  server: 185.253.116.33
+  port: 14430
+  udp: true
+  type: vless
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
+  network: ws
+  ws-opts:
+    path: /vless
 - name: 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -58,18 +56,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
-  server: 45.59.120.217
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
-  tls: true
-  reality-opts:
-    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
-    short-id: 29c2dd1e3ef7c4d4
-  servername: strm.yandex.net
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -80,7 +66,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
-  - 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -91,6 +76,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
-  - 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
 rules:
 - MATCH,PROXIES

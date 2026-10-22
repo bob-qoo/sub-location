@@ -7,6 +7,7 @@
       "type": "hysteria2",
       "tag": "🇧🇷 巴西 (Brazil) 01 - Chain-Proxy",
       "server": "147.15.108.14",
+      "server_port": 20000,
       "password": "CyG0RFxMjzs41uQD4OLuHQ==",
       "tls": {
         "enabled": true,
@@ -16,25 +17,31 @@
       "obfs": {
         "type": "salamander",
         "password": "CyG0RFxMjzs41uQD4OLuHQ=="
-      },
-      "server_ports": [
-        "20000:30000",
-        "20000:20000"
-      ]
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇧🇷 巴西 (Brazil) 02 - Chain-Proxy",
+      "server": "zfd-boardv2.kunlun01dns.com",
+      "server_port": 16314,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - Chain-Proxy"
+        "🇧🇷 巴西 (Brazil) 01 - Chain-Proxy",
+        "🇧🇷 巴西 (Brazil) 02 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - Chain-Proxy"
+        "🇧🇷 巴西 (Brazil) 01 - Chain-Proxy",
+        "🇧🇷 巴西 (Brazil) 02 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
