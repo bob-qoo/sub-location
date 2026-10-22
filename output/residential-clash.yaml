@@ -4,7 +4,43 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Chain-Proxy
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - Chain-Proxy
+  server: 218.237.185.234
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇩🇪 德国 (Germany) 02 (家宽) - Chain-Proxy
+  server: 209.38.238.229
+  port: 20202
+  udp: true
+  type: vless
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  tls: true
+  servername: wzs.echo.net.eu.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
+    headers:
+      Host: wzs.echo.net.eu.org
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy
+  server: 9641684.sdf65h4.top
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 250c015d-bab0-4ed3-b638-b4eda48f5840
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 9641684.sdf65h4.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy
   server: 61.230.160.34
   port: 24215
   udp: true
@@ -14,27 +50,24 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: safari
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - Chain-Proxy
-  server: 218.237.185.234
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Chain-Proxy
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - Chain-Proxy
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - Chain-Proxy
+  - 🇩🇪 德国 (Germany) 02 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Chain-Proxy
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - Chain-Proxy
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - Chain-Proxy
+  - 🇩🇪 德国 (Germany) 02 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy
 rules:
 - MATCH,PROXIES
