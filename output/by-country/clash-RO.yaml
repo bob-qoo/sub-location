@@ -5,6 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - Chain-Proxy
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: www.amazon.com
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy
+  server: it1.dedushka.top
+  port: 443
+  udp: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: it1.dedushka.top
+  skip-cert-verify: false
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy
   server: 46.28.67.55
   port: 443
   udp: true
@@ -17,19 +33,7 @@ proxies:
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy
-  server: 152.237.230.30
-  port: 443
-  udp: true
-  type: vless
-  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
-  tls: true
-  reality-opts:
-    public-key: 9Wh7M-tz9D_1WBaQhz2wIJian960Ffcx66NH8HAidDI
-    short-id: 61a0eb582ed4f2b5
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy
   server: 162.249.125.133
   port: 443
   udp: true
@@ -39,23 +43,28 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy
-  server: it1.dedushka.top
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy
+  server: 87.58.205.242
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
+    short-id: 7271129440ade8fa
+  servername: backend.mskvibe.fyi
+  client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy
+  server: de1.dedushka.top
   port: 443
   udp: true
   type: trojan
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: it1.dedushka.top
-  skip-cert-verify: false
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: www.amazon.com
+  sni: de1.dedushka.top
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy
+- name: 🇷🇴 罗马尼亚 (Romania) 07 - Chain-Proxy
   server: 154.46.31.106
   port: 443
   udp: true
@@ -73,6 +82,7 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy
   - 🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy
   - 🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy
+  - 🇷🇴 罗马尼亚 (Romania) 07 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,5 +94,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy
   - 🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy
   - 🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy
+  - 🇷🇴 罗马尼亚 (Romania) 07 - Chain-Proxy
 rules:
 - MATCH,PROXIES

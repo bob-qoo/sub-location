@@ -4,8 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - Chain-Proxy",
+      "server": "185.156.44.99",
+      "server_port": 443,
+      "password": "gf1:gfhysteria2024",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amazon.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy",
+      "server": "it1.dedushka.top",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "it1.dedushka.top",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -25,28 +49,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy",
-      "server": "152.237.230.30",
-      "server_port": 443,
-      "uuid": "e3026ffb-cde6-4cfe-b4b7-f76d5264e969",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "9Wh7M-tz9D_1WBaQhz2wIJian960Ffcx66NH8HAidDI",
-          "short_id": "61a0eb582ed4f2b5"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy",
       "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -61,32 +65,41 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy",
+      "server": "87.58.205.242",
+      "server_port": 443,
+      "uuid": "9c794bb7-54fe-4acd-844a-a26209af36c3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "backend.mskvibe.fyi",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ",
+          "short_id": "7271129440ade8fa"
+        }
+      }
+    },
+    {
       "type": "trojan",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy",
-      "server": "it1.dedushka.top",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy",
+      "server": "de1.dedushka.top",
       "server_port": 443,
       "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
       "tls": {
         "enabled": true,
-        "server_name": "it1.dedushka.top",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy",
-      "server": "185.156.44.99",
-      "server_port": 443,
-      "password": "gf1:gfhysteria2024",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amazon.com",
+        "server_name": "de1.dedushka.top",
         "insecure": true
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 07 - Chain-Proxy",
       "server": "154.46.31.106",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -102,7 +115,8 @@
         "🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy",
         "🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy",
         "🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy",
-        "🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy"
+        "🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy",
+        "🇷🇴 罗马尼亚 (Romania) 07 - Chain-Proxy"
       ]
     },
     {
@@ -114,7 +128,8 @@
         "🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy",
         "🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy",
         "🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy",
-        "🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy"
+        "🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy",
+        "🇷🇴 罗马尼亚 (Romania) 07 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

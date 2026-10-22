@@ -25,7 +25,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -66,7 +66,7 @@
         "server_name": "in1.vkusnews.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -76,31 +76,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇮🇳 印度 (India) 05 - Chain-Proxy",
-      "server": "5.253.29.254",
-      "server_port": 10443,
-      "uuid": "c7c27192-60a5-4ce1-b613-95270d82309d"
-    },
-    {
-      "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 06 - Chain-Proxy",
-      "server": "in.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "in.tronsg.com",
-        "insecure": true
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws"
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 07 - Chain-Proxy",
-      "server": "172.105.39.124",
-      "server_port": 7002,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "selector",
@@ -111,9 +95,7 @@
         "🇮🇳 印度 (India) 02 - Chain-Proxy",
         "🇮🇳 印度 (India) 03 - Chain-Proxy",
         "🇮🇳 印度 (India) 04 - Chain-Proxy",
-        "🇮🇳 印度 (India) 05 - Chain-Proxy",
-        "🇮🇳 印度 (India) 06 - Chain-Proxy",
-        "🇮🇳 印度 (India) 07 - Chain-Proxy"
+        "🇮🇳 印度 (India) 05 - Chain-Proxy"
       ]
     },
     {
@@ -124,9 +106,7 @@
         "🇮🇳 印度 (India) 02 - Chain-Proxy",
         "🇮🇳 印度 (India) 03 - Chain-Proxy",
         "🇮🇳 印度 (India) 04 - Chain-Proxy",
-        "🇮🇳 印度 (India) 05 - Chain-Proxy",
-        "🇮🇳 印度 (India) 06 - Chain-Proxy",
-        "🇮🇳 印度 (India) 07 - Chain-Proxy"
+        "🇮🇳 印度 (India) 05 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
