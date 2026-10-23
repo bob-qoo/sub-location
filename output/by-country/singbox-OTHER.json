@@ -6,12 +6,12 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - Chain-Proxy",
-      "server": "undef.network",
-      "server_port": 2053,
-      "uuid": "e3fb01b6-69b4-41d7-babf-696d992de194",
+      "server": "104.25.88.220",
+      "server_port": 443,
+      "uuid": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46",
       "tls": {
         "enabled": true,
-        "server_name": "uwu.blueknightnet.qzz.io",
+        "server_name": "a.cwvps.eu.org",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,7 +20,40 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net",
+        "path": "/ws",
+        "headers": {
+          "Host": "a.cwvps.eu.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 02 - Chain-Proxy",
+      "server": "104.25.88.220",
+      "server_port": 443,
+      "uuid": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46",
+      "tls": {
+        "enabled": true,
+        "server_name": "a.cwvps.eu.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "a.cwvps.eu.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 03 - Chain-Proxy",
+      "server": "freesocks.work",
+      "server_port": 2052,
+      "uuid": "26769ac3-b34c-430a-87f8-e1de14619d25",
+      "transport": {
+        "type": "ws",
+        "path": "/@BlueKnight_net--@BlueKnight_net",
         "headers": {
           "Host": "uwu.blueknightnet.qzz.io"
         }
@@ -31,14 +64,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - Chain-Proxy"
+        "🌐 其他地区 (Other) 01 - Chain-Proxy",
+        "🌐 其他地区 (Other) 02 - Chain-Proxy",
+        "🌐 其他地区 (Other) 03 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - Chain-Proxy"
+        "🌐 其他地区 (Other) 01 - Chain-Proxy",
+        "🌐 其他地区 (Other) 02 - Chain-Proxy",
+        "🌐 其他地区 (Other) 03 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

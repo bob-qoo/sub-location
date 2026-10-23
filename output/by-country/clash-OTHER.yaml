@@ -5,18 +5,43 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - Chain-Proxy
-  server: undef.network
-  port: 2053
+  server: 104.25.88.220
+  port: 443
   udp: true
   type: vless
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   tls: true
-  servername: uwu.blueknightnet.qzz.io
+  servername: a.cwvps.eu.org
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    path: /ws
+    headers:
+      Host: a.cwvps.eu.org
+- name: 🌐 其他地区 (Other) 02 - Chain-Proxy
+  server: 104.25.88.220
+  port: 443
+  udp: true
+  type: vless
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  tls: true
+  servername: a.cwvps.eu.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: a.cwvps.eu.org
+- name: 🌐 其他地区 (Other) 03 - Chain-Proxy
+  server: freesocks.work
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 26769ac3-b34c-430a-87f8-e1de14619d25
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
     headers:
       Host: uwu.blueknightnet.qzz.io
 proxy-groups:
@@ -25,11 +50,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - Chain-Proxy
+  - 🌐 其他地区 (Other) 02 - Chain-Proxy
+  - 🌐 其他地区 (Other) 03 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - Chain-Proxy
+  - 🌐 其他地区 (Other) 02 - Chain-Proxy
+  - 🌐 其他地区 (Other) 03 - Chain-Proxy
 rules:
 - MATCH,PROXIES
