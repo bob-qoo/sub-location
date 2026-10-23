@@ -14,22 +14,8 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇮🇳 印度 (India) 02 (家宽) - Chain-Proxy
-  server: 122.176.216.52
-  port: 443
-  udp: true
-  type: vless
-  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
-  tls: true
-  servername: app-6ada5023.deploy.meerasolution.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
-    headers:
-      Host: app-6ada5023.deploy.meerasolution.com
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy
-  server: hinet1.2yly.com
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy
+  server: 61.230.160.34
   port: 24215
   udp: true
   type: vless
@@ -38,22 +24,39 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: firefox
+  client-fingerprint: ios
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - Chain-Proxy
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - Chain-Proxy
+  server: 206.1.99.36
+  port: 58202
+  udp: true
+  type: vmess
+  uuid: 482e7f58-e8e8-418d-accd-0a94bdf090ae
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - Chain-Proxy
-  - 🇮🇳 印度 (India) 02 (家宽) - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - Chain-Proxy
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - Chain-Proxy
-  - 🇮🇳 印度 (India) 02 (家宽) - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - Chain-Proxy
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - Chain-Proxy
 rules:
 - MATCH,PROXIES
