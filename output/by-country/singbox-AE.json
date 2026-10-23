@@ -4,61 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 01 - Chain-Proxy",
-      "server": "128.241.25.215",
-      "server_port": 30036,
-      "uuid": "196b7228-58df-4bcf-af2a-2e96608d5add",
-      "tls": {
-        "enabled": true,
-        "server_name": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy",
-      "server": "54.178.110.17",
-      "server_port": 4443,
-      "uuid": "d5fbd83b-7346-4ad9-94c0-76293724824d",
-      "tls": {
-        "enabled": true,
-        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy",
+      "tag": "🇦🇪 阿联酋 (UAE) 01 - Chain-Proxy",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
       "tls": {
         "enabled": true,
         "server_name": "hy2.aspidnet.xyz",
-        "insecure": false
+        "insecure": true
       },
       "obfs": {
         "type": "salamander",
@@ -67,7 +21,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy",
       "server": "185.253.116.33",
       "server_port": 14430,
       "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
@@ -78,174 +32,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy",
-      "server": "23.27.20.142",
-      "server_port": 48537,
-      "uuid": "0b583bdc-401c-4715-bfec-500a25584133",
-      "tls": {
-        "enabled": true,
-        "server_name": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy",
-      "server": "57.129.130.57",
-      "server_port": 52014,
-      "uuid": "eb9ee088-57d8-4d68-ad00-da4ce09daca3",
-      "tls": {
-        "enabled": true,
-        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy",
-      "server": "129.151.64.169",
-      "server_port": 31867,
-      "uuid": "0ff1bcdb-8dcc-4b05-93df-09f028330184",
-      "tls": {
-        "enabled": true,
-        "server_name": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 08 - Chain-Proxy",
-      "server": "188.34.142.174",
-      "server_port": 444,
-      "uuid": "da46ec1f-84ad-4470-866f-010b58357b19",
-      "tls": {
-        "enabled": true,
-        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 09 - Chain-Proxy",
-      "server": "5.75.195.83",
-      "server_port": 56879,
-      "uuid": "dc3a7f2f-90e0-49e8-b6d7-2a9938e6271a",
-      "tls": {
-        "enabled": true,
-        "server_name": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 10 - Chain-Proxy",
-      "server": "45.77.241.190",
-      "server_port": 8441,
-      "uuid": "095e81b0-8e36-441d-974e-2230cfd16c5a",
-      "tls": {
-        "enabled": true,
-        "server_name": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 11 - Chain-Proxy",
-      "server": "45.59.120.217",
-      "server_port": 443,
-      "uuid": "8732f92b-ba85-48f7-92e4-ad029f1cd4e7",
-      "tls": {
-        "enabled": true,
-        "server_name": "strm.yandex.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w",
-          "short_id": "29c2dd1e3ef7c4d4"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 12 - Chain-Proxy",
-      "server": "84.235.244.108",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy",
+      "server": "uae.unixzone.us",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "uae.unixzone.us"
-        }
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy",
+      "server": "95.174.68.188",
+      "server_port": 14430,
+      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
+      "transport": {
+        "type": "ws",
+        "path": "/vless"
       }
     },
     {
@@ -256,15 +60,7 @@
         "🇦🇪 阿联酋 (UAE) 01 - Chain-Proxy",
         "🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy",
         "🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 08 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 09 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 10 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 11 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 12 - Chain-Proxy"
+        "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy"
       ]
     },
     {
@@ -274,15 +70,7 @@
         "🇦🇪 阿联酋 (UAE) 01 - Chain-Proxy",
         "🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy",
         "🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 08 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 09 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 10 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 11 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 12 - Chain-Proxy"
+        "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

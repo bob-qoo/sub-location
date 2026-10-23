@@ -5,28 +5,25 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇶 IQ 01 - Chain-Proxy",
-      "server": "104.21.70.21",
-      "server_port": 443,
-      "uuid": "93fa8bdb-9cca-4a3e-8355-b7c12e4f595e",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - Chain-Proxy",
+      "server": "111.90.143.184",
+      "server_port": 61111,
+      "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
       "tls": {
         "enabled": true,
-        "server_name": "fornewiran.ade-1000.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "github.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jT5prLDhvJ86zZVz5pDX907oQbeZ0Hyb_VcDSiJxQQU",
+          "short_id": "1378f725da558887"
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/vl/yLWNcuUuw1jlJpkDhGy?ed=2560",
-        "headers": {
-          "Host": "fornewiran.ade-1000.workers.dev"
-        }
+        "type": "grpc"
       }
     },
     {
@@ -34,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - Chain-Proxy"
+        "🇲🇾 马来西亚 (Malaysia) 01 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - Chain-Proxy"
+        "🇲🇾 马来西亚 (Malaysia) 01 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
