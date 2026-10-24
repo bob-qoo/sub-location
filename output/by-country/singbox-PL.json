@@ -13,16 +13,21 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - Chain-Proxy",
-      "server": "edge10.cyrionflare.com",
-      "server_port": 2052,
-      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - Chain-Proxy",
       "server": "site.teslamotor.site",
       "server_port": 20001,
       "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇵🇱 波兰 (Poland) 03 - Chain-Proxy",
+      "server": "scrap.halyvanedorogo.ru",
+      "server_port": 35076,
+      "password": "b4c8ee9caa74b7ba0a61",
+      "tls": {
+        "enabled": true,
+        "server_name": "scrap.halyvanedorogo.ru",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
@@ -45,16 +50,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 05 - Chain-Proxy",
-      "server": "49.12.249.167",
-      "server_port": 147,
-      "method": "chacha20-ietf-poly1305",
-      "password": "5uDrCF_iLoxCiRkKku6f7A"
-    },
-    {
       "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 06 - Chain-Proxy",
+      "tag": "🇵🇱 波兰 (Poland) 05 - Chain-Proxy",
       "server": "54.37.131.126",
       "server_port": 80,
       "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
@@ -68,20 +65,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 07 - Chain-Proxy",
-      "server": "pl.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.tronsg.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 08 - Chain-Proxy",
+      "tag": "🇵🇱 波兰 (Poland) 06 - Chain-Proxy",
       "server": "82.118.22.161",
       "server_port": 443,
       "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
@@ -91,7 +76,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -110,9 +95,7 @@
         "🇵🇱 波兰 (Poland) 03 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 04 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 05 - Chain-Proxy",
-        "🇵🇱 波兰 (Poland) 06 - Chain-Proxy",
-        "🇵🇱 波兰 (Poland) 07 - Chain-Proxy",
-        "🇵🇱 波兰 (Poland) 08 - Chain-Proxy"
+        "🇵🇱 波兰 (Poland) 06 - Chain-Proxy"
       ]
     },
     {
@@ -124,9 +107,7 @@
         "🇵🇱 波兰 (Poland) 03 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 04 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 05 - Chain-Proxy",
-        "🇵🇱 波兰 (Poland) 06 - Chain-Proxy",
-        "🇵🇱 波兰 (Poland) 07 - Chain-Proxy",
-        "🇵🇱 波兰 (Poland) 08 - Chain-Proxy"
+        "🇵🇱 波兰 (Poland) 06 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
