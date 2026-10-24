@@ -5,11 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - Chain-Proxy
-  server: 51.24.209.55
-  port: 22222
+  server: 62.72.166.30
+  port: 8880
   udp: true
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime40.workers.dev
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - Chain-Proxy
   server: 16.60.44.179
   port: 22222
@@ -17,12 +22,30 @@ proxies:
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - name: 🇮🇪 爱尔兰 (Ireland) 03 - Chain-Proxy
-  server: 51.24.209.55
+  server: 16.60.44.179
   port: 22224
   udp: true
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - name: 🇮🇪 爱尔兰 (Ireland) 04 - Chain-Proxy
+  server: 16.60.44.179
+  port: 22223
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇮🇪 爱尔兰 (Ireland) 05 - Chain-Proxy
+  server: 51.24.209.55
+  port: 22222
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇮🇪 爱尔兰 (Ireland) 06 - Chain-Proxy
+  server: 51.24.209.55
+  port: 22224
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇮🇪 爱尔兰 (Ireland) 07 - Chain-Proxy
   server: 51.24.209.55
   port: 22223
   udp: true
@@ -37,6 +60,9 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 02 - Chain-Proxy
   - 🇮🇪 爱尔兰 (Ireland) 03 - Chain-Proxy
   - 🇮🇪 爱尔兰 (Ireland) 04 - Chain-Proxy
+  - 🇮🇪 爱尔兰 (Ireland) 05 - Chain-Proxy
+  - 🇮🇪 爱尔兰 (Ireland) 06 - Chain-Proxy
+  - 🇮🇪 爱尔兰 (Ireland) 07 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,5 +72,8 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 02 - Chain-Proxy
   - 🇮🇪 爱尔兰 (Ireland) 03 - Chain-Proxy
   - 🇮🇪 爱尔兰 (Ireland) 04 - Chain-Proxy
+  - 🇮🇪 爱尔兰 (Ireland) 05 - Chain-Proxy
+  - 🇮🇪 爱尔兰 (Ireland) 06 - Chain-Proxy
+  - 🇮🇪 爱尔兰 (Ireland) 07 - Chain-Proxy
 rules:
 - MATCH,PROXIES

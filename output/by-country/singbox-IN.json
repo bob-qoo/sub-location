@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇮🇳 印度 (India) 01 - Chain-Proxy",
+      "server": "139.84.166.47",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "GEdoeeqLZtkJRgSa"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 02 - Chain-Proxy",
       "server": "13.140.56.100",
       "server_port": 14430,
       "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
@@ -19,7 +27,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - Chain-Proxy",
+      "tag": "🇮🇳 印度 (India) 03 - Chain-Proxy",
       "server": "in.smrtai.top",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
@@ -38,18 +46,6 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 03 - Chain-Proxy",
-      "server": "in.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "in.tronsg.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vmess",
       "tag": "🇮🇳 印度 (India) 04 - Chain-Proxy",
       "server": "152.67.8.205",
@@ -61,6 +57,38 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 05 - Chain-Proxy",
+      "server": "194.61.31.126",
+      "server_port": 2053,
+      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
+          "short_id": "9980e0609b0d3891"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇮🇳 印度 (India) 06 - Chain-Proxy",
+      "server": "in.tronsg.com",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "in.tronsg.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -68,7 +96,9 @@
         "🇮🇳 印度 (India) 01 - Chain-Proxy",
         "🇮🇳 印度 (India) 02 - Chain-Proxy",
         "🇮🇳 印度 (India) 03 - Chain-Proxy",
-        "🇮🇳 印度 (India) 04 - Chain-Proxy"
+        "🇮🇳 印度 (India) 04 - Chain-Proxy",
+        "🇮🇳 印度 (India) 05 - Chain-Proxy",
+        "🇮🇳 印度 (India) 06 - Chain-Proxy"
       ]
     },
     {
@@ -78,7 +108,9 @@
         "🇮🇳 印度 (India) 01 - Chain-Proxy",
         "🇮🇳 印度 (India) 02 - Chain-Proxy",
         "🇮🇳 印度 (India) 03 - Chain-Proxy",
-        "🇮🇳 印度 (India) 04 - Chain-Proxy"
+        "🇮🇳 印度 (India) 04 - Chain-Proxy",
+        "🇮🇳 印度 (India) 05 - Chain-Proxy",
+        "🇮🇳 印度 (India) 06 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
