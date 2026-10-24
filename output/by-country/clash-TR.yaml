@@ -17,16 +17,30 @@ proxies:
   servername: apple.com
   client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy
-  server: 153.56.210.134
-  port: 34121
+  server: 45.151.71.164
+  port: 443
   udp: true
-  type: hysteria2
-  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
+  type: vless
+  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: abuse.ozon.ru
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy
   server: 62.133.63.45
   port: 8444
   udp: true
@@ -41,33 +55,8 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy
-  server: 78.135.73.47
-  port: 443
-  udp: true
-  type: vless
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
-  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 06 - Chain-Proxy
-  server: trend.eidoslab.link
+  server: 45.74.159.238
   port: 443
   udp: true
   type: vless
@@ -78,7 +67,22 @@ proxies:
     public-key: p7X0vRL9R-23Ey-MZZZj7FY0g87nQq0Jzc01DwuryRk
     short-id: 7597c5df264bcc10
   servername: trend.eidoslab.link
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 06 - Chain-Proxy
+  server: 177.3.208.65
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  tls: true
+  servername: tgmansion.site
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: tgmansion.site
 proxy-groups:
 - name: PROXIES
   type: select
