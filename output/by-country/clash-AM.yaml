@@ -4,26 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - Chain-Proxy
-  server: uwu.blueknightnet.qzz.io
-  port: 2052
+- name: 🇦🇲 亚美尼亚 (Armenia) 01 - Chain-Proxy
+  server: 194.36.37.59
+  port: 10004
   udp: true
   type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  uuid: f7376394-cd54-11f1-bb6a-bff6d0326f6a
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
+    path: /vpnjantit
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - Chain-Proxy
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - Chain-Proxy
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - Chain-Proxy
 rules:
 - MATCH,PROXIES

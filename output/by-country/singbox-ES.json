@@ -4,12 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 01 - Chain-Proxy",
-      "server": "5.188.181.201",
-      "server_port": 9014,
-      "method": "aes-256-cfb",
-      "password": "KnJGad3FqTvjqbaX"
+      "server": "156.252.229.11",
+      "server_port": 8443,
+      "uuid": "3e21e3d3-6d26-4155-b851-764dd8e8c6b5",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.googleapis.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A",
+          "short_id": "974f7f8f"
+        }
+      }
     },
     {
       "type": "vless",
@@ -22,7 +34,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -43,7 +55,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -55,26 +67,6 @@
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 04 - Chain-Proxy",
-      "server": "156.252.229.11",
-      "server_port": 8443,
-      "uuid": "3e21e3d3-6d26-4155-b851-764dd8e8c6b5",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.googleapis.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A",
-          "short_id": "974f7f8f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - Chain-Proxy",
       "server": "193.238.154.78",
       "server_port": 443,
       "uuid": "897d47f8-4dd5-42a1-bcd0-bef19caff55a",
@@ -101,8 +93,7 @@
         "🇪🇸 西班牙 (Spain) 01 - Chain-Proxy",
         "🇪🇸 西班牙 (Spain) 02 - Chain-Proxy",
         "🇪🇸 西班牙 (Spain) 03 - Chain-Proxy",
-        "🇪🇸 西班牙 (Spain) 04 - Chain-Proxy",
-        "🇪🇸 西班牙 (Spain) 05 - Chain-Proxy"
+        "🇪🇸 西班牙 (Spain) 04 - Chain-Proxy"
       ]
     },
     {
@@ -112,8 +103,7 @@
         "🇪🇸 西班牙 (Spain) 01 - Chain-Proxy",
         "🇪🇸 西班牙 (Spain) 02 - Chain-Proxy",
         "🇪🇸 西班牙 (Spain) 03 - Chain-Proxy",
-        "🇪🇸 西班牙 (Spain) 04 - Chain-Proxy",
-        "🇪🇸 西班牙 (Spain) 05 - Chain-Proxy"
+        "🇪🇸 西班牙 (Spain) 04 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
