@@ -7,9 +7,9 @@
       "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 01 - Chain-Proxy",
       "server": "5.188.181.201",
-      "server_port": 9029,
+      "server_port": 9014,
       "method": "aes-256-cfb",
-      "password": "dU3DSNS8wYPXzEKw"
+      "password": "KnJGad3FqTvjqbaX"
     },
     {
       "type": "vless",
@@ -34,22 +34,6 @@
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 03 - Chain-Proxy",
-      "server": "46.28.71.135",
-      "server_port": 443,
-      "uuid": "7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc",
-      "tls": {
-        "enabled": true,
-        "server_name": "l97bke0sf1.hat.onl",
-        "insecure": false
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "v1.segment.UWfv4bkH4bz1Hs3u.ts"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - Chain-Proxy",
       "server": "46.28.71.247",
       "server_port": 443,
       "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
@@ -59,12 +43,32 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
           "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
           "short_id": "0dfc23fe80778c00"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - Chain-Proxy",
+      "server": "156.252.229.11",
+      "server_port": 8443,
+      "uuid": "3e21e3d3-6d26-4155-b851-764dd8e8c6b5",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.googleapis.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A",
+          "short_id": "974f7f8f"
         }
       }
     },
@@ -90,27 +94,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 06 - Chain-Proxy",
-      "server": "83.147.18.3",
-      "server_port": 443,
-      "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA",
-          "short_id": "fd8cf7e1173f0edb"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -119,8 +102,7 @@
         "🇪🇸 西班牙 (Spain) 02 - Chain-Proxy",
         "🇪🇸 西班牙 (Spain) 03 - Chain-Proxy",
         "🇪🇸 西班牙 (Spain) 04 - Chain-Proxy",
-        "🇪🇸 西班牙 (Spain) 05 - Chain-Proxy",
-        "🇪🇸 西班牙 (Spain) 06 - Chain-Proxy"
+        "🇪🇸 西班牙 (Spain) 05 - Chain-Proxy"
       ]
     },
     {
@@ -131,8 +113,7 @@
         "🇪🇸 西班牙 (Spain) 02 - Chain-Proxy",
         "🇪🇸 西班牙 (Spain) 03 - Chain-Proxy",
         "🇪🇸 西班牙 (Spain) 04 - Chain-Proxy",
-        "🇪🇸 西班牙 (Spain) 05 - Chain-Proxy",
-        "🇪🇸 西班牙 (Spain) 06 - Chain-Proxy"
+        "🇪🇸 西班牙 (Spain) 05 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
