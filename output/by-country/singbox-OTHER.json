@@ -4,48 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - Chain-Proxy",
-      "server": "104.21.0.1",
-      "server_port": 2083,
-      "uuid": "ac251237-576f-40c8-a543-554960c958b1",
-      "security": "auto",
+      "server": "104.18.37.127",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "or3.sfacg.uk",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/or3",
-        "headers": {
-          "Host": "or3.sfacg.uk"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 02 - Chain-Proxy",
-      "server": "cctvhikvision.center",
-      "server_port": 2052,
-      "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
-      "transport": {
-        "type": "ws",
-        "path": "/@BlueKnight_net--@BlueKnight_net",
-        "headers": {
-          "Host": "uwu.blueknightnet.qzz.io"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 03 - Chain-Proxy",
-      "server": "104.21.84.167",
-      "server_port": 2053,
-      "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
-      "tls": {
-        "enabled": true,
-        "server_name": "uwu.blueknightnet.qzz.io",
+        "server_name": "jp3.yohototo.top",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -54,37 +20,77 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net",
+        "path": "/tyxyws",
         "headers": {
-          "Host": "uwu.blueknightnet.qzz.io"
+          "Host": "jp3.yohototo.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 02 - Chain-Proxy",
+      "server": "104.18.37.127",
+      "server_port": 443,
+      "uuid": "d342d11e-d224-4463-b982-532309285094",
+      "tls": {
+        "enabled": true,
+        "server_name": "ccc.010304.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ccc.010304.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 03 - Chain-Proxy",
+      "server": "104.18.37.127",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 04 - Chain-Proxy",
-      "server": "104.21.93.52",
-      "server_port": 2052,
-      "uuid": "e3fb01b6-69b4-41d7-babf-696d992de194",
-      "transport": {
-        "type": "ws",
-        "path": "/@BlueKnight_net--@BlueKnight_net",
-        "headers": {
-          "Host": "uwu.blueknightnet.qzz.io"
+      "server": "104.18.37.127",
+      "server_port": 443,
+      "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+      "tls": {
+        "enabled": true,
+        "server_name": "snip.edgeoneai.cc.cd",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 05 - Chain-Proxy",
-      "server": "104.21.93.52",
-      "server_port": 2052,
-      "uuid": "e3fb01b6-69b4-41d7-babf-696d992de194",
+      },
       "transport": {
         "type": "ws",
-        "path": "/@BlueKnight_net--@BlueKnight_net",
+        "path": "/?Telegram---mehrosaboran",
         "headers": {
-          "Host": "uwu.blueknightnet.qzz.io"
+          "Host": "snip.edgeoneai.cc.cd"
         }
       }
     },
@@ -96,8 +102,7 @@
         "🌐 其他地区 (Other) 01 - Chain-Proxy",
         "🌐 其他地区 (Other) 02 - Chain-Proxy",
         "🌐 其他地区 (Other) 03 - Chain-Proxy",
-        "🌐 其他地区 (Other) 04 - Chain-Proxy",
-        "🌐 其他地区 (Other) 05 - Chain-Proxy"
+        "🌐 其他地区 (Other) 04 - Chain-Proxy"
       ]
     },
     {
@@ -107,8 +112,7 @@
         "🌐 其他地区 (Other) 01 - Chain-Proxy",
         "🌐 其他地区 (Other) 02 - Chain-Proxy",
         "🌐 其他地区 (Other) 03 - Chain-Proxy",
-        "🌐 其他地区 (Other) 04 - Chain-Proxy",
-        "🌐 其他地区 (Other) 05 - Chain-Proxy"
+        "🌐 其他地区 (Other) 04 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
