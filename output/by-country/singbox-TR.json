@@ -65,43 +65,16 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy",
-      "server": "78.135.73.47",
-      "server_port": 443,
-      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.datadoghq.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
-          "short_id": "f46cd3ea3d1eb72d"
-        }
-      }
+      "server": "87.236.166.134",
+      "server_port": 56134,
+      "method": "chacha20-ietf-poly1305",
+      "password": "uvKNudV-N8AUCrykPiyznA"
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy",
-      "server": "trdatair.egekaradecojistik.net.tr",
-      "server_port": 35577,
-      "uuid": "b7d3a581-74d6-4ead-9235-ce9dedf08152",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "play.google.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - Chain-Proxy",
       "server": "177.3.208.65",
       "server_port": 443,
       "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
@@ -121,7 +94,42 @@
     },
     {
       "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 06 - Chain-Proxy",
+      "server": "78.135.73.47",
+      "server_port": 443,
+      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.datadoghq.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
+          "short_id": "f46cd3ea3d1eb72d"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 07 - Chain-Proxy",
+      "server": "trdatair.egekaradecojistik.net.tr",
+      "server_port": 35577,
+      "uuid": "b7d3a581-74d6-4ead-9235-ce9dedf08152",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "play.google.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 08 - Chain-Proxy",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -138,14 +146,6 @@
           "short_id": "9e419c0759b54d6f"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 08 - Chain-Proxy",
-      "server": "location8.cpanel-host10.ir",
-      "server_port": 56134,
-      "method": "chacha20-ietf-poly1305",
-      "password": "uvKNudV-N8AUCrykPiyznA"
     },
     {
       "type": "selector",

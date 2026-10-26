@@ -46,8 +46,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - Chain-Proxy",
+      "server": "lv02.gotosvo.com",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - Chain-Proxy",
       "server": "195.123.208.32",
       "server_port": 443,
       "uuid": "1ebcb694-875c-4be7-b6a2-d53c8208991b",
@@ -73,7 +85,8 @@
         "auto",
         "🇱🇻 拉脱维亚 (Latvia) 01 - Chain-Proxy",
         "🇱🇻 拉脱维亚 (Latvia) 02 - Chain-Proxy",
-        "🇱🇻 拉脱维亚 (Latvia) 03 - Chain-Proxy"
+        "🇱🇻 拉脱维亚 (Latvia) 03 - Chain-Proxy",
+        "🇱🇻 拉脱维亚 (Latvia) 04 - Chain-Proxy"
       ]
     },
     {
@@ -82,7 +95,8 @@
       "outbounds": [
         "🇱🇻 拉脱维亚 (Latvia) 01 - Chain-Proxy",
         "🇱🇻 拉脱维亚 (Latvia) 02 - Chain-Proxy",
-        "🇱🇻 拉脱维亚 (Latvia) 03 - Chain-Proxy"
+        "🇱🇻 拉脱维亚 (Latvia) 03 - Chain-Proxy",
+        "🇱🇻 拉脱维亚 (Latvia) 04 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
