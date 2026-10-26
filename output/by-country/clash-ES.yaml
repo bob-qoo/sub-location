@@ -5,17 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - Chain-Proxy
-  server: 156.252.229.11
-  port: 8443
+  server: 5.188.181.201
+  port: 9014
   udp: true
-  type: vless
-  uuid: 3e21e3d3-6d26-4155-b851-764dd8e8c6b5
-  tls: true
-  reality-opts:
-    public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
-    short-id: 974f7f8f
-  servername: play.googleapis.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: KnJGad3FqTvjqbaX
 - name: 🇪🇸 西班牙 (Spain) 02 - Chain-Proxy
   server: 212.227.235.66
   port: 2053

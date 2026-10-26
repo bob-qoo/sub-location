@@ -17,18 +17,6 @@ proxies:
   servername: apple.com
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy
   server: 153.56.210.134
   port: 34121
   udp: true
@@ -38,7 +26,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
-- name: 🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy
+- name: 🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy
   server: 62.133.63.45
   port: 8444
   udp: true
@@ -53,7 +41,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy
+- name: 🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy
   server: 78.135.73.47
   port: 443
   udp: true
@@ -65,7 +53,18 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: chrome
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy
+  server: trdatair.egekaradecojistik.net.tr
+  port: 35577
+  udp: true
+  type: vless
+  uuid: b7d3a581-74d6-4ead-9235-ce9dedf08152
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: play.google.com
 - name: 🇹🇷 土耳其 (Turkey) 06 - Chain-Proxy
   server: 177.3.208.65
   port: 443
@@ -80,6 +79,18 @@ proxies:
   ws-opts:
     path: /vless-tr
 - name: 🇹🇷 土耳其 (Turkey) 07 - Chain-Proxy
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 08 - Chain-Proxy
   server: location8.cpanel-host10.ir
   port: 56134
   udp: true
@@ -98,6 +109,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 06 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 07 - Chain-Proxy
+  - 🇹🇷 土耳其 (Turkey) 08 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,5 +122,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 06 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 07 - Chain-Proxy
+  - 🇹🇷 土耳其 (Turkey) 08 - Chain-Proxy
 rules:
 - MATCH,PROXIES

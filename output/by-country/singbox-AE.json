@@ -22,14 +22,23 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy",
-      "server": "185.253.116.33",
-      "server_port": 14430,
-      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
+      "server": "129.153.71.28",
+      "server_port": 28863,
+      "uuid": "29eccb47-4881-4aab-863c-28bb7fdaf134",
+      "tls": {
+        "enabled": true,
+        "server_name": "3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/vless",
+        "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "185.253.116.33"
+          "Host": "3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev"
         }
       }
     },
@@ -55,6 +64,20 @@
       "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
       "transport": {
         "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "95.174.68.188"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy",
+      "server": "185.253.116.33",
+      "server_port": 14430,
+      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
+      "transport": {
+        "type": "ws",
         "path": "/vless"
       }
     },
@@ -66,7 +89,8 @@
         "🇦🇪 阿联酋 (UAE) 01 - Chain-Proxy",
         "🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy",
         "🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy"
+        "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy",
+        "🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy"
       ]
     },
     {
@@ -76,7 +100,8 @@
         "🇦🇪 阿联酋 (UAE) 01 - Chain-Proxy",
         "🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy",
         "🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy"
+        "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy",
+        "🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

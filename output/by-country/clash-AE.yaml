@@ -15,16 +15,20 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy
-  server: 185.253.116.33
-  port: 14430
+  server: 129.153.71.28
+  port: 28863
   udp: true
   type: vless
-  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
+  uuid: 29eccb47-4881-4aab-863c-28bb7fdaf134
+  tls: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vless
+    path: /@Marisa_kristi
     headers:
-      Host: 185.253.116.33
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
   server: 84.235.244.108
   port: 22573
@@ -45,6 +49,17 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
+  server: 185.253.116.33
+  port: 14430
+  udp: true
+  type: vless
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
+  network: ws
+  ws-opts:
+    path: /vless
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +69,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,5 +79,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
 rules:
 - MATCH,PROXIES
