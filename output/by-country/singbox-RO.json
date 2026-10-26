@@ -6,42 +6,20 @@
     {
       "type": "vless",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - Chain-Proxy",
-      "server": "45.13.151.11",
-      "server_port": 443,
-      "uuid": "1506f2e0-ae12-4718-b5ab-c5609161300e",
-      "tls": {
-        "enabled": true,
-        "server_name": "eu14.cdn77.icu",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8",
-          "short_id": "1ed136481e0ede74"
-        }
-      }
+      "server": "82.47.63.224",
+      "server_port": 2052,
+      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy",
-      "server": "82.117.255.174",
+      "server": "185.156.44.99",
       "server_port": 443,
-      "uuid": "679439c5-28f2-485e-af5f-60a5fcd9c36c",
-      "flow": "xtls-rprx-vision",
+      "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "gateway.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0",
-          "short_id": "31e91d43e553bf32"
-        }
+        "server_name": "185.156.44.99",
+        "insecure": true
       }
     },
     {
@@ -69,15 +47,24 @@
       "password": "QFWzCw2uX9B9i6qAYeFBIE"
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy",
-      "server": "185.156.44.99",
+      "server": "82.117.255.174",
       "server_port": 443,
-      "password": "gf1:gfhysteria2024",
+      "uuid": "679439c5-28f2-485e-af5f-60a5fcd9c36c",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "185.156.44.99",
-        "insecure": true
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0",
+          "short_id": "31e91d43e553bf32"
+        }
       }
     },
     {
