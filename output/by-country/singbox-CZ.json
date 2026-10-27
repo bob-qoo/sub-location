@@ -6,6 +6,29 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - Chain-Proxy",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "uuid": "e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ezaccess-project-f62c30.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "ezaccess-project-f62c30.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - Chain-Proxy",
       "server": "195.123.245.241",
       "server_port": 443,
       "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
@@ -26,14 +49,14 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - Chain-Proxy",
+      "tag": "🇨🇿 捷克 (Czech) 03 - Chain-Proxy",
       "server": "193.124.17.190",
       "server_port": 443,
-      "uuid": "68cf8d29-5aa0-44b3-88a9-f1a576b6e84c",
+      "uuid": "4d017db2-7655-4276-9557-e2ec25b04ee7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com",
+        "server_name": "www.tradingview.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -41,7 +64,7 @@
         "reality": {
           "enabled": true,
           "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "73a9e631a09b"
+          "short_id": "ee1716767f9b"
         }
       }
     },
@@ -51,7 +74,8 @@
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - Chain-Proxy",
-        "🇨🇿 捷克 (Czech) 02 - Chain-Proxy"
+        "🇨🇿 捷克 (Czech) 02 - Chain-Proxy",
+        "🇨🇿 捷克 (Czech) 03 - Chain-Proxy"
       ]
     },
     {
@@ -59,7 +83,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - Chain-Proxy",
-        "🇨🇿 捷克 (Czech) 02 - Chain-Proxy"
+        "🇨🇿 捷克 (Czech) 02 - Chain-Proxy",
+        "🇨🇿 捷克 (Czech) 03 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

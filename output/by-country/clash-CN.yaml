@@ -5,20 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇳 CN 01 - Chain-Proxy
-  server: 8.35.211.242
-  port: 443
+  server: 122.8.45.7
+  port: 8443
   udp: true
   type: vless
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  uuid: 362a0364-2b0f-cd11-9c20-ab9dfbeb8b11
   tls: true
-  servername: vpn.cintaku.qzz.io
-  skip-cert-verify: false
+  reality-opts:
+    public-key: wcOBPSgoOKptWa9ZHpFpmbrPfLqobBNpCgLH88Ptjhk
+  servername: download.nvidia.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇨🇳 CN 02 - Chain-Proxy
+  server: 39.108.113.127
+  port: 10086
+  udp: true
+  type: vmess
+  uuid: 2eb25c1e-c3b5-45cf-9afd-dd3ddc00da10
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: 🇨🇳 CN 02 - Chain-Proxy
+    path: /
+- name: 🇨🇳 CN 03 - Chain-Proxy
   server: 188.114.98.0
   port: 443
   udp: true
@@ -40,6 +51,7 @@ proxy-groups:
   - AUTO
   - 🇨🇳 CN 01 - Chain-Proxy
   - 🇨🇳 CN 02 - Chain-Proxy
+  - 🇨🇳 CN 03 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -47,5 +59,6 @@ proxy-groups:
   proxies:
   - 🇨🇳 CN 01 - Chain-Proxy
   - 🇨🇳 CN 02 - Chain-Proxy
+  - 🇨🇳 CN 03 - Chain-Proxy
 rules:
 - MATCH,PROXIES

@@ -30,7 +30,7 @@
     {
       "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy",
-      "server": "50.7.38.243",
+      "server": "promo.betust.net",
       "server_port": 443,
       "password": "d4ca9415f0eac7897472e1e5b86d2e96",
       "tls": {
@@ -42,27 +42,6 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy",
-      "server": "191.44.114.154",
-      "server_port": 8443,
-      "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.wikipedia.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ndQzAcG4g-2OhvFb8EjFnZyxJ2lhawiulTLJOZrK8lY",
-          "short_id": "c4359f3827231250"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy",
       "server": "191.44.114.179",
       "server_port": 8443,
       "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
@@ -83,21 +62,35 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy",
-      "server": "191.44.114.179",
-      "server_port": 2096,
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy",
+      "server": "191.44.114.154",
+      "server_port": 8443,
       "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "st33614.rumedia-cdn.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live",
-        "headers": {
-          "Host": "st33614.rumedia-cdn.com"
+        "server_name": "www.wikipedia.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ndQzAcG4g-2OhvFb8EjFnZyxJ2lhawiulTLJOZrK8lY",
+          "short_id": "c4359f3827231250"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy",
+      "server": "201.58.177.159",
+      "server_port": 4443,
+      "password": "c0242d1b-db7a-4dcf-95ff-e10a3ef1c1a3",
+      "tls": {
+        "enabled": true,
+        "server_name": "se3.shvpn.ru",
+        "insecure": false
       }
     },
     {
@@ -108,27 +101,9 @@
       "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
       "transport": {
         "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - Chain-Proxy",
-      "server": "89.125.37.91",
-      "server_port": 41445,
-      "uuid": "f12d0220-e1de-4232-bcef-7e5a12f05062",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "se.s3-cloud.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Ux2M6x46mIcoAoP2oCA8qEQnqc1O5cpa5zYRIdCNdnw",
-          "short_id": "7a3f9e2b1c8d4f6a"
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
         }
       }
     },
@@ -142,8 +117,7 @@
         "🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy",
-        "🇸🇪 瑞典 (Sweden) 06 - Chain-Proxy",
-        "🇸🇪 瑞典 (Sweden) 07 - Chain-Proxy"
+        "🇸🇪 瑞典 (Sweden) 06 - Chain-Proxy"
       ]
     },
     {
@@ -155,8 +129,7 @@
         "🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy",
-        "🇸🇪 瑞典 (Sweden) 06 - Chain-Proxy",
-        "🇸🇪 瑞典 (Sweden) 07 - Chain-Proxy"
+        "🇸🇪 瑞典 (Sweden) 06 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

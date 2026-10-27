@@ -5,54 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - Chain-Proxy
-  server: 112.169.175.199
-  port: 31157
-  udp: true
-  type: vless
-  uuid: bd2fb303-b4c7-49af-a8e3-5c6f11b005dd
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - Chain-Proxy
   server: 218.237.185.234
   port: 4652
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - Chain-Proxy
-  server: dog-hk.kunlun01dns.com
-  port: 21020
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy
-  server: 118.167.211.77
-  port: 24215
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy
+  server: 6aa21c4d-11d4-45bf-ba55-59512593692c.7b63595a-1119-4080-80e1-3f638120be58.smartprivatelink.com
+  port: 443
   udp: true
   type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  uuid: 2a778078-9f4f-4203-a204-6fb94547b707
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
+    public-key: 3nFa_3MSnFQDm9XfVfFHOnMb3FOptREpe1ehXjAbk1c
+    short-id: d369dbc2
+  servername: www.douyin.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - Chain-Proxy
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - Chain-Proxy
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy
 rules:
 - MATCH,PROXIES
