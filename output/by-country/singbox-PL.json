@@ -6,6 +6,13 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - Chain-Proxy",
+      "server": "168.222.43.53",
+      "server_port": 2052,
+      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 02 - Chain-Proxy",
       "server": "45.148.119.127",
       "server_port": 443,
       "uuid": "329e13e4-ee7c-4802-ac72-5fcab79c2402",
@@ -26,34 +33,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 02 - Chain-Proxy",
+      "tag": "🇵🇱 波兰 (Poland) 03 - Chain-Proxy",
       "server": "2.26.6.1",
       "server_port": 2087,
       "uuid": "b9fdc03f-389b-4cda-9be4-155b623bee15",
       "tls": {
         "enabled": true,
         "server_name": "2.26.6.1",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - Chain-Proxy",
-      "server": "150.251.112.44",
-      "server_port": 12443,
-      "uuid": "3edfab95-a259-45f2-846c-3a1ca12c9b60",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "94bffb5c3f23.j.cloudfront.hls.ttvnw.net",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pmuJt78YwO4hmuVE-d1fxgYRtRho7Cb36CcR9ynt9jQ",
-          "short_id": "886cda2e22e571d1"
         }
       }
     },
@@ -65,20 +55,8 @@
       "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 05 - Chain-Proxy",
-      "server": "pl2.shvpn.ru",
-      "server_port": 4443,
-      "password": "c0242d1b-db7a-4dcf-95ff-e10a3ef1c1a3",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl2.shvpn.ru",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 06 - Chain-Proxy",
+      "tag": "🇵🇱 波兰 (Poland) 05 - Chain-Proxy",
       "server": "77.232.135.141",
       "server_port": 8445,
       "uuid": "36cf792c-f07d-4500-97ea-a395e5178deb",
@@ -88,7 +66,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
@@ -97,28 +75,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 07 - Chain-Proxy",
-      "server": "pl1.h1cloud.net",
-      "server_port": 27591,
-      "uuid": "056405e8-de9f-4d0d-8145-956f13cc34da",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM",
-          "short_id": "6c5c7900406a1ae7"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 08 - Chain-Proxy",
+      "tag": "🇵🇱 波兰 (Poland) 06 - Chain-Proxy",
       "server": "scrap.halyvanedorogo.ru",
       "server_port": 35076,
       "password": "b4c8ee9caa74b7ba0a61",
@@ -126,6 +84,38 @@
         "enabled": true,
         "server_name": "scrap.halyvanedorogo.ru",
         "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 07 - Chain-Proxy",
+      "server": "poland-new-new.failspace.top",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "poland-new-new.failspace.top",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇵🇱 波兰 (Poland) 08 - Chain-Proxy",
+      "server": "pl.tronsg.com",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.tronsg.com",
+        "insecure": false
       }
     },
     {
@@ -144,20 +134,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 10 - Chain-Proxy",
-      "server": "pl.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.tronsg.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 11 - Chain-Proxy",
+      "tag": "🇵🇱 波兰 (Poland) 10 - Chain-Proxy",
       "server": "82.118.22.161",
       "server_port": 443,
       "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
@@ -167,7 +145,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -190,8 +168,7 @@
         "🇵🇱 波兰 (Poland) 07 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 08 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 09 - Chain-Proxy",
-        "🇵🇱 波兰 (Poland) 10 - Chain-Proxy",
-        "🇵🇱 波兰 (Poland) 11 - Chain-Proxy"
+        "🇵🇱 波兰 (Poland) 10 - Chain-Proxy"
       ]
     },
     {
@@ -207,8 +184,7 @@
         "🇵🇱 波兰 (Poland) 07 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 08 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 09 - Chain-Proxy",
-        "🇵🇱 波兰 (Poland) 10 - Chain-Proxy",
-        "🇵🇱 波兰 (Poland) 11 - Chain-Proxy"
+        "🇵🇱 波兰 (Poland) 10 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇪 格鲁吉亚 (Georgia) 01 - Chain-Proxy",
-      "server": "201.24.119.44",
-      "server_port": 443,
-      "uuid": "c9c219dc-50da-4135-8e5b-67020291f0ec",
+      "tag": "🇲🇰 MK 01 - Chain-Proxy",
+      "server": "89.185.82.151",
+      "server_port": 10443,
+      "uuid": "0869a7d7-b8e8-42be-8bca-84b0ab07744a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "xpjrlkphdvb.edge-origin.space",
+        "server_name": "stackoverflow.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "xJZgy1PaEukFZ06H3VV64iLhA8nlAj2MYwC68BKA5Sc",
-          "short_id": ""
+          "public_key": "XNfikFybWtjJjWU7-QBGrr-D9YUW0uSK_sR7mDDUmRU",
+          "short_id": "6ba85179"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇪 格鲁吉亚 (Georgia) 01 - Chain-Proxy"
+        "🇲🇰 MK 01 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇪 格鲁吉亚 (Georgia) 01 - Chain-Proxy"
+        "🇲🇰 MK 01 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
