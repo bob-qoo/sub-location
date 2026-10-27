@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇳 CN 01 - Chain-Proxy",
-      "server": "188.114.98.0",
-      "server_port": 443,
-      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - Chain-Proxy",
+      "server": "my.wawojk.dpdns.org",
+      "server_port": 8443,
+      "uuid": "264bee07-e004-41c7-812f-aaf2daaad2c9",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "vpn.cintaku.qzz.io",
-        "insecure": false,
+        "server_name": "www.asus.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vlessws",
-        "headers": {
-          "Host": "vpn.cintaku.qzz.io"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "akVbcyv-ypq-YT4-bsi_ts85pkDwhAIapn5bCb_hj28",
+          "short_id": "85f609aa0f0bead8"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - Chain-Proxy"
+        "🇲🇾 马来西亚 (Malaysia) 01 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - Chain-Proxy"
+        "🇲🇾 马来西亚 (Malaysia) 01 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

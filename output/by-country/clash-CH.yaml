@@ -25,14 +25,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇨🇭 瑞士 (Switzerland) 03 - Chain-Proxy
-  server: 140.238.213.114
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 04 - Chain-Proxy
   server: 45.90.57.119
   port: 8443
   udp: true
@@ -45,37 +37,7 @@ proxies:
     short-id: 16036bbef04d0509
   servername: twitch.tv
   client-fingerprint: firefox
-- name: 🇨🇭 瑞士 (Switzerland) 05 - Chain-Proxy
-  server: 208.69.78.217
-  port: 21067
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 06 - Chain-Proxy
-  server: 208.69.78.217
-  port: 33130
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 07 - Chain-Proxy
-  server: 208.69.78.217
-  port: 21046
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 08 - Chain-Proxy
+- name: 🇨🇭 瑞士 (Switzerland) 04 - Chain-Proxy
   server: 208.69.78.217
   port: 8444
   udp: true
@@ -85,9 +47,9 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 09 - Chain-Proxy
+- name: 🇨🇭 瑞士 (Switzerland) 05 - Chain-Proxy
   server: 208.69.78.217
-  port: 21158
+  port: 33092
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -95,26 +57,18 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 10 - Chain-Proxy
+- name: 🇨🇭 瑞士 (Switzerland) 06 - Chain-Proxy
   server: 208.69.78.217
-  port: 33152
+  port: 2053
   udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 11 - Chain-Proxy
-  server: 208.69.78.217
-  port: 21021
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
+  type: vless
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  tls: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -126,11 +80,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 04 - Chain-Proxy
   - 🇨🇭 瑞士 (Switzerland) 05 - Chain-Proxy
   - 🇨🇭 瑞士 (Switzerland) 06 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 07 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 08 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 09 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 10 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 11 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -142,10 +91,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 04 - Chain-Proxy
   - 🇨🇭 瑞士 (Switzerland) 05 - Chain-Proxy
   - 🇨🇭 瑞士 (Switzerland) 06 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 07 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 08 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 09 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 10 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 11 - Chain-Proxy
 rules:
 - MATCH,PROXIES

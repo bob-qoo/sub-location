@@ -37,36 +37,20 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - Chain-Proxy",
-      "server": "152.67.115.203",
-      "server_port": 443,
-      "password": "633bc3be486b646190661ac2387c150a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "850a3fb1cd33a28f12d837578ae1a2e7"
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - Chain-Proxy",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - Chain-Proxy",
       "server": "au.tronsg.com",
       "server_port": 443,
       "password": "Trojan@82164024",
       "tls": {
         "enabled": true,
         "server_name": "au.tronsg.com",
-        "insecure": false
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05 - Chain-Proxy",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - Chain-Proxy",
       "server": "funagfrdfs.alixxplay.com",
       "server_port": 54528,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
@@ -76,7 +60,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -93,8 +77,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - Chain-Proxy",
         "🇦🇺 澳大利亚 (Australia) 02 - Chain-Proxy",
         "🇦🇺 澳大利亚 (Australia) 03 - Chain-Proxy",
-        "🇦🇺 澳大利亚 (Australia) 04 - Chain-Proxy",
-        "🇦🇺 澳大利亚 (Australia) 05 - Chain-Proxy"
+        "🇦🇺 澳大利亚 (Australia) 04 - Chain-Proxy"
       ]
     },
     {
@@ -104,8 +87,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - Chain-Proxy",
         "🇦🇺 澳大利亚 (Australia) 02 - Chain-Proxy",
         "🇦🇺 澳大利亚 (Australia) 03 - Chain-Proxy",
-        "🇦🇺 澳大利亚 (Australia) 04 - Chain-Proxy",
-        "🇦🇺 澳大利亚 (Australia) 05 - Chain-Proxy"
+        "🇦🇺 澳大利亚 (Australia) 04 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
