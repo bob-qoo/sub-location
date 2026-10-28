@@ -6,14 +6,16 @@
     {
       "type": "vless",
       "tag": "🇧🇷 巴西 (Brazil) 01 - Chain-Proxy",
-      "server": "88.216.67.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime05.workers.dev"
+      "server": "216.128.169.78",
+      "server_port": 15040,
+      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
+      "tls": {
+        "enabled": true,
+        "server_name": "br.zestapp778.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
         }
       }
     },
@@ -30,19 +32,19 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇧🇷 巴西 (Brazil) 03 - Chain-Proxy",
-      "server": "br001.zestapp778.com",
-      "server_port": 15040,
-      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
+      "server": "147.15.108.14",
+      "server_port": 20000,
+      "password": "CyG0RFxMjzs41uQD4OLuHQ==",
       "tls": {
         "enabled": true,
-        "server_name": "br.zestapp778.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "rmgyvpn.rest",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "CyG0RFxMjzs41uQD4OLuHQ=="
       }
     },
     {

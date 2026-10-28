@@ -6,7 +6,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇺🇦 乌克兰 (Ukraine) 01 - Chain-Proxy",
-      "server": "104.253.216.227",
+      "server": "staging.lastilhame.monster",
       "server_port": 49917,
       "method": "chacha20-ietf-poly1305",
       "password": "G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP"
@@ -35,7 +35,7 @@
     {
       "type": "vless",
       "tag": "🇺🇦 乌克兰 (Ukraine) 03 - Chain-Proxy",
-      "server": "netx.smrtai.top",
+      "server": "31.222.235.81",
       "server_port": 443,
       "uuid": "d8b58872-cc25-4bb2-badb-b86399c075fa",
       "tls": {
@@ -57,19 +57,19 @@
       "tag": "🇺🇦 乌克兰 (Ukraine) 04 - Chain-Proxy",
       "server": "staging.lastilhame.monster",
       "server_port": 443,
-      "uuid": "aded66f1-de12-4c3c-af9e-a21d6e7d9c96",
+      "uuid": "317bc783-340f-453c-afb5-b6bf637c0b23",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.foxsports.com",
+        "server_name": "www.tradingview.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
           "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
-          "short_id": "2a80364e93d9"
+          "short_id": "fc994ae7eb10"
         }
       }
     },

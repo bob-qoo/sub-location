@@ -14,7 +14,7 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: v2ray.simspeedup.com
+      Host: ais.speedtest.net
 - name: 🇹🇭 泰国 (Thailand) 02 - Chain-Proxy
   server: 104.16.111.193
   port: 443
@@ -24,7 +24,6 @@ proxies:
   tls: true
   servername: v2ray.simspeedup.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
@@ -39,7 +38,6 @@ proxies:
   tls: true
   servername: th001.zestapp778.com
   skip-cert-verify: false
-  client-fingerprint: chrome
 - name: 🇹🇭 泰国 (Thailand) 04 - Chain-Proxy
   server: 45.154.26.63
   port: 443
