@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - Chain-Proxy
+  server: 88.216.67.30
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime05.workers.dev
+- name: 🇧🇷 巴西 (Brazil) 02 - Chain-Proxy
   server: 216.238.104.154
   port: 443
   udp: true
@@ -12,17 +23,31 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
   skip-cert-verify: false
+- name: 🇧🇷 巴西 (Brazil) 03 - Chain-Proxy
+  server: br001.zestapp778.com
+  port: 15040
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: br.zestapp778.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - Chain-Proxy
+  - 🇧🇷 巴西 (Brazil) 02 - Chain-Proxy
+  - 🇧🇷 巴西 (Brazil) 03 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - Chain-Proxy
+  - 🇧🇷 巴西 (Brazil) 02 - Chain-Proxy
+  - 🇧🇷 巴西 (Brazil) 03 - Chain-Proxy
 rules:
 - MATCH,PROXIES
