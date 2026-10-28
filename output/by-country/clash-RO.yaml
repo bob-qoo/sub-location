@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - Chain-Proxy
-  server: 178.83.45.226
+  server: 155.117.5.208
   port: 2052
   udp: true
   type: vless
@@ -34,6 +34,14 @@ proxies:
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: vk.com
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy
   server: 82.117.255.174
   port: 443
   udp: true
@@ -45,8 +53,8 @@ proxies:
     public-key: 0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0
     short-id: 31e91d43e553bf32
   servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy
+  client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy
   server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   udp: true
@@ -63,6 +71,7 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy
   - 🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy
   - 🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy
+  - 🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,5 +82,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy
   - 🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy
   - 🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy
+  - 🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy
 rules:
 - MATCH,PROXIES

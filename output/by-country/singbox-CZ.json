@@ -6,26 +6,6 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - Chain-Proxy",
-      "server": "courses.mftplus.qzz.io",
-      "server_port": 2096,
-      "uuid": "b9ede7a5-5b4b-4aee-ac37-2c307e587e47",
-      "tls": {
-        "enabled": true,
-        "server_name": "courses.mftplus.qzz.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - Chain-Proxy",
       "server": "195.123.245.241",
       "server_port": 443,
       "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
@@ -46,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - Chain-Proxy",
+      "tag": "🇨🇿 捷克 (Czech) 02 - Chain-Proxy",
       "server": "cz-prg.dontblockmepls.com",
       "server_port": 2063,
       "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
@@ -56,7 +36,7 @@
         "server_name": "rusbid.de",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -67,14 +47,14 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 04 - Chain-Proxy",
+      "tag": "🇨🇿 捷克 (Czech) 03 - Chain-Proxy",
       "server": "193.124.17.190",
       "server_port": 443,
-      "uuid": "fad0b9a6-187d-4fcc-96fc-498bc5b3135a",
+      "uuid": "6dfc9149-1ff9-41c3-8563-0ef284381731",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.foxsports.com",
+        "server_name": "www.tradingview.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -82,7 +62,7 @@
         "reality": {
           "enabled": true,
           "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "8325360e8bd2"
+          "short_id": "1374bddeb25d"
         }
       }
     },
@@ -93,8 +73,7 @@
         "auto",
         "🇨🇿 捷克 (Czech) 01 - Chain-Proxy",
         "🇨🇿 捷克 (Czech) 02 - Chain-Proxy",
-        "🇨🇿 捷克 (Czech) 03 - Chain-Proxy",
-        "🇨🇿 捷克 (Czech) 04 - Chain-Proxy"
+        "🇨🇿 捷克 (Czech) 03 - Chain-Proxy"
       ]
     },
     {
@@ -103,8 +82,7 @@
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - Chain-Proxy",
         "🇨🇿 捷克 (Czech) 02 - Chain-Proxy",
-        "🇨🇿 捷克 (Czech) 03 - Chain-Proxy",
-        "🇨🇿 捷克 (Czech) 04 - Chain-Proxy"
+        "🇨🇿 捷克 (Czech) 03 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

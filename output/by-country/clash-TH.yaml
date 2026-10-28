@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - Chain-Proxy
-  server: 103.86.49.57
+  server: support.zoom.us.v2ray.simspeedup.com
   port: 80
   udp: true
   type: vless
@@ -14,23 +14,9 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: ais.speedtest.net
+      Host: support.zoom.us.v2ray.simspeedup.com
 - name: 🇹🇭 泰国 (Thailand) 02 - Chain-Proxy
-  server: 104.16.111.193
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  tls: true
-  servername: v2ray.simspeedup.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 (Thailand) 03 - Chain-Proxy
-  server: 38.60.254.50
+  server: th001.zestapp778.com
   port: 22222
   udp: true
   type: vless
@@ -38,7 +24,7 @@ proxies:
   tls: true
   servername: th001.zestapp778.com
   skip-cert-verify: false
-- name: 🇹🇭 泰国 (Thailand) 04 - Chain-Proxy
+- name: 🇹🇭 泰国 (Thailand) 03 - Chain-Proxy
   server: 45.154.26.63
   port: 443
   udp: true
@@ -51,6 +37,34 @@ proxies:
     short-id: 3c032a7e
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇹🇭 泰国 (Thailand) 04 - Chain-Proxy
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  tls: true
+  servername: v2ray.simspeedup.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 泰国 (Thailand) 05 - Chain-Proxy
+  server: 109.237.98.213
+  port: 443
+  udp: true
+  type: vless
+  uuid: 26f751bc-2edc-4338-9c3f-abeb32aba3b7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA
+    short-id: 6ba85179e30d4fc2
+  servername: xy4l6bpbjk.xeltrona-host26.sbs
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,6 +74,7 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 02 - Chain-Proxy
   - 🇹🇭 泰国 (Thailand) 03 - Chain-Proxy
   - 🇹🇭 泰国 (Thailand) 04 - Chain-Proxy
+  - 🇹🇭 泰国 (Thailand) 05 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,5 +84,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 02 - Chain-Proxy
   - 🇹🇭 泰国 (Thailand) 03 - Chain-Proxy
   - 🇹🇭 泰国 (Thailand) 04 - Chain-Proxy
+  - 🇹🇭 泰国 (Thailand) 05 - Chain-Proxy
 rules:
 - MATCH,PROXIES

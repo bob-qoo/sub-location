@@ -6,40 +6,21 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 01 - Chain-Proxy",
-      "server": "103.86.49.57",
+      "server": "support.zoom.us.v2ray.simspeedup.com",
       "server_port": 80,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "transport": {
         "type": "ws",
         "path": "/ws",
         "headers": {
-          "Host": "ais.speedtest.net"
+          "Host": "support.zoom.us.v2ray.simspeedup.com"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 02 - Chain-Proxy",
-      "server": "104.16.111.193",
-      "server_port": 443,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
-      "tls": {
-        "enabled": true,
-        "server_name": "v2ray.simspeedup.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "v2ray.simspeedup.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 03 - Chain-Proxy",
-      "server": "38.60.254.50",
+      "server": "th001.zestapp778.com",
       "server_port": 22222,
       "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
       "tls": {
@@ -50,7 +31,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 04 - Chain-Proxy",
+      "tag": "🇹🇭 泰国 (Thailand) 03 - Chain-Proxy",
       "server": "45.154.26.63",
       "server_port": 443,
       "uuid": "ff85e702-b605-4109-884d-2c1f065d0954",
@@ -70,6 +51,53 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 04 - Chain-Proxy",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray.simspeedup.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "v2ray.simspeedup.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 05 - Chain-Proxy",
+      "server": "109.237.98.213",
+      "server_port": 443,
+      "uuid": "26f751bc-2edc-4338-9c3f-abeb32aba3b7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "xy4l6bpbjk.xeltrona-host26.sbs",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -77,7 +105,8 @@
         "🇹🇭 泰国 (Thailand) 01 - Chain-Proxy",
         "🇹🇭 泰国 (Thailand) 02 - Chain-Proxy",
         "🇹🇭 泰国 (Thailand) 03 - Chain-Proxy",
-        "🇹🇭 泰国 (Thailand) 04 - Chain-Proxy"
+        "🇹🇭 泰国 (Thailand) 04 - Chain-Proxy",
+        "🇹🇭 泰国 (Thailand) 05 - Chain-Proxy"
       ]
     },
     {
@@ -87,7 +116,8 @@
         "🇹🇭 泰国 (Thailand) 01 - Chain-Proxy",
         "🇹🇭 泰国 (Thailand) 02 - Chain-Proxy",
         "🇹🇭 泰国 (Thailand) 03 - Chain-Proxy",
-        "🇹🇭 泰国 (Thailand) 04 - Chain-Proxy"
+        "🇹🇭 泰国 (Thailand) 04 - Chain-Proxy",
+        "🇹🇭 泰国 (Thailand) 05 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
