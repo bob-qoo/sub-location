@@ -4,18 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇮🇳 印度 (India) 01 - Chain-Proxy",
-      "server": "104.21.70.21",
-      "server_port": 8080,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime36.workers.dev"
-        }
-      }
+      "server": "172.105.39.124",
+      "server_port": 7002,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "vless",
@@ -34,7 +28,7 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 03 - Chain-Proxy",
-      "server": "178.212.35.198",
+      "server": "in.smrtai.top",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
       "tls": {
@@ -52,20 +46,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 04 - Chain-Proxy",
-      "server": "in.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "in.tronsg.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 05 - Chain-Proxy",
+      "tag": "🇮🇳 印度 (India) 04 - Chain-Proxy",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -74,7 +56,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -84,28 +66,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 06 - Chain-Proxy",
+      "type": "trojan",
+      "tag": "🇮🇳 印度 (India) 05 - Chain-Proxy",
       "server": "in002.zestapp778.com",
-      "server_port": 46362,
-      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
+      "server_port": 42733,
+      "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
         "server_name": "in002.zestapp778.com",
-        "insecure": true,
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 07 - Chain-Proxy",
-      "server": "172.105.39.124",
-      "server_port": 7002,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "selector",
@@ -116,9 +90,7 @@
         "🇮🇳 印度 (India) 02 - Chain-Proxy",
         "🇮🇳 印度 (India) 03 - Chain-Proxy",
         "🇮🇳 印度 (India) 04 - Chain-Proxy",
-        "🇮🇳 印度 (India) 05 - Chain-Proxy",
-        "🇮🇳 印度 (India) 06 - Chain-Proxy",
-        "🇮🇳 印度 (India) 07 - Chain-Proxy"
+        "🇮🇳 印度 (India) 05 - Chain-Proxy"
       ]
     },
     {
@@ -129,9 +101,7 @@
         "🇮🇳 印度 (India) 02 - Chain-Proxy",
         "🇮🇳 印度 (India) 03 - Chain-Proxy",
         "🇮🇳 印度 (India) 04 - Chain-Proxy",
-        "🇮🇳 印度 (India) 05 - Chain-Proxy",
-        "🇮🇳 印度 (India) 06 - Chain-Proxy",
-        "🇮🇳 印度 (India) 07 - Chain-Proxy"
+        "🇮🇳 印度 (India) 05 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
