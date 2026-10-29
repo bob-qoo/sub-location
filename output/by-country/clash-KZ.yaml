@@ -5,16 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - Chain-Proxy
-  server: 46.8.43.125
-  port: 443
+  server: 38.107.234.57
+  port: 80
   udp: true
-  type: vless
-  uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
-  tls: true
-  reality-opts:
-    public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
-  servername: kz-central.v8x2b.lol
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - Chain-Proxy
   server: 38.107.234.57
   port: 80
@@ -27,7 +27,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 3h-kazakhstan1.09vpn.com
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - Chain-Proxy
   server: 38.107.234.57
   port: 80
@@ -39,8 +39,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vmess/
-    headers:
-      Host: google.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - Chain-Proxy
   server: 38.107.234.57
   port: 80
@@ -53,7 +51,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: viber.com
+      Host: 3h-kazakhstan1.09vpn.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - Chain-Proxy
   server: 38.107.234.57
   port: 80
@@ -66,7 +64,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: google.com
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - Chain-Proxy
   server: 38.107.234.57
   port: 80
@@ -103,7 +101,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+      Host: viber.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - Chain-Proxy
   server: 38.107.234.57
   port: 80
@@ -116,7 +114,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+      Host: google.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 10 - Chain-Proxy
   server: 38.107.234.57
   port: 80
@@ -142,7 +140,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 38.107.234.57
+      Host: viber.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 12 - Chain-Proxy
   server: 38.107.234.57
   port: 80
@@ -155,7 +153,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 38.107.234.57
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 13 - Chain-Proxy
   server: 38.107.234.57
   port: 80
@@ -180,8 +178,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vmess/
-    headers:
-      Host: viber.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 15 - Chain-Proxy
   server: 38.107.234.57
   port: 80
@@ -194,7 +190,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+      Host: viber.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 16 - Chain-Proxy
   server: 38.107.234.57
   port: 80
@@ -207,7 +203,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 38.107.234.57
+      Host: viber.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 17 - Chain-Proxy
   server: 38.107.234.57
   port: 80
@@ -219,6 +215,8 @@ proxies:
   network: ws
   ws-opts:
     path: /vmess/
+    headers:
+      Host: google.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 18 - Chain-Proxy
   server: 38.107.234.57
   port: 80
@@ -230,8 +228,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vmess/
-    headers:
-      Host: 3h-kazakhstan1.09vpn.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 19 - Chain-Proxy
   server: 38.107.234.57
   port: 80
@@ -266,97 +262,21 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: google.com
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 22 - Chain-Proxy
-  server: 38.107.234.57
-  port: 80
+  server: 45.136.59.28
+  port: 43000
   udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
+  type: vless
+  uuid: a8b8b21e-1f31-4e4d-a639-efb2de0d577e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: osqok9aA_NR7WyAxZptD36-_U8BF_9gL8AH84MMzbFs
+    short-id: ced96d59
+  servername: 45.136.59.28
+  client-fingerprint: chrome
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 23 - Chain-Proxy
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 24 - Chain-Proxy
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 25 - Chain-Proxy
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 26 - Chain-Proxy
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 3h-kazakhstan1.09vpn.com
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 27 - Chain-Proxy
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 28 - Chain-Proxy
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: viber.com
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 29 - Chain-Proxy
   server: 178.236.16.98
   port: 35728
   udp: true
@@ -368,6 +288,30 @@ proxies:
     short-id: 69a2
   servername: yahoo.com
   client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 24 - Chain-Proxy
+  server: 109.248.170.119
+  port: 13447
+  udp: true
+  type: vless
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+  tls: true
+  reality-opts:
+    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+    short-id: '83'
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 25 - Chain-Proxy
+  server: 3h-kazakhstan1.09vpn.com
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
+  tls: true
+  servername: 3h-kazakhstan1.09vpn.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vless/
 proxy-groups:
 - name: PROXIES
   type: select
@@ -398,10 +342,6 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 23 - Chain-Proxy
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 24 - Chain-Proxy
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 25 - Chain-Proxy
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 26 - Chain-Proxy
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 27 - Chain-Proxy
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 28 - Chain-Proxy
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 29 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -432,9 +372,5 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 23 - Chain-Proxy
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 24 - Chain-Proxy
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 25 - Chain-Proxy
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 26 - Chain-Proxy
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 27 - Chain-Proxy
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 28 - Chain-Proxy
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 29 - Chain-Proxy
 rules:
 - MATCH,PROXIES
