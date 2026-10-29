@@ -18,7 +18,20 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇨🇿 捷克 (Czech) 02 - Chain-Proxy
-  server: 31.77.13.22
+  server: 193.124.17.190
+  port: 443
+  udp: true
+  type: vless
+  uuid: 13aef2e0-b3fb-4322-a0e9-c10b908ce6b5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 87f895f23064
+  servername: www.techradar.com
+  client-fingerprint: firefox
+- name: 🇨🇿 捷克 (Czech) 03 - Chain-Proxy
+  server: cz-prg.dontblockmepls.com
   port: 2063
   udp: true
   type: vless
@@ -28,8 +41,8 @@ proxies:
   reality-opts:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
-  client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 03 - Chain-Proxy
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 04 - Chain-Proxy
   server: 193.124.17.190
   port: 443
   udp: true
@@ -50,6 +63,7 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - Chain-Proxy
   - 🇨🇿 捷克 (Czech) 02 - Chain-Proxy
   - 🇨🇿 捷克 (Czech) 03 - Chain-Proxy
+  - 🇨🇿 捷克 (Czech) 04 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,5 +72,6 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - Chain-Proxy
   - 🇨🇿 捷克 (Czech) 02 - Chain-Proxy
   - 🇨🇿 捷克 (Czech) 03 - Chain-Proxy
+  - 🇨🇿 捷克 (Czech) 04 - Chain-Proxy
 rules:
 - MATCH,PROXIES

@@ -4,35 +4,27 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - Chain-Proxy",
-      "server": "218.237.185.234",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
-      "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy",
-      "server": "125.227.86.45",
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - Chain-Proxy",
+      "server": "104.16.72.30",
       "server_port": 443,
-      "password": "0a9f1f5a397bd427",
+      "uuid": "a8b1d666-d3ba-4b17-90c4-ba7514c74f78",
       "tls": {
         "enabled": true,
-        "server_name": "TG.freecodes",
-        "insecure": true,
-        "alpn": [
-          "h2"
-        ]
+        "server_name": "xstack.mahanfixe.workers.dev",
+        "insecure": false
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "db"
+        "type": "ws",
+        "path": "/xiron",
+        "headers": {
+          "Host": "xstack.mahanfixe.workers.dev"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 (家宽) - Chain-Proxy",
+      "tag": "🇮🇳 印度 (India) 02 (家宽) - Chain-Proxy",
       "server": "122.176.216.52",
       "server_port": 443,
       "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
@@ -54,22 +46,42 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇨🇦 加拿大 (Canada) 03 (家宽) - Chain-Proxy",
+      "server": "sg-transit-3.nebulacloud.win",
+      "server_port": 30330,
+      "uuid": "dfa9f875-3805-49d9-8636-46b6899be24e",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "sg-transit-3.nebulacloud.win",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ca/getData",
+        "headers": {
+          "Host": "sg-transit-3.nebulacloud.win"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy",
-        "🇮🇳 印度 (India) 03 (家宽) - Chain-Proxy"
+        "🇺🇸 美国 (United States) 01 (移动家宽) - Chain-Proxy",
+        "🇮🇳 印度 (India) 02 (家宽) - Chain-Proxy",
+        "🇨🇦 加拿大 (Canada) 03 (家宽) - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy",
-        "🇮🇳 印度 (India) 03 (家宽) - Chain-Proxy"
+        "🇺🇸 美国 (United States) 01 (移动家宽) - Chain-Proxy",
+        "🇮🇳 印度 (India) 02 (家宽) - Chain-Proxy",
+        "🇨🇦 加拿大 (Canada) 03 (家宽) - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
