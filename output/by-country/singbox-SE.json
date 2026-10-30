@@ -30,8 +30,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy",
+      "server": "192.142.23.46",
+      "server_port": 443,
+      "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
+      "tls": {
+        "enabled": true,
+        "server_name": "diffoscope.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy",
       "server": "31.172.65.4",
       "server_port": 8443,
       "uuid": "9c6e83fc-b755-4ad4-9b0a-14b610153d8f",
@@ -51,15 +63,26 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy",
-      "server": "192.142.23.46",
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy",
+      "server": "ip13.shabkhosh.sbs",
       "server_port": 443,
-      "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
+      "uuid": "e818a20d-9bcd-4744-9061-ca51b9c8aeea",
       "tls": {
         "enabled": true,
-        "server_name": "diffoscope.com",
-        "insecure": false
+        "server_name": "wallweb-4ez.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "wallweb-4ez.pages.dev"
+        }
       }
     },
     {
@@ -70,7 +93,8 @@
         "🇸🇪 瑞典 (Sweden) 01 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy",
-        "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy"
+        "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy",
+        "🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy"
       ]
     },
     {
@@ -80,7 +104,8 @@
         "🇸🇪 瑞典 (Sweden) 01 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy",
-        "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy"
+        "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy",
+        "🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,17 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - Chain-Proxy
-  server: 45.144.234.157
-  port: 14430
+  server: 65.21.52.113
+  port: 53731
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QoYjvkIZ7-bMIYfVI9IzRXUx5A1o3kj7
+- name: 🇫🇮 芬兰 (Finland) 02 - Chain-Proxy
+  server: 45.144.52.187
+  port: 443
   udp: true
   type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 02 - Chain-Proxy
+  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
+  tls: true
+  servername: b.fi-1.bnc-gt.co.uk
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇫🇮 芬兰 (Finland) 03 - Chain-Proxy
   server: 78.17.27.137
   port: 8443
   udp: true
@@ -26,17 +35,6 @@ proxies:
     public-key: DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM
     short-id: a05ccbf2edb5ebd1
   servername: www.aalto.fi
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - Chain-Proxy
-  server: static.44.128.217.95.clients.your-server.de
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 257aef45-38fb-4616-baf2-b4051778fde9
-  flow: xtls-rprx-vision
-  tls: true
-  servername: static.44.128.217.95.clients.your-server.de
-  skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 04 - Chain-Proxy
   server: 65.109.210.221
@@ -54,6 +52,17 @@ proxies:
     headers:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 05 - Chain-Proxy
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 06 - Chain-Proxy
   server: 65.109.211.81
   port: 465
   udp: true
@@ -62,34 +71,35 @@ proxies:
   tls: true
   servername: hw6.divarkhaghazi.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: hw6.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 06 - Chain-Proxy
-  server: cd0.bmi.ir.kolman.com.de
-  port: 80
+- name: 🇫🇮 芬兰 (Finland) 07 - Chain-Proxy
+  server: tun.xelnivo.ir
+  port: 2044
   udp: true
   type: vmess
-  uuid: 2da85937-93d9-4509-8491-63b1921cf447
+  uuid: f6547466-a44a-41e7-9b71-473c5bf05723
   alterId: 0
   cipher: auto
-  network: httpupgrade
-- name: 🇫🇮 芬兰 (Finland) 07 - Chain-Proxy
-  server: 6.bmi.ir.asopardaz.ir
-  port: 8443
+- name: 🇫🇮 芬兰 (Finland) 08 - Chain-Proxy
+  server: 77.42.12.225
+  port: 443
   udp: true
   type: vless
-  uuid: 2da85937-93d9-4509-8491-63b1921cf447
-  flow: xtls-rprx-vision
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
   tls: true
   reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
-  servername: hostgator.com
-  client-fingerprint: chrome
+    public-key: GJzag9Wrvz_bO9AQaA-Oq0P1kV9btmxxAdzPV-uQB18
+    short-id: 09d0a94a1c6fc9d5
+  servername: 8fc752g.fi3.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: f345a414c040
 proxy-groups:
 - name: PROXIES
   type: select
@@ -102,6 +112,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 06 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 07 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 08 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -114,5 +125,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 06 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 07 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 08 - Chain-Proxy
 rules:
 - MATCH,PROXIES

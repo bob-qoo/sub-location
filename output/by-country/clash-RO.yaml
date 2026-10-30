@@ -5,26 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - Chain-Proxy
+  server: 89.117.112.40
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime11.workers.dev
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy
   server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: QFWzCw2uX9B9i6qAYeFBIE
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy
-  server: 155.117.5.208
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy
+  server: 178.83.45.226
   port: 2052
   udp: true
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: css.rbxcdn.com
-  skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy
   server: 46.28.67.55
   port: 443
@@ -37,9 +40,9 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy
-  server: 162.249.125.133
+  server: hy2-new.aspidnet.xyz
   port: 443
   udp: true
   type: hysteria2
@@ -49,18 +52,13 @@ proxies:
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy
-  server: 82.117.255.174
+  server: 185.156.44.99
   port: 443
   udp: true
-  type: vless
-  uuid: 679439c5-28f2-485e-af5f-60a5fcd9c36c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0
-    short-id: 31e91d43e553bf32
-  servername: gateway.icloud.com
-  client-fingerprint: firefox
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: 185.156.44.99
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
