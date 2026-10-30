@@ -4,15 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - Chain-Proxy",
-      "server": "50.7.38.243",
+      "server": "171.25.158.163",
       "server_port": 443,
-      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
+      "uuid": "706bce83-91db-4260-b175-cba29145cd56",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "promo.betust.net",
-        "insecure": false
+        "server_name": "s9se1.newagetechnologies.live",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Dt6OmhEDOi-Y204u5jWdQsHIgof7g8i52NUnTGc-yjM",
+          "short_id": "ecb6f8fb31668176"
+        }
       }
     },
     {
@@ -61,24 +70,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy",
-      "server": "swidenafterlanzerotte.space",
+      "server": "50.7.38.243",
       "server_port": 443,
-      "uuid": "50a87e21-f0e2-4b53-a787-91adfe748f63",
-      "flow": "xtls-rprx-vision",
+      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
       "tls": {
         "enabled": true,
-        "server_name": "swidenafterlanzerotte.space",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM",
-          "short_id": ""
-        }
+        "server_name": "promo.betust.net",
+        "insecure": false
       }
     },
     {

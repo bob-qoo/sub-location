@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Chain-Proxy
-  server: 91.196.33.157
+  server: 130.49.177.193
   port: 443
   udp: true
   type: vless
-  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
+  uuid: 727a9178-d7f0-4142-8205-b0d19959ded0
+  flow: xtls-rprx-vision
   tls: true
-  servername: b.us-1.bnc-gt.co.uk
-  skip-cert-verify: false
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
+  reality-opts:
+    public-key: DCpi9-1rSXxBnEIAQ9U3mTqHivk7vHJRV_T2pWw5vCc
+    short-id: 681fc2dd643bc2f3
+  servername: de-2.ffpn.pro
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 02 - Chain-Proxy
   server: 193.233.253.180
   port: 8444
@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
   servername: github.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
@@ -46,84 +46,82 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: lsu1v/3iNERwDDVwxCu5033KCUqQOoElYQul63kmqJ8=
 - name: 🇷🇺 俄罗斯 (Russia) 05 - Chain-Proxy
-  server: 130.49.189.54
-  port: 8388
+  server: 201.24.121.243
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: hTTg7lwQMzpaF7KXpY3A8w
+  type: vless
+  uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
+  tls: true
+  servername: kk-ru24a1.testkknegr.online
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vlgrpc
 - name: 🇷🇺 俄罗斯 (Russia) 06 - Chain-Proxy
-  server: 5.42.99.64
-  port: 8443
+  server: app-tw-113.statsmarket-wb.com
+  port: 443
   udp: true
   type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  uuid: 07680ffb-0666-4836-b6ad-ec0de62bc38f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: chrome
+    public-key: D_-aOnqEEAyi1i95e9mBjGpbT3kbTuQsWYBGW2s-iTg
+    short-id: 8998b032d5c33de9
+  servername: assets-tw-113.statsmarket-wb.com
+  client-fingerprint: randomized
 - name: 🇷🇺 俄罗斯 (Russia) 07 - Chain-Proxy
-  server: 5.42.99.64
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 08 - Chain-Proxy
   server: 103.88.243.142
   port: 11592
   udp: true
   type: hysteria2
   password: 41edb44c8e
   sni: srv-17e124.21freedom.net
-  skip-cert-verify: false
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 08 - Chain-Proxy
+  server: 130.49.189.54
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: hTTg7lwQMzpaF7KXpY3A8w
 - name: 🇷🇺 俄罗斯 (Russia) 09 - Chain-Proxy
-  server: 88.218.170.236
-  port: 443
+  server: srv-17e124.21freedom.net
+  port: 11592
+  udp: true
+  type: hysteria2
+  password: 41edb44c8e
+  sni: srv-17e124.21freedom.net
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 10 - Chain-Proxy
+  server: du-rov.secureservice.top
+  port: 8443
   udp: true
   type: vless
-  uuid: b872771d-e9d1-42d7-ad29-a9acff49ea2d
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: qC4VE5jv0q0ALYAfCNtAHU-kN32OdA-cqJmXpL4Y2VY
-    short-id: 3199b70105c62ce0
-  servername: www.sun6-21.userapi.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 10 - Chain-Proxy
-  server: 185.147.27.164
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
+  client-fingerprint: random
+- name: 🇷🇺 俄罗斯 (Russia) 11 - Chain-Proxy
+  server: 5.42.99.64
   port: 8443
   udp: true
   type: vless
-  uuid: 3a90bf69-1ffe-4ebb-b9a7-ad9ba8e9f66f
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
   flow: xtls-rprx-vision
   tls: true
-  servername: user-6a8d949a.noooo.win
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 11 - Chain-Proxy
-  server: 194.87.143.165
-  port: 8443
-  udp: true
-  type: vless
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
-  tls: true
-  servername: wsru1.wba-pn.ru
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /
+  reality-opts:
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 12 - Chain-Proxy
-  server: du-rov.secureservice.top
+  server: 5.42.99.64
   port: 8443
   udp: true
   type: vless
@@ -136,6 +134,32 @@ proxies:
   servername: du-rov.secureservice.top
   client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 13 - Chain-Proxy
+  server: wsru1.wba-pn.ru
+  port: 8443
+  udp: true
+  type: vless
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  tls: true
+  servername: wsru1.wba-pn.ru
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇷🇺 俄罗斯 (Russia) 14 - Chain-Proxy
+  server: 147.45.175.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xssite.webredirect.org
+  skip-cert-verify: false
+  client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-ru
+- name: 🇷🇺 俄罗斯 (Russia) 15 - Chain-Proxy
   server: 147.45.175.81
   port: 443
   udp: true
@@ -148,20 +172,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 14 - Chain-Proxy
-  server: 130.49.177.193
-  port: 443
-  udp: true
-  type: vless
-  uuid: 727a9178-d7f0-4142-8205-b0d19959ded0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DCpi9-1rSXxBnEIAQ9U3mTqHivk7vHJRV_T2pWw5vCc
-    short-id: 681fc2dd643bc2f3
-  servername: de-2.ffpn.pro
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 15 - Chain-Proxy
+- name: 🇷🇺 俄罗斯 (Russia) 16 - Chain-Proxy
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -173,6 +184,68 @@ proxies:
     short-id: 23103e1e
   servername: ya.ru
   client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 17 - Chain-Proxy
+  server: xsru1.ddnsfree.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xsru1.ddnsfree.com
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-ru
+- name: 🇷🇺 俄罗斯 (Russia) 18 - Chain-Proxy
+  server: xssite.webredirect.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xssite.webredirect.org
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-ru
+- name: 🇷🇺 俄罗斯 (Russia) 19 - Chain-Proxy
+  server: 46.254.19.164
+  port: 443
+  udp: true
+  type: vless
+  uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
+  tls: true
+  reality-opts:
+    public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
+    short-id: 8937c9ed2d470352
+  servername: wtb.tems.bet
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 20 - Chain-Proxy
+  server: 88.218.170.236
+  port: 443
+  udp: true
+  type: vless
+  uuid: b872771d-e9d1-42d7-ad29-a9acff49ea2d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qC4VE5jv0q0ALYAfCNtAHU-kN32OdA-cqJmXpL4Y2VY
+    short-id: 3199b70105c62ce0
+  servername: www.sun6-21.userapi.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 21 - Chain-Proxy
+  server: 147.45.108.45
+  port: 443
+  udp: true
+  type: vless
+  uuid: Fluffy_VPN-zKZUa4Ie
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: IuzAWh6UM62Txrnh_No9y5n6wmZecyR1ki8z5xor-0g
+  servername: absolute-disaster.org
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -193,6 +266,12 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 13 - Chain-Proxy
   - 🇷🇺 俄罗斯 (Russia) 14 - Chain-Proxy
   - 🇷🇺 俄罗斯 (Russia) 15 - Chain-Proxy
+  - 🇷🇺 俄罗斯 (Russia) 16 - Chain-Proxy
+  - 🇷🇺 俄罗斯 (Russia) 17 - Chain-Proxy
+  - 🇷🇺 俄罗斯 (Russia) 18 - Chain-Proxy
+  - 🇷🇺 俄罗斯 (Russia) 19 - Chain-Proxy
+  - 🇷🇺 俄罗斯 (Russia) 20 - Chain-Proxy
+  - 🇷🇺 俄罗斯 (Russia) 21 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -213,5 +292,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 13 - Chain-Proxy
   - 🇷🇺 俄罗斯 (Russia) 14 - Chain-Proxy
   - 🇷🇺 俄罗斯 (Russia) 15 - Chain-Proxy
+  - 🇷🇺 俄罗斯 (Russia) 16 - Chain-Proxy
+  - 🇷🇺 俄罗斯 (Russia) 17 - Chain-Proxy
+  - 🇷🇺 俄罗斯 (Russia) 18 - Chain-Proxy
+  - 🇷🇺 俄罗斯 (Russia) 19 - Chain-Proxy
+  - 🇷🇺 俄罗斯 (Russia) 20 - Chain-Proxy
+  - 🇷🇺 俄罗斯 (Russia) 21 - Chain-Proxy
 rules:
 - MATCH,PROXIES

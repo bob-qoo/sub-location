@@ -5,117 +5,69 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - Chain-Proxy
-  server: 202.50.253.36
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 02 - Chain-Proxy
-  server: 185.164.175.81
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 03 - Chain-Proxy
-  server: 202.50.253.18
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 04 - Chain-Proxy
-  server: 57.131.48.45
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
-- name: 🇮🇹 意大利 (Italy) 05 - Chain-Proxy
-  server: 147.45.51.171
-  port: 8443
-  udp: true
-  type: vless
-  uuid: f5e70ce3-cfb4-4df1-b25c-d19bfae627c0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: dPa581kev2x9-st7VQ-DTh3NjXlHJ2830YDySuI8n2U
-    short-id: e723d26df67888b9
-  servername: twitch.tv
-  client-fingerprint: firefox
-- name: 🇮🇹 意大利 (Italy) 06 - Chain-Proxy
-  server: 82.118.16.189
-  port: 443
-  udp: true
-  type: vless
-  uuid: d5e5f5a1-0f23-4c49-af9f-4be445bf9d8e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY
-    short-id: 37fbf155c7a9f3ff
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 07 - Chain-Proxy
-  server: 91.201.65.122
-  port: 9053
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: SBM7R883jBmnqe6C
-- name: 🇮🇹 意大利 (Italy) 08 - Chain-Proxy
-  server: 91.201.65.122
-  port: 9065
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: PeHSHm5SqEjBuEXE
-- name: 🇮🇹 意大利 (Italy) 09 - Chain-Proxy
-  server: 202.50.253.72
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 10 - Chain-Proxy
   server: 202.50.253.81
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 11 - Chain-Proxy
+- name: 🇮🇹 意大利 (Italy) 02 - Chain-Proxy
+  server: 202.50.253.45
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 03 - Chain-Proxy
+  server: 202.50.253.27
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 04 - Chain-Proxy
+  server: 185.164.175.81
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 05 - Chain-Proxy
+  server: 202.50.253.54
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 06 - Chain-Proxy
   server: 202.50.253.90
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 12 - Chain-Proxy
-  server: 202.50.253.63
+- name: 🇮🇹 意大利 (Italy) 07 - Chain-Proxy
+  server: 91.201.65.122
+  port: 9092
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: TyNkGmp9hs6eGpDK
+- name: 🇮🇹 意大利 (Italy) 08 - Chain-Proxy
+  server: 202.50.253.36
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 13 - Chain-Proxy
-  server: 146.75.59.186
-  port: 443
+- name: 🇮🇹 意大利 (Italy) 09 - Chain-Proxy
+  server: 91.201.65.122
+  port: 9002
   udp: true
-  type: vless
-  uuid: bb3df091-daa3-4a7d-8394-8d7c115e8987
-  tls: true
-  servername: www.firefox.com
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: takidopower-point.global.ssl.fastly.net
-- name: 🇮🇹 意大利 (Italy) 14 - Chain-Proxy
+  type: ss
+  cipher: aes-256-cfb
+  password: b8KkNDjEd5QqFyRm
+- name: 🇮🇹 意大利 (Italy) 10 - Chain-Proxy
   server: 57.131.38.163
   port: 2053
   udp: true
@@ -126,22 +78,8 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
     short-id: 5b8a942318178e7b
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 15 - Chain-Proxy
-  server: 202.50.253.27
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 16 - Chain-Proxy
-  server: 202.50.253.54
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 17 - Chain-Proxy
+  client-fingerprint: qq
+- name: 🇮🇹 意大利 (Italy) 11 - Chain-Proxy
   server: 82.118.16.187
   port: 443
   udp: true
@@ -154,15 +92,49 @@ proxies:
     short-id: cd6065902eea7a02
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 18 - Chain-Proxy
-  server: 202.50.253.99
+- name: 🇮🇹 意大利 (Italy) 12 - Chain-Proxy
+  server: 202.50.253.63
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 19 - Chain-Proxy
-  server: 202.50.253.45
+- name: 🇮🇹 意大利 (Italy) 13 - Chain-Proxy
+  server: 91.201.65.122
+  port: 9065
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: PeHSHm5SqEjBuEXE
+- name: 🇮🇹 意大利 (Italy) 14 - Chain-Proxy
+  server: 82.118.16.189
+  port: 443
+  udp: true
+  type: vless
+  uuid: d5e5f5a1-0f23-4c49-af9f-4be445bf9d8e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY
+    short-id: 37fbf155c7a9f3ff
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 15 - Chain-Proxy
+  server: 202.50.253.72
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 16 - Chain-Proxy
+  server: 202.50.253.18
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 17 - Chain-Proxy
+  server: 202.50.253.99
   port: 19999
   udp: true
   type: ss
@@ -190,8 +162,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 15 - Chain-Proxy
   - 🇮🇹 意大利 (Italy) 16 - Chain-Proxy
   - 🇮🇹 意大利 (Italy) 17 - Chain-Proxy
-  - 🇮🇹 意大利 (Italy) 18 - Chain-Proxy
-  - 🇮🇹 意大利 (Italy) 19 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -214,7 +184,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 15 - Chain-Proxy
   - 🇮🇹 意大利 (Italy) 16 - Chain-Proxy
   - 🇮🇹 意大利 (Italy) 17 - Chain-Proxy
-  - 🇮🇹 意大利 (Italy) 18 - Chain-Proxy
-  - 🇮🇹 意大利 (Italy) 19 - Chain-Proxy
 rules:
 - MATCH,PROXIES

@@ -48,6 +48,26 @@
     {
       "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - Chain-Proxy",
+      "server": "45.38.143.210",
+      "server_port": 30584,
+      "uuid": "cebc5f19-18d9-48e6-9029-fb4b04caf393",
+      "tls": {
+        "enabled": true,
+        "server_name": "m.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y",
+          "short_id": "67ece882d65d0f1a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - Chain-Proxy",
       "server": "138.124.180.137",
       "server_port": 443,
       "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
@@ -57,7 +77,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -68,64 +88,19 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - Chain-Proxy",
-      "server": "104.165.205.23",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - Chain-Proxy",
-      "server": "104.165.205.21",
+      "server": "104.165.205.46",
       "server_port": 9443,
       "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
       "tls": {
         "enabled": true,
         "server_name": "onecloudstream.com",
-        "insecure": false
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - Chain-Proxy",
-      "server": "195.123.208.32",
-      "server_port": 443,
-      "uuid": "1ebcb694-875c-4be7-b6a2-d53c8208991b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "gateway.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk",
-          "short_id": "757b9e1ef18e60f0"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - Chain-Proxy",
-      "server": "104.165.205.142",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - Chain-Proxy",
       "server": "31.58.171.53",
       "server_port": 443,
       "uuid": "4d259556-57f7-4e5a-9a4a-48868787fb38",
@@ -145,6 +120,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - Chain-Proxy",
+      "server": "195.123.208.32",
+      "server_port": 443,
+      "uuid": "1ebcb694-875c-4be7-b6a2-d53c8208991b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk",
+          "short_id": "757b9e1ef18e60f0"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -155,8 +151,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 04 - Chain-Proxy",
         "🇱🇻 拉脱维亚 (Latvia) 05 - Chain-Proxy",
         "🇱🇻 拉脱维亚 (Latvia) 06 - Chain-Proxy",
-        "🇱🇻 拉脱维亚 (Latvia) 07 - Chain-Proxy",
-        "🇱🇻 拉脱维亚 (Latvia) 08 - Chain-Proxy"
+        "🇱🇻 拉脱维亚 (Latvia) 07 - Chain-Proxy"
       ]
     },
     {
@@ -169,8 +164,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 04 - Chain-Proxy",
         "🇱🇻 拉脱维亚 (Latvia) 05 - Chain-Proxy",
         "🇱🇻 拉脱维亚 (Latvia) 06 - Chain-Proxy",
-        "🇱🇻 拉脱维亚 (Latvia) 07 - Chain-Proxy",
-        "🇱🇻 拉脱维亚 (Latvia) 08 - Chain-Proxy"
+        "🇱🇻 拉脱维亚 (Latvia) 07 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
