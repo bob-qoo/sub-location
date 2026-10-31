@@ -47,7 +47,7 @@
     {
       "type": "vless",
       "tag": "🇺🇦 乌克兰 (Ukraine) 03 - Chain-Proxy",
-      "server": "staging.lastilhame.monster",
+      "server": "104.253.216.227",
       "server_port": 443,
       "uuid": "317bc783-340f-453c-afb5-b6bf637c0b23",
       "flow": "xtls-rprx-vision",
@@ -56,7 +56,7 @@
         "server_name": "www.tradingview.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,

@@ -30,7 +30,7 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇺🇦 乌克兰 (Ukraine) 03 - Chain-Proxy
-  server: staging.lastilhame.monster
+  server: 104.253.216.227
   port: 443
   udp: true
   type: vless
@@ -41,7 +41,7 @@ proxies:
     public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
     short-id: fc994ae7eb10
   servername: www.tradingview.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

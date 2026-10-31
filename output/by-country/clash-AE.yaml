@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Chain-Proxy
-  server: 130.49.162.137
-  port: 443
-  udp: true
-  type: vless
-  uuid: 689a62e4-37e7-41de-9e6a-f2a56368c9e2
-  flow: xtls-rprx-vision
-  tls: true
-  servername: sk3.speedtestinternet.link
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy
   server: 185.253.116.33
   port: 14430
   udp: true
@@ -24,15 +13,9 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
-  server: forshynewh.duckdns.org
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 69e41e64-a832-471a-b740-94577ca85520
-  sni: forshynewh.duckdns.org
-  skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
+    headers:
+      Host: 185.253.116.33
+- name: 🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy
   server: 130.49.161.70
   port: 443
   udp: true
@@ -42,8 +25,16 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
-  server: 31.76.227.57
+- name: 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
+  server: 217.60.73.56
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 69e41e64-a832-471a-b740-94577ca85520
+  sni: forshynewh.duckdns.org
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
+  server: app-mi-26.spbstudentlife.com
   port: 443
   udp: true
   type: vless
@@ -54,15 +45,8 @@ proxies:
     public-key: cYtAkO6yUCuRTxHvF8EH76bybk1yfS005KLls-at2yc
     short-id: a7856800c2deb7b2
   servername: assets-mi-26.spbstudentlife.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
-  server: 178.253.16.185
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: x2A6AsyZ-rAllz0wbKHzWA
-- name: 🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy
+  client-fingerprint: randomized
+- name: 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -71,8 +55,15 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
+  server: uae.unixzone.us
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,7 +75,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
-  - 🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -96,6 +86,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
-  - 🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy
 rules:
 - MATCH,PROXIES
