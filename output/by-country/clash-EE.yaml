@@ -11,7 +11,7 @@ proxies:
   type: hysteria2
   password: 2a0fc918-9c61-451b-a9ad-e8f796e70f52
   sni: nl1.obxodvpn.us
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - Chain-Proxy
   server: ee.h1cloud.net
   port: 25895
@@ -23,48 +23,7 @@ proxies:
     public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
     short-id: a73f0410d728c823
   servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - Chain-Proxy
-  server: 185.225.205.53
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7a0348d6-55d3-4c23-b22f-6277fcb2264c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 2XyUS3_ONl5REQ7NiwikdJphAe7oJ61-21zuqnN67y8
-    short-id: 2e82d7ac
-  servername: addons.mozilla.org
-  client-fingerprint: qq
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - Chain-Proxy
-  server: 5.1.40.6
-  port: 2083
-  udp: true
-  type: vless
-  uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  tls: true
-  servername: speedtestmark.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vless-ws
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - Chain-Proxy
-  server: 132.243.66.98
-  port: 443
-  udp: true
-  type: vless
-  uuid: c29fa587-b10d-445d-b7e3-eaa6d1bd1330
-  tls: true
-  servername: media.aava.lalibobi.online
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /live/showroom
-    headers:
-      Host: media.aava.lalibobi.online
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,9 +31,6 @@ proxy-groups:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - Chain-Proxy
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - Chain-Proxy
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - Chain-Proxy
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - Chain-Proxy
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,8 +38,5 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - Chain-Proxy
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - Chain-Proxy
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - Chain-Proxy
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - Chain-Proxy
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - Chain-Proxy
 rules:
 - MATCH,PROXIES

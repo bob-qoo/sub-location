@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇦🇪 阿联酋 (UAE) 01 - Chain-Proxy",
-      "server": "178.253.16.185",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "x2A6AsyZ-rAllz0wbKHzWA"
-    },
-    {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy",
+      "tag": "🇦🇪 阿联酋 (UAE) 01 - Chain-Proxy",
       "server": "130.49.162.137",
       "server_port": 443,
       "uuid": "689a62e4-37e7-41de-9e6a-f2a56368c9e2",
@@ -33,15 +25,38 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy",
+      "server": "185.253.116.33",
+      "server_port": 14430,
+      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
+      "transport": {
+        "type": "ws",
+        "path": "/vless"
+      }
+    },
+    {
       "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy",
+      "server": "forshynewh.duckdns.org",
+      "server_port": 443,
+      "password": "69e41e64-a832-471a-b740-94577ca85520",
+      "tls": {
+        "enabled": true,
+        "server_name": "forshynewh.duckdns.org",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
       "tls": {
         "enabled": true,
         "server_name": "hy2.aspidnet.xyz",
-        "insecure": true
+        "insecure": false
       },
       "obfs": {
         "type": "salamander",
@@ -50,41 +65,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy",
-      "server": "185.253.116.33",
-      "server_port": 14430,
-      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "185.253.116.33"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy",
-      "server": "95.174.68.188",
-      "server_port": 14430,
-      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy",
-      "server": "zfd-boardv2.kunlun01dns.com",
-      "server_port": 16284,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy",
-      "server": "app-mi-26.spbstudentlife.com",
+      "server": "31.76.227.57",
       "server_port": 443,
       "uuid": "07680ffb-0666-4836-b6ad-ec0de62bc38f",
       "flow": "xtls-rprx-vision",
@@ -93,7 +75,7 @@
         "server_name": "assets-mi-26.spbstudentlife.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "randomized"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -103,16 +85,24 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy",
+      "server": "178.253.16.185",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "x2A6AsyZ-rAllz0wbKHzWA"
+    },
+    {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 08 - Chain-Proxy",
-      "server": "uae.unixzone.us",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "tag": "🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy",
+      "server": "95.174.68.188",
+      "server_port": 14430,
+      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/vless",
         "headers": {
-          "Host": "uae.unixzone.us"
+          "Host": "95.174.68.188"
         }
       }
     },
@@ -127,8 +117,7 @@
         "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy",
         "🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy",
         "🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 08 - Chain-Proxy"
+        "🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy"
       ]
     },
     {
@@ -141,8 +130,7 @@
         "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy",
         "🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy",
         "🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 08 - Chain-Proxy"
+        "🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
