@@ -6,6 +6,56 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - Chain-Proxy",
+      "server": "95.216.27.15",
+      "server_port": 2053,
+      "uuid": "b79d736d-0f10-4169-b626-362059d18204",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs",
+          "short_id": "10351b07c712d2a2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - Chain-Proxy",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - Chain-Proxy",
+      "server": "179.253.179.109",
+      "server_port": 62083,
+      "uuid": "ef988d56-9c18-408e-ae1f-a144a332ebce",
+      "tls": {
+        "enabled": true,
+        "server_name": "177.3.220.159",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - Chain-Proxy",
       "server": "31.77.199.147",
       "server_port": 4443,
       "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
@@ -25,54 +75,21 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - Chain-Proxy",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "45.144.234.157"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - Chain-Proxy",
-      "server": "finland.biznes.lol",
-      "server_port": 8443,
-      "password": "7d43670b-6b08-45b9-8a24-8f3971abc132",
-      "tls": {
-        "enabled": true,
-        "server_name": "finland.biznes.lol",
-        "insecure": false
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - Chain-Proxy",
-      "server": "172.67.118.45",
-      "server_port": 2053,
-      "password": "gHQP0D7D15",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - Chain-Proxy",
+      "server": "ench-snet-app.w-ctrip.cn",
+      "server_port": 41184,
+      "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
       "tls": {
         "enabled": true,
-        "server_name": "marvdasht.phonecomparisonblog.org",
+        "server_name": "ench-snet-app.w-ctrip.cn",
         "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "marvdasht.phonecomparisonblog.org"
-        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - Chain-Proxy",
-      "server": "65.109.211.81",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - Chain-Proxy",
+      "server": "hw6.divarkhaghazi.com",
       "server_port": 465,
       "uuid": "09f30c46-3964-41ce-882a-72aee83ddd42",
       "tls": {
@@ -104,7 +121,8 @@
         "🇫🇮 芬兰 (Finland) 02 - Chain-Proxy",
         "🇫🇮 芬兰 (Finland) 03 - Chain-Proxy",
         "🇫🇮 芬兰 (Finland) 04 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 05 - Chain-Proxy"
+        "🇫🇮 芬兰 (Finland) 05 - Chain-Proxy",
+        "🇫🇮 芬兰 (Finland) 06 - Chain-Proxy"
       ]
     },
     {
@@ -115,7 +133,8 @@
         "🇫🇮 芬兰 (Finland) 02 - Chain-Proxy",
         "🇫🇮 芬兰 (Finland) 03 - Chain-Proxy",
         "🇫🇮 芬兰 (Finland) 04 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 05 - Chain-Proxy"
+        "🇫🇮 芬兰 (Finland) 05 - Chain-Proxy",
+        "🇫🇮 芬兰 (Finland) 06 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

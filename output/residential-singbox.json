@@ -15,7 +15,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       }
     },
@@ -28,12 +28,58 @@
       "password": "1234!@#$"
     },
     {
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy",
+      "server": "125.227.86.45",
+      "server_port": 443,
+      "password": "0a9f1f5a397bd427",
+      "tls": {
+        "enabled": true,
+        "server_name": "TG.freecodes",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "db"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy",
+      "server": "ench-snet-app.w-ctrip.cn",
+      "server_port": 45503,
+      "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "cm.g.doubleclick.net",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - Chain-Proxy",
+      "server": "ench-snet-app.w-ctrip.cn",
+      "server_port": 53004,
+      "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "ench-snet-app.w-ctrip.cn",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (移动家宽) - Chain-Proxy",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - Chain-Proxy"
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy",
+        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - Chain-Proxy"
       ]
     },
     {
@@ -41,7 +87,10 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (移动家宽) - Chain-Proxy",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - Chain-Proxy"
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy",
+        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

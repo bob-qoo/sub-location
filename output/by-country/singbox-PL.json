@@ -7,21 +7,41 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - Chain-Proxy",
       "server": "217.30.10.44",
-      "server_port": 9076,
+      "server_port": 9006,
       "method": "aes-256-cfb",
-      "password": "S2zDyyPcmZN2h8EC"
+      "password": "FAdUvMJUq5vDgKEq"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 02 - Chain-Proxy",
+      "server": "217.30.10.44",
+      "server_port": 9063,
+      "method": "aes-256-cfb",
+      "password": "aQqJbtwFGcCCaeL3"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 03 - Chain-Proxy",
       "server": "217.30.10.44",
       "server_port": 9042,
       "method": "aes-256-cfb",
       "password": "S7KwUu7yBy58S3Ga"
     },
     {
+      "type": "trojan",
+      "tag": "🇵🇱 波兰 (Poland) 04 - Chain-Proxy",
+      "server": "70.34.252.255",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "browseexecutivejobopeningsandenhanceleadershipcareer.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - Chain-Proxy",
+      "tag": "🇵🇱 波兰 (Poland) 05 - Chain-Proxy",
       "server": "2.26.255.215",
       "server_port": 443,
       "uuid": "69e41e64-a832-471a-b740-94577ca85520",
@@ -41,41 +61,71 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 04 - Chain-Proxy",
-      "server": "70.34.252.255",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "browseexecutivejobopeningsandenhanceleadershipcareer.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 05 - Chain-Proxy",
-      "server": "31.59.143.147",
+      "tag": "🇵🇱 波兰 (Poland) 06 - Chain-Proxy",
+      "server": "191.217.245.10",
       "server_port": 443,
-      "uuid": "1fe01c8a-ab37-4e95-bbfc-95d4a608931e",
+      "uuid": "2614a96d-e39f-4cca-a9c7-467a178c2c0a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl2.waspnest.space",
+        "server_name": "pl.lenvex.cc",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Liu35gmIQJtbul5AeCrceJTjsmln4RaqxX6joKlaBjk",
-          "short_id": "ae97223a8f799889"
+          "public_key": "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ",
+          "short_id": ""
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 06 - Chain-Proxy",
+      "tag": "🇵🇱 波兰 (Poland) 07 - Chain-Proxy",
+      "server": "82.118.22.161",
+      "server_port": 443,
+      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
+          "short_id": "fa3ea655619a3e78"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 08 - Chain-Proxy",
+      "server": "191.217.245.227",
+      "server_port": 443,
+      "uuid": "2614a96d-e39f-4cca-a9c7-467a178c2c0a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.lenvex.cc",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 09 - Chain-Proxy",
       "server": "94.249.180.86",
       "server_port": 443,
       "uuid": "0de1d303-d7de-0001-8679-c4cb67e2e2cc",
@@ -96,7 +146,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 07 - Chain-Proxy",
+      "tag": "🇵🇱 波兰 (Poland) 10 - Chain-Proxy",
       "server": "150.251.113.34",
       "server_port": 443,
       "uuid": "d7d724b5-17ce-4f3c-877d-dfbf0f07afa1",
@@ -117,22 +167,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 08 - Chain-Proxy",
-      "server": "82.118.22.161",
-      "server_port": 443,
-      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇵🇱 波兰 (Poland) 11 - Chain-Proxy",
+      "server": "79.182.39.37",
+      "server_port": 27591,
+      "uuid": "056405e8-de9f-4d0d-8145-956f13cc34da",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
-          "short_id": "fa3ea655619a3e78"
+          "public_key": "LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM",
+          "short_id": "6c5c7900406a1ae7"
         }
       }
     },
@@ -148,7 +197,10 @@
         "🇵🇱 波兰 (Poland) 05 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 06 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 07 - Chain-Proxy",
-        "🇵🇱 波兰 (Poland) 08 - Chain-Proxy"
+        "🇵🇱 波兰 (Poland) 08 - Chain-Proxy",
+        "🇵🇱 波兰 (Poland) 09 - Chain-Proxy",
+        "🇵🇱 波兰 (Poland) 10 - Chain-Proxy",
+        "🇵🇱 波兰 (Poland) 11 - Chain-Proxy"
       ]
     },
     {
@@ -162,7 +214,10 @@
         "🇵🇱 波兰 (Poland) 05 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 06 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 07 - Chain-Proxy",
-        "🇵🇱 波兰 (Poland) 08 - Chain-Proxy"
+        "🇵🇱 波兰 (Poland) 08 - Chain-Proxy",
+        "🇵🇱 波兰 (Poland) 09 - Chain-Proxy",
+        "🇵🇱 波兰 (Poland) 10 - Chain-Proxy",
+        "🇵🇱 波兰 (Poland) 11 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
