@@ -5,6 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - Chain-Proxy
+  server: 141.0.187.15
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 70043bfa-d6fb-4980-b27e-773e9e8b2004
+  sni: crt.onecloudstream.com
+  skip-cert-verify: false
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - Chain-Proxy
+  server: 141.0.187.50
+  port: 443
+  udp: true
+  type: hysteria2
+  password: e5ec2586-59b3-40fa-91b7-bb37a2f7744e
+  sni: crt.onecloudstream.com
+  skip-cert-verify: false
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - Chain-Proxy
   server: ee.h1cloud.net
   port: 25895
   udp: true
@@ -16,21 +32,16 @@ proxies:
     short-id: a73f0410d728c823
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - Chain-Proxy
-  server: 83.147.216.223
-  port: 4433
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - Chain-Proxy
+  server: 179.253.179.109
+  port: 57443
   udp: true
   type: vless
-  uuid: b491331e-3be5-4097-8bc1-fa86de978c29
+  uuid: da8fab8e-4a25-4eb0-b224-88ab96c753ce
   tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  servername: 87.121.86.24
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +49,8 @@ proxy-groups:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - Chain-Proxy
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - Chain-Proxy
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - Chain-Proxy
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -45,5 +58,7 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - Chain-Proxy
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - Chain-Proxy
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - Chain-Proxy
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - Chain-Proxy
 rules:
 - MATCH,PROXIES

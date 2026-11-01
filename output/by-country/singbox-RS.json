@@ -6,14 +6,17 @@
     {
       "type": "vless",
       "tag": "🇷🇸 塞尔维亚 (Serbia) 01 - Chain-Proxy",
-      "server": "23.227.60.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime18.workers.dev"
+      "server": "185.72.11.43",
+      "server_port": 443,
+      "uuid": "689a62e4-37e7-41de-9e6a-f2a56368c9e2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "rs8.speedtestinternet.link",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
         }
       }
     },
