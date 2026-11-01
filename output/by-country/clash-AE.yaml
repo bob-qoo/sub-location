@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Chain-Proxy
+  server: 217.60.73.56
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 69e41e64-a832-471a-b740-94577ca85520
+  sni: forshynewh.duckdns.org
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy
   server: 185.253.116.33
   port: 14430
   udp: true
@@ -13,9 +21,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 185.253.116.33
-- name: 🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy
+- name: 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
   server: 130.49.161.70
   port: 443
   udp: true
@@ -25,15 +31,33 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
-  server: 217.60.73.56
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 69e41e64-a832-471a-b740-94577ca85520
-  sni: forshynewh.duckdns.org
-  skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
+  server: 95.174.68.188
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
+  server: 107.191.53.86
+  port: 4798
+  udp: true
+  type: vless
+  uuid: bdd0a2cf-12c5-4421-82fe-82195a27748f
+  tls: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
   server: app-mi-26.spbstudentlife.com
   port: 443
   udp: true
@@ -45,25 +69,7 @@ proxies:
     public-key: cYtAkO6yUCuRTxHvF8EH76bybk1yfS005KLls-at2yc
     short-id: a7856800c2deb7b2
   servername: assets-mi-26.spbstudentlife.com
-  client-fingerprint: randomized
-- name: 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
-  server: 95.174.68.188
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

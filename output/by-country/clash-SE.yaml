@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - Chain-Proxy
-  server: 70.34.207.14
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -23,7 +15,7 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy
+- name: 🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy
   server: 192.142.23.46
   port: 443
   udp: true
@@ -31,6 +23,37 @@ proxies:
   password: a0052f4f-4c63-0002-a16f-ab2d5d718cd3
   sni: diffoscope.com
   skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy
+  server: 70.34.207.14
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy
+  server: 83.166.237.167
+  port: 443
+  udp: true
+  type: vless
+  uuid: 902e7be9-d0a8-42a6-994f-8320916a9d9e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: oKG1EhkfIvBM6xLEk7ck51ZbjvUKDR22RNjTJR_7sTU
+    short-id: 46da9a2868751b85
+  servername: pine.gaznw.my
+  client-fingerprint: qq
+- name: 🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy
+  server: static.fatcutecat.net
+  port: 443
+  udp: true
+  type: vless
+  uuid: b95eb0b3-a8dc-41ce-8bc0-888f81731e7c
+  tls: true
+  servername: static.fatcutecat.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +62,8 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - Chain-Proxy
   - 🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy
   - 🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy
+  - 🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy
+  - 🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -47,5 +72,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - Chain-Proxy
   - 🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy
   - 🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy
+  - 🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy
+  - 🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy
 rules:
 - MATCH,PROXIES

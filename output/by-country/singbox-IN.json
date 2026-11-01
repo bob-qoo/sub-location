@@ -6,20 +6,6 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - Chain-Proxy",
-      "server": "13.140.56.100",
-      "server_port": 14430,
-      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "13.140.56.100"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - Chain-Proxy",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -39,8 +25,22 @@
     },
     {
       "type": "vless",
+      "tag": "🇮🇳 印度 (India) 02 - Chain-Proxy",
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "13.140.56.100"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇮🇳 印度 (India) 03 - Chain-Proxy",
-      "server": "in.smrtai.top",
+      "server": "178.212.35.198",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
       "tls": {
@@ -48,7 +48,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -60,7 +60,7 @@
     {
       "type": "trojan",
       "tag": "🇮🇳 印度 (India) 04 - Chain-Proxy",
-      "server": "in002.zestapp778.com",
+      "server": "139.84.210.39",
       "server_port": 42733,
       "password": "5t6i121em5lkmsmk",
       "tls": {
@@ -77,16 +77,17 @@
       "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
       "security": "auto",
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/"
       }
     },
     {
       "type": "shadowsocks",
       "tag": "🇮🇳 印度 (India) 06 - Chain-Proxy",
-      "server": "139.84.166.47",
-      "server_port": 8388,
+      "server": "172.105.39.124",
+      "server_port": 7002,
       "method": "aes-256-gcm",
-      "password": "GEdoeeqLZtkJRgSa"
+      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "selector",
