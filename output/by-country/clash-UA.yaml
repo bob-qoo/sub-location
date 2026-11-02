@@ -30,7 +30,20 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇺🇦 乌克兰 (Ukraine) 03 - Chain-Proxy
-  server: staging.lastilhame.monster
+  server: 104.253.216.227
+  port: 443
+  udp: true
+  type: vless
+  uuid: aded66f1-de12-4c3c-af9e-a21d6e7d9c96
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
+    short-id: 2a80364e93d9
+  servername: www.foxsports.com
+  client-fingerprint: firefox
+- name: 🇺🇦 乌克兰 (Ukraine) 04 - Chain-Proxy
+  server: 104.253.216.227
   port: 443
   udp: true
   type: vless
@@ -41,7 +54,7 @@ proxies:
     public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
     short-id: 225e930cfd4d
   servername: www.hollywoodreporter.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,6 +63,7 @@ proxy-groups:
   - 🇺🇦 乌克兰 (Ukraine) 01 - Chain-Proxy
   - 🇺🇦 乌克兰 (Ukraine) 02 - Chain-Proxy
   - 🇺🇦 乌克兰 (Ukraine) 03 - Chain-Proxy
+  - 🇺🇦 乌克兰 (Ukraine) 04 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,5 +72,6 @@ proxy-groups:
   - 🇺🇦 乌克兰 (Ukraine) 01 - Chain-Proxy
   - 🇺🇦 乌克兰 (Ukraine) 02 - Chain-Proxy
   - 🇺🇦 乌克兰 (Ukraine) 03 - Chain-Proxy
+  - 🇺🇦 乌克兰 (Ukraine) 04 - Chain-Proxy
 rules:
 - MATCH,PROXIES
