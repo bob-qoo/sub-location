@@ -17,7 +17,7 @@ proxies:
   servername: yahoo.com
   client-fingerprint: chrome
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - Chain-Proxy
-  server: 3h-kazakhstan1.09vpn.com
+  server: 38.107.234.57
   port: 80
   udp: true
   type: vmess

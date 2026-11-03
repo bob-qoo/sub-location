@@ -5,16 +5,72 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Chain-Proxy
+  server: 154.197.75.30
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime37.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy
+  server: 104.21.108.4
+  port: 443
+  udp: true
+  type: vless
+  uuid: fa45096d-bed0-ad80-c773-23c300000018
+  tls: true
+  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
   server: 130.49.161.70
   port: 443
   udp: true
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy
+- name: 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
+  server: 57.129.52.47
+  port: 52014
+  udp: true
+  type: vless
+  uuid: b135a1e0-ebdb-4d46-b3fa-bd1e78580244
+  tls: true
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
+  server: 79.137.199.52
+  port: 21
+  udp: true
+  type: vless
+  uuid: 763e2ddd-c830-4f4f-801c-f6f2c3418d4f
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -23,9 +79,37 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
+- name: 🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy
+  server: 83.147.216.223
+  port: 4433
+  udp: true
+  type: vless
+  uuid: b491331e-3be5-4097-8bc1-fa86de978c29
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
     headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 08 - Chain-Proxy
+  server: 5.75.195.83
+  port: 56879
+  udp: true
+  type: vless
+  uuid: 5fe048f2-68e2-42e0-9758-c33a5ac2ee6d
+  tls: true
+  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 09 - Chain-Proxy
   server: 217.60.73.56
   port: 443
   udp: true
@@ -33,6 +117,30 @@ proxies:
   password: 69e41e64-a832-471a-b740-94577ca85520
   sni: forshynewh.duckdns.org
   skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 10 - Chain-Proxy
+  server: 54.179.79.12
+  port: 53646
+  udp: true
+  type: vless
+  uuid: d57b9436-a238-4066-8b11-d23ae57c5982
+  tls: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 11 - Chain-Proxy
+  server: uae.unixzone.us
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +149,14 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 08 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 09 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 10 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 11 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,5 +165,13 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 08 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 09 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 10 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 11 - Chain-Proxy
 rules:
 - MATCH,PROXIES
