@@ -13,6 +13,14 @@ proxies:
   sni: 'off'
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy
+  server: 103.115.109.49
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 103.115.109.49
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy
   server: 152.32.167.33
   port: 443
   udp: true
@@ -24,38 +32,19 @@ proxies:
     public-key: Q8QwBSGN6J-FqgDV1pYNm0VThS_xNRyQ3DPPa9YZ3j4
     short-id: cff998a4
   servername: www.amazon.com
-  client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy
-  server: n04.jinggai.online
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy
+  server: 45.207.159.71
   port: 8443
   udp: true
   type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
   tls: true
-  servername: n04.jinggai.online
-  skip-cert-verify: false
+  reality-opts:
+    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
+    short-id: 4ad2e4e660550e43
+  servername: github.githubassets.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
-    headers:
-      Host: n04.jinggai.online
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy
-  server: er8u54dh.df6h451rh.xin
-  port: 443
-  udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: px.ads.linkedin.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - Chain-Proxy
-  server: 684616s4.df6h451rh.xin
-  port: 443
-  udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: px.ads.linkedin.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,7 +54,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 05 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,6 +63,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 05 - Chain-Proxy
 rules:
 - MATCH,PROXIES

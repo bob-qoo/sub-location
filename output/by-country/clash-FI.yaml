@@ -5,6 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - Chain-Proxy
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b79d736d-0f10-4169-b626-362059d18204
+  tls: true
+  reality-opts:
+    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
+    short-id: 10351b07c712d2a2
+  servername: www.cloudflare.com
+  client-fingerprint: ''
+- name: 🇫🇮 芬兰 (Finland) 02 - Chain-Proxy
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 03 - Chain-Proxy
   server: 201.58.177.35
   port: 443
   udp: true
@@ -17,48 +40,37 @@ proxies:
     short-id: da4d87fa
   servername: xb1.huinaduok.fans
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 02 - Chain-Proxy
-  server: 95.216.27.15
-  port: 2053
+- name: 🇫🇮 芬兰 (Finland) 04 - Chain-Proxy
+  server: 89.144.53.4
+  port: 8445
   udp: true
   type: vless
-  uuid: b79d736d-0f10-4169-b626-362059d18204
+  uuid: 5c32201a-6c0e-451b-8f0a-24b4bd40df59
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
-    short-id: 10351b07c712d2a2
-  servername: www.cloudflare.com
-  client-fingerprint: ''
-- name: 🇫🇮 芬兰 (Finland) 03 - Chain-Proxy
-  server: 45.144.234.157
-  port: 14430
+    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
+    short-id: 1a2b3c4d
+  servername: videos.porsche.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 05 - Chain-Proxy
+  server: 172.66.0.1
+  port: 2053
   udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  type: trojan
+  password: gHQP0D7D15
+  sni: marvdasht.phonecomparisonblog.org
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 04 - Chain-Proxy
+    path: /
+- name: 🇫🇮 芬兰 (Finland) 06 - Chain-Proxy
   server: dns22.m3hrzd.ir
   port: 1346
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
-- name: 🇫🇮 芬兰 (Finland) 05 - Chain-Proxy
-  server: areal1.greewebservices.ir
-  port: 2425
-  udp: true
-  type: vless
-  uuid: dfb070bf-0b53-43eb-be2b-4b34f7e1644d
-  tls: true
-  reality-opts:
-    public-key: MnPGY1Vo4ZbYdpLRTYHoolv5s_pwO41karyJfnQ0F3o
-    short-id: 9b60d3
-  servername: play.googleapis.com
-  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +81,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 04 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 05 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 06 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,5 +92,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 04 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 05 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 06 - Chain-Proxy
 rules:
 - MATCH,PROXIES
