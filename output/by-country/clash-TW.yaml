@@ -18,9 +18,17 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
+  sni: vpn-tw-002.fastervpn.world
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy
+  server: dog-tw.kunlun01dns.com
+  port: 21037
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy
   server: 152.32.167.33
   port: 443
   udp: true
@@ -32,7 +40,7 @@ proxies:
     public-key: Q8QwBSGN6J-FqgDV1pYNm0VThS_xNRyQ3DPPa9YZ3j4
     short-id: cff998a4
   servername: www.amazon.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +49,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,5 +58,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy
 rules:
 - MATCH,PROXIES
