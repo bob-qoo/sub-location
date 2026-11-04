@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - Chain-Proxy
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: whatsapp.com
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy
   server: 162.249.125.133
   port: 443
   udp: true
@@ -14,7 +22,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy
   server: hy2-new.aspidnet.xyz
   port: 443
   udp: true
@@ -24,7 +32,14 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy
+  server: 154.46.31.106
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy
   server: 46.28.67.55
   port: 443
   udp: true
@@ -37,13 +52,12 @@ proxies:
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy
-  server: 154.46.31.106
-  port: 443
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy
+  server: bot.vudfaro.ir
+  port: 5061
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  type: vless
+  uuid: 7df4f23f-b361-412a-883a-54dfdb5b8c8f
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,6 +67,8 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy
   - 🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy
   - 🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy
+  - 🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy
+  - 🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,5 +78,7 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy
   - 🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy
   - 🇷🇴 罗马尼亚 (Romania) 04 - Chain-Proxy
+  - 🇷🇴 罗马尼亚 (Romania) 05 - Chain-Proxy
+  - 🇷🇴 罗马尼亚 (Romania) 06 - Chain-Proxy
 rules:
 - MATCH,PROXIES
