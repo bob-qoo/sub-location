@@ -4,25 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - Chain-Proxy",
-      "server": "130.49.177.193",
-      "server_port": 443,
-      "uuid": "727a9178-d7f0-4142-8205-b0d19959ded0",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "de-2.ffpn.pro",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DCpi9-1rSXxBnEIAQ9U3mTqHivk7vHJRV_T2pWw5vCc",
-          "short_id": "681fc2dd643bc2f3"
-        }
-      }
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU="
     },
     {
       "type": "vless",
@@ -49,54 +36,64 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - Chain-Proxy",
-      "server": "dns27.m3hrzd.ir",
-      "server_port": 1355,
-      "method": "chacha20-ietf-poly1305",
-      "password": "v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - Chain-Proxy",
-      "server": "153.52.85.32",
+      "server": "de-2.ffpn.pro",
       "server_port": 443,
-      "password": "23c82941-70f4-4381-90db-bd28e9a902e9",
+      "uuid": "727a9178-d7f0-4142-8205-b0d19959ded0",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "steel7.hadsvpn.com",
-        "insecure": false
+        "server_name": "de-2.ffpn.pro",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DCpi9-1rSXxBnEIAQ9U3mTqHivk7vHJRV_T2pWw5vCc",
+          "short_id": "681fc2dd643bc2f3"
+        }
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - Chain-Proxy",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - Chain-Proxy",
       "server": "185.22.153.192",
       "server_port": 18443,
       "method": "aes-256-gcm",
       "password": "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - Chain-Proxy",
-      "server": "201.24.121.243",
-      "server_port": 443,
-      "uuid": "32b5ca9b-3f81-4031-965d-e8b074216e8d",
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - Chain-Proxy",
+      "server": "103.88.243.142",
+      "server_port": 11592,
+      "password": "41edb44c8e",
       "tls": {
         "enabled": true,
-        "server_name": "kk-ru24a1.testkknegr.online",
+        "server_name": "srv-17e124.21freedom.net",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - Chain-Proxy",
+      "server": "147.45.126.220",
+      "server_port": 443,
+      "uuid": "ede2f330-aab4-4a34-8b79-0df85ae3f6a9",
+      "tls": {
+        "enabled": true,
+        "server_name": "pol.qikbro.com",
         "insecure": false,
-        "alpn": [
-          "h2"
-        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "vlgrpc"
+        "service_name": "assets"
       }
     },
     {
@@ -142,12 +139,47 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 09 - Chain-Proxy",
+      "server": "201.24.121.243",
+      "server_port": 443,
+      "uuid": "32b5ca9b-3f81-4031-965d-e8b074216e8d",
+      "tls": {
+        "enabled": true,
+        "server_name": "kk-ru24a1.testkknegr.online",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "vlgrpc"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 10 - Chain-Proxy",
       "server": "185.4.115.146",
       "server_port": 1355,
       "method": "chacha20-ietf-poly1305",
       "password": "v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 11 - Chain-Proxy",
+      "server": "steel7.hadsvpn.com",
+      "server_port": 443,
+      "password": "23c82941-70f4-4381-90db-bd28e9a902e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "steel7.hadsvpn.com",
+        "insecure": false
+      }
     },
     {
       "type": "selector",
@@ -162,7 +194,9 @@
         "🇷🇺 俄罗斯 (Russia) 06 - Chain-Proxy",
         "🇷🇺 俄罗斯 (Russia) 07 - Chain-Proxy",
         "🇷🇺 俄罗斯 (Russia) 08 - Chain-Proxy",
-        "🇷🇺 俄罗斯 (Russia) 09 - Chain-Proxy"
+        "🇷🇺 俄罗斯 (Russia) 09 - Chain-Proxy",
+        "🇷🇺 俄罗斯 (Russia) 10 - Chain-Proxy",
+        "🇷🇺 俄罗斯 (Russia) 11 - Chain-Proxy"
       ]
     },
     {
@@ -177,7 +211,9 @@
         "🇷🇺 俄罗斯 (Russia) 06 - Chain-Proxy",
         "🇷🇺 俄罗斯 (Russia) 07 - Chain-Proxy",
         "🇷🇺 俄罗斯 (Russia) 08 - Chain-Proxy",
-        "🇷🇺 俄罗斯 (Russia) 09 - Chain-Proxy"
+        "🇷🇺 俄罗斯 (Russia) 09 - Chain-Proxy",
+        "🇷🇺 俄罗斯 (Russia) 10 - Chain-Proxy",
+        "🇷🇺 俄罗斯 (Russia) 11 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

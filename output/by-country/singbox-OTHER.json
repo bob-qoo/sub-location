@@ -4,31 +4,94 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - Chain-Proxy",
-      "server": "104.18.0.181",
-      "server_port": 2052,
-      "uuid": "5744e593-1cc8-48fa-b8ca-57cd494fe35b",
+      "server": "www.windowsmsidownloads.com",
+      "server_port": 443,
+      "uuid": "80be2deb-3b27-4775-9bd1-7f2a2b9c261b",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.windowsmsidownloads.com",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/rain1226",
+        "path": "/truth"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 02 - Chain-Proxy",
+      "server": "www.windowsmsidownloads.com",
+      "server_port": 443,
+      "uuid": "80be2deb-3b27-4775-9bd1-7f2a2b9c261b",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.windowsmsidownloads.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/truth"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 03 - Chain-Proxy",
+      "server": "www.windowsmsidownloads.com",
+      "server_port": 443,
+      "uuid": "80be2deb-3b27-4775-9bd1-7f2a2b9c261b",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.windowsmsidownloads.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/truth",
         "headers": {
-          "Host": "eu02.123450908.xyz"
+          "Host": "www.windowsmsidownloads.com"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 02 - Chain-Proxy",
-      "server": "172.64.229.129",
-      "server_port": 2052,
-      "uuid": "5744e593-1cc8-48fa-b8ca-57cd494fe35b",
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 04 - Chain-Proxy",
+      "server": "www.windowsmsidownloads.com",
+      "server_port": 443,
+      "uuid": "80be2deb-3b27-4775-9bd1-7f2a2b9c261b",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.windowsmsidownloads.com",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/rain1226",
+        "path": "/truth",
         "headers": {
-          "Host": "eu02.123450908.xyz"
+          "Host": "www.windowsmsidownloads.com"
         }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 05 - Chain-Proxy",
+      "server": "www.windowsmsidownloads.com",
+      "server_port": 443,
+      "uuid": "80be2deb-3b27-4775-9bd1-7f2a2b9c261b",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.windowsmsidownloads.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/truth"
       }
     },
     {
@@ -37,7 +100,10 @@
       "outbounds": [
         "auto",
         "🌐 其他地区 (Other) 01 - Chain-Proxy",
-        "🌐 其他地区 (Other) 02 - Chain-Proxy"
+        "🌐 其他地区 (Other) 02 - Chain-Proxy",
+        "🌐 其他地区 (Other) 03 - Chain-Proxy",
+        "🌐 其他地区 (Other) 04 - Chain-Proxy",
+        "🌐 其他地区 (Other) 05 - Chain-Proxy"
       ]
     },
     {
@@ -45,7 +111,10 @@
       "tag": "auto",
       "outbounds": [
         "🌐 其他地区 (Other) 01 - Chain-Proxy",
-        "🌐 其他地区 (Other) 02 - Chain-Proxy"
+        "🌐 其他地区 (Other) 02 - Chain-Proxy",
+        "🌐 其他地区 (Other) 03 - Chain-Proxy",
+        "🌐 其他地区 (Other) 04 - Chain-Proxy",
+        "🌐 其他地区 (Other) 05 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

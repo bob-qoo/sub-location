@@ -16,6 +16,54 @@ proxies:
   servername: cloudflare.com
   client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - Chain-Proxy
+  server: e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: f7d95364-607b-11ee-93af-f23c91369f2d
+  sni: e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - Chain-Proxy
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.174
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8\u0001f1e8\u0001f1f3
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: "https://t.me/wangcai2ð\x9F\x87"
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
+  server: vpn-hk-004.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-hk-004.fastervpn.world
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
+  server: 56481.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: images.ctfassets.net
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy
   server: 210.0.244.157
   port: 443
   udp: true
@@ -26,80 +74,7 @@ proxies:
     public-key: T239VP3HbJ2KJCur7hDHJtrs6eKmKQfU_X1Xg6NmPgI
   servername: cloudflare.com
   client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - Chain-Proxy
-  server: 154.83.87.6
-  port: 8443
-  udp: true
-  type: vless
-  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
-  tls: true
-  reality-opts:
-    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
-    short-id: 4ad2e4e660550e43
-  servername: github.githubassets.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy
-  server: 31.57.248.176
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: b0917015b656b3dd2286b5633af0c5c1
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy
-  server: bd452e87-tmm5c0-tv7dx2-py5w.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: ae5338ae-9a70-58c9-3d47-7d54a5675715
-  sni: bd452e87-tmm5c0-tv7dx2-py5w.hk3.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: "https://t.me/wangcai2ð\x9F\x87ð\x9F\x87"
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
-  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy
-  server: 112.120.123.140
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
-  sni: 9fc34650-tmm5c0-tmj4pk-1kcpe.nw4.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - Chain-Proxy
-  server: 165.154.63.139
-  port: 443
-  udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
-    short-id: ca4aedd4
-  servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - Chain-Proxy
   server: 152.32.254.68
   port: 5010
   udp: true
@@ -123,8 +98,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 10 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 11 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -139,7 +112,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 10 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 11 - Chain-Proxy
 rules:
 - MATCH,PROXIES

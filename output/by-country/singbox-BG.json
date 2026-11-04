@@ -7,9 +7,9 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - Chain-Proxy",
       "server": "213.183.63.60",
-      "server_port": 9029,
+      "server_port": 9054,
       "method": "aes-256-cfb",
-      "password": "dU3DSNS8wYPXzEKw"
+      "password": "VcFuyXvND2yQWSFY"
     },
     {
       "type": "shadowsocks",
@@ -31,37 +31,21 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy",
       "server": "213.183.63.60",
-      "server_port": 9066,
-      "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - Chain-Proxy",
-      "server": "213.183.63.60",
-      "server_port": 9054,
-      "method": "aes-256-cfb",
-      "password": "VcFuyXvND2yQWSFY"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - Chain-Proxy",
-      "server": "213.183.63.60",
       "server_port": 9098,
       "method": "aes-256-cfb",
       "password": "aLpQtfEZe445QyHk"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - Chain-Proxy",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - Chain-Proxy",
       "server": "213.183.63.60",
-      "server_port": 9061,
+      "server_port": 9066,
       "method": "aes-256-cfb",
-      "password": "4R3hUfZ2FHhDmNcP"
+      "password": "2KUaE2a8NWTvuCZ3"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - Chain-Proxy",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - Chain-Proxy",
       "server": "213.183.63.60",
       "server_port": 9064,
       "method": "aes-256-cfb",
@@ -69,11 +53,27 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 09 - Chain-Proxy",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - Chain-Proxy",
       "server": "213.183.63.60",
       "server_port": 9049,
       "method": "aes-256-cfb",
       "password": "PRBf4BS2HvJqtWxY"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - Chain-Proxy",
+      "server": "213.183.63.60",
+      "server_port": 9061,
+      "method": "aes-256-cfb",
+      "password": "4R3hUfZ2FHhDmNcP"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 09 - Chain-Proxy",
+      "server": "213.183.63.60",
+      "server_port": 9029,
+      "method": "aes-256-cfb",
+      "password": "dU3DSNS8wYPXzEKw"
     },
     {
       "type": "vless",

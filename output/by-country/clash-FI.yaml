@@ -17,31 +17,13 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 02 - Chain-Proxy
-  server: 31.77.199.147
-  port: 4443
+  server: dns22.m3hrzd.ir
+  port: 1346
   udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
 - name: 🇫🇮 芬兰 (Finland) 03 - Chain-Proxy
-  server: 217.144.188.185
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8d954cbe-7ca9-402d-bfaf-aca6c92c04c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk
-  servername: www.nordea.fi
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - Chain-Proxy
   server: 89.144.53.4
   port: 8445
   udp: true
@@ -54,6 +36,18 @@ proxies:
     short-id: 1a2b3c4d
   servername: videos.porsche.com
   client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 04 - Chain-Proxy
+  server: 217.144.188.185
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8d954cbe-7ca9-402d-bfaf-aca6c92c04c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: _ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk
+  servername: www.nordea.fi
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 05 - Chain-Proxy
   server: 146.103.118.189
   port: 443
