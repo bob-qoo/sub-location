@@ -11,20 +11,61 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "103.115.109.49",
+        "server_name": "https://t.me/oneclickvpnkeys",
         "insecure": true
       }
     },
     {
-      "type": "anytls",
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy",
-      "server": "er8u54dh.df6h451rh.xin",
+      "server": "160.187.100.109",
       "server_port": 443,
-      "password": "0324fbc29561",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "px.ads.linkedin.com",
+        "server_name": "127.0.0.1",
         "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy",
+      "server": "152.32.167.33",
+      "server_port": 443,
+      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Q8QwBSGN6J-FqgDV1pYNm0VThS_xNRyQ3DPPa9YZ3j4",
+          "short_id": "cff998a4"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy",
+      "server": "83.147.13.74",
+      "server_port": 8443,
+      "uuid": "eb8c97f7-a154-4442-91b0-54c0d055ad0b",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.githubassets.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA",
+          "short_id": "4ad2e4e660550e43"
+        }
       }
     },
     {
@@ -33,7 +74,9 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy"
+        "🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy"
       ]
     },
     {
@@ -41,7 +84,9 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy"
+        "🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

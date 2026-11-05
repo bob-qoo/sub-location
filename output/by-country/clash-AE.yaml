@@ -29,6 +29,13 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
+  server: 38.180.11.182
+  port: 12146
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: 37a7c5fb6a3109207a0860d30bedb37c
+- name: 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -37,23 +44,9 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
-  server: Sclass-00.catcat321.com
-  port: 20123
-  udp: true
-  type: trojan
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  sni: hk.catxstar.com
-  skip-cert-verify: true
+    headers:
+      Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
-  server: Sclass-C1.catcat321.com
-  port: 20086
-  udp: true
-  type: trojan
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  sni: hk.catxstar.com
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -62,8 +55,14 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy
+  server: Sclass-00.catcat321.com
+  port: 20123
+  udp: true
+  type: trojan
+  password: d9064589-74af-432a-9390-5d8a9da281bf
+  sni: hk.catxstar.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

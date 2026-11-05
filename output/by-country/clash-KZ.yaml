@@ -13,6 +13,7 @@ proxies:
   tls: true
   servername: 3h-kazakhstan1.09vpn.com
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /vless/

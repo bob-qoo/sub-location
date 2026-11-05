@@ -5,29 +5,69 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - Chain-Proxy
-  server: 178.208.89.21
+  server: 195.123.245.241
   port: 443
   udp: true
   type: vless
-  uuid: 689a62e4-37e7-41de-9e6a-f2a56368c9e2
+  uuid: 7c053ca8-38cc-45e2-930c-eda1fd66f903
   flow: xtls-rprx-vision
   tls: true
-  servername: prod-eu-east-cz6.api-gateway.service-mesh.ingress-observability.speedtestinternet.link
-  skip-cert-verify: false
+  reality-opts:
+    public-key: hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw
+    short-id: 23d0950d60bc0d5b
+  servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇨🇿 捷克 (Czech) 02 - Chain-Proxy
-  server: 193.124.17.190
+  server: 212.102.38.25
   port: 443
   udp: true
   type: vless
-  uuid: fad0b9a6-187d-4fcc-96fc-498bc5b3135a
+  uuid: b34a52cb-cd52-49a8-9362-b8e97c151d49
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE
+    short-id: e90360ec7cc61b20
+  servername: udemy.com
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 03 - Chain-Proxy
+  server: cz-prg.dontblockmepls.com
+  port: 2063
+  udp: true
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 04 - Chain-Proxy
+  server: server.slavkiti.monster
+  port: 443
+  udp: true
+  type: vless
+  uuid: 68cf8d29-5aa0-44b3-88a9-f1a576b6e84c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 8325360e8bd2
-  servername: www.foxsports.com
-  client-fingerprint: firefox
+    short-id: 73a9e631a09b
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 05 - Chain-Proxy
+  server: 193.124.17.190
+  port: 443
+  udp: true
+  type: vless
+  uuid: d84c13b2-c2b9-4a7c-838f-05ac09ee422e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 2a2ce9e42980
+  servername: www.mozilla.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +75,9 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - Chain-Proxy
   - 🇨🇿 捷克 (Czech) 02 - Chain-Proxy
+  - 🇨🇿 捷克 (Czech) 03 - Chain-Proxy
+  - 🇨🇿 捷克 (Czech) 04 - Chain-Proxy
+  - 🇨🇿 捷克 (Czech) 05 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -42,5 +85,8 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - Chain-Proxy
   - 🇨🇿 捷克 (Czech) 02 - Chain-Proxy
+  - 🇨🇿 捷克 (Czech) 03 - Chain-Proxy
+  - 🇨🇿 捷克 (Czech) 04 - Chain-Proxy
+  - 🇨🇿 捷克 (Czech) 05 - Chain-Proxy
 rules:
 - MATCH,PROXIES
