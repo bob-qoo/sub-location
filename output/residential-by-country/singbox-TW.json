@@ -4,27 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Chain-Proxy",
-      "server": "125.227.86.45",
-      "server_port": 443,
-      "password": "0a9f1f5a397bd427",
-      "tls": {
-        "enabled": true,
-        "server_name": "TG.freecodes",
-        "insecure": true,
-        "alpn": [
-          "h2"
-        ]
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "db"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Chain-Proxy",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -42,15 +23,22 @@
       }
     },
     {
-      "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy",
-      "server": "er8u54dh.df6h451rh.xin",
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy",
+      "server": "125.227.86.45",
       "server_port": 443,
-      "password": "0324fbc29561",
+      "password": "0a9f1f5a397bd427",
       "tls": {
         "enabled": true,
-        "server_name": "px.ads.linkedin.com",
-        "insecure": true
+        "server_name": "TG.freecodes",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "db"
       }
     },
     {
@@ -59,8 +47,7 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy"
       ]
     },
     {
@@ -68,8 +55,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

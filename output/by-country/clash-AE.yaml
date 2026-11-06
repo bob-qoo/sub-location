@@ -29,13 +29,28 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
+  server: 57.129.130.200
+  port: 52014
+  udp: true
+  type: vless
+  uuid: 93c53b59-1523-4621-9528-77b016a28304
+  tls: true
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
   server: 38.180.11.182
   port: 12146
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: 37a7c5fb6a3109207a0860d30bedb37c
-- name: 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
+- name: 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -44,10 +59,8 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
-  server: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -55,14 +68,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy
-  server: Sclass-00.catcat321.com
-  port: 20123
-  udp: true
-  type: trojan
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  sni: hk.catxstar.com
-  skip-cert-verify: true
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
