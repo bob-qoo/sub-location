@@ -5,14 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Chain-Proxy
-  server: 151.241.19.36
+  server: 151.241.19.29
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy
-  server: 151.241.19.29
+  server: 151.241.19.36
   port: 19999
   udp: true
   type: ss
@@ -29,37 +29,6 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
-  server: 57.129.130.200
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 93c53b59-1523-4621-9528-77b016a28304
-  tls: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
-  server: 38.180.11.182
-  port: 12146
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: 37a7c5fb6a3109207a0860d30bedb37c
-- name: 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
-  server: 95.174.68.188
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -70,6 +39,15 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
+  server: 95.174.68.188
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
 proxy-groups:
 - name: PROXIES
   type: select
@@ -80,8 +58,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
-  - 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
-  - 🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,7 +68,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
-  - 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
-  - 🇦🇪 阿联酋 (UAE) 07 - Chain-Proxy
 rules:
 - MATCH,PROXIES
