@@ -7,25 +7,25 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - Chain-Proxy",
       "server": "217.30.10.44",
-      "server_port": 9076,
+      "server_port": 9006,
       "method": "aes-256-cfb",
-      "password": "S2zDyyPcmZN2h8EC"
+      "password": "FAdUvMJUq5vDgKEq"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 02 - Chain-Proxy",
       "server": "217.30.10.44",
-      "server_port": 9052,
+      "server_port": 9042,
       "method": "aes-256-cfb",
-      "password": "jt2ekBNc9HuVtm2a"
+      "password": "S7KwUu7yBy58S3Ga"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 03 - Chain-Proxy",
-      "server": "54.37.235.208",
-      "server_port": 11169,
-      "method": "aes-128-gcm",
-      "password": "122e6f90890e2691f3da63eddf951495"
+      "server": "217.30.10.44",
+      "server_port": 9063,
+      "method": "aes-256-cfb",
+      "password": "aQqJbtwFGcCCaeL3"
     },
     {
       "type": "shadowsocks",
@@ -39,37 +39,21 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 05 - Chain-Proxy",
       "server": "217.30.10.44",
-      "server_port": 9063,
+      "server_port": 9062,
       "method": "aes-256-cfb",
-      "password": "aQqJbtwFGcCCaeL3"
+      "password": "tkhHVxxfM2QErBWe"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 06 - Chain-Proxy",
       "server": "217.30.10.44",
-      "server_port": 9042,
+      "server_port": 9076,
       "method": "aes-256-cfb",
-      "password": "S7KwUu7yBy58S3Ga"
+      "password": "S2zDyyPcmZN2h8EC"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 07 - Chain-Proxy",
-      "server": "217.30.10.44",
-      "server_port": 9006,
-      "method": "aes-256-cfb",
-      "password": "FAdUvMJUq5vDgKEq"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 08 - Chain-Proxy",
-      "server": "217.30.10.44",
-      "server_port": 9095,
-      "method": "aes-256-cfb",
-      "password": "N7j3pdTYkKmsy8CR"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 09 - Chain-Proxy",
       "server": "217.30.10.44",
       "server_port": 9099,
       "method": "aes-256-cfb",
@@ -77,52 +61,69 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 10 - Chain-Proxy",
+      "tag": "🇵🇱 波兰 (Poland) 08 - Chain-Proxy",
       "server": "217.30.10.44",
-      "server_port": 9062,
+      "server_port": 9052,
       "method": "aes-256-cfb",
-      "password": "tkhHVxxfM2QErBWe"
+      "password": "jt2ekBNc9HuVtm2a"
     },
     {
       "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 11 - Chain-Proxy",
+      "tag": "🇵🇱 波兰 (Poland) 09 - Chain-Proxy",
       "server": "70.34.252.255",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
         "server_name": "browseexecutivejobopeningsandenhanceleadershipcareer.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 12 - Chain-Proxy",
-      "server": "94.249.180.86",
+      "tag": "🇵🇱 波兰 (Poland) 10 - Chain-Proxy",
+      "server": "2.26.255.215",
       "server_port": 443,
-      "uuid": "0de1d303-d7de-0001-8679-c4cb67e2e2cc",
+      "uuid": "69e41e64-a832-471a-b740-94577ca85520",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "amd.com",
+        "server_name": "cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
-          "short_id": "a696de84963656de"
+          "public_key": "pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI",
+          "short_id": "50"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 13 - Chain-Proxy",
+      "tag": "🇵🇱 波兰 (Poland) 11 - Chain-Proxy",
+      "server": "82.118.22.161",
+      "server_port": 443,
+      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
+          "short_id": "fa3ea655619a3e78"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 12 - Chain-Proxy",
       "server": "pl3.japancase.site",
       "server_port": 443,
       "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
@@ -132,7 +133,7 @@
         "server_name": "pl3.japancase.site",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -142,18 +143,35 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 13 - Chain-Proxy",
+      "server": "217.30.10.44",
+      "server_port": 9095,
+      "method": "aes-256-cfb",
+      "password": "N7j3pdTYkKmsy8CR"
+    },
+    {
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 14 - Chain-Proxy",
-      "server": "54.37.131.126",
-      "server_port": 80,
-      "uuid": "059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
+      "server": "ru1.radiolumens.uk",
+      "server_port": 8445,
+      "uuid": "36cf792c-f07d-4500-97ea-a395e5178deb",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru1.radiolumens.uk",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "beru-pl"
       }
     },
     {
@@ -178,6 +196,21 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇵🇱 波兰 (Poland) 16 - Chain-Proxy",
+      "server": "54.37.131.126",
+      "server_port": 80,
+      "uuid": "059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -196,7 +229,8 @@
         "🇵🇱 波兰 (Poland) 12 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 13 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 14 - Chain-Proxy",
-        "🇵🇱 波兰 (Poland) 15 - Chain-Proxy"
+        "🇵🇱 波兰 (Poland) 15 - Chain-Proxy",
+        "🇵🇱 波兰 (Poland) 16 - Chain-Proxy"
       ]
     },
     {
@@ -217,7 +251,8 @@
         "🇵🇱 波兰 (Poland) 12 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 13 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 14 - Chain-Proxy",
-        "🇵🇱 波兰 (Poland) 15 - Chain-Proxy"
+        "🇵🇱 波兰 (Poland) 15 - Chain-Proxy",
+        "🇵🇱 波兰 (Poland) 16 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

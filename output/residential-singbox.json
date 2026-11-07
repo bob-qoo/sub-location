@@ -12,28 +12,12 @@
       "password": "1234!@#$"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy",
-      "server": "e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "40639730-e027-11ea-87ad-f23c913c8d2b",
-      "tls": {
-        "enabled": true,
-        "server_name": "e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy",
-      "server": "d0f180c2-tmm5c0-tphvvu-gacy.nw4.hyhuawei.com",
-      "server_port": 443,
-      "password": "20f87b02-0eaa-11eb-8684-f23c913c8d2b",
-      "tls": {
-        "enabled": true,
-        "server_name": "d0f180c2-tmm5c0-tphvvu-gacy.nw4.hyhuawei.com",
-        "insecure": false
-      }
+      "type": "shadowsocks",
+      "tag": "🇰🇭 柬埔寨 (Cambodia) 02 (移动家宽) - Chain-Proxy",
+      "server": "catnet-other.kunlun04dns.com",
+      "server_port": 28035,
+      "method": "aes-128-gcm",
+      "password": "b61ca706-e2e9-4f6b-bd1e-0f0534a2fc41"
     },
     {
       "type": "selector",
@@ -41,8 +25,7 @@
       "outbounds": [
         "auto",
         "🇰🇷 韩国 (South Korea) 01 (家宽) - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy"
+        "🇰🇭 柬埔寨 (Cambodia) 02 (移动家宽) - Chain-Proxy"
       ]
     },
     {
@@ -50,8 +33,7 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇷 韩国 (South Korea) 01 (家宽) - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy"
+        "🇰🇭 柬埔寨 (Cambodia) 02 (移动家宽) - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
