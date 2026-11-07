@@ -4,42 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇮🇳 印度 (India) 01 - Chain-Proxy",
-      "server": "45.131.4.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime59.workers.dev"
-        }
-      }
+      "server": "139.84.166.47",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "GEdoeeqLZtkJRgSa"
     },
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 02 - Chain-Proxy",
-      "server": "194.61.31.126",
-      "server_port": 2053,
-      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
-          "short_id": "9980e0609b0d3891"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - Chain-Proxy",
       "server": "in.smrtai.top",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
@@ -59,8 +33,39 @@
     },
     {
       "type": "vless",
+      "tag": "🇮🇳 印度 (India) 03 - Chain-Proxy",
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇮🇳 印度 (India) 04 - Chain-Proxy",
-      "server": "in1.japancase.site",
+      "server": "194.61.31.126",
+      "server_port": 2053,
+      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
+          "short_id": "9980e0609b0d3891"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 05 - Chain-Proxy",
+      "server": "107.181.139.144",
       "server_port": 443,
       "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
       "flow": "xtls-rprx-vision",
@@ -69,7 +74,7 @@
         "server_name": "in1.japancase.site",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -80,7 +85,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 05 - Chain-Proxy",
+      "tag": "🇮🇳 印度 (India) 06 - Chain-Proxy",
       "server": "122.176.216.52",
       "server_port": 443,
       "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
@@ -102,18 +107,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 06 - Chain-Proxy",
-      "server": "13.140.56.100",
-      "server_port": 14430,
-      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "13.140.56.100"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇮🇳 印度 (India) 07 - Chain-Proxy",
+      "server": "172.105.39.124",
+      "server_port": 7002,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "selector",
@@ -125,7 +124,8 @@
         "🇮🇳 印度 (India) 03 - Chain-Proxy",
         "🇮🇳 印度 (India) 04 - Chain-Proxy",
         "🇮🇳 印度 (India) 05 - Chain-Proxy",
-        "🇮🇳 印度 (India) 06 - Chain-Proxy"
+        "🇮🇳 印度 (India) 06 - Chain-Proxy",
+        "🇮🇳 印度 (India) 07 - Chain-Proxy"
       ]
     },
     {
@@ -137,7 +137,8 @@
         "🇮🇳 印度 (India) 03 - Chain-Proxy",
         "🇮🇳 印度 (India) 04 - Chain-Proxy",
         "🇮🇳 印度 (India) 05 - Chain-Proxy",
-        "🇮🇳 印度 (India) 06 - Chain-Proxy"
+        "🇮🇳 印度 (India) 06 - Chain-Proxy",
+        "🇮🇳 印度 (India) 07 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
