@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - Chain-Proxy
   server: 213.183.63.60
-  port: 9064
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy
-  server: 213.183.63.60
   port: 9028
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 9eeJ2fwnZA5Fxgz8
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy
+  server: 213.183.63.60
+  port: 9064
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: cp8pRSUAyLhTfVWH
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy
   server: 213.183.63.60
   port: 9061
@@ -26,13 +26,6 @@ proxies:
   cipher: aes-256-cfb
   password: 4R3hUfZ2FHhDmNcP
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy
-  server: 213.183.63.60
-  port: 9085
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - Chain-Proxy
   server: 2.27.105.13
   port: 31238
   udp: true
@@ -54,7 +47,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy
   - 🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy
   - 🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy
-  - 🇧🇬 保加利亚 (Bulgaria) 05 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,6 +56,5 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy
   - 🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy
   - 🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy
-  - 🇧🇬 保加利亚 (Bulgaria) 05 - Chain-Proxy
 rules:
 - MATCH,PROXIES
