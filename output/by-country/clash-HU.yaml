@@ -1,0 +1,52 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇭🇺 匈牙利 (Hungary) 01 - Chain-Proxy
+  server: 172.67.131.125
+  port: 2083
+  udp: true
+  type: vless
+  uuid: f418674e-f518-4318-8ff9-e10000000046
+  tls: true
+  servername: smart-edge-424.arti98399-1905.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: smart-edge-424.arti98399-1905.workers.dev
+- name: 🇭🇺 匈牙利 (Hungary) 02 - Chain-Proxy
+  server: 45.86.67.114
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 6eaf5e8f-e4fe-4dc7-a1cd-f24343536abe
+  tls: true
+  reality-opts:
+    public-key: vzxQR7aijDhEEV2Dq6P6eFJckkgOLTq86bySpqVGsQo
+    short-id: de9061cbed448be3
+  servername: us1.kittieslabs.tech
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: us-tor
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇭🇺 匈牙利 (Hungary) 01 - Chain-Proxy
+  - 🇭🇺 匈牙利 (Hungary) 02 - Chain-Proxy
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇺 匈牙利 (Hungary) 01 - Chain-Proxy
+  - 🇭🇺 匈牙利 (Hungary) 02 - Chain-Proxy
+rules:
+- MATCH,PROXIES

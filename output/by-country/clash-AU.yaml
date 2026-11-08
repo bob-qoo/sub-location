@@ -20,23 +20,6 @@ proxies:
   password: 5t6i121em5lkmsmk
   sni: au001.zestapp778.com
   skip-cert-verify: false
-- name: 🇦🇺 澳大利亚 (Australia) 03 - Chain-Proxy
-  server: 152.67.115.203
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 633bc3be486b646190661ac2387c150a
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
-- name: 🇦🇺 澳大利亚 (Australia) 04 - Chain-Proxy
-  server: catnet-other.kunlun04dns.com
-  port: 28047
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: b61ca706-e2e9-4f6b-bd1e-0f0534a2fc41
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,8 +27,6 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - Chain-Proxy
   - 🇦🇺 澳大利亚 (Australia) 02 - Chain-Proxy
-  - 🇦🇺 澳大利亚 (Australia) 03 - Chain-Proxy
-  - 🇦🇺 澳大利亚 (Australia) 04 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,7 +34,5 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - Chain-Proxy
   - 🇦🇺 澳大利亚 (Australia) 02 - Chain-Proxy
-  - 🇦🇺 澳大利亚 (Australia) 03 - Chain-Proxy
-  - 🇦🇺 澳大利亚 (Australia) 04 - Chain-Proxy
 rules:
 - MATCH,PROXIES
