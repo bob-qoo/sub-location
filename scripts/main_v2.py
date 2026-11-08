@@ -70,6 +70,8 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/coldwater-10/V2rayCollectorLire/main/mixed_iran.txt",
     "https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_RAW.txt",
     "https://shadowmere.akiel.dev/api/b64sub/",
+    "https://raw.githubusercontent.com/morpheusadam/v2ray-config/main/subs/bundles/tuic.txt",
+    "https://raw.githubusercontent.com/morpheusadam/v2ray-config/main/subs/bundles/hysteria2.txt",
 ]
 
 OUTPUT_DIR = "output"
