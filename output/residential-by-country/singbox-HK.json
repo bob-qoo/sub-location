@@ -10,7 +10,7 @@
       "server_port": 443,
       "uuid": "73bfcc1c-5814-5f2a-b43a-3ef6af011db8",
       "password": "73bfcc1c-5814-5f2a-b43a-3ef6af011db8",
-      "congestion_control": "bbr",
+      "congestion_control": "cubic",
       "udp_relay_mode": "native",
       "tls": {
         "enabled": true,

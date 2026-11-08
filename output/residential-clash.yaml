@@ -13,7 +13,7 @@ proxies:
   password: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
   sni: 54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com
   skip-cert-verify: false
-  congestion-controller: bbr
+  congestion-controller: cubic
   udp-relay-mode: native
   alpn:
   - h3
