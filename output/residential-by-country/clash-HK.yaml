@@ -18,12 +18,12 @@ proxies:
   alpn:
   - h3
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy
-  server: a91af2af-tmm5c0-twnp5a-ahsb.hk3.hyhuawei.com
+  server: fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d
-  sni: a91af2af-tmm5c0-twnp5a-ahsb.hk3.hyhuawei.com
+  password: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
+  sni: fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES

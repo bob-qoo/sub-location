@@ -18,28 +18,27 @@ proxies:
   alpn:
   - h3
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy
-  server: a91af2af-tmm5c0-twnp5a-ahsb.hk3.hyhuawei.com
+  server: fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d
-  sni: a91af2af-tmm5c0-twnp5a-ahsb.hk3.hyhuawei.com
+  password: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
+  sni: fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - Chain-Proxy
-  server: 49.254.204.133
-  port: 1774
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy
+  server: 60.248.219.78
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇸🇬 新加坡 (Singapore) 04 (家宽) - Chain-Proxy
-  server: 195.133.135.238
-  port: 10086
-  udp: true
-  type: vmess
-  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  tls: true
+  servername: ty986gfazs.cainiaohub.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,8 +46,7 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - Chain-Proxy
-  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,7 +54,6 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - Chain-Proxy
-  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - Chain-Proxy
 rules:
 - MATCH,PROXIES
