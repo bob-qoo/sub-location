@@ -7,21 +7,13 @@
       "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - Chain-Proxy",
       "server": "zfd-hkv2.kunlun01dns.com",
-      "server_port": 16113,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - Chain-Proxy",
-      "server": "zfd-hkv2.kunlun01dns.com",
-      "server_port": 16115,
+      "server_port": 16116,
       "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
       "security": "auto"
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - Chain-Proxy",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - Chain-Proxy",
       "server": "209.33.160.122",
       "server_port": 39098,
       "uuid": "7852e4df-db54-4f75-a35e-3b8fbe89e56d",
@@ -42,19 +34,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy",
-      "server": "09661312-tmm5c0-u1dafb-1ro8s.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "a18ef18e-293a-11ef-b76e-f23c91cfbbc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "09661312-tmm5c0-u1dafb-1ro8s.hk3.hyhuawei.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - Chain-Proxy",
       "server": "152.32.254.68",
       "server_port": 5010,
       "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
@@ -70,51 +50,47 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy",
-      "server": "71db9f3f-tmm5c0-tyn7s3-1q3dm.nw4.hyhuawei.com",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy",
+      "server": "ddfd0b64-tmm5c0-u0aht1-1rz5s.nw4.hyhuawei.com",
       "server_port": 443,
-      "password": "c1785de0-212f-11ef-92aa-f23c9164ca5d",
+      "password": "40e084d6-0316-11f0-90e2-f23c913c8d2b",
       "tls": {
         "enabled": true,
-        "server_name": "71db9f3f-tmm5c0-tyn7s3-1q3dm.nw4.hyhuawei.com",
+        "server_name": "ddfd0b64-tmm5c0-u0aht1-1rz5s.nw4.hyhuawei.com",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy",
-      "server": "202.146.222.29",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/wangcai2ⁿß",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy",
-      "server": "202.146.222.89",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/clashv8🇨🇳",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy",
       "server": "202.146.222.174",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "202.146.222.174",
+        "server_name": "https://t.me/wangcai2",
         "insecure": true
       }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy",
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "202.146.222.89",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy",
+      "server": "101.32.187.182",
+      "server_port": 10898,
+      "uuid": "b6b14ef7-a769-406f-9df7-31790ff7a920",
+      "security": "auto"
     },
     {
       "type": "selector",
@@ -127,9 +103,7 @@
         "🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy",
         "🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy",
         "🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy"
+        "🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy"
       ]
     },
     {
@@ -142,9 +116,7 @@
         "🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy",
         "🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy",
         "🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy"
+        "🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

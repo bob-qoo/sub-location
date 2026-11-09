@@ -6,21 +6,13 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - Chain-Proxy
   server: zfd-hkv2.kunlun01dns.com
-  port: 16113
+  port: 16116
   udp: true
   type: vmess
   uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - Chain-Proxy
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16115
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - Chain-Proxy
   server: 209.33.160.122
   port: 39098
   udp: true
@@ -32,15 +24,7 @@ proxies:
     public-key: DtOZ39u6MyQMG96tl13-M7-HeaqQzW2RLBVPk9py-Vg
   servername: dash.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy
-  server: 09661312-tmm5c0-u1dafb-1ro8s.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: a18ef18e-293a-11ef-b76e-f23c91cfbbc9
-  sni: 09661312-tmm5c0-u1dafb-1ro8s.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - Chain-Proxy
   server: 152.32.254.68
   port: 5010
   udp: true
@@ -50,38 +34,38 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
-  server: 71db9f3f-tmm5c0-tyn7s3-1q3dm.nw4.hyhuawei.com
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy
+  server: ddfd0b64-tmm5c0-u0aht1-1rz5s.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: c1785de0-212f-11ef-92aa-f23c9164ca5d
-  sni: 71db9f3f-tmm5c0-tyn7s3-1q3dm.nw4.hyhuawei.com
+  password: 40e084d6-0316-11f0-90e2-f23c913c8d2b
+  sni: ddfd0b64-tmm5c0-u0aht1-1rz5s.nw4.hyhuawei.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2ⁿß
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8🇨🇳
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
+  sni: https://t.me/wangcai2
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.89
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
+  server: 101.32.187.182
+  port: 10898
+  udp: true
+  type: vmess
+  uuid: b6b14ef7-a769-406f-9df7-31790ff7a920
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -94,8 +78,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -108,7 +90,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy
 rules:
 - MATCH,PROXIES
