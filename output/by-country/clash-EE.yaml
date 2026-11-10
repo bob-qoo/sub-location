@@ -11,7 +11,7 @@ proxies:
   type: hysteria2
   password: 146d567c-6335-4e63-a8aa-7ec068642440
   sni: nlll.obxodvpn.us
-  skip-cert-verify: true
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

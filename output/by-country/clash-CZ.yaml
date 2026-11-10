@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - Chain-Proxy
-  server: 172.66.47.158
-  port: 443
-  udp: true
-  type: trojan
-  password: Nd2bFutZK2ma29bYqC@z
-  sni: 4oKhrijUyjyTFlnvoWhL3ZFW5wSGI34O.PAGeS.DeV
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/2W6ONoBA1CTMk80znuAVgQ9dvWey2KD8?ed=2560
-- name: 🇨🇿 捷克 (Czech) 02 - Chain-Proxy
   server: 195.123.245.241
   port: 443
   udp: true
@@ -28,20 +17,7 @@ proxies:
     short-id: 23d0950d60bc0d5b
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 03 - Chain-Proxy
-  server: 212.102.38.25
-  port: 443
-  udp: true
-  type: vless
-  uuid: b34a52cb-cd52-49a8-9362-b8e97c151d49
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE
-    short-id: e90360ec7cc61b20
-  servername: udemy.com
-  client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 04 - Chain-Proxy
+- name: 🇨🇿 捷克 (Czech) 02 - Chain-Proxy
   server: 216.106.191.201
   port: 10303
   udp: true
@@ -54,19 +30,6 @@ proxies:
     short-id: 6aa50b0cc8d23464
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 05 - Chain-Proxy
-  server: 193.124.17.190
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1896c6c9-a941-4688-a865-29027bf7f8e6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 6c825bc79850
-  servername: www.microsoft.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,9 +37,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - Chain-Proxy
   - 🇨🇿 捷克 (Czech) 02 - Chain-Proxy
-  - 🇨🇿 捷克 (Czech) 03 - Chain-Proxy
-  - 🇨🇿 捷克 (Czech) 04 - Chain-Proxy
-  - 🇨🇿 捷克 (Czech) 05 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,8 +44,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - Chain-Proxy
   - 🇨🇿 捷克 (Czech) 02 - Chain-Proxy
-  - 🇨🇿 捷克 (Czech) 03 - Chain-Proxy
-  - 🇨🇿 捷克 (Czech) 04 - Chain-Proxy
-  - 🇨🇿 捷克 (Czech) 05 - Chain-Proxy
 rules:
 - MATCH,PROXIES
