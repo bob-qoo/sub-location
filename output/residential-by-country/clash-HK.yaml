@@ -18,13 +18,21 @@ proxies:
   alpn:
   - h3
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy
-  server: 5e293df6-tmm5c0-tujecz-1qkeg.hk3.hyhuawei.com
+  server: ac91889e-tmm5c0-u3xqxa-1q91p.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
-  sni: 5e293df6-tmm5c0-tujecz-1qkeg.hk3.hyhuawei.com
+  password: c11ff50c-f582-11ee-94df-f23c9164ca5d
+  sni: ac91889e-tmm5c0-u3xqxa-1q91p.hk3.hyhuawei.com
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy
+  server: f7f87486-tmm5c0-ts3rye-mrtr.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
+  sni: f7f87486-tmm5c0-ts3rye-mrtr.nw4.hyhuawei.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +40,7 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +48,6 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy
 rules:
 - MATCH,PROXIES

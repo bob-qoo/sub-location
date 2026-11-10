@@ -20,33 +20,9 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
+  sni: t.me
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - Chain-Proxy
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8🇨🇳
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy
-  server: 6d889de6-tly2o0-tn28ki-mv7m.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 94d40708-8273-11ea-8fc9-f23c913c8d2b
-  sni: 6d889de6-tly2o0-tn28ki-mv7m.nw4.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2рҹүрҹү
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
   server: 39.109.111.23
   port: 28675
   udp: true
@@ -59,8 +35,24 @@ proxies:
     short-id: 9a79807253c040
   servername: www.lamer.com.hk
   client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
-  server: 39.109.111.23
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vk.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: "https://t.me/wangcai2ð\x9F\x87"
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
+  server: dogyhkv2.zalolink.com
   port: 39675
   udp: true
   type: vless
@@ -71,39 +63,7 @@ proxies:
     public-key: VW9b1Lj_TPfa52PVrmLypSxQjRiV06sgG96uEd6oBRM
     short-id: 551a216445
   servername: www.lamer.com.hk
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy
-  server: 162.19.192.89
-  port: 16632
-  udp: true
-  type: vmess
-  uuid: 992b1bc6-6e1e-455d-940b-e99bd39f70a2
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 0606f25bbb646de3feadb8d23c1c6217.mobgslb.tbcache.com
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy
-  server: 47.129.105.174
-  port: 50000
-  udp: true
-  type: hysteria2
-  password: g4EKHBpZQ9ckIhFRyi3gHDFh
-  sni: sg-transit-3.nebulacloud.win
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - Chain-Proxy
-  server: 213.176.92.168
-  port: 14430
-  udp: true
-  type: vless
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 213.176.92.168
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -115,10 +75,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 10 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -130,9 +86,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 10 - Chain-Proxy
 rules:
 - MATCH,PROXIES
