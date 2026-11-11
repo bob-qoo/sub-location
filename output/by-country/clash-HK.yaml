@@ -12,56 +12,54 @@ proxies:
   cipher: aes-256-gcm
   password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - Chain-Proxy
+  server: 4e3e8635-tmm5c0-tvh2gy-1qzi1.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 8f99107c-f091-11ee-9935-f23c9164ca5d
+  sni: 4e3e8635-tmm5c0-tvh2gy-1qzi1.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - Chain-Proxy
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https3a2f2ft.me2fwangcai2efa3bfc3bcc3a1
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: https://t.me/clashv8\u0001f1e8\u0001f1f3
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - Chain-Proxy
-  server: e4e8e68f-tmm5c0-tny186-4lg6.nw4.hyhuawei.com
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy
+  server: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
-  sni: e4e8e68f-tmm5c0-tny186-4lg6.nw4.hyhuawei.com
+  password: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
+  sni: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
+  sni: https://t.me/wangcai2
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy
-  server: doghkzf.zalolink.com
-  port: 28675
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: jgtiLXdCnQ9WRWMuu2gsuGQOQTCRZQpspnn228kjTSA
-    short-id: 9a79807253c040
-  servername: www.lamer.com.hk
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
-  server: dogyhkv2.zalolink.com
-  port: 39675
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: VW9b1Lj_TPfa52PVrmLypSxQjRiV06sgG96uEd6oBRM
-    short-id: 551a216445
-  servername: www.lamer.com.hk
-  client-fingerprint: ios
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
+  server: vpn-hk-004.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-hk-004.fastervpn.world
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy
   server: 23.95.72.244
   port: 2087
   udp: true
@@ -74,41 +72,43 @@ proxies:
     short-id: 7b1602ae8a72ed0a
   servername: repost.aws
   client-fingerprint: qq
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy
-  server: 23.95.72.244
-  port: 10000
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zbxwe24LRKKKjXccD1t_yJ3WDFXXY_y9j7SqbkPMIRw
-    short-id: 99aa2eb4f2c77af5
-  servername: sellercentral.amazon.com
-  client-fingerprint: safari
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy
-  server: vpn-hk-004.fastervpn.world
-  port: 443
+  server: 152.32.254.68
+  port: 5010
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-hk-004.fastervpn.world
-  skip-cert-verify: true
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 10 - Chain-Proxy
-  server: 23.95.72.244
-  port: 5452
+  server: 39.109.111.23
+  port: 39675
   udp: true
   type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 5QrrG8JTvX0hemy-OiCGVr5lr0QKzukwr5JlEIgQ7z8
-    short-id: a2fdcebfb3a6c8
-  servername: api.adidas.com
-  client-fingerprint: chrome
+    public-key: VW9b1Lj_TPfa52PVrmLypSxQjRiV06sgG96uEd6oBRM
+    short-id: 551a216445
+  servername: www.lamer.com.hk
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 11 - Chain-Proxy
+  server: 39.109.111.23
+  port: 28675
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: jgtiLXdCnQ9WRWMuu2gsuGQOQTCRZQpspnn228kjTSA
+    short-id: 9a79807253c040
+  servername: www.lamer.com.hk
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - Chain-Proxy
   server: 103.172.116.191
   port: 10103
   udp: true
@@ -121,7 +121,33 @@ proxies:
     short-id: f96b3b17a0f5b1fe
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - Chain-Proxy
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - Chain-Proxy
+  server: 23.95.72.244
+  port: 58715
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xhQQ393yiOwgfp2JzIu0Qfg-5oG3M5Y71mBmI0WM9kU
+    short-id: eab17137bf1d2bad
+  servername: api.adidas.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - Chain-Proxy
+  server: 23.95.72.244
+  port: 5451
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qryP-M3vNPOjAVs90y0mjF03PfhJsMboTJCLxLoiKRU
+    short-id: 63f1a2ab88f9
+  servername: api.adidas.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - Chain-Proxy
   server: 23.95.72.244
   port: 58713
   udp: true
@@ -134,7 +160,7 @@ proxies:
     short-id: 715335e6264a13
   servername: api.adidas.com
   client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - Chain-Proxy
+- name: 🇭🇰 中国香港 (Hong Kong) 16 - Chain-Proxy
   server: 23.95.72.244
   port: 48741
   udp: true
@@ -147,29 +173,32 @@ proxies:
     short-id: fe92059c14
   servername: api.adidas.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - Chain-Proxy
+- name: 🇭🇰 中国香港 (Hong Kong) 17 - Chain-Proxy
   server: 23.95.72.244
-  port: 58712
+  port: 6697
   udp: true
   type: vless
   uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: en2L9xxQOv2w4eD0sxqu3eOFGnqOxZLWuR9sFqBDdAM
-    short-id: f266fd3d4e
-  servername: api.adidas.com
-  client-fingerprint: safari
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - Chain-Proxy
-  server: 152.32.254.68
-  port: 5010
+    public-key: qeuzgTUkTLMVZZ3AclsA1_Qn_xX9NFDzuNzJnotcMWY
+    short-id: e718c0495c85dab2
+  servername: www.aboutamazon.sg
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 18 - Chain-Proxy
+  server: 23.95.72.244
+  port: 9443
   udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: hY7qJ-wCkHHGHgsWYPxVX67YkyNgAexTG3kyWhifpy0
+    short-id: e1b7e52b41b7c0a7
+  servername: www.eero.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -190,6 +219,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 13 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 14 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 15 - Chain-Proxy
+  - 🇭🇰 中国香港 (Hong Kong) 16 - Chain-Proxy
+  - 🇭🇰 中国香港 (Hong Kong) 17 - Chain-Proxy
+  - 🇭🇰 中国香港 (Hong Kong) 18 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -210,5 +242,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 13 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 14 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 15 - Chain-Proxy
+  - 🇭🇰 中国香港 (Hong Kong) 16 - Chain-Proxy
+  - 🇭🇰 中国香港 (Hong Kong) 17 - Chain-Proxy
+  - 🇭🇰 中国香港 (Hong Kong) 18 - Chain-Proxy
 rules:
 - MATCH,PROXIES

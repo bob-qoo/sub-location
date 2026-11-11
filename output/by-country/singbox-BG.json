@@ -15,21 +15,13 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy",
       "server": "213.183.63.60",
-      "server_port": 9061,
+      "server_port": 9085,
       "method": "aes-256-cfb",
-      "password": "4R3hUfZ2FHhDmNcP"
+      "password": "9ej82EKe2gq7gLAM"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy",
-      "server": "213.183.63.60",
-      "server_port": 9064,
-      "method": "aes-256-cfb",
-      "password": "cp8pRSUAyLhTfVWH"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy",
       "server": "213.183.63.60",
       "server_port": 9054,
       "method": "aes-256-cfb",
@@ -37,23 +29,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - Chain-Proxy",
-      "server": "213.183.63.60",
-      "server_port": 9098,
-      "method": "aes-256-cfb",
-      "password": "aLpQtfEZe445QyHk"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - Chain-Proxy",
-      "server": "213.183.63.60",
-      "server_port": 9066,
-      "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - Chain-Proxy",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy",
       "server": "213.183.63.60",
       "server_port": 9049,
       "method": "aes-256-cfb",
@@ -61,11 +37,35 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - Chain-Proxy",
+      "server": "213.183.63.60",
+      "server_port": 9064,
+      "method": "aes-256-cfb",
+      "password": "cp8pRSUAyLhTfVWH"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - Chain-Proxy",
+      "server": "213.183.63.60",
+      "server_port": 9028,
+      "method": "aes-256-cfb",
+      "password": "9eeJ2fwnZA5Fxgz8"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - Chain-Proxy",
+      "server": "213.183.63.60",
+      "server_port": 9098,
+      "method": "aes-256-cfb",
+      "password": "aLpQtfEZe445QyHk"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - Chain-Proxy",
       "server": "213.183.63.60",
-      "server_port": 9085,
+      "server_port": 9061,
       "method": "aes-256-cfb",
-      "password": "9ej82EKe2gq7gLAM"
+      "password": "4R3hUfZ2FHhDmNcP"
     },
     {
       "type": "vless",
@@ -91,27 +91,6 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 10 - Chain-Proxy",
-      "server": "bg2.gacvpn.site",
-      "server_port": 443,
-      "uuid": "3f5e89d5-591f-4ac9-b071-b05680b573c3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "bg2.gacvpn.site",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SgFQg7srP1xgjWhnSU9lpUMDRlsoLIXlw6nX-mfOdlg",
-          "short_id": "1f8bab7ad81089f2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 11 - Chain-Proxy",
       "server": "23.95.72.244",
       "server_port": 50126,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
@@ -131,6 +110,46 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 11 - Chain-Proxy",
+      "server": "bg2.gacvpn.site",
+      "server_port": 443,
+      "uuid": "3f5e89d5-591f-4ac9-b071-b05680b573c3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "bg2.gacvpn.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SgFQg7srP1xgjWhnSU9lpUMDRlsoLIXlw6nX-mfOdlg",
+          "short_id": "1f8bab7ad81089f2"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 12 - Chain-Proxy",
+      "server": "191.44.112.170.sslip.io",
+      "server_port": 443,
+      "password": "46d221fa-e9b4-748c-4eae-019a88e42991",
+      "tls": {
+        "enabled": true,
+        "server_name": "orbylume.my.to",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tvpn-trojan/bg",
+        "headers": {
+          "Host": "orbylume.my.to"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -145,7 +164,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 08 - Chain-Proxy",
         "🇧🇬 保加利亚 (Bulgaria) 09 - Chain-Proxy",
         "🇧🇬 保加利亚 (Bulgaria) 10 - Chain-Proxy",
-        "🇧🇬 保加利亚 (Bulgaria) 11 - Chain-Proxy"
+        "🇧🇬 保加利亚 (Bulgaria) 11 - Chain-Proxy",
+        "🇧🇬 保加利亚 (Bulgaria) 12 - Chain-Proxy"
       ]
     },
     {
@@ -162,7 +182,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 08 - Chain-Proxy",
         "🇧🇬 保加利亚 (Bulgaria) 09 - Chain-Proxy",
         "🇧🇬 保加利亚 (Bulgaria) 10 - Chain-Proxy",
-        "🇧🇬 保加利亚 (Bulgaria) 11 - Chain-Proxy"
+        "🇧🇬 保加利亚 (Bulgaria) 11 - Chain-Proxy",
+        "🇧🇬 保加利亚 (Bulgaria) 12 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

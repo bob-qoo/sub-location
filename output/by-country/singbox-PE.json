@@ -5,9 +5,9 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇭🇷 克罗地亚 (Croatia) 01 - Chain-Proxy",
+      "tag": "🇵🇪 秘鲁 (Peru) 01 - Chain-Proxy",
       "server": "23.95.72.244",
-      "server_port": 50131,
+      "server_port": 50122,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -15,12 +15,12 @@
         "server_name": "api.adidas.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "D-7bbtY-0R7n8bX_n-tMlnNPkgy1-y7zaxQvmHrcAHQ",
-          "short_id": "edcd88f8279bfd9b"
+          "public_key": "a9XavLXaCvwAvMpMWT3XlJ_MvXDd41cA7Mp-DiN6WCo",
+          "short_id": "79c25836ab103a48"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇷 克罗地亚 (Croatia) 01 - Chain-Proxy"
+        "🇵🇪 秘鲁 (Peru) 01 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇷 克罗地亚 (Croatia) 01 - Chain-Proxy"
+        "🇵🇪 秘鲁 (Peru) 01 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Chain-Proxy
-  server: 89.105.218.153
+  server: 179.43.166.190
   port: 443
   udp: true
   type: vless
@@ -15,48 +15,9 @@ proxies:
   reality-opts:
     public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
     short-id: 428ef87fd47a3a32
-  servername: golos.mail.ru
-  client-fingerprint: chrome
+  servername: perevodchiki.su
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 02 - Chain-Proxy
-  server: 89.105.218.143
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: golos.mail.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 03 - Chain-Proxy
-  server: 50.7.227.77
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: bizorg.su
-  client-fingerprint: ''
-- name: 🇷🇺 俄罗斯 (Russia) 04 - Chain-Proxy
-  server: 89.105.218.138
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: golos.mail.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 05 - Chain-Proxy
   server: 66.90.106.28
   port: 443
   udp: true
@@ -69,21 +30,21 @@ proxies:
     short-id: 428ef87fd47a3a32
   servername: banket-restoran.su
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 06 - Chain-Proxy
-  server: 38.60.223.125
-  port: 13108
+- name: 🇷🇺 俄罗斯 (Russia) 03 - Chain-Proxy
+  server: 193.233.253.180
+  port: 8444
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
-- name: 🇷🇺 俄罗斯 (Russia) 07 - Chain-Proxy
-  server: 46.17.47.58
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-- name: 🇷🇺 俄罗斯 (Russia) 08 - Chain-Proxy
+  type: vless
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇷🇺 俄罗斯 (Russia) 04 - Chain-Proxy
   server: 176.108.245.237
   port: 443
   udp: true
@@ -92,7 +53,14 @@ proxies:
   tls: true
   servername: tfusq-ru-40sb.fade.mom
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 09 - Chain-Proxy
+- name: 🇷🇺 俄罗斯 (Russia) 05 - Chain-Proxy
+  server: 185.22.153.117
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+- name: 🇷🇺 俄罗斯 (Russia) 06 - Chain-Proxy
   server: 103.88.243.142
   port: 11592
   udp: true
@@ -100,7 +68,27 @@ proxies:
   password: 41edb44c8e
   sni: srv-17e124.21freedom.net
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 10 - Chain-Proxy
+- name: 🇷🇺 俄罗斯 (Russia) 07 - Chain-Proxy
+  server: 201.51.12.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  servername: vps3.nemnogogo.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
+- name: 🇷🇺 俄罗斯 (Russia) 08 - Chain-Proxy
+  server: 46.17.47.58
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+- name: 🇷🇺 俄罗斯 (Russia) 09 - Chain-Proxy
   server: 201.24.121.243
   port: 443
   udp: true
@@ -113,40 +101,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vlgrpc
-- name: 🇷🇺 俄罗斯 (Russia) 11 - Chain-Proxy
-  server: 92.243.66.79
-  port: 443
-  udp: true
-  type: vless
-  uuid: c5f59ef3-9540-49fa-bd1e-c6c2f79df49a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: siD4oj2gdtLLEphV6fUXb8ueIc2WHVn7msOUhNGPf2o
-    short-id: 8d03c10b6a874a9c
-  servername: ru-mow.probe.geomyip.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 12 - Chain-Proxy
-  server: vps2.nemnogogo.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 95f85937-7b95-45c4-8d69-95da6a978569
-  tls: true
-  servername: vps2.nemnogogo.com
-  skip-cert-verify: false
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 (Russia) 13 - Chain-Proxy
-  server: 185.22.153.117
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-- name: 🇷🇺 俄罗斯 (Russia) 14 - Chain-Proxy
+- name: 🇷🇺 俄罗斯 (Russia) 10 - Chain-Proxy
   server: vps3.nemnogogo.com
   port: 443
   udp: true
@@ -159,6 +114,74 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
+- name: 🇷🇺 俄罗斯 (Russia) 11 - Chain-Proxy
+  server: fdat.titun.su
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: banket-restoran.su
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 12 - Chain-Proxy
+  server: novonl.subv.ru
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: golos.mail.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 13 - Chain-Proxy
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+- name: 🇷🇺 俄罗斯 (Russia) 14 - Chain-Proxy
+  server: 185.178.208.167
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2b5962e8-1ec2-0001-bdab-cefa57555d2a
+  tls: true
+  servername: mbr.rkn-pediki.site
+  skip-cert-verify: false
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /session
+    headers:
+      Host: mbr.rkn-pediki.site
+- name: 🇷🇺 俄罗斯 (Russia) 15 - Chain-Proxy
+  server: 38.60.223.125
+  port: 13108
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
+- name: 🇷🇺 俄罗斯 (Russia) 16 - Chain-Proxy
+  server: 185.215.184.78
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: dvizhok.su
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -178,6 +201,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 12 - Chain-Proxy
   - 🇷🇺 俄罗斯 (Russia) 13 - Chain-Proxy
   - 🇷🇺 俄罗斯 (Russia) 14 - Chain-Proxy
+  - 🇷🇺 俄罗斯 (Russia) 15 - Chain-Proxy
+  - 🇷🇺 俄罗斯 (Russia) 16 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -197,5 +222,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 12 - Chain-Proxy
   - 🇷🇺 俄罗斯 (Russia) 13 - Chain-Proxy
   - 🇷🇺 俄罗斯 (Russia) 14 - Chain-Proxy
+  - 🇷🇺 俄罗斯 (Russia) 15 - Chain-Proxy
+  - 🇷🇺 俄罗斯 (Russia) 16 - Chain-Proxy
 rules:
 - MATCH,PROXIES

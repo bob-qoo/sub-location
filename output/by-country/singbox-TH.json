@@ -20,12 +20,16 @@
       "tls": {
         "enabled": true,
         "server_name": "th001.zestapp778.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇭 泰国 (Thailand) 03 - Chain-Proxy",
+      "server": "8.213.209.1",
+      "server_port": 18918,
+      "uuid": "6d64789a-4d5e-4ef7-c9ac-0fc543b4e635",
+      "security": "auto"
     },
     {
       "type": "selector",
@@ -33,7 +37,8 @@
       "outbounds": [
         "auto",
         "🇹🇭 泰国 (Thailand) 01 - Chain-Proxy",
-        "🇹🇭 泰国 (Thailand) 02 - Chain-Proxy"
+        "🇹🇭 泰国 (Thailand) 02 - Chain-Proxy",
+        "🇹🇭 泰国 (Thailand) 03 - Chain-Proxy"
       ]
     },
     {
@@ -41,7 +46,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇭 泰国 (Thailand) 01 - Chain-Proxy",
-        "🇹🇭 泰国 (Thailand) 02 - Chain-Proxy"
+        "🇹🇭 泰国 (Thailand) 02 - Chain-Proxy",
+        "🇹🇭 泰国 (Thailand) 03 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

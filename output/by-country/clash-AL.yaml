@@ -6,15 +6,15 @@ log-level: info
 proxies:
 - name: 🇦🇱 AL 01 - Chain-Proxy
   server: 23.95.72.244
-  port: 52157
+  port: 50120
   udp: true
   type: vless
   uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: sTga77Qd2-N5ZLvPPu9nTBg2eKdQ6TJQNmypPnzUHm0
-    short-id: 6c62fa
+    public-key: n4sk3x-GS3uCHsert4qOJQt_RzjcTPGFQvRImsnsyTA
+    short-id: 289f5ebf78f79b
   servername: api.adidas.com
   client-fingerprint: chrome
 proxy-groups:
