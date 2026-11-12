@@ -12,41 +12,23 @@ proxies:
   password: 5t6i121em5lkmsmk
   sni: us001.zestapp778.com
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 02 (移动家宽) - Chain-Proxy
-  server: 130.94.20.17
-  port: 57277
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: us001.zestapp778.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 03 (移动家宽) - Chain-Proxy
-  server: 23.95.72.244
-  port: 5466
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: vr-C-6JEfZhnEVO2NDzUIlRhr0LCXFx9BoOBb31AsSg
-    short-id: fb16a20a0815
-  servername: api.adidas.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Chain-Proxy
-  server: 58.152.81.104
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy
+  server: 3de2432e-tmm5c0-tonrqx-1khwf.hk3.hyhuawei.com
   port: 443
   udp: true
-  type: tuic
-  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
-  password: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
-  sni: 54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com
+  type: hysteria2
+  password: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
+  sni: 3de2432e-tmm5c0-tonrqx-1khwf.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy
+  server: 112.120.123.140
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 8f99107c-f091-11ee-9935-f23c9164ca5d
+  sni: f7afb605-tmm5c0-tvh2gy-1qzi1.nw4.hyhuawei.com
   skip-cert-verify: false
-  congestion-controller: bbr
-  udp-relay-mode: native
-  alpn:
-  - h3
-- name: 🇺🇸 美国 (United States) 05 (移动家宽) - Chain-Proxy
+- name: 🇺🇸 美国 (United States) 04 (移动家宽) - Chain-Proxy
   server: 23.95.72.244
   port: 5467
   udp: true
@@ -59,27 +41,7 @@ proxies:
     short-id: 6e47891d
   servername: api.adidas.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 06 (移动家宽) - Chain-Proxy
-  server: 23.95.72.244
-  port: 5465
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GaZo6ZlyOUxhems08m3fhEc-0j3IYppLUpjNmMqNjlk
-    short-id: 7024258fb07f5eb5
-  servername: api.adidas.com
-  client-fingerprint: edge
-- name: 🇰🇷 韩国 (South Korea) 07 (家宽) - Chain-Proxy
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇰🇷 韩国 (South Korea) 08 (家宽) - Chain-Proxy
+- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - Chain-Proxy
   server: 23.95.72.244
   port: 2096
   udp: true
@@ -92,121 +54,81 @@ proxies:
     short-id: b88b4ed92599c16a
   servername: api.amazonalexa.com
   client-fingerprint: ios
-- name: 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - Chain-Proxy
+- name: 🇺🇸 美国 (United States) 06 (移动家宽) - Chain-Proxy
   server: 23.95.72.244
-  port: 10000
+  port: 5464
   udp: true
   type: vless
   uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: zbxwe24LRKKKjXccD1t_yJ3WDFXXY_y9j7SqbkPMIRw
-    short-id: 99aa2eb4f2c77af5
-  servername: sellercentral.amazon.com
-  client-fingerprint: safari
-- name: 🇹🇼 中国台湾 (Taiwan) 10 (家宽) - Chain-Proxy
-  server: 23.95.72.244
-  port: 5462
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: biUjzfAfxrbE_4GNfOCbSG-YW5tDUlqZTeyhJb6OG30
-    short-id: 4b7a508fcd3ef1a1
-  servername: api.adidas.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 11 (家宽) - Chain-Proxy
-  server: 23.95.72.244
-  port: 52541
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _DBQoND5nxcCxxCU0tO0b-h0E10ZFtPTwSp8CJ-f-gs
-    short-id: ce5793a7ad9594
+    public-key: Dv_9FO1focQJCvcUOspkZ5AGoZ4CxbTUp7dVKzt9LVA
+    short-id: d07e9dcda8
   servername: api.adidas.com
   client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 12 (家宽) - Chain-Proxy
+- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Chain-Proxy
+  server: 161.114.15.215
+  port: 30502
+  udp: true
+  type: trojan
+  password: 5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 08 (移动家宽) - Chain-Proxy
   server: 23.95.72.244
-  port: 5463
+  port: 5465
   udp: true
   type: vless
   uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 8kZm9gW7saiRPuqXppCTlOAx_dIsqZUbNOBERMvMDVw
-    short-id: be33ecc1975c
+    public-key: GaZo6ZlyOUxhems08m3fhEc-0j3IYppLUpjNmMqNjlk
+    short-id: 7024258fb07f5eb5
   servername: api.adidas.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 13 (家宽) - Chain-Proxy
-  server: 23.95.72.244
-  port: 50135
+  client-fingerprint: edge
+- name: 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - Chain-Proxy
+  server: 60.248.219.78
+  port: 443
   udp: true
   type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
   tls: true
-  reality-opts:
-    public-key: ugirklnmY9hUeY9BQ9rdeVbu29iGblEM8N2_HHA8Rk4
-    short-id: 8cd0eddfb0
-  servername: api.adidas.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 14 (家宽) - Chain-Proxy
-  server: 23.95.72.244
-  port: 5455
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 57RM7KBz_R-RMNj9BbOXK8yYz0e8Mjv7iA8FvKGbnXU
-    short-id: bb32911d6c
-  servername: api.adidas.com
-  client-fingerprint: firefox
+  servername: ty986gfazs.cainiaohub.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (移动家宽) - Chain-Proxy
-  - 🇺🇸 美国 (United States) 02 (移动家宽) - Chain-Proxy
-  - 🇺🇸 美国 (United States) 03 (移动家宽) - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Chain-Proxy
-  - 🇺🇸 美国 (United States) 05 (移动家宽) - Chain-Proxy
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy
+  - 🇺🇸 美国 (United States) 04 (移动家宽) - Chain-Proxy
+  - 🇰🇷 韩国 (South Korea) 05 (家宽) - Chain-Proxy
   - 🇺🇸 美国 (United States) 06 (移动家宽) - Chain-Proxy
-  - 🇰🇷 韩国 (South Korea) 07 (家宽) - Chain-Proxy
-  - 🇰🇷 韩国 (South Korea) 08 (家宽) - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 10 (家宽) - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 11 (家宽) - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 12 (家宽) - Chain-Proxy
-  - 🇰🇷 韩国 (South Korea) 13 (家宽) - Chain-Proxy
-  - 🇰🇷 韩国 (South Korea) 14 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Chain-Proxy
+  - 🇺🇸 美国 (United States) 08 (移动家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (移动家宽) - Chain-Proxy
-  - 🇺🇸 美国 (United States) 02 (移动家宽) - Chain-Proxy
-  - 🇺🇸 美国 (United States) 03 (移动家宽) - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Chain-Proxy
-  - 🇺🇸 美国 (United States) 05 (移动家宽) - Chain-Proxy
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy
+  - 🇺🇸 美国 (United States) 04 (移动家宽) - Chain-Proxy
+  - 🇰🇷 韩国 (South Korea) 05 (家宽) - Chain-Proxy
   - 🇺🇸 美国 (United States) 06 (移动家宽) - Chain-Proxy
-  - 🇰🇷 韩国 (South Korea) 07 (家宽) - Chain-Proxy
-  - 🇰🇷 韩国 (South Korea) 08 (家宽) - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 10 (家宽) - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 11 (家宽) - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 12 (家宽) - Chain-Proxy
-  - 🇰🇷 韩国 (South Korea) 13 (家宽) - Chain-Proxy
-  - 🇰🇷 韩国 (South Korea) 14 (家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Chain-Proxy
+  - 🇺🇸 美国 (United States) 08 (移动家宽) - Chain-Proxy
+  - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - Chain-Proxy
 rules:
 - MATCH,PROXIES

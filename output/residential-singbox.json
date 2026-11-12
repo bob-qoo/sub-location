@@ -20,63 +20,32 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 02 (移动家宽) - Chain-Proxy",
-      "server": "130.94.20.17",
-      "server_port": 57277,
-      "password": "5t6i121em5lkmsmk",
-      "tls": {
-        "enabled": true,
-        "server_name": "us001.zestapp778.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 03 (移动家宽) - Chain-Proxy",
-      "server": "23.95.72.244",
-      "server_port": 5466,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.adidas.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vr-C-6JEfZhnEVO2NDzUIlRhr0LCXFx9BoOBb31AsSg",
-          "short_id": "fb16a20a0815"
-        }
-      }
-    },
-    {
-      "type": "tuic",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Chain-Proxy",
-      "server": "58.152.81.104",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy",
+      "server": "3de2432e-tmm5c0-tonrqx-1khwf.hk3.hyhuawei.com",
       "server_port": 443,
-      "uuid": "73bfcc1c-5814-5f2a-b43a-3ef6af011db8",
-      "password": "73bfcc1c-5814-5f2a-b43a-3ef6af011db8",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
+      "password": "92bd8c68-6434-11ee-b644-f23c91cfbbc9",
       "tls": {
         "enabled": true,
-        "server_name": "54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com",
-        "insecure": false,
-        "alpn": [
-          "h3"
-        ]
+        "server_name": "3de2432e-tmm5c0-tonrqx-1khwf.hk3.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy",
+      "server": "112.120.123.140",
+      "server_port": 443,
+      "password": "8f99107c-f091-11ee-9935-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "f7afb605-tmm5c0-tvh2gy-1qzi1.nw4.hyhuawei.com",
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 05 (移动家宽) - Chain-Proxy",
+      "tag": "🇺🇸 美国 (United States) 04 (移动家宽) - Chain-Proxy",
       "server": "23.95.72.244",
       "server_port": 5467,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
@@ -97,36 +66,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 06 (移动家宽) - Chain-Proxy",
-      "server": "23.95.72.244",
-      "server_port": 5465,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.adidas.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GaZo6ZlyOUxhems08m3fhEc-0j3IYppLUpjNmMqNjlk",
-          "short_id": "7024258fb07f5eb5"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 07 (家宽) - Chain-Proxy",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 08 (家宽) - Chain-Proxy",
+      "tag": "🇰🇷 韩国 (South Korea) 05 (家宽) - Chain-Proxy",
       "server": "23.95.72.244",
       "server_port": 2096,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
@@ -147,51 +87,9 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 09 (家宽) - Chain-Proxy",
+      "tag": "🇺🇸 美国 (United States) 06 (移动家宽) - Chain-Proxy",
       "server": "23.95.72.244",
-      "server_port": 10000,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "sellercentral.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zbxwe24LRKKKjXccD1t_yJ3WDFXXY_y9j7SqbkPMIRw",
-          "short_id": "99aa2eb4f2c77af5"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 10 (家宽) - Chain-Proxy",
-      "server": "23.95.72.244",
-      "server_port": 5462,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.adidas.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "biUjzfAfxrbE_4GNfOCbSG-YW5tDUlqZTeyhJb6OG30",
-          "short_id": "4b7a508fcd3ef1a1"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 11 (家宽) - Chain-Proxy",
-      "server": "23.95.72.244",
-      "server_port": 52541,
+      "server_port": 5464,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -203,16 +101,28 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "_DBQoND5nxcCxxCU0tO0b-h0E10ZFtPTwSp8CJ-f-gs",
-          "short_id": "ce5793a7ad9594"
+          "public_key": "Dv_9FO1focQJCvcUOspkZ5AGoZ4CxbTUp7dVKzt9LVA",
+          "short_id": "d07e9dcda8"
         }
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Chain-Proxy",
+      "server": "161.114.15.215",
+      "server_port": 30502,
+      "password": "5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 12 (家宽) - Chain-Proxy",
+      "tag": "🇺🇸 美国 (United States) 08 (移动家宽) - Chain-Proxy",
       "server": "23.95.72.244",
-      "server_port": 5463,
+      "server_port": 5465,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -220,54 +130,31 @@
         "server_name": "api.adidas.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
-          "public_key": "8kZm9gW7saiRPuqXppCTlOAx_dIsqZUbNOBERMvMDVw",
-          "short_id": "be33ecc1975c"
+          "public_key": "GaZo6ZlyOUxhems08m3fhEc-0j3IYppLUpjNmMqNjlk",
+          "short_id": "7024258fb07f5eb5"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 13 (家宽) - Chain-Proxy",
-      "server": "23.95.72.244",
-      "server_port": 50135,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 09 (家宽) - Chain-Proxy",
+      "server": "60.248.219.78",
+      "server_port": 443,
+      "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
       "tls": {
         "enabled": true,
-        "server_name": "api.adidas.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ugirklnmY9hUeY9BQ9rdeVbu29iGblEM8N2_HHA8Rk4",
-          "short_id": "8cd0eddfb0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 14 (家宽) - Chain-Proxy",
-      "server": "23.95.72.244",
-      "server_port": 5455,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.adidas.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "57RM7KBz_R-RMNj9BbOXK8yYz0e8Mjv7iA8FvKGbnXU",
-          "short_id": "bb32911d6c"
+        "server_name": "ty986gfazs.cainiaohub.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
+        "headers": {
+          "Host": "ty986gfazs.cainiaohub.xyz"
         }
       }
     },
@@ -277,19 +164,14 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (移动家宽) - Chain-Proxy",
-        "🇺🇸 美国 (United States) 02 (移动家宽) - Chain-Proxy",
-        "🇺🇸 美国 (United States) 03 (移动家宽) - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Chain-Proxy",
-        "🇺🇸 美国 (United States) 05 (移动家宽) - Chain-Proxy",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy",
+        "🇺🇸 美国 (United States) 04 (移动家宽) - Chain-Proxy",
+        "🇰🇷 韩国 (South Korea) 05 (家宽) - Chain-Proxy",
         "🇺🇸 美国 (United States) 06 (移动家宽) - Chain-Proxy",
-        "🇰🇷 韩国 (South Korea) 07 (家宽) - Chain-Proxy",
-        "🇰🇷 韩国 (South Korea) 08 (家宽) - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 09 (家宽) - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 10 (家宽) - Chain-Proxy",
-        "🇯🇵 日本 (Japan) 11 (家宽) - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 12 (家宽) - Chain-Proxy",
-        "🇰🇷 韩国 (South Korea) 13 (家宽) - Chain-Proxy",
-        "🇰🇷 韩国 (South Korea) 14 (家宽) - Chain-Proxy"
+        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Chain-Proxy",
+        "🇺🇸 美国 (United States) 08 (移动家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 09 (家宽) - Chain-Proxy"
       ]
     },
     {
@@ -297,19 +179,14 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (移动家宽) - Chain-Proxy",
-        "🇺🇸 美国 (United States) 02 (移动家宽) - Chain-Proxy",
-        "🇺🇸 美国 (United States) 03 (移动家宽) - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Chain-Proxy",
-        "🇺🇸 美国 (United States) 05 (移动家宽) - Chain-Proxy",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - Chain-Proxy",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - Chain-Proxy",
+        "🇺🇸 美国 (United States) 04 (移动家宽) - Chain-Proxy",
+        "🇰🇷 韩国 (South Korea) 05 (家宽) - Chain-Proxy",
         "🇺🇸 美国 (United States) 06 (移动家宽) - Chain-Proxy",
-        "🇰🇷 韩国 (South Korea) 07 (家宽) - Chain-Proxy",
-        "🇰🇷 韩国 (South Korea) 08 (家宽) - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 09 (家宽) - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 10 (家宽) - Chain-Proxy",
-        "🇯🇵 日本 (Japan) 11 (家宽) - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 12 (家宽) - Chain-Proxy",
-        "🇰🇷 韩国 (South Korea) 13 (家宽) - Chain-Proxy",
-        "🇰🇷 韩国 (South Korea) 14 (家宽) - Chain-Proxy"
+        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - Chain-Proxy",
+        "🇺🇸 美国 (United States) 08 (移动家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 09 (家宽) - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
