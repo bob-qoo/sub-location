@@ -12,62 +12,6 @@ proxies:
   cipher: aes-128-gcm
   password: Bwlqh7GcFB
 - name: 🇯🇵 日本 (Japan) 02 - Chain-Proxy
-  server: 84.247.155.196
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 03 - Chain-Proxy
-  server: 31.76.91.168
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 1794466637:db57c865-2318-4fd2-8aea-e8ba58ec696d:Sjcl0gc4tJZu1HqNgL502Y4uLCJSzLg9X3R0zYjQ6MQ
-  sni: jp.lumacache.com
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 04 - Chain-Proxy
-  server: 161.33.152.237
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 30f5e94a-3e13-4270-9f90-60827bef6671
-  sni: bing.com
-  skip-cert-verify: true
-  ports: 443-443,8443-8443
-- name: 🇯🇵 日本 (Japan) 05 - Chain-Proxy
-  server: 168.110.16.191
-  port: 8444
-  udp: true
-  type: trojan
-  password: Hy2OracleTokyo2026Owner
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 06 - Chain-Proxy
-  server: 168.110.16.191
-  port: 30000
-  udp: true
-  type: hysteria2
-  password: Hy2OracleTokyo2026Owner
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 07 - Chain-Proxy
-  server: 158.101.140.31
-  port: 1985
-  udp: true
-  type: hysteria2
-  password: 4ab7d1e3-f2a7-44ca-91bd-45d3c5f423d2
-  sni: 158.101.140.31
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 08 - Chain-Proxy
-  server: 193.123.160.109
-  port: 8443
-  udp: true
-  type: trojan
-  password: F3NzMNuYnG7akU2mSlBY
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 09 - Chain-Proxy
   server: 168.110.45.41
   port: 21443
   udp: true
@@ -75,62 +19,23 @@ proxies:
   password: pnKhsG5E1hH1VglAXmT9cq1
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 10 - Chain-Proxy
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: 8.211.175.236
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 11 - Chain-Proxy
-  server: 168.110.48.252
-  port: 10018
-  udp: true
-  type: vless
-  uuid: d8fc873b-860d-4490-b2f0-300d6ae3c2d3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: YxoFVB0NhCx4BJCgq5Ey5jdteRU2H2toGa-ZKW5XV3c
-  servername: www.ebay.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 12 - Chain-Proxy
-  server: 168.138.43.75
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 168.138.43.75
-- name: 🇯🇵 日本 (Japan) 13 - Chain-Proxy
-  server: 3.114.220.22
-  port: 19645
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 14 - Chain-Proxy
-  server: 141.147.160.26
+- name: 🇯🇵 日本 (Japan) 03 - Chain-Proxy
+  server: 8.209.247.109
   port: 443
   udp: true
   type: hysteria2
-  password: 30f5e94a-3e13-4270-9f90-60827bef6671
+  password: usqmqUKJFIlCmvkCNSY64L3k
   sni: bing.com
   skip-cert-verify: true
-  ports: 443-443,8443-8443
-- name: 🇯🇵 日本 (Japan) 15 - Chain-Proxy
+- name: 🇯🇵 日本 (Japan) 04 - Chain-Proxy
+  server: 158.101.140.31
+  port: 1985
+  udp: true
+  type: hysteria2
+  password: 4ab7d1e3-f2a7-44ca-91bd-45d3c5f423d2
+  sni: 158.101.140.31
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 05 - Chain-Proxy
   server: 103.75.118.228
   port: 12683
   udp: true
@@ -143,97 +48,20 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 16 - Chain-Proxy
-  server: 154.31.112.237
-  port: 26418
+- name: 🇯🇵 日本 (Japan) 06 - Chain-Proxy
+  server: 103.75.118.228
+  port: 11452
   udp: true
   type: vless
-  uuid: 1e61d1c5-383d-406f-9230-1edd3e9449c5
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
   tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 17 - Chain-Proxy
-  server: 154.31.112.237
-  port: 26418
-  udp: true
-  type: vless
-  uuid: 77ac90fe-09fb-4b43-a177-d4309355351a
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 18 - Chain-Proxy
-  server: 154.31.112.237
-  port: 26418
-  udp: true
-  type: vless
-  uuid: 0510d5ab-386f-4c94-9223-3f2b82a15108
-  tls: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-- name: 🇯🇵 日本 (Japan) 19 - Chain-Proxy
-  server: 107.191.53.86
-  port: 4798
-  udp: true
-  type: vless
-  uuid: 51dfdf6f-4e83-4502-8cfb-29f4ae60f191
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristifp=chrome
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 20 - Chain-Proxy
-  server: 154.31.112.237
-  port: 26418
-  udp: true
-  type: vless
-  uuid: bb7ece87-1ef1-4d49-8847-7e8736bb77a8
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇯🇵 日本 (Japan) 21 - Chain-Proxy
-  server: 107.191.53.86
-  port: 4798
-  udp: true
-  type: vless
-  uuid: 882b73fd-53fd-4956-a28b-2cb3ece9dc7c
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 22 - Chain-Proxy
+- name: 🇯🇵 日本 (Japan) 07 - Chain-Proxy
   server: 138.3.208.26
   port: 50160
   udp: true
@@ -241,65 +69,20 @@ proxies:
   password: 184cdec28da5a09450803c8debcd2cc9
   sni: 138.3.208.26
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 23 - Chain-Proxy
-  server: 168.110.45.41
-  port: 23444
+- name: 🇯🇵 日本 (Japan) 08 - Chain-Proxy
+  server: 3.114.220.22
+  port: 19645
   udp: true
   type: vless
-  uuid: ee2112e4-1e58-4f77-b162-5ef869358df9
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: zfxKuH7gDFZ2EMjdt8zMfnsZFpeckMhM5q5XZ3ATe2c
-    short-id: 119c9e68498f5900
-  servername: www.microsoft.com
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 24 - Chain-Proxy
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: af42cdf8-701e-4a51-b196-a80281dcbe24
-  tls: true
-  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-- name: 🇯🇵 日本 (Japan) 25 - Chain-Proxy
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: 9c7501fb-4e23-44d8-9a9e-973807ae4f35
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 26 - Chain-Proxy
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: a2336cca-3fd0-45cb-8ac5-1de6d17692b2
-  tls: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇯🇵 日本 (Japan) 27 - Chain-Proxy
+- name: 🇯🇵 日本 (Japan) 09 - Chain-Proxy
   server: 3.114.220.22
   port: 10583
   udp: true
@@ -311,461 +94,49 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 28 - Chain-Proxy
-  server: 203.137.165.164
-  port: 57554
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 10 - Chain-Proxy
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 11 - Chain-Proxy
+  server: jp.yi-yi.xyz
+  port: 8443
   udp: true
   type: vless
-  uuid: 980df025-74b9-4853-93e8-fb813006d7e5
+  uuid: 36c06e11-028b-40a1-a91f-c8f38f03e829
+  flow: xtls-rprx-vision
   tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: g3T4dVyrbNixv7HvSMlh91cYBa5kEsZCEInB7Xc_AEY
+    short-id: 956d8072a694ff37
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 29 - Chain-Proxy
+- name: 🇯🇵 日本 (Japan) 12 - Chain-Proxy
   server: 84.247.155.196
   port: 80
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 30 - Chain-Proxy
-  server: 203.137.165.164
-  port: 57554
+- name: 🇯🇵 日本 (Japan) 13 - Chain-Proxy
+  server: JP032011.ssgreen.org
+  port: 443
   udp: true
-  type: vless
-  uuid: 91cf01c5-62c1-44cd-80e0-df6310025dab
+  type: vmess
+  uuid: aab7db8d-eed8-4f7c-94ef-5a6afb978c0f
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  servername: JP032011.ssgreen.org
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-- name: 🇯🇵 日本 (Japan) 31 - Chain-Proxy
-  server: 57.129.130.34
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 95c305fa-6ede-4eb5-b391-0869ddeb27f7
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 32 - Chain-Proxy
-  server: 57.129.130.57
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 201e0019-2e79-4147-8a09-e510d630abeb
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 33 - Chain-Proxy
-  server: 57.129.130.34
-  port: 52014
-  udp: true
-  type: vless
-  uuid: f93c8233-67ad-42d1-bcab-6e16fd9d4ae9
-  tls: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-- name: 🇯🇵 日本 (Japan) 34 - Chain-Proxy
-  server: 57.129.130.57
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 98286408-b683-4c0f-96c5-7e00da649d90
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 日本 (Japan) 35 - Chain-Proxy
-  server: 57.129.130.200
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 93c53b59-1523-4621-9528-77b016a28304
-  tls: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-- name: 🇯🇵 日本 (Japan) 36 - Chain-Proxy
-  server: 57.129.130.34
-  port: 52014
-  udp: true
-  type: vless
-  uuid: f2bdcdd7-f6a8-4a9c-b685-743077915c5f
-  tls: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-- name: 🇯🇵 日本 (Japan) 37 - Chain-Proxy
-  server: 57.129.130.34
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 94711300-6fa3-489e-b54e-7135e95027d1
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇯🇵 日本 (Japan) 38 - Chain-Proxy
-  server: 3.114.220.22
-  port: 18007
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 39 - Chain-Proxy
-  server: 57.129.130.10
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 395bab7e-302a-42b4-bac7-8acb7d36fdf3
-  tls: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇯🇵 日本 (Japan) 40 - Chain-Proxy
-  server: 129.153.71.28
-  port: 28863
-  udp: true
-  type: vless
-  uuid: 6c7c10f8-2387-4756-ab4b-64c9c6981f0e
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 41 - Chain-Proxy
-  server: 185.125.103.62
-  port: 8082
-  udp: true
-  type: vless
-  uuid: 7909e164-d482-4620-a370-07e6fda6676b
-  tls: true
-  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-- name: 🇯🇵 日本 (Japan) 42 - Chain-Proxy
-  server: 185.125.103.62
-  port: 8082
-  udp: true
-  type: vless
-  uuid: 0a27dc3c-4c39-497c-8753-92bff7a8e3a9
-  tls: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇯🇵 日本 (Japan) 43 - Chain-Proxy
-  server: 185.125.103.62
-  port: 8082
-  udp: true
-  type: vless
-  uuid: 3dbf58d7-53fc-4fad-8779-1c867e024fd0
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 44 - Chain-Proxy
-  server: 54.178.110.17
-  port: 4443
-  udp: true
-  type: vless
-  uuid: ed4c72b0-51b6-4334-a977-f433d7fe8f88
-  tls: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-- name: 🇯🇵 日本 (Japan) 45 - Chain-Proxy
-  server: 79.137.199.52
-  port: 21
-  udp: true
-  type: vless
-  uuid: 763e2ddd-c830-4f4f-801c-f6f2c3418d4f
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇯🇵 日本 (Japan) 46 - Chain-Proxy
-  server: 45.77.241.190
-  port: 8441
-  udp: true
-  type: vless
-  uuid: 66b076d4-519d-4b05-872e-d0366d15bace
-  tls: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇯🇵 日本 (Japan) 47 - Chain-Proxy
-  server: 45.77.241.190
-  port: 8441
-  udp: true
-  type: vless
-  uuid: 8b19a6cb-a86c-41ef-a06b-747f2595574e
-  tls: true
-  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-- name: 🇯🇵 日本 (Japan) 48 - Chain-Proxy
-  server: 45.77.241.190
-  port: 8441
-  udp: true
-  type: vless
-  uuid: d492bf74-6555-4b57-94f0-52b56adbc760
-  tls: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-- name: 🇯🇵 日本 (Japan) 49 - Chain-Proxy
-  server: 45.77.241.190
-  port: 8441
-  udp: true
-  type: vless
-  uuid: 3011e40c-228f-4f2e-9dbf-5b256887e071
-  tls: true
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-- name: 🇯🇵 日本 (Japan) 50 - Chain-Proxy
-  server: 178.105.133.160
-  port: 4443
-  udp: true
-  type: vless
-  uuid: bd3ebd5f-a315-4e27-9271-3c80f49821c9
-  tls: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇯🇵 日本 (Japan) 51 - Chain-Proxy
-  server: 178.105.133.160
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 8ca2a846-d47a-4a06-b25a-a2431cede451
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇯🇵 日本 (Japan) 52 - Chain-Proxy
-  server: 178.105.133.160
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 298f220e-4cb6-4c13-8f20-c3b338bd923a
-  tls: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇯🇵 日本 (Japan) 53 - Chain-Proxy
-  server: 5.75.195.83
-  port: 56879
-  udp: true
-  type: vless
-  uuid: dc156965-e152-4df6-9743-9c1f38d82cf3
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 54 - Chain-Proxy
-  server: 45.77.241.190
-  port: 8441
-  udp: true
-  type: vless
-  uuid: 75f440b2-2cf8-45e7-9565-af7fde5bacc2
-  tls: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇯🇵 日本 (Japan) 55 - Chain-Proxy
-  server: 23.95.72.244
-  port: 55569
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DPhViTQH8MZ2cPKNtB4_UNAq1_a32PlPHtQX49Yew1M
-    short-id: 4c5a975455f02a
-  servername: api.adidas.com
-  client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 56 - Chain-Proxy
-  server: 172.105.241.119
-  port: 1916
-  udp: true
-  type: vless
-  uuid: df54bb48-921e-446a-9b10-1a2a0bef680b
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 57 - Chain-Proxy
-  server: 172.105.241.119
-  port: 1916
-  udp: true
-  type: vless
-  uuid: aa4bd34c-b94d-48f1-a7f0-e127e89ca7cb
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇯🇵 日本 (Japan) 58 - Chain-Proxy
-  server: 172.105.241.119
-  port: 1916
-  udp: true
-  type: vless
-  uuid: bb5988f1-7e0a-4b6d-acdf-aac2a47d5dd4
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 59 - Chain-Proxy
+    path: /wes
+- name: 🇯🇵 日本 (Japan) 14 - Chain-Proxy
   server: 103.172.116.201
   port: 10403
   udp: true
@@ -778,158 +149,43 @@ proxies:
     short-id: f96b3b17a0f5b1fe
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 60 - Chain-Proxy
-  server: 142.91.101.39
-  port: 627
+- name: 🇯🇵 日本 (Japan) 15 - Chain-Proxy
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: 8.211.175.236
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 16 - Chain-Proxy
+  server: 154.31.114.162
+  port: 8443
   udp: true
   type: vless
-  uuid: aff1ffd0-594c-44c9-9f79-4096fde005ea
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
-  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
+  servername: jp3.yohototo.top
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /tyxyws
     headers:
-      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-- name: 🇯🇵 日本 (Japan) 61 - Chain-Proxy
-  server: 142.91.101.39
-  port: 627
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 17 - Chain-Proxy
+  server: 168.138.43.75
+  port: 80
   udp: true
-  type: vless
-  uuid: 30b40928-f431-4c83-bfed-44f1243d16ff
-  tls: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /cctv13.m3u8
     headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 62 - Chain-Proxy
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: 8199228b-e84b-42a2-9268-e400391e483a
-  tls: true
-  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-- name: 🇯🇵 日本 (Japan) 63 - Chain-Proxy
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: f46b1020-5a7c-49d7-9b0f-d9a9f3c3b22e
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 64 - Chain-Proxy
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: 50f7f0fe-32be-4d5a-9432-095160ff7775
-  tls: true
-  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-- name: 🇯🇵 日本 (Japan) 65 - Chain-Proxy
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: 01e7eda0-cd5a-4415-b42d-0dc4a7598cf9
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇯🇵 日本 (Japan) 66 - Chain-Proxy
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: 2949e720-4588-4edc-8642-ff2b7b368c78
-  tls: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 67 - Chain-Proxy
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: 17701bb3-3edc-4087-8b2f-c7b2066a4318
-  tls: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇯🇵 日本 (Japan) 68 - Chain-Proxy
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: 09e3998f-aba1-401a-8bcd-fd5bb5a6483c
-  tls: true
-  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-- name: 🇯🇵 日本 (Japan) 69 - Chain-Proxy
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: e27ffb19-314e-449b-ac9b-44b28cf50ef5
-  tls: true
-  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-- name: 🇯🇵 日本 (Japan) 70 - Chain-Proxy
-  server: 152.69.200.216
+      Host: 168.138.43.75
+- name: 🇯🇵 日本 (Japan) 18 - Chain-Proxy
+  server: 104.16.10.135
   port: 443
   udp: true
   type: vless
@@ -943,73 +199,6 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 71 - Chain-Proxy
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: 23b385cf-02c3-4df8-8402-11f1916418cd
-  tls: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 72 - Chain-Proxy
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: 3f87daa8-3af8-40a0-b655-127911e008dc
-  tls: true
-  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-- name: 🇯🇵 日本 (Japan) 73 - Chain-Proxy
-  server: 84.22.150.39
-  port: 7443
-  udp: true
-  type: vless
-  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
-  tls: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇯🇵 日本 (Japan) 74 - Chain-Proxy
-  server: 152.69.195.67
-  port: 47878
-  udp: true
-  type: vless
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-- name: 🇯🇵 日本 (Japan) 75 - Chain-Proxy
-  server: 162.159.130.234
-  port: 2083
-  udp: true
-  type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: or3.sfacg.uk
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1033,63 +222,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 16 - Chain-Proxy
   - 🇯🇵 日本 (Japan) 17 - Chain-Proxy
   - 🇯🇵 日本 (Japan) 18 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 19 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 20 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 21 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 22 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 23 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 24 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 25 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 26 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 27 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 28 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 29 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 30 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 31 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 32 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 33 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 34 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 35 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 36 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 37 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 38 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 39 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 40 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 41 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 42 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 43 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 44 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 45 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 46 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 47 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 48 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 49 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 50 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 51 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 52 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 53 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 54 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 55 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 56 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 57 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 58 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 59 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 60 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 61 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 62 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 63 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 64 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 65 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 66 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 67 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 68 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 69 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 70 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 71 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 72 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 73 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 74 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 75 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -1113,62 +245,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 16 - Chain-Proxy
   - 🇯🇵 日本 (Japan) 17 - Chain-Proxy
   - 🇯🇵 日本 (Japan) 18 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 19 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 20 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 21 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 22 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 23 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 24 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 25 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 26 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 27 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 28 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 29 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 30 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 31 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 32 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 33 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 34 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 35 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 36 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 37 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 38 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 39 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 40 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 41 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 42 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 43 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 44 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 45 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 46 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 47 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 48 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 49 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 50 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 51 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 52 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 53 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 54 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 55 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 56 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 57 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 58 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 59 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 60 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 61 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 62 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 63 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 64 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 65 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 66 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 67 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 68 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 69 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 70 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 71 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 72 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 73 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 74 - Chain-Proxy
-  - 🇯🇵 日本 (Japan) 75 - Chain-Proxy
 rules:
 - MATCH,PROXIES

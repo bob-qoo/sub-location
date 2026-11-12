@@ -5,30 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - Chain-Proxy
-  server: 152.32.254.68
-  port: 5010
+  server: 213.176.92.168
+  port: 10444
   udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+  type: vless
+  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: safari
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - Chain-Proxy
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8\u0001f1e8\u0001f1f3
+  sni: 202.146.222.89
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - Chain-Proxy
-  server: 202.146.222.29
+  server: vpn-hk-004.fastervpn.world
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
+  sni: vpn-hk-004.fastervpn.world
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy
   server: 202.146.222.174
@@ -36,17 +39,10 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy
-  server: 213.176.92.148
-  port: 40647
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
-  server: 39.109.111.23
+  server: 43.255.157.53
   port: 28675
   udp: true
   type: vless
@@ -58,29 +54,18 @@ proxies:
     short-id: 9a79807253c040
   servername: www.lamer.com.hk
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
-  server: 23.95.72.244
-  port: 6697
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: qeuzgTUkTLMVZZ3AclsA1_Qn_xX9NFDzuNzJnotcMWY
-    short-id: e718c0495c85dab2
-  servername: www.aboutamazon.sg
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy
-  server: vpn-hk-004.fastervpn.world
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
+  server: 152.32.254.68
+  port: 5010
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-hk-004.fastervpn.world
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy
-  server: 103.172.116.191
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
+  server: 103.172.116.201
   port: 10103
   udp: true
   type: vless
@@ -92,19 +77,6 @@ proxies:
     short-id: f96b3b17a0f5b1fe
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - Chain-Proxy
-  server: 23.95.72.244
-  port: 58712
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: en2L9xxQOv2w4eD0sxqu3eOFGnqOxZLWuR9sFqBDdAM
-    short-id: f266fd3d4e
-  servername: api.adidas.com
-  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -117,9 +89,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 10 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -132,8 +101,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 10 - Chain-Proxy
 rules:
 - MATCH,PROXIES
