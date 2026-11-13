@@ -5,19 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - Chain-Proxy
-  server: jpa.123069.xyz
+  server: 149.22.87.241
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 02 - Chain-Proxy
+  server: 168.138.205.100
   port: 53758
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: Bwlqh7GcFB
-- name: 🇯🇵 日本 (Japan) 02 - Chain-Proxy
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
 - name: 🇯🇵 日本 (Japan) 03 - Chain-Proxy
   server: 168.110.45.41
   port: 21443
@@ -27,17 +27,13 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 04 - Chain-Proxy
-  server: 168.110.48.252
-  port: 10018
+  server: 158.101.140.31
+  port: 1985
   udp: true
-  type: vless
-  uuid: d8fc873b-860d-4490-b2f0-300d6ae3c2d3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: YxoFVB0NhCx4BJCgq5Ey5jdteRU2H2toGa-ZKW5XV3c
-  servername: www.ebay.com
-  client-fingerprint: firefox
+  type: hysteria2
+  password: 4ab7d1e3-f2a7-44ca-91bd-45d3c5f423d2
+  sni: 158.101.140.31
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 05 - Chain-Proxy
   server: 103.75.118.228
   port: 11452
@@ -52,14 +48,27 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 06 - Chain-Proxy
-  server: 158.101.140.31
-  port: 1985
+  server: 31.76.91.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7072eeba-94fd-4fb3-92f2-a4506dd84cd8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ejx56dFtS4LK_Th6HSLFFdm7v7zqRpv8KfjrWAw4Sjg
+    short-id: bd6f67b6b2152b45
+  servername: fuji.etherhub.cc
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 07 - Chain-Proxy
+  server: 8.211.175.236
+  port: 8443
   udp: true
   type: hysteria2
-  password: 4ab7d1e3-f2a7-44ca-91bd-45d3c5f423d2
-  sni: 158.101.140.31
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: bing.com
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 07 - Chain-Proxy
+- name: 🇯🇵 日本 (Japan) 08 - Chain-Proxy
   server: 168.110.48.252
   port: 1987
   udp: true
@@ -67,14 +76,35 @@ proxies:
   password: 4d9bc232-dde6-47d0-9d7b-e453ac8e4130
   sni: 168.110.48.252
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 08 - Chain-Proxy
+- name: 🇯🇵 日本 (Japan) 09 - Chain-Proxy
+  server: 158.101.151.157
+  port: 443
+  udp: true
+  type: vless
+  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
+    short-id: 684c7531e599dec0
+  servername: www.microsoft.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 10 - Chain-Proxy
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: 138.3.208.26
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 11 - Chain-Proxy
   server: 84.247.155.196
   port: 443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 09 - Chain-Proxy
+- name: 🇯🇵 日本 (Japan) 12 - Chain-Proxy
   server: 168.110.45.41
   port: 23444
   udp: true
@@ -87,33 +117,7 @@ proxies:
     short-id: 119c9e68498f5900
   servername: www.microsoft.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 10 - Chain-Proxy
-  server: 3.114.220.22
-  port: 19645
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 11 - Chain-Proxy
-  server: 3.114.220.22
-  port: 10583
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 12 - Chain-Proxy
+- name: 🇯🇵 日本 (Japan) 13 - Chain-Proxy
   server: jp.yi-yi.xyz
   port: 8443
   udp: true
@@ -126,93 +130,65 @@ proxies:
     short-id: 956d8072a694ff37
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 13 - Chain-Proxy
-  server: dog-jp.kunlun01dns.com
-  port: 21014
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
 - name: 🇯🇵 日本 (Japan) 14 - Chain-Proxy
-  server: 3.114.220.22
-  port: 18007
+  server: 84.247.155.196
+  port: 80
   udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: ios
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
 - name: 🇯🇵 日本 (Japan) 15 - Chain-Proxy
-  server: 142.91.101.39
-  port: 627
+  server: 84.247.155.196
+  port: 80
   udp: true
-  type: vless
-  uuid: 8199228b-e84b-42a2-9268-e400391e483a
-  tls: true
-  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
 - name: 🇯🇵 日本 (Japan) 16 - Chain-Proxy
-  server: 103.172.116.201
-  port: 10403
+  server: 84.247.155.196
+  port: 80
   udp: true
-  type: vless
-  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: mjWmmSvs0D3V3130FT7MVbRs94pPuWXR7ffaQ_3A4kU
-    short-id: f96b3b17a0f5b1fe
-  servername: www.apple.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
 - name: 🇯🇵 日本 (Japan) 17 - Chain-Proxy
-  server: 152.69.195.67
-  port: 47878
+  server: 84.247.155.196
+  port: 80
   udp: true
-  type: vless
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
 - name: 🇯🇵 日本 (Japan) 18 - Chain-Proxy
-  server: 104.21.34.106
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 19 - Chain-Proxy
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 20 - Chain-Proxy
+  server: 13.140.248.125
   port: 443
   udp: true
   type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 4f82d72b-9644-c39a-ac6b-abbf15a862aa
   tls: true
-  servername: jp3.yohototo.top
+  servername: xray-p1vi234h-lunar-forest-6.cloady.io
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /e3e2aa65089989f0
     headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 19 - Chain-Proxy
-  server: 141.11.139.102
-  port: 32515
-  udp: true
-  type: vmess
-  uuid: 081dbf5a-d8b6-40c8-96f8-3c4ca9f50442
-  alterId: 0
-  cipher: auto
-- name: 🇯🇵 日本 (Japan) 20 - Chain-Proxy
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: 8.211.175.236
-  skip-cert-verify: true
+      Host: xray-p1vi234h-lunar-forest-6.cloady.io
 - name: 🇯🇵 日本 (Japan) 21 - Chain-Proxy
-  server: djj.zjlo.top
+  server: 155.248.175.201
   port: 23169
   udp: true
   type: vless
@@ -221,15 +197,18 @@ proxies:
   tls: true
   servername: djj.zjlo.top
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇯🇵 日本 (Japan) 22 - Chain-Proxy
-  server: 193.123.160.109
-  port: 8443
+  server: 168.110.63.247
+  port: 8081
   udp: true
-  type: trojan
-  password: F3NzMNuYnG7akU2mSlBY
-  sni: www.microsoft.com
-  skip-cert-verify: true
+  type: vmess
+  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vless
 proxy-groups:
 - name: PROXIES
   type: select

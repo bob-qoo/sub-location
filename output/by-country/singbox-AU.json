@@ -12,11 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "45.63.30.142",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": true
       }
     },
     {
@@ -59,8 +55,8 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 04 - Chain-Proxy",
-      "server": "v1au.mateflora.com",
-      "server_port": 443,
+      "server": "doghkzf.zalolink.com",
+      "server_port": 48158,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -80,8 +76,8 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 05 - Chain-Proxy",
-      "server": "doghkzf.zalolink.com",
-      "server_port": 48158,
+      "server": "v1au.mateflora.com",
+      "server_port": 443,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -89,7 +85,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,

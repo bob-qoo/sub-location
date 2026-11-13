@@ -5,20 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - Chain-Proxy
-  server: 94.247.142.1
-  port: 443
+  server: 151.241.19.29
+  port: 19999
   udp: true
-  type: vless
-  uuid: fd62968a-2e97-41ea-9aa0-aa61aed78955
-  tls: true
-  servername: simIlarcaTerpillarPvet-j5H6x4-1.simIlar-caterPillar-pVet.worKers.deV
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: simIlarcaTerpillarPvet-j5H6x4-1.simIlar-caterPillar-pVet.worKers.deV
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy
   server: 151.241.19.36
   port: 19999
@@ -27,32 +19,16 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
-  server: 151.241.19.29
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
   server: 130.49.161.70
   port: 443
   udp: true
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
+- name: 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -61,8 +37,17 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
+- name: 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
+  server: 84.235.244.108
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
     headers:
-      Host: 95.174.68.188
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,7 +58,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
-  - 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,6 +68,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
-  - 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
 rules:
 - MATCH,PROXIES

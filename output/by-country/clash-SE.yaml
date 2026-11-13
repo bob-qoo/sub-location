@@ -12,12 +12,12 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy
-  server: 194.59.250.52
-  port: 18501
+  server: 62.182.193.228
+  port: 8388
   udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: 517403753b63fd4fac88986bf98b11e0
+  cipher: chacha20-ietf-poly1305
+  password: 2e555e46dbc421452416834962fd014f
 - name: 🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy
   server: 5.178.109.174
   port: 14430
@@ -65,6 +65,21 @@ proxies:
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
 - name: 🇸🇪 瑞典 (Sweden) 07 - Chain-Proxy
+  server: 194.59.250.52
+  port: 18501
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: 517403753b63fd4fac88986bf98b11e0
+- name: 🇸🇪 瑞典 (Sweden) 08 - Chain-Proxy
+  server: se.xiaoliyu.cyou
+  port: 10086
+  udp: true
+  type: hysteria2
+  password: 8b64b840-a48d-4ac0-b10f-8f7d7081a0f1
+  sni: se.xiaoliyu.cyou
+  skip-cert-verify: true
+- name: 🇸🇪 瑞典 (Sweden) 09 - Chain-Proxy
   server: 95.143.196.97
   port: 443
   udp: true
@@ -72,13 +87,6 @@ proxies:
   password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
   sni: connect-se.mimowhat.online
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 08 - Chain-Proxy
-  server: 70.34.212.124
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,6 +100,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 06 - Chain-Proxy
   - 🇸🇪 瑞典 (Sweden) 07 - Chain-Proxy
   - 🇸🇪 瑞典 (Sweden) 08 - Chain-Proxy
+  - 🇸🇪 瑞典 (Sweden) 09 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -105,5 +114,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 06 - Chain-Proxy
   - 🇸🇪 瑞典 (Sweden) 07 - Chain-Proxy
   - 🇸🇪 瑞典 (Sweden) 08 - Chain-Proxy
+  - 🇸🇪 瑞典 (Sweden) 09 - Chain-Proxy
 rules:
 - MATCH,PROXIES
