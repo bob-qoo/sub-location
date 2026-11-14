@@ -5,50 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - Chain-Proxy
-  server: 104.27.0.1
+  server: US122208.ssgreen.org
   port: 443
   udp: true
   type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  uuid: 2ead383b-c5f4-4c1e-9ee6-8d733ca17c4e
   alterId: 0
   cipher: auto
   tls: true
-  servername: vmess.lbw666.dpdns.org
+  servername: US122208.ssgreen.org
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /ws
+    path: /wes
     headers:
-      Host: vmess.lbw666.dpdns.org
-- name: 🌐 其他地区 (Other) 02 - Chain-Proxy
-  server: 104.27.0.1
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: vmess.lbw666.dpdns.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
+      Host: US122208.ssgreen.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - Chain-Proxy
-  - 🌐 其他地区 (Other) 02 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - Chain-Proxy
-  - 🌐 其他地区 (Other) 02 - Chain-Proxy
 rules:
 - MATCH,PROXIES
