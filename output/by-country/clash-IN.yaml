@@ -28,20 +28,26 @@ proxies:
     headers:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 03 - Chain-Proxy
-  server: 103.111.114.136
-  port: 443
+  server: 172.105.39.124
+  port: 7002
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇮🇳 印度 (India) 04 - Chain-Proxy
+  server: 194.61.31.126
+  port: 2053
   udp: true
   type: vless
-  uuid: 555b35c4-30f9-40c6-a61a-7f53ab1bea45
-  flow: xtls-rprx-vision
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
   tls: true
   reality-opts:
-    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
-    short-id: 1a2b3c4d
-  servername: videos.porsche.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 04 - Chain-Proxy
-  server: xray-dmr3b3hy-calm-maple-7.cloady.io
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 05 - Chain-Proxy
+  server: 13.140.253.35
   port: 443
   udp: true
   type: vless
@@ -55,7 +61,7 @@ proxies:
     path: /0175469f14317d82
     headers:
       Host: xray-dmr3b3hy-calm-maple-7.cloady.io
-- name: 🇮🇳 印度 (India) 05 - Chain-Proxy
+- name: 🇮🇳 印度 (India) 06 - Chain-Proxy
   server: 152.67.8.205
   port: 80
   udp: true
@@ -66,8 +72,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: 152.67.8.205
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,6 +82,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - Chain-Proxy
   - 🇮🇳 印度 (India) 04 - Chain-Proxy
   - 🇮🇳 印度 (India) 05 - Chain-Proxy
+  - 🇮🇳 印度 (India) 06 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -88,5 +93,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - Chain-Proxy
   - 🇮🇳 印度 (India) 04 - Chain-Proxy
   - 🇮🇳 印度 (India) 05 - Chain-Proxy
+  - 🇮🇳 印度 (India) 06 - Chain-Proxy
 rules:
 - MATCH,PROXIES
