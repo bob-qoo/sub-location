@@ -14,10 +14,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - Chain-Proxy",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
+      "server": "194.59.250.52",
+      "server_port": 18501,
+      "method": "aes-128-gcm",
+      "password": "517403753b63fd4fac88986bf98b11e0"
     },
     {
       "type": "shadowsocks",
@@ -28,16 +28,8 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy",
-      "server": "194.59.250.52",
-      "server_port": 18501,
-      "method": "aes-128-gcm",
-      "password": "517403753b63fd4fac88986bf98b11e0"
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy",
       "server": "5.178.109.174",
       "server_port": 14430,
       "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
@@ -51,8 +43,21 @@
     },
     {
       "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - Chain-Proxy",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy",
       "server": "138.199.55.230",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - Chain-Proxy",
+      "server": "62.93.166.184",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
       "security": "auto",
@@ -71,11 +76,7 @@
       "tls": {
         "enabled": true,
         "server_name": "138-124-86-230.sslip.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "grpc",
@@ -83,37 +84,53 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 08 - Chain-Proxy",
-      "server": "62.93.166.184",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
+      "server": "132.243.163.89",
+      "server_port": 443,
+      "uuid": "632cd343-1e8f-4bf6-a9a2-20ada1f6970f",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "xmfhlpy.com",
+        "server_name": "3fb2b6t.se1.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XQWaIMBPo0mpWs3MooxxkjWNSgxnkIESd_2PnR8_2HA",
+          "short_id": "1061f1b1cdaad3ad"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 09 - Chain-Proxy",
+      "server": "95.143.196.97",
+      "server_port": 443,
+      "password": "769f34f0-1500-488f-b414-03bc90666502",
+      "tls": {
+        "enabled": true,
+        "server_name": "se.mimowhat.online",
         "insecure": false
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇸🇪 瑞典 (Sweden) 09 - Chain-Proxy",
-      "server": "95.143.196.97",
-      "server_port": 443,
-      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
-      "tls": {
-        "enabled": true,
-        "server_name": "connect-se.mimowhat.online",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 10 - Chain-Proxy",
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 11 - Chain-Proxy",
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
     },
     {
       "type": "selector",
@@ -128,7 +145,9 @@
         "🇸🇪 瑞典 (Sweden) 06 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 07 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 08 - Chain-Proxy",
-        "🇸🇪 瑞典 (Sweden) 09 - Chain-Proxy"
+        "🇸🇪 瑞典 (Sweden) 09 - Chain-Proxy",
+        "🇸🇪 瑞典 (Sweden) 10 - Chain-Proxy",
+        "🇸🇪 瑞典 (Sweden) 11 - Chain-Proxy"
       ]
     },
     {
@@ -143,7 +162,9 @@
         "🇸🇪 瑞典 (Sweden) 06 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 07 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 08 - Chain-Proxy",
-        "🇸🇪 瑞典 (Sweden) 09 - Chain-Proxy"
+        "🇸🇪 瑞典 (Sweden) 09 - Chain-Proxy",
+        "🇸🇪 瑞典 (Sweden) 10 - Chain-Proxy",
+        "🇸🇪 瑞典 (Sweden) 11 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
