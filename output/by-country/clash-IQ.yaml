@@ -4,29 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇦 乌克兰 (Ukraine) 01 - Chain-Proxy
-  server: netx.smrtai.top
+- name: 🇮🇶 IQ 01 - Chain-Proxy
+  server: 81.90.24.154
   port: 443
   udp: true
   type: vless
-  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
+  uuid: 372931d3-91c5-4564-b79c-041302de9a17
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
-    short-id: d8b58872
-  servername: www.cloudflare.com
+    public-key: 9UG9zvrDpiPgY_J0dvB-n10ygEw3FzJ2qT8PFtITUBE
+    short-id: e06e30590f288e0f
+  servername: pl3.soshelper.space
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇦 乌克兰 (Ukraine) 01 - Chain-Proxy
+  - 🇮🇶 IQ 01 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇦 乌克兰 (Ukraine) 01 - Chain-Proxy
+  - 🇮🇶 IQ 01 - Chain-Proxy
 rules:
 - MATCH,PROXIES

@@ -5,21 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - Chain-Proxy",
-      "server": "netx.smrtai.top",
+      "tag": "🇵🇹 葡萄牙 (Portugal) 01 - Chain-Proxy",
+      "server": "94.46.172.23",
       "server_port": 443,
-      "uuid": "d8b58872-cc25-4bb2-badb-b86399c075fa",
+      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "pt1.gofizzin.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk",
-          "short_id": "d8b58872"
+          "public_key": "mrkbW8LrOMr_VqFXxdslDI-2VG38Xvd6iD-c0p48uXg",
+          "short_id": "522c2ea956"
         }
       }
     },
@@ -28,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 (Ukraine) 01 - Chain-Proxy"
+        "🇵🇹 葡萄牙 (Portugal) 01 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 (Ukraine) 01 - Chain-Proxy"
+        "🇵🇹 葡萄牙 (Portugal) 01 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
