@@ -4,26 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - Chain-Proxy",
-      "server": "47.250.135.244",
-      "server_port": 10000,
-      "uuid": "aedc66b8-99d7-4a21-8310-61870e7f870d",
-      "security": "auto"
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - Chain-Proxy",
+      "server": "45.86.60.174",
+      "server_port": 16443,
+      "uuid": "13e541f3-d09d-4633-89df-8513db0ced20"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - Chain-Proxy"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - Chain-Proxy"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
