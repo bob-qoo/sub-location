@@ -5,16 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - Chain-Proxy
-  server: 153.56.210.134
-  port: 34121
+  server: 87.76.154.28
+  port: 57231
   udp: true
-  type: hysteria2
-  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
+  type: vless
+  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
 - name: 🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy
+  server: 77.83.245.79
+  port: 443
+  udp: true
+  type: vless
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: tr1-r.bankai.party
+  client-fingerprint: qq
+- name: 🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy
   server: 153.56.210.134
   port: 38045
   udp: true
@@ -24,7 +32,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 642516f2-f9bd-41ce-9904-dee699c39cf9
-- name: 🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy
+- name: 🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy
   server: 153.56.210.134
   port: 57251
   udp: true
@@ -34,8 +42,18 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
-- name: 🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy
-  server: 45.141.148.46
+- name: 🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy
+  server: 153.56.210.134
+  port: 34121
+  udp: true
+  type: hysteria2
+  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
+- name: 🇹🇷 土耳其 (Turkey) 06 - Chain-Proxy
+  server: 45.141.148.48
   port: 443
   udp: true
   type: vless
@@ -44,9 +62,16 @@ proxies:
   reality-opts:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
     short-id: 868419504747f6de
-  servername: tr1b.galioncc.com
+  servername: net-svc-mgr.galioncc.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy
+- name: 🇹🇷 土耳其 (Turkey) 07 - Chain-Proxy
+  server: tr.subscriptionservice.ir
+  port: 2089
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: lZZzfo1mqH7PqnloAogdi2XBhlgiofMy
+- name: 🇹🇷 土耳其 (Turkey) 08 - Chain-Proxy
   server: 185.246.155.91
   port: 10103
   udp: true
@@ -59,24 +84,6 @@ proxies:
     short-id: 6859f5b59e55aa30
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 06 - Chain-Proxy
-  server: 77.83.245.79
-  port: 443
-  udp: true
-  type: vless
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: tr1-r.bankai.party
-  client-fingerprint: qq
-- name: 🇹🇷 土耳其 (Turkey) 07 - Chain-Proxy
-  server: 87.76.154.28
-  port: 57231
-  udp: true
-  type: vless
-  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
 proxy-groups:
 - name: PROXIES
   type: select
@@ -89,6 +96,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 06 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 07 - Chain-Proxy
+  - 🇹🇷 土耳其 (Turkey) 08 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -101,5 +109,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 06 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 07 - Chain-Proxy
+  - 🇹🇷 土耳其 (Turkey) 08 - Chain-Proxy
 rules:
 - MATCH,PROXIES
