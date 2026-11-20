@@ -6,6 +6,13 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - Chain-Proxy",
+      "server": "45.86.60.174",
+      "server_port": 16443,
+      "uuid": "13e541f3-d09d-4633-89df-8513db0ced20"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - Chain-Proxy",
       "server": "132.243.212.204",
       "server_port": 443,
       "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
@@ -16,8 +23,20 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - Chain-Proxy",
+      "server": "91.108.247.47",
+      "server_port": 9443,
+      "password": "lvu_3aa4932b4c5fcc489c6e7f7ab964c6f6_d7175b76207f60dd31ff5a508f544f55:np2.1.2ee0JcTRe0ZVg32m8KLelOq4P0fH0s7iHXwZpzBYics",
+      "tls": {
+        "enabled": true,
+        "server_name": "n33.neproxy.net",
+        "insecure": false
       }
     },
     {
@@ -25,14 +44,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - Chain-Proxy"
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - Chain-Proxy",
+        "🇨🇾 塞浦路斯 (Cyprus) 02 - Chain-Proxy",
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - Chain-Proxy"
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - Chain-Proxy",
+        "🇨🇾 塞浦路斯 (Cyprus) 02 - Chain-Proxy",
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

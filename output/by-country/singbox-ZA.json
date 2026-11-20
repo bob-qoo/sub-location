@@ -6,22 +6,30 @@
     {
       "type": "shadowsocks",
       "tag": "🇿🇦 南非 (South Africa) 01 - Chain-Proxy",
-      "server": "102.37.156.224",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "aduB9HGxQHjA2SBMRjkHX6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇿🇦 南非 (South Africa) 02 - Chain-Proxy",
       "server": "102.133.165.160",
       "server_port": 16233,
       "method": "chacha20-ietf-poly1305",
       "password": "Xsy8Ox4yOV3xLlpxtjzs3X"
     },
     {
-      "type": "trojan",
+      "type": "shadowsocks",
+      "tag": "🇿🇦 南非 (South Africa) 02 - Chain-Proxy",
+      "server": "139.84.247.164",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "tfAcRikawhNoZAhu"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇿🇦 南非 (South Africa) 03 - Chain-Proxy",
+      "server": "102.37.156.224",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "aduB9HGxQHjA2SBMRjkHX6"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇿🇦 南非 (South Africa) 04 - Chain-Proxy",
       "server": "139.84.231.142",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -42,7 +50,8 @@
         "auto",
         "🇿🇦 南非 (South Africa) 01 - Chain-Proxy",
         "🇿🇦 南非 (South Africa) 02 - Chain-Proxy",
-        "🇿🇦 南非 (South Africa) 03 - Chain-Proxy"
+        "🇿🇦 南非 (South Africa) 03 - Chain-Proxy",
+        "🇿🇦 南非 (South Africa) 04 - Chain-Proxy"
       ]
     },
     {
@@ -51,7 +60,8 @@
       "outbounds": [
         "🇿🇦 南非 (South Africa) 01 - Chain-Proxy",
         "🇿🇦 南非 (South Africa) 02 - Chain-Proxy",
-        "🇿🇦 南非 (South Africa) 03 - Chain-Proxy"
+        "🇿🇦 南非 (South Africa) 03 - Chain-Proxy",
+        "🇿🇦 南非 (South Africa) 04 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

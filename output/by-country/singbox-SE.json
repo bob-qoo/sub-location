@@ -57,7 +57,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
@@ -79,56 +79,21 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vmess",
       "tag": "🇸🇪 瑞典 (Sweden) 06 - Chain-Proxy",
-      "server": "95.143.196.32",
-      "server_port": 443,
-      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
+      "server": "138.199.55.230",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "connect-se.mimowhat.online",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - Chain-Proxy",
-      "server": "subgift.gcorecdn.com",
-      "server_port": 443,
-      "uuid": "740b2630-b42d-425c-bacd-37e7e30d78f1",
-      "tls": {
-        "enabled": true,
-        "server_name": "subgift.gcorecdn.com",
+        "server_name": "xmfhlpy.com",
         "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/t.me-SubGift"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 - Chain-Proxy",
-      "server": "88.216.60.73",
-      "server_port": 443,
-      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
-      "tls": {
-        "enabled": true,
-        "server_name": "ns-api-gw.galioncc.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "a7c92e4b10d6f835"
-        }
       }
     },
     {
       "type": "trojan",
-      "tag": "🇸🇪 瑞典 (Sweden) 09 - Chain-Proxy",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - Chain-Proxy",
       "server": "95.143.196.97",
       "server_port": 443,
       "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
@@ -144,6 +109,37 @@
           "enabled": true,
           "fingerprint": "chrome"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 08 - Chain-Proxy",
+      "server": "subgift.gcorecdn.com",
+      "server_port": 443,
+      "uuid": "740b2630-b42d-425c-bacd-37e7e30d78f1",
+      "tls": {
+        "enabled": true,
+        "server_name": "subgift.gcorecdn.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/t.me-SubGift"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 09 - Chain-Proxy",
+      "server": "185.151.243.186",
+      "server_port": 443,
+      "password": "401db914-1fef-0001-b41a-287bd9ac13f9",
+      "tls": {
+        "enabled": true,
+        "server_name": "piodr-ru-74sel.my-fade.cloud",
+        "insecure": false,
+        "alpn": [
+          "h3"
+        ]
       }
     },
     {
