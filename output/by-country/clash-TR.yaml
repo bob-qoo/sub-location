@@ -5,12 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - Chain-Proxy
-  server: 87.76.154.28
-  port: 57231
-  udp: true
-  type: vless
-  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
-- name: 🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy
   server: 77.83.245.79
   port: 443
   udp: true
@@ -23,7 +17,7 @@ proxies:
     short-id: 457fab2ac885dbe0
   servername: tr1-r.bankai.party
   client-fingerprint: ''
-- name: 🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy
+- name: 🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy
   server: 185.246.155.91
   port: 10103
   udp: true
@@ -36,39 +30,32 @@ proxies:
     short-id: 6859f5b59e55aa30
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy
+  server: 87.76.154.28
+  port: 57231
+  udp: true
+  type: vless
+  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
 - name: 🇹🇷 土耳其 (Turkey) 04 - Chain-Proxy
-  server: tr.subscriptionservice.ir
+  server: 31.210.78.66
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: o3-9Eg79umh4CaY8sWC7b3
+- name: 🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy
+  server: 64.49.13.12
   port: 2089
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: lZZzfo1mqH7PqnloAogdi2XBhlgiofMy
-- name: 🇹🇷 土耳其 (Turkey) 05 - Chain-Proxy
-  server: 185.71.216.94
-  port: 2195
-  udp: true
-  type: vless
-  uuid: 9654f1a9-8dbc-4897-85ea-c077a52b3857
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI
-    short-id: 3869d49a9a79e06a
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 06 - Chain-Proxy
-  server: 147.45.66.208
-  port: 43000
+  server: leviko-tr8060.shopingggg.ir
+  port: 57231
   udp: true
   type: vless
-  uuid: 01e61db7-9e0b-4431-a995-a5288a01b951
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DbL9RJFvJrnxBu6fFhWkHF8nsD6cK_DKMuMV00RmlWg
-    short-id: 4d3d8e15
-  servername: 147.45.66.208
-  client-fingerprint: ''
+  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
 proxy-groups:
 - name: PROXIES
   type: select

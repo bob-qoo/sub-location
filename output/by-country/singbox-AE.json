@@ -38,20 +38,7 @@
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy",
-      "server": "157.254.38.210",
-      "server_port": 20123,
-      "password": "d9064589-74af-432a-9390-5d8a9da281bf",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk.catxstar.com",
-        "insecure": false
+        "type": "ws"
       }
     },
     {
@@ -62,8 +49,7 @@
         "🇦🇪 阿联酋 (UAE) 01 - Chain-Proxy",
         "🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy",
         "🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy"
+        "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy"
       ]
     },
     {
@@ -73,8 +59,7 @@
         "🇦🇪 阿联酋 (UAE) 01 - Chain-Proxy",
         "🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy",
         "🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy",
-        "🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy"
+        "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

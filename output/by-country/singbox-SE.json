@@ -22,7 +22,7 @@
         "server_name": "api-svc-mgr.galioncc.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -32,22 +32,34 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
+      "server": "138.199.55.230",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy",
+      "server": "62.93.166.184",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy",
       "server": "138.124.86.230",
       "server_port": 48115,
       "uuid": "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b",
@@ -66,29 +78,14 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy",
-      "server": "62.93.166.184",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 06 - Chain-Proxy",
-      "server": "138.199.55.230",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless"
       }
     },
     {
@@ -128,21 +125,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 09 - Chain-Proxy",
-      "server": "185.151.243.186",
-      "server_port": 443,
-      "password": "401db914-1fef-0001-b41a-287bd9ac13f9",
-      "tls": {
-        "enabled": true,
-        "server_name": "piodr-ru-74sel.my-fade.cloud",
-        "insecure": false,
-        "alpn": [
-          "h3"
-        ]
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -154,8 +136,7 @@
         "🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 06 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 07 - Chain-Proxy",
-        "🇸🇪 瑞典 (Sweden) 08 - Chain-Proxy",
-        "🇸🇪 瑞典 (Sweden) 09 - Chain-Proxy"
+        "🇸🇪 瑞典 (Sweden) 08 - Chain-Proxy"
       ]
     },
     {
@@ -169,8 +150,7 @@
         "🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 06 - Chain-Proxy",
         "🇸🇪 瑞典 (Sweden) 07 - Chain-Proxy",
-        "🇸🇪 瑞典 (Sweden) 08 - Chain-Proxy",
-        "🇸🇪 瑞典 (Sweden) 09 - Chain-Proxy"
+        "🇸🇪 瑞典 (Sweden) 08 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
