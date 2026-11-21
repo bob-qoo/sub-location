@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - Chain-Proxy
-  server: 64.49.13.12
+  server: tr.subscriptionservice.ir
   port: 2089
   udp: true
   type: ss

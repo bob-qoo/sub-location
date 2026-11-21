@@ -7,29 +7,13 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - Chain-Proxy",
       "server": "185.135.86.175",
-      "server_port": 9086,
+      "server_port": 9082,
       "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
+      "password": "45xgMgm386pjWjTx"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - Chain-Proxy",
-      "server": "185.135.86.175",
-      "server_port": 9034,
-      "method": "aes-256-cfb",
-      "password": "Yg4MbdXFQ9HFFVY6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - Chain-Proxy",
-      "server": "185.135.86.175",
-      "server_port": 9017,
-      "method": "aes-256-cfb",
-      "password": "HAVAdE3nXhqA5nHp"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - Chain-Proxy",
       "server": "185.135.86.175",
       "server_port": 9036,
       "method": "aes-256-cfb",
@@ -37,7 +21,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - Chain-Proxy",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - Chain-Proxy",
       "server": "185.135.86.175",
       "server_port": 9068,
       "method": "aes-256-cfb",
@@ -45,11 +29,27 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - Chain-Proxy",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - Chain-Proxy",
+      "server": "185.135.86.175",
+      "server_port": 9017,
+      "method": "aes-256-cfb",
+      "password": "HAVAdE3nXhqA5nHp"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - Chain-Proxy",
       "server": "185.135.86.175",
       "server_port": 9094,
       "method": "aes-256-cfb",
       "password": "rpgbNnU9rDDU4aWZ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - Chain-Proxy",
+      "server": "185.135.86.175",
+      "server_port": 9033,
+      "method": "aes-256-cfb",
+      "password": "UTJA57ypk2XKQpnm"
     },
     {
       "type": "shadowsocks",
@@ -60,8 +60,32 @@
       "password": "kSPmvwdFzGMMW5pY"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - Chain-Proxy",
+      "server": "185.135.86.175",
+      "server_port": 9034,
+      "method": "aes-256-cfb",
+      "password": "Yg4MbdXFQ9HFFVY6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 09 - Chain-Proxy",
+      "server": "185.135.86.175",
+      "server_port": 9086,
+      "method": "aes-256-cfb",
+      "password": "37Z4TFCYhfxcpc9Q"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 10 - Chain-Proxy",
+      "server": "82.38.31.201",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 11 - Chain-Proxy",
       "server": "195.123.213.28",
       "server_port": 443,
       "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
@@ -81,6 +105,26 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 12 - Chain-Proxy",
+      "server": "45.38.143.210",
+      "server_port": 30584,
+      "uuid": "cebc5f19-18d9-48e6-9029-fb4b04caf393",
+      "tls": {
+        "enabled": true,
+        "server_name": "m.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y",
+          "short_id": "67ece882d65d0f1a"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -92,7 +136,11 @@
         "🇱🇻 拉脱维亚 (Latvia) 05 - Chain-Proxy",
         "🇱🇻 拉脱维亚 (Latvia) 06 - Chain-Proxy",
         "🇱🇻 拉脱维亚 (Latvia) 07 - Chain-Proxy",
-        "🇱🇻 拉脱维亚 (Latvia) 08 - Chain-Proxy"
+        "🇱🇻 拉脱维亚 (Latvia) 08 - Chain-Proxy",
+        "🇱🇻 拉脱维亚 (Latvia) 09 - Chain-Proxy",
+        "🇱🇻 拉脱维亚 (Latvia) 10 - Chain-Proxy",
+        "🇱🇻 拉脱维亚 (Latvia) 11 - Chain-Proxy",
+        "🇱🇻 拉脱维亚 (Latvia) 12 - Chain-Proxy"
       ]
     },
     {
@@ -106,7 +154,11 @@
         "🇱🇻 拉脱维亚 (Latvia) 05 - Chain-Proxy",
         "🇱🇻 拉脱维亚 (Latvia) 06 - Chain-Proxy",
         "🇱🇻 拉脱维亚 (Latvia) 07 - Chain-Proxy",
-        "🇱🇻 拉脱维亚 (Latvia) 08 - Chain-Proxy"
+        "🇱🇻 拉脱维亚 (Latvia) 08 - Chain-Proxy",
+        "🇱🇻 拉脱维亚 (Latvia) 09 - Chain-Proxy",
+        "🇱🇻 拉脱维亚 (Latvia) 10 - Chain-Proxy",
+        "🇱🇻 拉脱维亚 (Latvia) 11 - Chain-Proxy",
+        "🇱🇻 拉脱维亚 (Latvia) 12 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
