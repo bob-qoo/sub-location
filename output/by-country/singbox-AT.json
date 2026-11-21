@@ -12,21 +12,8 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vmess",
-      "tag": "🇦🇹 奥地利 (Austria) 02 - Chain-Proxy",
-      "server": "154.47.19.225",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 03 - Chain-Proxy",
+      "tag": "🇦🇹 奥地利 (Austria) 02 - Chain-Proxy",
       "server": "212.109.193.194",
       "server_port": 2096,
       "uuid": "e436321f-24a9-4c38-b935-7d7dee0c3f68",
@@ -54,8 +41,7 @@
       "outbounds": [
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - Chain-Proxy",
-        "🇦🇹 奥地利 (Austria) 02 - Chain-Proxy",
-        "🇦🇹 奥地利 (Austria) 03 - Chain-Proxy"
+        "🇦🇹 奥地利 (Austria) 02 - Chain-Proxy"
       ]
     },
     {
@@ -63,8 +49,7 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - Chain-Proxy",
-        "🇦🇹 奥地利 (Austria) 02 - Chain-Proxy",
-        "🇦🇹 奥地利 (Austria) 03 - Chain-Proxy"
+        "🇦🇹 奥地利 (Austria) 02 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

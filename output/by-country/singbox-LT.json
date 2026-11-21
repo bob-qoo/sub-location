@@ -15,17 +15,17 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 02 - Chain-Proxy",
       "server": "195.238.126.20",
-      "server_port": 9078,
+      "server_port": 9002,
       "method": "aes-256-cfb",
-      "password": "JCJpbRbQZNw9XFZG"
+      "password": "b8KkNDjEd5QqFyRm"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 03 - Chain-Proxy",
       "server": "195.238.126.20",
-      "server_port": 9045,
+      "server_port": 9001,
       "method": "aes-256-cfb",
-      "password": "Lp27rqyJq72bZsqX"
+      "password": "UkXRsXvR6buDMG2Y"
     },
     {
       "type": "shadowsocks",
@@ -39,41 +39,25 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 05 - Chain-Proxy",
       "server": "195.238.126.20",
-      "server_port": 9001,
+      "server_port": 9008,
       "method": "aes-256-cfb",
-      "password": "UkXRsXvR6buDMG2Y"
+      "password": "y9VURyNzJWNRYEGQ"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 06 - Chain-Proxy",
       "server": "195.238.126.20",
-      "server_port": 9011,
+      "server_port": 9045,
       "method": "aes-256-cfb",
-      "password": "M3t2ZEQcMGRWBjRa"
+      "password": "Lp27rqyJq72bZsqX"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 07 - Chain-Proxy",
       "server": "195.238.126.20",
-      "server_port": 9012,
+      "server_port": 9078,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - Chain-Proxy",
-      "server": "46.8.210.33",
-      "server_port": 8446,
-      "password": "b7941807-1f4d-4bda-a878-92d708b84494",
-      "tls": {
-        "enabled": true,
-        "server_name": "litelitvalitter.rooferz.surf",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "nTm4oBa6QCpWoAFDVtF6mpMpfMfN8CM6"
-      }
+      "password": "JCJpbRbQZNw9XFZG"
     },
     {
       "type": "selector",
@@ -86,8 +70,7 @@
         "🇱🇹 立陶宛 (Lithuania) 04 - Chain-Proxy",
         "🇱🇹 立陶宛 (Lithuania) 05 - Chain-Proxy",
         "🇱🇹 立陶宛 (Lithuania) 06 - Chain-Proxy",
-        "🇱🇹 立陶宛 (Lithuania) 07 - Chain-Proxy",
-        "🇱🇹 立陶宛 (Lithuania) 08 - Chain-Proxy"
+        "🇱🇹 立陶宛 (Lithuania) 07 - Chain-Proxy"
       ]
     },
     {
@@ -100,8 +83,7 @@
         "🇱🇹 立陶宛 (Lithuania) 04 - Chain-Proxy",
         "🇱🇹 立陶宛 (Lithuania) 05 - Chain-Proxy",
         "🇱🇹 立陶宛 (Lithuania) 06 - Chain-Proxy",
-        "🇱🇹 立陶宛 (Lithuania) 07 - Chain-Proxy",
-        "🇱🇹 立陶宛 (Lithuania) 08 - Chain-Proxy"
+        "🇱🇹 立陶宛 (Lithuania) 07 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
