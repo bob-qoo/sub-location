@@ -5,6 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - Chain-Proxy
+  server: 140.238.2.250
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 02 - Chain-Proxy
+  server: 129.154.61.196
+  port: 800
+  udp: true
+  type: vmess
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  alterId: 0
+  cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 03 - Chain-Proxy
   server: 132.145.80.230
   port: 80
   udp: true
@@ -17,21 +33,6 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: kr02.a0a.xyz
-- name: 🇰🇷 韩国 (South Korea) 02 - Chain-Proxy
-  server: 152.70.237.123
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: maintell
-  sni: 152.70.237.123
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 03 - Chain-Proxy
-  server: 115.161.136.145
-  port: 10099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: '12242'
 - name: 🇰🇷 韩国 (South Korea) 04 - Chain-Proxy
   server: 158.247.253.243
   port: 443
@@ -41,14 +42,32 @@ proxies:
   sni: connectgraduateswithjobopeningsandgrowprofessionally.com
   skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 05 - Chain-Proxy
-  server: 152.67.200.82
-  port: 50160
+  server: 193.122.106.29
+  port: 20000
   udp: true
   type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: www.bing.com
-  skip-cert-verify: true
+  password: C0DD7bgChaltqnh/T2az6ijM
+  sni: hy2-kr.whuiy.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: C0DD7bgChaltqnh/T2az6ijM
+  ports: 20000-30000
 - name: 🇰🇷 韩国 (South Korea) 06 - Chain-Proxy
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 韩国 (South Korea) 07 - Chain-Proxy
+  server: 152.70.237.123
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: maintell
+  sni: 152.70.237.123
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 08 - Chain-Proxy
   server: 154.90.62.70
   port: 56127
   udp: true
@@ -56,15 +75,15 @@ proxies:
   password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
   sni: 154.90.62.70
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 07 - Chain-Proxy
-  server: 150-230-252-217.liao.kdns.fr
+- name: 🇰🇷 韩国 (South Korea) 09 - Chain-Proxy
+  server: 152.69.231.175
   port: 50160
   udp: true
   type: hysteria2
-  password: 9cfc9458e48c028ec03ff86ebc71c744
-  sni: 127.0.0.1
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  sni: 152.69.231.175
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - Chain-Proxy
+- name: 🇰🇷 韩国 (South Korea) 10 - Chain-Proxy
   server: 152.69.226.63
   port: 25555
   udp: true
@@ -73,22 +92,31 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇰🇷 韩国 (South Korea) 09 - Chain-Proxy
-  server: 152-69-231-175.liao.kdns.fr
+    headers:
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 11 - Chain-Proxy
+  server: 150-230-252-217.liao.kdns.fr
   port: 50160
   udp: true
   type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 127.0.0.1
+  password: 9cfc9458e48c028ec03ff86ebc71c744
+  sni: 150-230-252-217.liao.kdns.fr
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 10 - Chain-Proxy
-  server: 140.238.2.250
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 12 - Chain-Proxy
+  server: 115.161.136.145
+  port: 10099
   udp: true
-  type: vmess
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: '12242'
+- name: 🇰🇷 韩国 (South Korea) 13 - Chain-Proxy
+  server: 152.67.200.82
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: 152-67-200-82.liao.kdns.fr
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -104,6 +132,9 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08 - Chain-Proxy
   - 🇰🇷 韩国 (South Korea) 09 - Chain-Proxy
   - 🇰🇷 韩国 (South Korea) 10 - Chain-Proxy
+  - 🇰🇷 韩国 (South Korea) 11 - Chain-Proxy
+  - 🇰🇷 韩国 (South Korea) 12 - Chain-Proxy
+  - 🇰🇷 韩国 (South Korea) 13 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -119,5 +150,8 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08 - Chain-Proxy
   - 🇰🇷 韩国 (South Korea) 09 - Chain-Proxy
   - 🇰🇷 韩国 (South Korea) 10 - Chain-Proxy
+  - 🇰🇷 韩国 (South Korea) 11 - Chain-Proxy
+  - 🇰🇷 韩国 (South Korea) 12 - Chain-Proxy
+  - 🇰🇷 韩国 (South Korea) 13 - Chain-Proxy
 rules:
 - MATCH,PROXIES

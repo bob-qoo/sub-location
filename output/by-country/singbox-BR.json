@@ -20,6 +20,24 @@
       "type": "hysteria2",
       "tag": "🇧🇷 巴西 (Brazil) 02 - Chain-Proxy",
       "server": "150.230.229.100",
+      "password": "CyG0RFxMjzs41uQD4OLuHQ==",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2-br2.whuiy.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "CyG0RFxMjzs41uQD4OLuHQ=="
+      },
+      "server_ports": [
+        "20000:30000"
+      ]
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇧🇷 巴西 (Brazil) 03 - Chain-Proxy",
+      "server": "150.230.229.100",
       "server_port": 20000,
       "password": "CyG0RFxMjzs41uQD4OLuHQ==",
       "tls": {
@@ -34,7 +52,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇧🇷 巴西 (Brazil) 03 - Chain-Proxy",
+      "tag": "🇧🇷 巴西 (Brazil) 04 - Chain-Proxy",
       "server": "103.88.232.55",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -46,16 +64,22 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇧🇷 巴西 (Brazil) 04 - Chain-Proxy",
-      "server": "216.238.104.154",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "type": "hysteria2",
+      "tag": "🇧🇷 巴西 (Brazil) 05 - Chain-Proxy",
+      "server": "137.131.177.121",
+      "password": "z/yIxn3sBV03PkAxbnX8rg==",
       "tls": {
         "enabled": true,
-        "server_name": "findtemporaryworkandfreelancerprojectsonlineplatform.com",
+        "server_name": "hy2-br.whuiy.xyz",
         "insecure": false
-      }
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "z/yIxn3sBV03PkAxbnX8rg=="
+      },
+      "server_ports": [
+        "20000:30000"
+      ]
     },
     {
       "type": "selector",
@@ -65,7 +89,8 @@
         "🇧🇷 巴西 (Brazil) 01 - Chain-Proxy",
         "🇧🇷 巴西 (Brazil) 02 - Chain-Proxy",
         "🇧🇷 巴西 (Brazil) 03 - Chain-Proxy",
-        "🇧🇷 巴西 (Brazil) 04 - Chain-Proxy"
+        "🇧🇷 巴西 (Brazil) 04 - Chain-Proxy",
+        "🇧🇷 巴西 (Brazil) 05 - Chain-Proxy"
       ]
     },
     {
@@ -75,7 +100,8 @@
         "🇧🇷 巴西 (Brazil) 01 - Chain-Proxy",
         "🇧🇷 巴西 (Brazil) 02 - Chain-Proxy",
         "🇧🇷 巴西 (Brazil) 03 - Chain-Proxy",
-        "🇧🇷 巴西 (Brazil) 04 - Chain-Proxy"
+        "🇧🇷 巴西 (Brazil) 04 - Chain-Proxy",
+        "🇧🇷 巴西 (Brazil) 05 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

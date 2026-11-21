@@ -26,6 +26,13 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: explorecareerpathsandunlockprofessionalsuccesstoday.com
   skip-cert-verify: false
+- name: 🇿🇦 南非 (South Africa) 04 - Chain-Proxy
+  server: 139.84.247.164
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: tfAcRikawhNoZAhu
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,6 +41,7 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 01 - Chain-Proxy
   - 🇿🇦 南非 (South Africa) 02 - Chain-Proxy
   - 🇿🇦 南非 (South Africa) 03 - Chain-Proxy
+  - 🇿🇦 南非 (South Africa) 04 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -42,5 +50,6 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 01 - Chain-Proxy
   - 🇿🇦 南非 (South Africa) 02 - Chain-Proxy
   - 🇿🇦 南非 (South Africa) 03 - Chain-Proxy
+  - 🇿🇦 南非 (South Africa) 04 - Chain-Proxy
 rules:
 - MATCH,PROXIES
