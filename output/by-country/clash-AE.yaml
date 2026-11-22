@@ -32,6 +32,32 @@ proxies:
   servername: nl-edge.airlinesvpn.com
   client-fingerprint: ''
 - name: 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
+  server: 212.192.3.222
+  port: 9543
+  udp: true
+  type: vless
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+  servername: storage.yandexcloud.net
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
+  server: 212.192.3.63
+  port: 9543
+  udp: true
+  type: vless
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+  servername: storage.yandexcloud.net
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -51,6 +77,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,5 +88,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
+  - 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
 rules:
 - MATCH,PROXIES

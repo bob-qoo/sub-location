@@ -12,16 +12,12 @@
       "security": "auto"
     },
     {
-      "type": "trojan",
+      "type": "vmess",
       "tag": "🇰🇷 韩国 (South Korea) 02 - Chain-Proxy",
-      "server": "158.247.253.243",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "connectgraduateswithjobopeningsandgrowprofessionally.com",
-        "insecure": true
-      }
+      "server": "129.154.61.196",
+      "server_port": 800,
+      "uuid": "a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0",
+      "security": "auto"
     },
     {
       "type": "hysteria2",
@@ -36,14 +32,14 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 04 - Chain-Proxy",
-      "server": "152.70.237.123",
-      "server_port": 2053,
-      "password": "maintell",
+      "server": "158.247.253.243",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "152.70.237.123",
+        "server_name": "connectgraduateswithjobopeningsandgrowprofessionally.com",
         "insecure": true
       }
     },
@@ -68,22 +64,30 @@
     {
       "type": "hysteria2",
       "tag": "🇰🇷 韩国 (South Korea) 06 - Chain-Proxy",
-      "server": "152.67.200.82",
-      "server_port": 50160,
-      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
+      "server": "152.70.237.123",
+      "server_port": 2053,
+      "password": "maintell",
       "tls": {
         "enabled": true,
-        "server_name": "off",
+        "server_name": "152.70.237.123",
         "insecure": true
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 07 - Chain-Proxy",
-      "server": "211.178.105.134",
-      "server_port": 6123,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
+      "server": "168.107.51.32",
+      "server_port": 20045,
+      "password": "463f7453753f4d47",
+      "tls": {
+        "enabled": true,
+        "server_name": "ikr200.zxom.eu.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     },
     {
       "type": "vless",
@@ -97,28 +101,8 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 09 - Chain-Proxy",
-      "server": "p141.panda001.net",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 10 - Chain-Proxy",
-      "server": "ikr200.zxom.eu.org",
-      "server_port": 20045,
-      "password": "463f7453753f4d47",
-      "tls": {
-        "enabled": true,
-        "server_name": "ikr200.zxom.eu.org",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 11 - Chain-Proxy",
       "server": "154.90.62.70",
       "server_port": 56127,
       "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
@@ -134,23 +118,60 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 12 - Chain-Proxy",
+      "tag": "🇰🇷 韩国 (South Korea) 10 - Chain-Proxy",
       "server": "150-230-252-217.liao.kdns.fr",
       "server_port": 50160,
       "password": "9cfc9458e48c028ec03ff86ebc71c744",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
+        "server_name": "150-230-252-217.liao.kdns.fr",
         "insecure": true
       }
     },
     {
-      "type": "vmess",
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 11 - Chain-Proxy",
+      "server": "152.69.231.175",
+      "server_port": 50160,
+      "password": "1beb216e3f60aea9555dae60d219a5ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "152.69.231.175",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 12 - Chain-Proxy",
+      "server": "152.67.200.82",
+      "server_port": 50160,
+      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 13 - Chain-Proxy",
-      "server": "129.154.61.196",
-      "server_port": 800,
-      "uuid": "a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0",
-      "security": "auto"
+      "server": "43.108.109.112",
+      "server_port": 443,
+      "uuid": "4ded3111-b418-475a-93de-0360932508b2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "vrFq4-k-eiTSyRF3T3e7Fqmlv4XSKmByKYsw55zeX3w",
+          "short_id": "b79a86e2b1a586a0"
+        }
+      }
     },
     {
       "type": "selector",

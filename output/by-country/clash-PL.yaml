@@ -5,33 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - Chain-Proxy
-  server: 217.30.10.44
-  port: 9076
+  server: 217.30.10.70
+  port: 9084
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
+  password: c3NtHJ5ujV2tGDfj
 - name: 🇵🇱 波兰 (Poland) 02 - Chain-Proxy
-  server: 217.30.10.44
-  port: 9099
+  server: 217.30.10.70
+  port: 9011
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 7heRqkPG3hg4UnRm
+  password: M3t2ZEQcMGRWBjRa
 - name: 🇵🇱 波兰 (Poland) 03 - Chain-Proxy
   server: 217.30.10.44
-  port: 9071
+  port: 9052
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
+  password: jt2ekBNc9HuVtm2a
 - name: 🇵🇱 波兰 (Poland) 04 - Chain-Proxy
-  server: 217.30.10.44
-  port: 9063
+  server: 217.30.10.70
+  port: 9088
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: aQqJbtwFGcCCaeL3
+  password: f8npKgNzdkss2ytn
 - name: 🇵🇱 波兰 (Poland) 05 - Chain-Proxy
   server: 217.30.10.44
   port: 9042
@@ -41,33 +41,129 @@ proxies:
   password: S7KwUu7yBy58S3Ga
 - name: 🇵🇱 波兰 (Poland) 06 - Chain-Proxy
   server: 217.30.10.44
-  port: 9006
+  port: 9076
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: FAdUvMJUq5vDgKEq
+  password: S2zDyyPcmZN2h8EC
 - name: 🇵🇱 波兰 (Poland) 07 - Chain-Proxy
+  server: 217.30.10.44
+  port: 9099
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 7heRqkPG3hg4UnRm
+- name: 🇵🇱 波兰 (Poland) 08 - Chain-Proxy
+  server: 217.30.10.70
+  port: 9044
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: KBGjZYcy4SyRShmA
+- name: 🇵🇱 波兰 (Poland) 09 - Chain-Proxy
+  server: 217.30.10.70
+  port: 9059
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9XwYyZsK8SNzQDtY
+- name: 🇵🇱 波兰 (Poland) 10 - Chain-Proxy
+  server: 217.30.10.70
+  port: 9098
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aLpQtfEZe445QyHk
+- name: 🇵🇱 波兰 (Poland) 11 - Chain-Proxy
   server: 217.30.10.44
   port: 9095
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 08 - Chain-Proxy
-  server: 217.30.10.44
-  port: 9052
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 09 - Chain-Proxy
+- name: 🇵🇱 波兰 (Poland) 12 - Chain-Proxy
   server: 217.30.10.70
-  port: 9088
+  port: 9040
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: f8npKgNzdkss2ytn
-- name: 🇵🇱 波兰 (Poland) 10 - Chain-Proxy
+  password: p9z5BVADH2YFs3MN
+- name: 🇵🇱 波兰 (Poland) 13 - Chain-Proxy
+  server: 217.30.10.70
+  port: 9020
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: BNmAXXxAHYpTRdzu
+- name: 🇵🇱 波兰 (Poland) 14 - Chain-Proxy
+  server: 217.30.10.70
+  port: 9018
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: fG2artUmHfNT2cX7
+- name: 🇵🇱 波兰 (Poland) 15 - Chain-Proxy
+  server: 217.30.10.44
+  port: 9071
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mENfxTFQpRKKh4As
+- name: 🇵🇱 波兰 (Poland) 16 - Chain-Proxy
+  server: 217.30.10.70
+  port: 9027
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: EXN3S3eQpjE7EJu8
+- name: 🇵🇱 波兰 (Poland) 17 - Chain-Proxy
+  server: 217.30.10.44
+  port: 9063
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aQqJbtwFGcCCaeL3
+- name: 🇵🇱 波兰 (Poland) 18 - Chain-Proxy
+  server: 217.30.10.70
+  port: 9015
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: ZpNDDKRu9MagNvaf
+- name: 🇵🇱 波兰 (Poland) 19 - Chain-Proxy
+  server: 217.30.10.44
+  port: 9006
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: FAdUvMJUq5vDgKEq
+- name: 🇵🇱 波兰 (Poland) 20 - Chain-Proxy
+  server: 144.31.3.89
+  port: 443
+  udp: true
+  type: vless
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  tls: true
+  servername: clearingmatch.melodramaonline.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /media/ws/
+- name: 🇵🇱 波兰 (Poland) 21 - Chain-Proxy
+  server: 54.37.131.126
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 1e55beca-3c69-4fa7-fb1f-15c1b767435f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 22 - Chain-Proxy
   server: 45.194.66.177
   port: 443
   udp: true
@@ -78,19 +174,6 @@ proxies:
   servername: 31tawwo0.virtual-network.lol
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 11 - Chain-Proxy
-  server: 144.31.4.18
-  port: 443
-  udp: true
-  type: vless
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  tls: true
-  servername: marginbirch.cleanfoodshop.org
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /media/ws/
 proxy-groups:
 - name: PROXIES
   type: select
@@ -107,6 +190,17 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 09 - Chain-Proxy
   - 🇵🇱 波兰 (Poland) 10 - Chain-Proxy
   - 🇵🇱 波兰 (Poland) 11 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 12 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 13 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 14 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 15 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 16 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 17 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 18 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 19 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 20 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 21 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 22 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -123,5 +217,16 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 09 - Chain-Proxy
   - 🇵🇱 波兰 (Poland) 10 - Chain-Proxy
   - 🇵🇱 波兰 (Poland) 11 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 12 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 13 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 14 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 15 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 16 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 17 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 18 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 19 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 20 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 21 - Chain-Proxy
+  - 🇵🇱 波兰 (Poland) 22 - Chain-Proxy
 rules:
 - MATCH,PROXIES
