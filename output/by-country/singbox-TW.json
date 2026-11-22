@@ -11,13 +11,44 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2",
+        "server_name": "https://t.me/oneclickvpnkeys",
         "insecure": true
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy",
+      "server": "afzuv.xiaoyan.io",
+      "server_port": 16616,
+      "uuid": "904f0569-8695-466f-97cf-0de2face1b46",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy",
+      "server": "161.114.15.215",
+      "server_port": 30502,
+      "password": "5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy",
       "server": "vpn-tw-002.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -29,7 +60,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - Chain-Proxy",
       "server": "162.19.192.89",
       "server_port": 16616,
       "uuid": "904f0569-8695-466f-97cf-0de2face1b46",
@@ -49,7 +80,9 @@
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - Chain-Proxy",
         "🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy"
+        "🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 05 - Chain-Proxy"
       ]
     },
     {
@@ -58,7 +91,9 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - Chain-Proxy",
         "🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy",
-        "🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy"
+        "🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 05 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

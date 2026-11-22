@@ -6,18 +6,18 @@
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - Chain-Proxy",
-      "server": "217.30.10.70",
-      "server_port": 9084,
+      "server": "217.30.10.44",
+      "server_port": 9099,
       "method": "aes-256-cfb",
-      "password": "c3NtHJ5ujV2tGDfj"
+      "password": "7heRqkPG3hg4UnRm"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 02 - Chain-Proxy",
       "server": "217.30.10.70",
-      "server_port": 9011,
+      "server_port": 9040,
       "method": "aes-256-cfb",
-      "password": "M3t2ZEQcMGRWBjRa"
+      "password": "p9z5BVADH2YFs3MN"
     },
     {
       "type": "shadowsocks",
@@ -31,21 +31,29 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 04 - Chain-Proxy",
       "server": "217.30.10.70",
-      "server_port": 9088,
+      "server_port": 9018,
       "method": "aes-256-cfb",
-      "password": "f8npKgNzdkss2ytn"
+      "password": "fG2artUmHfNT2cX7"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 05 - Chain-Proxy",
       "server": "217.30.10.44",
-      "server_port": 9042,
+      "server_port": 9062,
       "method": "aes-256-cfb",
-      "password": "S7KwUu7yBy58S3Ga"
+      "password": "tkhHVxxfM2QErBWe"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 06 - Chain-Proxy",
+      "server": "217.30.10.70",
+      "server_port": 9084,
+      "method": "aes-256-cfb",
+      "password": "c3NtHJ5ujV2tGDfj"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 07 - Chain-Proxy",
       "server": "217.30.10.44",
       "server_port": 9076,
       "method": "aes-256-cfb",
@@ -53,27 +61,19 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 07 - Chain-Proxy",
-      "server": "217.30.10.44",
-      "server_port": 9099,
-      "method": "aes-256-cfb",
-      "password": "7heRqkPG3hg4UnRm"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 08 - Chain-Proxy",
-      "server": "217.30.10.70",
-      "server_port": 9044,
+      "server": "217.30.10.44",
+      "server_port": 9071,
       "method": "aes-256-cfb",
-      "password": "KBGjZYcy4SyRShmA"
+      "password": "mENfxTFQpRKKh4As"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 09 - Chain-Proxy",
-      "server": "217.30.10.70",
-      "server_port": 9059,
+      "server": "217.30.10.44",
+      "server_port": 9095,
       "method": "aes-256-cfb",
-      "password": "9XwYyZsK8SNzQDtY"
+      "password": "N7j3pdTYkKmsy8CR"
     },
     {
       "type": "shadowsocks",
@@ -86,22 +86,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 11 - Chain-Proxy",
-      "server": "217.30.10.44",
-      "server_port": 9095,
-      "method": "aes-256-cfb",
-      "password": "N7j3pdTYkKmsy8CR"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 12 - Chain-Proxy",
-      "server": "217.30.10.70",
-      "server_port": 9040,
-      "method": "aes-256-cfb",
-      "password": "p9z5BVADH2YFs3MN"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 13 - Chain-Proxy",
       "server": "217.30.10.70",
       "server_port": 9020,
       "method": "aes-256-cfb",
@@ -109,39 +93,23 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 12 - Chain-Proxy",
+      "server": "217.30.10.44",
+      "server_port": 9006,
+      "method": "aes-256-cfb",
+      "password": "FAdUvMJUq5vDgKEq"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 13 - Chain-Proxy",
+      "server": "217.30.10.70",
+      "server_port": 9088,
+      "method": "aes-256-cfb",
+      "password": "f8npKgNzdkss2ytn"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 14 - Chain-Proxy",
-      "server": "217.30.10.70",
-      "server_port": 9018,
-      "method": "aes-256-cfb",
-      "password": "fG2artUmHfNT2cX7"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 15 - Chain-Proxy",
-      "server": "217.30.10.44",
-      "server_port": 9071,
-      "method": "aes-256-cfb",
-      "password": "mENfxTFQpRKKh4As"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 16 - Chain-Proxy",
-      "server": "217.30.10.70",
-      "server_port": 9027,
-      "method": "aes-256-cfb",
-      "password": "EXN3S3eQpjE7EJu8"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 17 - Chain-Proxy",
-      "server": "217.30.10.44",
-      "server_port": 9063,
-      "method": "aes-256-cfb",
-      "password": "aQqJbtwFGcCCaeL3"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 18 - Chain-Proxy",
       "server": "217.30.10.70",
       "server_port": 9015,
       "method": "aes-256-cfb",
@@ -149,30 +117,59 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 15 - Chain-Proxy",
+      "server": "217.30.10.70",
+      "server_port": 9059,
+      "method": "aes-256-cfb",
+      "password": "9XwYyZsK8SNzQDtY"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 16 - Chain-Proxy",
+      "server": "217.30.10.70",
+      "server_port": 9033,
+      "method": "aes-256-cfb",
+      "password": "UTJA57ypk2XKQpnm"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 17 - Chain-Proxy",
+      "server": "217.30.10.70",
+      "server_port": 9057,
+      "method": "aes-256-cfb",
+      "password": "wjTugX3ZtHMB9c3Z"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 18 - Chain-Proxy",
+      "server": "217.30.10.44",
+      "server_port": 9042,
+      "method": "aes-256-cfb",
+      "password": "S7KwUu7yBy58S3Ga"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 19 - Chain-Proxy",
       "server": "217.30.10.44",
-      "server_port": 9006,
+      "server_port": 9063,
       "method": "aes-256-cfb",
-      "password": "FAdUvMJUq5vDgKEq"
+      "password": "aQqJbtwFGcCCaeL3"
     },
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 20 - Chain-Proxy",
-      "server": "144.31.3.89",
+      "server": "45.194.66.177",
       "server_port": 443,
-      "uuid": "58e22afd-bf74-4736-984d-63a8ca03d7f0",
+      "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "clearingmatch.melodramaonline.net",
+        "server_name": "31tawwo0.virtual-network.lol",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/media/ws/"
       }
     },
     {
@@ -187,23 +184,6 @@
         "path": "/",
         "headers": {
           "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 22 - Chain-Proxy",
-      "server": "45.194.66.177",
-      "server_port": 443,
-      "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "31tawwo0.virtual-network.lol",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
         }
       }
     },
@@ -232,8 +212,7 @@
         "🇵🇱 波兰 (Poland) 18 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 19 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 20 - Chain-Proxy",
-        "🇵🇱 波兰 (Poland) 21 - Chain-Proxy",
-        "🇵🇱 波兰 (Poland) 22 - Chain-Proxy"
+        "🇵🇱 波兰 (Poland) 21 - Chain-Proxy"
       ]
     },
     {
@@ -260,8 +239,7 @@
         "🇵🇱 波兰 (Poland) 18 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 19 - Chain-Proxy",
         "🇵🇱 波兰 (Poland) 20 - Chain-Proxy",
-        "🇵🇱 波兰 (Poland) 21 - Chain-Proxy",
-        "🇵🇱 波兰 (Poland) 22 - Chain-Proxy"
+        "🇵🇱 波兰 (Poland) 21 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
