@@ -4,14 +4,13 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - Chain-Proxy
-  server: dog-hk.kunlun01dns.com
-  port: 21041
+- name: 🇩🇪 德国 (Germany) 01 (移动家宽) - Chain-Proxy
+  server: 8.209.73.203
+  port: 443
   udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
 - name: 🇩🇪 德国 (Germany) 02 (移动家宽) - Chain-Proxy
   server: 47.254.175.2
   port: 443
@@ -26,30 +25,33 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇩🇪 德国 (Germany) 04 (移动家宽) - Chain-Proxy
-  server: 47.254.167.157
+- name: 🇬🇧 英国 (United Kingdom) 04 (家宽) - Chain-Proxy
+  server: dg3yg.mateflora.com
   port: 443
   udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  type: hysteria2
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: dg3yg.mateflora.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 8utjvetgzbiuwfa7
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - Chain-Proxy
+  - 🇩🇪 德国 (Germany) 01 (移动家宽) - Chain-Proxy
   - 🇩🇪 德国 (Germany) 02 (移动家宽) - Chain-Proxy
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - Chain-Proxy
-  - 🇩🇪 德国 (Germany) 04 (移动家宽) - Chain-Proxy
+  - 🇬🇧 英国 (United Kingdom) 04 (家宽) - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - Chain-Proxy
+  - 🇩🇪 德国 (Germany) 01 (移动家宽) - Chain-Proxy
   - 🇩🇪 德国 (Germany) 02 (移动家宽) - Chain-Proxy
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - Chain-Proxy
-  - 🇩🇪 德国 (Germany) 04 (移动家宽) - Chain-Proxy
+  - 🇬🇧 英国 (United Kingdom) 04 (家宽) - Chain-Proxy
 rules:
 - MATCH,PROXIES

@@ -5,55 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - Chain-Proxy
-  server: 103.115.109.49
+  server: 160.187.100.109
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
+  sni: 'off'
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy
-  server: afzuv.xiaoyan.io
-  port: 16616
-  udp: true
-  type: vmess
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy
-  server: 161.114.15.215
-  port: 30502
-  udp: true
-  type: trojan
-  password: 5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy
-  server: vpn-tw-002.fastervpn.world
+  server: 34.80.15.95
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-tw-002.fastervpn.world\u0026insecure=1\u0026allowinsecure=1
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - Chain-Proxy
-  server: 162.19.192.89
-  port: 16616
-  udp: true
-  type: vmess
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+  type: trojan
+  password: '123456'
+  sni: tw.ctt25.uk
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,9 +27,6 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 05 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,8 +34,5 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 04 - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 05 - Chain-Proxy
 rules:
 - MATCH,PROXIES

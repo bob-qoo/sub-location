@@ -22,6 +22,27 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy",
+      "server": "212.192.3.237",
+      "server_port": 9543,
+      "uuid": "920b3cd9-4f82-4669-bbd2-d4a28b9052c6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "storage.yandexcloud.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
+          "short_id": "123abcdf"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy",
       "server": "212.192.3.113",
       "server_port": 9543,
       "uuid": "920b3cd9-4f82-4669-bbd2-d4a28b9052c6",
@@ -41,27 +62,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy",
-      "server": "nl-edge.airlinesvpn.com",
-      "server_port": 8459,
-      "uuid": "11f48e58-bdd8-4251-ba00-ad05d05d9dcf",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl-edge.airlinesvpn.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mTSn98b4yZG3im3ITn-kNLPbT8ljc9ILvAqiT4jyKXk",
-          "short_id": "0f0e381ec0c4690d"
-        }
-      }
-    },
-    {
       "type": "trojan",
       "tag": "🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy",
       "server": "dg4.ianai.it.com",
@@ -76,11 +76,15 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy",
-      "server": "uae.unixzone.us",
+      "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
       }
     },
     {
