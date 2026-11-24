@@ -22,7 +22,7 @@ proxies:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
     short-id: a7c92e4b10d6f835
   servername: ns-api-gw.galioncc.com
-  client-fingerprint: ios
+  client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 03 - Chain-Proxy
   server: 138.199.55.230
   port: 1270
@@ -35,17 +35,27 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 04 - Chain-Proxy
-  server: 5.178.109.174
-  port: 14430
+  server: 62.93.166.184
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy
+  server: 201.8.87.187
+  port: 443
   udp: true
   type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 05 - Chain-Proxy
+  uuid: d7121b33-e335-4921-bb00-4c0b157e7fc1
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 2gcnbpjzq4go.cloud-kmt.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 06 - Chain-Proxy
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -58,7 +68,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 06 - Chain-Proxy
+- name: 🇸🇪 瑞典 (Sweden) 07 - Chain-Proxy
   server: sajed.kdns.fr
   port: 443
   udp: true
@@ -69,29 +79,17 @@ proxies:
     path: /@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe
     headers:
       Host: sajed.kdns.fr
-- name: 🇸🇪 瑞典 (Sweden) 07 - Chain-Proxy
-  server: leviko-se4660.shopingggg.ir
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 08 - Chain-Proxy
-  server: pl.galacticworld.online
-  port: 443
+  server: 5.178.109.174
+  port: 14430
   udp: true
   type: vless
-  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
-  servername: pl.galacticworld.online
-  client-fingerprint: qq
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select
