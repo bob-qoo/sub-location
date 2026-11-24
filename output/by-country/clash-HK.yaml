@@ -5,86 +5,80 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - Chain-Proxy
-  server: 45.192.193.54
-  port: 35602
+  server: 213.176.92.148
+  port: 40647
   udp: true
-  type: tuic
-  uuid: 8614bde7-34cf-4413-8360-e96f1b960528
-  password: 8614bde7-34cf-4413-8360-e96f1b960528
-  sni: www.bing.com
-  skip-cert-verify: true
-  congestion-controller: bbr
-  udp-relay-mode: native
-  alpn:
-  - h3
+  type: ss
+  cipher: aes-256-gcm
+  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - Chain-Proxy
-  server: 47.242.93.89
-  port: 12012
-  udp: true
-  type: trojan
-  password: '12012'
-  sni: ali-hk.b-gfw.cfd
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - Chain-Proxy
-  server: 64.118.130.152
+  server: 8.210.92.38
   port: 443
   udp: true
-  type: trojan
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  sni: nb1hk.hikigo.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy
-  server: 8.217.1.203
-  port: 8443
-  udp: true
   type: vless
-  uuid: 8b17beac-b143-447d-aa68-14cbb121a602
+  uuid: 4fc9dc3d-0d57-49e7-9bc0-e323165241bf
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 74P0QFvaK6B13rHsxR_t0lqRlg4YLuORD4VaHr5Jd38
-    short-id: 0bf55f64
-  servername: www.apple.com
+    public-key: vhu6gifBQ8-hRzW1gqKFkEXDlQbf6Ex8kKj1FcxhmzA
+    short-id: d78318845237d9a9
+  servername: www.ebay.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2üá®üá
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - Chain-Proxy
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
-  server: 116.213.43.43
-  port: 11107
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy
+  server: vpn-hk-004.fastervpn.world
+  port: 443
   udp: true
-  type: vless
-  uuid: 08a37d1f-7bf1-4b5d-a2ec-5ced6a633d7f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 6GRzkPbs12fKBdBBFzs5dmtmbSHCXMngUCBKLrXYm3U
-    short-id: e2ccd8eedcbee2ce
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-hk-004.fastervpn.world
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
+  sni: https://t.me/clashv8
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy
+  server: 152.32.254.68
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%91%d1%80%d2%b9%d2%af%d1%96
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy
+  server: 62.60.232.226
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 3d409814-b663-411e-8f54-a112ecba7ddd
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nova-house.justext.space
+  skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy
-  server: 2.26.204.46
+  server: leviko-hk4530.shopingggg.ir
   port: 31001
   udp: true
   type: vless
@@ -97,86 +91,48 @@ proxies:
   servername: mensura.cdn-apple.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 10 - Chain-Proxy
-  server: 23.141.172.229
-  port: 50541
+  server: 27.124.5.86
+  port: 8388
   udp: true
-  type: hysteria2
-  password: ePPsH1bMFD
-  sni: is1-ssl.mzstatic.com
-  skip-cert-verify: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: j4DddfVh3zON1s3Wfbmdn2WWhLCWAaOJyKqdeKvxh4A=
 - name: 🇭🇰 中国香港 (Hong Kong) 11 - Chain-Proxy
-  server: 151.158.0.83
+  server: 45.192.193.54
+  port: 35600
+  udp: true
+  type: vless
+  uuid: 8614bde7-34cf-4413-8360-e96f1b960528
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fJwbUNPAxu-CcoWnzWrvtDkX7QMDvJwFGWzJ3lDcFC4
+  servername: www.iij.ad.jp
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - Chain-Proxy
+  server: 45.192.193.54
+  port: 35602
+  udp: true
+  type: tuic
+  uuid: 8614bde7-34cf-4413-8360-e96f1b960528
+  password: 8614bde7-34cf-4413-8360-e96f1b960528
+  sni: www.bing.com
+  skip-cert-verify: true
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - Chain-Proxy
+  server: 8.217.1.203
   port: 8443
   udp: true
   type: vless
-  uuid: b69cf773-da16-486e-afce-a45b94f998b3
-  tls: true
-  servername: senflarelink-node-6b9.pages.dev
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /flow=
-    headers:
-      Host: senflarelink-node-6b9.pages.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - Chain-Proxy
-  server: 62.60.232.226
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 3d409814-b663-411e-8f54-a112ecba7ddd
-  flow: xtls-rprx-vision
-  tls: true
-  servername: nova-house.justext.space
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - Chain-Proxy
-  server: 152.32.254.68
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - Chain-Proxy
-  server: 116.213.43.43
-  port: 11106
-  udp: true
-  type: vless
-  uuid: 2e7bd251-52be-4ffa-b79e-108e1fe07185
+  uuid: 8b17beac-b143-447d-aa68-14cbb121a602
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: -13uTSuqk44pCU0x6yvldaskzyRIlO2ihmDvM0FsBns
-    short-id: da12e31124830d42
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - Chain-Proxy
-  server: 185.71.216.95
-  port: 2091
-  udp: true
-  type: vless
-  uuid: c4d6567e-c46e-410f-95ab-ac3a61e030f3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
-    short-id: 08a4b1f473932632
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 16 - Chain-Proxy
-  server: 185.71.216.177
-  port: 2091
-  udp: true
-  type: vless
-  uuid: c4d6567e-c46e-410f-95ab-ac3a61e030f3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
-    short-id: 08a4b1f473932632
+    public-key: 74P0QFvaK6B13rHsxR_t0lqRlg4YLuORD4VaHr5Jd38
+    short-id: 0bf55f64
   servername: www.apple.com
   client-fingerprint: chrome
 proxy-groups:
@@ -197,9 +153,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 11 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 12 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 13 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 14 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 15 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 16 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -218,8 +171,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 11 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 12 - Chain-Proxy
   - 🇭🇰 中国香港 (Hong Kong) 13 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 14 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 15 - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 16 - Chain-Proxy
 rules:
 - MATCH,PROXIES

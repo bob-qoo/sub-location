@@ -5,27 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - Chain-Proxy
-  server: 91.108.247.47
-  port: 15443
-  udp: true
-  type: hysteria2
-  password: lvu_fb79ddb9bbda86f657cf34ee5dbe40bd_cf1aff9abf2b3945664fd63a07229839:np2.1.Q6bg95HDIqzwSQwdlbeS4-tGJpT8yFUcNQd7KGxqbXU
-  sni: n9.neproxy.net
-  skip-cert-verify: false
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - Chain-Proxy
-  server: 91.219.23.76
-  port: 443
+  server: 3h-kazakhstan1.09vpn.com
+  port: 8443
   udp: true
   type: vless
-  uuid: 8b1b59c8-8802-0002-a636-ffe786275594
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
   tls: true
-  servername: cataloguebroker.comparecarprices.org
+  servername: 3h-kazakhstan1.09vpn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /media/ws/
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - Chain-Proxy
+    path: /vless/
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - Chain-Proxy
   server: 109.248.170.119
   port: 13447
   udp: true
@@ -37,8 +29,8 @@ proxies:
     short-id: '83'
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - Chain-Proxy
-  server: 38.107.234.57
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - Chain-Proxy
+  server: 3h-kazakhstan1.09vpn.com
   port: 80
   udp: true
   type: vmess
@@ -48,8 +40,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vmess/
-    headers:
-      Host: 3h-kazakhstan1.09vpn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,7 +48,6 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - Chain-Proxy
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - Chain-Proxy
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - Chain-Proxy
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,6 +56,5 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - Chain-Proxy
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - Chain-Proxy
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - Chain-Proxy
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - Chain-Proxy
 rules:
 - MATCH,PROXIES

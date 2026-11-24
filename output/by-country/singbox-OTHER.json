@@ -4,62 +4,55 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - Chain-Proxy",
-      "server": "172.67.167.78",
-      "server_port": 8443,
-      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
-      "security": "auto",
+      "server": "172.67.139.189",
+      "server_port": 443,
+      "uuid": "364D2D52-E61E-4E52-80EC-2BC6BDF15349",
       "tls": {
         "enabled": true,
-        "server_name": "v2ray1.dozapp.xyz",
-        "insecure": false
+        "server_name": "fr-free.fastestrelay.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/lMnsZUN4/",
+        "path": "/700gvl",
         "headers": {
-          "Host": "v2ray1.dozapp.xyz"
+          "Host": "fr-free.fastestrelay.com"
         }
       }
     },
     {
       "type": "vmess",
       "tag": "🌐 其他地区 (Other) 02 - Chain-Proxy",
-      "server": "172.67.167.78",
-      "server_port": 8443,
-      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "server": "cf.0sm.com",
+      "server_port": 80,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
       "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "v2ray1.dozapp.xyz",
-        "insecure": false
-      },
       "transport": {
         "type": "ws",
-        "path": "/lMnsZUN4/",
+        "path": "/ws",
         "headers": {
-          "Host": "v2ray1.dozapp.xyz"
+          "Host": "vmess.lbw666.dpdns.org"
         }
       }
     },
     {
       "type": "vmess",
       "tag": "🌐 其他地区 (Other) 03 - Chain-Proxy",
-      "server": "172.67.167.78",
-      "server_port": 8443,
-      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "server": "cf.0sm.com",
+      "server_port": 80,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
       "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "v2ray1.dozapp.xyz",
-        "insecure": false
-      },
       "transport": {
         "type": "ws",
-        "path": "/lMnsZUN4/",
+        "path": "/ws",
         "headers": {
-          "Host": "v2ray1.dozapp.xyz"
+          "Host": "vmess.lbw666.dpdns.org"
         }
       }
     },

@@ -14,7 +14,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇭 瑞士 (Switzerland) 02 - Chain-Proxy",
-      "server": "23.166.88.127",
+      "server": "23.166.88.189",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -22,7 +22,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇭 瑞士 (Switzerland) 03 - Chain-Proxy",
-      "server": "79.127.184.104",
+      "server": "23.166.88.127",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -30,7 +30,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇭 瑞士 (Switzerland) 04 - Chain-Proxy",
-      "server": "23.166.88.189",
+      "server": "79.127.184.104",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -38,12 +38,12 @@
     {
       "type": "trojan",
       "tag": "🇨🇭 瑞士 (Switzerland) 05 - Chain-Proxy",
-      "server": "208.69.78.29",
+      "server": "208.69.78.60",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "208.69.78.29",
+        "server_name": "cdn.yourultimateprofessionalcareerhub.com",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -54,41 +54,26 @@
     {
       "type": "trojan",
       "tag": "🇨🇭 瑞士 (Switzerland) 06 - Chain-Proxy",
-      "server": "208.69.78.60",
+      "server": "208.69.78.19",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.yourultimateprofessionalcareerhub.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "www.yourultimateprofessionalcareerhub.com",
+        "insecure": false
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇨🇭 瑞士 (Switzerland) 07 - Chain-Proxy",
-      "server": "193.233.89.130",
-      "server_port": 8443,
-      "uuid": "7bd7c4aa-52c4-482c-bdcc-e7380fa6b5fe",
+      "server": "186.190.215.4",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "g.play2go.gay",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xx8KWdR4HbVmvqPb0wRPAstBHGN2Uk99m7AF794_E3c",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
+        "server_name": "xmfhlpy.com",
+        "insecure": false
       }
     },
     {
@@ -100,7 +85,7 @@
       "tls": {
         "enabled": true,
         "server_name": "resources.yourultimateprofessionalcareerhub.com",
-        "insecure": true,
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -108,39 +93,31 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇨🇭 瑞士 (Switzerland) 09 - Chain-Proxy",
-      "server": "135.136.183.53",
+      "server": "208.69.78.222",
       "server_port": 443,
-      "uuid": "0259e5aa-c188-4334-b204-32cd5ea859f6",
-      "flow": "xtls-rprx-vision",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "dubai-cdn-keno.keno.su",
+        "server_name": "yourultimateprofessionalcareerhub.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "56r4YuaW-BUEapWGlOvv-QX75OgLNP8KuE_Z1bBxO1g",
-          "short_id": "47912f9d36a0a52b"
+          "fingerprint": "chrome"
         }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 10 - Chain-Proxy",
-      "server": "212.102.227.131",
-      "server_port": 10443,
-      "password": "lvu_fb79ddb9bbda86f657cf34ee5dbe40bd_cf1aff9abf2b3945664fd63a07229839:np2.1.Q6bg95HDIqzwSQwdlbeS4-tGJpT8yFUcNQd7KGxqbXU",
+      "server": "140.238.213.114",
+      "server_port": 50160,
+      "password": "84a506ca5aca505696a454d828420b3f",
       "tls": {
         "enabled": true,
-        "server_name": "n32.neproxy.net",
-        "insecure": false,
-        "alpn": [
-          "h3"
-        ]
+        "server_name": "off",
+        "insecure": true
       }
     },
     {
@@ -165,18 +142,6 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇨🇭 瑞士 (Switzerland) 12 - Chain-Proxy",
-      "server": "208.69.78.33",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "courses.yourultimateprofessionalcareerhub.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -191,8 +156,7 @@
         "🇨🇭 瑞士 (Switzerland) 08 - Chain-Proxy",
         "🇨🇭 瑞士 (Switzerland) 09 - Chain-Proxy",
         "🇨🇭 瑞士 (Switzerland) 10 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 11 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 12 - Chain-Proxy"
+        "🇨🇭 瑞士 (Switzerland) 11 - Chain-Proxy"
       ]
     },
     {
@@ -209,8 +173,7 @@
         "🇨🇭 瑞士 (Switzerland) 08 - Chain-Proxy",
         "🇨🇭 瑞士 (Switzerland) 09 - Chain-Proxy",
         "🇨🇭 瑞士 (Switzerland) 10 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 11 - Chain-Proxy",
-        "🇨🇭 瑞士 (Switzerland) 12 - Chain-Proxy"
+        "🇨🇭 瑞士 (Switzerland) 11 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
