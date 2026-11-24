@@ -40,7 +40,7 @@
     {
       "type": "vmess",
       "tag": "🇧🇷 巴西 (Brazil) 03 - Chain-Proxy",
-      "server": "103.14.27.207",
+      "server": "103.88.232.55",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
       "security": "auto",
@@ -53,7 +53,7 @@
     {
       "type": "vmess",
       "tag": "🇧🇷 巴西 (Brazil) 04 - Chain-Proxy",
-      "server": "103.88.232.55",
+      "server": "103.14.27.207",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
       "security": "auto",

@@ -19,47 +19,17 @@ proxies:
     path: /700gvl
     headers:
       Host: fr-free.fastestrelay.com
-- name: 🌐 其他地区 (Other) 02 - Chain-Proxy
-  server: cf.0sm.com
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: 🌐 其他地区 (Other) 03 - Chain-Proxy
-  server: cf.0sm.com
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - Chain-Proxy
-  - 🌐 其他地区 (Other) 02 - Chain-Proxy
-  - 🌐 其他地区 (Other) 03 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - Chain-Proxy
-  - 🌐 其他地区 (Other) 02 - Chain-Proxy
-  - 🌐 其他地区 (Other) 03 - Chain-Proxy
 rules:
 - MATCH,PROXIES

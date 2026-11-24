@@ -4,119 +4,68 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - Chain-Proxy",
-      "server": "213.176.92.148",
-      "server_port": 40647,
-      "method": "aes-256-gcm",
-      "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
+      "server": "202.146.222.29",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/wangcai2рҹүёрҹүі",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 - Chain-Proxy",
-      "server": "8.210.92.38",
-      "server_port": 443,
-      "uuid": "4fc9dc3d-0d57-49e7-9bc0-e323165241bf",
-      "flow": "xtls-rprx-vision",
+      "server": "202.144.192.76",
+      "server_port": 13779,
+      "uuid": "928e6cce-8ced-4243-9a48-a6642edd09b0",
       "tls": {
         "enabled": true,
-        "server_name": "www.ebay.com",
+        "server_name": "tesla.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "vhu6gifBQ8-hRzW1gqKFkEXDlQbf6Ex8kKj1FcxhmzA",
-          "short_id": "d78318845237d9a9"
+          "public_key": "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg",
+          "short_id": "af1bdd293097b664"
         }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 03 - Chain-Proxy",
-      "server": "202.146.222.174",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/wangcai2🇨🇳",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy",
       "server": "vpn-hk-004.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
         "server_name": "vpn-hk-004.fastervpn.world",
-        "insecure": true
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy",
       "server": "202.146.222.89",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/clashv8",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy",
-      "server": "152.32.254.68",
-      "server_port": 5010,
-      "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
-      "tls": {
-        "enabled": true,
-        "server_name": "nas.aizhzo.com",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy",
-      "server": "202.146.222.29",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%91%d1%80%d2%b9%d2%af%d1%96",
+        "server_name": "https://t.me/clashv8🇨🇳",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy",
-      "server": "62.60.232.226",
-      "server_port": 2096,
-      "uuid": "3d409814-b663-411e-8f54-a112ecba7ddd",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nova-house.justext.space",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy",
-      "server": "leviko-hk4530.shopingggg.ir",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy",
+      "server": "2.26.204.46",
       "server_port": 31001,
       "uuid": "12a4f736-2238-49ee-831f-5516f15cc951",
       "flow": "xtls-rprx-vision",
@@ -135,70 +84,19 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - Chain-Proxy",
-      "server": "27.124.5.86",
-      "server_port": 8388,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "j4DddfVh3zON1s3Wfbmdn2WWhLCWAaOJyKqdeKvxh4A="
-    },
-    {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 11 - Chain-Proxy",
-      "server": "45.192.193.54",
-      "server_port": 35600,
-      "uuid": "8614bde7-34cf-4413-8360-e96f1b960528",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy",
+      "server": "62.60.232.226",
+      "server_port": 2096,
+      "uuid": "3d409814-b663-411e-8f54-a112ecba7ddd",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.iij.ad.jp",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fJwbUNPAxu-CcoWnzWrvtDkX7QMDvJwFGWzJ3lDcFC4",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "tuic",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 12 - Chain-Proxy",
-      "server": "45.192.193.54",
-      "server_port": 35602,
-      "uuid": "8614bde7-34cf-4413-8360-e96f1b960528",
-      "password": "8614bde7-34cf-4413-8360-e96f1b960528",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 13 - Chain-Proxy",
-      "server": "8.217.1.203",
-      "server_port": 8443,
-      "uuid": "8b17beac-b143-447d-aa68-14cbb121a602",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "nova-house.justext.space",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "74P0QFvaK6B13rHsxR_t0lqRlg4YLuORD4VaHr5Jd38",
-          "short_id": "0bf55f64"
         }
       }
     },
@@ -212,14 +110,7 @@
         "🇭🇰 中国香港 (Hong Kong) 03 - Chain-Proxy",
         "🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy",
         "🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 10 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 11 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 12 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 13 - Chain-Proxy"
+        "🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy"
       ]
     },
     {
@@ -231,14 +122,7 @@
         "🇭🇰 中国香港 (Hong Kong) 03 - Chain-Proxy",
         "🇭🇰 中国香港 (Hong Kong) 04 - Chain-Proxy",
         "🇭🇰 中国香港 (Hong Kong) 05 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 07 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 08 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 09 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 10 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 11 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 12 - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 13 - Chain-Proxy"
+        "🇭🇰 中国香港 (Hong Kong) 06 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -27,52 +27,18 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 02 - Chain-Proxy",
-      "server": "cf.0sm.com",
-      "server_port": 80,
-      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "vmess.lbw666.dpdns.org"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 03 - Chain-Proxy",
-      "server": "cf.0sm.com",
-      "server_port": 80,
-      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "vmess.lbw666.dpdns.org"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - Chain-Proxy",
-        "🌐 其他地区 (Other) 02 - Chain-Proxy",
-        "🌐 其他地区 (Other) 03 - Chain-Proxy"
+        "🌐 其他地区 (Other) 01 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - Chain-Proxy",
-        "🌐 其他地区 (Other) 02 - Chain-Proxy",
-        "🌐 其他地区 (Other) 03 - Chain-Proxy"
+        "🌐 其他地区 (Other) 01 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
