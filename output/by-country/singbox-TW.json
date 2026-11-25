@@ -11,23 +11,47 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "103.115.109.49",
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2",
         "insecure": true
       }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy",
+      "server": "160.187.100.109",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "127.0.0.1",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy",
+      "server": "dog-tw.kunlun01dns.com",
+      "server_port": 21035,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 - Chain-Proxy"
+        "🇹🇼 中国台湾 (Taiwan) 01 - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 - Chain-Proxy"
+        "🇹🇼 中国台湾 (Taiwan) 01 - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

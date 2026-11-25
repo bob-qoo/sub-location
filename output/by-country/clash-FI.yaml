@@ -18,6 +18,14 @@ proxies:
   servername: apple.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02 - Chain-Proxy
+  server: 94.183.164.119
+  port: 24433
+  udp: true
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: lakes.blog-forme.ru
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 03 - Chain-Proxy
   server: 31.76.77.231
   port: 443
   udp: true
@@ -29,30 +37,15 @@ proxies:
     public-key: PMtmgfkxpREXi51S_EUUi3KbYauQLjGD6c_llKRk8H4
     short-id: cc85fc7134024405
   servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - Chain-Proxy
-  server: 94.183.164.119
-  port: 24433
-  udp: true
-  type: hysteria2
-  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: lakes.blog-forme.ru
-  skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 04 - Chain-Proxy
-  server: ip4.ipspanel.ir
-  port: 2053
+  server: 65.108.240.210
+  port: 39018
   udp: true
-  type: vless
-  uuid: 37df2d23-a4d0-40ca-9dd0-c791d1ff94be
-  tls: true
-  servername: T.panel001.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@TurboVpn10
-    headers:
-      Host: T.panel001.ir
+  type: vmess
+  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select

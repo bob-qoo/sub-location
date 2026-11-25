@@ -5,35 +5,40 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - Chain-Proxy
-  server: 172.64.155.209
+  server: 172.67.139.189
   port: 443
   udp: true
   type: vless
-  uuid: 55b3fd10-3658-40a2-8951-ec90932d1d30
+  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
   tls: true
-  servername: sinavm2.soft10.ir
+  servername: fr-free.fastestrelay.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: safari
   network: ws
   ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    path: /700gvl
     headers:
-      Host: sinavm2.soft10.ir
+      Host: fr-free.fastestrelay.com
 - name: 🌐 其他地区 (Other) 02 - Chain-Proxy
-  server: 172.64.155.209
-  port: 443
+  server: eu02.123450908.xyz
+  port: 2052
   udp: true
   type: vless
-  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
-  tls: true
-  servername: sinavm3.soft10.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
   network: ws
   ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    path: /rain1226
+- name: 🌐 其他地区 (Other) 03 - Chain-Proxy
+  server: 104.21.63.142
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  network: ws
+  ws-opts:
+    path: /rain1226
     headers:
-      Host: sinavm3.soft10.ir
+      Host: eu02.123450908.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +46,7 @@ proxy-groups:
   - AUTO
   - 🌐 其他地区 (Other) 01 - Chain-Proxy
   - 🌐 其他地区 (Other) 02 - Chain-Proxy
+  - 🌐 其他地区 (Other) 03 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,5 +54,6 @@ proxy-groups:
   proxies:
   - 🌐 其他地区 (Other) 01 - Chain-Proxy
   - 🌐 其他地区 (Other) 02 - Chain-Proxy
+  - 🌐 其他地区 (Other) 03 - Chain-Proxy
 rules:
 - MATCH,PROXIES

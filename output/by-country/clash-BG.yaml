@@ -6,66 +6,73 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - Chain-Proxy
   server: 213.183.63.60
-  port: 9054
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy
-  server: 213.183.63.60
-  port: 9064
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy
-  server: 213.183.63.60
   port: 9049
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: PRBf4BS2HvJqtWxY
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy
   server: 213.183.63.60
-  port: 9028
+  port: 9066
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9eeJ2fwnZA5Fxgz8
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - Chain-Proxy
-  server: 213.183.63.60
-  port: 9029
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: dU3DSNS8wYPXzEKw
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - Chain-Proxy
+  password: 2KUaE2a8NWTvuCZ3
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy
   server: 213.183.63.60
   port: 9098
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: aLpQtfEZe445QyHk
-- name: 🇧🇬 保加利亚 (Bulgaria) 07 - Chain-Proxy
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy
+  server: 213.183.63.60
+  port: 9085
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9ej82EKe2gq7gLAM
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - Chain-Proxy
+  server: 213.183.63.60
+  port: 9028
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9eeJ2fwnZA5Fxgz8
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - Chain-Proxy
   server: 213.183.63.60
   port: 9030
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: GeregetR8cvQHzYr
-- name: 🇧🇬 保加利亚 (Bulgaria) 08 - Chain-Proxy
-  server: bg-meteo-grid.keno.su
+- name: 🇧🇬 保加利亚 (Bulgaria) 07 - Chain-Proxy
+  server: 195.123.226.21
   port: 443
   udp: true
   type: vless
-  uuid: a9d963bc-81a1-42b5-b62d-104af19a0f5c
+  uuid: 6589c320-db68-43cd-a273-b46299bab355
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ZWPgFvU3iu9HRQ6Zd8WEdN0Zk8yHZQCEyE15LjOxGRU
-    short-id: 788a109a349ed9cf
-  servername: bg-meteo-grid.keno.su
-  client-fingerprint: firefox
+    public-key: rabtI-ymNXBUvYYRwAw8DiR-1pdP7U0WPIaCBHEkgzo
+    short-id: 77bb0d07bddbc832
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - Chain-Proxy
+  server: delicate-tree-9749.vpnetwork3567.workers.dev
+  port: 443
+  udp: true
+  type: vless
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  tls: true
+  servername: delicate-tree-9749.vpnetwork3567.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: delicate-tree-9749.vpnetwork3567.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
