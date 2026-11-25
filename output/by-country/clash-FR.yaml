@@ -12,163 +12,76 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇫🇷 法国 (France) 02 - Chain-Proxy
-  server: 167.17.64.27
+  server: 198.244.202.215
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇫🇷 法国 (France) 03 - Chain-Proxy
-  server: 167.17.64.175
+  server: 167.17.64.27
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇫🇷 法国 (France) 04 - Chain-Proxy
-  server: 79.137.99.183
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 05 - Chain-Proxy
-  server: 23.162.152.22
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 06 - Chain-Proxy
-  server: 172.99.189.142
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 07 - Chain-Proxy
   server: 167.17.64.22
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 08 - Chain-Proxy
-  server: 57.129.83.85
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 09 - Chain-Proxy
+- name: 🇫🇷 法国 (France) 05 - Chain-Proxy
   server: 57.129.76.233
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 10 - Chain-Proxy
+- name: 🇫🇷 法国 (France) 06 - Chain-Proxy
+  server: 57.129.83.85
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 法国 (France) 07 - Chain-Proxy
+  server: 79.137.99.183
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 法国 (France) 08 - Chain-Proxy
+  server: 167.17.64.175
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 法国 (France) 09 - Chain-Proxy
   server: 38.109.228.110
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 法国 (France) 10 - Chain-Proxy
+  server: 23.162.152.22
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇫🇷 法国 (France) 11 - Chain-Proxy
-  server: 138.124.70.41
-  port: 14430
+  server: 172.99.189.142
+  port: 19999
   udp: true
-  type: vless
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  network: ws
-  ws-opts:
-    path: /vless
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇫🇷 法国 (France) 12 - Chain-Proxy
-  server: 62.210.147.2
-  port: 43115
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 13 - Chain-Proxy
-  server: 46.105.222.153
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 14 - Chain-Proxy
-  server: 79.137.99.183
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 15 - Chain-Proxy
-  server: 152.228.162.19
-  port: 80
-  udp: true
-  type: vless
-  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇫🇷 法国 (France) 16 - Chain-Proxy
-  server: 23.162.152.127
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 17 - Chain-Proxy
-  server: 62.210.91.2
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 18 - Chain-Proxy
-  server: 46.105.222.155
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 19 - Chain-Proxy
-  server: 91.134.35.72
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 20 - Chain-Proxy
   server: 46.105.222.157
   port: 1270
   udp: true
@@ -179,15 +92,56 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 21 - Chain-Proxy
+- name: 🇫🇷 法国 (France) 13 - Chain-Proxy
+  server: 62.210.124.146
+  port: 22000
+  udp: true
+  type: hysteria2
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 14 - Chain-Proxy
+  server: 91.134.35.72
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 15 - Chain-Proxy
+  server: 79.137.99.183
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 16 - Chain-Proxy
+  server: 138.124.70.41
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 138.124.70.41
+- name: 🇫🇷 法国 (France) 17 - Chain-Proxy
   server: 62.210.7.139
   port: 60111
   udp: true
   type: hysteria2
   password: github.com/Alvin9999-newpac/fanqiang
-  sni: 62.210.7.139
+  sni: google.com
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 22 - Chain-Proxy
+- name: 🇫🇷 法国 (France) 18 - Chain-Proxy
   server: 46.105.222.156
   port: 1270
   udp: true
@@ -198,68 +152,45 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 19 - Chain-Proxy
+  server: 13.36.234.11
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 13.36.234.11
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 20 - Chain-Proxy
+  server: 46.105.222.155
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 21 - Chain-Proxy
+  server: 62.210.147.2
+  port: 43115
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 22 - Chain-Proxy
+  server: 46.105.222.153
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
 - name: 🇫🇷 法国 (France) 23 - Chain-Proxy
-  server: 195.216.169.182
-  port: 9543
-  udp: true
-  type: vless
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-  servername: storage.yandexcloud.net
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 24 - Chain-Proxy
-  server: 62.210.91.10
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 25 - Chain-Proxy
-  server: 172.99.189.239
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 26 - Chain-Proxy
-  server: 195.216.168.101
-  port: 9543
-  udp: true
-  type: vless
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-  servername: storage.yandexcloud.net
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 27 - Chain-Proxy
-  server: 162.19.82.57
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 28 - Chain-Proxy
   server: 152.228.139.33
   port: 51671
   udp: true
@@ -274,29 +205,81 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc_common3
-- name: 🇫🇷 法国 (France) 29 - Chain-Proxy
-  server: 88.151.197.87
-  port: 2025
+- name: 🇫🇷 法国 (France) 24 - Chain-Proxy
+  server: 62.210.91.2
+  port: 23576
   udp: true
   type: vless
-  uuid: 1697852e-cd5c-472d-b377-0def0f301d98
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 法国 (France) 30 - Chain-Proxy
-  server: 195.216.169.229
-  port: 9543
-  udp: true
-  type: vless
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-  servername: storage.yandexcloud.net
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 25 - Chain-Proxy
+  server: 172.99.189.239
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 26 - Chain-Proxy
+  server: 162.19.82.57
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 27 - Chain-Proxy
+  server: 62.210.91.10
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
   client-fingerprint: ''
-- name: 🇫🇷 法国 (France) 31 - Chain-Proxy
+- name: 🇫🇷 法国 (France) 28 - Chain-Proxy
+  server: 152.228.139.33
+  port: 35108
+  udp: true
+  type: vless
+  uuid: 81dc0b61-f9fe-4ad6-8b4e-b8c067b73712
+  tls: true
+  reality-opts:
+    public-key: X_lOw5Zz4SJBa1cRHV4dAq5msYE-ClY5-WNcBmBWRxg
+    short-id: 52add08b86a5ccea
+  servername: www.nvidia.com
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-common3
+- name: 🇫🇷 法国 (France) 29 - Chain-Proxy
+  server: 23.162.152.127
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 30 - Chain-Proxy
   server: netherlands.vpnserverhub.com
   port: 443
   udp: true
@@ -308,14 +291,7 @@ proxies:
     public-key: y8-hfUvs9-MScp_tjMFi5LKuULGmnodHbI5Q_sTk_A0
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 32 - Chain-Proxy
-  server: 198.244.202.215
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 33 - Chain-Proxy
+- name: 🇫🇷 法国 (France) 31 - Chain-Proxy
   server: 145.239.55.210
   port: 80
   udp: true
@@ -328,16 +304,17 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 34 - Chain-Proxy
-  server: 62.210.124.146
-  port: 22000
+- name: 🇫🇷 法国 (France) 32 - Chain-Proxy
+  server: 88.151.197.87
+  port: 2025
   udp: true
-  type: hysteria2
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 35 - Chain-Proxy
-  server: suh.cryptofront.uk
+  type: vless
+  uuid: 1697852e-cd5c-472d-b377-0def0f301d98
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇫🇷 法国 (France) 33 - Chain-Proxy
+  server: 158.220.113.176
   port: 80
   udp: true
   type: vless
@@ -347,15 +324,71 @@ proxies:
     path: /
     headers:
       Host: suh.cryptofront.uk
-- name: 🇫🇷 法国 (France) 36 - Chain-Proxy
-  server: 54.36.102.152
-  port: 2083
+- name: 🇫🇷 法国 (France) 34 - Chain-Proxy
+  server: vde.b.qaz.it.com
+  port: 9543
   udp: true
   type: vless
-  uuid: 51a6ab93-e805-4b8b-89d1-d3ab85a118ce
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+  servername: storage.yandexcloud.net
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 35 - Chain-Proxy
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: 5ce84688-f535-46ad-a512-37b17becf6ea
   network: ws
   ws-opts:
-    path: /vless-kulo
+    path: /vless/
+    headers:
+      Host: akamaized.net
+- name: 🇫🇷 法国 (France) 36 - Chain-Proxy
+  server: 108.158.199.93
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3493b1bc-1c65-46e6-9cb6-9dd62b99afea
+  tls: true
+  servername: d1aedflfr97jes.cloudfront.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d1aedflfr97jes.cloudfront.net
+- name: 🇫🇷 法国 (France) 37 - Chain-Proxy
+  server: 192.144.58.203
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9df9ee1a-0671-4c6c-93c7-65598fb946f7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: W7M4MhVHx47N0lVQwP4uIGpyCIkzYsTsDOygqMK4li8
+    short-id: 60e5181f77500676
+  servername: ruparmicro2.gangplatform.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 38 - Chain-Proxy
+  server: 195.216.168.101
+  port: 9543
+  udp: true
+  type: vless
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+  servername: storage.yandexcloud.net
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -397,6 +430,8 @@ proxy-groups:
   - 🇫🇷 法国 (France) 34 - Chain-Proxy
   - 🇫🇷 法国 (France) 35 - Chain-Proxy
   - 🇫🇷 法国 (France) 36 - Chain-Proxy
+  - 🇫🇷 法国 (France) 37 - Chain-Proxy
+  - 🇫🇷 法国 (France) 38 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -438,5 +473,7 @@ proxy-groups:
   - 🇫🇷 法国 (France) 34 - Chain-Proxy
   - 🇫🇷 法国 (France) 35 - Chain-Proxy
   - 🇫🇷 法国 (France) 36 - Chain-Proxy
+  - 🇫🇷 法国 (France) 37 - Chain-Proxy
+  - 🇫🇷 法国 (France) 38 - Chain-Proxy
 rules:
 - MATCH,PROXIES
