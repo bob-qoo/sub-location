@@ -72,6 +72,14 @@ SOURCE_URLS = [
     "https://shadowmere.akiel.dev/api/b64sub/",
     "https://raw.githubusercontent.com/morpheusadam/v2ray-config/main/subs/bundles/tuic.txt",
     "https://raw.githubusercontent.com/morpheusadam/v2ray-config/main/subs/bundles/hysteria2.txt",
+    "https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/vless.txt",
+    "https://raw.githubusercontent.com/iboxz/free-v2ray-collector/main/main/mix.txt",
+    "https://raw.githubusercontent.com/mehrtat/vless-collector/main/vless.txt",
+    "https://raw.githubusercontent.com/chaishpish/free_server_v2ray/main/@TFMTProto",
+    "https://raw.githubusercontent.com/Danialsamadi/v2go/main/AllConfigsSub.txt",
+    "https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/top.txt",
+    "https://raw.githubusercontent.com/morpheusadam/v2ray-config/main/subs/bundles/medium.txt",
+    "https://raw.githubusercontent.com/morpheusadam/v2ray-config/main/subs/bundles/lite.txt",
 ]
 
 OUTPUT_DIR = "output"
