@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01 - Chain-Proxy",
-      "server": "194.87.69.12",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe"
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - Chain-Proxy",
+      "tag": "🇷🇺 俄罗斯 (Russia) 01 - Chain-Proxy",
       "server": "147.45.221.225",
       "server_port": 443,
       "uuid": "58e22afd-bf74-4736-984d-63a8ca03d7f0",
@@ -28,25 +20,21 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - Chain-Proxy",
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - Chain-Proxy",
       "server": "136.148.83.69",
       "server_port": 443,
-      "uuid": "666821a2-5c3d-0001-a56f-5a3a562d7324",
+      "password": "87bb2ac4-b7a1-0001-b11d-2107709ea6cb",
       "tls": {
         "enabled": true,
         "server_name": "szqbx-ru-77dc.my-fade.cloud",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        }
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - Chain-Proxy",
-      "server": "200.169.179.233",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - Chain-Proxy",
+      "server": "201.51.12.98",
       "server_port": 443,
       "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
       "tls": {
@@ -64,29 +52,42 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - Chain-Proxy",
-      "server": "46.29.160.71",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - Chain-Proxy",
-      "server": "103.88.243.142",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - Chain-Proxy",
+      "server": "srv-17e124.21freedom.net",
       "server_port": 11592,
       "password": "41edb44c8e",
       "tls": {
         "enabled": true,
-        "server_name": "srv-17e124",
+        "server_name": "srv-17e124.21freedom.net",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07 - Chain-Proxy",
-      "server": "147.45.175.81",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - Chain-Proxy",
+      "server": "31.58.191.52",
+      "server_port": 3099,
+      "uuid": "cdfc923e-8d34-4b44-ac72-ab41ec560ba8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "vimeo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "R6XO56Bp8-HW5dW3oOu5WC-bYVBD9ed8KR_mx6oU6Ew",
+          "short_id": "5701ece7005006b8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - Chain-Proxy",
+      "server": "xssite.webredirect.org",
       "server_port": 443,
       "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
       "tls": {
@@ -113,8 +114,7 @@
         "🇷🇺 俄罗斯 (Russia) 03 - Chain-Proxy",
         "🇷🇺 俄罗斯 (Russia) 04 - Chain-Proxy",
         "🇷🇺 俄罗斯 (Russia) 05 - Chain-Proxy",
-        "🇷🇺 俄罗斯 (Russia) 06 - Chain-Proxy",
-        "🇷🇺 俄罗斯 (Russia) 07 - Chain-Proxy"
+        "🇷🇺 俄罗斯 (Russia) 06 - Chain-Proxy"
       ]
     },
     {
@@ -126,8 +126,7 @@
         "🇷🇺 俄罗斯 (Russia) 03 - Chain-Proxy",
         "🇷🇺 俄罗斯 (Russia) 04 - Chain-Proxy",
         "🇷🇺 俄罗斯 (Russia) 05 - Chain-Proxy",
-        "🇷🇺 俄罗斯 (Russia) 06 - Chain-Proxy",
-        "🇷🇺 俄罗斯 (Russia) 07 - Chain-Proxy"
+        "🇷🇺 俄罗斯 (Russia) 06 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

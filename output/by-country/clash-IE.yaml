@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇱 AL 01 - Chain-Proxy
-  server: 130.49.189.158
-  port: 43558
+- name: 🇮🇪 爱尔兰 (Ireland) 01 - Chain-Proxy
+  server: 3.248.201.197
+  port: 443
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: PL4ahSoLNqrJ8mQZ1uKFLG8o8W4TcYDUIW0gldp9Grs=
+  cipher: aes-256-cfb
+  password: amazonskr05
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇱 AL 01 - Chain-Proxy
+  - 🇮🇪 爱尔兰 (Ireland) 01 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL 01 - Chain-Proxy
+  - 🇮🇪 爱尔兰 (Ireland) 01 - Chain-Proxy
 rules:
 - MATCH,PROXIES

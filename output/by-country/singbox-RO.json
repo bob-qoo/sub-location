@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - Chain-Proxy",
+      "server": "82.152.132.211",
+      "server_port": 8044,
+      "method": "chacha20-ietf-poly1305",
+      "password": "D9sdHZePCkGb9iBOjrta1z0_H4kknPZr"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -15,7 +23,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -26,13 +34,13 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy",
       "server": "185.156.44.99",
       "server_port": 443,
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "185.156.44.99",
+        "server_name": "whatsapp.com",
         "insecure": true
       }
     },
@@ -42,7 +50,8 @@
       "outbounds": [
         "auto",
         "🇷🇴 罗马尼亚 (Romania) 01 - Chain-Proxy",
-        "🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy"
+        "🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy",
+        "🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy"
       ]
     },
     {
@@ -50,7 +59,8 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇴 罗马尼亚 (Romania) 01 - Chain-Proxy",
-        "🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy"
+        "🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy",
+        "🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

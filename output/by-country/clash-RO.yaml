@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - Chain-Proxy
+  server: 82.152.132.211
+  port: 8044
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: D9sdHZePCkGb9iBOjrta1z0_H4kknPZr
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy
   server: 46.28.67.55
   port: 443
   udp: true
@@ -16,14 +23,14 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: ''
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy
   server: 185.156.44.99
   port: 443
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: 185.156.44.99
+  sni: whatsapp.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -32,6 +39,7 @@ proxy-groups:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - Chain-Proxy
   - 🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy
+  - 🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +47,6 @@ proxy-groups:
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - Chain-Proxy
   - 🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy
+  - 🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy
 rules:
 - MATCH,PROXIES
