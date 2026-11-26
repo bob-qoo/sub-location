@@ -6,46 +6,46 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - Chain-Proxy
   server: 213.183.63.60
-  port: 9049
+  port: 9061
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: PRBf4BS2HvJqtWxY
+  password: 4R3hUfZ2FHhDmNcP
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - Chain-Proxy
-  server: 213.183.63.60
-  port: 9066
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 2KUaE2a8NWTvuCZ3
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy
-  server: 213.183.63.60
-  port: 9098
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy
-  server: 213.183.63.60
-  port: 9085
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - Chain-Proxy
-  server: 213.183.63.60
-  port: 9028
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9eeJ2fwnZA5Fxgz8
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - Chain-Proxy
   server: 213.183.63.60
   port: 9030
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: GeregetR8cvQHzYr
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - Chain-Proxy
+  server: 213.183.63.60
+  port: 9029
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: dU3DSNS8wYPXzEKw
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - Chain-Proxy
+  server: 213.183.63.60
+  port: 9066
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 2KUaE2a8NWTvuCZ3
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - Chain-Proxy
+  server: 213.183.63.60
+  port: 9085
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9ej82EKe2gq7gLAM
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - Chain-Proxy
+  server: 213.183.63.60
+  port: 9098
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aLpQtfEZe445QyHk
 - name: 🇧🇬 保加利亚 (Bulgaria) 07 - Chain-Proxy
   server: 195.123.226.21
   port: 443
@@ -60,19 +60,12 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 08 - Chain-Proxy
-  server: delicate-tree-9749.vpnetwork3567.workers.dev
-  port: 443
+  server: 213.183.63.60
+  port: 9064
   udp: true
-  type: vless
-  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
-  tls: true
-  servername: delicate-tree-9749.vpnetwork3567.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: delicate-tree-9749.vpnetwork3567.workers.dev
+  type: ss
+  cipher: aes-256-cfb
+  password: cp8pRSUAyLhTfVWH
 proxy-groups:
 - name: PROXIES
   type: select

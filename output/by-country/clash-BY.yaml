@@ -5,14 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇾 白俄罗斯 (Belarus) 01 - Chain-Proxy
-  server: 178.172.227.228
-  port: 14430
+  server: 178.172.227.124
+  port: 10444
   udp: true
   type: vless
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
-  network: ws
-  ws-opts:
-    path: /vless
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: ads.x5.ru
+  client-fingerprint: qq
 - name: 🇧🇾 白俄罗斯 (Belarus) 02 - Chain-Proxy
   server: 178.172.227.124
   port: 10443
@@ -30,19 +34,6 @@ proxies:
     path: /vless
     headers:
       Host: 178.172.227.124
-- name: 🇧🇾 白俄罗斯 (Belarus) 04 - Chain-Proxy
-  server: 178.172.227.124
-  port: 10444
-  udp: true
-  type: vless
-  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: ads.x5.ru
-  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,7 +42,6 @@ proxy-groups:
   - 🇧🇾 白俄罗斯 (Belarus) 01 - Chain-Proxy
   - 🇧🇾 白俄罗斯 (Belarus) 02 - Chain-Proxy
   - 🇧🇾 白俄罗斯 (Belarus) 03 - Chain-Proxy
-  - 🇧🇾 白俄罗斯 (Belarus) 04 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,6 +50,5 @@ proxy-groups:
   - 🇧🇾 白俄罗斯 (Belarus) 01 - Chain-Proxy
   - 🇧🇾 白俄罗斯 (Belarus) 02 - Chain-Proxy
   - 🇧🇾 白俄罗斯 (Belarus) 03 - Chain-Proxy
-  - 🇧🇾 白俄罗斯 (Belarus) 04 - Chain-Proxy
 rules:
 - MATCH,PROXIES

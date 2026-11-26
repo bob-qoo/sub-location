@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
+  sni: 103.115.109.49
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy
   server: 160.187.100.109
@@ -18,16 +18,8 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
+  sni: vpn-tw-002.fastervpn.world
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy
-  server: dog-tw.kunlun01dns.com
-  port: 21035
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,7 +27,6 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,6 +34,5 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - Chain-Proxy
   - 🇹🇼 中国台湾 (Taiwan) 02 - Chain-Proxy
-  - 🇹🇼 中国台湾 (Taiwan) 03 - Chain-Proxy
 rules:
 - MATCH,PROXIES

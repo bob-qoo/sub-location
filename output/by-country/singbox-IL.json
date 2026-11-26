@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -47,15 +47,15 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 03 - Chain-Proxy",
-      "server": "164.37.224.245",
+      "server": "196.245.153.156",
       "server_port": 443,
       "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
       "tls": {
         "enabled": true,
-        "server_name": "961ec0g.nl13.h1clayd.click",
+        "server_name": "961ec0g.nl17.h1clayd.click",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -81,6 +81,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 05 - Chain-Proxy",
+      "server": "185.255.115.96",
+      "server_port": 443,
+      "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "4935e4t.de25.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw",
+          "short_id": "6976d670818644cc"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -88,7 +109,8 @@
         "🇮🇱 以色列 (Israel) 01 - Chain-Proxy",
         "🇮🇱 以色列 (Israel) 02 - Chain-Proxy",
         "🇮🇱 以色列 (Israel) 03 - Chain-Proxy",
-        "🇮🇱 以色列 (Israel) 04 - Chain-Proxy"
+        "🇮🇱 以色列 (Israel) 04 - Chain-Proxy",
+        "🇮🇱 以色列 (Israel) 05 - Chain-Proxy"
       ]
     },
     {
@@ -98,7 +120,8 @@
         "🇮🇱 以色列 (Israel) 01 - Chain-Proxy",
         "🇮🇱 以色列 (Israel) 02 - Chain-Proxy",
         "🇮🇱 以色列 (Israel) 03 - Chain-Proxy",
-        "🇮🇱 以色列 (Israel) 04 - Chain-Proxy"
+        "🇮🇱 以色列 (Israel) 04 - Chain-Proxy",
+        "🇮🇱 以色列 (Israel) 05 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

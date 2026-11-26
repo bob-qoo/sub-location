@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇻🇳 越南 (Vietnam) 01 - Chain-Proxy
-  server: kir3.crackerbinam.org
+  server: Kir3.crackerbinam.org
   port: 56026
   udp: true
   type: vless
