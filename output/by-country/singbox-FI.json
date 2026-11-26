@@ -6,21 +6,21 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - Chain-Proxy",
-      "server": "153.56.231.124",
+      "server": "mail1.besttotaldns.com",
       "server_port": 443,
-      "uuid": "e894c08a-fecc-46f5-bf03-c95d0274c79d",
+      "uuid": "da14e323-6af7-406f-a5c2-1eb7975ada8b",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "f309e0t.fi4.h1clayd.click",
+        "server_name": "mail1.besttotaldns.com",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "tZoiwNSZeaVBoLJJcXe9A-GzCtbvU95fKkAJLc0vrgU",
-          "short_id": "6fddab1e1e358290"
+          "fingerprint": "chrome"
         }
       }
     },
@@ -36,7 +36,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -46,12 +46,69 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - Chain-Proxy",
+      "server": "2.27.203.38",
+      "server_port": 443,
+      "uuid": "e894c08a-fecc-46f5-bf03-c95d0274c79d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Xuy5y3WGJjkxyUtkhiY87dwndv4fuD45gO64TWnlThI",
+          "short_id": "fd0cc2b3ac52deb8"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - Chain-Proxy",
+      "server": "4f070970.con.metricdraft.tech",
+      "server_port": 443,
+      "password": "030e421e-9317-4cb8-8fbe-a07a565ad3db",
+      "tls": {
+        "enabled": true,
+        "server_name": "4f070970.con.metricdraft.tech",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - Chain-Proxy",
+      "server": "31.76.80.24",
+      "server_port": 443,
+      "uuid": "e894c08a-fecc-46f5-bf03-c95d0274c79d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XoMobTnf_CODRJ6rz0eoPsy1TC37jrJJpE8mwDUKRBg",
+          "short_id": "4e006700e13e56cd"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 02 - Chain-Proxy"
+        "🇫🇮 芬兰 (Finland) 02 - Chain-Proxy",
+        "🇫🇮 芬兰 (Finland) 03 - Chain-Proxy",
+        "🇫🇮 芬兰 (Finland) 04 - Chain-Proxy",
+        "🇫🇮 芬兰 (Finland) 05 - Chain-Proxy"
       ]
     },
     {
@@ -59,7 +116,10 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 02 - Chain-Proxy"
+        "🇫🇮 芬兰 (Finland) 02 - Chain-Proxy",
+        "🇫🇮 芬兰 (Finland) 03 - Chain-Proxy",
+        "🇫🇮 芬兰 (Finland) 04 - Chain-Proxy",
+        "🇫🇮 芬兰 (Finland) 05 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

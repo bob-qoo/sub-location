@@ -18,7 +18,7 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 02 - Chain-Proxy",
-      "server": "13.55.52.44",
+      "server": "13.237.192.121",
       "server_port": 36712,
       "password": "linlin-2026",
       "tls": {
@@ -30,13 +30,17 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 03 - Chain-Proxy",
-      "server": "13.237.192.121",
-      "server_port": 36712,
-      "password": "linlin-2026",
+      "server": "159.13.55.48",
+      "server_port": 20000,
+      "password": "b42d90fa667942aebc734d60",
       "tls": {
         "enabled": true,
-        "server_name": "13.237.192.121",
-        "insecure": true
+        "server_name": "hy2-au2.whuiy.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "b42d90fa667942aebc734d60"
       }
     },
     {
@@ -56,41 +60,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05 - Chain-Proxy",
-      "server": "159.13.55.48",
-      "server_port": 20000,
-      "password": "b42d90fa667942aebc734d60",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-au2.whuiy.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "b42d90fa667942aebc734d60"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 06 - Chain-Proxy",
-      "server": "159.13.55.48",
-      "password": "b42d90fa667942aebc734d60",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-au2.whuiy.xyz",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "b42d90fa667942aebc734d60"
-      },
-      "server_ports": [
-        "20000:30000",
-        "20000:20000"
-      ]
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -98,9 +67,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - Chain-Proxy",
         "🇦🇺 澳大利亚 (Australia) 02 - Chain-Proxy",
         "🇦🇺 澳大利亚 (Australia) 03 - Chain-Proxy",
-        "🇦🇺 澳大利亚 (Australia) 04 - Chain-Proxy",
-        "🇦🇺 澳大利亚 (Australia) 05 - Chain-Proxy",
-        "🇦🇺 澳大利亚 (Australia) 06 - Chain-Proxy"
+        "🇦🇺 澳大利亚 (Australia) 04 - Chain-Proxy"
       ]
     },
     {
@@ -110,9 +77,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - Chain-Proxy",
         "🇦🇺 澳大利亚 (Australia) 02 - Chain-Proxy",
         "🇦🇺 澳大利亚 (Australia) 03 - Chain-Proxy",
-        "🇦🇺 澳大利亚 (Australia) 04 - Chain-Proxy",
-        "🇦🇺 澳大利亚 (Australia) 05 - Chain-Proxy",
-        "🇦🇺 澳大利亚 (Australia) 06 - Chain-Proxy"
+        "🇦🇺 澳大利亚 (Australia) 04 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,26 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇧🇪 比利时 (Belgium) 01 - Chain-Proxy",
-      "server": "38.180.87.217",
-      "server_port": 11943,
-      "method": "aes-128-gcm",
-      "password": "fa938a7d397bda0f23e32143542ac0bb"
+      "type": "vmess",
+      "tag": "🇨🇳 CN 01 (移动家宽) - Chain-Proxy",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21021,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 比利时 (Belgium) 01 - Chain-Proxy"
+        "🇨🇳 CN 01 (移动家宽) - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 比利时 (Belgium) 01 - Chain-Proxy"
+        "🇨🇳 CN 01 (移动家宽) - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

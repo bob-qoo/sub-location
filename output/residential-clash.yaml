@@ -11,27 +11,36 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - Chain-Proxy
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16112
+- name: 🇨🇳 CN 02 (移动家宽) - Chain-Proxy
+  server: dog-hk.kunlun01dns.com
+  port: 21021
   udp: true
   type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
+- name: 🇩🇪 德国 (Germany) 03 (移动家宽) - Chain-Proxy
+  server: 8.209.117.187
+  port: 443
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 (移动家宽) - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - Chain-Proxy
+  - 🇨🇳 CN 02 (移动家宽) - Chain-Proxy
+  - 🇩🇪 德国 (Germany) 03 (移动家宽) - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 (Germany) 01 (移动家宽) - Chain-Proxy
-  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - Chain-Proxy
+  - 🇨🇳 CN 02 (移动家宽) - Chain-Proxy
+  - 🇩🇪 德国 (Germany) 03 (移动家宽) - Chain-Proxy
 rules:
 - MATCH,PROXIES
