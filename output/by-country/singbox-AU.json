@@ -11,13 +11,25 @@
       "password": "linlin-2026",
       "tls": {
         "enabled": true,
-        "server_name": "13.55.52.44",
+        "server_name": "off",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 02 - Chain-Proxy",
+      "server": "15.135.59.216",
+      "server_port": 443,
+      "password": "elysia-hy2-d2d1618c91fa",
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - Chain-Proxy",
       "server": "13.237.192.121",
       "server_port": 36712,
       "password": "linlin-2026",
@@ -29,25 +41,13 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - Chain-Proxy",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - Chain-Proxy",
       "server": "3.106.35.101",
       "server_port": 36712,
       "password": "linlin-2026",
       "tls": {
         "enabled": true,
-        "server_name": "off",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - Chain-Proxy",
-      "server": "15.135.59.216",
-      "server_port": 443,
-      "password": "elysia-hy2-d2d1618c91fa",
-      "tls": {
-        "enabled": true,
-        "server_name": "bing.com",
+        "server_name": "3.106.35.101",
         "insecure": true
       }
     },
@@ -71,6 +71,22 @@
       "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 06 - Chain-Proxy",
       "server": "159.13.55.48",
+      "server_port": 20000,
+      "password": "b42d90fa667942aebc734d60",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2-au2.whuiy.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "b42d90fa667942aebc734d60"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 07 - Chain-Proxy",
+      "server": "159.13.55.48",
       "password": "b42d90fa667942aebc734d60",
       "tls": {
         "enabled": true,
@@ -85,22 +101,6 @@
         "20000:30000",
         "20000:20000"
       ]
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 07 - Chain-Proxy",
-      "server": "159.13.55.48",
-      "server_port": 20000,
-      "password": "b42d90fa667942aebc734d60",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-au2.whuiy.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "b42d90fa667942aebc734d60"
-      }
     },
     {
       "type": "selector",

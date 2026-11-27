@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - Chain-Proxy
-  server: 165.231.157.150
+  server: 196.198.111.162
   port: 8443
   udp: true
   type: vless

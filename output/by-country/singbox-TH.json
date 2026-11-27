@@ -5,20 +5,15 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇭🇺 匈牙利 (Hungary) 01 - Chain-Proxy",
-      "server": "172.67.131.125",
-      "server_port": 2083,
-      "uuid": "f418674e-f518-4318-8ff9-e10000000046",
-      "tls": {
-        "enabled": true,
-        "server_name": "smart-edge-424.arti98399-1905.workers.dev",
-        "insecure": false
-      },
+      "tag": "🇹🇭 泰国 (Thailand) 01 - Chain-Proxy",
+      "server": "108.138.26.63",
+      "server_port": 80,
+      "uuid": "05f53797-bd04-4006-8a78-41c071e67837",
       "transport": {
         "type": "ws",
-        "path": "/syncfp=chrome",
+        "path": "/tikvpn2/",
         "headers": {
-          "Host": "smart-edge-424.arti98399-1905.workers.dev"
+          "Host": "d27g7kjkk3cw22.cloudfront.net"
         }
       }
     },
@@ -27,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇺 匈牙利 (Hungary) 01 - Chain-Proxy"
+        "🇹🇭 泰国 (Thailand) 01 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇺 匈牙利 (Hungary) 01 - Chain-Proxy"
+        "🇹🇭 泰国 (Thailand) 01 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
