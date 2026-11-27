@@ -5,42 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 (移动家宽) - Chain-Proxy
-  server: 8.220.83.202
-  port: 443
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-- name: 🇨🇳 CN 02 (移动家宽) - Chain-Proxy
-  server: dog-hk.kunlun01dns.com
-  port: 21021
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 (Germany) 03 (移动家宽) - Chain-Proxy
   server: 8.209.117.187
   port: 443
   udp: true
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+- name: 🇩🇪 德国 (Germany) 02 (移动家宽) - Chain-Proxy
+  server: 8.220.83.202
+  port: 443
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - Chain-Proxy
+  server: v2new.nimbaha9.ir
+  port: 8080
+  udp: true
+  type: vless
+  uuid: f279c19a-b324-40cf-af57-049f9b1b68f2
+  network: ws
+  ws-opts:
+    path: /XDS45
+    headers:
+      Host: v2new.nimbaha9.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 (移动家宽) - Chain-Proxy
-  - 🇨🇳 CN 02 (移动家宽) - Chain-Proxy
-  - 🇩🇪 德国 (Germany) 03 (移动家宽) - Chain-Proxy
+  - 🇩🇪 德国 (Germany) 02 (移动家宽) - Chain-Proxy
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 (Germany) 01 (移动家宽) - Chain-Proxy
-  - 🇨🇳 CN 02 (移动家宽) - Chain-Proxy
-  - 🇩🇪 德国 (Germany) 03 (移动家宽) - Chain-Proxy
+  - 🇩🇪 德国 (Germany) 02 (移动家宽) - Chain-Proxy
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - Chain-Proxy
 rules:
 - MATCH,PROXIES

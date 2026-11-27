@@ -6,22 +6,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 01 - Chain-Proxy",
-      "server": "149.22.87.240",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 02 - Chain-Proxy",
-      "server": "149.22.87.241",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 03 - Chain-Proxy",
       "server": "149.22.87.204",
       "server_port": 443,
       "method": "aes-128-gcm",
@@ -29,16 +13,32 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 04 - Chain-Proxy",
-      "server": "47.74.24.29",
+      "tag": "🇯🇵 日本 (Japan) 02 - Chain-Proxy",
+      "server": "149.22.87.240",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 03 - Chain-Proxy",
+      "server": "8.209.221.90",
       "server_port": 5555,
       "method": "aes-256-gcm",
       "password": "123456"
     },
     {
       "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 04 - Chain-Proxy",
+      "server": "149.22.87.241",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 05 - Chain-Proxy",
-      "server": "8.216.17.19",
+      "server": "8.216.11.25",
       "server_port": 5555,
       "method": "aes-256-gcm",
       "password": "123456"
@@ -46,7 +46,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 06 - Chain-Proxy",
-      "server": "47.91.2.13",
+      "server": "8.216.9.217",
       "server_port": 5555,
       "method": "aes-256-gcm",
       "password": "123456"
@@ -54,15 +54,15 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 07 - Chain-Proxy",
-      "server": "168.138.205.100",
-      "server_port": 53758,
-      "method": "aes-128-gcm",
-      "password": "Bwlqh7GcFB"
+      "server": "8.216.9.15",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
     },
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 08 - Chain-Proxy",
-      "server": "8.216.1.127",
+      "server": "8.216.9.142",
       "server_port": 5555,
       "method": "aes-256-gcm",
       "password": "123456"
@@ -70,14 +70,86 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 09 - Chain-Proxy",
-      "server": "8.216.6.223",
+      "server": "8.211.130.59",
       "server_port": 5555,
       "method": "aes-256-gcm",
       "password": "123456"
     },
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 10 - Chain-Proxy",
+      "server": "8.216.9.42",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 11 - Chain-Proxy",
+      "server": "jpa.123069.xyz",
+      "server_port": 53758,
+      "method": "aes-128-gcm",
+      "password": "Bwlqh7GcFB"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 12 - Chain-Proxy",
+      "server": "50.7.159.242",
+      "server_port": 443,
+      "uuid": "8840fac2-5361-4cb6-b887-cd1b95092394",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp.reddotcorp.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 13 - Chain-Proxy",
+      "server": "8.211.175.236",
+      "server_port": 8443,
+      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
+      "tls": {
+        "enabled": true,
+        "server_name": "8.211.175.236",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 (Japan) 14 - Chain-Proxy",
+      "server": "193.123.160.109",
+      "server_port": 8443,
+      "password": "F3NzMNuYnG7akU2mSlBY",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 15 - Chain-Proxy",
+      "server": "161.33.20.255",
+      "server_port": 8880,
+      "uuid": "e0856508-d693-450a-a099-455091dc4f25",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/e0856508-d693-450a-a099-455091dc4f25-vm"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 16 - Chain-Proxy",
       "server": "168.110.63.247",
       "server_port": 8081,
       "uuid": "c3bde296-8e44-4b8c-a325-577d5b3cc7c8",
@@ -88,8 +160,23 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 17 - Chain-Proxy",
+      "server": "168.138.43.75",
+      "server_port": 80,
+      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8",
+        "headers": {
+          "Host": "jp01.a0a.xyz"
+        }
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 11 - Chain-Proxy",
+      "tag": "🇯🇵 日本 (Japan) 18 - Chain-Proxy",
       "server": "158.101.151.157",
       "server_port": 443,
       "uuid": "66171cbe-0b4b-4b24-99f6-d5a822f4dc9a",
@@ -109,315 +196,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 12 - Chain-Proxy",
-      "server": "161.33.20.255",
-      "server_port": 8880,
-      "uuid": "e0856508-d693-450a-a099-455091dc4f25",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/e0856508-d693-450a-a099-455091dc4f25-vm"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 13 - Chain-Proxy",
-      "server": "8.211.175.236",
-      "server_port": 8443,
-      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
-      "tls": {
-        "enabled": true,
-        "server_name": "8.211.175.236",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 14 - Chain-Proxy",
-      "server": "8.209.253.213",
-      "server_port": 5555,
-      "method": "aes-256-gcm",
-      "password": "123456"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 15 - Chain-Proxy",
-      "server": "168.138.43.75",
-      "server_port": 80,
-      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8",
-        "headers": {
-          "Host": "168.138.43.75"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 16 - Chain-Proxy",
-      "server": "djj.zjlo.top",
-      "server_port": 23169,
-      "uuid": "9da605d3-f5f7-4135-f806-450f036f9351",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "djj.zjlo.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 17 - Chain-Proxy",
-      "server": "172.237.14.205",
-      "server_port": 443,
-      "uuid": "4796e022-f377-4a97-bc03-fbf525d7913c",
-      "tls": {
-        "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "dllB1KTn7oiEqa6OlmZl-j2kF5GN9bAQeoBinYV2cUQ",
-          "short_id": "da26e5a2"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "itunes.apple.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 18 - Chain-Proxy",
-      "server": "139.162.91.200",
-      "server_port": 443,
-      "uuid": "847bdd83-9e2f-4708-81ed-729a2ca6eeec",
-      "tls": {
-        "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-g20lzrrmgQb5wbq0vJ2OkZo_-j4KcFq_JDGVp5n_TQ",
-          "short_id": "7bae4b22"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "itunes.apple.com"
-        }
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 19 - Chain-Proxy",
-      "server": "139.162.91.137",
-      "server_port": 443,
-      "uuid": "5e6575a1-459c-4077-ac3d-92dea966ad7c",
-      "tls": {
-        "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4LfX16VwHkHQzoZ04o2VnO85N1o_Y8OcoJwfYdfaIGw",
-          "short_id": "0c0c806b"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "itunes.apple.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 20 - Chain-Proxy",
-      "server": "139.162.91.224",
-      "server_port": 443,
-      "uuid": "ff3038b1-a2f5-428f-89cd-5d5e4efba8e7",
-      "tls": {
-        "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wmbc3kcjbG9-A9Fi7zaHuRVPH7A7UQkKNNvqyqJtMEk",
-          "short_id": "e5b03494"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "itunes.apple.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 21 - Chain-Proxy",
-      "server": "172.105.203.15",
-      "server_port": 443,
-      "uuid": "c8c9b995-b4b9-4915-9c7d-dee94aa733ba",
-      "tls": {
-        "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HyAx05nhCz5mXxVxWXU1TrWRKdpYE0MHF4-V-LtyhTA",
-          "short_id": "0784b134"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "itunes.apple.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 22 - Chain-Proxy",
-      "server": "139.162.91.232",
-      "server_port": 443,
-      "uuid": "ea2e7ce8-60c3-4fab-945c-6ae3e0066c3b",
-      "tls": {
-        "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bApi9lB94L-fIb5WoLVR_0WPknU6tICCFoiiWgD_73c",
-          "short_id": "dee2fdee"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "itunes.apple.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 23 - Chain-Proxy",
-      "server": "172.105.216.21",
-      "server_port": 443,
-      "uuid": "76f1ce49-bcea-4680-b9ef-16592269445b",
-      "tls": {
-        "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Mjv5qe_CrvfHdVwgtyqYbqPesZ-1oko2XYg3dguzvxg",
-          "short_id": "c29f9af4"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "itunes.apple.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 24 - Chain-Proxy",
-      "server": "172.105.212.91",
-      "server_port": 443,
-      "uuid": "1f08d52f-126e-46e3-929a-4b6a58e21168",
-      "tls": {
-        "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jb8kqeM_3z0NW3huxWLD0ma2eUCFRsiwapF9I_O3Ei8",
-          "short_id": "17676229"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "itunes.apple.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 25 - Chain-Proxy",
-      "server": "198.13.53.39",
-      "server_port": 443,
-      "uuid": "8f21c635-ef0a-4b05-8356-f44d463b6e34",
-      "tls": {
-        "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xxPVgbxguyYuVIml6Eh6ZGcDLO1z0OWKZXfDdUGFv1k",
-          "short_id": "7a7cc838"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "itunes.apple.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 26 - Chain-Proxy",
       "server": "172.238.18.103",
       "server_port": 443,
       "uuid": "f4a4498a-c02f-4862-93ae-8f495c9cd2c0",
@@ -444,10 +224,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 27 - Chain-Proxy",
-      "server": "139.162.101.74",
+      "tag": "🇯🇵 日本 (Japan) 20 - Chain-Proxy",
+      "server": "172.237.14.205",
       "server_port": 443,
-      "uuid": "1e709d98-d4c3-45c1-bdcc-4268cf83eff8",
+      "uuid": "4796e022-f377-4a97-bc03-fbf525d7913c",
       "tls": {
         "enabled": true,
         "server_name": "itunes.apple.com",
@@ -457,8 +237,168 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "jd8UNLpim43LVV-iEzIXlUgTVuvi9Pf7E0kgQb3o0CI",
-          "short_id": "7e1e09f4"
+          "public_key": "dllB1KTn7oiEqa6OlmZl-j2kF5GN9bAQeoBinYV2cUQ",
+          "short_id": "da26e5a2"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 21 - Chain-Proxy",
+      "server": "djj.zjlo.top",
+      "server_port": 23169,
+      "uuid": "7318caa1-93d1-4a9d-c481-504599902700",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "djj.zjlo.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 22 - Chain-Proxy",
+      "server": "139.162.91.200",
+      "server_port": 443,
+      "uuid": "847bdd83-9e2f-4708-81ed-729a2ca6eeec",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-g20lzrrmgQb5wbq0vJ2OkZo_-j4KcFq_JDGVp5n_TQ",
+          "short_id": "7bae4b22"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 23 - Chain-Proxy",
+      "server": "139.162.91.232",
+      "server_port": 443,
+      "uuid": "ea2e7ce8-60c3-4fab-945c-6ae3e0066c3b",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bApi9lB94L-fIb5WoLVR_0WPknU6tICCFoiiWgD_73c",
+          "short_id": "dee2fdee"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 24 - Chain-Proxy",
+      "server": "172.104.105.212",
+      "server_port": 443,
+      "uuid": "e8212bb6-b962-4c68-83e6-c2dbc81829a0",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "kiBL725AePA3-FPNDKwUgMrolmGl_P8YBRAwFj-_yzM",
+          "short_id": "cdfc4883"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 25 - Chain-Proxy",
+      "server": "zfd-jpv2.kunlun01dns.com",
+      "server_port": 16122,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 26 - Chain-Proxy",
+      "server": "172.105.216.21",
+      "server_port": 443,
+      "uuid": "76f1ce49-bcea-4680-b9ef-16592269445b",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Mjv5qe_CrvfHdVwgtyqYbqPesZ-1oko2XYg3dguzvxg",
+          "short_id": "c29f9af4"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 27 - Chain-Proxy",
+      "server": "139.162.91.137",
+      "server_port": 443,
+      "uuid": "5e6575a1-459c-4077-ac3d-92dea966ad7c",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4LfX16VwHkHQzoZ04o2VnO85N1o_Y8OcoJwfYdfaIGw",
+          "short_id": "0c0c806b"
         }
       },
       "transport": {
@@ -472,9 +412,9 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 28 - Chain-Proxy",
-      "server": "139.162.91.247",
+      "server": "172.105.197.24",
       "server_port": 443,
-      "uuid": "8cfdacf8-e781-42f0-9872-8d1d22469de5",
+      "uuid": "81f4e114-5a60-41b5-9038-8d742380c84f",
       "tls": {
         "enabled": true,
         "server_name": "itunes.apple.com",
@@ -484,8 +424,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "_gFFckW3h8hFfllawgec9U2PDBeLJeCK_Jgk1S5tgC8",
-          "short_id": "536d7739"
+          "public_key": "EfNOl6-YAuW-WSg7Op-1YOqKZV9emIuLwH8YPhzc7ms",
+          "short_id": "772bef67"
         }
       },
       "transport": {
@@ -526,9 +466,9 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 30 - Chain-Proxy",
-      "server": "172.105.197.24",
+      "server": "172.105.212.91",
       "server_port": 443,
-      "uuid": "81f4e114-5a60-41b5-9038-8d742380c84f",
+      "uuid": "1f08d52f-126e-46e3-929a-4b6a58e21168",
       "tls": {
         "enabled": true,
         "server_name": "itunes.apple.com",
@@ -538,8 +478,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "EfNOl6-YAuW-WSg7Op-1YOqKZV9emIuLwH8YPhzc7ms",
-          "short_id": "772bef67"
+          "public_key": "jb8kqeM_3z0NW3huxWLD0ma2eUCFRsiwapF9I_O3Ei8",
+          "short_id": "17676229"
         }
       },
       "transport": {
@@ -553,9 +493,9 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 31 - Chain-Proxy",
-      "server": "172.104.105.212",
+      "server": "139.162.101.74",
       "server_port": 443,
-      "uuid": "e8212bb6-b962-4c68-83e6-c2dbc81829a0",
+      "uuid": "1e709d98-d4c3-45c1-bdcc-4268cf83eff8",
       "tls": {
         "enabled": true,
         "server_name": "itunes.apple.com",
@@ -565,8 +505,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "kiBL725AePA3-FPNDKwUgMrolmGl_P8YBRAwFj-_yzM",
-          "short_id": "cdfc4883"
+          "public_key": "jd8UNLpim43LVV-iEzIXlUgTVuvi9Pf7E0kgQb3o0CI",
+          "short_id": "7e1e09f4"
         }
       },
       "transport": {
@@ -578,16 +518,112 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 32 - Chain-Proxy",
-      "server": "zfd-jpv2.kunlun01dns.com",
-      "server_port": 16121,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
+      "server": "172.105.203.15",
+      "server_port": 443,
+      "uuid": "c8c9b995-b4b9-4915-9c7d-dee94aa733ba",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HyAx05nhCz5mXxVxWXU1TrWRKdpYE0MHF4-V-LtyhTA",
+          "short_id": "0784b134"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 33 - Chain-Proxy",
+      "server": "45.32.57.15",
+      "server_port": 8443,
+      "uuid": "b69cf773-da16-486e-afce-a45b94f998b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "senflarelink-node-nwz76h.pages.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/flow=",
+        "headers": {
+          "Host": "senflarelink-node-nwz76h.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 34 - Chain-Proxy",
+      "server": "198.13.53.39",
+      "server_port": 443,
+      "uuid": "8f21c635-ef0a-4b05-8356-f44d463b6e34",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xxPVgbxguyYuVIml6Eh6ZGcDLO1z0OWKZXfDdUGFv1k",
+          "short_id": "7a7cc838"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 35 - Chain-Proxy",
+      "server": "139.162.91.247",
+      "server_port": 443,
+      "uuid": "8cfdacf8-e781-42f0-9872-8d1d22469de5",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_gFFckW3h8hFfllawgec9U2PDBeLJeCK_Jgk1S5tgC8",
+          "short_id": "536d7739"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
     },
     {
       "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 33 - Chain-Proxy",
+      "tag": "🇯🇵 日本 (Japan) 36 - Chain-Proxy",
       "server": "129.225.181.46",
       "server_port": 8443,
       "password": "oracle_hy2_pass_2026",
@@ -598,49 +634,51 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 34 - Chain-Proxy",
-      "server": "168.107.36.135",
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 37 - Chain-Proxy",
+      "server": "JP032005.ssgreen.org",
       "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "uuid": "41ad70cc-ce1f-43c9-8424-7c1d24d975ee",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "JP032005.ssgreen.org",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 35 - Chain-Proxy",
-      "server": "193.123.160.109",
-      "server_port": 8443,
-      "password": "F3NzMNuYnG7akU2mSlBY",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "path": "/wes"
       }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 36 - Chain-Proxy",
-      "server": "154.31.114.162",
-      "server_port": 8443,
+      "tag": "🇯🇵 日本 (Japan) 38 - Chain-Proxy",
+      "server": "213.183.41.31",
+      "server_port": 8463,
+      "uuid": "eb62cabf-5901-403a-aa0c-b1d9ed1b346d",
+      "tls": {
+        "enabled": true,
+        "server_name": "share.plumstatic.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 39 - Chain-Proxy",
+      "server": "47.74.40.77",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 40 - Chain-Proxy",
+      "server": "104.21.70.228",
+      "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
@@ -699,7 +737,11 @@
         "🇯🇵 日本 (Japan) 33 - Chain-Proxy",
         "🇯🇵 日本 (Japan) 34 - Chain-Proxy",
         "🇯🇵 日本 (Japan) 35 - Chain-Proxy",
-        "🇯🇵 日本 (Japan) 36 - Chain-Proxy"
+        "🇯🇵 日本 (Japan) 36 - Chain-Proxy",
+        "🇯🇵 日本 (Japan) 37 - Chain-Proxy",
+        "🇯🇵 日本 (Japan) 38 - Chain-Proxy",
+        "🇯🇵 日本 (Japan) 39 - Chain-Proxy",
+        "🇯🇵 日本 (Japan) 40 - Chain-Proxy"
       ]
     },
     {
@@ -741,7 +783,11 @@
         "🇯🇵 日本 (Japan) 33 - Chain-Proxy",
         "🇯🇵 日本 (Japan) 34 - Chain-Proxy",
         "🇯🇵 日本 (Japan) 35 - Chain-Proxy",
-        "🇯🇵 日本 (Japan) 36 - Chain-Proxy"
+        "🇯🇵 日本 (Japan) 36 - Chain-Proxy",
+        "🇯🇵 日本 (Japan) 37 - Chain-Proxy",
+        "🇯🇵 日本 (Japan) 38 - Chain-Proxy",
+        "🇯🇵 日本 (Japan) 39 - Chain-Proxy",
+        "🇯🇵 日本 (Japan) 40 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

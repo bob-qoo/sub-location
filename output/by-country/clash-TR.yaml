@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - Chain-Proxy
+  server: 107.181.155.27
+  port: 2089
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: T199MCnogZBKi0QJdcSgUnoL3U9wl7t1
+- name: 🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy
   server: 143.246.136.128
   port: 50738
   udp: true
@@ -14,13 +21,20 @@ proxies:
   servername: turkey-ip1.mmdaqaorg.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy
-  server: tr.subscriptionservice.ir
-  port: 2089
+- name: 🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy
+  server: still-bar-5702.vpnetwork3567.workers.dev
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: T199MCnogZBKi0QJdcSgUnoL3U9wl7t1
+  type: vless
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  tls: true
+  servername: still-bar-5702.vpnetwork3567.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: still-bar-5702.vpnetwork3567.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -28,6 +42,7 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy
+  - 🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -35,5 +50,6 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - Chain-Proxy
   - 🇹🇷 土耳其 (Turkey) 02 - Chain-Proxy
+  - 🇹🇷 土耳其 (Turkey) 03 - Chain-Proxy
 rules:
 - MATCH,PROXIES

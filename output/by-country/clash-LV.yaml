@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - Chain-Proxy
   server: 185.135.86.175
-  port: 9082
+  port: 9034
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 45xgMgm386pjWjTx
+  password: Yg4MbdXFQ9HFFVY6
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - Chain-Proxy
   server: 185.135.86.175
   port: 9017
@@ -20,26 +20,33 @@ proxies:
   password: HAVAdE3nXhqA5nHp
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - Chain-Proxy
   server: 185.135.86.175
-  port: 9007
+  port: 9094
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: kSPmvwdFzGMMW5pY
+  password: rpgbNnU9rDDU4aWZ
 - name: 🇱🇻 拉脱维亚 (Latvia) 04 - Chain-Proxy
+  server: 185.135.86.175
+  port: 9082
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 45xgMgm386pjWjTx
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - Chain-Proxy
+  server: 185.135.86.175
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - Chain-Proxy
   server: 185.135.86.175
   port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - Chain-Proxy
-  server: 185.135.86.175
-  port: 9034
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Yg4MbdXFQ9HFFVY6
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - Chain-Proxy
+- name: 🇱🇻 拉脱维亚 (Latvia) 07 - Chain-Proxy
   server: 195.123.213.28
   port: 443
   udp: true
@@ -52,26 +59,6 @@ proxies:
     short-id: 5c256336e3b673fa
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 07 - Chain-Proxy
-  server: 185.135.86.175
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇻 拉脱维亚 (Latvia) 08 - Chain-Proxy
-  server: 213.183.45.23
-  port: 8450
-  udp: true
-  type: vless
-  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
-  tls: true
-  servername: fonts.plumstatic.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /ws
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,7 +71,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 05 - Chain-Proxy
   - 🇱🇻 拉脱维亚 (Latvia) 06 - Chain-Proxy
   - 🇱🇻 拉脱维亚 (Latvia) 07 - Chain-Proxy
-  - 🇱🇻 拉脱维亚 (Latvia) 08 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -97,6 +83,5 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 05 - Chain-Proxy
   - 🇱🇻 拉脱维亚 (Latvia) 06 - Chain-Proxy
   - 🇱🇻 拉脱维亚 (Latvia) 07 - Chain-Proxy
-  - 🇱🇻 拉脱维亚 (Latvia) 08 - Chain-Proxy
 rules:
 - MATCH,PROXIES
