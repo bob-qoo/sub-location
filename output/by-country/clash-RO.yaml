@@ -18,25 +18,12 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy
-  server: molda.thewalkingded.life
-  port: 443
-  udp: true
-  type: vless
-  uuid: c0742f77-5495-43bf-b007-88d368774d7c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
-    short-id: ff776ff77be48b88
-  servername: molda.thewalkingded.life
-  client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy
   server: 185.156.44.99
   port: 443
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: speedtest.tinkoff.ru
+  sni: 185.156.44.99
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -45,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - Chain-Proxy
   - 🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy
-  - 🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - Chain-Proxy
   - 🇷🇴 罗马尼亚 (Romania) 02 - Chain-Proxy
-  - 🇷🇴 罗马尼亚 (Romania) 03 - Chain-Proxy
 rules:
 - MATCH,PROXIES

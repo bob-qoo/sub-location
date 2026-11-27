@@ -66,39 +66,6 @@
       ]
     },
     {
-      "type": "trojan",
-      "tag": "🇧🇷 巴西 (Brazil) 05 - Chain-Proxy",
-      "server": "216.238.104.154",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "findtemporaryworkandfreelancerprojectsonlineplatform.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 06 - Chain-Proxy",
-      "server": "dddz-4-z.473221.xyz",
-      "server_port": 33161,
-      "uuid": "5807f1c4-b50e-4ec0-8d01-274045da0da5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "v1-dy.ixigua.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "BECARsUsTAoGzHFcGEquyFHKnI_LVL5FL6s1jZbLhVk",
-          "short_id": "6dbd86dc61ccb46d"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -106,9 +73,7 @@
         "🇧🇷 巴西 (Brazil) 01 - Chain-Proxy",
         "🇧🇷 巴西 (Brazil) 02 - Chain-Proxy",
         "🇧🇷 巴西 (Brazil) 03 - Chain-Proxy",
-        "🇧🇷 巴西 (Brazil) 04 - Chain-Proxy",
-        "🇧🇷 巴西 (Brazil) 05 - Chain-Proxy",
-        "🇧🇷 巴西 (Brazil) 06 - Chain-Proxy"
+        "🇧🇷 巴西 (Brazil) 04 - Chain-Proxy"
       ]
     },
     {
@@ -118,9 +83,7 @@
         "🇧🇷 巴西 (Brazil) 01 - Chain-Proxy",
         "🇧🇷 巴西 (Brazil) 02 - Chain-Proxy",
         "🇧🇷 巴西 (Brazil) 03 - Chain-Proxy",
-        "🇧🇷 巴西 (Brazil) 04 - Chain-Proxy",
-        "🇧🇷 巴西 (Brazil) 05 - Chain-Proxy",
-        "🇧🇷 巴西 (Brazil) 06 - Chain-Proxy"
+        "🇧🇷 巴西 (Brazil) 04 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

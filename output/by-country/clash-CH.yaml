@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - Chain-Proxy
-  server: 23.166.88.189
+  server: 186.190.215.251
   port: 19999
   udp: true
   type: ss
@@ -19,46 +19,13 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇨🇭 瑞士 (Switzerland) 03 - Chain-Proxy
-  server: 186.190.215.251
+  server: leviko-ch0322.shopingggg.ir
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇨🇭 瑞士 (Switzerland) 04 - Chain-Proxy
-  server: 152.67.75.161
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 3a702d4d1de4949005d8431220e040fb
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
-- name: 🇨🇭 瑞士 (Switzerland) 05 - Chain-Proxy
-  server: 140.238.213.114
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 06 - Chain-Proxy
-  server: 193.238.155.48
-  port: 443
-  udp: true
-  type: hysteria2
-  password: lvu_3390f238bef4e3058ac47c87473755cf_07cd5acf7265adf5c1210040ca46facf:np2.1.HJjJucZ0-OZZUq5Njkl48v1gYx7ol9rXjxYXZUxrQdM
-  sni: n50.neproxy.net
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 07 - Chain-Proxy
-  server: leviko-ch5965.shopingggg.ir
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇨🇭 瑞士 (Switzerland) 08 - Chain-Proxy
   server: 186.190.215.4
   port: 1270
   udp: true
@@ -69,31 +36,17 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 09 - Chain-Proxy
-  server: 208.69.78.60
+- name: 🇨🇭 瑞士 (Switzerland) 05 - Chain-Proxy
+  server: 152.67.75.161
   port: 443
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 10 - Chain-Proxy
-  server: 208.69.78.222
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 11 - Chain-Proxy
-  server: 208.69.78.29
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: 208.69.78.29
+  type: hysteria2
+  password: 3a702d4d1de4949005d8431220e040fb
+  sni: www.bing.com
   skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 12 - Chain-Proxy
+  obfs: salamander
+  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
+- name: 🇨🇭 瑞士 (Switzerland) 06 - Chain-Proxy
   server: 45.90.59.15
   port: 443
   udp: true
@@ -117,12 +70,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 04 - Chain-Proxy
   - 🇨🇭 瑞士 (Switzerland) 05 - Chain-Proxy
   - 🇨🇭 瑞士 (Switzerland) 06 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 07 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 08 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 09 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 10 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 11 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 12 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -134,11 +81,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 04 - Chain-Proxy
   - 🇨🇭 瑞士 (Switzerland) 05 - Chain-Proxy
   - 🇨🇭 瑞士 (Switzerland) 06 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 07 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 08 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 09 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 10 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 11 - Chain-Proxy
-  - 🇨🇭 瑞士 (Switzerland) 12 - Chain-Proxy
 rules:
 - MATCH,PROXIES

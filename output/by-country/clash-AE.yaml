@@ -19,40 +19,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
-  server: 95.174.68.188
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
-  server: 213.183.41.31
-  port: 8459
-  udp: true
-  type: vless
-  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
-  tls: true
-  servername: photos.plumstatic.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws
-- name: 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
-  server: 85.8.201.186
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7aa77858-f235-0001-9434-7ab060848b17
-  flow: xtls-rprx-vision
-  tls: true
-  servername: cdn.mornismp.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -63,6 +29,15 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
+  server: 95.174.68.188
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,8 +47,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
-  - 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
-  - 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,7 +56,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 03 - Chain-Proxy
   - 🇦🇪 阿联酋 (UAE) 04 - Chain-Proxy
-  - 🇦🇪 阿联酋 (UAE) 05 - Chain-Proxy
-  - 🇦🇪 阿联酋 (UAE) 06 - Chain-Proxy
 rules:
 - MATCH,PROXIES

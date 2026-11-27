@@ -4,27 +4,57 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - Chain-Proxy",
-      "server": "94.183.164.119",
-      "server_port": 24433,
-      "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
+      "server": "65.109.171.194",
+      "server_port": 443,
+      "uuid": "da14e323-6af7-406f-a5c2-1eb7975ada8b",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "lakes.blog-forme.ru",
-        "insecure": false
+        "server_name": "mail1.besttotaldns.com",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 02 - Chain-Proxy",
-      "server": "4f070970.con.metricdraft.tech",
+      "server": "45.88.12.121",
       "server_port": 443,
-      "password": "030e421e-9317-4cb8-8fbe-a07a565ad3db",
+      "password": "lvu_3390f238bef4e3058ac47c87473755cf_07cd5acf7265adf5c1210040ca46facf:np2.1.HJjJucZ0-OZZUq5Njkl48v1gYx7ol9rXjxYXZUxrQdM",
       "tls": {
         "enabled": true,
-        "server_name": "4f070970.con.metricdraft.tech",
+        "server_name": "n48.neproxy.net",
         "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - Chain-Proxy",
+      "server": "2.27.122.255",
+      "server_port": 443,
+      "uuid": "e307f400-d65e-4afd-bfe2-9a54deca5678",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sun9-37.userapi.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Uig-31Ux76EreEvx8Ntb0BwS1TkUGbu0LcsQsiAH6wg",
+          "short_id": "d52d3ecf49447c2a"
+        }
       }
     },
     {
@@ -33,7 +63,8 @@
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 02 - Chain-Proxy"
+        "🇫🇮 芬兰 (Finland) 02 - Chain-Proxy",
+        "🇫🇮 芬兰 (Finland) 03 - Chain-Proxy"
       ]
     },
     {
@@ -41,7 +72,8 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - Chain-Proxy",
-        "🇫🇮 芬兰 (Finland) 02 - Chain-Proxy"
+        "🇫🇮 芬兰 (Finland) 02 - Chain-Proxy",
+        "🇫🇮 芬兰 (Finland) 03 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
