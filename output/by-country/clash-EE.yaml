@@ -5,14 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - Chain-Proxy
-  server: 85.8.201.186
-  port: 443
+  server: 196.198.111.166
+  port: 8443
   udp: true
   type: vless
-  uuid: 7aa77858-f235-000d-9434-7ab060848b17
+  uuid: f121ffc8-f6dc-4728-a871-a05e3f9cf8c5
   flow: xtls-rprx-vision
   tls: true
-  servername: cdn.mornismp.ru
+  servername: usr-6b09ce88-api-v3.alcors.net
   skip-cert-verify: false
   client-fingerprint: firefox
 proxy-groups:

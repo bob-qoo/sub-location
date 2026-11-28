@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 01 - Chain-Proxy",
-      "server": "146.70.90.195",
-      "server_port": 17453,
-      "method": "aes-128-gcm",
-      "password": "cVCf+5/dBI353UY4YcN3nS05znsJYtLF"
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - Chain-Proxy",
+      "server": "tr.subscriptionservice.ir",
+      "server_port": 2089,
+      "method": "chacha20-ietf-poly1305",
+      "password": "lZZzfo1mqH7PqnloAogdi2XBhlgiofMy"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 - Chain-Proxy"
+        "🇹🇷 土耳其 (Turkey) 01 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 - Chain-Proxy"
+        "🇹🇷 土耳其 (Turkey) 01 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

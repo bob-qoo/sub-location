@@ -16,13 +16,18 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02 - Chain-Proxy
-  server: 45.88.12.121
+  server: 31.76.21.252
   port: 443
   udp: true
-  type: hysteria2
-  password: lvu_3390f238bef4e3058ac47c87473755cf_07cd5acf7265adf5c1210040ca46facf:np2.1.HJjJucZ0-OZZUq5Njkl48v1gYx7ol9rXjxYXZUxrQdM
-  sni: n48.neproxy.net
-  skip-cert-verify: false
+  type: vless
+  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: hkbj7k2VDqVjrwQLXhoWIgjUwGOKFJ9Y1gdCv2YGQik
+    short-id: 190004e1840538bf
+  servername: lesson5.schoolpizorbz.xyz
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 03 - Chain-Proxy
   server: 2.27.122.255
   port: 443
@@ -35,7 +40,79 @@ proxies:
     public-key: Uig-31Ux76EreEvx8Ntb0BwS1TkUGbu0LcsQsiAH6wg
     short-id: d52d3ecf49447c2a
   servername: sun9-37.userapi.com
-  client-fingerprint: qq
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 04 - Chain-Proxy
+  server: 31.76.8.195
+  port: 443
+  udp: true
+  type: vless
+  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: pFmgbfd2eUSmge-8f0dF7Yjo8OFaZWuZ3UWC7EXjwmg
+    short-id: ae3cdc4eca7374a8
+  servername: lesson12.schoolpizorbz.xyz
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 05 - Chain-Proxy
+  server: 77.232.140.7
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-5a447647929f
+  tls: true
+  servername: bbz1x6eau6gs.88bahpu62r.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/5a447647929f
+    headers:
+      Host: bbz1x6eau6gs.88bahpu62r.workers.dev
+- name: 🇫🇮 芬兰 (Finland) 06 - Chain-Proxy
+  server: 31.77.17.137
+  port: 443
+  udp: true
+  type: vless
+  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: kEtGermhVoTO4QWTy88C6Y52xDqOyR9f3bxR2oWqUA8
+    short-id: 32772060abd44e31
+  servername: lesson6.schoolpizorbz.xyz
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 07 - Chain-Proxy
+  server: 85.8.201.186
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7aa77858-f235-000c-9434-7ab060848b17
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cdn.mornismp.ru
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 08 - Chain-Proxy
+  server: 48.102.201.124
+  port: 443
+  udp: true
+  type: vless
+  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bkgMxOi6NnagiY8Cc8PzW9skQSk9LDKmFtjGfqrlXHE
+    short-id: a16c828fc2b70207
+  servername: lesson11.schoolpizorbz.xyz
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 09 - Chain-Proxy
+  server: 94.183.164.119
+  port: 24433
+  udp: true
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: 94.183.164.119
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +121,12 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 02 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 03 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 04 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 05 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 06 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 07 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 08 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 09 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,5 +135,11 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 02 - Chain-Proxy
   - 🇫🇮 芬兰 (Finland) 03 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 04 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 05 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 06 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 07 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 08 - Chain-Proxy
+  - 🇫🇮 芬兰 (Finland) 09 - Chain-Proxy
 rules:
 - MATCH,PROXIES

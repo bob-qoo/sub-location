@@ -5,10 +5,10 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇨🇳 CN 01 (移动家宽) - Chain-Proxy",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21019,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Chain-Proxy",
+      "server": "Ir.wbzo.ir",
+      "server_port": 2070,
+      "uuid": "b7e3e8af-d1ca-45da-a95f-8b9ad77398b1",
       "security": "auto"
     },
     {
@@ -16,14 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 (移动家宽) - Chain-Proxy"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 (移动家宽) - Chain-Proxy"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

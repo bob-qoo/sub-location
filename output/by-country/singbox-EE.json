@@ -6,17 +6,16 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - Chain-Proxy",
-      "server": "85.8.201.186",
-      "server_port": 443,
-      "uuid": "7aa77858-f235-000d-9434-7ab060848b17",
+      "server": "196.198.111.166",
+      "server_port": 8443,
+      "uuid": "f121ffc8-f6dc-4728-a871-a05e3f9cf8c5",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.mornismp.ru",
+        "server_name": "usr-6b09ce88-api-v3.alcors.net",
         "insecure": false,
         "alpn": [
-          "h2",
-          "http/1.1"
+          "h2"
         ],
         "utls": {
           "enabled": true,
