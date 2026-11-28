@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇦🇱 AL 01 - Chain-Proxy
+  server: 185.171.82.185
+  port: 12445
+  udp: true
+  type: vless
+  uuid: e81a8f30-23b9-5b7a-90d9-ec040f682220
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: G4eNHGX_1QXsdr-GfxHBEscXmIYLncUW82i4FUFvY2k
+    short-id: 70a75d07aa1d1c04
+  servername: tia.kunisosi.bid
+  client-fingerprint: firefox
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇦🇱 AL 01 - Chain-Proxy
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇦🇱 AL 01 - Chain-Proxy
+rules:
+- MATCH,PROXIES

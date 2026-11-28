@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇮🇪 爱尔兰 (Ireland) 01 - Chain-Proxy
+  server: 84.32.108.50
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2098ca45-e61c-0015-ad7d-8badb6b154f4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1TtWNQhTJr_3H7-ypMw4EiLzVxy22AzUtMiE5JmQMl4
+    short-id: 1c5869a95671bcb0
+  servername: nl-ams1.connect.accessboy.com
+  client-fingerprint: firefox
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇮🇪 爱尔兰 (Ireland) 01 - Chain-Proxy
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇪 爱尔兰 (Ireland) 01 - Chain-Proxy
+rules:
+- MATCH,PROXIES

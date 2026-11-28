@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - Chain-Proxy
-  server: 194.87.69.12
-  port: 18443
+  server: 130.49.189.158
+  port: 43558
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
 - name: 🇷🇺 俄罗斯 (Russia) 02 - Chain-Proxy
   server: 185.22.152.168
   port: 18443
@@ -19,26 +19,21 @@ proxies:
   cipher: aes-256-gcm
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
 - name: 🇷🇺 俄罗斯 (Russia) 03 - Chain-Proxy
-  server: 194.26.229.207
-  port: 4100
+  server: xinnusvpn.duckdns.org
+  port: 8443
   udp: true
   type: vless
-  uuid: 026ecbd6-2838-40f6-b530-d2c303c4f629
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xinnusvpn.duckdns.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /v1
+    path: /wsnl
     headers:
-      Host: live.ok.ru
+      Host: xinnusvpn.duckdns.org
 - name: 🇷🇺 俄罗斯 (Russia) 04 - Chain-Proxy
-  server: 194.26.229.207
-  port: 2200
-  udp: true
-  type: vless
-  uuid: f2d2907c-1d74-43eb-8fd2-fc55dfd92427
-  network: ws
-  ws-opts:
-    path: /v1
-- name: 🇷🇺 俄罗斯 (Russia) 05 - Chain-Proxy
   server: 200.169.179.233
   port: 443
   udp: true
@@ -47,19 +42,67 @@ proxies:
   tls: true
   servername: vps3.nemnogogo.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 (Russia) 06 - Chain-Proxy
-  server: 103.88.243.142
-  port: 11592
+- name: 🇷🇺 俄罗斯 (Russia) 05 - Chain-Proxy
+  server: 201.8.64.254
+  port: 443
   udp: true
-  type: hysteria2
-  password: 41edb44c8e
-  sni: srv-17e124
-  skip-cert-verify: true
+  type: vless
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  reality-opts:
+    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
+    short-id: 50a749f0eccb628c
+  servername: 15b171g.nl7.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 5b79e8a94241
+- name: 🇷🇺 俄罗斯 (Russia) 06 - Chain-Proxy
+  server: 147.45.175.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xssite.webredirect.org
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-ru
 - name: 🇷🇺 俄罗斯 (Russia) 07 - Chain-Proxy
+  server: xssite.webredirect.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xssite.webredirect.org
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-ru
+- name: 🇷🇺 俄罗斯 (Russia) 08 - Chain-Proxy
+  server: xsru2.freeddns.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xsru2.freeddns.org
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /wsru
+    headers:
+      Host: xsru2.freeddns.org
+- name: 🇷🇺 俄罗斯 (Russia) 09 - Chain-Proxy
   server: 136.148.83.69
   port: 443
   udp: true
@@ -69,38 +112,6 @@ proxies:
   servername: szqbx-ru-77dc.my-fade.cloud
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 08 - Chain-Proxy
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: PL4ahSoLNqrJ8mQZ1uKFLG8o8W4TcYDUIW0gldp9Grs=
-- name: 🇷🇺 俄罗斯 (Russia) 09 - Chain-Proxy
-  server: 147.45.175.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  tls: true
-  servername: xssite.webredirect.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 10 - Chain-Proxy
-  server: 13.141.36.10
-  port: 443
-  udp: true
-  type: vless
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  tls: true
-  reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-    short-id: 361d0dd59c70516f
-  servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -115,7 +126,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - Chain-Proxy
   - 🇷🇺 俄罗斯 (Russia) 08 - Chain-Proxy
   - 🇷🇺 俄罗斯 (Russia) 09 - Chain-Proxy
-  - 🇷🇺 俄罗斯 (Russia) 10 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -130,6 +140,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - Chain-Proxy
   - 🇷🇺 俄罗斯 (Russia) 08 - Chain-Proxy
   - 🇷🇺 俄罗斯 (Russia) 09 - Chain-Proxy
-  - 🇷🇺 俄罗斯 (Russia) 10 - Chain-Proxy
 rules:
 - MATCH,PROXIES

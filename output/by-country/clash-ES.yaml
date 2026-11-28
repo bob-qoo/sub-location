@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - Chain-Proxy
-  server: 5.188.181.201
-  port: 9003
+  server: 108.181.121.170
+  port: 443
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: JdmRK9gMEqFgs8nP
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
 - name: 🇪🇸 西班牙 (Spain) 02 - Chain-Proxy
   server: 5.188.181.201
   port: 9000
@@ -20,74 +20,74 @@ proxies:
   password: a3GFYt36Sm82Vys9
 - name: 🇪🇸 西班牙 (Spain) 03 - Chain-Proxy
   server: 5.188.181.201
-  port: 9019
+  port: 9014
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: GA9KzeEgvfxNrgmM
+  password: KnJGad3FqTvjqbaX
 - name: 🇪🇸 西班牙 (Spain) 04 - Chain-Proxy
   server: 5.188.181.201
-  port: 9041
+  port: 9027
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: U6qnYRhfyDmn8sgn
+  password: EXN3S3eQpjE7EJu8
 - name: 🇪🇸 西班牙 (Spain) 05 - Chain-Proxy
-  server: 5.188.181.201
-  port: 9020
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: BNmAXXxAHYpTRdzu
-- name: 🇪🇸 西班牙 (Spain) 06 - Chain-Proxy
-  server: 5.188.181.201
-  port: 9054
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
-- name: 🇪🇸 西班牙 (Spain) 07 - Chain-Proxy
-  server: 5.188.181.201
-  port: 9040
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: p9z5BVADH2YFs3MN
-- name: 🇪🇸 西班牙 (Spain) 08 - Chain-Proxy
-  server: 5.188.181.201
-  port: 9025
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: XPtzA9sCug3SPR4c
-- name: 🇪🇸 西班牙 (Spain) 09 - Chain-Proxy
-  server: 5.188.181.201
-  port: 9031
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: BwcAUZk8hUFAkDGN
-- name: 🇪🇸 西班牙 (Spain) 10 - Chain-Proxy
   server: 5.188.181.201
   port: 9005
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: ZET59LF6DvCC8KVt
+- name: 🇪🇸 西班牙 (Spain) 06 - Chain-Proxy
+  server: 5.188.181.201
+  port: 9020
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: BNmAXXxAHYpTRdzu
+- name: 🇪🇸 西班牙 (Spain) 07 - Chain-Proxy
+  server: 5.188.181.201
+  port: 9031
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: BwcAUZk8hUFAkDGN
+- name: 🇪🇸 西班牙 (Spain) 08 - Chain-Proxy
+  server: 5.188.181.201
+  port: 9040
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: p9z5BVADH2YFs3MN
+- name: 🇪🇸 西班牙 (Spain) 09 - Chain-Proxy
+  server: 5.188.181.201
+  port: 9019
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: GA9KzeEgvfxNrgmM
+- name: 🇪🇸 西班牙 (Spain) 10 - Chain-Proxy
+  server: 5.188.181.201
+  port: 9011
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
 - name: 🇪🇸 西班牙 (Spain) 11 - Chain-Proxy
   server: 5.188.181.201
-  port: 9014
+  port: 9025
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: KnJGad3FqTvjqbaX
+  password: XPtzA9sCug3SPR4c
 - name: 🇪🇸 西班牙 (Spain) 12 - Chain-Proxy
   server: 5.188.181.201
-  port: 9030
+  port: 9041
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
+  password: U6qnYRhfyDmn8sgn
 - name: 🇪🇸 西班牙 (Spain) 13 - Chain-Proxy
   server: 5.188.181.201
   port: 9042
@@ -96,20 +96,13 @@ proxies:
   cipher: aes-256-cfb
   password: S7KwUu7yBy58S3Ga
 - name: 🇪🇸 西班牙 (Spain) 14 - Chain-Proxy
-  server: 5.188.181.201
-  port: 9011
+  server: 108.181.121.178
+  port: 443
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
 - name: 🇪🇸 西班牙 (Spain) 15 - Chain-Proxy
-  server: 5.188.181.201
-  port: 9001
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: UkXRsXvR6buDMG2Y
-- name: 🇪🇸 西班牙 (Spain) 16 - Chain-Proxy
   server: 212.227.235.66
   port: 2053
   udp: true
@@ -121,42 +114,15 @@ proxies:
     short-id: 385366c80310403d
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 16 - Chain-Proxy
+  server: 5.188.181.201
+  port: 9054
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
 - name: 🇪🇸 西班牙 (Spain) 17 - Chain-Proxy
-  server: 108.181.121.170
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-- name: 🇪🇸 西班牙 (Spain) 18 - Chain-Proxy
-  server: 108.181.121.178
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-- name: 🇪🇸 西班牙 (Spain) 19 - Chain-Proxy
-  server: s23.fusetea.ir
-  port: 2089
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: R02KmzzSD7PeZ_DosF87xZ7zIn8jLtyP
-- name: 🇪🇸 西班牙 (Spain) 20 - Chain-Proxy
-  server: 83.147.18.3
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
-    short-id: fd8cf7e1173f0edb
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 21 - Chain-Proxy
-  server: 196.196.149.80
+  server: 196.199.122.2
   port: 443
   udp: true
   type: vless
@@ -168,33 +134,6 @@ proxies:
     short-id: 42426c882c5fcd41
   servername: 7aa271t.es1.h1clayd.click
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 22 - Chain-Proxy
-  server: 46.28.71.247
-  port: 443
-  udp: true
-  type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 23 - Chain-Proxy
-  server: 85.155.226.213
-  port: 2089
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: R02KmzzSD7PeZ_DosF87xZ7zIn8jLtyP
-- name: 🇪🇸 西班牙 (Spain) 24 - Chain-Proxy
-  server: 85.155.226.213
-  port: 2089
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: DVlt-OeAV4RiLMwT9e0T72nnFtMG2W3o
 proxy-groups:
 - name: PROXIES
   type: select
@@ -217,13 +156,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 15 - Chain-Proxy
   - 🇪🇸 西班牙 (Spain) 16 - Chain-Proxy
   - 🇪🇸 西班牙 (Spain) 17 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 18 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 19 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 20 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 21 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 22 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 23 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 24 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -246,12 +178,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 15 - Chain-Proxy
   - 🇪🇸 西班牙 (Spain) 16 - Chain-Proxy
   - 🇪🇸 西班牙 (Spain) 17 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 18 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 19 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 20 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 21 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 22 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 23 - Chain-Proxy
-  - 🇪🇸 西班牙 (Spain) 24 - Chain-Proxy
 rules:
 - MATCH,PROXIES

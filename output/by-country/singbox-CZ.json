@@ -25,18 +25,67 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - Chain-Proxy",
+      "server": "153.52.69.249",
+      "server_port": 443,
+      "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cache-78.topp-con.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "WVfpQqoeOrTtCq052_IOxvMv7RCWfLlAOxEfsH1aa2U",
+          "short_id": "d5492c7a39515c65"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - Chain-Proxy",
+      "server": "103.200.28.8",
+      "server_port": 25812,
+      "uuid": "893fdb90-b1a1-4235-8f0d-56aac1cfde9e",
+      "tls": {
+        "enabled": true,
+        "server_name": "cz2.jetstoreapp.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3g6uVc70EKi_XPzCTcZj_p77XJPpVUZvFNUPew4s0iU",
+          "short_id": "8643513c64b7f35e"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "7acacc2cc9d3"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - Chain-Proxy"
+        "🇨🇿 捷克 (Czech) 01 - Chain-Proxy",
+        "🇨🇿 捷克 (Czech) 02 - Chain-Proxy",
+        "🇨🇿 捷克 (Czech) 03 - Chain-Proxy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - Chain-Proxy"
+        "🇨🇿 捷克 (Czech) 01 - Chain-Proxy",
+        "🇨🇿 捷克 (Czech) 02 - Chain-Proxy",
+        "🇨🇿 捷克 (Czech) 03 - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

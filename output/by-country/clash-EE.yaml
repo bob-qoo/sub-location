@@ -5,15 +5,42 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - Chain-Proxy
-  server: 196.198.111.166
-  port: 8443
+  server: 132.243.65.148
+  port: 443
   udp: true
   type: vless
-  uuid: f121ffc8-f6dc-4728-a871-a05e3f9cf8c5
+  uuid: 9fdec6be-b6b5-4f18-bac0-461cb7953ff0
   flow: xtls-rprx-vision
   tls: true
-  servername: usr-6b09ce88-api-v3.alcors.net
-  skip-cert-verify: false
+  reality-opts:
+    public-key: RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0
+    short-id: 7a3f9e2b1c8d4f6a
+  servername: ee.frgcdn.xyz
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - Chain-Proxy
+  server: 82.202.182.32
+  port: 5269
+  udp: true
+  type: vless
+  uuid: 0d4807a7-260b-4d66-a71e-5e793c46c66e
+  tls: true
+  reality-opts:
+    public-key: meI7RA9FgxL1yjJsbJBehEKoB2Z1ra4hyYJso9qtmFA
+    short-id: 4b198dc3bfffb7af
+  servername: max.ru
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - Chain-Proxy
+  server: 8a2e72t.nl11.h1clayd.click
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+  servername: 8a2e72t.nl11.h1clayd.click
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -21,11 +48,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - Chain-Proxy
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - Chain-Proxy
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - Chain-Proxy
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - Chain-Proxy
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - Chain-Proxy
 rules:
 - MATCH,PROXIES

@@ -4,12 +4,12 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Chain-Proxy
-  server: Ir.wbzo.ir
-  port: 2070
+- name: 🇨🇳 CN 01 (移动家宽) - Chain-Proxy
+  server: dog-hk.kunlun01dns.com
+  port: 21021
   udp: true
   type: vmess
-  uuid: b7e3e8af-d1ca-45da-a95f-8b9ad77398b1
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
 proxy-groups:
@@ -17,12 +17,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Chain-Proxy
+  - 🇨🇳 CN 01 (移动家宽) - Chain-Proxy
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - Chain-Proxy
+  - 🇨🇳 CN 01 (移动家宽) - Chain-Proxy
 rules:
 - MATCH,PROXIES

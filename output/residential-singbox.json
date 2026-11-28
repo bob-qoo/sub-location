@@ -6,36 +6,100 @@
     {
       "type": "shadowsocks",
       "tag": "🇩🇪 德国 (Germany) 01 (移动家宽) - Chain-Proxy",
-      "server": "8.209.80.17",
+      "server": "8.209.117.187",
       "server_port": 443,
       "method": "2022-blake3-chacha20-poly1305",
       "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - Chain-Proxy",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
-    },
-    {
       "type": "vmess",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - Chain-Proxy",
-      "server": "Ir.wbzo.ir",
-      "server_port": 2070,
-      "uuid": "b7e3e8af-d1ca-45da-a95f-8b9ad77398b1",
+      "tag": "🇨🇳 CN 02 (移动家宽) - Chain-Proxy",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21021,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
       "security": "auto"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Chain-Proxy",
-      "server": "193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com",
+      "type": "vless",
+      "tag": "🇮🇩 印尼 (Indonesia) 03 (移动家宽) - Chain-Proxy",
+      "server": "130.94.95.126",
       "server_port": 443,
-      "password": "c12f73f6-e8c7-11ed-9246-f23c9164ca5d",
+      "uuid": "ed94398f-893f-40c6-b14c-bf02b5f6be16",
       "tls": {
         "enabled": true,
-        "server_name": "193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com",
+        "server_name": "navi.bankrate.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
+          "short_id": "2da72ce6"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy",
+      "server": "dog-tw.kunlun01dns.com",
+      "server_port": 21036,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 05 (移动家宽) - Chain-Proxy",
+      "server": "130.94.25.12",
+      "server_port": 443,
+      "uuid": "ed94398f-893f-40c6-b14c-bf02b5f6be16",
+      "tls": {
+        "enabled": true,
+        "server_name": "navi.bankrate.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
+          "short_id": "2da72ce6"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Chain-Proxy",
+      "server": "rtifgjdr.df6h451rh.xin",
+      "server_port": 443,
+      "password": "2902c46c8493",
+      "tls": {
+        "enabled": true,
+        "server_name": "docs.microsoft.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 (家宽) - Chain-Proxy",
+      "server": "5641sdds.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
+      "tls": {
+        "enabled": true,
+        "server_name": "images.ctfassets.net",
+        "insecure": true
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 (家宽) - Chain-Proxy",
+      "server": "ibsdsf.df6h451rh.xin",
+      "server_port": 443,
+      "password": "2902c46c8493",
+      "tls": {
+        "enabled": true,
+        "server_name": "docs.microsoft.com",
         "insecure": true
       }
     },
@@ -45,9 +109,13 @@
       "outbounds": [
         "auto",
         "🇩🇪 德国 (Germany) 01 (移动家宽) - Chain-Proxy",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - Chain-Proxy",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Chain-Proxy"
+        "🇨🇳 CN 02 (移动家宽) - Chain-Proxy",
+        "🇮🇩 印尼 (Indonesia) 03 (移动家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy",
+        "🇹🇭 泰国 (Thailand) 05 (移动家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Chain-Proxy",
+        "🇭🇰 中国香港 (Hong Kong) 07 (家宽) - Chain-Proxy",
+        "🇭🇰 中国香港 (Hong Kong) 08 (家宽) - Chain-Proxy"
       ]
     },
     {
@@ -55,9 +123,13 @@
       "tag": "auto",
       "outbounds": [
         "🇩🇪 德国 (Germany) 01 (移动家宽) - Chain-Proxy",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - Chain-Proxy",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - Chain-Proxy",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - Chain-Proxy"
+        "🇨🇳 CN 02 (移动家宽) - Chain-Proxy",
+        "🇮🇩 印尼 (Indonesia) 03 (移动家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - Chain-Proxy",
+        "🇹🇭 泰国 (Thailand) 05 (移动家宽) - Chain-Proxy",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - Chain-Proxy",
+        "🇭🇰 中国香港 (Hong Kong) 07 (家宽) - Chain-Proxy",
+        "🇭🇰 中国香港 (Hong Kong) 08 (家宽) - Chain-Proxy"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
